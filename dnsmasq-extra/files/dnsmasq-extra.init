@@ -1,0 +1,39 @@
+#!/bin/sh /etc/rc.common
+
+START=69
+NAME=Dnsmasq-Extra
+DESC="Dnsmasq-Extra"
+
+PDNSD=127.0.0.1#1053
+BLOCK=0.0.0.0
+DNSMASQDIR=/var/dnsmasq.d
+IPSETDIR=/etc/ipset
+
+USER=nobody
+GROUP=nogroup
+
+start() {
+    echo -n "Geneareting : $NAME"
+
+    [ -x /usr/sbin/pdnsd ] && ( sed "s/^/server=\//;s/$/\/${PDNSD}/"  $IPSETDIR/pdnsd   > $DNSMASQDIR/pdnsd.conf )
+
+    sed "s/^/address=\//;s/$/\/${BLOCK}/" $IPSETDIR/adblock > $DNSMASQDIR/adblock.conf
+    /etc/init.d/dnsmasq restart
+    echo " ."
+}
+
+stop() {
+    echo -n "Stopping $DESC: $NAME"
+    rm $DNSMASQDIR/pdnsd.conf
+    rm $DNSMASQDIR/adblock.conf
+    /etc/init.d/dnsmasq restart
+    echo " ."
+}
+
+restart() {
+    echo "Restarting $DESC: $NAME... "
+    stop
+    sleep 1
+    start
+}
+
