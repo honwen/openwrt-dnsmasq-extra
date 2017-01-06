@@ -6,6 +6,7 @@ DESC="Dnsmasq-Extra"
 
 PDNSD=127.0.0.1#1053
 SSDNS=127.0.0.1#$(uci -q get shadowsocks.@port_forward[0].local_port)
+CHDNS=127.0.0.1#$(uci -q get chinadns.@chinadns[0].port)
 BLOCK=0.0.0.0
 DNSMASQDIR=/var/dnsmasq.d
 IPSETDIR=/etc/ipset
@@ -17,11 +18,14 @@ start() {
     echo -n "Geneareting : $NAME"
     mkdir -p $DNSMASQDIR
 
-    [ -x /usr/bin/ssr-tunnel -o -x /usr/bin/ss-tunnel ] && [ $(uci -q get shadowsocks.@port_forward[0].server) != 'nil' ] \
-        && echo -n " SSDNS   " && ( sed "s/^/server=\//;s/$/\/${SSDNS}/" $IPSETDIR/pdnsd > $DNSMASQDIR/ssdns.conf )
+    [ -x /usr/bin/chinadns ] &&
+        echo -n " CHDNS   " && ( sed "s/^/server=\//;s/$/\/${CHDNS}/" $IPSETDIR/pdnsd > $DNSMASQDIR/chdns.conf )
 
-    [ -x /usr/sbin/pdnsd ] \
-        && echo -n " PDNSD   " && ( sed "s/^/server=\//;s/$/\/${PDNSD}/" $IPSETDIR/pdnsd > $DNSMASQDIR/pdnsd.conf )
+    [ -x /usr/bin/ssr-tunnel -o -x /usr/bin/ss-tunnel ] && [ $(uci -q get shadowsocks.@port_forward[0].server) != 'nil' ] &&
+        echo -n " SSDNS   " && ( sed "s/^/server=\//;s/$/\/${SSDNS}/" $IPSETDIR/pdnsd > $DNSMASQDIR/ssdns.conf )
+
+    [ -x /usr/sbin/pdnsd ] &&
+        echo -n " PDNSD   " && ( sed "s/^/server=\//;s/$/\/${PDNSD}/" $IPSETDIR/pdnsd > $DNSMASQDIR/pdnsd.conf )
 
     echo -n " ABDLOCK" && sed "s/^/address=\//;s/$/\/${BLOCK}/" $IPSETDIR/adblock > $DNSMASQDIR/adblock.conf
 
@@ -31,6 +35,7 @@ start() {
 
 stop() {
     echo -n "Stopping $DESC: $NAME"
+    rm -rf $DNSMASQDIR/chdns.conf   2>/dev/null
     rm -rf $DNSMASQDIR/ssdns.conf   2>/dev/null
     rm -rf $DNSMASQDIR/pdnsd.conf   2>/dev/null
     rm -rf $DNSMASQDIR/adblock.conf 2>/dev/null
