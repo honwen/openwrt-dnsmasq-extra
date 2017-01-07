@@ -12,6 +12,7 @@ START=90
 SERVICE_USE_PID=1
 SERVICE_WRITE_PID=1
 SERVICE_DAEMONIZE=1
+EXTRA_COMMANDS="update"
 
 xappend() {
 	parms="$parms $1"
@@ -57,4 +58,26 @@ start() {
 
 stop() {
 	service_stop /usr/bin/chinadns
+}
+
+update(){
+	chnroute=$(uci get -q chinadns.@chinadns[0].chnroute)
+	[ "Z$chnroute" != "Z" ] || return 0
+
+	chnsrc='https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt'
+
+	echo "# $chnroute Updating"
+	wget -T5 -t4 --no-check-certificate -q $chnsrc -O $chnroute 2>/dev/null ||
+		curl --connect-timeout 10 --max-time 120 -ksSL $chnsrc -o $chnroute 2>/dev/null
+	if [ $? -eq 0 ]; then
+		echo "# $chnroute Updated"
+	else
+		echo "# $chnroute NOT Updated"
+	fi
+
+	if [ ! -f "$chnroute" ] || [ $(ls -l "$chnroute" | awk '{print $5}') -lt 4096 ];then
+		echo "# $chnroute is broken, failsafe Now!"
+		rm -f "$chnroute"
+		cp -f "/rom$chnroute" "$chnroute"
+	fi
 }
