@@ -2,7 +2,13 @@
 ## chinadns@5353 with multidns/udp
 
 ## dnsmasq for adblock
-## dnsmasq for pdnsd/chinadns/ss-tunnel
+## dnsmasq/ipset for pdnsd/chinadns/ss-tunnel
+
+Clone All
+
+`git clone https://github.com/chenhw2/openwrt-dnsmasq-extra.git package/feeds/openwrt-dnsmasq-extra`
+
+# OR
 
 Add this line to your feeds.conf.default.
 

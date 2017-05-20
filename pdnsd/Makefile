@@ -5,7 +5,7 @@ PKG_VERSION:=1.2.9
 PKG_RELEASE=$(PKG_SOURCE_VERSION)
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/mengskysama/pdnsd.git
+PKG_SOURCE_URL:=https://github.com/shadowsocks/pdnsd.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_VERSION:=e02a81d9e63927e93dc49d218535c880623bcd77
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
@@ -17,7 +17,6 @@ include $(INCLUDE_DIR)/package.mk
 define Package/pdnsd
   SECTION:=net
   CATEGORY:=Network
-  SUBMENU:=Web Servers/Proxies
   DEPENDS:=+libpthread
   TITLE:=Proxy DNS Server
 endef
