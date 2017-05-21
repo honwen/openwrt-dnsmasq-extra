@@ -30,7 +30,7 @@ start() {
     echo -n " ABDLOCK" && sed "s/^/address=\//;s/$/\/${BLOCK}/" $IPSETDIR/adblock > $DNSMASQDIR/adblock.conf
     echo -n " ABHOSTS" && echo "addn-hosts=$IPSETDIR/adhosts" > $DNSMASQDIR/adhosts.conf
 
-    if [ -x /usr/bin/ssr-redir -o -x /usr/bin/ss-redir ]; then
+    if [ 0 -lt $(grep -c 'flag_gfwlist' /etc/config/shadowsocks) ]; then
         echo -n " IPSET:gfwlist" && ( sed "s/^/ipset=\//;s/$/\/gfwlist/" $IPSETDIR/gfwlist > $DNSMASQDIR/gfwlist.conf )
 
         ipset -X gfwlist 2>/dev/null
@@ -52,6 +52,8 @@ EOF
 }
 
 stop() {
+    ipset -X gfwlist 2>/dev/null
+    ipset -F gfwlist 2>/dev/null
     echo -n "Stopping $DESC: $NAME"
     rm -rf $DNSMASQDIR/chdns.conf   2>/dev/null
     rm -rf $DNSMASQDIR/ssdns.conf   2>/dev/null
