@@ -43,7 +43,7 @@ define Package/dnsmasq-extra/install
 	$(INSTALL_DIR) $(1)/etc/init.d
 	$(INSTALL_BIN) ./files/dnsmasq-extra.init $(1)/etc/init.d/dnsmasq-extra
 	$(INSTALL_DIR) $(1)/etc/dnsmasq-extra.d
-	$(INSTALL_DATA) ./files/{gfwlist,tldn,adblock,adhosts} $(1)/etc/dnsmasq-extra.d/
+	$(INSTALL_DATA) ./files/{gfwlist,tldn,adblock,adhosts,custom.conf} $(1)/etc/dnsmasq-extra.d/
 endef
 
 $(eval $(call BuildPackage,dnsmasq-extra))

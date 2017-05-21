@@ -41,8 +41,11 @@ start() {
         add gfwlist 91.108.56.0/22
         add gfwlist 109.239.140.0/24
         add gfwlist 149.154.160.0/20
+        $(sed -nr 's/([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+).*/\nadd gfwlist \1/;s/^.*\n//p' $IPSETDIR/gfwlist)
 EOF
     fi
+
+    echo -n " CUSTOM" && echo "conf-file=$IPSETDIR/custom.conf" > $DNSMASQDIR/custom.conf
 
     /etc/init.d/dnsmasq restart
     echo " ."
@@ -56,6 +59,7 @@ stop() {
     rm -rf $DNSMASQDIR/adblock.conf 2>/dev/null
     rm -rf $DNSMASQDIR/adhosts.conf 2>/dev/null
     rm -rf $DNSMASQDIR/gfwlist.conf 2>/dev/null
+    rm -rf $DNSMASQDIR/custom.conf 2>/dev/null
     /etc/init.d/dnsmasq restart
     echo " ."
 }
