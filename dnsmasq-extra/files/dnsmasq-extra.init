@@ -21,17 +21,16 @@ start() {
     [ -x /usr/bin/chinadns ] &&
         echo -n " CHDNS   " && ( sed "s/^/server=\//;s/$/\/${CHDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/chdns.conf )
 
-    [ -x /usr/bin/ssr-tunnel -o -x /usr/bin/ss-tunnel ] && [ $(uci -q get shadowsocks.@port_forward[0].server) != 'nil' ] &&
+    [ -x /usr/bin/ssr-tunnel -o -x /usr/bin/ss-tunnel ] && [ "Z$(uci -q get shadowsocks.@port_forward[0].server)" != 'Znil' ] &&
         echo -n " SSDNS   " && ( sed "s/^/server=\//;s/$/\/${SSDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/ssdns.conf )
 
     [ -x /usr/sbin/pdnsd ] &&
         echo -n " PDNSD   " && ( sed "s/^/server=\//;s/$/\/${PDNSD}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/pdnsd.conf )
 
-    echo -n " ABDLOCK" && sed "s/^/address=\//;s/$/\/${BLOCK}/" $IPSETDIR/adblock > $DNSMASQDIR/adblock.conf
-    echo -n " ABHOSTS" && echo "addn-hosts=$IPSETDIR/adhosts" > $DNSMASQDIR/adhosts.conf
+    echo -n " ABDLOCK   " && ( sed "s/^/address=\//;s/$/\/${BLOCK}/" $IPSETDIR/adblock > $DNSMASQDIR/adblock.conf )
 
     if [ 0 -lt $(grep -c 'flag_gfwlist' /etc/config/shadowsocks) ]; then
-        echo -n " IPSET:gfwlist" && ( sed "s/^/ipset=\//;s/$/\/gfwlist/" $IPSETDIR/gfwlist > $DNSMASQDIR/gfwlist.conf )
+        echo -n " IPSET:gfwlist   " && ( sed "s/^/ipset=\//;s/$/\/gfwlist/" $IPSETDIR/gfwlist > $DNSMASQDIR/gfwlist.conf )
 
         ipset -X gfwlist 2>/dev/null
         ipset -! -R <<-EOF 2>/dev/null
@@ -45,7 +44,7 @@ start() {
 EOF
     fi
 
-    echo -n " CUSTOM" && echo "conf-file=$IPSETDIR/custom.conf" > $DNSMASQDIR/custom.conf
+    echo -n " CUSTOM   " && ( echo "conf-file=$IPSETDIR/custom.conf" > $DNSMASQDIR/custom.conf )
 
     /etc/init.d/dnsmasq restart
     echo " ."
@@ -59,7 +58,6 @@ stop() {
     rm -rf $DNSMASQDIR/ssdns.conf   2>/dev/null
     rm -rf $DNSMASQDIR/pdnsd.conf   2>/dev/null
     rm -rf $DNSMASQDIR/adblock.conf 2>/dev/null
-    rm -rf $DNSMASQDIR/adhosts.conf 2>/dev/null
     rm -rf $DNSMASQDIR/gfwlist.conf 2>/dev/null
     rm -rf $DNSMASQDIR/custom.conf 2>/dev/null
     /etc/init.d/dnsmasq restart
