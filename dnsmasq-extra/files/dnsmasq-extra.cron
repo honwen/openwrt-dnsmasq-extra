@@ -1,0 +1,2 @@
+sed -i '/dnsmasq-extra/d' /etc/crontabs/root
+echo '0 0 5 * * /etc/init.d/dnsmasq-extra update' >> /etc/crontabs/root
