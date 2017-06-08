@@ -48,7 +48,8 @@ EOF
 
     echo -n " CUSTOM   " && ( echo "conf-file=$IPSETDIR/custom.conf" > $DNSMASQDIR/custom.conf )
 
-    /etc/init.d/dnsmasq restart
+    /etc/init.d/dnsmasq restart &&
+        iptables -t nat -I PREROUTING -p udp --dport 53 -j REDIRECT --to 53
     echo " ."
 }
 
@@ -63,6 +64,7 @@ stop() {
     rm -rf $DNSMASQDIR/gfwlist.conf 2>/dev/null
     rm -rf $DNSMASQDIR/custom.conf  2>/dev/null
     /etc/init.d/dnsmasq restart
+    while iptables -t nat -D PREROUTING -p udp --dport 53 -j REDIRECT --to 53 2>/dev/null; do :; done
     echo " ."
 }
 
