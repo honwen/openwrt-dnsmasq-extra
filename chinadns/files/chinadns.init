@@ -1,0 +1,83 @@
+#!/bin/sh /etc/rc.common
+#
+# Copyright (C) 2015 OpenWrt-dist
+# Copyright (C) 2015 Jian Chang <aa65535@live.com>
+#
+# This is free software, licensed under the GNU General Public License v3.
+# See /LICENSE for more information.
+#
+
+START=90
+
+SERVICE_USE_PID=1
+SERVICE_WRITE_PID=1
+SERVICE_DAEMONIZE=1
+EXTRA_COMMANDS="update"
+
+xappend() {
+	parms="$parms $1"
+}
+
+append_bool() {
+	local section="$1"
+	local option="$2"
+	local value="$3"
+	local _loctmp
+	config_get_bool _loctmp "$section" "$option"
+	[ "$_loctmp" = 1 ] || return 0
+	xappend "$value"
+}
+
+append_parm() {
+	local section="$1"
+	local option="$2"
+	local switch="$3"
+	local _loctmp
+	config_get _loctmp "$section" "$option"
+	[ -z "$_loctmp" ] && return 0
+	xappend "$switch $_loctmp"
+}
+
+start_chinadns() {
+	local enable
+	config_get_bool enable $1 enable
+	[ "$enable" = 1 ] || return 0
+	append_parm $1 port "-p"
+	append_parm $1 server "-s"
+	append_parm $1 chnroute "-c"
+	append_bool $1 bidirectional "-d"
+	service_start /usr/bin/chinadns \
+		$parms -m
+	return $?
+}
+
+start() {
+	config_load chinadns
+	config_foreach start_chinadns chinadns
+}
+
+stop() {
+	service_stop /usr/bin/chinadns
+}
+
+update(){
+	chnroute=$(uci -q get chinadns.@chinadns[0].chnroute)
+	[ "Z$chnroute" != "Z" ] || return 0
+
+	chnsrc='https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt'
+
+	echo "# $chnroute Updating"
+	wget -T5 -t4 --no-check-certificate -q $chnsrc -O $chnroute 2>/dev/null ||
+		curl --connect-timeout 10 --max-time 120 -ksSL $chnsrc -o $chnroute 2>/dev/null
+	if [ $? -eq 0 ]; then
+		echo "# $chnroute Updated"
+	else
+		echo "# $chnroute NOT Updated"
+	fi
+
+	if [ ! -f "$chnroute" ] || [ $(ls -l "$chnroute" | awk '{print $5}') -lt 4096 ];then
+		echo "# $chnroute is broken, failsafe Now!"
+		rm -f "$chnroute"
+		cp -f "/rom$chnroute" "$chnroute"
+	fi
+}
