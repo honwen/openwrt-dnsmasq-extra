@@ -35,7 +35,9 @@ start() {
 
     echo -n " ABDLOCK   " && ( sed "s/^/address=\//;s/$/\/${BLOCK}/" $IPSETDIR/adblock > $DNSMASQDIR/adblock.conf )
 
-    if [ 0 -lt $(grep -c 'flag_gfwlist' /etc/config/shadowsocks) -o 0 -lt $(grep -c 'flag_gfwlist' /etc/config/shadowsocksr) ]; then
+    if [ 0 -lt $(grep -c 'flag_gfwlist' /etc/config/shadowsocks  2>/dev/null) -o \
+         0 -lt $(grep -c 'flag_gfwlist' /etc/config/shadowsocksr 2>/dev/null) ]; then
+
         echo -n " IPSET:gfwlist   " && ( sed "s/^/ipset=\//;s/$/\/gfwlist/" $IPSETDIR/gfwlist > $DNSMASQDIR/gfwlist.conf )
 
         ipset -X gfwlist 2>/dev/null
