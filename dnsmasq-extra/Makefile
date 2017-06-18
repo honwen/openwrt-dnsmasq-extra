@@ -5,7 +5,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dnsmasq-extra
-PKG_VERSION:=0.2.0
+PKG_VERSION:=0.3.0
 PKG_RELEASE:=1
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
@@ -36,14 +36,16 @@ endef
 define Package/dnsmasq-extra/postrm
 #!/bin/sh
 sed -i '/dnsmasq-extra/d' /etc/crontabs/root
+uci -q delete firewall.dnsmasqextra
+uci commit firewall
 exit 0
 endef
 
 define Package/dnsmasq-extra/postinst
 #!/bin/sh
-if [ -z "$${IPKG_INSTROOT}" -a -f /etc/uci-defaults/cron-dnsmasq-extra ]; then
-	( . /etc/uci-defaults/cron-dnsmasq-extra ) && \
-	rm -f /etc/uci-defaults/cron-dnsmasq-extra
+if [ -z "$${IPKG_INSTROOT}" -a -f /etc/uci-defaults/dnsmasq-extra ]; then
+	( . /etc/uci-defaults/dnsmasq-extra) && \
+	rm -f /etc/uci-defaults/dnsmasq-extra
 fi
 exit 0
 endef
@@ -57,7 +59,7 @@ define Package/dnsmasq-extra/install
 	$(INSTALL_DIR) $(1)/etc/dnsmasq-extra.d
 	$(INSTALL_DATA) ./files/{gfwlist,tldn,adblock,custom.conf} $(1)/etc/dnsmasq-extra.d/
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
-	$(INSTALL_BIN) ./files/dnsmasq-extra.cron $(1)/etc/uci-defaults/cron-dnsmasq-extra
+	$(INSTALL_BIN) ./files/dnsmasq-extra.uci-defaults $(1)/etc/uci-defaults/dnsmasq-extra
 endef
 
 $(eval $(call BuildPackage,dnsmasq-extra))

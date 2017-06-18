@@ -1,0 +1,16 @@
+#!/bin/sh
+
+sed -i '/dnsmasq-extra/d' /etc/crontabs/root
+echo '0 0 5 * * /etc/init.d/dnsmasq-extra update' >> /etc/crontabs/root
+
+echo "/etc/init.d/dnsmasq-extra rules" > /etc/dnsmasq-extra.d/firewall.include
+
+uci -q batch <<-EOF >/dev/null
+	delete firewall.dnsmasqextra
+	set firewall.dnsmasqextra=include
+	set firewall.dnsmasqextra.type=script
+	set firewall.dnsmasqextra.path=/etc/dnsmasq-extra.d/firewall.include
+	set firewall.dnsmasqextra.reload=1
+	commit firewall
+EOF
+exit 0
