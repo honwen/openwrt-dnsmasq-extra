@@ -7,10 +7,7 @@
 #
 
 START=75
-
-SERVICE_USE_PID=1
-SERVICE_WRITE_PID=1
-SERVICE_DAEMONIZE=1
+NAME=dns-forwarder
 
 start_instance() {
 	local enable
@@ -22,17 +19,23 @@ start_instance() {
 	config_get listen_addr $1 listen_addr
 	config_get listen_port $1 listen_port
 	config_get dns_servers $1 dns_servers
-	service_start /usr/bin/dns-forwarder \
+
+	(	/usr/bin/dns-forwarder \
 		-b ${listen_addr:-0.0.0.0} \
-		-p ${listen_port:-1153} \
+		-p ${listen_port:-5300} \
 		-s ${dns_servers:-8.8.8.8}
+	) &
 }
 
 start() {
-	config_load dns-forwarder
-	config_foreach start_instance dns-forwarder
+	config_load $NAME
+	config_foreach start_instance $NAME
+}
+
+kill_all() {
+	kill -9 $(pgrep -f $@) >/dev/null 2>&1
 }
 
 stop() {
-	service_stop /usr/bin/dns-forwarder
+	kill_all /usr/bin/dns-forwarder
 }
