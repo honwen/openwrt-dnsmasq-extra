@@ -1,5 +1,5 @@
-## ~~pdnsd@1053 with multidns@443/tcp~~
-## dns-forwarder@{1153,1253,1353} with multidns@53/tcp
+## ~~pdnsd@1053 with multidns@443/tcp~~ NOT Recommended
+## dns-forwarder@{1153,1253,1353,1453} with multidns@53/tcp
 ## chinadns@2053 with multidns/udp
 
 ## dnsmasq for adblock
