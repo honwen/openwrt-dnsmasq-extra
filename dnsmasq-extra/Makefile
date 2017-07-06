@@ -51,6 +51,7 @@ exit 0
 endef
 
 define Package/dnsmasq-extra/conffiles
+	/etc/dnsmasq-extra.d/custom.conf
 endef
 
 define Package/dnsmasq-extra/install
