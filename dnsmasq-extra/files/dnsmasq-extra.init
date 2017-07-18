@@ -55,6 +55,17 @@ start() {
 EOF
     fi
 
+    if [ -x /etc/init.d/koolproxy ]; then
+        echo -n " IPSET:koolproxy   " && ( sed "s/^/ipset=\//;s/$/\/koolproxy/" $IPSETDIR/koolproxy > $DNSMASQDIR/koolproxy.conf )
+
+        ipset -X koolproxy 2>/dev/null
+        ipset -! -R <<-EOF 2>/dev/null
+        create koolproxy hash:ip
+        flush koolproxy
+        add koolproxy 61.160.200.252
+EOF
+    fi
+
     echo -n " CUSTOM   " && ( echo "conf-file=$IPSETDIR/custom.conf" > $DNSMASQDIR/custom.conf )
 
     echo "all-servers" > $DNSMASQDIR/alls.conf
@@ -67,14 +78,15 @@ stop() {
     ipset -X gfwlist 2>/dev/null
     ipset -F gfwlist 2>/dev/null
     echo -n "Stopping $DESC: $NAME"
-    rm -rf $DNSMASQDIR/chdns.conf   2>/dev/null
-    rm -rf $DNSMASQDIR/ssdns.conf   2>/dev/null
-    rm -rf $DNSMASQDIR/ssrdns.conf  2>/dev/null
-    rm -rf $DNSMASQDIR/pdnsd.conf   2>/dev/null
-    rm -rf $DNSMASQDIR/adblock.conf 2>/dev/null
-    rm -rf $DNSMASQDIR/gfwlist.conf 2>/dev/null
-    rm -rf $DNSMASQDIR/custom.conf  2>/dev/null
-    rm -rf $DNSMASQDIR/alls.conf    2>/dev/null
+    rm -rf $DNSMASQDIR/chdns.conf     2>/dev/null
+    rm -rf $DNSMASQDIR/ssdns.conf     2>/dev/null
+    rm -rf $DNSMASQDIR/ssrdns.conf    2>/dev/null
+    rm -rf $DNSMASQDIR/pdnsd.conf     2>/dev/null
+    rm -rf $DNSMASQDIR/adblock.conf   2>/dev/null
+    rm -rf $DNSMASQDIR/gfwlist.conf   2>/dev/null
+    rm -rf $DNSMASQDIR/koolproxy.conf 2>/dev/null
+    rm -rf $DNSMASQDIR/custom.conf    2>/dev/null
+    rm -rf $DNSMASQDIR/alls.conf      2>/dev/null
     /etc/init.d/dnsmasq restart
     while iptables -t nat -D PREROUTING -p udp --dport 53 -j REDIRECT --to 53 2>/dev/null; do :; done
     while iptables -t mangle -D PREROUTING -p udp --dport 53 -j RETURN 2>/dev/null; do :; done
