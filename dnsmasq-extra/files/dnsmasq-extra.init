@@ -75,8 +75,11 @@ EOF
 }
 
 stop() {
-    ipset -X gfwlist 2>/dev/null
-    ipset -F gfwlist 2>/dev/null
+    ipset -F gfwlist   2>/dev/null
+    ipset -X gfwlist   2>/dev/null
+    ipset -F koolproxy 2>/dev/null
+    ipset -X koolproxy 2>/dev/null
+
     echo -n "Stopping $DESC: $NAME"
     rm -rf $DNSMASQDIR/chdns.conf     2>/dev/null
     rm -rf $DNSMASQDIR/ssdns.conf     2>/dev/null

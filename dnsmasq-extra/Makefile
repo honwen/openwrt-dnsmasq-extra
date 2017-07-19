@@ -16,7 +16,7 @@ define Package/dnsmasq-extra
 	SECTION:=net
 	CATEGORY:=Network
 	TITLE:=Dnsmasq-Extra
-	DEPENDS:=+dnsmasq-full
+	DEPENDS:=+dnsmasq-full +ipset
 	PKGARCH:=all
 endef
 
