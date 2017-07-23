@@ -4,12 +4,10 @@ START=69
 EXTRA_COMMANDS="rules update"
 
 NAME=Dnsmasq-Extra
-DESC="Dnsmasq-Extra"
 
-PDNSD=127.0.0.1#1053
-SSDNS=127.0.0.1#$(uci -q get shadowsocks.@port_forward[0].local_port)
-SSRDNS=127.0.0.1#$(uci -q get shadowsocksr.@port_forward[0].local_port)
-CHDNS=127.0.0.1#$(uci -q get chinadns.@chinadns[0].port)
+SSDNS="127.0.0.1#$(uci -q get shadowsocks.@port_forward[0].local_port)"
+SSRDNS="127.0.0.1#$(uci -q get shadowsocksr.@port_forward[0].local_port)"
+CHDNS="127.0.0.1#$(uci -q get chinadns.@chinadns[0].port)"
 BLOCK=0.0.0.0
 DNSMASQDIR=/var/dnsmasq.d
 IPSETDIR=/etc/dnsmasq-extra.d
@@ -18,29 +16,24 @@ USER=nobody
 GROUP=nogroup
 
 start() {
-    echo -n "Geneareting : $NAME"
+    echo -n "Geneareting : $NAME "
     mkdir -p $DNSMASQDIR
 
     [ -x /usr/bin/chinadns ] &&
-        echo -n " CHDNS   " && ( sed "s/^/server=\//;s/$/\/${CHDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/chdns.conf )
+        echo -n "CHDNS, " && ( sed "s/^/server=\//;s/$/\/${CHDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/chdns.conf )
 
     [ -x /usr/bin/ss-tunnel ] && [ "Z$(uci -q get shadowsocks.@port_forward[0].server)" != 'Znil' ] &&
-        echo -n " SSDNS   " && ( sed "s/^/server=\//;s/$/\/${SSDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/ssdns.conf )
+        echo -n "SSDNS, " && ( sed "s/^/server=\//;s/$/\/${SSDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/ssdns.conf )
 
     [ -x /usr/bin/ssr-tunnel ] && [ "Z$(uci -q get shadowsocksr.@port_forward[0].server)" != 'Znil' ] &&
-        echo -n " SSRDNS  " && ( sed "s/^/server=\//;s/$/\/${SSRDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/ssrdns.conf )
-
-    [ -x /usr/sbin/pdnsd ] &&
-        echo -n " PDNSD   " && ( sed "s/^/server=\//;s/$/\/${PDNSD}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/pdnsd.conf )
-
-    echo -n " ABDLOCK   " && ( sed "s/^/address=\//;s/$/\/${BLOCK}/" $IPSETDIR/adblock > $DNSMASQDIR/adblock.conf )
+        echo -n "SSRDNS, " && ( sed "s/^/server=\//;s/$/\/${SSRDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/ssrdns.conf )
 
     if [ 0 -lt $(cat /etc/config/shadowsocks* 2>/dev/null | grep -c 'flag_gfwlist') ]; then
-        echo -n " IPSET:gfwlist   " && ( sed "s/^/ipset=\//;s/$/\/gfwlist/" $IPSETDIR/gfwlist > $DNSMASQDIR/gfwlist.conf )
+        echo -n "IPSET:gfwlist, " && ( sed "s/^/ipset=\//;s/$/\/gfwlist/" $IPSETDIR/gfwlist > $DNSMASQDIR/gfwlist.conf )
 
         ipset -X gfwlist 2>/dev/null
         ipset -! -R <<-EOF 2>/dev/null
-        create gfwlist hash:ip
+        create gfwlist hash:ip hashsize 64
         flush gfwlist
         add gfwlist 8.8.8.8
         add gfwlist 168.95.1.1
@@ -56,17 +49,18 @@ EOF
     fi
 
     if [ -x /etc/init.d/koolproxy ]; then
-        echo -n " IPSET:koolproxy   " && ( sed "s/^/ipset=\//;s/$/\/koolproxy/" $IPSETDIR/koolproxy > $DNSMASQDIR/koolproxy.conf )
+        echo -n "IPSET:koolproxy, " && ( sed "s/^/ipset=\//;s/$/\/koolproxy/" $IPSETDIR/koolproxy > $DNSMASQDIR/koolproxy.conf )
 
         ipset -X koolproxy 2>/dev/null
         ipset -! -R <<-EOF 2>/dev/null
-        create koolproxy hash:ip
+        create koolproxy hash:ip hashsize 64
         flush koolproxy
         add koolproxy 61.160.200.252
 EOF
     fi
 
-    echo -n " CUSTOM   " && ( echo "conf-file=$IPSETDIR/custom.conf" > $DNSMASQDIR/custom.conf )
+    echo -n "ABDLOCK, " && ( sed "s/^/address=\//;s/$/\/${BLOCK}/" $IPSETDIR/adblock > $DNSMASQDIR/adblock.conf )
+    echo -n "CUSTOM" && ( echo "conf-file=$IPSETDIR/custom.conf" > $DNSMASQDIR/custom.conf )
 
     echo "all-servers" > $DNSMASQDIR/alls.conf
 
@@ -80,11 +74,10 @@ stop() {
     ipset -F koolproxy 2>/dev/null
     ipset -X koolproxy 2>/dev/null
 
-    echo -n "Stopping $DESC: $NAME"
+    echo -n "Stopping $NAME"
     rm -rf $DNSMASQDIR/chdns.conf     2>/dev/null
     rm -rf $DNSMASQDIR/ssdns.conf     2>/dev/null
     rm -rf $DNSMASQDIR/ssrdns.conf    2>/dev/null
-    rm -rf $DNSMASQDIR/pdnsd.conf     2>/dev/null
     rm -rf $DNSMASQDIR/adblock.conf   2>/dev/null
     rm -rf $DNSMASQDIR/gfwlist.conf   2>/dev/null
     rm -rf $DNSMASQDIR/koolproxy.conf 2>/dev/null
@@ -97,7 +90,7 @@ stop() {
 }
 
 restart() {
-    echo "Restarting $DESC: $NAME... "
+    echo "Restarting $NAME... "
     stop
     sleep 1
     start
