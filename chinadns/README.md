@@ -42,31 +42,14 @@ ChinaDNS for OpenWrt
 
    >ChinaDNS 的上游 DNS 服务器使用 DNS-Forwarder 即可, 配置方法参考 [Wiki][W]  
 
- - 更新 [/etc/chinadns_chnroute.txt][3]  
+ - 更新 /etc/chinadns_chnroute.txt  
    ```bash
-    wget -O- 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | awk -F\| '/CN\|ipv4/ { printf("%s/%d\n", $4, 32-log($5)/log(2)) }' > /etc/chinadns_chnroute.txt
+      /etc/init.d/chinadns update
    ```
-
-----------
-
- Name                     | Description
- -------------------------|-----------------------------------
- [openwrt-dnsmasq][6]     | Dnsmasq Patch & Makefile for OpenWrt
- [openwrt-shadowsocks][7] | Shadowsocks-libev for OpenWrt
- [openwrt-shadowvpn][5]   | ShadowVPN for OpenWrt
- [openwrt-dist-luci][L]   | LuCI Applications for OpenWrt-dist
- [openwrt-redsocks2][R]   | RedSocks2 for OpenWrt
 
 
  [1]: https://github.com/shadowsocks/ChinaDNS
  [2]: https://github.com/aa65535/openwrt-chinadns/releases/latest
- [3]: https://github.com/shadowsocks/ChinaDNS/blob/master/chnroute.txt
- [5]: https://github.com/aa65535/openwrt-shadowvpn
- [6]: https://github.com/aa65535/openwrt-dnsmasq
- [7]: https://github.com/shadowsocks/openwrt-shadowsocks
- [R]: https://github.com/aa65535/openwrt-redsocks2
- [L]: https://github.com/aa65535/openwrt-dist-luci
- [D]: https://github.com/aa65535/openwrt-dns-forwarder
  [W]: https://github.com/aa65535/openwrt-chinadns/wiki/Use-DNS-Forwarder
  [B]: https://img.shields.io/github/release/aa65535/openwrt-chinadns.svg
  [S]: https://wiki.openwrt.org/doc/howto/obtain.firmware.sdk
