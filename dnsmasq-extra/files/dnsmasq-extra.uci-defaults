@@ -13,4 +13,7 @@ uci -q batch <<-EOF >/dev/null
 	set firewall.dnsmasqextra.reload=1
 	commit firewall
 EOF
+
+mkdir -p /etc/dnsmasq.d/ &&
+	ln -sf /etc/dnsmasq-extra.d/custom.conf /etc/dnsmasq.d/dnsmasq-extra-custom.conf
 exit 0
