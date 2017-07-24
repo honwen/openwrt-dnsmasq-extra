@@ -1,0 +1,53 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+STOP=15
+
+NAME=cdns
+
+CONFIG=/var/etc/${NAME}.json
+
+start_instance() {
+	config_get_bool enable $1 enable
+	config_get listen_addr $1 listen_addr
+	config_get listen_port $1 listen_port
+	config_get dns_servers $1 dns_servers
+	config_get timeout $1 timeout
+
+	[ "$enable" = 1 ] || return
+
+	cat <<-EOF > $CONFIG
+		{
+		  "global": {
+		    "daemon": true,
+		    "log": "syslog:daemon",
+		    "log_debug": false
+		  },
+		  "cdns": {
+		    "listen_ip": "$listen_addr",
+		    "listen_port": $listen_port,
+		    "timeout": $timeout,
+		    "servers": [
+		      $(echo $dns_servers | sed 's/ /" }, { "ip_port": "/g; s/^/{ "ip_port": "/g; s/$/" }/g; s/, /,\n      /g')
+		    ]
+		  }
+		}
+EOF
+
+	/usr/bin/cdns -c $CONFIG
+}
+
+start() {
+	mkdir -p $(dirname $CONFIG)
+	config_load $NAME
+	config_foreach start_instance $NAME
+}
+
+kill_all() {
+	kill -9 $(pgrep -f $@) >/dev/null 2>&1
+}
+
+stop() {
+	kill_all /usr/bin/cdns
+	rm -f $CONFIG
+}
