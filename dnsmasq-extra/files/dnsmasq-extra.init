@@ -64,7 +64,7 @@ EOF
 
     echo "all-servers" > $DNSMASQDIR/alls.conf
 
-    /etc/init.d/dnsmasq restart && rules
+    ( /etc/init.d/dnsmasq restart >/dev/null 2>&1 ) && rules
     echo " ."
 }
 
@@ -83,7 +83,7 @@ stop() {
     rm -rf $DNSMASQDIR/koolproxy.conf 2>/dev/null
     rm -rf $DNSMASQDIR/custom.conf    2>/dev/null
     rm -rf $DNSMASQDIR/alls.conf      2>/dev/null
-    /etc/init.d/dnsmasq restart
+    ( /etc/init.d/dnsmasq restart >/dev/null 2>&1 )
     while iptables -t nat -D PREROUTING -p udp --dport 53 -j REDIRECT --to 53 2>/dev/null; do :; done
     while iptables -t mangle -D PREROUTING -p udp --dport 53 -j RETURN 2>/dev/null; do :; done
     echo " ."
