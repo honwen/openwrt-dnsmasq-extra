@@ -107,14 +107,19 @@ update(){
     [ "Z$oldHash" == "Z" -o "Z$newHash" == "Z" ] && return 1
     [ "$oldHash" == "$newHash" ] && echo "# $gfwfile NOT Needed Updated" && return 0
 
-    cp "${gfwfile}" "/tmp${gfwfile}"
+    gfwbak="/tmp/gfwlist.backup"
+    cp "${gfwfile}" "${gfwbak}"
     curl --connect-timeout 10 --max-time 60 -ksSL ${gfwsrc} -o ${gfwfile}
-    oldHash=$(md5sum $gfwfile | sed 's/ .*//g')
-    [ "Z$oldHash" == "Z$newHash" ] && echo "# $gfwfile Updated" && rm -f /tmp${gfwfile} && return 0
+    oldHash=$(md5sum "${gfwfile}" | sed 's/ .*//g')
+    [ "Z$oldHash" == "Z$newHash" ] && {
+        echo "# $gfwfile Updated"
+        rm -f "${gfwbak}"
+        return 0
+    }
 
     echo "# $gfwfile is broken, failsafe Now!"
     rm -f "${gfwfile}"
-    cp -f "/tmp${gfwfile}" "${gfwfile}" || cp -f "/rom${gfwfile}" "${gfwfile}"
+    cp -f "${gfwbak}" "${gfwfile}" || cp -f "/rom${gfwfile}" "${gfwfile}"
 }
 
 rules(){
