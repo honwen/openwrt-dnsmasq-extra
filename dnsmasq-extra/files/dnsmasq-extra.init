@@ -16,118 +16,118 @@ USER=nobody
 GROUP=nogroup
 
 start() {
-    echo -n "Geneareting : $NAME "
-    mkdir -p $DNSMASQDIR
+	echo -n "Geneareting : $NAME "
+	mkdir -p $DNSMASQDIR
 
-    [ -x /usr/bin/chinadns ] &&
-        echo -n "CHDNS, " && ( sed "s/^/server=\//;s/$/\/${CHDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/chdns.conf )
+	[ -x /usr/bin/chinadns ] &&
+		echo -n "CHDNS, " && ( sed "s/^/server=\//;s/$/\/${CHDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/chdns.conf )
 
-    [ -x /usr/bin/ss-tunnel ] && [ "Z$(uci -q get shadowsocks.@port_forward[0].server)" != 'Znil' ] &&
-        echo -n "SSDNS, " && ( sed "s/^/server=\//;s/$/\/${SSDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/ssdns.conf )
+	[ -x /usr/bin/ss-tunnel ] && [ "Z$(uci -q get shadowsocks.@port_forward[0].server)" != 'Znil' ] &&
+		echo -n "SSDNS, " && ( sed "s/^/server=\//;s/$/\/${SSDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/ssdns.conf )
 
-    [ -x /usr/bin/ssr-tunnel ] && [ "Z$(uci -q get shadowsocksr.@port_forward[0].server)" != 'Znil' ] &&
-        echo -n "SSRDNS, " && ( sed "s/^/server=\//;s/$/\/${SSRDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/ssrdns.conf )
+	[ -x /usr/bin/ssr-tunnel ] && [ "Z$(uci -q get shadowsocksr.@port_forward[0].server)" != 'Znil' ] &&
+		echo -n "SSRDNS, " && ( sed "s/^/server=\//;s/$/\/${SSRDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/ssrdns.conf )
 
-    if [ 0 -lt $(cat /etc/config/shadowsocks* 2>/dev/null | grep -c 'flag_gfwlist') ]; then
-        echo -n "IPSET:gfwlist, " && ( sed "s/^/ipset=\//;s/$/\/gfwlist/" $IPSETDIR/gfwlist > $DNSMASQDIR/gfwlist.conf )
+	if [ 0 -lt $(cat /etc/config/shadowsocks* 2>/dev/null | grep -c 'flag_gfwlist') ]; then
+		echo -n "IPSET:gfwlist, " && ( sed "s/^/ipset=\//;s/$/\/gfwlist/" $IPSETDIR/gfwlist > $DNSMASQDIR/gfwlist.conf )
 
-        ipset -X gfwlist 2>/dev/null
-        ipset -! -R <<-EOF 2>/dev/null
-        create gfwlist hash:ip hashsize 64
-        flush gfwlist
-        add gfwlist 8.8.8.8
-        add gfwlist 168.95.1.1
-        add gfwlist 202.14.67.4
-        add gfwlist 103.250.55.195
-        add gfwlist 91.108.4.0/22
-        add gfwlist 91.108.56.0/22
-        add gfwlist 109.239.140.0/24
-        add gfwlist 149.154.160.0/20
-        add gfwlist 203.208.32.0/19
-        $(sed -nr 's/([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+).*/\nadd gfwlist \1/;s/^.*\n//p' $IPSETDIR/gfwlist)
+		ipset -X gfwlist 2>/dev/null
+		ipset -! -R <<-EOF 2>/dev/null
+			create gfwlist hash:ip hashsize 64
+			flush gfwlist
+			add gfwlist 8.8.8.8
+			add gfwlist 168.95.1.1
+			add gfwlist 202.14.67.4
+			add gfwlist 103.250.55.195
+			add gfwlist 91.108.4.0/22
+			add gfwlist 91.108.56.0/22
+			add gfwlist 109.239.140.0/24
+			add gfwlist 149.154.160.0/20
+			add gfwlist 203.208.32.0/19
+			$(sed -nr 's/([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+).*/\nadd gfwlist \1/;s/^.*\n//p' $IPSETDIR/gfwlist)
 EOF
-    fi
+	fi
 
-    if [ -x /etc/init.d/koolproxy ]; then
-        echo -n "IPSET:koolproxy, " && ( sed "s/^/ipset=\//;s/$/\/koolproxy/" $IPSETDIR/koolproxy > $DNSMASQDIR/koolproxy.conf )
+	if [ -x /etc/init.d/koolproxy ]; then
+		echo -n "IPSET:koolproxy, " && ( sed "s/^/ipset=\//;s/$/\/koolproxy/" $IPSETDIR/koolproxy > $DNSMASQDIR/koolproxy.conf )
 
-        ipset -X koolproxy 2>/dev/null
-        ipset -! -R <<-EOF 2>/dev/null
-        create koolproxy hash:ip hashsize 64
-        flush koolproxy
-        add koolproxy 61.160.200.252
+		ipset -X koolproxy 2>/dev/null
+		ipset -! -R <<-EOF 2>/dev/null
+			create koolproxy hash:ip hashsize 64
+			flush koolproxy
+			add koolproxy 61.160.200.252
 EOF
-    fi
+	fi
 
-    echo -n "ABDLOCK, " && ( sed "s/^/address=\//;s/$/\/${BLOCK}/" $IPSETDIR/adblock > $DNSMASQDIR/adblock.conf )
-    echo -n "CUSTOM" && ( echo "conf-file=$IPSETDIR/custom.conf" > $DNSMASQDIR/custom.conf )
+	echo -n "ABDLOCK, " && ( sed "s/^/address=\//;s/$/\/${BLOCK}/" $IPSETDIR/adblock > $DNSMASQDIR/adblock.conf )
+	echo -n "CUSTOM" && ( echo "conf-file=$IPSETDIR/custom.conf" > $DNSMASQDIR/custom.conf )
 
-    echo "all-servers" > $DNSMASQDIR/alls.conf
+	echo "all-servers" > $DNSMASQDIR/alls.conf
 
-    ( /etc/init.d/dnsmasq restart >/dev/null 2>&1 ) && rules
-    echo " ."
+	( /etc/init.d/dnsmasq restart >/dev/null 2>&1 ) && rules
+	echo " ."
 }
 
 stop() {
-    ipset -F gfwlist   2>/dev/null
-    ipset -X gfwlist   2>/dev/null
-    ipset -F koolproxy 2>/dev/null
-    ipset -X koolproxy 2>/dev/null
+	ipset -F gfwlist   2>/dev/null
+	ipset -X gfwlist   2>/dev/null
+	ipset -F koolproxy 2>/dev/null
+	ipset -X koolproxy 2>/dev/null
 
-    echo -n "Stopping $NAME"
-    rm -rf $DNSMASQDIR/chdns.conf     2>/dev/null
-    rm -rf $DNSMASQDIR/ssdns.conf     2>/dev/null
-    rm -rf $DNSMASQDIR/ssrdns.conf    2>/dev/null
-    rm -rf $DNSMASQDIR/adblock.conf   2>/dev/null
-    rm -rf $DNSMASQDIR/gfwlist.conf   2>/dev/null
-    rm -rf $DNSMASQDIR/koolproxy.conf 2>/dev/null
-    rm -rf $DNSMASQDIR/custom.conf    2>/dev/null
-    rm -rf $DNSMASQDIR/alls.conf      2>/dev/null
-    ( /etc/init.d/dnsmasq restart >/dev/null 2>&1 )
-    while iptables -t nat -D PREROUTING -p udp --dport 53 -j REDIRECT --to 53 2>/dev/null; do :; done
-    while iptables -t mangle -D PREROUTING -p udp --dport 53 -j RETURN 2>/dev/null; do :; done
-    echo " ."
+	echo -n "Stopping $NAME"
+	rm -rf $DNSMASQDIR/chdns.conf	 2>/dev/null
+	rm -rf $DNSMASQDIR/ssdns.conf	 2>/dev/null
+	rm -rf $DNSMASQDIR/ssrdns.conf	2>/dev/null
+	rm -rf $DNSMASQDIR/adblock.conf   2>/dev/null
+	rm -rf $DNSMASQDIR/gfwlist.conf   2>/dev/null
+	rm -rf $DNSMASQDIR/koolproxy.conf 2>/dev/null
+	rm -rf $DNSMASQDIR/custom.conf	2>/dev/null
+	rm -rf $DNSMASQDIR/alls.conf	  2>/dev/null
+	( /etc/init.d/dnsmasq restart >/dev/null 2>&1 )
+	while iptables -t nat -D PREROUTING -p udp --dport 53 -j REDIRECT --to 53 2>/dev/null; do :; done
+	while iptables -t mangle -D PREROUTING -p udp --dport 53 -j RETURN 2>/dev/null; do :; done
+	echo " ."
 }
 
 restart() {
-    echo "Restarting $NAME... "
-    stop
-    sleep 1
-    start
+	echo "Restarting $NAME... "
+	stop
+	sleep 1
+	start
 }
 
 update(){
-    gfwfile='/etc/dnsmasq-extra.d/gfwlist'
-    gfwsrc='https://raw.githubusercontent.com/chenhw2/openwrt-dnsmasq-extra/master/dnsmasq-extra/files/gfwlist'
+	gfwfile='/etc/dnsmasq-extra.d/gfwlist'
+	gfwsrc='https://raw.githubusercontent.com/chenhw2/openwrt-dnsmasq-extra/master/dnsmasq-extra/files/gfwlist'
 
-    oldHash=$(md5sum $gfwfile | sed 's/ .*//g')
-    newHash=$(curl --connect-timeout 5 --max-time 20 -ksSL ${gfwsrc}.md5sum | sed 's/ .*//g')
+	oldHash=$(md5sum $gfwfile | sed 's/ .*//g')
+	newHash=$(curl --connect-timeout 5 --max-time 20 -ksSL ${gfwsrc}.md5sum | sed 's/ .*//g')
 
-    # echo $oldHash $newHash
-    [ "Z$oldHash" == "Z" -o "Z$newHash" == "Z" ] && return 1
-    [ "$oldHash" == "$newHash" ] && echo "# $gfwfile NOT Needed Updated" && return 0
+	# echo $oldHash $newHash
+	[ "Z$oldHash" == "Z" -o "Z$newHash" == "Z" ] && return 1
+	[ "$oldHash" == "$newHash" ] && echo "# $gfwfile NOT Needed Updated" && return 0
 
-    gfwbak="/tmp/gfwlist.backup"
-    cp "${gfwfile}" "${gfwbak}"
-    curl --connect-timeout 10 --max-time 60 -ksSL ${gfwsrc} -o ${gfwfile}
-    oldHash=$(md5sum "${gfwfile}" | sed 's/ .*//g')
-    [ "Z$oldHash" == "Z$newHash" ] && {
-        echo "# $gfwfile Updated"
-        rm -f "${gfwbak}"
-        return 0
-    }
+	gfwbak="/tmp/gfwlist.backup"
+	cp "${gfwfile}" "${gfwbak}"
+	curl --connect-timeout 10 --max-time 60 -ksSL ${gfwsrc} -o ${gfwfile}
+	oldHash=$(md5sum "${gfwfile}" | sed 's/ .*//g')
+	[ "Z$oldHash" == "Z$newHash" ] && {
+		echo "# $gfwfile Updated"
+		rm -f "${gfwbak}"
+		return 0
+	}
 
-    echo "# $gfwfile is broken, failsafe Now!"
-    rm -f "${gfwfile}"
-    cp -f "${gfwbak}" "${gfwfile}" || cp -f "/rom${gfwfile}" "${gfwfile}"
+	echo "# $gfwfile is broken, failsafe Now!"
+	rm -f "${gfwfile}"
+	cp -f "${gfwbak}" "${gfwfile}" || cp -f "/rom${gfwfile}" "${gfwfile}"
 }
 
 rules(){
-    while iptables -t nat -D PREROUTING -p udp --dport 53 -j REDIRECT --to 53 2>/dev/null; do :; done
-    while iptables -t mangle -D PREROUTING -p udp --dport 53 -j RETURN 2>/dev/null; do :; done
+	while iptables -t nat -D PREROUTING -p udp --dport 53 -j REDIRECT --to 53 2>/dev/null; do :; done
+	while iptables -t mangle -D PREROUTING -p udp --dport 53 -j RETURN 2>/dev/null; do :; done
 
-    [ -f $DNSMASQDIR/custom.conf ] || exit 0
+	[ -f $DNSMASQDIR/custom.conf ] || exit 0
 
-    iptables -t nat -I PREROUTING -p udp --dport 53 -j REDIRECT --to 53
-    iptables -t mangle -I PREROUTING -p udp --dport 53 -j RETURN
+	iptables -t nat -I PREROUTING -p udp --dport 53 -j REDIRECT --to 53
+	iptables -t mangle -I PREROUTING -p udp --dport 53 -j RETURN
 }
