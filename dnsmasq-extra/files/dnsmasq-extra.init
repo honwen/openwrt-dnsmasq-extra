@@ -5,15 +5,17 @@ EXTRA_COMMANDS="rules update"
 
 NAME=Dnsmasq-Extra
 
-SSDNS="127.0.0.1#$(uci -q get shadowsocks.@port_forward[0].local_port)"
-SSRDNS="127.0.0.1#$(uci -q get shadowsocksr.@port_forward[0].local_port)"
-CHDNS="127.0.0.1#$(uci -q get chinadns.@chinadns[0].port)"
+uci_get_by_type() {
+	local ret=$(uci get $1.@$2[0].$3 2>/dev/null)
+	echo ${ret:=$4}
+}
+
+SSDNS="127.0.0.1#$( uci_get_by_type shadowsocks  port_forward local_port 5300)"
+SSRDNS="127.0.0.1#$(uci_get_by_type shadowsocksr port_forward local_port 5300)"
+CHDNS="127.0.0.1#$(uci_get_by_type  chinadns     chinadns     port       2253)"
 BLOCK=0.0.0.0
 DNSMASQDIR=/var/dnsmasq.d
 IPSETDIR=/etc/dnsmasq-extra.d
-
-USER=nobody
-GROUP=nogroup
 
 start() {
 	echo -n "Geneareting : $NAME "
@@ -22,10 +24,10 @@ start() {
 	[ -x /usr/bin/chinadns ] &&
 		echo -n "CHDNS, " && ( sed "s/^/server=\//;s/$/\/${CHDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/chdns.conf )
 
-	[ -x /usr/bin/ss-tunnel ] && [ "Z$(uci -q get shadowsocks.@port_forward[0].server)" != 'Znil' ] &&
+	[ -x /usr/bin/ss-tunnel ] &&  [ "Z$(uci_get_by_type shadowsocks  port_forward server)" != 'Znil' ] &&
 		echo -n "SSDNS, " && ( sed "s/^/server=\//;s/$/\/${SSDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/ssdns.conf )
 
-	[ -x /usr/bin/ssr-tunnel ] && [ "Z$(uci -q get shadowsocksr.@port_forward[0].server)" != 'Znil' ] &&
+	[ -x /usr/bin/ssr-tunnel ] && [ "Z$(uci_get_by_type shadowsocksr port_forward server)" != 'Znil' ] &&
 		echo -n "SSRDNS, " && ( sed "s/^/server=\//;s/$/\/${SSRDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/ssrdns.conf )
 
 	if [ 0 -lt $(cat /etc/config/shadowsocks* 2>/dev/null | grep -c 'flag_gfwlist') ]; then
