@@ -66,6 +66,8 @@ EOF
 
 	echo "all-servers" > $DNSMASQDIR/alls.conf
 
+	sed '/\/\//d' -i $DNSMASQDIR/*
+
 	( /etc/init.d/dnsmasq restart >/dev/null 2>&1 ) && rules
 	echo " ."
 }
