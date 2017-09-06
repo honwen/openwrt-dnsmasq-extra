@@ -33,6 +33,12 @@ start() {
 	if [ 0 -lt $(cat /etc/config/shadowsocks* 2>/dev/null | grep -c 'flag_gfwlist') ]; then
 		echo -n "IPSET:gfwlist, " && ( sed "s/^/ipset=\//;s/$/\/gfwlist/" $IPSETDIR/gfwlist > $DNSMASQDIR/gfwlist.conf )
 
+	[ -x /usr/bin/ss-redir -o -x /usr/bin/ssr-redir ] &&
+			echo -n "IPSET:ss(r)_bp " && {
+				( sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/"  $IPSETDIR/direct >  $DNSMASQDIR/direct.conf )
+				( sed "s/^/ipset=\//;s/$/\/ssr_spec_dst_bp/" $IPSETDIR/direct >> $DNSMASQDIR/direct.conf )
+			}
+
 		ipset -X gfwlist 2>/dev/null
 		ipset -! -R <<-EOF 2>/dev/null
 			create gfwlist hash:ip hashsize 64
@@ -79,14 +85,15 @@ stop() {
 	ipset -X koolproxy 2>/dev/null
 
 	echo -n "Stopping $NAME"
-	rm -rf $DNSMASQDIR/chdns.conf	 2>/dev/null
-	rm -rf $DNSMASQDIR/ssdns.conf	 2>/dev/null
-	rm -rf $DNSMASQDIR/ssrdns.conf	2>/dev/null
+	rm -rf $DNSMASQDIR/chdns.conf     2>/dev/null
+	rm -rf $DNSMASQDIR/ssdns.conf     2>/dev/null
+	rm -rf $DNSMASQDIR/ssrdns.conf    2>/dev/null
 	rm -rf $DNSMASQDIR/adblock.conf   2>/dev/null
 	rm -rf $DNSMASQDIR/gfwlist.conf   2>/dev/null
+	rm -rf $DNSMASQDIR/direct.conf    2>/dev/null
 	rm -rf $DNSMASQDIR/koolproxy.conf 2>/dev/null
-	rm -rf $DNSMASQDIR/custom.conf	2>/dev/null
-	rm -rf $DNSMASQDIR/alls.conf	  2>/dev/null
+	rm -rf $DNSMASQDIR/custom.conf    2>/dev/null
+	rm -rf $DNSMASQDIR/alls.conf      2>/dev/null
 	( /etc/init.d/dnsmasq restart >/dev/null 2>&1 )
 	while iptables -t nat -D PREROUTING -p udp --dport 53 -j REDIRECT --to 53 2>/dev/null; do :; done
 	while iptables -t mangle -D PREROUTING -p udp --dport 53 -j RETURN 2>/dev/null; do :; done
