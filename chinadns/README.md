@@ -42,7 +42,7 @@ ChinaDNS for OpenWrt
 
    >ChinaDNS 的上游 DNS 服务器使用 DNS-Forwarder 即可, 配置方法参考 [Wiki][W]  
 
- - 更新 /etc/chinadns_chnroute.txt  
+ - 更新 [/etc/chinadns_chnroute.txt][3]  
    ```bash
       /etc/init.d/chinadns update
    ```
@@ -50,6 +50,8 @@ ChinaDNS for OpenWrt
 
  [1]: https://github.com/shadowsocks/ChinaDNS
  [2]: https://github.com/aa65535/openwrt-chinadns/releases/latest
+ [3]: https://github.com/shadowsocks/ChinaDNS/blob/master/chnroute.txt
+ [D]: https://github.com/aa65535/openwrt-dns-forwarder
  [W]: https://github.com/aa65535/openwrt-chinadns/wiki/Use-DNS-Forwarder
  [B]: https://img.shields.io/github/release/aa65535/openwrt-chinadns.svg
  [S]: https://wiki.openwrt.org/doc/howto/obtain.firmware.sdk
