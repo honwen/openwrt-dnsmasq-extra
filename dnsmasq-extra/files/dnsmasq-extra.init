@@ -108,29 +108,36 @@ restart() {
 }
 
 update(){
-	gfwfile='/etc/dnsmasq-extra.d/gfwlist'
-	gfwsrc='https://raw.githubusercontent.com/chenhw2/openwrt-dnsmasq-extra/master/dnsmasq-extra/files/gfwlist'
+	update_sub 'gfwfile'
+	update_sub 'direct'
+	update_sub 'koolproxy'
+}
 
-	oldHash=$(md5sum $gfwfile | sed 's/ .*//g')
-	newHash=$(curl --connect-timeout 5 --max-time 20 -ksSL ${gfwsrc}.md5sum | sed 's/ .*//g')
+update_sub(){
+	sub=$1
+	file="/etc/dnsmasq-extra.d/${sub}"
+	src="https://raw.githubusercontent.com/chenhw2/openwrt-dnsmasq-extra/master/dnsmasq-extra/files/${sub}"
+
+	oldHash=$(md5sum ${file} 2>/dev/null | sed 's/ .*//g')
+	newHash=$(curl --connect-timeout 5 --max-time 20 -ksSL ${src}.md5sum | sed 's/ .*//g')
 
 	# echo $oldHash $newHash
 	[ "Z$oldHash" == "Z" -o "Z$newHash" == "Z" ] && return 1
-	[ "$oldHash" == "$newHash" ] && echo "# $gfwfile NOT Needed Updated" && return 0
+	[ "$oldHash" == "$newHash" ] && echo "# $file NOT Needed Updated" && return 0
 
-	gfwbak="/tmp/gfwlist.backup"
-	cp "${gfwfile}" "${gfwbak}"
-	curl --connect-timeout 10 --max-time 60 -ksSL ${gfwsrc} -o ${gfwfile}
-	oldHash=$(md5sum "${gfwfile}" | sed 's/ .*//g')
+	bak="/tmp/${sub}.backup"
+	cp -f "${file}" "${bak}"
+	curl --connect-timeout 10 --max-time 60 -ksSL ${src} -o ${file}
+	oldHash=$(md5sum "${file}" | sed 's/ .*//g')
 	[ "Z$oldHash" == "Z$newHash" ] && {
-		echo "# $gfwfile Updated"
-		rm -f "${gfwbak}"
+		echo "# ${file} Updated"
+		rm -f "${bak}"
 		return 0
 	}
 
-	echo "# $gfwfile is broken, failsafe Now!"
-	rm -f "${gfwfile}"
-	cp -f "${gfwbak}" "${gfwfile}" || cp -f "/rom${gfwfile}" "${gfwfile}"
+	echo "# $file is broken, failsafe Now!"
+	rm -f "${file}"
+	cp -f "${bak}" "${file}" || cp -f "/rom${file}" "${file}"
 }
 
 rules(){
