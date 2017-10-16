@@ -116,7 +116,7 @@ update(){
 update_sub(){
 	sub=$1
 	file="/etc/dnsmasq-extra.d/${sub}"
-	src="https://raw.githubusercontent.com/chenhw2/openwrt-dnsmasq-extra/master/dnsmasq-extra/files/${sub}"
+	src="https://raw.githubusercontent.com/chenhw2/openwrt-dnsmasq-extra/master/dnsmasq-extra/files/data/${sub}"
 
 	oldHash=$(md5sum ${file} 2>/dev/null | sed 's/ .*//g')
 	newHash=$(curl --connect-timeout 5 --max-time 20 -ksSL ${src}.md5sum | sed 's/ .*//g')
