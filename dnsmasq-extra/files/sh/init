@@ -30,20 +30,20 @@ start() {
 	[ -x /usr/bin/ssr-tunnel ] && [ "Z$(uci_get_by_type shadowsocksr port_forward server)" != 'Znil' ] &&
 		echo -n "SSRDNS, " && ( sed "s/^/server=\//;s/$/\/${SSRDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/ssrdns.conf )
 
-	if [ 0 -lt $(cat /etc/config/shadowsocks* 2>/dev/null | grep -c 'flag_gfwlist') ]; then
-		echo -n "IPSET:gfwlist, " && ( sed "s/^/ipset=\//;s/$/\/gfwlist/" $IPSETDIR/gfwlist > $DNSMASQDIR/gfwlist.conf )
+	[ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* 2>/dev/null | grep -c 'chnroute') ] &&
+		echo -n "IPSET:ss(r)_bp for chnroute" && {
+			( sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/"  $IPSETDIR/direct >  $DNSMASQDIR/direct.conf )
+			( sed "s/^/ipset=\//;s/$/\/ssr_spec_dst_bp/" $IPSETDIR/direct >> $DNSMASQDIR/direct.conf )
+		}
 
-	[ -x /usr/bin/ss-redir -o -x /usr/bin/ssr-redir ] &&
-			echo -n "IPSET:ss(r)_bp " && {
-				( sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/"  $IPSETDIR/direct >  $DNSMASQDIR/direct.conf )
-				( sed "s/^/ipset=\//;s/$/\/ssr_spec_dst_bp/" $IPSETDIR/direct >> $DNSMASQDIR/direct.conf )
-			}
+	if [ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* 2>/dev/null | grep -c 'flag_gfwlist') ]; then
+		echo -n "IPSET:gfwlist, " && ( sed "s/^/ipset=\//;s/$/\/gfwlist/" $IPSETDIR/gfwlist > $DNSMASQDIR/gfwlist.conf )
 
 		ipset -X gfwlist 2>/dev/null
 		ipset -! -R <<-EOF 2>/dev/null
 			create gfwlist hash:ip hashsize 64
 			flush gfwlist
-			add gfwlist 8.8.8.8
+			add gfwlist 8.8.4.4
 			add gfwlist 168.95.1.1
 			add gfwlist 202.14.67.4
 			add gfwlist 103.250.55.195

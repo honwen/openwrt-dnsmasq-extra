@@ -23,7 +23,7 @@ start_instance() {
 	(	/usr/bin/dns-forwarder \
 		-b ${listen_addr:-0.0.0.0} \
 		-p ${listen_port:-5300} \
-		-s ${dns_servers:-8.8.8.8}
+		-s ${dns_servers:-8.8.4.4}
 	) &
 }
 
