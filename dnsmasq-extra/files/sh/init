@@ -31,7 +31,7 @@ start() {
 		echo -n "SSRDNS, " && ( sed "s/^/server=\//;s/$/\/${SSRDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/ssrdns.conf )
 
 	[ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* 2>/dev/null | grep -c 'chnroute') ] &&
-		echo -n "IPSET:ss(r)_bp for chnroute" && {
+		echo -n "IPSET:ss(r)_bp for chnroute, " && {
 			( sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/"  $IPSETDIR/direct >  $DNSMASQDIR/direct.conf )
 			( sed "s/^/ipset=\//;s/$/\/ssr_spec_dst_bp/" $IPSETDIR/direct >> $DNSMASQDIR/direct.conf )
 		}
@@ -108,7 +108,7 @@ restart() {
 }
 
 update(){
-	update_sub 'gfwfile'
+	update_sub 'gfwlist'
 	update_sub 'direct'
 	update_sub 'koolproxy'
 }
