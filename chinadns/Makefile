@@ -10,7 +10,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=ChinaDNS
 PKG_VERSION:=1.3.2
-PKG_RELEASE:=6
+PKG_RELEASE:=7
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/aa65535/openwrt-chinadns/releases/download/v$(PKG_VERSION)
@@ -64,7 +64,7 @@ endef
 define Package/ChinaDNS/install
 	$(INSTALL_DIR) $(1)/etc/init.d
 	$(INSTALL_BIN) ./files/chinadns.init $(1)/etc/init.d/chinadns
-	$(INSTALL_CONF) $(PKG_BUILD_DIR)/chnroute.txt $(1)/etc/chinadns_chnroute.txt
+	$(INSTALL_CONF) ./files/chnroute.txt $(1)/etc/chinadns_chnroute.txt
 	$(INSTALL_DIR) $(1)/etc/config
 	$(INSTALL_DATA) ./files/chinadns.config $(1)/etc/config/chinadns
 	$(INSTALL_DIR) $(1)/usr/bin
