@@ -8,8 +8,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cdns
-PKG_VERSION:=0.1.1
-PKG_RELEASE:=6ddb888e75934cff6fe5d038a7a8241f04437d5f
+PKG_VERSION:=2016-11-29
+PKG_RELEASE:=7f064d05516f511d80adc99ce831e187e2d0b35a
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE).tar.bz2
@@ -44,11 +44,6 @@ endef
 define Package/cdns/install
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/cdns $(1)/usr/bin
-	$(INSTALL_DIR) $(1)/etc/config
-	$(INSTALL_DATA) ./files/cdns.config $(1)/etc/config/cdns
-	$(INSTALL_DIR) $(1)/etc/cdns
-	$(INSTALL_DIR) $(1)/etc/init.d
-	$(INSTALL_BIN) ./files/cdns.init $(1)/etc/init.d/cdns
 endef
 
 $(eval $(call BuildPackage,cdns))
