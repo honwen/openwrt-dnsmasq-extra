@@ -17,8 +17,12 @@ uci_bool_by_type() {
 	return 1
 }
 
-kill_all() {
-	kill -9 $(pidof $@) >/dev/null 2>&1
+start_instance() {
+	procd_open_instance
+	procd_set_param respawn
+	procd_set_param stderr 1
+	procd_set_param command $@
+	procd_close_instance
 }
 
 service_triggers() {
@@ -27,6 +31,7 @@ service_triggers() {
 
 start_service() {
 	uci_bool_by_type $NAME enable || exit 0
+	mkdir -p /var/etc/
 
 	local alldns=$(uci_get_by_type $NAME cn_dns)
 	local subport=$(uci_get_by_type $NAME port)
@@ -34,23 +39,21 @@ start_service() {
 	for dns in $(uci_get_by_type $NAME ww_dns); do
 		let subport=$((subport + 1))
 		alldns="${alldns},127.0.0.1#${subport}"
-		subcdns="127.0.0.1:${subport} ${subcdns}"
-		dns-forwarder -b 0.0.0.0 -p $subport -s $dns &
+		subcdns="${subcdns} 127.0.0.1:${subport}"
+		start_instance /usr/bin/dns-forwarder -p $subport -s $dns
 	done
 
 	let subport=$((subport + 1))
 	alldns="${alldns},127.0.0.1#${subport}"
-	cat <<-EOF > /var/etc/cdns.json
+	cat <<-EOF > "/var/etc/${NAME}_cdns.json"
 	{
 	  "global": {
-	    "daemon": true,
-	    "log": "syslog:daemon",
-	    "log_debug": false
+	    "daemon": false,
+	    "log": "syslog:daemon"
 	  },
 	  "cdns": {
-	    "listen_ip": "0.0.0.0",
 	    "listen_port": $subport,
-	    "timeout": 3,
+	    "timeout": 2,
 	    "servers": [
 	      { "ip_port": "9.9.9.9:53" },
 	      $(echo $subcdns | sed 's/ /" }, { "ip_port": "/g; s/^/{ "ip_port": "/g; s/$/" }/g; s/, /,\n      /g')
@@ -58,21 +61,18 @@ start_service() {
 	  }
 	}
 EOF
-	cdns -c /var/etc/cdns.json
+	start_instance /usr/bin/cdns -c "/var/etc/${NAME}_cdns.json"
 
-	procd_open_instance
-	procd_set_param respawn
-	procd_set_param stderr 1
-	procd_set_param command /usr/bin/chinadns -m
-	procd_append_param command "-p" $(uci_get_by_type $NAME port)
-	procd_append_param command "-s" "$alldns"
-	procd_append_param command "-c" $(uci_get_by_type $NAME chnroute)
-	uci_bool_by_type $NAME bidirectional && procd_append_param command "-d"
-	procd_close_instance
+	chinadns_cmd="/usr/bin/chinadns -m"
+	uci_bool_by_type $NAME bidirectional && chinadns_cmd="$chinadns_cmd -d"
+	start_instance $chinadns_cmd \
+		-p $(uci_get_by_type $NAME port) \
+		-s "$alldns" \
+		-c $(uci_get_by_type $NAME chnroute)
 }
 
 stop_service() {
-	kill_all dns-forwarder cdns
+	rm -f "/var/etc/${NAME}_cdns.json"
 }
 
 update(){
@@ -89,7 +89,7 @@ update(){
 		echo "# $chnroute NOT Updated"
 	fi
 
-	if [ ! -f "$chnroute" ] || [ $(ls -l "$chnroute" | awk '{print $5}') -lt 4096 ];then
+	if [ ! -f "$chnroute" ] || [ $(ls -l "$chnroute" | awk '{print $5}') -lt 4096 ]; then
 		echo "# $chnroute is broken, failsafe Now!"
 		rm -f "$chnroute"
 		cp -f "/rom$chnroute" "$chnroute"
