@@ -1,8 +1,8 @@
-## chinadns@2053 with multidns/udp
-Recommend Upstream DNS for ChinaDNS
+## chinadns@7300 with multidns/udp
+Upstream DNS for ChinaDNS
 ```
-cdns@1953 with multidns@53/udp
-dns-forwarder@{1153,1253,1353,1453} with multidns@53/tcp
+cdns@730X with multidns/udp
+dns-forwarder@730X with multidns/tcp
 ```
 ----
 ## dnsmasq for adblock
