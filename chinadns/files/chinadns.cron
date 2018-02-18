@@ -1,2 +1,2 @@
 sed -i '/chinadns/d' /etc/crontabs/root
-echo '0 0 5 * * /etc/init.d/chinadns update' >> /etc/crontabs/root
+# echo '0 0 5 * * /etc/init.d/chinadns update' >> /etc/crontabs/root

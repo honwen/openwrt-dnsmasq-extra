@@ -35,33 +35,11 @@ start_service() {
 
 	local alldns=$(uci_get_by_type $NAME cn_dns)
 	local subport=$(uci_get_by_type $NAME port)
-	local subcdns=$(uci_get_by_type $NAME ww_dns)
 	for dns in $(uci_get_by_type $NAME ww_dns); do
 		let subport=$((subport + 1))
 		alldns="${alldns},127.0.0.1#${subport}"
-		subcdns="${subcdns} 127.0.0.1:${subport}"
 		start_instance /usr/bin/dns-forwarder -p $subport -s $dns
 	done
-
-	let subport=$((subport + 1))
-	alldns="${alldns},127.0.0.1#${subport}"
-	cat <<-EOF > "/var/etc/${NAME}_cdns.json"
-	{
-	  "global": {
-	    "daemon": false,
-	    "log": "syslog:daemon"
-	  },
-	  "cdns": {
-	    "listen_port": $subport,
-	    "timeout": 2,
-	    "servers": [
-	      { "ip_port": "9.9.9.9:53" },
-	      $(echo $subcdns | sed 's/ /" }, { "ip_port": "/g; s/^/{ "ip_port": "/g; s/$/" }/g; s/, /,\n      /g')
-	    ]
-	  }
-	}
-EOF
-	start_instance /usr/bin/cdns -c "/var/etc/${NAME}_cdns.json"
 
 	chinadns_cmd="/usr/bin/chinadns -m"
 	uci_bool_by_type $NAME bidirectional && chinadns_cmd="$chinadns_cmd -d"
@@ -79,10 +57,10 @@ update(){
 	chnroute=$(uci_get_by_type $NAME chnroute)
 	[ "Z$chnroute" != "Z" ] || return 0
 
-	chnsrc='https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt'
+	chnsrc='https://raw.githubusercontent.com/chenhw2/openwrt-dnsmasq-extra/tiny/chinadns/files/chnroute.txt'
 
 	echo "# $chnroute Updating"
-	curl --connect-timeout 10 --max-time 120 -ksSL $chnsrc -o $chnroute
+	busybox wget -T 30 -q -O $chnroute $chnsrc
 	if [ $? -eq 0 ]; then
 		echo "# $chnroute Updated"
 	else

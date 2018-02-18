@@ -129,16 +129,16 @@ restart() {
 update(){
 	update_sub 'gfwlist'
 	update_sub 'direct'
-	update_sub 'koolproxy'
+	# update_sub 'koolproxy'
 }
 
 update_sub(){
 	sub=$1
 	file="/etc/dnsmasq-extra.d/${sub}"
-	src="https://raw.githubusercontent.com/chenhw2/openwrt-dnsmasq-extra/master/dnsmasq-extra/files/data/${sub}"
+	src="https://raw.githubusercontent.com/chenhw2/openwrt-dnsmasq-extra/tiny/dnsmasq-extra/files/data/${sub}"
 
 	oldHash=$(md5sum ${file} 2>/dev/null | sed 's/ .*//g')
-	newHash=$(curl --connect-timeout 5 --max-time 20 -ksSL ${src}.md5sum | sed 's/ .*//g')
+	newHash=$(busybox wget -T 10 -qO- ${src}.md5sum | sed 's/ .*//g')
 
 	# echo $oldHash $newHash
 	[ "Z$oldHash" == "Z" -o "Z$newHash" == "Z" ] && return 1
@@ -146,7 +146,7 @@ update_sub(){
 
 	bak="/tmp/${sub}.backup"
 	cp -f "${file}" "${bak}"
-	curl --connect-timeout 10 --max-time 60 -ksSL ${src} -o ${file}
+	busybox wget -T 10 -q -O ${file} ${src}
 	oldHash=$(md5sum "${file}" | sed 's/ .*//g')
 	[ "Z$oldHash" == "Z$newHash" ] && {
 		echo "# ${file} Updated"

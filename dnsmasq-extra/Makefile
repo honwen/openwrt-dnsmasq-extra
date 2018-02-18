@@ -6,7 +6,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dnsmasq-extra
 PKG_VERSION:=0.3.7
-PKG_RELEASE:=1
+PKG_RELEASE:=Tiny
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
@@ -16,7 +16,7 @@ define Package/dnsmasq-extra
 	SECTION:=net
 	CATEGORY:=Network
 	TITLE:=Dnsmasq-Extra
-	DEPENDS:=+dnsmasq-full +ipset +curl
+	DEPENDS:=+dnsmasq-full +ipset
 	PKGARCH:=all
 endef
 
