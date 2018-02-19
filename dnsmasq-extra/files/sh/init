@@ -10,6 +10,13 @@ uci_get_by_type() {
 	echo ${ret:=$4}
 }
 
+uci_bool_by_type() {
+	case "$(uci_get_by_type $1 $2 $3)" in
+		1|on|true|yes|enabled) return 0;;
+	esac
+	return 1
+}
+
 SSDNS="127.0.0.1#$( uci_get_by_type shadowsocks  port_forward local_port 5300)"
 SSRDNS="127.0.0.1#$(uci_get_by_type shadowsocksr port_forward local_port 5300)"
 CHDNS="127.0.0.1#$(uci_get_by_type  chinadns     chinadns     port       2253)"
@@ -71,7 +78,7 @@ start() {
 EOF
 	fi
 
-	if [ -x /etc/init.d/koolproxy ]; then
+	if $(uci_bool_by_type koolproxy general enable); then
 		echo -n "IPSET:koolproxy, " && ( sed "s/^/ipset=\//;s/$/\/koolproxy/" $IPSETDIR/koolproxy > $DNSMASQDIR/koolproxy.conf )
 
 		ipset -X koolproxy 2>/dev/null
