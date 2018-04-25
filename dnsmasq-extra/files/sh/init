@@ -50,6 +50,7 @@ start() {
 		ipset -! -R <<-EOF 2>/dev/null
 			create gfwlist hash:net hashsize 64
 			flush gfwlist
+			add gfwlist 1.0.0.1
 			add gfwlist 8.8.4.4
 			add gfwlist 168.95.1.1
 			add gfwlist 202.14.67.4

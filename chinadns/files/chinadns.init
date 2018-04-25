@@ -56,6 +56,10 @@ start_service() {
 	    "timeout": 2,
 	    "servers": [
 	      { "ip_port": "9.9.9.9:53" },
+	      { "ip_port": "80.80.80.80:53" },
+	      { "ip_port": "101.132.183.99:53" },
+	      { "ip_port": "193.112.15.186:53" },
+	      { "ip_port": "193.112.15.186:2323" },
 	      $(echo $subcdns | sed 's/ /" }, { "ip_port": "/g; s/^/{ "ip_port": "/g; s/$/" }/g; s/, /,\n      /g')
 	    ]
 	  }
