@@ -16,7 +16,7 @@ index 061c139..245f376 100644
  
  // avoid malloc and free
 -#define BUF_SIZE 512
-+#define BUF_SIZE 1024
++#define BUF_SIZE 4096
  static char global_buf[BUF_SIZE];
  static char compression_buf[BUF_SIZE];
  static int verbose = 0;
