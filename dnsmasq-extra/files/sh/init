@@ -1,4 +1,5 @@
 #!/bin/sh /etc/rc.common
+# Copyright (C) 2018 chenhw2 <https://github.com/chenhw2>
 
 START=69
 EXTRA_COMMANDS="rules update"
@@ -29,7 +30,11 @@ start() {
 	mkdir -p $DNSMASQDIR
 
 	[ -x /usr/bin/chinadns ] &&
-		echo -n "CHDNS, " && ( sed "s/^/server=\//;s/$/\/${CHDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/chdns.conf )
+		echo -n "CHDNS, " && {
+			sed "s/^/server=\//;s/$/\/${CHDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/chdns.conf
+			head -n 20 /etc/init.d/shadowsocks* 2>/dev/null | sed -n 's/^WATCHDOG_ENDPOINT=//p' | tr -d "'" | sort -u |
+				sed "s/^/server=\//;s/$/\/${CHDNS}/" >> $DNSMASQDIR/chdns.conf
+		}
 
 	[ -x /usr/bin/ss-tunnel ] &&  [ "Z$(uci_get_by_type shadowsocks  port_forward server)" != 'Znil' ] &&
 		echo -n "SSDNS, " && ( sed "s/^/server=\//;s/$/\/${SSDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/ssdns.conf )

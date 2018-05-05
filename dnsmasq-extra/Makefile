@@ -1,12 +1,12 @@
 #
-# Copyright (C) 2016 chenhw2
+# Copyright (C) 2018 chenhw2 <https://github.com/chenhw2>
 #
 
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dnsmasq-extra
 PKG_VERSION:=0.3.7
-PKG_RELEASE:=2
+PKG_RELEASE:=3
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
