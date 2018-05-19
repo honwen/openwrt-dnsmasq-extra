@@ -1,0 +1,72 @@
+#!/bin/sh /etc/rc.common
+
+START=92
+NAME=dnscrypt
+USE_PROCD=1
+
+uci_get_by_type() {
+	local ret=$(uci get $NAME.@$1[0].$2 2>/dev/null)
+	echo ${ret:=$3}
+}
+
+uci_bool_by_type() {
+	case "$(uci_get_by_type $1 $2)" in
+		1|on|true|yes|enabled) return 0;;
+	esac
+	return 1
+}
+
+start_instance() {
+	procd_open_instance
+	procd_set_param respawn
+	procd_set_param stderr 1
+	procd_set_param command $@
+	procd_close_instance
+}
+
+service_triggers() {
+	procd_add_reload_trigger $NAME
+}
+
+start_service() {
+	uci_bool_by_type $NAME enable || exit 0
+	mkdir -p /var/etc/
+	[ -f /var/etc/public-resolvers.md ] || cp -f /etc/dnscrypt-init-resolvers.md /var/etc/public-resolvers.md
+
+	local port=$(uci_get_by_type $NAME port 7400)
+
+	cat <<-EOF > "/var/etc/${NAME}.toml"
+listen_addresses = ['0.0.0.0:${port}']
+max_clients = 250
+ipv4_servers = true
+doh_servers = true
+force_tcp = false
+timeout = 2500
+keepalive = 30
+cert_refresh_delay = 240
+fallback_resolver = '9.9.9.9:53'
+ignore_system_dns = true
+netprobe_timeout = 30
+use_syslog = true
+block_ipv6 = $(uci_bool_by_type $NAME block_ipv6 && echo -n true || echo -n false)
+cache = $(uci_bool_by_type $NAME local_cache && echo -n true || echo -n false)
+cache_size = 512
+cache_min_ttl = 600
+cache_max_ttl = 86400
+cache_neg_min_ttl = 60
+cache_neg_max_ttl = 600
+
+[sources]
+  [sources.'public-resolvers']
+  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/public-resolvers.md', 'https://download.dnscrypt.info/resolvers-list/v2/public-resolvers.md']
+  cache_file = '/var/etc/public-resolvers.md'
+  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+  refresh_delay = 72
+  prefix = ''
+EOF
+	start_instance /usr/bin/$NAME -config "/var/etc/${NAME}.toml"
+}
+
+stop_service() {
+	rm -f "/var/etc/${NAME}.toml"
+}
