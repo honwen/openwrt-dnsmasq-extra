@@ -5,8 +5,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dnsmasq-extra
-PKG_VERSION:=0.3.7
-PKG_RELEASE:=3
+PKG_VERSION:=0.4.0
+PKG_RELEASE:=1
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
@@ -60,7 +60,7 @@ define Package/dnsmasq-extra/install
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
 	$(INSTALL_BIN) ./files/sh/uci-defaults $(1)/etc/uci-defaults/dnsmasq-extra
 	$(INSTALL_DIR) $(1)/etc/dnsmasq-extra.d
-	$(INSTALL_DATA) ./files/data/{gfwlist,tldn,direct,adblock,koolproxy,custom.conf} $(1)/etc/dnsmasq-extra.d/
+	$(INSTALL_DATA) ./files/data/{gfwlist,tldn,direct,adblock,koolproxy,custom.conf,chnroute.txt} $(1)/etc/dnsmasq-extra.d/
 endef
 
 $(eval $(call BuildPackage,dnsmasq-extra))

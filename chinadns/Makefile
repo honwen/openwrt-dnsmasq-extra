@@ -41,36 +41,13 @@ define Package/ChinaDNS/description
 Protect yourself against DNS poisoning in China.
 endef
 
-define Package/ChinaDNS/postinst
-#!/bin/sh
-if [ -z "$${IPKG_INSTROOT}" -a -f /etc/uci-defaults/cron-chinadns ]; then
-	( . /etc/uci-defaults/cron-chinadns ) && \
-	rm -f /etc/uci-defaults/cron-chinadns
-fi
-exit 0
-endef
-
-define Package/ChinaDNS/postrm
-#!/bin/sh
-sed -i '/chinadns/d' /etc/crontabs/root
-exit 0
-endef
-
-define Package/ChinaDNS/conffiles
-/etc/config/chinadns
-/etc/chinadns_chnroute.txt
-endef
-
 define Package/ChinaDNS/install
 	$(INSTALL_DIR) $(1)/etc/init.d
 	$(INSTALL_BIN) ./files/chinadns.init $(1)/etc/init.d/chinadns
-	$(INSTALL_CONF) ./files/chnroute.txt $(1)/etc/chinadns_chnroute.txt
 	$(INSTALL_DIR) $(1)/etc/config
 	$(INSTALL_DATA) ./files/chinadns.config $(1)/etc/config/chinadns
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/chinadns $(1)/usr/bin
-	$(INSTALL_DIR) $(1)/etc/uci-defaults
-	$(INSTALL_BIN) ./files/chinadns.cron $(1)/etc/uci-defaults/cron-chinadns
 endef
 
 $(eval $(call BuildPackage,ChinaDNS))
