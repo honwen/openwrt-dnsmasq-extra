@@ -24,12 +24,6 @@ define Package/dnsmasq-extra/description
 	Dnsmasq-Extra include gfwlist, adblock & tldn
 endef
 
-define Build/Prepare
-endef
-
-define Build/Configure
-endef
-
 define Build/Compile
 endef
 
@@ -52,6 +46,7 @@ endef
 
 define Package/dnsmasq-extra/conffiles
 	/etc/dnsmasq-extra.d/custom.conf
+	/etc/dnsmasq-extra.d/chnroute.txt
 endef
 
 define Package/dnsmasq-extra/install

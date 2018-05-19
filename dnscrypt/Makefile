@@ -24,15 +24,8 @@ define Package/dnscrypt/description
 	A flexible DNS proxy, with support for encrypted DNS protocols.
 endef
 
-define Package/dnscrypt/conffiles
-/etc/config/dnscrypt
-endef
-
-define Build/Prepare
-	gzip -dc "$(DL_DIR)/$(PKG_SOURCE)" | tar -C $(PKG_BUILD_DIR)/ -xf -
-endef
-
 define Build/Compile
+	gzip -dc "$(DL_DIR)/$(PKG_SOURCE)" | tar -C $(PKG_BUILD_DIR)/ -xf -
 endef
 
 define Package/dnscrypt/install
