@@ -1,4 +1,5 @@
 #!/bin/sh /etc/rc.common
+# Copyright (C) 2018 chenhw2 <https://github.com/chenhw2>
 
 START=69
 EXTRA_COMMANDS="rules update"
@@ -17,9 +18,10 @@ uci_bool_by_type() {
 	return 1
 }
 
-SSDNS="127.0.0.1#$( uci_get_by_type shadowsocks  port_forward local_port 5300)"
-SSRDNS="127.0.0.1#$(uci_get_by_type shadowsocksr port_forward local_port 5300)"
-CHDNS="127.0.0.1#$(uci_get_by_type  chinadns     chinadns     port       2253)"
+SSDNS="127.0.0.1#$( uci_get_by_type shadowsocks   port_forward  local_port  5300)"
+SSRDNS="127.0.0.1#$(uci_get_by_type shadowsocksr  port_forward  local_port  5300)"
+CHDNS="127.0.0.1#$(uci_get_by_type  chinadns      chinadns      port        7300)"
+DNSCPT="127.0.0.1#$(uci_get_by_type dnscrypt      dnscrypt      port        7400)"
 BLOCK=0.0.0.0
 DNSMASQDIR=/var/dnsmasq.d
 IPSETDIR=/etc/dnsmasq-extra.d
@@ -29,7 +31,18 @@ start() {
 	mkdir -p $DNSMASQDIR
 
 	[ -x /usr/bin/chinadns ] &&
-		echo -n "CHDNS, " && ( sed "s/^/server=\//;s/$/\/${CHDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/chdns.conf )
+		echo -n "CHDNS, " && {
+			sed "s/^/server=\//;s/$/\/${CHDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/chdns.conf
+			head -n 20 /etc/init.d/shadowsocks* 2>/dev/null | sed -n 's/^WATCHDOG_ENDPOINT=//p' | tr -d "'" | sort -u |
+				sed "s/^/server=\//;s/$/\/${CHDNS}/" >> $DNSMASQDIR/chdns.conf
+		}
+
+	[ -x /usr/bin/dnscrypt ] &&
+		echo -n "DNSCPT, " && {
+			sed "s/^/server=\//;s/$/\/${DNSCPT}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/dnscpt.conf
+			head -n 20 /etc/init.d/shadowsocks* 2>/dev/null | sed -n 's/^WATCHDOG_ENDPOINT=//p' | tr -d "'" | sort -u |
+				sed "s/^/server=\//;s/$/\/${DNSCPT}/" >> $DNSMASQDIR/dnscpt.conf
+		}
 
 	[ -x /usr/bin/ss-tunnel ] &&  [ "Z$(uci_get_by_type shadowsocks  port_forward server)" != 'Znil' ] &&
 		echo -n "SSDNS, " && ( sed "s/^/server=\//;s/$/\/${SSDNS}/" $IPSETDIR/gfwlist $IPSETDIR/tldn > $DNSMASQDIR/ssdns.conf )
@@ -41,6 +54,8 @@ start() {
 		echo -n "IPSET:ss(r)_bp for chnroute, " && {
 			( sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/"  $IPSETDIR/direct >  $DNSMASQDIR/direct.conf )
 			( sed "s/^/ipset=\//;s/$/\/ssr_spec_dst_bp/" $IPSETDIR/direct >> $DNSMASQDIR/direct.conf )
+			echo 'ipset=/cloudflare-dns.com/ss_spec_dst_sp'  >> $DNSMASQDIR/direct.conf
+			echo 'ipset=/cloudflare-dns.com/ssr_spec_dst_sp' >> $DNSMASQDIR/direct.conf
 		}
 
 	if [ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* 2>/dev/null | grep -c 'flag_gfwlist') ]; then
@@ -95,7 +110,7 @@ EOF
 
 	echo "all-servers" > $DNSMASQDIR/alls.conf
 
-	sed '/\/\//d' -i $DNSMASQDIR/*
+	sed '/\/\//d; /[0-9]\/[0-9]/d' -i $DNSMASQDIR/*
 
 	( /etc/init.d/dnsmasq restart >/dev/null 2>&1 ) && rules
 	echo " ."
@@ -109,6 +124,7 @@ clean_dir() {
 
 	echo -n "Stopping $NAME"
 	rm -rf $DNSMASQDIR/chdns.conf     2>/dev/null
+	rm -rf $DNSMASQDIR/dnscpt.conf    2>/dev/null
 	rm -rf $DNSMASQDIR/ssdns.conf     2>/dev/null
 	rm -rf $DNSMASQDIR/ssrdns.conf    2>/dev/null
 	rm -rf $DNSMASQDIR/adblock.conf   2>/dev/null
@@ -138,6 +154,7 @@ update(){
 	update_sub 'gfwlist'
 	update_sub 'direct'
 	update_sub 'koolproxy'
+	update_chn
 }
 
 update_sub(){
@@ -165,6 +182,27 @@ update_sub(){
 	echo "# $file is broken, failsafe Now!"
 	rm -f "${file}"
 	cp -f "${bak}" "${file}" || cp -f "/rom${file}" "${file}"
+}
+
+update_chn(){
+	chnroute=/etc/dnsmasq-extra.d/chnroute.txt
+	[ "Z$chnroute" != "Z" ] || return 0
+
+	chnsrc='https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt'
+
+	echo "# $chnroute Updating"
+	curl --connect-timeout 10 --max-time 120 -ksSL $chnsrc -o $chnroute
+	if [ $? -eq 0 ]; then
+		echo "# $chnroute Updated"
+	else
+		echo "# $chnroute NOT Updated"
+	fi
+
+	if [ ! -f "$chnroute" ] || [ $(ls -l "$chnroute" | awk '{print $5}') -lt 4096 ]; then
+		echo "# $chnroute is broken, failsafe Now!"
+		rm -f "$chnroute"
+		cp -f "/rom$chnroute" "$chnroute"
+	fi
 }
 
 rules(){

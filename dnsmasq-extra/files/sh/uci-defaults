@@ -16,4 +16,8 @@ EOF
 
 mkdir -p /etc/dnsmasq.d/ &&
 	ln -sf /etc/dnsmasq-extra.d/custom.conf /etc/dnsmasq.d/dnsmasq-extra-custom.conf
+
+[ -f /etc/chinadns_chnroute.txt ] ||
+	ln -sf /etc/dnsmasq-extra.d/chnroute.txt /etc/chinadns_chnroute.txt
+
 exit 0
