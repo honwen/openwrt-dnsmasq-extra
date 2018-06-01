@@ -4,6 +4,8 @@ START=92
 NAME=dnscrypt
 USE_PROCD=1
 
+CRON_FILE=/etc/crontabs/root
+
 uci_get_by_type() {
 	local ret=$(uci get $NAME.@$1[0].$2 2>/dev/null)
 	echo ${ret:=$3}
@@ -30,6 +32,8 @@ service_triggers() {
 
 start_service() {
 	uci_bool_by_type $NAME enable || exit 0
+	add_cron
+
 	mkdir -p /var/etc/
 	[ -f /var/etc/public-resolvers.md ] || cp -f /etc/dnscrypt-init-resolvers.md /var/etc/public-resolvers.md
 
@@ -37,17 +41,17 @@ start_service() {
 
 	cat <<-EOF > "/var/etc/${NAME}.toml"
 listen_addresses = ['0.0.0.0:${port}']
-max_clients = 250
+max_clients = 120
 ipv4_servers = true
+dnscrypt_servers = true
 doh_servers = true
 force_tcp = false
-timeout = 2500
+timeout = $(uci_get_by_type $NAME timeout 2500)
 keepalive = 30
 cert_refresh_delay = 240
-fallback_resolver = '9.9.9.9:53'
+tls_cipher_suite = [52392, 49199]
+fallback_resolver = '$(uci_get_by_type $NAME fallback_resolver 9.9.9.9:53)'
 ignore_system_dns = true
-netprobe_timeout = 30
-use_syslog = true
 block_ipv6 = $(uci_bool_by_type $NAME block_ipv6 && echo -n true || echo -n false)
 cache = $(uci_bool_by_type $NAME local_cache && echo -n true || echo -n false)
 cache_size = 512
@@ -58,15 +62,29 @@ cache_neg_max_ttl = 600
 
 [sources]
   [sources.'public-resolvers']
-  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/public-resolvers.md', 'https://download.dnscrypt.info/resolvers-list/v2/public-resolvers.md']
+  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/public-resolvers.md', 'https://www.evilvibes.com/list/public-resolvers.md']
   cache_file = '/var/etc/public-resolvers.md'
   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
   refresh_delay = 72
   prefix = ''
 EOF
-	start_instance /usr/bin/$NAME -config "/var/etc/${NAME}.toml"
+	start_instance /usr/bin/$NAME \
+		-config "/var/etc/${NAME}.toml" \
+		-syslog
 }
 
 stop_service() {
+	del_cron
 	rm -f "/var/etc/${NAME}.toml"
+}
+
+add_cron() {
+	sed -i "/${NAME}/d" $CRON_FILE
+	echo "*    *    * * * /usr/bin/pgrep -f ${NAME}.toml || /etc/init.d/${NAME} restart" >> $CRON_FILE
+	/etc/init.d/cron restart
+}
+
+del_cron() {
+	sed -i "/${NAME}/d" $CRON_FILE
+	/etc/init.d/cron restart
 }
