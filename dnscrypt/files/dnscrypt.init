@@ -35,7 +35,7 @@ start_service() {
 	add_cron
 
 	mkdir -p /var/etc/
-	[ -f /var/etc/public-resolvers.md ] || cp -f /etc/dnscrypt-init-resolvers.md /var/etc/public-resolvers.md
+	[ -e /var/etc/dnscrypt.d ] || cp -rf /etc/dnscrypt.d /var/etc/
 
 	local port=$(uci_get_by_type $NAME port 7400)
 
@@ -43,8 +43,8 @@ start_service() {
 listen_addresses = ['0.0.0.0:${port}']
 max_clients = 120
 ipv4_servers = true
-dnscrypt_servers = true
-doh_servers = true
+dnscrypt_servers = $(uci_bool_by_type $NAME enable_dnscrypt && echo -n true || echo -n false)
+doh_servers = $(uci_bool_by_type $NAME enable_doh && echo -n true || echo -n false)
 force_tcp = false
 timeout = $(uci_get_by_type $NAME timeout 2500)
 keepalive = 30
@@ -63,10 +63,15 @@ cache_neg_max_ttl = 600
 [sources]
   [sources.'public-resolvers']
   urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/public-resolvers.md', 'https://www.evilvibes.com/list/public-resolvers.md']
-  cache_file = '/var/etc/public-resolvers.md'
+  cache_file = '/var/etc/dnscrypt.d/public-resolvers.md'
   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
   refresh_delay = 72
   prefix = ''
+
+[static]
+$(for static in $(uci_get_by_type $NAME statics); do
+  echo "$static" | sed "s#\(.*\)@\(sdns.*\)#  [static.'\1']\n    stamp = '\2'#g"
+done)
 EOF
 	start_instance /usr/bin/$NAME \
 		-config "/var/etc/${NAME}.toml" \

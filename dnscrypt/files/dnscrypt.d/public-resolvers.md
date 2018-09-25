@@ -604,10 +604,17 @@ sdns://AQcAAAAAAAAAEjM1LjIwMS4yMC4xNzk6ODQ0MyDbu252PopUsAoQmpOFc8eYC4rkr2nWINwVQ
 
 ## publicarray-au-doh
 
+DNSSEC • OpenNic • Non-logging • Uncensored - hosted on vultr.com
+Maintained by publicarray
+
+sdns://AgcAAAAAAAAADDQ1Ljc2LjExMy4zMSA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBBkb2guc2VieS5pbzo4NDQzCi9kbnMtcXVlcnk
+
+## publicarray-au2-doh
+
 DNSSEC • OpenNic • Non-logging • Uncensored - hosted on GCP
 Maintained by publicarray
 
-sdns://AgcAAAAAAAAAETM1LjIwMS4yMC4xNzk6NDQzAAtkb2guc2VieS5pbwovZG5zLXF1ZXJ5
+sdns://AgcAAAAAAAAADTM1LjIwMS4yMC4xNzkgPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgPZG9oLnNlYnkuaW86NDQzCi9kbnMtcXVlcnk
 
 ## qag.me
 
@@ -617,13 +624,45 @@ Maintained by Cruisemaniac (https://cruisemaniac.com) aka Ashwin Murali.
 
 sdns://AQcAAAAAAAAAEjEwNi41MS4xMjguNzg6NDQzNCDrpsCqF14emkVAo_yJi9T2xxp5KmXhlGtbTL1R-5vVLhYyLmRuc2NyeXB0LWNlcnQucWFnLm1l
 
+## quad9-ip4-filter-pri
+Quad9 (anycast) dnssec/no-log/filter 9.9.9.9
+sdns://AQMAAAAAAAAADDkuOS45Ljk6ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0
+
+## quad9-ip4-filter-alt
+Quad9 (anycast) dnssec/no-log/filter 149.112.112.112
+sdns://AQMAAAAAAAAAFDE0OS4xMTIuMTEyLjExMjo4NDQzIGfIR7jIdYzRICRVQ751Z0bfNN8dhMALjEcDaN-CHYY-GTIuZG5zY3J5cHQtY2VydC5xdWFkOS5uZXQ
+
+## quad9-ip4-nofilter-pri
+Quad9 (anycast) no-dnssec/no-log/no-filter 9.9.9.10
+sdns://AQYAAAAAAAAADTkuOS45LjEwOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA
+
+## quad9-ip4-nofilter-alt
+Quad9 (anycast) no-dnssec/no-log/no-filter 149.112.112.10
+sdns://AQYAAAAAAAAAEzE0OS4xMTIuMTEyLjEwOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA
+
+## quad9-ip6-filter-pri
+Quad9 (anycast) dnssec/no-log/filter 2620:fe::fe
+sdns://AQMAAAAAAAAAElsyNjIwOmZlOjpmZV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0
+
+## quad9-ip6-filter-alt
+Quad9 (anycast) dnssec/no-log/filter 2620:fe::9
+sdns://AQMAAAAAAAAAEVsyNjIwOmZlOjo5XTo4NDQzIGfIR7jIdYzRICRVQ751Z0bfNN8dhMALjEcDaN-CHYY-GTIuZG5zY3J5cHQtY2VydC5xdWFkOS5uZXQ
+
+## quad9-ip6-nofilter-pri
+Quad9 (anycast) no-dnssec/no-log/no-filter 2620:fe::10
+sdns://AQYAAAAAAAAAElsyNjIwOmZlOjoxMF06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0
+
+## quad9-ip6-nofilter-alt
+Quad9 (anycast) no-dnssec/no-log/no-filter 2620:fe::fe:10
+sdns://AQYAAAAAAAAAFVsyNjIwOmZlOjpmZToxMF06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0
+
 ## qualityology.com
 
 Non-logging, non-filtering, DNSSEC validating server in Mountain View,
 California.
 Maintained by Evan Xu (@ex-git)
 
-sdns://AQcAAAAAAAAAEzEwNC4xOTguMTEwLjExNTo0NDMgg2u3HcgDDo2XsrKL05-UK3r6Z7RGMKwymuTIQ4fQZegkMi5kbnNjcnlwdC1jZXJ0LmRucy5xdWFsaXR5b2xvZ3kuY29t
+sdns://AQcAAAAAAAAAEzE5OC4xNDguMTA1LjIwNjo4NTMgcLFt2QLxD5rsnp4cJjYqIF5zW1C3_9jGXDkTWrwQg5UkMi5kbnNjcnlwdC1jZXJ0LmRucy5xdWFsaXR5b2xvZ3kuY29t
 
 ## scaleway-fr
 
@@ -635,15 +674,27 @@ sdns://AQcAAAAAAAAADjIxMi40Ny4yMjguMTM2IOgBuE6mBr-wusDOQ0RbsV66ZLAvo8SqMa4QY2oHk
 
 ## securedns
 
-Uncensored and no logging
+Uncensored and no logging (DNSCrypt protocol)
 
 sdns://AQcAAAAAAAAAEzE0Ni4xODUuMTY3LjQzOjUzNTMgs6WXaRRXWwSJ4Z-unEPmefryjFcYlwAxf3u0likfsJUcMi5kbnNjcnlwdC1jZXJ0LnNlY3VyZWRucy5ldQ
 
 ## securedns-ipv6
 
-Uncensored and no logging
+Uncensored and no logging (IPv6, DNSCrypt protocol)
 
 sdns://AQcAAAAAAAAAIVsyYTAzOmIwYzA6MDoxMDEwOjplOWE6MzAwMV06NTM1MyCzpZdpFFdbBInhn66cQ-Z5-vKMVxiXADF_e7SWKR-wlRwyLmRuc2NyeXB0LWNlcnQuc2VjdXJlZG5zLmV1
+
+## securedns-doh
+
+Uncensored and no logging (DoH protocol)
+
+sdns://AgcAAAAAAAAADjE0Ni4xODUuMTY3LjQzABBkb2guc2VjdXJlZG5zLmV1Ci9kbnMtcXVlcnk
+
+## securedns-ipv6-doh
+
+Uncensored and no logging (IPv6, DoH protocol)
+
+sdns://AgcAAAAAAAAAGjJhMDM6YjBjMDowOjEwMTA6OmU5YTozMDAxABBkb2guc2VjdXJlZG5zLmV1Ci9kbnMtcXVlcnk
 
 ## sfw.scaleway-fr
 
@@ -658,6 +709,13 @@ sdns://AQMAAAAAAAAADzE2My4xNzIuMTgwLjEyNSDfYnO_x1IZKotaObwMhaw_-WRF1zZE9mJygl01W
 Public DNSCrypt server in Poland
 
 sdns://AQcAAAAAAAAAFDE3OC4yMTYuMjAxLjIyMjoyMDUzICXE4YgpFUaXj5wrvbanr6QB7aBRBQhdUwPnGSjAZo8hHTIuZG5zY3J5cHQtY2VydC5zb2x0eXNpYWsuY29t
+
+## trashvpn.de
+
+dnscrypt-server Docker image : DNSSEC/Non-logged/Uncensored
+Hosted in Germany
+
+sdns://AQcAAAAAAAAAEjM3LjIyMS4xOTUuMTgxOjQ0MyAl_sppDIKYr4Er_QKZ1ee96Xy_f5ZZs5Dxo0EvV22IoBsyLmRuc2NyeXB0LWNlcnQudHJhc2h2cG4uZGU
 
 ## ventricle.us
 

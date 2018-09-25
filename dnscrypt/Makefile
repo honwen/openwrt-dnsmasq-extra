@@ -33,7 +33,8 @@ endef
 define Package/dnscrypt/install
 	$(INSTALL_DIR) $(1)/etc/config
 	$(INSTALL_DATA) ./files/dnscrypt.conf $(1)/etc/config/dnscrypt
-	$(INSTALL_DATA) ./files/dnscrypt-init-resolvers.md $(1)/etc/
+	$(INSTALL_DIR) $(1)/etc/dnscrypt.d
+	$(INSTALL_BIN) ./files/dnscrypt.d/* $(1)/etc/dnscrypt.d/
 	$(INSTALL_DIR) $(1)/etc/init.d
 	$(INSTALL_BIN) ./files/dnscrypt.init $(1)/etc/init.d/dnscrypt
 	$(INSTALL_DIR) $(1)/usr/bin
