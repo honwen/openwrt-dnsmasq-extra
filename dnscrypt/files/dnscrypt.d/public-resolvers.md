@@ -29,7 +29,7 @@ DNS-over-HTTPS proxy of aaflalo-me hosted in Google Cloud Platform.
 
 Non-logging, AD-filtering, supports DNSSEC.
 
-sdns://AgMAAAAAAAAADTM1LjIyNy4zMi4yMjcgPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgSZG5zLWdjcC5hYWZsYWxvLm1lCi9kbnMtcXVlcnk
+sdns://AgMAAAAAAAAADDM1LjIzMS42OS43NyA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBJkbnMtZ2NwLmFhZmxhbG8ubWUKL2Rucy1xdWVyeQ
 
 ## aaflalo-me
 
@@ -80,13 +80,14 @@ Maintained by Abhay Rana aka Nemo.
 
 If you are within India, this might be a nice DNS server to use.
 
-Warning: forwards queries to Cisco servers.
-
 sdns://AQQAAAAAAAAAEjEzOS41OS40OC4yMjI6NDQzNCAFOt_yxaMpFtga2IpneSwwK6rV0oAyleham9IvhoceEBsyLmRuc2NyeXB0LWNlcnQuY2FwdG5lbW8uaW4
 
 ## cisco
 
 Remove your DNS blind spot
+
+Warning: modifies your queries to include a copy of your network
+address when forwarding them to a selection of companies and organizations.
 
 sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMjIwILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ
 
@@ -94,11 +95,17 @@ sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMjIwILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ
 
 Block websites not suitable for children
 
+Warning: modifies your queries to include a copy of your network
+address when forwarding them to a selection of companies and organizations.
+
 sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMTIzILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ
 
 ## cisco-ipv6
 
 Cisco OpenDNS IPv6 sandbox
+
+Warning: modifies your queries to include a copy of your network
+address when forwarding them to a selection of companies and organizations.
 
 sdns://AQAAAAAAAAAAD1syNjIwOjA6Y2NjOjoyXSC3NRFAIG8iXT4r2CLX_WkeocM8yNZmjQy-BL-rykP7eRsyLmRuc2NyeXB0LWNlcnQub3BlbmRucy5jb20
 
@@ -162,6 +169,12 @@ sdns://AgcAAAAAAAAABzEuMC4wLjGgENk8mGSlIfMGXMOlIlCcKvq7AVgcrZxtjon911-ep0cg63Ul-
 Cloudflare DNS over IPv6 (anycast)
 
 sdns://AgcAAAAAAAAAGVsyNjA2OjQ3MDA6NDcwMDo6MTExMV06NTOgENk8mGSlIfMGXMOlIlCcKvq7AVgcrZxtjon911-ep0cg63Ul-I8NlFj4GplQGb_TTLiczclX57DvMV8Q-JdjgRgSZG5zLmNsb3VkZmxhcmUuY29tCi9kbnMtcXVlcnk
+
+## commons-host
+
+DoH server by the Commons Host CDN
+
+sdns://AgUAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OAxjb21tb25zLmhvc3QKL2Rucy1xdWVyeQ
 
 ## comodo-02
 
@@ -413,13 +426,45 @@ https://www.dnscrypt.uk
 
 sdns://AQcAAAAAAAAAHlsyYTAzOmIwYzA6MTplMDo6MmUzOmUwMDFdOjQ0MyAmJwT-OXZ9NntZ2eu_HtZeXARhCdiAynbBYcu6bArCdxsyLmRuc2NyeXB0LWNlcnQuZG5zY3J5cHQudWs
 
+## dnscrypt-jp-blahdns-ipv4
+
+Blocks ad and Tracking, no Logging, DNSSEC, Hosted in Japan
+
+https://blahdns.com/
+
+sdns://AQMAAAAAAAAAEzEwOC42MS4yMDEuMTE5Ojg0NDMgyJjbSS4IgTY_2KH3NVGG0DNIgBPzLEqf8r00nAbcUxQbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t
+
+## dnscrypt-jp-blahdns-ipv6
+
+Blocks ad and Tracking, no Logging, DNSSEC, Hosted in Japan
+
+https://blahdns.com/
+
+sdns://AQMAAAAAAAAALlsyMDAxOjE5ZjA6NzAwMToxZGVkOjU0MDA6MDFmZjpmZTkwOjk0NWJdOjg0NDMgyJjbSS4IgTY_2KH3NVGG0DNIgBPzLEqf8r00nAbcUxQbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t
+
+## dnscrypt-de-blahdns-ipv4
+
+Blocks ad and Tracking, no Logging, DNSSEC, Hosted in Germany
+
+https://blahdns.com/
+
+sdns://AQMAAAAAAAAAEzE1OS42OS4xOTguMTAxOjg0NDMgyJjbSS4IgTY_2KH3NVGG0DNIgBPzLEqf8r00nAbcUxQbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t
+
+## dnscrypt-de-blahdns-ipv6
+
+Blocks ad and Tracking, no Logging, DNSSEC, Hosted in Germany
+
+https://blahdns.com/
+
+sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxYzFjOjZiNGI6OjFdOjg0NDMgyJjbSS4IgTY_2KH3NVGG0DNIgBPzLEqf8r00nAbcUxQbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t
+
 ## doh-blahdns-de
 
 Blocks ad and Tracking, no Logging, DNSSEC, Hosted in Germany
 
 https://blahdns.com/
 
-sdns://AgMAAAAAAAAACzIxNy42MS4wLjk3ABJkb2guZGUuYmxhaGRucy5jb20KL2Rucy1xdWVyeQ
+sdns://AgMAAAAAAAAADjE1OS42OS4xOTguMTAxABJkb2gtZGUuYmxhaGRucy5jb20KL2Rucy1xdWVyeQ
 
 ## doh-blahdns
 
@@ -469,13 +514,21 @@ sdns://AgcAAAAAAAAADTEwNC4xOS4xOTguMjkgHdhQioxWWQQ5fHhkUeCPV2E888inI_bzef1MOFi28
 doh-server (nginx - doh-httpproxy - unbound backend), DNSSEC / Non-Logged / Uncensored, OpenNIC and Root DNS-Zone Copy
 Hosted in Switzerland on a Banana Pi M64 by ibksturm, aka Andreas Ziegler
 
-sdns://AgcAAAAAAAAADzIxNy4xNjIuMjA2LjE3OAAYaWJrc3R1cm0uc3lub2xvZ3kubWU6ODUzCi9kbnMtcXVlcnk
+sdns://AgcAAAAAAAAADzIxNy4xNjIuMjA2LjE3OAAUaWJrc3R1cm0uc3lub2xvZ3kubWUKL2Rucy1xdWVyeQ
+
+## eieiDNS
+
+DNS-over-HTTPS server. Blocks ad and Tracking, DNSSEC, Hosted in Thailand
+
+Warning: modifies your queries to include a copy of your network
+address when forwarding them to upstream servers.
+
+sdns://AgEAAAAAAAAADDEwMy44Ni40OS4zMSA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBRkb2gxLmVpZWlkbnMuY29tOjQ0MwovZG5zLXF1ZXJ5
 
 ## ev-us
 
 Non-logging, uncensored DNS resolver provided by evilvibes.com
 Hosted by: vultr.com - Location: Seattle, USA
-https://www.evilvibes.com/dnscrypt
 
 sdns://AQcAAAAAAAAADjEwNC4xNTYuMjUyLjE4ILNYRzmUAe4JezM_eiaokRdEOF7hA_jTl65AAyNMlNYQHTIuZG5zY3J5cHQtY2VydC5ldmlsdmliZXMuY29t
 
@@ -515,7 +568,7 @@ sdns://AgMAAAAAAAAADDE2Ny45OS4zMS42OSA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24O
 dnscrypt-server (dnscrypt-wrapper - unbound backend), DNSSEC / Non-Logged / Uncensored, OpenNIC and Root DNS-Zone Copy
 Hosted in Switzerland on a Banana Pi M64 by ibksturm, aka Andreas Ziegler
 
-sdns://AQcAAAAAAAAADzIxNy4xNjIuMjA2LjE3OCB2x0U7IXv1uDMjPD3ypxKY4xhAxu7bxJrlMs0vfeSV0BgyLmRuc2NyeXB0LWNlcnQuaWJrc3R1cm0
+sdns://AQcAAAAAAAAADzIxNy4xNjIuMjA2LjE3OCCxGSyTbKFt1Kjc-TqE-cBV5TnQ8EdVjl0yBwYh1NImjxgyLmRuc2NyeXB0LWNlcnQuaWJrc3R1cm0
 
 ## ipredator
 
@@ -588,6 +641,12 @@ Public DNS server operated by TumaBox.org
 
 sdns://AQYAAAAAAAAAG1syYTAyOmUwMDpmZmZkOjEzOTo6OV06NTM1MyDVkXsRajUxFMI4qpmm6wwofPdoBUGsXb-ooCOeIoxbBg0yLnR1bWFib3gub3Jn
 
+## powerdns-doh
+
+By PowerDNS/Open-Xchange https://powerdns.org
+
+sdns://AgcAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBBkb2gucG93ZXJkbnMub3JnAS8
+
 ## publicarray-au
 
 DNSSEC • OpenNic • Non-logging • Uncensored - hosted at vultr.com
@@ -595,26 +654,12 @@ Maintained by publicarray - https://dns.seby.io
 
 sdns://AQcAAAAAAAAADDQ1Ljc2LjExMy4zMSAIVGh4i6eKXqlF6o9Fg92cgD2WcDvKQJ7v_Wq4XrQsVhsyLmRuc2NyeXB0LWNlcnQuZG5zLnNlYnkuaW8
 
-## publicarray-au2
-
-DNSSEC • OpenNic • Non-logging • Uncensored - hosted on GCP
-Maintained by publicarray
-
-sdns://AQcAAAAAAAAAEjM1LjIwMS4yMC4xNzk6ODQ0MyDbu252PopUsAoQmpOFc8eYC4rkr2nWINwVQPMlc8lN8xsyLmRuc2NyeXB0LWNlcnQuZG5zLnNlYnkuaW8
-
 ## publicarray-au-doh
 
 DNSSEC • OpenNic • Non-logging • Uncensored - hosted on vultr.com
-Maintained by publicarray
+Maintained by publicarray - https://dns.seby.io
 
 sdns://AgcAAAAAAAAADDQ1Ljc2LjExMy4zMSA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBBkb2guc2VieS5pbzo4NDQzCi9kbnMtcXVlcnk
-
-## publicarray-au2-doh
-
-DNSSEC • OpenNic • Non-logging • Uncensored - hosted on GCP
-Maintained by publicarray
-
-sdns://AgcAAAAAAAAADTM1LjIwMS4yMC4xNzkgPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgPZG9oLnNlYnkuaW86NDQzCi9kbnMtcXVlcnk
 
 ## qag.me
 
@@ -624,45 +669,92 @@ Maintained by Cruisemaniac (https://cruisemaniac.com) aka Ashwin Murali.
 
 sdns://AQcAAAAAAAAAEjEwNi41MS4xMjguNzg6NDQzNCDrpsCqF14emkVAo_yJi9T2xxp5KmXhlGtbTL1R-5vVLhYyLmRuc2NyeXB0LWNlcnQucWFnLm1l
 
-## quad9-ip4-filter-pri
+## quad9-dnscrypt-ip4-filter-pri
 Quad9 (anycast) dnssec/no-log/filter 9.9.9.9
 sdns://AQMAAAAAAAAADDkuOS45Ljk6ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0
 
-## quad9-ip4-filter-alt
-Quad9 (anycast) dnssec/no-log/filter 149.112.112.112
-sdns://AQMAAAAAAAAAFDE0OS4xMTIuMTEyLjExMjo4NDQzIGfIR7jIdYzRICRVQ751Z0bfNN8dhMALjEcDaN-CHYY-GTIuZG5zY3J5cHQtY2VydC5xdWFkOS5uZXQ
+## quad9-dnscrypt-ip4-filter-alt
+Quad9 (anycast) dnssec/no-log/filter 149.112.112.9
+sdns://AQMAAAAAAAAAEjE0OS4xMTIuMTEyLjk6ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0
 
-## quad9-ip4-nofilter-pri
+## quad9-dnscrypt-ip4-nofilter-pri
 Quad9 (anycast) no-dnssec/no-log/no-filter 9.9.9.10
 sdns://AQYAAAAAAAAADTkuOS45LjEwOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA
 
-## quad9-ip4-nofilter-alt
+## quad9-dnscrypt-ip4-nofilter-alt
 Quad9 (anycast) no-dnssec/no-log/no-filter 149.112.112.10
 sdns://AQYAAAAAAAAAEzE0OS4xMTIuMTEyLjEwOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA
 
-## quad9-ip6-filter-pri
-Quad9 (anycast) dnssec/no-log/filter 2620:fe::fe
-sdns://AQMAAAAAAAAAElsyNjIwOmZlOjpmZV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0
-
-## quad9-ip6-filter-alt
+## quad9-dnscrypt-ip6-filter-alt
 Quad9 (anycast) dnssec/no-log/filter 2620:fe::9
 sdns://AQMAAAAAAAAAEVsyNjIwOmZlOjo5XTo4NDQzIGfIR7jIdYzRICRVQ751Z0bfNN8dhMALjEcDaN-CHYY-GTIuZG5zY3J5cHQtY2VydC5xdWFkOS5uZXQ
 
-## quad9-ip6-nofilter-pri
+## quad9-dnscrypt-ip6-filter-pri
+Quad9 (anycast) dnssec/no-log/filter 2620:fe::fe:9
+sdns://AQMAAAAAAAAAFFsyNjIwOmZlOjpmZTo5XTo4NDQzIGfIR7jIdYzRICRVQ751Z0bfNN8dhMALjEcDaN-CHYY-GTIuZG5zY3J5cHQtY2VydC5xdWFkOS5uZXQ
+
+## quad9-dnscrypt-ip6-nofilter-pri
 Quad9 (anycast) no-dnssec/no-log/no-filter 2620:fe::10
 sdns://AQYAAAAAAAAAElsyNjIwOmZlOjoxMF06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0
 
-## quad9-ip6-nofilter-alt
+## quad9-dnscrypt-ip6-nofilter-alt
 Quad9 (anycast) no-dnssec/no-log/no-filter 2620:fe::fe:10
 sdns://AQYAAAAAAAAAFVsyNjIwOmZlOjpmZToxMF06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0
 
+## quad9-doh-ip4-filter-pri
+Quad9 (anycast) dnssec/no-log/filter 9.9.9.9
+sdns://AgMAAAAAAAAABzkuOS45LjmAABJkbnM5LnF1YWQ5Lm5ldDo0NDMKL2Rucy1xdWVyeQ
+
+## quad9-doh-ip4-filter-alt
+Quad9 (anycast) dnssec/no-log/filter 149.112.112.9
+sdns://AgMAAAAAAAAADTE0OS4xMTIuMTEyLjmAABJkbnM5LnF1YWQ5Lm5ldDo0NDMKL2Rucy1xdWVyeQ
+
+## quad9-doh-ip4-nofilter-pri
+Quad9 (anycast) no-dnssec/no-log/no-filter 9.9.9.10
+sdns://AgYAAAAAAAAACDkuOS45LjEwgAASZG5zOS5xdWFkOS5uZXQ6NDQzCi9kbnMtcXVlcnk
+
+## quad9-doh-ip4-nofilter-alt
+Quad9 (anycast) no-dnssec/no-log/no-filter 149.112.112.10
+sdns://AgYAAAAAAAAADjE0OS4xMTIuMTEyLjEwgAASZG5zOS5xdWFkOS5uZXQ6NDQzCi9kbnMtcXVlcnk
+
+## quad9-doh-ip6-filter-pri
+Quad9 (anycast) dnssec/no-log/filter 2620:fe::9
+sdns://AgMAAAAAAAAADFsyNjIwOmZlOjo5XYAAEmRuczkucXVhZDkubmV0OjQ0MwovZG5zLXF1ZXJ5
+
+## quad9-doh-ip6-filter-alt
+Quad9 (anycast) dnssec/no-log/filter 2620:fe::fe:9
+sdns://AgMAAAAAAAAAD1syNjIwOmZlOjpmZTo5XYAAEmRuczkucXVhZDkubmV0OjQ0MwovZG5zLXF1ZXJ5
+
+## quad9-doh-ip6-nofilter-pri
+Quad9 (anycast) no-dnssec/no-log/no-filter 2620:fe::10
+sdns://AgYAAAAAAAAADVsyNjIwOmZlOjoxMF2AABJkbnM5LnF1YWQ5Lm5ldDo0NDMKL2Rucy1xdWVyeQ
+
+## quad9-doh-ip6-nofilter-alt
+Quad9 (anycast) no-dnssec/no-log/no-filter 2620:fe::fe:10
+sdns://AgYAAAAAAAAAEFsyNjIwOmZlOjpmZToxMF2AABJkbnM5LnF1YWQ5Lm5ldDo0NDMKL2Rucy1xdWVyeQ
+
 ## qualityology.com
 
-Non-logging, non-filtering, DNSSEC validating server in Mountain View,
-California.
+Non-logging, non-filtering, DNSSEC validating server in Los Angeles, California.
 Maintained by Evan Xu (@ex-git)
 
-sdns://AQcAAAAAAAAAEzE5OC4xNDguMTA1LjIwNjo4NTMgcLFt2QLxD5rsnp4cJjYqIF5zW1C3_9jGXDkTWrwQg5UkMi5kbnNjcnlwdC1jZXJ0LmRucy5xdWFsaXR5b2xvZ3kuY29t
+sdns://AQcAAAAAAAAAEzE5OC4xNDguMTA1LjIwNjo4NTMgQBr-sZr8SDgaSZT9CbVOxFyNeLqFNhF1XiZJX2ZDwzwkMi5kbnNjcnlwdC1jZXJ0LmRucy5xdWFsaXR5b2xvZ3kuY29t
+
+## rubyfish-ea
+
+Resolver in mainland China, forwarding queries for non-Chinese domains
+to upstream servers in East Asia.
+
+https://www.rubyfish.cn/
+sdns://AgQAAAAAAAAADzExNS4xNTkuMTU0LjIyNiA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OA9kbnMucnVieWZpc2guY24KL2Rucy1xdWVyeQ
+
+## rubyfish-uw
+
+Resolver in mainland China, forwarding queries for non-Chinese domains
+to US-West.
+
+https://www.rubyfish.cn/
+sdns://AgQAAAAAAAAADDQ3Ljk5LjE2NS4zMSA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OA9kbnMucnVieWZpc2guY24KL2Rucy1xdWVyeQ
 
 ## scaleway-fr
 
