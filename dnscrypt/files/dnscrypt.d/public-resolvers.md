@@ -73,6 +73,13 @@ Non-logging, non-filtering, supports DNSSEC.
 
 sdns://AQcAAAAAAAAAEjEzOS41OS4xNi4xMzA6NTM1MyCORifHOIOoUQMIIbpa5-XQQfSq75W3gpAWy2Udh8MoyRkyLmRuc2NyeXB0LWNlcnQuYXJ2aW5kLmlv
 
+## bottlepost-dns-nl
+
+Provided by bottlepost.me
+Hosted in The Netherlands, DNSSEC / No Logs / No Filter
+
+sdns://AQcAAAAAAAAAEzE3OC4xMjguMjU1LjI4OjUzNTMgkr1k-Lp2d9IXiFlXoBAgFGZUCJSPW_x81Ec6ShkPsJYdMi5kbnNjcnlwdC1jZXJ0LmJvdHRsZXBvc3QubWU
+
 ## captnemo-in
 
 Server running out of a Digital Ocean droplet in BLR1 region.
@@ -525,6 +532,13 @@ address when forwarding them to upstream servers.
 
 sdns://AgEAAAAAAAAADDEwMy44Ni40OS4zMSA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBRkb2gxLmVpZWlkbnMuY29tOjQ0MwovZG5zLXF1ZXJ5
 
+## ev-ca
+
+Non-logging, uncensored DNS resolver provided by evilvibes.com
+Hosted by: vultr.com - Location: Toronto, Canada
+
+sdns://AQcAAAAAAAAADjE0OS4yNDguNTEuMjEyIJqd7T8sjWmQU5pdBaP5FF2vX0xrz561gdeGrur3jCHfHTIuZG5zY3J5cHQtY2VydC5ldmlsdmliZXMuY29t
+
 ## ev-us
 
 Non-logging, uncensored DNS resolver provided by evilvibes.com
@@ -738,7 +752,7 @@ sdns://AgYAAAAAAAAAEFsyNjIwOmZlOjpmZToxMF2AABJkbnM5LnF1YWQ5Lm5ldDo0NDMKL2Rucy1xd
 Non-logging, non-filtering, DNSSEC validating server in Los Angeles, California.
 Maintained by Evan Xu (@ex-git)
 
-sdns://AQcAAAAAAAAAEzE5OC4xNDguMTA1LjIwNjo4NTMgQBr-sZr8SDgaSZT9CbVOxFyNeLqFNhF1XiZJX2ZDwzwkMi5kbnNjcnlwdC1jZXJ0LmRucy5xdWFsaXR5b2xvZ3kuY29t
+sdns://AQcAAAAAAAAAEjE3My44Mi4yMzIuMjMyOjQ0MyBfRw8Fjlu4do2zKNlsNV1-N-NaqgvXuDkYHxyKq_XkySAyLmRuc2NyeXB0LWNlcnQucXVhbGl0eW9sb2d5LmNvbQ
 
 ## rubyfish-ea
 
@@ -746,7 +760,7 @@ Resolver in mainland China, forwarding queries for non-Chinese domains
 to upstream servers in East Asia.
 
 https://www.rubyfish.cn/
-sdns://AgQAAAAAAAAADzExNS4xNTkuMTU0LjIyNiA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OA9kbnMucnVieWZpc2guY24KL2Rucy1xdWVyeQ
+sdns://AgUAAAAAAAAADzExNS4xNTkuMTU0LjIyNiA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OA9kbnMucnVieWZpc2guY24KL2Rucy1xdWVyeQ
 
 ## rubyfish-uw
 
@@ -754,7 +768,7 @@ Resolver in mainland China, forwarding queries for non-Chinese domains
 to US-West.
 
 https://www.rubyfish.cn/
-sdns://AgQAAAAAAAAADDQ3Ljk5LjE2NS4zMSA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OA9kbnMucnVieWZpc2guY24KL2Rucy1xdWVyeQ
+sdns://AgUAAAAAAAAADDQ3Ljk5LjE2NS4zMSA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OA9kbnMucnVieWZpc2guY24KL2Rucy1xdWVyeQ
 
 ## scaleway-fr
 
