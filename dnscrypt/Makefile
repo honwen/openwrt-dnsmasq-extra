@@ -9,25 +9,29 @@ PKG_MAINTAINER:=chenhw2 <https://github.com/chenhw2>
 PKG_ARCH:=$(subst mipsel,mipsle,$(ARCH))
 PKG_SOURCE:=dnscrypt-proxy-linux_$(PKG_ARCH)-$(PKG_RELEASE).tar.gz
 PKG_SOURCE_URL:=https://github.com/jedisct1/dnscrypt-proxy/releases/download/$(PKG_RELEASE)/
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_RELEASE)
 PKG_HASH:=skip
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 include $(INCLUDE_DIR)/package.mk
 
 define Package/dnscrypt
 	SECTION:=net
 	CATEGORY:=Network
-	TITLE:=A Secure DNS resolver
+	TITLE:=A flexible DNS proxy
 	URL:=https://github.com/jedisct1/dnscrypt-proxy
 	DEPENDS:=+ca-bundle
 endef
 
 define Package/dnscrypt/description
-	A flexible DNS proxy, with support for encrypted DNS protocols.
+	A flexible DNS proxy, with support for modern encrypted DNS protocols such as DNSCrypt v2 and DNS-over-HTTPS.
+endef
+
+define Build/Prepare
+	gzip -dc "$(DL_DIR)/$(PKG_SOURCE)" | tar -C $(PKG_BUILD_DIR)/ -xf -
 endef
 
 define Build/Compile
-	gzip -dc "$(DL_DIR)/$(PKG_SOURCE)" | tar -C $(PKG_BUILD_DIR)/ -xf -
+	echo "$(PKG_NAME)Compile Skiped!"
 endef
 
 define Package/dnscrypt/install
