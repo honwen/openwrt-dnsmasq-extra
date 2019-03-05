@@ -29,7 +29,7 @@
 
 ### dnscrypt@7400 with multidns/tls
 
-### chinadns@7300 with multidns/udp
+### chinadns@7300 with multidns/udp (NOT Recommended)
 
 Upstream DNS for ChinaDNS:
 - ```cdns@730X with multidns/udp```
