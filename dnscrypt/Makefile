@@ -2,8 +2,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dnscrypt
-PKG_VERSION:=2018-11-23
-PKG_RELEASE:=2.0.19
+PKG_VERSION:=2019-04-01
+PKG_RELEASE:=2.0.22
 PKG_MAINTAINER:=chenhw2 <https://github.com/chenhw2>
 
 PKG_ARCH:=$(subst mipsel,mipsle,$(ARCH))
