@@ -94,17 +94,6 @@ start() {
 EOF
 	fi
 
-	if $(uci_bool_by_type koolproxy general enable); then
-		echo -n "IPSET:koolproxy, " && ( sed "s/^/ipset=\//;s/$/\/koolproxy/" $IPSETDIR/koolproxy > $DNSMASQDIR/koolproxy.conf )
-
-		ipset -X koolproxy 2>/dev/null
-		ipset -! -R <<-EOF 2>/dev/null
-			create koolproxy hash:ip hashsize 64
-			flush koolproxy
-			add koolproxy 61.160.200.252
-EOF
-	fi
-
 	echo -n "ABDLOCK, " && ( sed "s/^/address=\//;s/$/\/${BLOCK}/" $IPSETDIR/adblock > $DNSMASQDIR/adblock.conf )
 	echo -n "CUSTOM" && ( echo "conf-file=$IPSETDIR/custom.conf" > $DNSMASQDIR/custom.conf )
 
@@ -119,8 +108,6 @@ EOF
 clean_dir() {
 	ipset -F gfwlist   2>/dev/null
 	ipset -X gfwlist   2>/dev/null
-	ipset -F koolproxy 2>/dev/null
-	ipset -X koolproxy 2>/dev/null
 
 	echo -n "Stopping $NAME"
 	rm -rf $DNSMASQDIR/chdns.conf     2>/dev/null
@@ -130,7 +117,6 @@ clean_dir() {
 	rm -rf $DNSMASQDIR/adblock.conf   2>/dev/null
 	rm -rf $DNSMASQDIR/gfwlist.conf   2>/dev/null
 	rm -rf $DNSMASQDIR/direct.conf    2>/dev/null
-	rm -rf $DNSMASQDIR/koolproxy.conf 2>/dev/null
 	rm -rf $DNSMASQDIR/custom.conf    2>/dev/null
 	rm -rf $DNSMASQDIR/alls.conf      2>/dev/null
 	echo " ."
@@ -153,7 +139,6 @@ restart() {
 update(){
 	update_sub 'gfwlist'
 	update_sub 'direct'
-	update_sub 'koolproxy'
 	update_chn
 }
 

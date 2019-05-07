@@ -39,7 +39,6 @@ Upstream DNS for ChinaDNS:
 ### dnsmasq-extra
 
  - dnsmasq for adblock
- - dnsmasq/ipset for koolproxy
  - dnsmasq/ipset for dnscrypt/chinadns/ss(r)-tunnel
 
   [S]: https://wiki.openwrt.org/doc/howto/obtain.firmware.sdk
