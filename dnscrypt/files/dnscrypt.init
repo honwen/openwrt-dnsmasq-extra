@@ -66,14 +66,12 @@ cache_neg_max_ttl = 600
   urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/public-resolvers.md', 'https://www.evilvibes.com/list/public-resolvers.md']
   cache_file = '/var/etc/dnscrypt.d/public-resolvers.md'
   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-  refresh_delay = 72
   prefix = ''
 
   [sources.quad9-resolvers]
   urls = ["https://www.quad9.net/quad9-resolvers.md"]
   minisign_key = "RWQBphd2+f6eiAqBsvDZEBXBGHQBJfeG6G+wJPPKxCZMoEQYpmoysKUN"
   cache_file = "quad9-resolvers.md"
-  refresh_delay = 72
   prefix = "quad9-"
 
 [static]
