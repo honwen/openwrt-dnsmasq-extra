@@ -49,6 +49,7 @@ start() {
 		echo -n "IPSET:ss(r)_bp for chnroute, " && {
 			sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/"  ${DATA}/direct >  ${TARGET}/ipset_direct.conf
 			sed "s/^/ipset=\//;s/$/\/ssr_spec_dst_bp/" ${DATA}/direct >> ${TARGET}/ipset_direct.conf
+			sed "s/^/server=\//;s/$/\/#/" ${DATA}/direct >> ${TARGET}/ipset_direct.conf
 			echo 'ipset=/cloudflare-dns.com/ss_spec_dst_sp'  >> ${TARGET}/ipset_direct.conf
 			echo 'ipset=/cloudflare-dns.com/ssr_spec_dst_sp' >> ${TARGET}/ipset_direct.conf
 			uci_get_by_type ${NAME} general clean_server | sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/" >> ${TARGET}/ipset_direct.conf
