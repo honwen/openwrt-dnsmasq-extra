@@ -1,12 +1,12 @@
 #
-# Copyright (C) 2018 chenhw2 <https://github.com/chenhw2>
+# Copyright (C) 2019 chenhw2 <https://github.com/chenhw2>
 #
 
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dnsmasq-extra
-PKG_VERSION:=2019-07-21
-PKG_RELEASE:=1.2.1
+PKG_VERSION:=2019-08-07
+PKG_RELEASE:=1.3.0
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
@@ -16,7 +16,7 @@ define Package/dnsmasq-extra
 	SECTION:=net
 	CATEGORY:=Network
 	TITLE:=Dnsmasq-Extra
-	DEPENDS:=+dnsmasq-full +ipset +curl
+	DEPENDS:=+dnsmasq-full +ipset +curl +dns-forwarder
 	PKGARCH:=all
 endef
 

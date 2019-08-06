@@ -41,18 +41,43 @@ start() {
 		}
 	done
 
+	for plugin in $(uci_get_by_type ${NAME} general pluginsOtcp); do
+		[ -x /usr/bin/${plugin} ] && {
+			if echo ${plugin} | grep -q 'tunnel'; then
+				plugin_alias=$(echo -n ${plugin} | sed 's/ss/shadowsocks/g; s/-tunnel//g')
+				plugin_srv=$(uci_get_by_type ${plugin_alias} port_forward server nil)
+				[ "V${plugin_srv}" == "Vnil" ] && continue
+				plugin_port=$(uci_get_by_type ${plugin_alias} port_forward local_port 5300)
+				
+			else
+				plugin_port=$(uci_get_by_type ${plugin} ${plugin} port 0000)
+				[ "V${port_forward}" == "V0000" ] && continue
+			fi
+
+			plugin_tcpport=$((plugin_port + 1))
+			( /usr/bin/dns-forwarder -p $plugin_tcpport -s 127.0.0.1:$plugin_port -t pluginsOtcp >/dev/null 2>&1 ) &
+
+			echo -n "plugin-tcp:${plugin}, " | tr [a-z] [A-Z]
+			sed "s/^/server=\//;s/$/\/127.0.0.1#${plugin_tcpport}/" ${DATA}/gfwlist ${DATA}/tldn > ${TARGET}/plugin-tcp_${plugin}.conf
+		}
+	done
+
+	local tcpport=8300
 	for server in $(uci_get_by_type ${NAME} general clean_server); do
+		tcpport=$((tcpport + 1))
+		( /usr/bin/dns-forwarder -p $tcpport -s ${server}:53 -t cleanOtcp >/dev/null 2>&1 ) &
 		echo -n "CLEAN-DNS:${server}, " && sed "s/^/server=\//;s/$/\/${server}/" ${DATA}/gfwlist ${DATA}/tldn > ${TARGET}/clean_${server}.conf
+		echo -n "CLEAN-DNS-TCP:${server}, " && sed "s/^/server=\//;s/$/\/127.0.0.1#${tcpport}/" ${DATA}/gfwlist ${DATA}/tldn >> ${TARGET}/clean_${server}.conf
 	done
 
 	[ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* 2>/dev/null | grep -c 'chnroute') ] &&
 		echo -n "IPSET:ss(r)_bp for chnroute, " && {
 			sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/"  ${DATA}/direct >  ${TARGET}/ipset_direct.conf
 			sed "s/^/ipset=\//;s/$/\/ssr_spec_dst_bp/" ${DATA}/direct >> ${TARGET}/ipset_direct.conf
-			sed "s/^/server=\//;s/$/\/#/" ${DATA}/direct >> ${TARGET}/ipset_direct.conf
+			sed "s/^/server=\//;s/$/\/#/"              ${DATA}/direct >> ${TARGET}/ipset_direct.conf
 			echo 'ipset=/cloudflare-dns.com/ss_spec_dst_sp'  >> ${TARGET}/ipset_direct.conf
 			echo 'ipset=/cloudflare-dns.com/ssr_spec_dst_sp' >> ${TARGET}/ipset_direct.conf
-			uci_get_by_type ${NAME} general clean_server | sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/" >> ${TARGET}/ipset_direct.conf
+			uci_get_by_type ${NAME} general clean_server | sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/"  >> ${TARGET}/ipset_direct.conf
 			uci_get_by_type ${NAME} general clean_server | sed "s/^/ipset=\//;s/$/\/ssr_spec_dst_bp/" >> ${TARGET}/ipset_direct.conf
 		}
 
@@ -112,6 +137,10 @@ cleanup() {
 	rm -rf ${TARGET}/misc_*.conf 2>/dev/null
 	rm -rf ${TARGET}/ipset_*.conf 2>/dev/null
 	rm -rf ${TARGET}/plugin_*.conf 2>/dev/null
+	rm -rf ${TARGET}/clean*.conf 2>/dev/null
+	rm -rf ${TARGET}/*-tcp_*.conf 2>/dev/null
+
+	kill -9 $(pgrep -f Otcp) >/dev/null 2>&1
 	echo " ."
 }
 
