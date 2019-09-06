@@ -40,34 +40,29 @@ start_service() {
 
 	cat <<-EOF > "/var/etc/${NAME}/AdGuardHome.yaml"
 bind_host: 0.0.0.0
-bind_port: $(uci_get_by_type $NAME http_port 7400)
-language: zh-cn
-rlimit_nofile: 0
+bind_port: $(uci_get_by_type $NAME http_port 7680)
+language: $(uci_get_by_type $NAME language en-us)
 dns:
   bind_host: 0.0.0.0
-  port: $(uci_get_by_type $NAME port 7400)
+  port: $(uci_get_by_type $NAME port 7600)
   protection_enabled: true
   filtering_enabled: true
-  blocking_mode: nxdomain
-  blocked_response_ttl: 10
   querylog_enabled: true
+  ratelimit: 999
   refuse_any: true
   bootstrap_dns:
-  - 112.121.178.187:53
-  - 80.80.81.81:53
-  - 64.6.64.6:53
+$(for dns in $(uci_get_by_type $NAME bootstrap_dns); do
+  echo "  - ${dns}"
+done)
   all_servers: true
   parental_sensitivity: 0
   parental_enabled: false
   safesearch_enabled: false
   safebrowsing_enabled: false
   upstream_dns:
-  - https://dns.twnic.tw/dns-query
-  - tls://1dot1dot1dot1.cloudflare-dns.com
-  - tls://dns.google
-  - tls://9.9.9.9
-  - tls://1.1.1.1
-  - tls://1.0.0.1
+$(for dns in $(uci_get_by_type $NAME upstream_dns); do
+  echo "  - ${dns}"
+done)
 tls:
   enabled: false
 filters:
@@ -87,11 +82,10 @@ filters:
   url: https://www.malwaredomainlist.com/hostslist/hosts.txt
   name: MalwareDomainList.com Hosts List
   id: 4
-user_rules: []
 dhcp:
   enabled: false
-log_file: "syslog"
-verbose: false
+log_file: syslog
+verbose: $(uci_get_by_type $NAME verbose false)
 schema_version: 4
 EOF
 	start_instance /usr/bin/$NAME \

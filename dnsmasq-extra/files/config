@@ -1,6 +1,7 @@
 
 config general
 	option adblock 'enabled'
+	list plugins 'adguard-home'
 	list plugins 'dnscrypt'
 	list plugins 'chinadns'
 	list pluginsOtcp 'ss-tunnel'

@@ -9,17 +9,20 @@
    git clone https://github.com/shadowsocks/openwrt-feeds.git package/feeds
    # 获取 Makefile
    git clone https://github.com/chenhw2/openwrt-dnsmasq-extra.git package/feeds/openwrt-dnsmasq-extra
-   # 选择要编译的包 Network -> [dnscrypt, chinadns, dnsmasq-extra]
+   # 选择要编译的包 Network -> [adguard-home, dnscrypt, chinadns, dnsmasq-extra]
    make menuconfig
    # 开始编译
    make package/feeds/openwrt-dnsmasq-extra/cdns/compile V=99
    make package/feeds/openwrt-dnsmasq-extra/dns-forwarder/compile V=99
    make package/feeds/openwrt-dnsmasq-extra/chinadns/compile V=99
+   make package/feeds/openwrt-dnsmasq-extra/adguard-home/compile V=99
    make package/feeds/openwrt-dnsmasq-extra/dnscrypt/compile V=99
    make package/feeds/openwrt-dnsmasq-extra/dnsmasq-extra/compile V=99
    ```
 
 # Recommend
+
+- dnsmasq-extra + adguard-home
 
 - dnsmasq-extra + dnscrypt
 
@@ -27,7 +30,9 @@
 
 # Provider
 
-### dnscrypt@7400 with multidns/tls
+### adguard-home@7600 with multidns/dot/doh and adguard
+
+### dnscrypt@7400 with multidns/dot/doh
 
 ### chinadns@7300 with multidns/udp (NOT Recommended)
 
@@ -39,6 +44,6 @@ Upstream DNS for ChinaDNS:
 ### dnsmasq-extra
 
  - dnsmasq for adblock
- - dnsmasq/ipset for dnscrypt/chinadns/ss(r)-tunnel
+ - dnsmasq/ipset for adguard-home/dnscrypt/chinadns/ss(r)-tunnel
 
   [S]: https://wiki.openwrt.org/doc/howto/obtain.firmware.sdk
