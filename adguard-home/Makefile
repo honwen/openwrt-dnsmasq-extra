@@ -22,7 +22,7 @@ ifeq ($(ARCH),aarch64)
 	PKG_ARCH:=arm64
 endif
 
-PKG_SOURCE:=AdGuardHome_linux_$(PKG_ARCH)-$(PKG_RELEASE).tar.gz
+PKG_SOURCE:=AdGuardHome_linux_$(PKG_ARCH).tar.gz
 PKG_SOURCE_URL:=https://github.com/AdguardTeam/AdGuardHome/releases/download/v$(PKG_RELEASE)/
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_RELEASE)
 PKG_HASH:=skip
@@ -47,7 +47,7 @@ define Build/Prepare
 endef
 
 define Build/Compile
-	echo "$(PKG_NAME)Compile Skiped!"
+	echo "$(PKG_NAME) Compile Skiped!"
 endef
 
 define Package/adguard-home/install
