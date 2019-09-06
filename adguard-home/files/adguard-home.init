@@ -1,0 +1,116 @@
+#!/bin/sh /etc/rc.common
+
+START=92
+NAME=adguard-home
+USE_PROCD=1
+
+CRON_FILE=/etc/crontabs/root
+
+uci_get_by_type() {
+	local ret=$(uci get $NAME.@$1[0].$2 2>/dev/null)
+	echo ${ret:=$3}
+}
+
+uci_bool_by_type() {
+	case "$(uci_get_by_type $1 $2)" in
+		1|on|true|yes|enabled) return 0;;
+	esac
+	return 1
+}
+
+start_instance() {
+	procd_open_instance
+	procd_set_param respawn
+	procd_set_param stderr 1
+	procd_set_param command $@
+	procd_close_instance
+}
+
+service_triggers() {
+	procd_add_reload_trigger $NAME
+}
+
+start_service() {
+	uci_bool_by_type $NAME enable || exit 0
+	add_cron
+
+	mkdir -p /var/etc/adguard-home
+
+	local port=$(uci_get_by_type $NAME port 7400)
+
+	cat <<-EOF > "/var/etc/${NAME}/AdGuardHome.yaml"
+bind_host: 0.0.0.0
+bind_port: $(uci_get_by_type $NAME http_port 7400)
+language: zh-cn
+rlimit_nofile: 0
+dns:
+  bind_host: 0.0.0.0
+  port: $(uci_get_by_type $NAME port 7400)
+  protection_enabled: true
+  filtering_enabled: true
+  blocking_mode: nxdomain
+  blocked_response_ttl: 10
+  querylog_enabled: true
+  refuse_any: true
+  bootstrap_dns:
+  - 112.121.178.187:53
+  - 80.80.81.81:53
+  - 64.6.64.6:53
+  all_servers: true
+  parental_sensitivity: 0
+  parental_enabled: false
+  safesearch_enabled: false
+  safebrowsing_enabled: false
+  upstream_dns:
+  - https://dns.twnic.tw/dns-query
+  - tls://1dot1dot1dot1.cloudflare-dns.com
+  - tls://dns.google
+  - tls://9.9.9.9
+  - tls://1.1.1.1
+  - tls://1.0.0.1
+tls:
+  enabled: false
+filters:
+- enabled: true
+  url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+  name: AdGuard Simplified Domain Names filter
+  id: 1
+- enabled: true
+  url: https://adaway.org/hosts.txt
+  name: AdAway
+  id: 2
+- enabled: false
+  url: https://hosts-file.net/ad_servers.txt
+  name: hpHosts - Ad and Tracking servers only
+  id: 3
+- enabled: false
+  url: https://www.malwaredomainlist.com/hostslist/hosts.txt
+  name: MalwareDomainList.com Hosts List
+  id: 4
+user_rules: []
+dhcp:
+  enabled: false
+log_file: "syslog"
+verbose: false
+schema_version: 4
+EOF
+	start_instance /usr/bin/$NAME \
+		-w "/var/etc/${NAME}" \
+		--no-check-update
+}
+
+stop_service() {
+	del_cron
+	rm -rf "/var/etc/${NAME}"
+}
+
+add_cron() {
+	sed -i "/${NAME}/d" $CRON_FILE
+	echo "*    *    * * * /usr/bin/pgrep -f /etc/${NAME} || /etc/init.d/${NAME} restart" >> $CRON_FILE
+	/etc/init.d/cron restart
+}
+
+del_cron() {
+	sed -i "/${NAME}/d" $CRON_FILE
+	/etc/init.d/cron restart
+}
