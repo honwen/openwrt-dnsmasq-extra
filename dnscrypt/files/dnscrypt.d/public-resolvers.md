@@ -267,6 +267,70 @@ By https://cleanbrowsing.org/
 
 sdns://AQMAAAAAAAAAFFsyYTBkOjJhMDA6MTo6XTo4NDQzILysMvrVQ2kXHwgy1gdQJ8MgjO7w6OmflBjcd2Bl1I8pEWNsZWFuYnJvd3Npbmcub3Jn
 
+## developerli-fr
+
+DNSSEC - OpenNIC - Non-logging - Uncensored - hosted on ovh.com
+Location: Gravelines, France.
+Maintained by piraces - https://developer.li
+
+sdns://AQcAAAAAAAAADjE2NC4xMzIuNDUuMTEyIJjcR4lfaiSu1VnGEUxuFHjZAJMtzh4IIzY1nENSdINmIDIuZG5zY3J5cHQtY2VydC5uczEuZGV2ZWxvcGVyLmxp
+
+## developerli-fr-ipv6
+
+DNSSEC - OpenNIC - Non-logging - Uncensored - hosted on ovh.com
+Location: Gravelines, France.
+Maintained by piraces - https://developer.li
+
+sdns://AQcAAAAAAAAAHVsyMDAxOjQxZDA6MzAyOjIyMDA6OjczNV06NDQzIOORyBsbVECZjBLtBBPcvz4BX6KqFLyBHOgRFnPjDc91IDIuZG5zY3J5cHQtY2VydC5uczEuZGV2ZWxvcGVyLmxp
+
+## developerli-de
+
+DNSSEC - OpenNIC - Non-logging - Uncensored - hosted on ovh.com
+Location: Limburg, Germany.
+Maintained by piraces - https://developer.li
+
+sdns://AQcAAAAAAAAACzUxLjg5LjIyLjM2IFCr7Cwmkxqhwih6Yd6DXna4QnD43eEobcm4jYfdOKGQIDIuZG5zY3J5cHQtY2VydC5uczIuZGV2ZWxvcGVyLmxp
+
+## developerli-de-ipv6
+
+DNSSEC - OpenNIC - Non-logging - Uncensored - hosted on ovh.com
+Location: Limburg, Germany.
+Maintained by piraces - https://developer.li
+
+sdns://AQcAAAAAAAAAHlsyMDAxOjQxZDA6NzAxOjExMDA6OjIxYjVdOjQ0MyBF27xjwGrNk7IfBlWNxDMfThgQaJl-G-B6V-ORq6ZblSAyLmRuc2NyeXB0LWNlcnQubnMyLmRldmVsb3Blci5saQ
+
+## developerli-fr-doh
+
+DNSSEC - OpenNIC - Non-logging - Uncensored - hosted on ovh.com
+Location: Gravelines, France.
+Maintained by piraces - https://developer.li
+
+sdns://AgcAAAAAAAAADjE2NC4xMzIuNDUuMTEyABVkbnMuZGV2ZWxvcGVyLmxpOjg0NDMKL2Rucy1xdWVyeQ
+
+## developerli-fr-doh-ipv6
+
+DNSSEC - OpenNIC - Non-logging - Uncensored - hosted on ovh.com
+Location: Gravelines, France.
+Maintained by piraces - https://developer.li
+
+sdns://AgcAAAAAAAAAHlsyMDAxOjQxZDA6MzAyOjIyMDA6OjczNV06ODQ0MwAVZG5zLmRldmVsb3Blci5saTo4NDQzCi9kbnMtcXVlcnk
+
+## developerli-de-doh
+
+DNSSEC - OpenNIC - Non-logging - Uncensored - hosted on ovh.com
+Location: Limburg, Germany.
+Maintained by piraces - https://developer.li
+
+sdns://AgcAAAAAAAAACzUxLjg5LjIyLjM2ABZkbnMyLmRldmVsb3Blci5saTo4NDQzCi9kbnMtcXVlcnk
+
+## developerli-de-doh-ipv6
+
+DNSSEC - OpenNIC - Non-logging - Uncensored - hosted on ovh.com
+Location: Limburg, Germany.
+Maintained by piraces - https://developer.li
+
+sdns://AgcAAAAAAAAAH1syMDAxOjQxZDA6NzAxOjExMDA6OjIxYjVdOjg0NDMAFmRuczIuZGV2ZWxvcGVyLmxpOjg0NDMKL2Rucy1xdWVyeQ
+
 ## dns.digitale-gesellschaft.ch
 
 Public DoH resolver operated by the Digital Society (https://www.digitale-gesellschaft.ch).
@@ -288,7 +352,7 @@ sdns://AQcAAAAAAAAAEjE5Mi45OS4xODMuMTMyOjQ0MyAaU6PJUHicvdELGTOkaJtshGpA8bc9F1Kuy
 Free, Canadian, uncensored, no-logs, encrypted, and DNSSEC validated
 DNS service for your pleasure.
 
-sdns://AQcAAAAAAAAAEjE5Mi45OS4xODMuMTMzOjQ0MyABCFSrO1an7vnTkVj-9oIL_5OiNXyJFgjbnhXTu-ARhR0yLmRuc2NyeXB0LWNlcnQuZG5zY3J5cHQuY2EtMg
+sdns://AQcAAAAAAAAAETE0OS41Ni4yMjguNDU6NDQzIAEIVKs7Vqfu-dORWP72ggv_k6I1fIkWCNueFdO74BGFHTIuZG5zY3J5cHQtY2VydC5kbnNjcnlwdC5jYS0y
 
 ## dnscrypt.ca-1-ipv6
 
@@ -302,7 +366,7 @@ sdns://AQcAAAAAAAAAHFsyNjA3OjUzMDA6NjA6NGFhODo6NjAwXTo0NDMgINkZ1Ow8UAjNxwpR6itPy
 Free, Canadian, uncensored, no-logs, encrypted, and DNSSEC validated
 DNS service for your pleasure.
 
-sdns://AQcAAAAAAAAAHFsyNjA3OjUzMDA6NjA6NGFhODo6NzAwXTo0NDMgmHxwqJfb2hUaNK1LVeqADvVhzASq1cV90sPYYfwX9CkiMi5kbnNjcnlwdC1jZXJ0LmRuc2NyeXB0LmNhLTItaXB2Ng
+sdns://AQcAAAAAAAAAHFsyNjA3OjUzMDA6MTIwOmI5Yjo6MjAwXTo0NDMgmHxwqJfb2hUaNK1LVeqADvVhzASq1cV90sPYYfwX9CkiMi5kbnNjcnlwdC1jZXJ0LmRuc2NyeXB0LmNhLTItaXB2Ng
 
 ## dnswarden-dc1
 
@@ -814,18 +878,23 @@ Location: Vancouver, Canada
 
 sdns://AQcAAAAAAAAADTIzLjExMS43NC4yMTYg3_NERwhF2C4tPlnR0CSeIAmRC3wwXtucNhKMVoW_prQjMi5kbnNjcnlwdC1jZXJ0LmV2LXZhLmV2aWx2aWJlcy5jb20
 
-## ev-to
-
-Non-logging, uncensored DNS resolver provided by evilvibes.com
-Location: Toronto, Canada
-
-sdns://AQcAAAAAAAAADTIzLjExMS42OS4xMjYgTvUHn_uZRDf0m10w-HJPpAVY7_UcoDKNuXpXcWJSVwsjMi5kbnNjcnlwdC1jZXJ0LmV2LXRvLmV2aWx2aWJlcy5jb20
-
 ## faelix
 
 An open DoH resolver operated by https://faelix.net/ with nodes in UK and CH.
 
-sdns://AgcAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OA9yZG5zLmZhZWxpeC5uZXQBLw
+sdns://AgcAAAAAAAAADDE5NS4zMC45NC4yOCA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OA1kb2guZmZtdWMubmV0Ci9kbnMtcXVlcnk
+
+## doh.ffmuc.net
+
+An open DoH resolver operated by Freifunk Munich with nodes in DE.
+
+sdns://AgcAAAAAAAAADDE5NS4zMC45NC4yOAANZG9oLmZmbXVjLm5ldAovZG5zLXF1ZXJ5
+
+## doh.ffmuc.net-v6
+
+An open DoH resolver operated by Freifunk Munich with nodes in DE.
+
+sdns://AgcAAAAAAAAAFVsyMDAxOjYwODphMDE6OjNdOjQ0MyA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OA1kb2guZmZtdWMubmV0Ci9kbnMtcXVlcnk
 
 ## freetsa.org
 
@@ -833,25 +902,73 @@ Non-logged/Uncensored provided by freetsa.org
 
 sdns://AQcAAAAAAAAAEzIwNS4xODUuMTE2LjExNjo1NTMg2P-7QuAxvnp5cwtFVo1Jak6Ky1mqg2b9arkeJyp9FuQbMi5kbnNjcnlwdC1jZXJ0LmZyZWV0c2Eub3Jn
 
+## geekdns-west
+
+GeekDNS in western China (Chongqing).
+
+GeekDNS is a non-logging public DNS service located in mainland China.
+Queries are cached locally, and, for some domains, resolved by servers located
+in Taiwan.
+
+https://dns.233py.com/
+
+sdns://AQMAAAAAAAAAETExOC4yNC4yMDguMTk3OjIyIL66dzE0aNGlvYsF3RnukLk4AI3lQqSxeEo6PxHme-qZGTIuZG5zY3J5cHQtY2VydC4yMzNweS5jb20
+
+## geekdns-south
+
+GeekDNS in southern China (Guangzhou).
+
+GeekDNS is a non-logging public DNS service located in mainland China.
+Queries are cached locally, and, for some domains, resolved by servers located
+in Taiwan.
+
+https://dns.233py.com/
+
+sdns://AQMAAAAAAAAAEDExOS4yOS4xMDcuODU6MjIgCsUpkBu6ujbEDZ8PQI2wa3DCkDzxLlczLOwTyQTQM70ZMi5kbnNjcnlwdC1jZXJ0LjIzM3B5LmNvbQ
+
+## geekdns-north
+
+GeekDNS in northern China (Beijing).
+
+GeekDNS is a non-logging public DNS service located in mainland China.
+Queries are cached locally, and, for some domains, resolved by servers located
+in Taiwan.
+
+https://dns.233py.com/
+
+sdns://AQMAAAAAAAAAEjExNC4xMTUuMjQwLjE3NToyMiCLntDYEK0AwismFtMCM0YMkflJGNZiJnINFtDLcCLLwBkyLmRuc2NyeXB0LWNlcnQuMjMzcHkuY29t
+
+## geekdns-hk
+
+GeekDNS in Hong Kong.
+
+GeekDNS is a non-logging public DNS service located in Hong Kong..
+Queries are cached locally, and, for some domains, resolved by servers located
+in Taiwan.
+
+https://dns.233py.com/
+
+sdns://AQcAAAAAAAAAETE1MC4xMDkuNzQuMTY0OjIyIPcEBXJOU2jQys6br08P8yyn132SuDixQ8Oek3lhoRQoGTIuZG5zY3J5cHQtY2VydC4yMzNweS5jb20
+
 ## geekdns-doh-east
 
 GeekDNS in eastern China (Shanghai).
 
-GeekDNS is a non-logging public DNS service located in mainland china,
-that also blocks ads and trackers. Queries are cached locally, and,
-for some domains, resolved by servers located in Taiwan.
+GeekDNS is a non-logging public DNS service located in mainland China.
+Queries are cached locally, and, for some domains, resolved by servers located
+in Taiwan.
 
 https://dns.233py.com/
 
-sdns://AgMAAAAAAAAADTQ3LjEwMS4xMzYuMzcgPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgOZWRucy4yMzNweS5jb20KL2Rucy1xdWVyeQ
+sdns://AgcAAAAAAAAADTQ3LjEwMS4xMzYuMzcgot4zSQxHbTVuLbxzfCd5aSJJUmtlq4-6mjQoBIHIvfwOZWRucy4yMzNweS5jb20KL2Rucy1xdWVyeQ
 
 ## geekdns-doh-west
 
 GeekDNS in western China (Chongqing).
 
-GeekDNS is a non-logging public DNS service located in mainland china,
-that also blocks ads and trackers. Queries are cached locally, and,
-for some domains, resolved by servers located in Taiwan.
+GeekDNS is a non-logging public DNS service located in mainland China.
+Queries are cached locally, and, for some domains, resolved by servers located
+in Taiwan.
 
 https://dns.233py.com/
 
@@ -861,25 +978,25 @@ sdns://AgMAAAAAAAAADjExOC4yNC4yMDguMTk3ID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aP
 
 GeekDNS in southern China (Guangzhou).
 
-GeekDNS is a non-logging public DNS service located in mainland china,
-that also blocks ads and trackers. Queries are cached locally, and,
-for some domains, resolved by servers located in Taiwan.
+GeekDNS is a non-logging public DNS service located in mainland China.
+Queries are cached locally, and, for some domains, resolved by servers located
+in Taiwan.
 
 https://dns.233py.com/
 
-sdns://AgMAAAAAAAAADTExOS4yOS4xMDcuODUgPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgOc2Rucy4yMzNweS5jb20KL2Rucy1xdWVyeQ
+sdns://AgcAAAAAAAAADTExOS4yOS4xMDcuODUgot4zSQxHbTVuLbxzfCd5aSJJUmtlq4-6mjQoBIHIvfwOc2Rucy4yMzNweS5jb20KL2Rucy1xdWVyeQ
 
 ## geekdns-doh-north
 
 GeekDNS in northern China (Beijing).
 
-GeekDNS is a non-logging public DNS service located in mainland china,
-that also blocks ads and trackers. Queries are cached locally, and,
-for some domains, resolved by servers located in Taiwan.
+GeekDNS is a non-logging public DNS service located in mainland China.
+Queries are cached locally, and, for some domains, resolved by servers located
+in Taiwan.
 
 https://dns.233py.com/
 
-sdns://AgMAAAAAAAAADzExNC4xMTUuMjQwLjE3NSA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OA5uZG5zLjIzM3B5LmNvbQovZG5zLXF1ZXJ5
+sdns://AgcAAAAAAAAADzExNC4xMTUuMjQwLjE3NSCi3jNJDEdtNW4tvHN8J3lpIklSa2Wrj7qaNCgEgci9_A5uZG5zLjIzM3B5LmNvbQovZG5zLXF1ZXJ5
 
 ## google
 
