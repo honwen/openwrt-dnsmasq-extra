@@ -46,7 +46,11 @@ ipv4_servers = true
 dnscrypt_servers = $(uci_bool_by_type $NAME enable_dnscrypt && echo -n true || echo -n false)
 doh_servers = $(uci_bool_by_type $NAME enable_doh && echo -n true || echo -n false)
 require_dnssec = true
+require_nofilter = true
+require_nolog = true
 force_tcp = false
+netprobe_timeout = 120
+netprobe_address = '182.254.116.116:80'
 timeout = $(uci_get_by_type $NAME timeout 2500)
 keepalive = 30
 cert_refresh_delay = 240
@@ -63,10 +67,16 @@ cache_neg_max_ttl = 600
 
 [sources]
   [sources.'public-resolvers']
-  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/public-resolvers.md', 'https://www.evilvibes.com/list/public-resolvers.md']
+  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/public-resolvers.md', 'https://download.dnscrypt.info/resolvers-list/v2/public-resolvers.md']
   cache_file = '/var/etc/dnscrypt.d/public-resolvers.md'
   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
   prefix = ''
+
+  [sources.'relays']
+  urls = ['https://github.com/DNSCrypt/dnscrypt-resolvers/raw/master/v2/relays.md', 'https://download.dnscrypt.info/resolvers-list/v2/relays.md']
+  cache_file = "/var/etc/dnscrypt.d/quad9-resolvers.md"
+  minisign_key = "RWQBphd2+f6eiAqBsvDZEBXBGHQBJfeG6G+wJPPKxCZMoEQYpmoysKUN"
+  prefix = "relays-"
 
   [sources.'quad9-resolvers']
   urls = ["https://www.quad9.net/quad9-resolvers.md"]
