@@ -1,9 +1,8 @@
-
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=adguard-home
-PKG_VERSION:=2019-10-18
-PKG_RELEASE:=0.99.0
+PKG_VERSION:=2019-10-25
+PKG_RELEASE:=0.99.2
 PKG_MAINTAINER:=chenhw2 <https://github.com/chenhw2>
 
 # OpenWrt ARCH: arm, aarch64, i386, x86_64, mips, mipsel
@@ -44,6 +43,7 @@ endef
 
 define Build/Prepare
 	gzip -dc "$(DL_DIR)/$(PKG_SOURCE)" | tar -C $(PKG_BUILD_DIR)/ -xf -
+	mv "$(DL_DIR)/$(PKG_SOURCE)" "$(DL_DIR)/$(PKG_RELEASE)_$(PKG_SOURCE)"
 endef
 
 define Build/Compile
