@@ -179,7 +179,7 @@ update_sub(){
 	bak="/tmp/${sub}.backup"
 	cp -f "${file}" "${bak}"
 	curl --connect-timeout 10 --max-time 60 -ksSL ${src} -o ${file}
-	oldHash=$(md5sum "${file}" | sed 's/ .*//g')
+	oldHash=$(md5sum "${file}" 2>/dev/null | sed 's/ .*//g')
 	[ "Z$oldHash" == "Z$newHash" ] && {
 		echo "# ${file} Updated"
 		rm -f "${bak}"
