@@ -4,9 +4,12 @@ PKG_NAME:=smartdns
 PKG_VERSION:=2019-12-15
 PKG_RELEASE:=Release28
 
-PKG_SOURCE_URL:=https://github.com/pymumu/smartdns/archive/
-PKG_SOURCE:=$(PKG_RELEASE).tar.gz
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_RELEASE)
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE).tar.gz
+PKG_SOURCE_URL:=https://github.com/pymumu/smartdns.git
+PKG_SOURCE_VERSION:=cc93156ee3af9de89e8e6db72554a3790170ce0b
+PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)/$(BUILD_VARIANT)/$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE)
 
 include $(INCLUDE_DIR)/package.mk
 MAKE_ARGS := CFLAGS="$(TARGET_CFLAGS)" CC=$(TARGET_CC)
@@ -26,11 +29,8 @@ obtains DNS query results from multiple upstream DNS servers,
 and returns the fastest access results to clients.
 endef
 
-define Build/Configure
-	mkdir -p $(PKG_INSTALL_DIR)
-endef
-
 define Build/Compile
+	mkdir -p $(PKG_INSTALL_DIR)
 	$(MAKE) -C $(PKG_BUILD_DIR)/src $(MAKE_ARGS) all
 endef
 
