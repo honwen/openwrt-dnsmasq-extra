@@ -1,0 +1,73 @@
+#!/bin/sh /etc/rc.common
+
+START=92
+NAME=smartdns
+USE_PROCD=1
+
+CRON_FILE=/etc/crontabs/root
+
+uci_get_by_type() {
+	local ret=$(uci get $NAME.@$1[0].$2 2>/dev/null)
+	echo ${ret:=$3}
+}
+
+uci_bool_by_type() {
+	case "$(uci_get_by_type $1 $2)" in
+		1|on|true|yes|enabled) return 0;;
+	esac
+	return 1
+}
+
+start_instance() {
+	procd_open_instance
+	procd_set_param respawn
+	procd_set_param stderr 1
+	procd_set_param command $@
+	procd_close_instance
+}
+
+service_triggers() {
+	procd_add_reload_trigger $NAME
+}
+
+start_service() {
+	uci_bool_by_type $NAME enable || exit 0
+	add_cron
+
+	mkdir -p /var/etc/ /var/log/
+
+	cat <<-EOF > "/var/etc/${NAME}.conf"
+bind :$(uci_get_by_type $NAME port 7700)
+cache-size 2048
+
+prefetch-domain $(uci_bool_by_type $NAME prefetch && echo yes || echo no)
+force-AAAA-SOA $(uci_bool_by_type $NAME ipv6 && echo no || echo yes)
+
+log-level info
+log-file /var/log/smartdns.log
+
+$(
+	for type in tls https; do
+		for it in $(uci_get_by_type $NAME server_${type}); do echo "server-${type} ${it}"; done
+	done
+)
+
+EOF
+	start_instance /usr/bin/$NAME -c "/var/etc/${NAME}.conf" -f
+}
+
+stop_service() {
+	del_cron
+	rm -f "/var/etc/${NAME}.conf"
+}
+
+add_cron() {
+	sed -i "/${NAME}/d" $CRON_FILE
+	echo "*    *    * * * /usr/bin/pgrep -f ${NAME}.conf || /etc/init.d/${NAME} restart" >> $CRON_FILE
+	/etc/init.d/cron restart
+}
+
+del_cron() {
+	sed -i "/${NAME}/d" $CRON_FILE
+	/etc/init.d/cron restart
+}
