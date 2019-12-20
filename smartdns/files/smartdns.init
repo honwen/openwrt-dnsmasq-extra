@@ -37,14 +37,18 @@ start_service() {
 	mkdir -p /var/etc/ /var/log/
 
 	cat <<-EOF > "/var/etc/${NAME}.conf"
-bind :$(uci_get_by_type $NAME port 7700)
+bind 0.0.0.0:$(uci_get_by_type $NAME port 7700)
+bind-tcp 0.0.0.0:$(uci_get_by_type $NAME port 7700)
 cache-size 2048
 
+speed-check-mode tcp:80,ping
 prefetch-domain $(uci_bool_by_type $NAME prefetch && echo yes || echo no)
 force-AAAA-SOA $(uci_bool_by_type $NAME ipv6 && echo no || echo yes)
 
 log-level info
 log-file /var/log/smartdns.log
+log-size 512K
+log-num 2
 
 $(
 	for type in tls https; do
