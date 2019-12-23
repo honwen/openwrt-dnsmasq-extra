@@ -14,7 +14,7 @@
   make menuconfig
   # 开始编译
   make package/feeds/openwrt-dnsmasq-extra/cdns/compile V=99
-  make package/feeds/openwrt-dnsmasq-extra/dns-forwarder/compile V=99
+  make package/feeds/openwrt-dnsmasq-extra/dnsFtcp/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/chinadns/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/adguard-home/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/dnscrypt/compile V=99
@@ -29,7 +29,7 @@
 
 - dnsmasq-extra + adguard-home
 
-- dnsmasq-extra + chinadns (+cdns +dns-forwarder)
+- dnsmasq-extra + chinadns (+cdns +dnsFtcp)
 
 # Provider
 
@@ -44,7 +44,7 @@
 Upstream DNS for ChinaDNS:
 
 - `cdns@730X with multidns/udp`
-- `dns-forwarder@730X with multidns/tcp`
+- `dnsFtcp@730X with multidns/tcp`
 
 ### dnsmasq-extra
 
