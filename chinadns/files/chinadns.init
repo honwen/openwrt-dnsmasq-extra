@@ -44,7 +44,7 @@ start_service() {
 		let subport=$((subport + 1))
 		alldns="${alldns},127.0.0.1#${subport}"
 		( echo $dns | grep -q ':53' ) || subcdns="${subcdns} 127.0.0.1:${subport}"
-		start_instance /usr/bin/dns-forwarder -p $subport -s $dns
+		start_instance /usr/bin/dnsFtcp -p $subport -s $dns
 	done
 
 	let subport=$((subport + 1))
