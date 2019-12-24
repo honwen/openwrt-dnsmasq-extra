@@ -1,18 +1,20 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=smartdns
-PKG_VERSION:=2019-12-15
+PKG_VERSION:=2019-12-21
 PKG_RELEASE:=Release28
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE).tar.gz
 PKG_SOURCE_URL:=https://github.com/pymumu/smartdns.git
-PKG_SOURCE_VERSION:=cc93156ee3af9de89e8e6db72554a3790170ce0b
+PKG_SOURCE_VERSION:=5a91e90ee3e363161897070a8e4fcb4e71f3d557
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE)
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)/$(BUILD_VARIANT)/$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE)
+PKG_BUILD_PARALLEL:=1
 
 include $(INCLUDE_DIR)/package.mk
-MAKE_ARGS := CFLAGS="$(TARGET_CFLAGS)" CC=$(TARGET_CC)
+MAKE_VARS += VER=$(PKG_RELEASE)\@$(PKG_VERSION)
+MAKE_PATH:=src
 
 define Package/smartdns
 	SECTION:=net
@@ -20,18 +22,13 @@ define Package/smartdns
 	TITLE:=A local DNS server to obtain the fastest access results
 	URL:=http://github.com/pymumu/smartdns/
 	MAINTAINER:=honwen <https://github.com/honwen>
-	DEPENDS:=+libopenssl
+	DEPENDS:=+libpthread +libopenssl
 endef
 
 define Package/smartdns/description
 SmartDNS accepts DNS query requests from local clients,
 obtains DNS query results from multiple upstream DNS servers,
 and returns the fastest access results to clients.
-endef
-
-define Build/Compile
-	mkdir -p $(PKG_INSTALL_DIR)
-	$(MAKE) -C $(PKG_BUILD_DIR)/src $(MAKE_ARGS) all
 endef
 
 define Package/smartdns/install
