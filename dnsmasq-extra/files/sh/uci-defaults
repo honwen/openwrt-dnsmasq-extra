@@ -2,6 +2,7 @@
 
 sed -i '/dnsmasq-extra/d' /etc/crontabs/root
 echo '0 0 5 * * /etc/init.d/dnsmasq-extra update' >> /etc/crontabs/root
+echo '3 7 * * * /etc/init.d/dnsmasq-extra restart' >> /etc/crontabs/root
 
 echo "/etc/init.d/dnsmasq-extra rules" > /etc/dnsmasq-extra.d/firewall.include
 
