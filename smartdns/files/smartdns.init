@@ -52,8 +52,12 @@ log-num 2
 
 $(
 	for type in tls https; do
-		for it in $(uci_get_by_type $NAME server_${type}); do echo "server-${type} ${it}"; done
+		for it in $(uci_get_by_type $NAME server_${type}); do echo "server-${type} ${it} -blacklist-ip"; done
 	done
+)
+
+$(
+	for it in $(uci_get_by_type $NAME blacklist_ip); do echo "blacklist-ip ${it}"; done
 )
 
 EOF
