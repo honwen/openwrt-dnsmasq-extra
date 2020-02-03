@@ -441,8 +441,13 @@ sdns://AQcAAAAAAAAAEjUxLjE1LjEyNC4yMDg6NDM0MyADjE4mkpovrUv1ECTHll_wW3kmiOLAbXmBf
 ## ams-doh-nl
 
 Resolver in Amsterdam. DoH protocol. Non-logging, non-filtering, DNSSEC.
-
 sdns://AgcAAAAAAAAAETUxLjE1LjEyNC4yMDg6NDQzABRkbnMuYWxla2JlcmcubmV0OjQ0MwEv
+
+
+## ams-doh-noads-nl
+
+Resolver in Amsterdam. DoH protocol. Non-logging, ads-filtering, DNSSEC.
+sdns://AgMAAAAAAAAAETUxLjE1LjEyNC4yMDg6NDQzABRkbnMuYWxla2JlcmcubmV0OjQ0MwYvbm9hZHM
 
 
 ## arvind-io
@@ -562,14 +567,14 @@ sdns://AQMAAAAAAAAAEjE4NS4yMjguMTY4Ljk6ODQ0MyC8rDL61UNpFx8IMtYHUCfDIIzu8Ojpn5QY3
 
 Cloudflare DNS (anycast) - aka 1.1.1.1 / 1.0.0.1
 
-sdns://AgcAAAAAAAAABzEuMC4wLjGgENk8mGSlIfMGXMOlIlCcKvq7AVgcrZxtjon911-ep0cg63Ul-I8NlFj4GplQGb_TTLiczclX57DvMV8Q-JdjgRgSZG5zLmNsb3VkZmxhcmUuY29tCi9kbnMtcXVlcnk
+sdns://AgcAAAAAAAAABzEuMC4wLjEAEmRucy5jbG91ZGZsYXJlLmNvbQovZG5zLXF1ZXJ5
 
 
 ## cloudflare-ipv6
 
 Cloudflare DNS over IPv6 (anycast)
 
-sdns://AgcAAAAAAAAAGVsyNjA2OjQ3MDA6NDcwMDo6MTExMV06NTOgENk8mGSlIfMGXMOlIlCcKvq7AVgcrZxtjon911-ep0cg63Ul-I8NlFj4GplQGb_TTLiczclX57DvMV8Q-JdjgRgSZG5zLmNsb3VkZmxhcmUuY29tCi9kbnMtcXVlcnk
+sdns://AgcAAAAAAAAAGVsyNjA2OjQ3MDA6NDcwMDo6MTExMV06NTMAEmRucy5jbG91ZGZsYXJlLmNvbQovZG5zLXF1ZXJ5
 
 
 ## commons-host
@@ -758,6 +763,16 @@ US - WA DNSCrypt server provided by https://cryptostorm.is/
 sdns://AQYAAAAAAAAADDY0LjEyMC41LjI1MSAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
 
 
+## cz.nic
+
+CZ.NIC's open DNSSEC validating resolvers in Prague, Czech Republic.
+CZ.NIC resolvers neither collect any personal data nor gather
+information on pages where your computer sends personal data.
+https://www.nic.cz/odvr/
+
+sdns://AgcAAAAAAAAADDE4NS40My4xMzUuMSA_4zhjTgUQYz3kU8o1CxXOwzmz3Li6nyot0k0QqDj-6wtvZHZyLm5pYy5jegQvZG9o
+
+
 ## d0wn-is-ns2
 
 Server provided by Martin 'd0wn' Albus
@@ -931,14 +946,14 @@ sdns://AQcAAAAAAAAADDQ1Ljc2LjM1LjIxMiBMhPuMBRFd-l-Xxe0DKRNwx4q81k4V3VOrCN5y-4RKy
 
 ## dnscrypt.one
 
-DNSSEC / no logs / uncensored, Germany (Nuremberg), https://dnscrypt.one/
+non-logging, non-filtering and non-censoring, DNSSEC. Germany (Nuremberg), https://dnscrypt.one
 
 sdns://AQcAAAAAAAAAEjE0NC45MS4xMDYuMjI3OjQ0MyBCc4nfqRWGkg4g1vk6yPqtIdsD5Ub4y3sDEKYnQ2vN3BwyLmRuc2NyeXB0LWNlcnQuZG5zY3J5cHQub25l
 
 
 ## dnscrypt.one-ipv6
 
-DNSSEC / no logs / uncensored, Germany (Nuremberg), https://dnscrypt.one/
+non-logging, non-filtering and non-censoring, DNSSEC. Germany (Nuremberg), https://dnscrypt.one
 
 sdns://AQcAAAAAAAAAHFsyYTAyOmMyMDc6MzAwNDo1ODYyOjoxXTo0NDMgQnOJ36kVhpIOINb5Osj6rSHbA-VG-Mt7AxCmJ0NrzdwcMi5kbnNjcnlwdC1jZXJ0LmRuc2NyeXB0Lm9uZQ
 
@@ -1098,7 +1113,7 @@ DNS-over-HTTPS server. Anycast, no logs, no censorship, DNSSEC.
 Backend hosted by Scaleway, globally cached via Cloudflare.
 Maintained by Frank Denis.
 
-sdns://AgcAAAAAAAAADDEwNC4yOC4wLjEwNiAd2FCKjFZZBDl8eGRR4I9XYTzzyKcj9vN5_Uw4WLbznw1kb2guY3J5cHRvLnN4Ci9kbnMtcXVlcnk
+sdns://AgcAAAAAAAAADDEwNC4yOC4wLjEwNiA9pLcWNKQTwc7zSqltJaQBY01M82w7Ezx0KU5I5jcBKg1kb2guY3J5cHRvLnN4Ci9kbnMtcXVlcnk
 
 
 ## doh-crypto-sx-ipv6
@@ -1296,7 +1311,7 @@ sdns://AgMAAAAAAAAAGVsyNjA2OjQ3MDA6MzA6OjY4MWM6MWQyMl0gT7VsEyKePk-NGW4wncgn3krUt
 Non-logging, uncensored DNS resolver provided by evilvibes.com
 Location: Toronto, Canada
 
-sdns://AQcAAAAAAAAADDEwNy42LjI3LjEyNiBKEpoRbQZH3zIeBpcBNAV1uYi0-KeRAKZXwmaT1K3YkB0yLmRuc2NyeXB0LWNlcnQuZXZpbHZpYmVzLmNvbQ
+sdns://AQcAAAAAAAAADTIzLjExMS42OS4yMzggdOCmaDjs4MgSiTXowm5ae9FetLivEu9dl9QbbruylMcdMi5kbnNjcnlwdC1jZXJ0LmV2aWx2aWJlcy5jb20
 
 
 ## ev-va
@@ -1471,7 +1486,13 @@ Hosted in Switzerland by ibksturm, aka Andreas Ziegler
 
 sdns://AQcAAAAAAAAADzgzLjc3Ljg1Ljc6ODQ0MyDBz1dQALBbwmxiH17PmqJWCs6_AH6-yzp_9LIN4LQ57hgyLmRuc2NyeXB0LWNlcnQuaWJrc3R1cm0
 
-DNS Stamp for Anonymized DNS relaying: sdns://gQ84My43Ny44NS43Ojg0NDM
+
+## ibksturm-ipv6
+
+dnscrypt-server (nginx - encrypted-dns - unbound backend), DNSSEC / Non-Logged / Uncensored, OpenNIC and Root DNS-Zone Copy
+Hosted in Switzerland by ibksturm, aka Andreas Ziegler
+
+sdns://AQcAAAAAAAAALlsyYTAyOjEyMDU6MzRkNTo1MDcwOmIyNmU6YmZmZjpmZTFkOmUxOWJdOjg0NDMgwc9XUACwW8JsYh9ez5qiVgrOvwB-vss6f_SyDeC0Oe4YMi5kbnNjcnlwdC1jZXJ0Lmlia3N0dXJt
 
 
 ## id-gmail
@@ -1568,6 +1589,14 @@ DoH server in Germany. No logging, but no DNS padding and no DNSSEC support.
 https://libredns.gr/
 
 sdns://AgYAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OA9kb2gubGlicmVkbnMuZ3IKL2Rucy1xdWVyeQ
+
+
+## libredns-noads
+
+DoH server in Germany. No logging, but no DNS padding and no DNSSEC support.
+no ads version, uses StevenBlack's host list: https://github.com/StevenBlack/hosts
+
+sdns://AgIAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OA9kb2gubGlicmVkbnMuZ3IEL2Fkcw
 
 
 ## mrkaran
@@ -1868,6 +1897,13 @@ Remove ads and protect your computer from malware, phishing, ransomware and spam
 sdns://AQMAAAAAAAAAFDEwNC4xNjguMjQ3LjEzODo0MzQzIAOMTiaSmi-tS_UQJMeWX_BbeSaI4sBteYF81b-NFTOXHzIuZG5zY3J5cHQtY2VydC5zZWEtZG5zY3J5cHQtdXM
 
 
+## sea-doh-us
+
+Resolver in Seattle (USA). DoH protocol. Non-logging, DNSSEC, No-filter.
+
+sdns://AgcAAAAAAAAAEzEwNC4xNjguMjQ3LjEzODo0NDMAFWRuczIuYWxla2JlcmcubmV0OjQ0MwEv
+
+
 ## securedns
 
 Uncensored and no logging (DNSCrypt protocol)
@@ -1903,6 +1939,22 @@ Hosted in Paris, running on a 1-XS server donated by Scaleway.com
 Maintained by Frank Denis - https://fr.dnscrypt.info/sfw.html
 
 sdns://AQMAAAAAAAAAEzE2My4xNzIuMTgwLjEyNTo0NDMg32Jzv8dSGSqLWjm8DIWsP_lkRdc2RPZicoJdNVjxof8fMi5kbnNjcnlwdC1jZXJ0LnNmdy5zY2FsZXdheS1mcg
+
+
+## skyfighter-dns
+
+Uncensored, DNSSEC, no logging DNSCrypt server in Netherlands by Scaleway.com
+Maintained by tuttimann
+
+sdns://AQcAAAAAAAAADzUxLjE1LjYyLjY1OjQ0MyDRa9y0Ck5_qrri1JzXpTlOfz7vsOpqOvgepY6nL5iXmyIyLmRuc2NyeXB0LWNlcnQuc2t5ZmlnaHRlci1kbnMuY29t
+
+
+## skyfighter-dns-ipv6
+
+Uncensored, DNSSEC, no logging DNSCrypt server (IPv6) in Netherlands by Scaleway.com
+Maintained by tuttimann
+
+sdns://AQcAAAAAAAAAG1syMDAxOmJjODoxODI0OjE3MGY6OjFdOjQ0MyDRa9y0Ck5_qrri1JzXpTlOfz7vsOpqOvgepY6nL5iXmyIyLmRuc2NyeXB0LWNlcnQuc2t5ZmlnaHRlci1kbnMuY29t
 
 
 ## soltysiak

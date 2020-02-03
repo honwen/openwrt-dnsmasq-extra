@@ -259,7 +259,7 @@ sdns://gR5bMmEwMzpiMGMwOjE6ZTA6OjJlMzplMDAxXTo0NDM
 
 Anonymized DNS relay provided by evilvibes.com Location: Toronto, Canada
 
-sdns://gQwxMDcuNi4yNy4xMjY
+sdns://gQ0yMy4xMTEuNjkuMjM4
 
 
 ## anon-ev-va
@@ -274,6 +274,13 @@ sdns://gQ4xMDQuMzYuMTQ5LjE3Nw
 Hosted in Switzerland and maintained by @ibksturm, aka Andreas Ziegler.
 
 sdns://gQ84My43Ny44NS43Ojg0NDM
+
+
+## anon-ibksturm-ipv6
+
+Hosted in Switzerland and maintained by @ibksturm, aka Andreas Ziegler.
+
+sdns://gS5bMmEwMjoxMjA1OjM0ZDU6NTA3MDpiMjZlOmJmZmY6ZmUxZDplMTliXTo4NDQz
 
 
 ## anon-inconnu
@@ -320,6 +327,21 @@ Anonymized DNS relay hosted in Amsterdam and maintained by Frank Denis (@jedisct
 IPv6 only. Running on an instance donated by https://scaleway.com
 
 sdns://gR5bMjAwMTpiYzg6NDcwMDoyNTAwOjoxMzdkXTo0NDM
+
+
+## anon-skyfighter
+
+Anonymized DNS relay hosted in Netherlands (https://scaleway.com) and maintained by @tuttimann.
+
+sdns://gQ81MS4xNS42Mi42NTo0NDM
+
+
+## anon-skyfighter-ipv6
+
+Anonymized DNS relay hosted in Netherlands (https://scaleway.com) and maintained by @tuttimann.
+IPv6 only.
+
+sdns://gRtbMjAwMTpiYzg6MTgyNDoxNzBmOjoxXTo0NDM
 
 
 ## anon-tiarap
