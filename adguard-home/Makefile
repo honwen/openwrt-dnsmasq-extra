@@ -1,8 +1,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=adguard-home
-PKG_VERSION:=2019-12-26
-PKG_RELEASE:=0.100.8
+PKG_VERSION:=2020-01-15
+PKG_RELEASE:=0.100.9
 PKG_MAINTAINER:=chenhw2 <https://github.com/chenhw2>
 
 # OpenWrt ARCH: arm, aarch64, i386, x86_64, mips, mipsel
