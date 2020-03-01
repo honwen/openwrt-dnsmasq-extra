@@ -1,6 +1,7 @@
 
 config general
 	option enable 1
+	option no_resolv 0
 	option adblock 'enabled'
 	list plugins 'adguard-home'
 	list plugins 'smartdns'
