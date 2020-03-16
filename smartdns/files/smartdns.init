@@ -67,29 +67,47 @@ $(
 
 EOF
 
-	uci_bool_by_type $NAME enable_cn && cat <<-EOF >> "/var/etc/${NAME}.conf"
-bind 0.0.0.0:$((port + 1)) -group cn
-bind-tcp 0.0.0.0:$((port + 1)) -group cn
-serve-expired yes
+	start_instance /usr/bin/$NAME -c "/var/etc/${NAME}.conf" -f
 
-server-https https://doh.360.cn/dns-query -group cn -exclude-default-group
-server-https https://dns.alidns.com/dns-query -group cn -exclude-default-group
-server-https https://223.5.5.5/dns-query -group cn -exclude-default-group
-server-https https://223.6.6.6/dns-query -group cn -exclude-default-group
+	uci_bool_by_type $NAME enable_cn && {
+		cat <<-EOF > "/var/etc/${NAME}.cn.conf"
+bind 0.0.0.0:$((port + 1))
+bind-tcp 0.0.0.0:$((port + 1))
+cache-size 2048
 
+speed-check-mode ping,tcp:80
+
+prefetch-domain $(uci_bool_by_type $NAME prefetch && echo yes || echo no)
+force-AAAA-SOA $(uci_bool_by_type $NAME ipv6 && echo no || echo yes)
+
+log-level info
+log-file /var/log/smartdns.cn.log
+log-size 512K
+log-num 2
+
+server-tcp 182.254.116.116:53
+server-tcp 182.254.118.118:53
+server-tls 223.5.5.5:853
+server-tls 223.6.6.6:853
+server-https https://223.5.5.5/dns-query
+server-https https://223.6.6.6/dns-query
 EOF
 
-	start_instance /usr/bin/$NAME -c "/var/etc/${NAME}.conf" -f
+		start_instance /usr/bin/$NAME -c "/var/etc/${NAME}.cn.conf" -f
+	}
 }
 
 stop_service() {
 	del_cron
-	rm -f "/var/etc/${NAME}.conf"
+	rm -f "/var/etc/${NAME}*.conf"
 }
 
 add_cron() {
 	sed -i "/${NAME}/d" $CRON_FILE
 	echo "*    *    * * * /usr/bin/pgrep -f ${NAME}.conf || /etc/init.d/${NAME} restart" >> $CRON_FILE
+	uci_bool_by_type $NAME enable_cn && {
+		echo "*    *    * * * /usr/bin/pgrep -f ${NAME}.cn.conf || /etc/init.d/${NAME} restart" >> $CRON_FILE
+	}
 	/etc/init.d/cron restart
 }
 

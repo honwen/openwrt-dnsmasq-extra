@@ -134,13 +134,20 @@ start() {
 	echo -n "CUSTOM" && {
 		echo "all-servers" >${TARGET}/misc_custom.conf
 		echo "conf-file=${DATA}/custom.conf" >>${TARGET}/misc_custom.conf
+
 		uci_bool_by_type ${NAME} general overwrite_resolve && {
+			uci_bool_by_type ${NAME} general overwrite_smartdns && {
+				local smartdns_port=$(uci_get_by_type smartdns smartdns port 0000)
+				echo "server=127.0.0.1#$((smartdns_port + 1))" >>${TARGET}/misc_custom.conf
+			}
+
 			local tcpport=8200
 			for server in $(uci_get_by_type ${NAME} general overwrite_tcp_ns); do
 				tcpport=$((tcpport + 1))
 				(/usr/bin/dnsFtcp -p $tcpport -s ${server} >/dev/null 2>&1) &
 				echo "server=127.0.0.1#${tcpport}" >>${TARGET}/misc_custom.conf
 			done
+
 			echo -n ", OVERWRITE-RESOLVE" && echo 'no-resolv' >>${TARGET}/misc_custom.conf
 		}
 	}

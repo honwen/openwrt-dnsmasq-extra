@@ -1,0 +1,26 @@
+From 21ab5c8ac862a52ecee1784435337c001e230d18 Mon Sep 17 00:00:00 2001
+From: hwchan <honwen.chan@gmail.com>
+Date: Tue, 10 Mar 2020 23:07:53 +0800
+Subject: [PATCH] allow run multiple times
+
+---
+ src/util.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/src/util.c b/src/util.c
+index a7f5983..af9c10e 100644
+--- a/src/util.c
++++ b/src/util.c
+@@ -665,8 +665,7 @@ int create_pid_file(const char *pid_file)
+ 	}
+ 
+ 	if (lockf(fd, F_TLOCK, 0) < 0) {
+-		fprintf(stderr, "Server is already running.\n");
+-		goto errout;
++		fprintf(stderr, "# WARN: Server is already running.\n");
+ 	}
+ 
+ 	snprintf(buff, TMP_BUFF_LEN_32, "%d\n", getpid());
+-- 
+2.17.1
+
