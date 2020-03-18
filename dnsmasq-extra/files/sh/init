@@ -188,9 +188,19 @@ restart() {
 }
 
 update() {
+	update_chn
 	update_sub 'gfwlist'
 	update_sub 'direct'
-	update_chn
+	update_others
+}
+
+update_others() {
+	overlay_free=$(df -k | grep -E '^overlay' | awk '{print $4}')
+	# only update data: adblock/tldn when disk free > 1MiB
+	[ "Z$overlay_free" == "Z" ] && return 0
+	[ $overlay_free -lt 1024 ] && return 0
+	update_sub 'tldn'
+	update_sub 'adblock'
 }
 
 update_sub() {
@@ -199,7 +209,7 @@ update_sub() {
 	src="https://raw.githubusercontent.com/chenhw2/openwrt-${NAME}/master/${NAME}/files/data/${sub}"
 
 	oldHash=$(md5sum ${file} 2>/dev/null | sed 's/ .*//g')
-	newHash=$(curl --connect-timeout 5 --max-time 20 -ksSL ${src}.md5sum | sed 's/ .*//g')
+	newHash=$(curl --retry 3 --connect-timeout 5 --max-time 20 -ksSL ${src}.md5sum | sed 's/ .*//g')
 
 	# echo $oldHash $newHash
 	[ "Z$oldHash" == "Z" -o "Z$newHash" == "Z" ] && return 1
@@ -222,23 +232,31 @@ update_sub() {
 
 update_chn() {
 	chnroute=/etc/${NAME}.d/chnroute.txt
-	[ "Z$chnroute" != "Z" ] || return 0
+	cp -f $chnroute /tmp/chnroute.txt.bak
 
 	chnsrc='https://cdn.jsdelivr.net/gh/17mon/china_ip_list/china_ip_list.txt'
 
 	echo "# $chnroute Updating"
-	curl --connect-timeout 10 --max-time 120 -ksSL $chnsrc -o $chnroute
+	curl --retry 3 --connect-timeout 10 --max-time 120 -ksSL $chnsrc -o $chnroute
 	if [ $? -eq 0 ]; then
 		echo "# $chnroute Updated"
 	else
 		echo "# $chnroute NOT Updated"
 	fi
 
-	if [ ! -f "$chnroute" ] || [ $(ls -l "$chnroute" | awk '{print $5}') -lt 4096 ]; then
+	if [ $(cat $chnroute 2>&1 | grep -cE '^[0-9]*\.[0-9]*\.[0-9]*\.[0-9]\/[0-9]*$') -lt 2048 ]; then
+		echo "# $chnroute is broken, rollback Now!"
+		rm -f "$chnroute"
+		cp -f /tmp/chnroute.txt.bak "$chnroute"
+	fi
+
+	if [ $(cat $chnroute 2>&1 | grep -cE '^[0-9]*\.[0-9]*\.[0-9]*\.[0-9]\/[0-9]*$') -lt 2048 ]; then
 		echo "# $chnroute is broken, failsafe Now!"
 		rm -f "$chnroute"
 		cp -f "/rom$chnroute" "$chnroute"
 	fi
+
+	rm -f /tmp/chnroute.txt.bak
 }
 
 rules() {
