@@ -104,162 +104,6 @@ Remove ads and protect your computer from malware
 sdns://AQMAAAAAAAAAGVsyYTAwOjVhNjA6OmFkMjowZmZdOjU0NDMggdAC02pMpQxHO3R5ZQ_hLgKzIcthOFYqII5APf3FXpQiMi5kbnNjcnlwdC5kZWZhdWx0Lm5zMi5hZGd1YXJkLmNvbQ
 
 
-## ads-dnswarden-dc1
-
-DnsCrypt protocol . Non-logging, AD-filtering, supports DNSSEC. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAEzExNi4yMDMuNzAuMTU2OjQ0NDMgenKjVeH-LU7Opsyq1ljKZz14fHsngOK8OOeQ-cR2mAsjMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0xLWFkYmxvY2s
-
-
-## ads-dnswarden-dc1-ecs
-DnsCrypt protocol . Non-logging, AD-filtering, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAFDExNi4yMDMuNzAuMTU2OjE1MzUzIHpyo1Xh_i1OzqbMqtZYymc9eHx7J4DivDjnkPnEdpgLJzIuZG5zY3J5cHQtY2VydC5kbnN3YXJkZW4tMS1hZGJsb2NrLWVjcw
-
-
-## ads-dnswarden-dc1-ipv6
-
-DnsCrypt protocol . Non-logging, AD-filtering, supports DNSSEC. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxYzFjOjc1YjQ6OjFdOjQ0NDMgenKjVeH-LU7Opsyq1ljKZz14fHsngOK8OOeQ-cR2mAsjMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0xLWFkYmxvY2s
-
-
-## ads-dnswarden-dc1-ipv6-ecs
-DnsCrypt protocol . Non-logging, AD-filtering, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAHVsyYTAxOjRmODoxYzFjOjc1YjQ6OjFdOjE1MzUzIHpyo1Xh_i1OzqbMqtZYymc9eHx7J4DivDjnkPnEdpgLJzIuZG5zY3J5cHQtY2VydC5kbnN3YXJkZW4tMS1hZGJsb2NrLWVjcw
-
-
-## ads-dnswarden-dc2
-
-DnsCrypt protocol . Non-logging, AD-filtering, supports DNSSEC. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAEzExNi4yMDMuMzUuMjU1OjQ0NDMg-IlTTFFgMuUntnNV78COzbhJN9_OEOVWNgHhdg4BNXwjMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0yLWFkYmxvY2s
-
-
-## ads-dnswarden-dc2-ecs
-DnsCrypt protocol . Non-logging, AD-filtering, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAFDExNi4yMDMuMzUuMjU1OjE1MzUzIPiJU0xRYDLlJ7ZzVe_Ajs24STffzhDlVjYB4XYOATV8JzIuZG5zY3J5cHQtY2VydC5kbnN3YXJkZW4tMi1hZGJsb2NrLWVjcw
-
-
-## ads-dnswarden-dc2-ipv6
-
-DnsCrypt protocol . Non-logging, AD-filtering, supports DNSSEC. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxYzFjOjVlNzc6OjFdOjQ0NDMg-IlTTFFgMuUntnNV78COzbhJN9_OEOVWNgHhdg4BNXwjMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0yLWFkYmxvY2s
-
-
-## ads-dnswarden-dc2-ipv6-ecs
-DnsCrypt protocol . Non-logging, AD-filtering, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAHVsyYTAxOjRmODoxYzFjOjVlNzc6OjFdOjE1MzUzIPiJU0xRYDLlJ7ZzVe_Ajs24STffzhDlVjYB4XYOATV8JzIuZG5zY3J5cHQtY2VydC5kbnN3YXJkZW4tMi1hZGJsb2NrLWVjcw
-
-
-## ads-dnswarden-dc3
-
-DnsCrypt protocol . Non-logging, AD-filtering, supports DNSSEC. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAETg4LjE5OC4xNjEuODo0NDQzIBc_e3j6AbaHocJHqJVzfpZ7xi2puAm6tL5xZTRrMTPbIzIuZG5zY3J5cHQtY2VydC5kbnN3YXJkZW4tMy1hZGJsb2Nr
-
-
-## ads-dnswarden-dc3-ecs
-DnsCrypt protocol . Non-logging, AD-filtering, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAEjg4LjE5OC4xNjEuODoxNTM1MyAXP3t4-gG2h6HCR6iVc36We8YtqbgJurS-cWU0azEz2ycyLmRuc2NyeXB0LWNlcnQuZG5zd2FyZGVuLTMtYWRibG9jay1lY3M
-
-
-## ads-dnswarden-dc3-ipv6
-
-DnsCrypt protocol . Non-logging, AD-filtering, supports DNSSEC. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAG1syYTAxOjRmODpjMGM6NjJhNzo6MV06NDQ0MyAXP3t4-gG2h6HCR6iVc36We8YtqbgJurS-cWU0azEz2yMyLmRuc2NyeXB0LWNlcnQuZG5zd2FyZGVuLTMtYWRibG9jaw
-
-
-## ads-dnswarden-dc3-ipv6-ecs
-DnsCrypt protocol . Non-logging, AD-filtering, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAHFsyYTAxOjRmODpjMGM6NjJhNzo6MV06MTUzNTMgFz97ePoBtoehwkeolXN-lnvGLam4Cbq0vnFlNGsxM9snMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0zLWFkYmxvY2stZWNz
-
-
-## ads-dnswarden-doh1
-
-Dns-over-HTTPS protocol . Non-logging, AD-filtering, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAADjExNi4yMDMuNzAuMTU2ID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4EWRvaC5kbnN3YXJkZW4uY29tCC9hZGJsb2Nr
-
-
-## ads-dnswarden-doh1-ecs
-Dns-over-HTTPS protocol . Non-logging, AD-filtering, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAADjExNi4yMDMuNzAuMTU2ID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4FWVjcy1kb2guZG5zd2FyZGVuLmNvbQwvYWRibG9jay1lY3M
-
-
-## ads-dnswarden-doh1-ipv6
-
-Dns-over-HTTPS protocol . Non-logging, AD-filtering, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAAF1syYTAxOjRmODoxYzFjOjc1YjQ6OjFdID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4EWRvaC5kbnN3YXJkZW4uY29tCC9hZGJsb2Nr
-
-
-## ads-dnswarden-doh1-ipv6-ecs
-Dns-over-HTTPS protocol . Non-logging, AD-filtering, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAAF1syYTAxOjRmODoxYzFjOjc1YjQ6OjFdID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4FWVjcy1kb2guZG5zd2FyZGVuLmNvbQwvYWRibG9jay1lY3M
-
-
-## ads-dnswarden-doh2
-
-Dns-over-HTTPS protocol . Non-logging, AD-filtering, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAADjExNi4yMDMuMzUuMjU1ID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4EWRvaC5kbnN3YXJkZW4uY29tCC9hZGJsb2Nr
-
-
-## ads-dnswarden-doh2-ecs
-Dns-over-HTTPS protocol . Non-logging, AD-filtering, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAADjExNi4yMDMuMzUuMjU1ID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4FWVjcy1kb2guZG5zd2FyZGVuLmNvbQwvYWRibG9jay1lY3M
-
-
-## ads-dnswarden-doh2-ipv6
-
-Dns-over-HTTPS protocol . Non-logging, AD-filtering, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAAF1syYTAxOjRmODoxYzFjOjVlNzc6OjFdID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4EWRvaC5kbnN3YXJkZW4uY29tCC9hZGJsb2Nr
-
-
-## ads-dnswarden-doh2-ipv6-ecs
-Dns-over-HTTPS protocol . Non-logging, AD-filtering, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAAF1syYTAxOjRmODoxYzFjOjVlNzc6OjFdID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4FWVjcy1kb2guZG5zd2FyZGVuLmNvbQwvYWRibG9jay1lY3M
-
-
-## ads-dnswarden-doh3
-
-Dns-over-HTTPS protocol . Non-logging, AD-filtering, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAADDg4LjE5OC4xNjEuOCA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBFkb2guZG5zd2FyZGVuLmNvbQgvYWRibG9jaw
-
-
-## ads-dnswarden-doh3-ecs
-Dns-over-HTTPS protocol . Non-logging, AD-filtering, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAADDg4LjE5OC4xNjEuOCA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBVlY3MtZG9oLmRuc3dhcmRlbi5jb20ML2FkYmxvY2stZWNz
-
-
-## ads-dnswarden-doh3-ipv6
-
-Dns-over-HTTPS protocol . Non-logging, AD-filtering, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAAFlsyYTAxOjRmODpjMGM6NjJhNzo6MV0gPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgRZG9oLmRuc3dhcmRlbi5jb20IL2FkYmxvY2s
-
-
-## ads-dnswarden-doh3-ipv6-ecs
-Dns-over-HTTPS protocol . Non-logging, AD-filtering, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAAFlsyYTAxOjRmODpjMGM6NjJhNzo6MV0gPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgVZWNzLWRvaC5kbnN3YXJkZW4uY29tDC9hZGJsb2NrLWVjcw
-
-
 ## ads-securedns-doh
 
 Filter Ads and no logging (DoH protocol)
@@ -274,179 +118,35 @@ Filter Ads and no logging (IPv6, DoH protocol)
 sdns://AgMAAAAAAAAAHFsyYTAzOmIwYzA6MDoxMDEwOjplOWE6MzAwMV0gPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgUYWRzLWRvaC5zZWN1cmVkbnMuZXUKL2Rucy1xdWVyeQ
 
 
-## af-dnswarden-dc1
-
-DnsCrypt protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAEzExNi4yMDMuNzAuMTU2OjE0NDMgenKjVeH-LU7Opsyq1ljKZz14fHsngOK8OOeQ-cR2mAsoMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0xLWFkdWx0LWZpbHRlcg
-
-
-## af-dnswarden-dc1-ecs
-DnsCrypt protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAEzExNi4yMDMuNzAuMTU2OjU0NDMgenKjVeH-LU7Opsyq1ljKZz14fHsngOK8OOeQ-cR2mAssMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0xLWFkdWx0LWZpbHRlci1lY3M
-
-
-## af-dnswarden-dc1-ipv6
-
-DnsCrypt protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxYzFjOjc1YjQ6OjFdOjE0NDMgenKjVeH-LU7Opsyq1ljKZz14fHsngOK8OOeQ-cR2mAsoMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0xLWFkdWx0LWZpbHRlcg
-
-
-## af-dnswarden-dc1-ipv6-ecs
-DnsCrypt protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxYzFjOjc1YjQ6OjFdOjU0NDMgenKjVeH-LU7Opsyq1ljKZz14fHsngOK8OOeQ-cR2mAssMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0xLWFkdWx0LWZpbHRlci1lY3M
-
-
-## af-dnswarden-dc2
-
-DnsCrypt protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAEzExNi4yMDMuMzUuMjU1OjE0NDMg-IlTTFFgMuUntnNV78COzbhJN9_OEOVWNgHhdg4BNXwoMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0yLWFkdWx0LWZpbHRlcg
-
-
-## af-dnswarden-dc2-ecs
-DnsCrypt protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAEzExNi4yMDMuMzUuMjU1OjU0NDMg-IlTTFFgMuUntnNV78COzbhJN9_OEOVWNgHhdg4BNXwsMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0yLWFkdWx0LWZpbHRlci1lY3M
-
-
-## af-dnswarden-dc2-ipv6
-
-DnsCrypt protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxYzFjOjVlNzc6OjFdOjE0NDMg-IlTTFFgMuUntnNV78COzbhJN9_OEOVWNgHhdg4BNXwoMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0yLWFkdWx0LWZpbHRlcg
-
-
-## af-dnswarden-dc2-ipv6-ecs
-DnsCrypt protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxYzFjOjVlNzc6OjFdOjU0NDMg-IlTTFFgMuUntnNV78COzbhJN9_OEOVWNgHhdg4BNXwsMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0yLWFkdWx0LWZpbHRlci1lY3M
-
-
-## af-dnswarden-dc3
-
-DnsCrypt protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAETg4LjE5OC4xNjEuODoxNDQzIBc_e3j6AbaHocJHqJVzfpZ7xi2puAm6tL5xZTRrMTPbKDIuZG5zY3J5cHQtY2VydC5kbnN3YXJkZW4tMy1hZHVsdC1maWx0ZXI
-
-
-## af-dnswarden-dc3-ecs
-DnsCrypt protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAETg4LjE5OC4xNjEuODo1NDQzIBc_e3j6AbaHocJHqJVzfpZ7xi2puAm6tL5xZTRrMTPbLDIuZG5zY3J5cHQtY2VydC5kbnN3YXJkZW4tMy1hZHVsdC1maWx0ZXItZWNz
-
-
-## af-dnswarden-dc3-ipv6
-
-DnsCrypt protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAG1syYTAxOjRmODpjMGM6NjJhNzo6MV06MTQ0MyAXP3t4-gG2h6HCR6iVc36We8YtqbgJurS-cWU0azEz2ygyLmRuc2NyeXB0LWNlcnQuZG5zd2FyZGVuLTMtYWR1bHQtZmlsdGVy
-
-
-## af-dnswarden-dc3-ipv6-ecs
-DnsCrypt protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AQMAAAAAAAAAG1syYTAxOjRmODpjMGM6NjJhNzo6MV06NTQ0MyAXP3t4-gG2h6HCR6iVc36We8YtqbgJurS-cWU0azEz2ywyLmRuc2NyeXB0LWNlcnQuZG5zd2FyZGVuLTMtYWR1bHQtZmlsdGVyLWVjcw
-
-
-## af-dnswarden-doh1
-
-Dns-over-HTTPS protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAADjExNi4yMDMuNzAuMTU2ID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4EWRvaC5kbnN3YXJkZW4uY29tDS9hZHVsdC1maWx0ZXI
-
-
-## af-dnswarden-doh1-ecs
-Dns-over-HTTPS protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAADjExNi4yMDMuNzAuMTU2ID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4FWVjcy1kb2guZG5zd2FyZGVuLmNvbREvYWR1bHQtZmlsdGVyLWVjcw
-
-
-## af-dnswarden-doh1-ipv6
-
-Dns-over-HTTPS protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAAF1syYTAxOjRmODoxYzFjOjc1YjQ6OjFdID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4EWRvaC5kbnN3YXJkZW4uY29tDS9hZHVsdC1maWx0ZXI
-
-
-## af-dnswarden-doh1-ipv6-ecs
-Dns-over-HTTPS protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAAF1syYTAxOjRmODoxYzFjOjc1YjQ6OjFdID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4FWVjcy1kb2guZG5zd2FyZGVuLmNvbREvYWR1bHQtZmlsdGVyLWVjcw
-
-
-## af-dnswarden-doh2
-
-Dns-over-HTTPS protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAADjExNi4yMDMuMzUuMjU1ID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4EWRvaC5kbnN3YXJkZW4uY29tDS9hZHVsdC1maWx0ZXI
-
-
-## af-dnswarden-doh2-ecs
-Dns-over-HTTPS protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAADjExNi4yMDMuMzUuMjU1ID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4FWVjcy1kb2guZG5zd2FyZGVuLmNvbREvYWR1bHQtZmlsdGVyLWVjcw
-
-
-## af-dnswarden-doh2-ipv6
-
-Dns-over-HTTPS protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAAF1syYTAxOjRmODoxYzFjOjVlNzc6OjFdID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4EWRvaC5kbnN3YXJkZW4uY29tDS9hZHVsdC1maWx0ZXI
-
-
-## af-dnswarden-doh2-ipv6-ecs
-Dns-over-HTTPS protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAAF1syYTAxOjRmODoxYzFjOjVlNzc6OjFdID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4FWVjcy1kb2guZG5zd2FyZGVuLmNvbREvYWR1bHQtZmlsdGVyLWVjcw
-
-
-## af-dnswarden-doh3
-
-Dns-over-HTTPS protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAADDg4LjE5OC4xNjEuOCA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBFkb2guZG5zd2FyZGVuLmNvbQ0vYWR1bHQtZmlsdGVy
-
-
-## af-dnswarden-doh3-ecs
-Dns-over-HTTPS protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAADDg4LjE5OC4xNjEuOCA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBVlY3MtZG9oLmRuc3dhcmRlbi5jb20RL2FkdWx0LWZpbHRlci1lY3M
-
-
-## af-dnswarden-doh3-ipv6
-
-Dns-over-HTTPS protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAAFlsyYTAxOjRmODpjMGM6NjJhNzo6MV0gPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgRZG9oLmRuc3dhcmRlbi5jb20NL2FkdWx0LWZpbHRlcg
-
-
-## af-dnswarden-doh3-ipv6-ecs
-Dns-over-HTTPS protocol . Adult content filtering, Non-logging, AD-filtering, enforces force safe search for search engines and youtube, supports DNSSEC, ECS is enabled and self resolves as of now. By https://dnswarden.com
-
-sdns://AgMAAAAAAAAAFlsyYTAxOjRmODpjMGM6NjJhNzo6MV0gPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgVZWNzLWRvaC5kbnN3YXJkZW4uY29tES9hZHVsdC1maWx0ZXItZWNz
-
-
 ## ams-dnscrypt-nl
 
 Resolver in Amsterdam. DNSCrypt protocol. Non-logging, non-filtering, DNSSEC.
-Operated by @koki-es
+Forward DNS to anoymized DNS servers.
 
-sdns://AQcAAAAAAAAAEjUxLjE1LjEyNC4yMDg6NDM0MyADjE4mkpovrUv1ECTHll_wW3kmiOLAbXmBfNW_jRUzlx8yLmRuc2NyeXB0LWNlcnQuYW1zLWRuc2NyeXB0LW5s
+sdns://AQcAAAAAAAAAEjUxLjE1LjEyNC4yMDg6NDM0MyC8E4j1dj497HXxyQ_JFb-2iurf6xxF9phRgGOcYOfxYh8yLmRuc2NyeXB0LWNlcnQuYW1zLWRuc2NyeXB0LW5s
+
+
+## ams-dnscrypt-noads-nl
+
+Resolver in Amsterdam. DNSCrypt protocol. Non-logging, AD-filtering, DNSSEC.
+Forward DNS to anoymized DNS servers.
+
+sdns://AQMAAAAAAAAAEjUxLjE1LjEyNC4yMDg6NDQ0MyC8E4j1dj497HXxyQ_JFb-2iurf6xxF9phRgGOcYOfxYiUyLmRuc2NyeXB0LWNlcnQuYW1zLWRuc2NyeXB0LW5vYWRzLW5s
 
 
 ## ams-doh-nl
 
 Resolver in Amsterdam. DoH protocol. Non-logging, non-filtering, DNSSEC.
+Forward DNS to anoymized DNS servers.
+
 sdns://AgcAAAAAAAAAETUxLjE1LjEyNC4yMDg6NDQzABRkbnMuYWxla2JlcmcubmV0OjQ0MwEv
 
 
 ## ams-doh-noads-nl
 
 Resolver in Amsterdam. DoH protocol. Non-logging, ads-filtering, DNSSEC.
+Forward DNS to anoymized DNS servers.
+
 sdns://AgMAAAAAAAAAETUxLjE1LjEyNC4yMDg6NDQzABRkbnMuYWxla2JlcmcubmV0OjQ0MwYvbm9hZHM
 
 
@@ -460,13 +160,29 @@ Non-logging, non-filtering, supports DNSSEC.
 sdns://AQcAAAAAAAAAFDIwNi4xODkuMTQyLjE3OTo1MzUzII5GJ8c4g6hRAwghulrn5dBB9KrvlbeCkBbLZR2HwyjJGTIuZG5zY3J5cHQtY2VydC5hcnZpbmQuaW8
 
 
+## att
+
+AT&T test DoH server.
+
+sdns://AgQAAAAAAAAAAKBLTrSwdCmLgotcADCVoQtFI_uVHAyINIsJxT5bq6QIoyD2Hldod9qWUClMzLX5bHX8txvaG7xGRjZ8Tr7aidcxjxBkb2h0cmlhbC5hdHQubmV0Ci9kbnMtcXVlcnk
+
+
 ## brahma-world
 
 DNS-over-HTTPS / DNS over TLS server with PiHole. Filters ads, trackers and malware.
 
-Hosted in Bengaluru, India. (https://dns.brahma.world)
+Hosted in Nuremberg, Germany. (https://dns.brahma.world)
 
-sdns://AgMAAAAAAAAADjEzNC4yMDkuMTQ2LjE2oD4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4ID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4EGRucy5icmFobWEud29ybGQKL2Rucy1xdWVyeQ
+sdns://AgMAAAAAAAAADjk0LjEzMC4yMjQuMTE0ID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4EGRucy5icmFobWEud29ybGQKL2Rucy1xdWVyeQ
+
+
+## brahma-world-ipv6
+
+DNS-over-HTTPS / DNS over TLS server with PiHole. Filters ads, trackers and malware.
+
+Hosted in Nuremberg, Germany. (https://dns.brahma.world)
+
+sdns://AgMAAAAAAAAAFlsyYTAxOjRmODpjMGM6OTI1NTo6MV0gPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgQZG5zLmJyYWhtYS53b3JsZAovZG5zLXF1ZXJ5
 
 
 ## captnemo-in
@@ -481,32 +197,68 @@ sdns://AQQAAAAAAAAAEjEzOS41OS40OC4yMjI6NDQzNCAFOt_yxaMpFtga2IpneSwwK6rV0oAyleham
 
 ## cisco
 
-Remove your DNS blind spot
+Remove your DNS blind spot (DNSCrypt protocol)
 
 Warning: modifies your queries to include a copy of your network
 address when forwarding them to a selection of companies and organizations.
 
-sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMjIwILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ
+Currently incompatible with DNS anonymization.
+
+sdns://AQEAAAAAAAAADjIwOC42Ny4yMjAuMjIwILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ
+
+
+## cisco-doh
+
+Remove your DNS blind spot (DoH protocol)
+
+Warning: modifies your queries to include a copy of your network
+address when forwarding them to a selection of companies and organizations.
+
+sdns://AgAAAAAAAAAADDE0Ni4xMTIuNDEuMiBUDrXp92r0ml9Aq9cu3mXf2w_ugmc61w74ZllxOxR-Vw9kb2gub3BlbmRucy5jb20KL2Rucy1xdWVyeQ
 
 
 ## cisco-familyshield
 
-Block websites not suitable for children
+Block websites not suitable for children (DNSCrypt protocol)
 
 Warning: modifies your queries to include a copy of your network
 address when forwarding them to a selection of companies and organizations.
 
-sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMTIzILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ
+Currently incompatible with DNS anonymization.
+
+sdns://AQEAAAAAAAAADjIwOC42Ny4yMjAuMTIzILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ
+
+
+## cisco-familyshield-ipv6
+
+Block websites not suitable for children (IPv6)
+
+Warning: modifies your queries to include a copy of your network
+address when forwarding them to a selection of companies and organizations.
+
+sdns://AQEAAAAAAAAAEVsyNjIwOjExOTozNTo6MzVdILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ
 
 
 ## cisco-ipv6
 
-Cisco OpenDNS IPv6 sandbox
+Cisco OpenDNS over IPv6 (DNSCrypt protocol)
 
 Warning: modifies your queries to include a copy of your network
 address when forwarding them to a selection of companies and organizations.
 
-sdns://AQAAAAAAAAAAD1syNjIwOjA6Y2NjOjoyXSC3NRFAIG8iXT4r2CLX_WkeocM8yNZmjQy-BL-rykP7eRsyLmRuc2NyeXB0LWNlcnQub3BlbmRucy5jb20
+Currently incompatible with DNS anonymization.
+
+sdns://AQEAAAAAAAAAD1syNjIwOjA6Y2NjOjoyXSC3NRFAIG8iXT4r2CLX_WkeocM8yNZmjQy-BL-rykP7eRsyLmRuc2NyeXB0LWNlcnQub3BlbmRucy5jb20
+
+
+## cisco-ipv6-doh
+
+Cisco OpenDNS over IPv6 (DoH protocol)
+
+Warning: modifies your queries to include a copy of your network
+address when forwarding them to a selection of companies and organizations.
+
+sdns://AgAAAAAAAAAAEFsyNjIwOjExOTpmYzo6Ml0gVA616fdq9JpfQKvXLt5l39sP7oJnOtcO-GZZcTsUflcPZG9oLm9wZW5kbnMuY29tCi9kbnMtcXVlcnk
 
 
 ## cleanbrowsing-adult
@@ -613,154 +365,133 @@ sdns://AgMAAAAAAAAALVsyMDAxOjE5ZjA6NzAwMTo1NTU0OjU0MDA6MDJmZjpmZTU3OjMwNzddOjQ0M
 
 Canada DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADzE2Mi4yMjEuMjA3LjIyOCAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
+sdns://AQIAAAAAAAAADzE2Mi4yMjEuMjA3LjIyOCAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
 
 
 ## cs-ca2
 
 Secondary Canada DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADjE2Ny4xMTQuODQuMTMyIDEzcq1ZVjLCQWuHLwmPhRvduWUoTGy-mk8ZCWQw26laHjIuZG5zY3J5cHQtY2VydC5jcnlwdG9zdG9ybS5pcw
+sdns://AQIAAAAAAAAADjE2Ny4xMTQuODQuMTMyIDEzcq1ZVjLCQWuHLwmPhRvduWUoTGy-mk8ZCWQw26laHjIuZG5zY3J5cHQtY2VydC5jcnlwdG9zdG9ybS5pcw
 
 
 ## cs-ch
 
 Switzerland DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAACzgxLjE3LjMxLjM0IDEzcq1ZVjLCQWuHLwmPhRvduWUoTGy-mk8ZCWQw26laHjIuZG5zY3J5cHQtY2VydC5jcnlwdG9zdG9ybS5pcw
+sdns://AQIAAAAAAAAACzgxLjE3LjMxLjM0IDEzcq1ZVjLCQWuHLwmPhRvduWUoTGy-mk8ZCWQw26laHjIuZG5zY3J5cHQtY2VydC5jcnlwdG9zdG9ybS5pcw
 
 
 ## cs-de
 
 Germany DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADDg0LjE2LjI0MC40MyAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
+sdns://AQIAAAAAAAAADDg0LjE2LjI0MC40MyAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
 
 
 ## cs-fi
 
 Finland DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADjE4NS4xMTcuMTE4LjIwIDEzcq1ZVjLCQWuHLwmPhRvduWUoTGy-mk8ZCWQw26laHjIuZG5zY3J5cHQtY2VydC5jcnlwdG9zdG9ybS5pcw
+sdns://AQIAAAAAAAAADjE4NS4xMTcuMTE4LjIwIDEzcq1ZVjLCQWuHLwmPhRvduWUoTGy-mk8ZCWQw26laHjIuZG5zY3J5cHQtY2VydC5jcnlwdG9zdG9ybS5pcw
 
 
 ## cs-fr
 
 France DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADTIxMi4xMjkuNDYuMzIgMTNyrVlWMsJBa4cvCY-FG925ZShMbL6aTxkJZDDbqVoeMi5kbnNjcnlwdC1jZXJ0LmNyeXB0b3N0b3JtLmlz
+sdns://AQIAAAAAAAAADTIxMi4xMjkuNDYuMzIgMTNyrVlWMsJBa4cvCY-FG925ZShMbL6aTxkJZDDbqVoeMi5kbnNjcnlwdC1jZXJ0LmNyeXB0b3N0b3JtLmlz
 
 
 ## cs-it
 
 Italy DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADjE4NS45NC4xOTMuMjM0IDEzcq1ZVjLCQWuHLwmPhRvduWUoTGy-mk8ZCWQw26laHjIuZG5zY3J5cHQtY2VydC5jcnlwdG9zdG9ybS5pcw
+sdns://AQIAAAAAAAAADjE4NS45NC4xOTMuMjM0IDEzcq1ZVjLCQWuHLwmPhRvduWUoTGy-mk8ZCWQw26laHjIuZG5zY3J5cHQtY2VydC5jcnlwdG9zdG9ybS5pcw
 
 
 ## cs-lv
 
 Latvia DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADzEwOS4yNDguMTQ5LjEzMyAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
+sdns://AQIAAAAAAAAADzEwOS4yNDguMTQ5LjEzMyAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
 
 
 ## cs-mo
 
 Moldova DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADzE3OC4xNzUuMTM5LjIxMSAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
-
-
-## cs-nl
-
-Netherlands DNSCrypt server provided by https://cryptostorm.is/
-
-sdns://AQYAAAAAAAAADjIxMy4xNjMuNjQuMjA4IDEzcq1ZVjLCQWuHLwmPhRvduWUoTGy-mk8ZCWQw26laHjIuZG5zY3J5cHQtY2VydC5jcnlwdG9zdG9ybS5pcw
+sdns://AQIAAAAAAAAADzE3OC4xNzUuMTM5LjIxMSAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
 
 
 ## cs-nl2
 
 Secondary Netherlands DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADTE4NS4xMDcuODAuODQgMTNyrVlWMsJBa4cvCY-FG925ZShMbL6aTxkJZDDbqVoeMi5kbnNjcnlwdC1jZXJ0LmNyeXB0b3N0b3JtLmlz
-
-
-## cs-pl
-
-Poland DNSCrypt server provided by https://cryptostorm.is/
-
-sdns://AQYAAAAAAAAACzUuMTMzLjguMTg3IDEzcq1ZVjLCQWuHLwmPhRvduWUoTGy-mk8ZCWQw26laHjIuZG5zY3J5cHQtY2VydC5jcnlwdG9zdG9ybS5pcw
+sdns://AQIAAAAAAAAADTE4NS4xMDcuODAuODQgMTNyrVlWMsJBa4cvCY-FG925ZShMbL6aTxkJZDDbqVoeMi5kbnNjcnlwdC1jZXJ0LmNyeXB0b3N0b3JtLmlz
 
 
 ## cs-ro
 
 Romania DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADDUuMjU0Ljk2LjE5NSAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
+sdns://AQIAAAAAAAAADDUuMjU0Ljk2LjE5NSAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
 
 
 ## cs-swe
 
 Sweden DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADzEyOC4xMjcuMTA0LjEwOCAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
+sdns://AQIAAAAAAAAADzEyOC4xMjcuMTA0LjEwOCAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
 
 
 ## cs-usca
 
 US - CA DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADDIzLjE5LjY3LjExNiAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
-
-
-## cs-usdc
-
-US - DC DNSCrypt server provided by https://cryptostorm.is/
-
-sdns://AQYAAAAAAAAADDE5OC43LjU4LjIyNyAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
+sdns://AQIAAAAAAAAADDIzLjE5LjY3LjExNiAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
 
 
 ## cs-usga
 
 US - GA DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADTY0LjQyLjE4MS4yMjcgMTNyrVlWMsJBa4cvCY-FG925ZShMbL6aTxkJZDDbqVoeMi5kbnNjcnlwdC1jZXJ0LmNyeXB0b3N0b3JtLmlz
+sdns://AQIAAAAAAAAADTY0LjQyLjE4MS4yMjcgMTNyrVlWMsJBa4cvCY-FG925ZShMbL6aTxkJZDDbqVoeMi5kbnNjcnlwdC1jZXJ0LmNyeXB0b3N0b3JtLmlz
 
 
 ## cs-usil
 
 US - IL DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADjE3My4yMzQuNTYuMTE1IDEzcq1ZVjLCQWuHLwmPhRvduWUoTGy-mk8ZCWQw26laHjIuZG5zY3J5cHQtY2VydC5jcnlwdG9zdG9ybS5pcw
+sdns://AQIAAAAAAAAADjE3My4yMzQuNTYuMTE1IDEzcq1ZVjLCQWuHLwmPhRvduWUoTGy-mk8ZCWQw26laHjIuZG5zY3J5cHQtY2VydC5jcnlwdG9zdG9ybS5pcw
 
 
 ## cs-usnc
 
 US - NC DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADjE1NS4yNTQuMjkuMTEzIDEzcq1ZVjLCQWuHLwmPhRvduWUoTGy-mk8ZCWQw26laHjIuZG5zY3J5cHQtY2VydC5jcnlwdG9zdG9ybS5pcw
+sdns://AQIAAAAAAAAADjE1NS4yNTQuMjkuMTEzIDEzcq1ZVjLCQWuHLwmPhRvduWUoTGy-mk8ZCWQw26laHjIuZG5zY3J5cHQtY2VydC5jcnlwdG9zdG9ybS5pcw
 
 
 ## cs-usor
 
 US - OR DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADTEwNC4yNTUuMTc1LjIgMTNyrVlWMsJBa4cvCY-FG925ZShMbL6aTxkJZDDbqVoeMi5kbnNjcnlwdC1jZXJ0LmNyeXB0b3N0b3JtLmlz
+sdns://AQIAAAAAAAAADTEwNC4yNTUuMTc1LjIgMTNyrVlWMsJBa4cvCY-FG925ZShMbL6aTxkJZDDbqVoeMi5kbnNjcnlwdC1jZXJ0LmNyeXB0b3N0b3JtLmlz
 
 
 ## cs-ustx
 
 US - TX DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADTIwOS41OC4xNDcuMzYgMTNyrVlWMsJBa4cvCY-FG925ZShMbL6aTxkJZDDbqVoeMi5kbnNjcnlwdC1jZXJ0LmNyeXB0b3N0b3JtLmlz
+sdns://AQIAAAAAAAAADTIwOS41OC4xNDcuMzYgMTNyrVlWMsJBa4cvCY-FG925ZShMbL6aTxkJZDDbqVoeMi5kbnNjcnlwdC1jZXJ0LmNyeXB0b3N0b3JtLmlz
 
 
 ## cs-uswa
 
 US - WA DNSCrypt server provided by https://cryptostorm.is/
 
-sdns://AQYAAAAAAAAADDY0LjEyMC41LjI1MSAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
+sdns://AQIAAAAAAAAADDY0LjEyMC41LjI1MSAxM3KtWVYywkFrhy8Jj4Ub3bllKExsvppPGQlkMNupWh4yLmRuc2NyeXB0LWNlcnQuY3J5cHRvc3Rvcm0uaXM
 
 
 ## cz.nic
@@ -937,25 +668,11 @@ Free, non-logged, uncensored. Hosted by RamNode.
 sdns://AQcAAAAAAAAADjE3Ni41Ni4yMzcuMTcxIGfADywhxVSBRd18tGonGvLrlpkxQKMJtiuNFlMRhZxmJTIuZG5zY3J5cHQtY2VydC5yZXNvbHZlcjEuZG5zY3J5cHQuZXU
 
 
-## dnscrypt.nl-ns0
-
-DNSCrypt v2 server in Amsterdam, the Netherlands. DNSSEC, no logs, uncensored, recursive DNS. https://dnscrypt.nl
-
-sdns://AQcAAAAAAAAADDQ1Ljc2LjM1LjIxMiBMhPuMBRFd-l-Xxe0DKRNwx4q81k4V3VOrCN5y-4RKyh8yLmRuc2NyeXB0LWNlcnQubnMwLmRuc2NyeXB0Lm5s
-
-
 ## dnscrypt.one
 
 non-logging, non-filtering and non-censoring, DNSSEC. Germany (Nuremberg), https://dnscrypt.one
 
 sdns://AQcAAAAAAAAAEjE0NC45MS4xMDYuMjI3OjQ0MyBCc4nfqRWGkg4g1vk6yPqtIdsD5Ub4y3sDEKYnQ2vN3BwyLmRuc2NyeXB0LWNlcnQuZG5zY3J5cHQub25l
-
-
-## dnscrypt.one-ipv6
-
-non-logging, non-filtering and non-censoring, DNSSEC. Germany (Nuremberg), https://dnscrypt.one
-
-sdns://AQcAAAAAAAAAHFsyYTAyOmMyMDc6MzAwNDo1ODYyOjoxXTo0NDMgQnOJ36kVhpIOINb5Osj6rSHbA-VG-Mt7AxCmJ0NrzdwcMi5kbnNjcnlwdC1jZXJ0LmRuc2NyeXB0Lm9uZQ
 
 
 ## dnscrypt.uk-ipv4
@@ -992,88 +709,29 @@ Provided by: https://dnsforfamily.com
 sdns://AQIAAAAAAAAAF1syYTAxOjRmODoxYzE3OjRkZjg6OjFdIGN4CrSY4fb2hK8voFJL3GKiM7xQNwkKGH4b0k7LmMPxEGRuc2ZvcmZhbWlseS5jb20
 
 
-## dnswarden-dc1
+## dnsforge.de
 
-DnsCrypt protocol . Non-logging, supports DNSSEC. By https://dnswarden.com
+Public DoH resolver running with Pihole for Adblocking (https://dnsforge.de).
 
-sdns://AQcAAAAAAAAAEzExNi4yMDMuNzAuMTU2Ojg0NDMgenKjVeH-LU7Opsyq1ljKZz14fHsngOK8OOeQ-cR2mAskMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0xLXVuY2Vuc29y
+Non-logging, AD-filtering, supports DNSSEC. Hosted in Germany.
 
-
-## dnswarden-dc1-ipv6
-
-DnsCrypt protocol . Non-logging,supports DNSSEC. By https://dnswarden.com
-
-sdns://AQcAAAAAAAAAHFsyYTAxOjRmODoxYzFjOjc1YjQ6OjFdOjg0NDMgenKjVeH-LU7Opsyq1ljKZz14fHsngOK8OOeQ-cR2mAskMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0xLXVuY2Vuc29y
+sdns://AgMAAAAAAAAADDE3Ni45LjkzLjE5OCA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OAtkbnNmb3JnZS5kZQovZG5zLXF1ZXJ5
 
 
-## dnswarden-dc2
+## doh-centraleu-pi-dns
 
-DnsCrypt protocol . Non-logging, supports DNSSEC. By https://dnswarden.com
+Public Pi-hole DNS with DoH support. Blocks ads and trackers. No persistent logs, DNSSEC, Hosted in Nuremberg, Germany. By https://pi-dns.com/
+Server status can be seen at: https://pi-dns.com/
 
-sdns://AQcAAAAAAAAAEzExNi4yMDMuMzUuMjU1Ojg0NDMg-IlTTFFgMuUntnNV78COzbhJN9_OEOVWNgHhdg4BNXwkMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0yLXVuY2Vuc29y
-
-
-## dnswarden-dc2-ipv6
-
-DnsCrypt protocol . Non-logging,supports DNSSEC. By https://dnswarden.com
-
-sdns://AQcAAAAAAAAAHFsyYTAxOjRmODoxYzFjOjVlNzc6OjFdOjg0NDMg-IlTTFFgMuUntnNV78COzbhJN9_OEOVWNgHhdg4BNXwkMi5kbnNjcnlwdC1jZXJ0LmRuc3dhcmRlbi0yLXVuY2Vuc29y
+sdns://AgMAAAAAAAAADTg4LjE5OC45MS4xODcgPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgYZG9oLmNlbnRyYWxldS5waS1kbnMuY29tCi9kbnMtcXVlcnk
 
 
-## dnswarden-dc3
+## doh-centraleu-pi-dns-ipv6
 
-DnsCrypt protocol . Non-logging, supports DNSSEC. By https://dnswarden.com
+Public Pi-hole DNS with DoH support. Blocks ads and trackers. No persistent logs, DNSSEC, Hosted in Nuremberg, Germany. By https://pi-dns.com/
+Server status can be seen at: https://pi-dns.com/
 
-sdns://AQcAAAAAAAAAETg4LjE5OC4xNjEuODo4NDQzIBc_e3j6AbaHocJHqJVzfpZ7xi2puAm6tL5xZTRrMTPbJDIuZG5zY3J5cHQtY2VydC5kbnN3YXJkZW4tMy11bmNlbnNvcg
-
-
-## dnswarden-dc3-ipv6
-
-DnsCrypt protocol . Non-logging,supports DNSSEC. By https://dnswarden.com
-
-sdns://AQcAAAAAAAAAG1syYTAxOjRmODpjMGM6NjJhNzo6MV06ODQ0MyAXP3t4-gG2h6HCR6iVc36We8YtqbgJurS-cWU0azEz2yQyLmRuc2NyeXB0LWNlcnQuZG5zd2FyZGVuLTMtdW5jZW5zb3I
-
-
-## dnswarden-doh1
-
-Dns-over-HTTPS protocol . Non-logging, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgcAAAAAAAAADjExNi4yMDMuNzAuMTU2ID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4EWRvaC5kbnN3YXJkZW4uY29tCy91bmNlbnNvcmVk
-
-
-## dnswarden-doh1-ipv6
-
-Dns-over-HTTPS protocol . Non-logging, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgcAAAAAAAAAF1syYTAxOjRmODoxYzFjOjc1YjQ6OjFdID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4EWRvaC5kbnN3YXJkZW4uY29tCy91bmNlbnNvcmVk
-
-
-## dnswarden-doh2
-
-Dns-over-HTTPS protocol . Non-logging, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgcAAAAAAAAADjExNi4yMDMuMzUuMjU1ID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4EWRvaC5kbnN3YXJkZW4uY29tCy91bmNlbnNvcmVk
-
-
-## dnswarden-doh2-ipv6
-
-Dns-over-HTTPS protocol . Non-logging, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgcAAAAAAAAAF1syYTAxOjRmODoxYzFjOjVlNzc6OjFdID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4EWRvaC5kbnN3YXJkZW4uY29tCy91bmNlbnNvcmVk
-
-
-## dnswarden-doh3
-
-Dns-over-HTTPS protocol . Non-logging, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgcAAAAAAAAADDg4LjE5OC4xNjEuOCA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBFkb2guZG5zd2FyZGVuLmNvbQsvdW5jZW5zb3JlZA
-
-
-## dnswarden-doh3-ipv6
-
-Dns-over-HTTPS protocol . Non-logging, supports DNSSEC. By https://dnswarden.com
-
-sdns://AgcAAAAAAAAAFlsyYTAxOjRmODpjMGM6NjJhNzo6MV0gPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgRZG9oLmRuc3dhcmRlbi5jb20LL3VuY2Vuc29yZWQ
+sdns://AgMAAAAAAAAAF1syYTAxOjRmODoxYzBjOjgyMzM6OjFdID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4GGRvaC5jZW50cmFsZXUucGktZG5zLmNvbQovZG5zLXF1ZXJ5
 
 
 ## doh-cleanbrowsing-adult
@@ -1141,16 +799,16 @@ sdns://AgMAAAAAAAAAF1syYTAxOjRmODoxYzFjOjZiNGI6OjFdABJkb2gtZGUuYmxhaGRucy5jb20KL
 
 ## doh-eastus-pi-dns
 
-Public Pi-hole DNS with DoH support. Blocks ads and trackers. No persistent logs, DNSSEC, Hosted in New York. By https://pi-dns.com/
-Server status can be seen at: https://eastus.pi-dns.com/
+Public Pi-hole DNS with DoH support. Blocks ads and trackers. No persistent logs, DNSSEC, Hosted in New York, USA. By https://pi-dns.com/
+Server status can be seen at: https://pi-dns.com/
 
 sdns://AgMAAAAAAAAADjE4NS4yMTMuMjYuMTg3ID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4FWRvaC5lYXN0dXMucGktZG5zLmNvbQovZG5zLXF1ZXJ5
 
 
 ## doh-eastus-pi-dns-ipv6
 
-Public Pi-hole DNS with DoH support. Blocks ads and trackers. No persistent logs, DNSSEC, Hosted in New York. By https://pi-dns.com/
-Server status can be seen at: https://eastus.pi-dns.com/
+Public Pi-hole DNS with DoH support. Blocks ads and trackers. No persistent logs, DNSSEC, Hosted in New York, USA. By https://pi-dns.com/
+Server status can be seen at: https://pi-dns.com/
 
 sdns://AgMAAAAAAAAAFlsyYTBkOjU2MDA6MzM6Mzo6YWJjZF0gPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgVZG9oLmVhc3R1cy5waS1kbnMuY29tCi9kbnMtcXVlcnk
 
@@ -1209,48 +867,32 @@ sdns://AgMAAAAAAAAAKVsyMDAxOjE5ZjA6NzAwMTozMjU5OjU0MDA6MDJmZjpmZTcxOjBiYzldABJkb
 
 ## doh-northeu-pi-dns
 
-Public Pi-hole DNS with DoH support. Blocks ads and trackers. No persistent logs, DNSSEC, Hosted in Helsinki. By https://pi-dns.com/
-Server status can be seen at: https://northeu.pi-dns.com/
+Public Pi-hole DNS with DoH support. Blocks ads and trackers. No persistent logs, DNSSEC, Hosted in Helsinki, Finland. By https://pi-dns.com/
+Server status can be seen at: https://pi-dns.com/
 
 sdns://AgMAAAAAAAAADjk1LjIxNi4xODEuMjI4ID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4FmRvaC5ub3J0aGV1LnBpLWRucy5jb20KL2Rucy1xdWVyeQ
 
 
 ## doh-northeu-pi-dns-ipv6
 
-Public Pi-hole DNS with DoH support. Blocks ads and trackers. No persistent logs, DNSSEC, Hosted in Helsinki. By https://pi-dns.com/
-Server status can be seen at: https://northeu.pi-dns.com/
+Public Pi-hole DNS with DoH support. Blocks ads and trackers. No persistent logs, DNSSEC, Hosted in Helsinki, Finland. By https://pi-dns.com/
+Server status can be seen at: https://pi-dns.com/
 
 sdns://AgMAAAAAAAAAF1syYTAxOjRmOTpjMDFmOjQ6OmFiY2RdID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4FmRvaC5ub3J0aGV1LnBpLWRucy5jb20KL2Rucy1xdWVyeQ
 
 
-## doh-westeu-pi-dns
-
-Public Pi-hole DNS with DoH support. Blocks ads and trackers. No persistent logs, DNSSEC, Hosted in Netherlands. By https://pi-dns.com/
-Server status can be seen at: https://westeu.pi-dns.com/
-
-sdns://AgMAAAAAAAAADDMxLjIyMC40Mi42NSA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBVkb2gud2VzdGV1LnBpLWRucy5jb20KL2Rucy1xdWVyeQ
-
-
-## doh-westeu-pi-dns-ipv6
-
-Public Pi-hole DNS with DoH support. Blocks ads and trackers. No persistent logs, DNSSEC, Hosted in Netherlands. By https://pi-dns.com/
-Server status can be seen at: https://westeu.pi-dns.com/
-
-sdns://AgMAAAAAAAAAGFsyYTAxOjZmMDpmZmZmOjQ5OjphYmNkXSA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBVkb2gud2VzdGV1LnBpLWRucy5jb20KL2Rucy1xdWVyeQ
-
-
 ## doh-westus-pi-dns
 
-Public Pi-hole DNS with DoH support. Blocks ads and trackers. No persistent logs, DNSSEC, Hosted in Los Angeles. By https://pi-dns.com/
-Server status can be seen at: https://westus.pi-dns.com/
+Public Pi-hole DNS with DoH support. Blocks ads and trackers. No persistent logs, DNSSEC, Hosted in Los Angeles, USA. By https://pi-dns.com/
+Server status can be seen at: https://pi-dns.com/
 
 sdns://AgMAAAAAAAAADTQ1LjY3LjIxOS4yMDggPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgVZG9oLndlc3R1cy5waS1kbnMuY29tCi9kbnMtcXVlcnk
 
 
 ## doh-westus-pi-dns-ipv6
 
-Public Pi-hole DNS with DoH support. Blocks ads and trackers. No persistent logs, DNSSEC, Hosted in Los Angeles. By https://pi-dns.com/
-Server status can be seen at: https://westus.pi-dns.com/
+Public Pi-hole DNS with DoH support. Blocks ads and trackers. No persistent logs, DNSSEC, Hosted in Los Angeles, USA. By https://pi-dns.com/
+Server status can be seen at: https://pi-dns.com/
 
 sdns://AgMAAAAAAAAAGFsyYTA0OmJkYzc6MTAwOjcwOjphYmNkXSA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBVkb2gud2VzdHVzLnBpLWRucy5jb20KL2Rucy1xdWVyeQ
 
@@ -1306,6 +948,14 @@ Filters out ads, trackers and malware, NO ECS, supports DNSSEC.
 sdns://AgMAAAAAAAAAGVsyNjA2OjQ3MDA6MzA6OjY4MWM6MWQyMl0gT7VsEyKePk-NGW4wncgn3krUtflpClvMP1lhELmyackOZG9oLnRpYXJhcC5vcmcKL2Rucy1xdWVyeQ
 
 
+## edoardo
+
+Caching, non-censoring, non-logging, DNSSEC-capable, DNSCrypt-enabled, Anonymized DNS
+by lucenera
+
+sdns://AQcAAAAAAAAAEDUxLjE1LjcxLjE0Nzo0NDMgu2uyBfHQB7I65s0VVTSmpqTfqPGjRxaBHveht3-R8KseMi5kbnNjcnlwdC1jZXJ0Lml0LmVkb2FyZG8uY29t
+
+
 ## ev-to
 
 Non-logging, uncensored DNS resolver provided by evilvibes.com
@@ -1352,108 +1002,30 @@ Non-logged/Uncensored provided by freetsa.org
 sdns://AQcAAAAAAAAAEzIwNS4xODUuMTE2LjExNjo1NTMg2P-7QuAxvnp5cwtFVo1Jak6Ky1mqg2b9arkeJyp9FuQbMi5kbnNjcnlwdC1jZXJ0LmZyZWV0c2Eub3Jn
 
 
-## geekdns-doh-east
+## geekdns-doh
 
-GeekDNS in eastern China (Shanghai).
-
-GeekDNS is a non-logging public DNS service located in mainland China.
-Queries are cached locally, and, for some domains, resolved by servers located
-in Taiwan.
-
-https://dns.233py.com/
-
-sdns://AgcAAAAAAAAADTQ3LjEwMS4xMzYuMzcgot4zSQxHbTVuLbxzfCd5aSJJUmtlq4-6mjQoBIHIvfwOZWRucy4yMzNweS5jb20KL2Rucy1xdWVyeQ
-
-
-## geekdns-doh-north
-
-GeekDNS in northern China (Beijing).
+GeekDNS for users in China
 
 GeekDNS is a non-logging public DNS service located in mainland China.
 Queries are cached locally, and, for some domains, resolved by servers located
 in Taiwan.
 
-https://dns.233py.com/
+https://www.nextrt.com/s/dns
 
-sdns://AgcAAAAAAAAADzExNC4xMTUuMjQwLjE3NSCi3jNJDEdtNW4tvHN8J3lpIklSa2Wrj7qaNCgEgci9_A5uZG5zLjIzM3B5LmNvbQovZG5zLXF1ZXJ5
-
-
-## geekdns-doh-south
-
-GeekDNS in southern China (Guangzhou).
-
-GeekDNS is a non-logging public DNS service located in mainland China.
-Queries are cached locally, and, for some domains, resolved by servers located
-in Taiwan.
-
-https://dns.233py.com/
-
-sdns://AgcAAAAAAAAADTExOS4yOS4xMDcuODUgot4zSQxHbTVuLbxzfCd5aSJJUmtlq4-6mjQoBIHIvfwOc2Rucy4yMzNweS5jb20KL2Rucy1xdWVyeQ
+sdns://AgcAAAAAAAAAACCi3jNJDEdtNW4tvHN8J3lpIklSa2Wrj7qaNCgEgci9_AtpLjIzM3B5LmNvbQovZG5zLXF1ZXJ5
 
 
-## geekdns-doh-west
+## geekdns-doh-ext
 
-GeekDNS in western China (Chongqing).
+GeekDNS for users outside China, via Cloudflare
 
 GeekDNS is a non-logging public DNS service located in mainland China.
 Queries are cached locally, and, for some domains, resolved by servers located
 in Taiwan.
 
-https://dns.233py.com/
+https://www.nextrt.com/s/dns
 
-sdns://AgMAAAAAAAAADjExOC4yNC4yMDguMTk3ID4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4DndkbnMuMjMzcHkuY29tCi9kbnMtcXVlcnk
-
-
-## geekdns-hk
-
-GeekDNS in Hong Kong.
-
-GeekDNS is a non-logging public DNS service located in Hong Kong..
-Queries are cached locally, and, for some domains, resolved by servers located
-in Taiwan.
-
-https://dns.233py.com/
-
-sdns://AQcAAAAAAAAAETE1MC4xMDkuNzQuMTY0OjIyIPcEBXJOU2jQys6br08P8yyn132SuDixQ8Oek3lhoRQoGTIuZG5zY3J5cHQtY2VydC4yMzNweS5jb20
-
-
-## geekdns-north
-
-GeekDNS in northern China (Beijing).
-
-GeekDNS is a non-logging public DNS service located in mainland China.
-Queries are cached locally, and, for some domains, resolved by servers located
-in Taiwan.
-
-https://dns.233py.com/
-
-sdns://AQMAAAAAAAAAEjExNC4xMTUuMjQwLjE3NToyMiCLntDYEK0AwismFtMCM0YMkflJGNZiJnINFtDLcCLLwBkyLmRuc2NyeXB0LWNlcnQuMjMzcHkuY29t
-
-
-## geekdns-south
-
-GeekDNS in southern China (Guangzhou).
-
-GeekDNS is a non-logging public DNS service located in mainland China.
-Queries are cached locally, and, for some domains, resolved by servers located
-in Taiwan.
-
-https://dns.233py.com/
-
-sdns://AQMAAAAAAAAAEDExOS4yOS4xMDcuODU6MjIgCsUpkBu6ujbEDZ8PQI2wa3DCkDzxLlczLOwTyQTQM70ZMi5kbnNjcnlwdC1jZXJ0LjIzM3B5LmNvbQ
-
-
-## geekdns-west
-
-GeekDNS in western China (Chongqing).
-
-GeekDNS is a non-logging public DNS service located in mainland China.
-Queries are cached locally, and, for some domains, resolved by servers located
-in Taiwan.
-
-https://dns.233py.com/
-
-sdns://AQMAAAAAAAAAETExOC4yNC4yMDguMTk3OjIyIL66dzE0aNGlvYsF3RnukLk4AI3lQqSxeEo6PxHme-qZGTIuZG5zY3J5cHQtY2VydC4yMzNweS5jb20
+sdns://AgcAAAAAAAAAAAANZG9oLjIzM3B5LmNvbQovZG5zLXF1ZXJ5
 
 
 ## google
@@ -1583,6 +1155,14 @@ Cached via Cloudflare.
 sdns://AgcAAAAAAAAAGVsyNjA2OjQ3MDA6MzA6OjY4MWM6MWQyMl0gT7VsEyKePk-NGW4wncgn3krUtflpClvMP1lhELmyackNanAudGlhcmFwLm9yZwovZG5zLXF1ZXJ5
 
 
+## lelux.fi
+
+DoH server in France. No logging, no filtering, DNSSEC support.
+https://lelux.fi/resolver/
+
+sdns://AgcAAAAAAAAADTUxLjE1OC4xNDcuNTAgPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgUcmVzb2x2ZXItZXUubGVsdXguZmkKL2Rucy1xdWVyeQ
+
+
 ## libredns
 
 DoH server in Germany. No logging, but no DNS padding and no DNSSEC support.
@@ -1597,17 +1177,6 @@ DoH server in Germany. No logging, but no DNS padding and no DNSSEC support.
 no ads version, uses StevenBlack's host list: https://github.com/StevenBlack/hosts
 
 sdns://AgIAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OA9kb2gubGlicmVkbnMuZ3IEL2Fkcw
-
-
-## mrkaran
-
-Public DNSCrypt Server hosted in Bengaluru, India on a tiny Digital
-Ocean droplet. It supports DNSSEC validation, the DNSCrypt protocol
-and has caching enabled for faster responses.
-
-https://mrkaran.dev/dnscrypt/
-
-sdns://AQcAAAAAAAAAETEzOS41OS41NS4xMzo0MzQzIMI_cHfgQzHFYUiS8m2ghR8Ij9nb88EQZXAYDlOhBGhmHzIuZG5zY3J5cHQtY2VydC5kbnMubXJrYXJhbi5kZXY
 
 
 ## nextdns
@@ -1746,7 +1315,7 @@ Ad-blocking DNS cache.
 Home Server running on a static IP in Bangalore / Bengaluru, INDIA.
 Maintained by Cruisemaniac (https://cruisemaniac.com) aka Ashwin Murali.
 
-sdns://AQMAAAAAAAAAETEwNi41MS40NC41MTo0NDM0ING7Nd6ynAGtsN3sIyHYjkWg7pcKTGvRz4dOe0sbDZjcFjIuZG5zY3J5cHQtY2VydC5xYWcubWU
+sdns://AQcAAAAAAAAAEzQ5LjIwNS4yMTYuMjI5OjQ0MzQgVA4O8EaSji8bhEUMuB3uK3lZ4RmvU_32RaiVq-7x9JQWMi5kbnNjcnlwdC1jZXJ0LnFhZy5tZQ
 
 
 ## quad101
@@ -1865,6 +1434,15 @@ https://www.rubyfish.cn/
 sdns://AgUAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBJ1dy1kbnMucnVieWZpc2guY24KL2Rucy1xdWVyeQ
 
 
+## rumpelsepp.org
+
+DNSSEC/Non-logged/Uncensored in Nürnberg.
+Backed by unbound.
+Maintained by [rumpelsepp](https://rumpelsepp.org)
+
+sdns://AgcAAAAAAAAADzExNi4yMDMuMTc5LjI0OCA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OA5ydW1wZWxzZXBwLm9yZwovZG5zLXF1ZXJ5
+
+
 ## scaleway-ams
 
 DNSSEC/Non-logged/Uncensored in Amsterdam - ARM server donated by Scaleway.com
@@ -1962,6 +1540,26 @@ sdns://AQcAAAAAAAAAG1syMDAxOmJjODoxODI0OjE3MGY6OjFdOjQ0MyDRa9y0Ck5_qrri1JzXpTlOf
 Public DNSCrypt server in Poland
 
 sdns://AQcAAAAAAAAAFDE3OC4yMTYuMjAxLjIyMjoyMDUzICXE4YgpFUaXj5wrvbanr6QB7aBRBQhdUwPnGSjAZo8hHTIuZG5zY3J5cHQtY2VydC5zb2x0eXNpYWsuY29t
+
+
+## sth-dnscrypt-se
+Resolver in Stockholm, Sweden. DNSCrypt server. Non-logging, non-filtering, DNSSEC. Forward DNS to anoymized DNS servers
+
+sdns://AQcAAAAAAAAAETQ1LjE1My4xODcuOTY6NDQzILwTiPV2Pj3sdfHJD8kVv7aK6t_rHEX2mFGAY5xg5_FiHzIuZG5zY3J5cHQtY2VydC5zdGgtZG5zY3J5cHQtc2U
+
+
+## sth-doh-se
+Resolver in Stockholm, Sweden. DoH server. Non-logging, non-filtering, DNSSEC. Forward DNS to anoymized DNS servers
+
+sdns://AgcAAAAAAAAAETQ1LjE1My4xODcuOTY6NDQzABZkbnNzZS5hbGVrYmVyZy5uZXQ6NDQzBC9kbnM
+
+
+## suami
+
+Caching, non-censoring, non-logging, DNSSEC-capable, DNSCrypt-enabled, Anonymized DNS
+by lucenera
+
+sdns://AQcAAAAAAAAAETUxLjE1LjE0My4xMjM6NDQzIGIdhHiVkkpVjTI1HOUi_aHa_Ho_yIJpIB_BC7rfH8GNHDIuZG5zY3J5cHQtY2VydC5pdC5zdWFtaS5jb20
 
 
 ## t53
