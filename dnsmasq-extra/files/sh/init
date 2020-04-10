@@ -206,10 +206,12 @@ update_others() {
 update_sub() {
 	sub=$1
 	file="/etc/${NAME}.d/${sub}"
-	src="https://raw.githubusercontent.com/chenhw2/openwrt-${NAME}/master/${NAME}/files/data/${sub}"
+	ts=$(date '+%s')
+	# src="https://raw.githubusercontent.com/chenhw2/openwrt-${NAME}/master/${NAME}/files/data/${sub}"
+	src="https://cdn.jsdelivr.net/gh/honwen/openwrt-${NAME}/${NAME}/files/data/${sub}"
 
 	oldHash=$(md5sum ${file} 2>/dev/null | sed 's/ .*//g')
-	newHash=$(curl --retry 3 --connect-timeout 5 --max-time 20 -ksSL ${src}.md5sum | sed 's/ .*//g')
+	newHash=$(curl --retry 3 --connect-timeout 5 --max-time 20 -ksSL "${src}.md5sum?${ts}" | sed 's/ .*//g')
 
 	# echo $oldHash $newHash
 	[ "Z$oldHash" == "Z" -o "Z$newHash" == "Z" ] && return 1
@@ -217,7 +219,7 @@ update_sub() {
 
 	bak="/tmp/${sub}.backup"
 	cp -f "${file}" "${bak}"
-	curl --connect-timeout 10 --max-time 60 -ksSL ${src} -o ${file}
+	curl --connect-timeout 10 --max-time 60 -ksSL "${src}?${ts}" -o ${file}
 	oldHash=$(md5sum "${file}" 2>/dev/null | sed 's/ .*//g')
 	[ "Z$oldHash" == "Z$newHash" ] && {
 		echo "# ${file} Updated"
@@ -234,7 +236,8 @@ update_chn() {
 	chnroute=/etc/${NAME}.d/chnroute.txt
 	cp -f $chnroute /tmp/chnroute.txt.bak
 
-	chnsrc='https://cdn.jsdelivr.net/gh/17mon/china_ip_list/china_ip_list.txt'
+	ts=$(date '+%s')
+	chnsrc="https://cdn.jsdelivr.net/gh/17mon/china_ip_list/china_ip_list.txt?${ts}"
 
 	echo "# $chnroute Updating"
 	curl --retry 3 --connect-timeout 10 --max-time 120 -ksSL $chnsrc -o $chnroute
