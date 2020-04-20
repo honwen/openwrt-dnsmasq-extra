@@ -77,8 +77,10 @@ cache-size 2048
 
 speed-check-mode ping,tcp:80
 
-prefetch-domain $(uci_bool_by_type $NAME prefetch && echo yes || echo no)
+# prefetch-domain $(uci_bool_by_type $NAME prefetch && echo yes || echo no)
 force-AAAA-SOA $(uci_bool_by_type $NAME ipv6 && echo no || echo yes)
+prefetch-domain no
+serve-expired yes
 
 log-level info
 log-file /var/log/smartdns.cn.log
