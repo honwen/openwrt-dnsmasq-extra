@@ -5,7 +5,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dnsmasq-extra
-PKG_VERSION:=2020-04-19
+PKG_VERSION:=2020-04-26
 PKG_RELEASE:=1.6.0
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
@@ -70,7 +70,7 @@ define Package/dnsmasq-extra/install
 	$(INSTALL_DIR) $(1)/etc/dnsmasq-extra.d
 	$(INSTALL_DATA) ./files/data/{gfwlist,tldn,direct,adblock,custom.conf,bogus.conf,chnroute.txt} $(1)/etc/dnsmasq-extra.d/
 ifeq ($(CONFIG_DNSMASQ_EXTRA_FORCE_SMARTDNS),y)
-	sed 's+\(overwrite_resolve.*\)[0-9]+\11+g' -i $(1)//etc/config/dnsmasq-extra
+	sed 's+\(overwrite_resolve.*\)[0-9]+\11+g' -i $(1)/etc/config/dnsmasq-extra
 endif
 endef
 

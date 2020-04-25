@@ -137,6 +137,7 @@ start() {
 				}
 				local smartdns_port=$(uci_get_by_type smartdns smartdns port 0000)
 				echo "server=127.0.0.1#$((smartdns_port + 1))" >>${TARGET}/misc_custom.conf
+				sed "s+/#$+/127.0.0.1#$((smartdns_port + 1))+g" -i ${TARGET}/*.conf
 			}
 
 			local tcpport=8200
@@ -145,6 +146,14 @@ start() {
 				(/usr/bin/dnsFtcp -p $tcpport -s ${server} >/dev/null 2>&1) &
 				echo "server=127.0.0.1#${tcpport}" >>${TARGET}/misc_custom.conf
 			done
+
+		[ -f /etc/config/smartdns ] && {
+			echo "# SMARTDNS-INIT" >>${TARGET}/misc_custom.conf
+			sed -n 's+/dns-.*++g; s+$+/114.114.115.115+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
+			sed -n 's+/dns-.*++g; s+$+/180.76.76.76+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
+			sed -n 's+/dns-.*++g; s+$+/119.29.29.29+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
+			sed -n 's+/dns-.*++g; s+$+/223.6.6.6+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
+		}
 
 			echo -n ", OVERWRITE-RESOLVE" && echo 'no-resolv' >>${TARGET}/misc_custom.conf
 		}
