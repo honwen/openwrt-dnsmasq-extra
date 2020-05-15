@@ -586,6 +586,7 @@ nic.google
 pride.google
 crisisresponse.google
 blog.google
+research.google
 ai.google
 com.google
 design.google
@@ -606,8 +607,11 @@ acg18.me
 comic-mega.me
 fb.me
 beric.me
+g.kfd.me
+wiki.kfd.me
 chinaaid.me
 vid.me
+monocloud.me
 zzcloud.me
 hide.me
 tweeplike.me
@@ -791,6 +795,8 @@ khatrimaza.org
 sonidodelaesperanza.org
 minghui-b.org
 citizenlab.org
+themoviedb.org
+tmdb.org
 rocksdb.org
 rfaweb.org
 cdpweb.org
@@ -843,6 +849,7 @@ tibetfund.org
 bigsound.org
 thomasbernhard.org
 popyard.org
+nchrd.org
 tchrd.org
 blogtd.org
 www.antd.org
@@ -1054,6 +1061,7 @@ releaseinternational.org
 fourthinternational.org
 duihuahrjournal.org
 namgyal.org
+freedl.org
 furhhdl.org
 ksdl.org
 rael.org
@@ -1427,6 +1435,7 @@ falunart.org
 sjrt.org
 openwrt.org
 sopcast.org
+pornbest.org
 asiaharvest.org
 nalandawest.org
 nighost.org
@@ -1513,6 +1522,7 @@ amnesty.org
 putty.org
 uProxy.org
 getfoxyProxy.org
+proxy.org
 haproxy.org
 multiproxy.org
 uproxy.org
@@ -1546,6 +1556,7 @@ gotdns.ch
 tibetswiss.ch
 igfw.tech
 telegra.ph
+archive.ph
 huaxin.ph
 bx.in.th
 api.ai
@@ -1681,6 +1692,7 @@ btcbank.bank
 vnet.link
 godns.work
 mlzs.work
+fanqiang.network
 velkaepocha.sk
 tibet.sk
 ezpc.tk
@@ -1882,7 +1894,7 @@ pin6.com
 tokyo-247.com
 premeforwindows7.com
 pure18.com
-www.cool18.com
+cool18.com
 r18.com
 sugumiru18.com
 h528.com
@@ -1951,6 +1963,7 @@ savemedia.com
 soupofmedia.com
 blogsmithmedia.com
 highrockmedia.com
+nordstrommedia.com
 macromedia.com
 redditmedia.com
 nextmedia.com
@@ -2063,6 +2076,8 @@ e-hentaidb.com
 itemdb.com
 imdb.com
 bestpornstardb.com
+javdb.com
+thetvdb.com
 akiba-web.com
 uygur.fc2web.com
 picasaweb.com
@@ -2229,6 +2244,7 @@ brkmd.com
 buzzhand.com
 twtrland.com
 bbsland.com
+wikiwand.com
 vincnd.com
 aofriend.com
 chinese.soifind.com
@@ -2267,6 +2283,7 @@ xrentdvd.com
 xgmyd.com
 stoweboyd.com
 nfjtyd.com
+xn--90wwvt03e.com
 jav2be.com
 definebabe.com
 xbabe.com
@@ -2374,6 +2391,7 @@ duckmylife.com
 shipcamouflage.com
 nordstromimage.com
 greatfire.us7.list-manage.com
+bandpage.com
 startpage.com
 allgirlmassage.com
 mgstage.com
@@ -2405,6 +2423,7 @@ fangongheike.com
 like.com
 spike.com
 socialwhale.com
+clips4sale.com
 gfsale.com
 i-cable.com
 toggleable.com
@@ -2448,6 +2467,7 @@ nytstyle.com
 slaytizle.com
 files2me.com
 3d-game.com
+pttgame.com
 hotshame.com
 gekikame.com
 name.com
@@ -2621,7 +2641,7 @@ videodetective.com
 10conditionsoflove.com
 mrslove.com
 fileserve.com
-vod.wwe.com
+wwe.com
 faithfuleye.com
 tineye.com
 dzze.com
@@ -2875,6 +2895,7 @@ pixelqi.com
 busayari.com
 namsisi.com
 duplicati.com
+mydati.com
 technorati.com
 xiti.com
 michaelanti.com
@@ -2982,6 +3003,7 @@ vpnbook.com
 gitbook.com
 hautelook.com
 chatnook.com
+tiktok.com
 pk.com
 api.pureapk.com
 eastern-ark.com
@@ -3000,6 +3022,7 @@ twitturk.com
 wowrk.com
 coindesk.com
 eksisozluk.com
+zsdxzk.com
 yzzk.com
 fanatical.com
 freechal.com
@@ -3149,12 +3172,15 @@ advertfan.com
 konachan.com
 shinychan.com
 oyghan.com
+sgzhan.com
+theguardian.com
 briian.com
 shireyishunjian.com
 xiongpian.com
 peeasian.com
 minzhuzhanxian.com
 inxian.com
+qiangwaikan.com
 furinkan.com
 ismaelan.com
 wujieliulan.com
@@ -3189,14 +3215,17 @@ torcn.com
 freenewscn.com
 v2raycn.com
 netdna-cdn.com
+xvideos-cdn.com
 vox-cdn.com
 sndcdn.com
 myspacecdn.com
+icfcdn.com
 blogcdn.com
 licdn.com
 hautelookcdn.com
 aolcdn.com
 phncdn.com
+bcrncdn.com
 vimeocdn.com
 phprcdn.com
 oculuscdn.com
@@ -3251,6 +3280,7 @@ iptvbin.com
 linkedin.com
 logmein.com
 tunein.com
+puffin.com
 urchin.com
 dojin.com
 gatecoin.com
@@ -3533,7 +3563,7 @@ c1522.mooo.com
 fooooo.com
 zattoo.com
 javzoo.com
-trans.wenweipo.com
+wenweipo.com
 olumpo.com
 anpopo.com
 nuexpo.com
@@ -3660,6 +3690,7 @@ blog.inoreader.com
 sosreader.com
 getuploader.com
 thespeeder.com
+myiphider.com
 sinoinsider.com
 businessinsider.com
 tvider.com
@@ -3820,6 +3851,7 @@ www.orchidbbs.com
 adelaidebbs.com
 afantibbs.com
 bbs.brockbbs.com
+6parkbbs.com
 venbbs.com
 moonbbs.com
 sugobbs.com
@@ -3917,6 +3949,7 @@ ubertags.com
 greenreadings.com
 realitykings.com
 apartmentratings.com
+sgwritings.com
 tibetanpaintings.com
 rconversation.blogs.com
 networkedblogs.com
@@ -3950,6 +3983,7 @@ gardennetworks.com
 tvunetworks.com
 fxnetworks.com
 tubegals.com
+goliathguitartutorials.com
 gettrials.com
 parallels.com
 pdetails.com
@@ -3966,6 +4000,7 @@ bongacams.com
 myfreecams.com
 icams.com
 thongdreams.com
+naiadsystems.com
 sorting-algorithms.com
 commandarms.com
 bolin.netfirms.com
@@ -4052,6 +4087,7 @@ feifeiss.com
 taiwankiss.com
 securitykiss.com
 asianspiss.com
+duyaoss.com
 yingsuoss.com
 page2rss.com
 gs-discuss.com
@@ -4181,7 +4217,7 @@ gsp.target.com
 blogs.icerocket.com
 ironsocket.com
 pornsocket.com
-china.hket.com
+hket.com
 pushbullet.com
 api.proxlet.com
 dharamsalanet.com
@@ -4247,6 +4283,7 @@ cloakpoint.com
 entnt.com
 onthehunt.com
 isohunt.com
+deepdiscount.com
 googlebot.com
 fleshbot.com
 penisbot.com
@@ -4392,8 +4429,10 @@ eic-av.com
 prestige-av.com
 92ccav.com
 hgseav.com
+whichav.com
 jav.com
 onejav.com
+kissjav.com
 vjav.com
 thisav.com
 btbtav.com
@@ -4715,9 +4754,10 @@ xxuz.com
 vpnreviewz.com
 moodyz.com
 gjczz.com
-s1.nudezz.com
+nudezz.com
 goldjizz.com
 youjizz.com
+javzz.com
 blog.syx86.cn
 edmontonchina.cn
 daxa.cn
@@ -4787,6 +4827,7 @@ insder.co
 tmblr.co
 tumblr.co
 unblocksites.co
+javbus.co
 androidplus.co
 bnews.co
 t.co
@@ -4909,6 +4950,7 @@ assets.bwbx.io
 dragonex.io
 apiary.io
 tdm.com.mo
+hojemacau.com.mo
 nrk.no
 secretgarden.no
 savethedate.foo
@@ -4978,6 +5020,7 @@ blog.exblog.co.jp
 yomiuri.co.jp
 dmm.co.jp
 alicejapan.co.jp
+rakuten.co.jp
 amazon.co.jp
 search.yahoo.co.jp
 blogs.yahoo.co.jp
@@ -5120,6 +5163,7 @@ srocket.us
 thedw.us
 asiatoday.us
 top81.ws
+shiksha.ws
 localdomain.ws
 weisuo.ws
 freechina.news
@@ -5140,6 +5184,7 @@ dm530.net
 site90.net
 yx51.net
 bwh1.net
+justmysocks1.net
 8z1.net
 catch22.net
 https443.net
@@ -5150,6 +5195,7 @@ fzh999.net
 hutong9.net
 3-a.net
 xianba.net
+korea.net
 recaptcha.net
 gabia.net
 reutersmedia.net
@@ -5284,6 +5330,7 @@ washeng.net
 gaozhisheng.net
 xinsheng.net
 bing.net
+peing.net
 yuanming.net
 gaoming.net
 cuiweiping.net
@@ -5350,6 +5397,7 @@ breakwall.net
 fiddle.jshell.net
 rapbull.net
 evschool.net
+crwdcntrl.net
 furl.net
 voa-11.akacast.akamaistream.net
 rfalive1.akacast.akamaistream.net
@@ -5506,6 +5554,7 @@ sytes.net
 stoptibetcrisis.net
 vpngratis.net
 appsocks.net
+justmysocks.net
 chinasucks.net
 chinesetalks.net
 perfectgirls.net
@@ -5532,6 +5581,7 @@ uwants.net
 tapbots.net
 pureconcepts.net
 fhreports.net
+freeproxylists.net
 matome-plus.net
 soul-plus.net
 disney-plus.net
@@ -5627,6 +5677,7 @@ talkonly.net
 fastly.net
 falun-ny.net
 clearharmony.net
+stboy.net
 darktoy.net
 proxypy.net
 warbler.iconfactory.net
@@ -5760,6 +5811,7 @@ marguerite.su
 web.dev
 tfhub.dev
 get.dev
+pems.dot.ca.gov
 share.america.gov
 msha.gov
 osha.gov
@@ -5777,6 +5829,7 @@ cms.gov
 nps.gov
 www.americorps.gov
 census.gov
+dotgov.gov
 iipdigital.usembassy.gov
 jav68.tv
 5299.tv
@@ -5788,6 +5841,7 @@ dnvod.tv
 ntd.tv
 hentaitube.tv
 woopie.tv
+jable.tv
 hanime.tv
 tibetonline.tv
 periscope.tv
@@ -5894,6 +5948,7 @@ soh.tw
 okk.tw
 newtalk.tw
 citytalk.tw
+apk.tw
 cdpa.url.tw
 shop2000.com.tw
 news100.com.tw
@@ -5946,6 +6001,7 @@ news.msn.com.tw
 ltn.com.tw
 mitao.com.tw
 gojet.krtco.com.tw
+biggo.com.tw
 uforadio.com.tw
 gamer.com.tw
 news.tvbs.com.tw
@@ -6021,6 +6077,7 @@ sharpdaily.tw
 amnesty.tw
 0rz.tw
 casatibet.org.mx
+see.xxx
 search.xxx
 yes.xxx
 sis.xxx
@@ -6097,6 +6154,7 @@ istars.co.nz
 bcast.co.nz
 nzchinese.net.nz
 therock.net.nz
+proxy1.xyz
 jfqu37.xyz
 abc.xyz
 hexieshe.xyz
