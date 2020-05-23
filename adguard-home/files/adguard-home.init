@@ -48,21 +48,26 @@ dns:
   protection_enabled: true
   filtering_enabled: true
   querylog_enabled: true
+  anonymize_client_ip: true
+  parental_enabled: false
+  safesearch_enabled: false
+  safebrowsing_enabled: false
   ratelimit: 999
   refuse_any: true
+  aaaa_disabled: $(uci_bool_by_type $NAME aaaa_disabled && echo true || echo false)
+  all_servers: $(uci_bool_by_type $NAME fastest_addr && echo false || echo true)
+  fastest_addr: $(uci_bool_by_type $NAME fastest_addr && echo true || echo false)
   bootstrap_dns:
 $(for dns in $(uci_get_by_type $NAME bootstrap_dns); do
   echo "  - ${dns}"
 done)
-  all_servers: true
-  parental_sensitivity: 0
-  parental_enabled: false
-  safesearch_enabled: false
-  safebrowsing_enabled: false
   upstream_dns:
 $(for dns in $(uci_get_by_type $NAME upstream_dns); do
   echo "  - ${dns}"
 done)
+  rewrites:
+  - domain: "*.google.cn"
+    answer: google.com
 tls:
   enabled: false
 filters:
