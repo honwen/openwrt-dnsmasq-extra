@@ -12,8 +12,8 @@ config general
 	# list clean_server      '9.9.9.9'
 	option overwrite_resolve  0
 	option overwrite_smartdns 'enabled'
-	# list overwrite_tcp_ns   '182.254.116.116:53'
-	# list overwrite_tcp_ns   '182.254.118.118:53'
+	# list overwrite_tcp_ns   '1.1.8.8:53'
+	# list overwrite_tcp_ns   '1.1.8.9:53'
 	# list overwrite_tcp_ns   '114.114.114.114:53'
 	# list overwrite_tcp_ns   '114.114.115.115:53'
 	# list overwrite_tcp_ns   '101.226.4.6:53'

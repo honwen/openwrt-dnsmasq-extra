@@ -151,7 +151,6 @@ start() {
 			echo "# SMARTDNS-INIT" >>${TARGET}/misc_custom.conf
 			sed -n 's+/dns-.*++g; s+$+/114.114.115.115+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
 			sed -n 's+/dns-.*++g; s+$+/180.76.76.76+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
-			sed -n 's+/dns-.*++g; s+$+/119.29.29.29+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
 			sed -n 's+/dns-.*++g; s+$+/223.6.6.6+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
 		}
 
@@ -177,6 +176,7 @@ cleanup() {
 	rm -rf ${TARGET}/*-tcp_*.conf 2>/dev/null
 
 	kill -9 $(pgrep -f /usr/bin/dnsFtcp) >/dev/null 2>&1
+	[ -f /etc/config/smartdns ] && /etc/init.d/smartdns restart >/dev/null 2>&1
 	echo " ."
 }
 
@@ -195,7 +195,8 @@ restart() {
 }
 
 update() {
-	update_chn
+	# update_chn
+	update_sub 'chnroute.txt'
 	update_sub 'gfwlist'
 	update_sub 'direct'
 	update_others
@@ -215,7 +216,7 @@ update_sub() {
 	file="/etc/${NAME}.d/${sub}"
 	ts=$(date '+%s')
 	# src="https://raw.githubusercontent.com/chenhw2/openwrt-${NAME}/master/${NAME}/files/data/${sub}"
-	src="https://cdn.jsdelivr.net/gh/honwen/openwrt-${NAME}/${NAME}/files/data/${sub}"
+	src="https://cdn.jsdelivr.net/gh/honwen/openwrt-${NAME}@master/${NAME}/files/data/${sub}"
 
 	oldHash=$(md5sum ${file} 2>/dev/null | sed 's/ .*//g')
 	newHash=$(curl --retry 3 --connect-timeout 5 --max-time 20 -ksSL "${src}.md5sum?${ts}" | sed 's/ .*//g')
@@ -244,7 +245,8 @@ update_chn() {
 	cp -f $chnroute /tmp/chnroute.txt.bak
 
 	ts=$(date '+%s')
-	chnsrc="https://cdn.jsdelivr.net/gh/17mon/china_ip_list/china_ip_list.txt?${ts}"
+	# chnsrc="https://cdn.jsdelivr.net/gh/17mon/china_ip_list/china_ip_list.txt?${ts}"
+	chnsrc="https://ispip.clang.cn/all_cn_cidr.txt?${ts}"
 
 	echo "# $chnroute Updating"
 	curl --retry 3 --connect-timeout 10 --max-time 120 -ksSL $chnsrc -o $chnroute
