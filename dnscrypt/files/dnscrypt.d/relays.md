@@ -1,21 +1,44 @@
-# Anonymized DNS relays
 
-Anonymized DNS is a lightweight alternative to Tor and SOCKS proxies,
-dedicated to DNS traffic. They hide the client IP address to DNS resolvers,
-providing anonymity in addition to confidentiality and integrity.
+# *** THIS IS A LEGACY LIST ***
 
-DNS Anonymization is only compatible with servers supporting the
-DNSCrypt protocol.
+This is a temporary, legacy list, for dnscrypt-proxy <= 2.0.42 users.
 
-See the link below for more information:
+If you are running up-to-date software, replace `/v2/` with `/v3/` in the sources URLs
+of the `dnscrypt-proxy.toml` file (relevant lines start with `urls = ['https://...']`
+and are present in the `[sources]` section).
 
-https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Anonymized-DNS
+THIS LIST IS AUTOMATICALLY GENERATED AS A SUBSET OF THE V3 LIST. DO NOT EDIT IT MANUALLY.
+
+If you want to contribute changes to a resolvers list, only edit files from the `v3` directory.
+
+--
+
+## anon-acsacsar-ams-ipv4
+
+Anonymized DNS relay hosted in AMS on Scaleway
+
+sdns://gRE1MS4xNTguMTY2Ljk3OjQ0Mw
 
 
-## anon-am-us
+## anon-acsacsar-ams-ipv6
 
-Anonymized DNS relay hosted in Seattle - US
-sdns://gRQxMDQuMTY4LjI0Ny4xMzg6NDM0Mw
+Anonymized DNS relay hosted in AMS on Scaleway
+
+sdns://gRpbMjAwMTpiYzg6MTgyNDo3Mzg6OjFdOjQ0Mw
+
+
+## anon-ams-nl
+
+Anonymized DNS relay hosted in Netherlands - NL
+
+sdns://gRI1MS4xNS4xMjQuMjA4OjQzNDM
+
+
+## anon-bcn
+
+Anonymized DNS relay hosted in Barcelona, Spain.
+
+sdns://gRMxODUuMjUzLjE1NC42Njo0MzQz
 
 
 ## anon-cs-ca2
@@ -132,51 +155,51 @@ sdns://gREyMDkuNTguMTQ3LjM2OjQ0Mw
 
 ## anon-dnscrypt.one
 
-Anonymized DNS relay hosted in Germany (Nuremberg), https://dnscrypt.one/
+Anonymized DNS relay hosted in Germany (Nuremberg), https://dnscrypt.one
 
-sdns://gRIxNDQuOTEuMTA2LjIyNzo0NDM
+sdns://gRExNjEuOTcuMTAxLjUxOjQ0Mw
 
 
 ## anon-dnscrypt.uk-ipv4
 
 Anonymized DNS relay hosted in UK on DigitalOcean
 
-sdns://gRIxMzkuNTkuMjAwLjExNjo0NDM
+sdns://gRExNjUuMjMyLjMyLjk1OjQ0Mw
 
 
 ## anon-dnscrypt.uk-ipv6
 
 Anonymized DNS relay hosted in UK on DigitalOcean
 
-sdns://gR5bMmEwMzpiMGMwOjE6ZTA6OjJlMzplMDAxXTo0NDM
+sdns://gR5bMmEwMzpiMGMwOjE6ZTA6OjQ4NzoxMDAxXTo0NDM
 
 
 ## anon-ev-to
 
 Anonymized DNS relay provided by evilvibes.com Location: Toronto, Canada
 
-sdns://gQ0yMy4xMTEuNjkuMjM4
+sdns://gQw2Ni44NS4zMC4xMDU
 
 
 ## anon-ev-va
 
 Anonymized DNS relay provided by evilvibes.com Location: Vancouver, Canada
 
-sdns://gQ4xMDQuMzYuMTQ5LjE3Nw
+sdns://gQ4xMDQuMzYuMTQ4LjIyMQ
 
 
 ## anon-ibksturm
 
 Hosted in Switzerland and maintained by @ibksturm, aka Andreas Ziegler.
 
-sdns://gQ84My43Ny44NS43Ojg0NDM
+sdns://gRI4My43OC4xMjAuMjI3Ojg0NDM
 
 
 ## anon-ibksturm-ipv6
 
 Hosted in Switzerland and maintained by @ibksturm, aka Andreas Ziegler.
 
-sdns://gS5bMmEwMjoxMjA1OjM0ZDU6NTA3MDpiMjZlOmJmZmY6ZmUxZDplMTliXTo4NDQz
+sdns://gS5bMmEwMjoxMjA1OjM0ZTc6OGUzMDpiMjZlOmJmZmY6ZmUxZDplMTliXTo4NDQz
 
 
 ## anon-inconnu
@@ -192,6 +215,27 @@ sdns://gRIxMDQuMjM4LjE1My40Njo0NDM
 Anonymized DNS relay hosted in France and maintained by Frank Denis (@jedisct1).
 
 sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM
+
+
+## anon-meganerd
+
+Anonymized DNS relay hosted by MegaNerd.nl (https://www.meganerd.nl/encrypted-dns-server) in Amsterdam, The Netherlands
+
+sdns://gRIxMzYuMjQ0Ljk3LjExNDo0NDM
+
+
+## anon-meganerd-ipv6
+
+Anonymized DNS relay hosted by MegaNerd.nl (https://www.meganerd.nl/encrypted-dns-server) in Amsterdam, The Netherlands
+
+sdns://gStbMjAwMToxOWYwOjUwMDE6Y2JiOjU0MDA6M2ZmOmZlMDc6ZjcwZF06NDQz
+
+
+## anon-plan9-dns
+
+Anonymized DNS relay hosted in New Jersey, USA. Running the official Docker image on Vultr by @jlongua1
+
+sdns://gRIxNzMuMTk5LjEyNi4zNTo0NDM
 
 
 ## anon-publicarray
@@ -222,7 +266,7 @@ sdns://gRE1MS4xNS4xMjIuMjUwOjQ0Mw
 Anonymized DNS relay hosted in Amsterdam and maintained by Frank Denis (@jedisct1).
 IPv6 only. Running on an instance donated by https://scaleway.com
 
-sdns://gR5bMjAwMTpiYzg6NDcwMDoyNTAwOjoxMzdkXTo0NDM
+sdns://gRpbMjAwMTpiYzg6MTgyMDo1MGQ6OjFdOjQ0Mw
 
 
 ## anon-skyfighter
@@ -238,6 +282,13 @@ Anonymized DNS relay hosted in Netherlands (https://scaleway.com) and maintained
 IPv6 only.
 
 sdns://gRtbMjAwMTpiYzg6MTgyNDoxNzBmOjoxXTo0NDM
+
+
+## anon-sth-se
+
+Anonymized DNS relay hosted in Sweden - SE
+
+sdns://gRI0NS4xNTMuMTg3Ljk2OjQzNDM
 
 
 ## anon-tiarap
@@ -266,3 +317,18 @@ sdns://gRMxMDQuMjM4LjE4Ni4xOTI6NDQz
 Anonymized DNS relay hosted in UK on Vultr
 
 sdns://gSxbMjAwMToxOWYwOjc0MDI6MTU3NDo1NDAwOjJmZjpmZTY2OjJjZmZdOjQ0Mw
+
+
+## anon-yofiji-se-ipv4
+
+Anonymized DNS relay hosted in Sweden and maintained by yofiji.
+
+sdns://gRMxODUuMTkzLjEyNy4yNDQ6NDQz
+
+
+## anon-yofiji-se-ipv6
+
+Anonymized DNS relay hosted in Sweden and maintained by yofiji.
+
+sdns://gSlbMmEwYTozODQwOjEzMzc6MTI3OjA6YjljMTo3ZmY0OjEzMzddOjQ0Mw
+
