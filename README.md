@@ -10,13 +10,14 @@
   git clone https://github.com/shadowsocks/openwrt-feeds.git package/feeds
   # 获取 Makefile
   git clone https://github.com/chenhw2/openwrt-dnsmasq-extra.git package/feeds/openwrt-dnsmasq-extra
-  # 选择要编译的包 Network -> [adguard-home, smartdns, dnscrypt, chinadns, dnsmasq-extra]
+  # 选择要编译的包 Network -> [adguard-home, smartdns, dnsproxy, dnscrypt, chinadns, dnsmasq-extra]
   make menuconfig
   # 开始编译
   make package/feeds/openwrt-dnsmasq-extra/cdns/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/dnsFtcp/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/chinadns/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/adguard-home/compile V=99
+  make package/feeds/openwrt-dnsmasq-extra/dnsproxy/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/dnscrypt/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/smartdns/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/dnsmasq-extra/compile V=99
@@ -38,9 +39,9 @@
 
 ### smartdns@7700 with multidns/dot/doh
 
-### dnscrypt@7400 with multidns/dot/doh
-
 ### dnsproxy@7200 with multidns/dot/doh
+
+### dnscrypt@7400 with multidns/dot/doh
 
 ### adguard-home@7600 with multidns/dot/doh and adguard
 

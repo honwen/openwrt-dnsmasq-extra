@@ -4,7 +4,7 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=dnsproxy
 PKG_VERSION:=2020-11-03
 PKG_RELEASE:=0.33.0
-PKG_MAINTAINER:=chenhw2 <https://github.com/chenhw2>
+PKG_MAINTAINER:=honwen <https://github.com/honwen>
 
 # OpenWrt ARCH: arm, aarch64, i386, x86_64, mips, mipsel
 # Golang ARCH: arm6, arm64, 386, amd64, mips, mipsle

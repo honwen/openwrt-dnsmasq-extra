@@ -4,7 +4,7 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=dnscrypt
 PKG_VERSION:=2020-06-12
 PKG_RELEASE:=2.0.44
-PKG_MAINTAINER:=chenhw2 <https://github.com/chenhw2>
+PKG_MAINTAINER:=honwen <https://github.com/honwen>
 
 PKG_ARCH:=$(subst mipsel,mipsle,$(ARCH))
 PKG_SOURCE:=dnscrypt-proxy-linux_$(PKG_ARCH)-$(PKG_RELEASE).tar.gz
