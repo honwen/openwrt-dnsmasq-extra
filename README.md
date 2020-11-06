@@ -26,6 +26,8 @@
 
 - dnsmasq-extra + smartdns
 
+- dnsmasq-extra + dnsproxy
+
 - dnsmasq-extra + dnscrypt
 
 - dnsmasq-extra + adguard-home
@@ -37,6 +39,8 @@
 ### smartdns@7700 with multidns/dot/doh
 
 ### dnscrypt@7400 with multidns/dot/doh
+
+### dnsproxy@7200 with multidns/dot/doh
 
 ### adguard-home@7600 with multidns/dot/doh and adguard
 
@@ -50,6 +54,6 @@ Upstream DNS for ChinaDNS:
 ### dnsmasq-extra
 
 - dnsmasq for adblock
-- dnsmasq/ipset for adguard-home/smartdns/dnscrypt/chinadns/ss(r)-tunnel
+- dnsmasq/ipset for adguard-home/smartdns/dnsproxy/dnscrypt/chinadns/ss(r)-tunnel
 
 [s]: https://wiki.openwrt.org/doc/howto/obtain.firmware.sdk
