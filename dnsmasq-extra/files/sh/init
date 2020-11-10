@@ -131,13 +131,27 @@ start() {
 
 		uci_bool_by_type ${NAME} general overwrite_resolve && {
 			uci_bool_by_type ${NAME} general overwrite_smartdns && {
-				pgrep -f 'smartdns.cn.conf' >/dev/null || {
-					sed 's+\(enable_cn.*\)[0-9]+\11+g' -i /etc/config/smartdns
-					/etc/init.d/smartdns restart >/dev/null 2>&1
+				[ -x /usr/bin/smartdns ] && {
+					pgrep -f 'smartdns.cn.conf' >/dev/null || {
+						sed 's+\(enable_cn.*\)[0-9]+\11+g' -i /etc/config/smartdns
+						/etc/init.d/smartdns restart >/dev/null 2>&1
+					}
+					local smartdns_port=$(uci_get_by_type smartdns smartdns port 0000)
+					echo "server=127.0.0.1#$((smartdns_port + 1))" >>${TARGET}/misc_custom.conf
+					sed "s+/#$+/127.0.0.1#$((smartdns_port + 1))+g" -i ${TARGET}/*.conf
 				}
-				local smartdns_port=$(uci_get_by_type smartdns smartdns port 0000)
-				echo "server=127.0.0.1#$((smartdns_port + 1))" >>${TARGET}/misc_custom.conf
-				sed "s+/#$+/127.0.0.1#$((smartdns_port + 1))+g" -i ${TARGET}/*.conf
+			}
+
+			uci_bool_by_type ${NAME} general overwrite_dnsproxy && {
+				[ -x /usr/bin/dnsproxy ] && {
+					local dnsproxy_port=$(uci_get_by_type dnsproxy dnsproxy port_cn 0000)
+					pgrep -f "\-p $dnsproxy_port" >/dev/null || {
+						sed 's+\(enable_cn.*\)[0-9]+\11+g' -i /etc/config/dnsproxy
+						/etc/init.d/dnsproxy restart >/dev/null 2>&1
+					}
+					echo "server=127.0.0.1#$dnsproxy_port" >>${TARGET}/misc_custom.conf
+					sed "s+/#$+/127.0.0.1#$dnsproxy_port+g" -i ${TARGET}/*.conf
+				}
 			}
 
 			local tcpport=8200
