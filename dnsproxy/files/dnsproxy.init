@@ -43,6 +43,18 @@ start_service() {
 	local bootstrap=$(for it in $(uci_get_by_type $NAME bootstrap); do echo -n "-b $it "; done)
 
 	start_instance /usr/bin/$NAME ${args} ${upstream} ${fallback} ${bootstrap}
+
+	# ---- cn_dnsproxy -----
+	uci_bool_by_type $NAME enable_cn && {
+		local port_cn=$(uci_get_by_type $NAME port_cn 7201)
+		local args_cn="--cache --edns --all-servers"
+		args_cn="${args_cn} $(uci_bool_by_type $NAME block_ipv6 && echo '--ipv6-disabled') -p ${port_cn}"
+
+		local upstream_cn=$(for it in $(uci_get_by_type $NAME upstream_cn); do echo -n "-u $it "; done)
+		local fallback_cn=$(for it in $(uci_get_by_type $NAME fallback_cn); do echo -n "-f $it "; done)
+		local bootstrap_cn=$(for it in $(uci_get_by_type $NAME bootstrap_cn); do echo -n "-b $it "; done)
+		start_instance /usr/bin/$NAME ${args_cn} ${upstream_cn} ${fallback_cn} ${bootstrap_cn}
+	}
 }
 
 stop_service() {
