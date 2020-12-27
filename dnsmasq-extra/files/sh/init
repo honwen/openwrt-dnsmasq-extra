@@ -263,8 +263,8 @@ update_chn() {
 	cp -f $chnroute /tmp/chnroute.txt.bak
 
 	ts=$(date '+%s')
-	# chnsrc="https://cdn.jsdelivr.net/gh/17mon/china_ip_list/china_ip_list.txt?${ts}"
-	chnsrc="https://ispip.clang.cn/all_cn_cidr.txt?${ts}"
+	# chnsrc="https://cdn.jsdelivr.net/gh/17mon/china_ip_list@master/china_ip_list.txt"
+	chnsrc="https://ispip.clang.cn/all_cn_cidr.txt"
 
 	echo "# $chnroute Updating"
 	curl --retry 3 --connect-timeout 10 --max-time 120 -ksSL $chnsrc -o $chnroute
