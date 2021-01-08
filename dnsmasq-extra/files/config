@@ -6,7 +6,6 @@ config general
 	list plugins             'smartdns'
 	list plugins             'dnscrypt'
 	list plugins             'dnsproxy'
-	list plugins             'chinadns'
 	list pluginsOtcp         'ss-tunnel'
 	list pluginsOtcp         'ssr-tunnel'
 	# list clean_server      '1.1.1.1'

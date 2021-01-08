@@ -10,7 +10,7 @@
   git clone https://github.com/shadowsocks/openwrt-feeds.git package/feeds
   # 获取 Makefile
   git clone https://github.com/chenhw2/openwrt-dnsmasq-extra.git package/feeds/openwrt-dnsmasq-extra
-  # 选择要编译的包 Network -> [adguard-home, smartdns, dnsproxy, dnscrypt, chinadns, dnsmasq-extra]
+  # 选择要编译的包 Network -> [adguard-home, smartdns, dnsproxy, dnscrypt, dnsmasq-extra]
   make menuconfig
   # 开始编译
   make package/feeds/openwrt-dnsmasq-extra/adguard-home/compile V=99
@@ -30,9 +30,7 @@
 
 - dnsmasq-extra + adguard-home
 
-# Not Recommend
-
-- dnsmasq-extra + chinadns (+cdns +dnsFtcp)
+- dnsmasq-extra + ss(r)-tunnel (+dnsFtcp)
 
 # Clean DNS Upstream
 
@@ -44,16 +42,9 @@
 
 ### adguard-home@7600 with multidns/dot/doh and adguard
 
-### chinadns@7300 with multidns/udp (NOT Recommended)
-
-Upstream DNS for ChinaDNS:
-
-- `cdns@730X with multidns/udp`
-- `dnsFtcp@730X with multidns/tcp`
-
 ### dnsmasq-extra
 
 - dnsmasq for adblock
-- dnsmasq/ipset for adguard-home/smartdns/dnsproxy/dnscrypt/chinadns/ss(r)-tunnel
+- dnsmasq/ipset for adguard-home/smartdns/dnsproxy/dnscrypt/ss(r)-tunnel
 
 [s]: https://wiki.openwrt.org/doc/howto/obtain.firmware.sdk
