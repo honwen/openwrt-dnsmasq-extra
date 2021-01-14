@@ -122,7 +122,7 @@ start() {
 	fi
 
 	uci_bool_by_type ${NAME} general adblock && {
-		echo -n "ABDLOCK, " && sed "s/^/address=\//;s/$/\/${BLOCK}/" ${DATA}/adblock >${TARGET}/misc_adblock.conf
+		echo -n "ADBLOCK, " && sed "s/^/address=\//;s/$/\/${BLOCK}/" ${DATA}/adblock >${TARGET}/misc_adblock.conf
 	}
 
 	echo -n "CUSTOM" && {
