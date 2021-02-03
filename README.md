@@ -10,12 +10,11 @@
   git clone https://github.com/shadowsocks/openwrt-feeds.git package/feeds
   # 获取 Makefile
   git clone https://github.com/chenhw2/openwrt-dnsmasq-extra.git package/feeds/openwrt-dnsmasq-extra
-  # 选择要编译的包 Network -> [adguard-home, smartdns, dnsproxy, dnscrypt, dnsmasq-extra]
+  # 选择要编译的包 Network -> [adguard-home, smartdns, dnsproxy, dnsmasq-extra]
   make menuconfig
   # 开始编译
   make package/feeds/openwrt-dnsmasq-extra/adguard-home/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/dnsproxy/compile V=99
-  make package/feeds/openwrt-dnsmasq-extra/dnscrypt/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/smartdns/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/dnsmasq-extra/compile V=99
   ```
@@ -26,25 +25,20 @@
 
 - dnsmasq-extra + dnsproxy
 
-- dnsmasq-extra + dnscrypt
-
 - dnsmasq-extra + adguard-home
 
 - dnsmasq-extra + ss(r)-tunnel (+dnsFtcp)
 
 # Clean DNS Upstream
 
-### smartdns@7700 with multidns/dot/doh
+- smartdns@7700 with multidns/DoT/DoH
 
-### dnsproxy@7200 with multidns/dot/doh
+- dnsproxy@7200 with multidns/DoT/DoH
 
-### dnscrypt@7400 with multidns/dot/doh
+- adguard-home@7600 with multidns/DoT/DoH and **_adguard_**
 
-### adguard-home@7600 with multidns/dot/doh and adguard
-
-### dnsmasq-extra
-
-- dnsmasq for adblock
-- dnsmasq/ipset for adguard-home/smartdns/dnsproxy/dnscrypt/ss(r)-tunnel
+- dnsmasq-extra
+  - dnsmasq for adblock
+  - dnsmasq/ipset for adguard-home/smartdns/dnsproxy/ss(r)-tunnel
 
 [s]: https://wiki.openwrt.org/doc/howto/obtain.firmware.sdk
