@@ -1,5 +1,5 @@
 #!/bin/sh /etc/rc.common
-# Copyright (C) 2018-2020 honwen <https://github.com/honwen>
+# Copyright (C) 2018-2021 honwen <https://github.com/honwen>
 
 START=69
 EXTRA_COMMANDS="rules update"
@@ -21,6 +21,17 @@ uci_bool_by_type() {
 	return 1
 }
 
+uni_cat() {
+	for it in "$@"; do
+		file="${DATA}/${it}"
+		if [ -f "${file}.gz" ]; then
+			gunzip -ck "${file}.gz" 2>/dev/null || cat "${file}.gz" | gunzip -c
+		elif [ -f "${file}" ]; then
+			cat "${file}"
+		fi
+	done
+}
+
 start() {
 	uci_bool_by_type ${NAME} general enable || exit 0
 	echo -en "Geneareting : $NAME\n    "
@@ -40,7 +51,7 @@ start() {
 				[ "V${port_forward}" == "V0000" ] && continue
 			fi
 			echo -n "plugin:${plugin}, " | tr [a-z] [A-Z]
-			sed "s/^/server=\//;s/$/\/127.0.0.1#${plugin_port}/" ${DATA}/gfwlist ${DATA}/tldn >${TARGET}/plugin_${plugin}.conf
+			uni_cat 'gfwlist' 'tldn' | sed "s/^/server=\//;s/$/\/127.0.0.1#${plugin_port}/" >${TARGET}/plugin_${plugin}.conf
 			echo "server=/${ss_watchdog}/127.0.0.1#${plugin_port}" >>${TARGET}/plugin_${plugin}.conf
 		}
 	done
@@ -62,7 +73,7 @@ start() {
 			(/usr/bin/dnsFtcp -p $plugin_tcpport -s 127.0.0.1:$plugin_port >/dev/null 2>&1) &
 
 			echo -n "plugin-tcp:${plugin}, " | tr [a-z] [A-Z]
-			sed "s/^/server=\//;s/$/\/127.0.0.1#${plugin_tcpport}/" ${DATA}/gfwlist ${DATA}/tldn >${TARGET}/plugin-tcp_${plugin}.conf
+			uni_cat 'gfwlist' 'tldn' | sed "s/^/server=\//;s/$/\/127.0.0.1#${plugin_port}/" >${TARGET}/plugin_${plugin}.conf
 			echo "server=/${ss_watchdog}/127.0.0.1#${plugin_tcpport}" >>${TARGET}/plugin_${plugin}.conf
 		}
 	done
@@ -71,17 +82,22 @@ start() {
 	for server in $(uci_get_by_type ${NAME} general clean_server); do
 		tcpport=$((tcpport + 1))
 		(/usr/bin/dnsFtcp -p $tcpport -s ${server}:53 >/dev/null 2>&1) &
-		echo -n "CLEAN-DNS:${server}, " && sed "s/^/server=\//;s/$/\/${server}/" ${DATA}/gfwlist ${DATA}/tldn >${TARGET}/clean_${server}.conf
-		echo -n "CLEAN-DNS-TCP:${server}, " && sed "s/^/server=\//;s/$/\/127.0.0.1#${tcpport}/" ${DATA}/gfwlist ${DATA}/tldn >>${TARGET}/clean_${server}.conf
+
+		echo -n "CLEAN-DNS:${server}, "
+		uni_cat 'gfwlist' 'tldn' | sed "s/^/server=\//;s/$/\/${server}/" >${TARGET}/clean_${server}.conf
+
+		echo -n "CLEAN-DNS-TCP:${server}, "
+		uni_cat 'gfwlist' 'tldn' | sed "s/^/server=\//;s/$/\/127.0.0.1#${tcpport}/" >>${TARGET}/clean_${server}.conf
+
 		echo "server=/${ss_watchdog}/${server}" >>${TARGET}/plugin_${plugin}.conf
 		echo "server=/${ss_watchdog}/127.0.0.1#${tcpport}" >>${TARGET}/plugin_${plugin}.conf
 	done
 
 	[ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* 2>/dev/null | grep -c 'chnroute') ] &&
 		echo -n "IPSET:ss(r)_bp for chnroute, " && {
-		sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/" ${DATA}/direct >${TARGET}/ipset_direct.conf
-		sed "s/^/ipset=\//;s/$/\/ssr_spec_dst_bp/" ${DATA}/direct >>${TARGET}/ipset_direct.conf
-		sed "s/^/server=\//;s/$/\/#/" ${DATA}/direct >>${TARGET}/ipset_direct.conf
+		uni_cat 'direct' | sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/" >${TARGET}/ipset_direct.conf
+		uni_cat 'direct' | sed "s/^/ipset=\//;s/$/\/ssr_spec_dst_bp/" >>${TARGET}/ipset_direct.conf
+		uni_cat 'direct' | sed "s/^/server=\//;s/$/\/#/" >>${TARGET}/ipset_direct.conf
 		echo 'ipset=/cloudflare-dns.com/ss_spec_dst_sp' >>${TARGET}/ipset_direct.conf
 		echo 'ipset=/cloudflare-dns.com/ssr_spec_dst_sp' >>${TARGET}/ipset_direct.conf
 		uci_get_by_type ${NAME} general clean_server | sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/" >>${TARGET}/ipset_direct.conf
@@ -89,7 +105,8 @@ start() {
 	}
 
 	if [ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* 2>/dev/null | grep -c 'flag_gfwlist') ]; then
-		echo -n "IPSET:gfwlist, " && sed "s/^/ipset=\//;s/$/\/gfwlist/" ${DATA}/gfwlist >${TARGET}/ipset_gfwlist.conf
+		echo -n "IPSET:gfwlist, "
+		uni_cat 'gfwlist' | sed "s/^/ipset=\//;s/$/\/gfwlist/" >${TARGET}/ipset_gfwlist.conf
 
 		ipset -X gfwlist 2>/dev/null
 		ipset -! -R <<-EOF 2>/dev/null
@@ -117,12 +134,13 @@ start() {
 			add gfwlist 91.108.12.0/22
 			add gfwlist 91.108.16.0/22
 			add gfwlist 91.108.56.0/22
-			$(head -n 50 ${DATA}/gfwlist | sed -nr 's/([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+).*/\nadd gfwlist \1/;s/^.*\n//p')
+			$(uni_cat 'gfwlist' | hean -n100 | sed -nr 's/([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+).*/\nadd gfwlist \1/;s/^.*\n//p')
 		EOF
 	fi
 
 	uci_bool_by_type ${NAME} general adblock && {
-		echo -n "ADBLOCK, " && sed "s/^/address=\//;s/$/\/${BLOCK}/" ${DATA}/adblock >${TARGET}/misc_adblock.conf
+		echo -n "ADBLOCK, "
+		uni_cat 'adblock' | sed "s/^/address=\//;s/$/\/${BLOCK}/" >${TARGET}/misc_adblock.conf
 	}
 
 	echo -n "CUSTOM" && {
@@ -215,8 +233,8 @@ restart() {
 update() {
 	# update_chn
 	update_sub 'chnroute.txt'
-	update_sub 'gfwlist'
-	update_sub 'direct'
+	update_sub 'gfwlist.gz'
+	update_sub 'direct.gz'
 	update_others
 }
 
@@ -225,8 +243,8 @@ update_others() {
 	# only update data: adblock/tldn when disk free > 1MiB
 	[ "Z$overlay_free" == "Z" ] && return 0
 	[ $overlay_free -lt 1024 ] && return 0
-	update_sub 'tldn'
-	update_sub 'adblock'
+	update_sub 'tldn.gz'
+	update_sub 'adblock.gz'
 }
 
 update_sub() {
@@ -265,6 +283,7 @@ update_chn() {
 
 	ts=$(date '+%s')
 	# chnsrc="https://cdn.jsdelivr.net/gh/17mon/china_ip_list@master/china_ip_list.txt"
+	# chnsrc="https://raw.sevencdn.com/17mon/china_ip_list/master/china_ip_list.txt"
 	chnsrc="https://ispip.clang.cn/all_cn_cidr.txt"
 
 	echo "# $chnroute Updating"
