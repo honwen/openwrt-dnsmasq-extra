@@ -234,7 +234,8 @@ update_sub() {
 	file="/etc/${NAME}.d/${sub}"
 	ts=$(date '+%s')
 	# src="https://raw.githubusercontent.com/chenhw2/openwrt-${NAME}/master/${NAME}/files/data/${sub}"
-	src="https://cdn.jsdelivr.net/gh/honwen/openwrt-${NAME}@master/${NAME}/files/data/${sub}"
+	# src="https://cdn.jsdelivr.net/gh/honwen/openwrt-${NAME}@master/${NAME}/files/data/${sub}"
+	src="https://raw.sevencdn.com/chenhw2/openwrt-${NAME}/master/${NAME}/files/data/${sub}"
 
 	oldHash=$(md5sum ${file} 2>/dev/null | sed 's/ .*//g')
 	newHash=$(curl --retry 3 --connect-timeout 5 --max-time 20 -ksSL "${src}.md5sum?${ts}" | sed 's/ .*//g')

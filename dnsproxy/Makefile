@@ -2,8 +2,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dnsproxy
-PKG_VERSION:=2020-12-17
-PKG_RELEASE:=0.33.7
+PKG_VERSION:=2021-02-02
+PKG_RELEASE:=0.34.1
 PKG_MAINTAINER:=honwen <https://github.com/honwen>
 
 # OpenWrt ARCH: arm, aarch64, i386, x86_64, mips, mipsel
@@ -32,7 +32,7 @@ PKG_HASH:=skip
 
 include $(INCLUDE_DIR)/package.mk
 
-define Package/dnsproxy
+define Package/$(PKG_NAME)
 	SECTION:=net
 	CATEGORY:=Network
 	TITLE:=A simple DNS proxy server of AdguardTeam.
@@ -40,7 +40,7 @@ define Package/dnsproxy
 	DEPENDS:=+ca-bundle
 endef
 
-define Package/dnsproxy/description
+define Package/$(PKG_NAME)/description
 	A simple DNS proxy server that supports all existing DNS protocols.
 endef
 
@@ -52,7 +52,7 @@ define Build/Compile
 	echo "$(PKG_NAME) Compile Skiped!"
 endef
 
-define Package/dnsproxy/install
+define Package/$(PKG_NAME)/install
 	$(INSTALL_DIR) $(1)/etc/config
 	$(INSTALL_DATA) ./files/dnsproxy.conf $(1)/etc/config/dnsproxy
 	$(INSTALL_DIR) $(1)/etc/init.d
@@ -61,4 +61,4 @@ define Package/dnsproxy/install
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/linux-$(PKG_ARCH)/dnsproxy $(1)/usr/bin/dnsproxy
 endef
 
-$(eval $(call BuildPackage,dnsproxy))
+$(eval $(call BuildPackage,$(PKG_NAME)))

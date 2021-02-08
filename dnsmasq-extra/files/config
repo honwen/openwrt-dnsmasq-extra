@@ -4,7 +4,6 @@ config general
 	option adblock           'enabled'
 	list plugins             'adguard-home'
 	list plugins             'smartdns'
-	list plugins             'dnscrypt'
 	list plugins             'dnsproxy'
 	list pluginsOtcp         'ss-tunnel'
 	list pluginsOtcp         'ssr-tunnel'
