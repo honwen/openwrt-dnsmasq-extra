@@ -16,5 +16,6 @@ config general
 	# list overwrite_tcp_ns   '1.1.8.9:53'
 	# list overwrite_tcp_ns   '114.114.114.114:53'
 	# list overwrite_tcp_ns   '114.114.115.115:53'
-	# list overwrite_tcp_ns   '101.226.4.6:53'
+	# list overwrite_tcp_ns   '162.14.21.178:53'
+	# list overwrite_tcp_ns   '162.14.21.56:53'
 	# list overwrite_tcp_ns   '101.6.6.6:5353'
