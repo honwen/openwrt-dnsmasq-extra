@@ -6,6 +6,7 @@ config general
 	list plugins             'smartdns'
 	list plugins             'dnsproxy'
 	list plugins             'dcompass'
+	list pluginsOtcp         'xray'
 	list pluginsOtcp         'ss-tunnel'
 	list pluginsOtcp         'ssr-tunnel'
 	# list clean_server      '1.1.1.1'

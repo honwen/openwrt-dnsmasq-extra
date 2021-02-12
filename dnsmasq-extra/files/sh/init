@@ -58,10 +58,11 @@ start() {
 
 	for plugin in $(uci_get_by_type ${NAME} general pluginsOtcp); do
 		[ -x /usr/bin/${plugin} ] && {
-			if echo ${plugin} | grep -q 'tunnel'; then
+			if echo ${plugin} | grep -qe 'ray\|tunnel'; then
 				plugin_alias=$(echo -n ${plugin} | sed 's/ss/shadowsocks/g; s/-tunnel//g')
 				plugin_srv=$(uci_get_by_type ${plugin_alias} port_forward server nil)
-				[ "V${plugin_srv}" == "Vnil" ] && continue
+				plugin_enable=$(uci_get_by_type ${plugin_alias} port_forward 'enable' 0)
+				[ "V${plugin_srv}" == "Vnil" -a "V${plugin_enable}" == "V0" ] && continue
 				plugin_port=$(uci_get_by_type ${plugin_alias} port_forward local_port 5300)
 
 			else
@@ -73,7 +74,7 @@ start() {
 			(/usr/bin/dnsFtcp -p $plugin_tcpport -s 127.0.0.1:$plugin_port >/dev/null 2>&1) &
 
 			echo -n "plugin-tcp:${plugin}, " | tr [a-z] [A-Z]
-			uni_cat 'gfwlist' 'tldn' | sed "s/^/server=\//;s/$/\/127.0.0.1#${plugin_port}/" >${TARGET}/plugin_${plugin}.conf
+			uni_cat 'gfwlist' 'tldn' | sed "s/^/server=\//;s/$/\/127.0.0.1#${plugin_tcpport}/" >${TARGET}/plugin_${plugin}.conf
 			echo "server=/${ss_watchdog}/127.0.0.1#${plugin_tcpport}" >>${TARGET}/plugin_${plugin}.conf
 		}
 	done
@@ -175,8 +176,10 @@ start() {
 			uci_bool_by_type ${NAME} general overwrite_dcompass && {
 				[ -x /usr/bin/dcompass ] && {
 					local dcompass_port=$(uci_get_by_type dcompass dcompass port 7500)
+					echo "server=/${ss_watchdog}/127.0.0.1#${dcompass_port}" >>${TARGET}/misc_custom.conf
 					echo "server=127.0.0.1#$dcompass_port" >>${TARGET}/misc_custom.conf
 					sed "s+/#$+/127.0.0.1#$dcompass_port+g" -i ${TARGET}/*.conf
+					rm -f ${TARGET}/plugin_dcompass.conf
 				}
 			}
 

@@ -26,7 +26,7 @@
 
 - dnsmasq-extra + dnsproxy
 
-- dnsmasq-extra + dcompass(experimental)
+- dnsmasq-extra + dcompass _(experimental)_
 
 - dnsmasq-extra + adguard-home
 
@@ -37,6 +37,8 @@
 - smartdns@7700 with multidns/DoT/DoH
 
 - dnsproxy@7200 with multidns/DoT/DoH
+
+- dcompass@7500 with multidns/DoT/DoH
 
 - adguard-home@7600 with multidns/DoT/DoH and **_adguard_**
 

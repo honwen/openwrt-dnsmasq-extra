@@ -64,9 +64,8 @@ $(_table_head)
   - check_secure
 - tag: check_secure
   if:
-    geoip:
-      codes:
-      - CN
+    ipcidr:
+    - /etc/dnsmasq-extra.d/chnroute.txt
   else:
   - query: secure
   - end
