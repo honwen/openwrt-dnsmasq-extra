@@ -24,7 +24,7 @@ endef
 
 define Package/dnsmasq-extra/config
 menu "DNSMASQ-Extra Configuration"
-	depends on PACKAGE_dnsmasq-extra && ( PACKAGE_smartdns || PACKAGE_dnsproxy )
+	depends on PACKAGE_dnsmasq-extra && ( PACKAGE_smartdns || PACKAGE_dnsproxy || PACKAGE_dcompass )
 	config DNSMASQ_EXTRA_FORCE_SMARTDNS
 		depends on PACKAGE_smartdns
 		bool "force all to smartdns."
@@ -32,6 +32,10 @@ menu "DNSMASQ-Extra Configuration"
 	config DNSMASQ_EXTRA_FORCE_DNSPROXY
 		depends on PACKAGE_dnsproxy
 		bool "force all to dnsproxy."
+		default n
+	config DNSMASQ_EXTRA_FORCE_DCOMPASS
+		depends on PACKAGE_dcompass
+		bool "force all to dcompass."
 		default n
 endmenu
 endef
@@ -82,6 +86,10 @@ endif
 ifeq ($(CONFIG_DNSMASQ_EXTRA_FORCE_DNSPROXY),y)
 	sed 's+\(overwrite_resolve.*\)[0-9]+\1enabled+g' -i $(1)/etc/config/dnsmasq-extra
 	sed 's+\(overwrite_dnsproxy.*\)[0-9]+\1enabled+g' -i $(1)/etc/config/dnsmasq-extra
+endif
+ifeq ($(CONFIG_DNSMASQ_EXTRA_FORCE_DCOMPASS),y)
+	sed 's+\(overwrite_resolve.*\)[0-9]+\1enabled+g' -i $(1)/etc/config/dnsmasq-extra
+	sed 's+\(overwrite_dcompass.*\)[0-9]+\1enabled+g' -i $(1)/etc/config/dnsmasq-extra
 endif
 endef
 

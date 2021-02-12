@@ -172,6 +172,14 @@ start() {
 				}
 			}
 
+			uci_bool_by_type ${NAME} general overwrite_dcompass && {
+				[ -x /usr/bin/dcompass ] && {
+					local dcompass_port=$(uci_get_by_type dcompass dcompass port 7500)
+					echo "server=127.0.0.1#$dcompass_port" >>${TARGET}/misc_custom.conf
+					sed "s+/#$+/127.0.0.1#$dcompass_port+g" -i ${TARGET}/*.conf
+				}
+			}
+
 			local tcpport=8200
 			for server in $(uci_get_by_type ${NAME} general overwrite_tcp_ns); do
 				tcpport=$((tcpport + 1))

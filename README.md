@@ -13,9 +13,10 @@
   # 选择要编译的包 Network -> [adguard-home, smartdns, dnsproxy, dnsmasq-extra]
   make menuconfig
   # 开始编译
-  make package/feeds/openwrt-dnsmasq-extra/adguard-home/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/dnsproxy/compile V=99
+  make package/feeds/openwrt-dnsmasq-extra/dcompass/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/smartdns/compile V=99
+  make package/feeds/openwrt-dnsmasq-extra/adguard-home/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/dnsmasq-extra/compile V=99
   ```
 
@@ -24,6 +25,8 @@
 - dnsmasq-extra + smartdns
 
 - dnsmasq-extra + dnsproxy
+
+- dnsmasq-extra + dcompass(experimental)
 
 - dnsmasq-extra + adguard-home
 
