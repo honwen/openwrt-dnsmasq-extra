@@ -94,15 +94,18 @@ start() {
 		echo "server=/${ss_watchdog}/127.0.0.1#${tcpport}" >>${TARGET}/plugin_${plugin}.conf
 	done
 
-	[ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* 2>/dev/null | grep -c 'chnroute') ] &&
-		echo -n "IPSET:ss(r)_bp for chnroute, " && {
+	[ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* /etc/config/xray* 2>/dev/null | grep -c 'chnroute') ] &&
+		echo -n "IPSET:*_spec_dst_bp for chnroute, " && {
 		uni_cat 'direct' | sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/" >${TARGET}/ipset_direct.conf
 		uni_cat 'direct' | sed "s/^/ipset=\//;s/$/\/ssr_spec_dst_bp/" >>${TARGET}/ipset_direct.conf
+		uni_cat 'direct' | sed "s/^/ipset=\//;s/$/\/xray_spec_dst_bp/" >>${TARGET}/ipset_direct.conf
 		uni_cat 'direct' | sed "s/^/server=\//;s/$/\/#/" >>${TARGET}/ipset_direct.conf
 		echo 'ipset=/cloudflare-dns.com/ss_spec_dst_sp' >>${TARGET}/ipset_direct.conf
 		echo 'ipset=/cloudflare-dns.com/ssr_spec_dst_sp' >>${TARGET}/ipset_direct.conf
+		echo 'ipset=/cloudflare-dns.com/xray_spec_dst_bp' >>${TARGET}/ipset_direct.conf
 		uci_get_by_type ${NAME} general clean_server | sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/" >>${TARGET}/ipset_direct.conf
 		uci_get_by_type ${NAME} general clean_server | sed "s/^/ipset=\//;s/$/\/ssr_spec_dst_bp/" >>${TARGET}/ipset_direct.conf
+		uci_get_by_type ${NAME} general clean_server | sed "s/^/ipset=\//;s/$/\/xray_spec_dst_bp/" >>${TARGET}/ipset_direct.conf
 	}
 
 	if [ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* 2>/dev/null | grep -c 'flag_gfwlist') ]; then
@@ -149,6 +152,7 @@ start() {
 		echo "conf-file=${DATA}/custom.conf" >>${TARGET}/misc_custom.conf
 
 		uci_bool_by_type ${NAME} general overwrite_resolve && {
+			sed "/\/#$/d" -i ${TARGET}/*.conf
 			uci_bool_by_type ${NAME} general overwrite_smartdns && {
 				[ -x /usr/bin/smartdns ] && {
 					pgrep -f 'smartdns.cn.conf' >/dev/null || {
@@ -157,7 +161,6 @@ start() {
 					}
 					local smartdns_port=$(uci_get_by_type smartdns smartdns port 0000)
 					echo "server=127.0.0.1#$((smartdns_port + 1))" >>${TARGET}/misc_custom.conf
-					sed "s+/#$+/127.0.0.1#$((smartdns_port + 1))+g" -i ${TARGET}/*.conf
 				}
 			}
 
@@ -169,7 +172,6 @@ start() {
 						/etc/init.d/dnsproxy restart >/dev/null 2>&1
 					}
 					echo "server=127.0.0.1#$dnsproxy_port" >>${TARGET}/misc_custom.conf
-					sed "s+/#$+/127.0.0.1#$dnsproxy_port+g" -i ${TARGET}/*.conf
 				}
 			}
 
@@ -178,7 +180,6 @@ start() {
 					local dcompass_port=$(uci_get_by_type dcompass dcompass port 7500)
 					echo "server=/${ss_watchdog}/127.0.0.1#${dcompass_port}" >>${TARGET}/misc_custom.conf
 					echo "server=127.0.0.1#$dcompass_port" >>${TARGET}/misc_custom.conf
-					sed "s+/#$+/127.0.0.1#$dcompass_port+g" -i ${TARGET}/*.conf
 					rm -f ${TARGET}/plugin_dcompass.conf
 				}
 			}
@@ -194,7 +195,11 @@ start() {
 			echo "# SMARTDNS-INIT" >>${TARGET}/misc_custom.conf
 			sed -n 's+/dns-.*++g; s+$+/114.114.115.115+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
 			sed -n 's+/dns-.*++g; s+$+/180.76.76.76+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
+			sed -n 's+/dns-.*++g; s+$+/162.14.21.178+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
+			sed -n 's+/dns-.*++g; s+$+/162.14.21.56+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
 			sed -n 's+/dns-.*++g; s+$+/223.6.6.6+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
+			echo 'server=/doh.360.cn/114.114.115.115' >>${TARGET}/misc_custom.conf
+			echo 'server=/doh.360.cn/180.76.76.76' >>${TARGET}/misc_custom.conf
 			echo 'server=/alidns.com/114.114.115.115' >>${TARGET}/misc_custom.conf
 			echo 'server=/alidns.com/180.76.76.76' >>${TARGET}/misc_custom.conf
 			echo 'server=/dns.pub/114.114.115.115' >>${TARGET}/misc_custom.conf

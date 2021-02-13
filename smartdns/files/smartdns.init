@@ -89,11 +89,14 @@ log-num 2
 
 server-tcp 1.1.8.8:53
 server-tcp 101.226.4.6:53
+server-tcp 162.14.21.56:53
+server-tcp 162.14.21.178:53
 server-tcp 114.114.115.115:53
 server-tls dns.pub:853
 server-tls 223.6.6.6:853
 server-https https://doh.pub/dns-query
 server-https https://223.5.5.5/dns-query
+server-https https://doh.360.cn/dns-query
 EOF
 
 		start_instance /usr/bin/$NAME -c "/var/etc/${NAME}_cn.conf" -f
