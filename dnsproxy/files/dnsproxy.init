@@ -32,6 +32,7 @@ service_triggers() {
 
 start_service() {
 	uci_bool_by_type $NAME enable || exit 0
+	sysctl -w net.core.rmem_max=2500000 >/dev/null 2>&1
 	add_cron
 
 	local port=$(uci_get_by_type $NAME port 7200)
