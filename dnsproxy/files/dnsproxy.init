@@ -1,6 +1,6 @@
 #!/bin/sh /etc/rc.common
 
-START=92
+START=65
 NAME=dnsproxy
 USE_PROCD=1
 
@@ -21,6 +21,7 @@ uci_bool_by_type() {
 start_instance() {
 	procd_open_instance
 	procd_set_param respawn
+	procd_set_param stdout 1
 	procd_set_param stderr 1
 	procd_set_param command $@
 	procd_close_instance
@@ -36,8 +37,9 @@ start_service() {
 	add_cron
 
 	local port=$(uci_get_by_type $NAME port 7200)
-	local args="--cache --edns --all-servers"
-	args="${args} $(uci_bool_by_type $NAME block_ipv6 && echo '--ipv6-disabled') -p ${port}"
+	local args="--cache --edns --all-servers --refuse-any -p ${port}"
+	args="${args} $(uci_bool_by_type $NAME block_ipv6 && echo '--ipv6-disabled')"
+	args="${args} $(uci_bool_by_type $NAME fastest_addr && echo '--cache-min-ttl=999 --fastest-addr')"
 
 	local upstream=$(for it in $(uci_get_by_type $NAME upstream); do echo -n "-u $it "; done)
 	local fallback=$(for it in $(uci_get_by_type $NAME fallback); do echo -n "-f $it "; done)
@@ -48,8 +50,9 @@ start_service() {
 	# ---- cn_dnsproxy -----
 	uci_bool_by_type $NAME enable_cn && {
 		local port_cn=$(uci_get_by_type $NAME port_cn 7201)
-		local args_cn="--cache --edns --all-servers"
-		args_cn="${args_cn} $(uci_bool_by_type $NAME block_ipv6 && echo '--ipv6-disabled') -p ${port_cn}"
+		local args_cn="--cache --edns --all-servers --refuse-any -p ${port_cn}"
+		args_cn="${args_cn} $(uci_bool_by_type $NAME block_ipv6 && echo '--ipv6-disabled')"
+		args_cn="${args_cn} $(uci_bool_by_type $NAME fastest_addr && echo '--cache-min-ttl=999 --fastest-addr')"
 
 		local upstream_cn=$(for it in $(uci_get_by_type $NAME upstream_cn); do echo -n "-u $it "; done)
 		local fallback_cn=$(for it in $(uci_get_by_type $NAME fallback_cn); do echo -n "-f $it "; done)
