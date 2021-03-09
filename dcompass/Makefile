@@ -2,8 +2,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dcompass
-PKG_VERSION:=20210304
-PKG_RELEASE:=0943
+PKG_VERSION:=20210309
+PKG_RELEASE:=0945
 PKG_MAINTAINER:=honwen <https://github.com/honwen>
 
 # OpenWrt ARCH: arm, aarch64, i386, x86_64, mips, mipsel
