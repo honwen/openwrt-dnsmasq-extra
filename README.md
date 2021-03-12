@@ -10,9 +10,10 @@
   git clone https://github.com/shadowsocks/openwrt-feeds.git package/feeds
   # 获取 Makefile
   git clone https://github.com/chenhw2/openwrt-dnsmasq-extra.git package/feeds/openwrt-dnsmasq-extra
-  # 选择要编译的包 Network -> [adguard-home, smartdns, dnsproxy, dnsmasq-extra]
+  # 选择要编译的包 Network -> [adguard-home, aiodns, smartdns, dnsproxy, dcompass, dnsmasq-extra]
   make menuconfig
   # 开始编译
+  make package/feeds/openwrt-dnsmasq-extra/aiodns/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/dnsproxy/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/dcompass/compile V=99
   make package/feeds/openwrt-dnsmasq-extra/smartdns/compile V=99
@@ -21,6 +22,8 @@
   ```
 
 # Recommend
+
+- dnsmasq-extra + aiodns _(experimental)_
 
 - dnsmasq-extra + smartdns
 
@@ -33,6 +36,8 @@
 - dnsmasq-extra + ss(r)-tunnel (+dnsFtcp)
 
 # Clean DNS Upstream
+
+- aiodns@7100 with multidns/DoT/DoH
 
 - smartdns@7700 with multidns/DoT/DoH
 

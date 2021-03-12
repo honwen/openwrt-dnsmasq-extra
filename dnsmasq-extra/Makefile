@@ -5,8 +5,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dnsmasq-extra
-PKG_VERSION:=2021-03-05
-PKG_RELEASE:=1.7.2
+PKG_VERSION:=2021-03-12
+PKG_RELEASE:=1.7.3
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
@@ -24,7 +24,11 @@ endef
 
 define Package/dnsmasq-extra/config
 menu "DNSMASQ-Extra Configuration"
-	depends on PACKAGE_dnsmasq-extra && ( PACKAGE_smartdns || PACKAGE_dnsproxy || PACKAGE_dcompass )
+	depends on PACKAGE_dnsmasq-extra && ( PACKAGE_smartdns || PACKAGE_dnsproxy || PACKAGE_dcompass || PACKAGE_aiodns)
+	config DNSMASQ_EXTRA_FORCE_AIODNS
+		depends on PACKAGE_aiodns
+		bool "force all to aiodns."
+		default n
 	config DNSMASQ_EXTRA_FORCE_SMARTDNS
 		depends on PACKAGE_smartdns
 		bool "force all to smartdns."
@@ -79,6 +83,10 @@ define Package/dnsmasq-extra/install
 	$(INSTALL_DIR) $(1)/etc/dnsmasq-extra.d
 	$(INSTALL_DATA) ./files/data/*.gz $(1)/etc/dnsmasq-extra.d/
 	$(INSTALL_DATA) ./files/data/{chnroute.txt,custom.conf,bogus.conf} $(1)/etc/dnsmasq-extra.d/
+ifeq ($(CONFIG_DNSMASQ_EXTRA_FORCE_AIODNS),y)
+	sed 's+\(overwrite_resolve.*\)[0-9]+\1enabled+g' -i $(1)/etc/config/dnsmasq-extra
+	sed 's+\(overwrite_aiodns.*\)[0-9]+\1enabled+g' -i $(1)/etc/config/dnsmasq-extra
+endif
 ifeq ($(CONFIG_DNSMASQ_EXTRA_FORCE_SMARTDNS),y)
 	sed 's+\(overwrite_resolve.*\)[0-9]+\1enabled+g' -i $(1)/etc/config/dnsmasq-extra
 	sed 's+\(overwrite_smartdns.*\)[0-9]+\1enabled+g' -i $(1)/etc/config/dnsmasq-extra
