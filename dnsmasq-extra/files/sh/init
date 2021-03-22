@@ -45,7 +45,7 @@ start() {
 	echo -en "Geneareting : $NAME\n    "
 	mkdir -p ${TARGET}
 
-	ss_watchdog=$(sed -n "s/'//g;s/^WATCHDOG_ENDPOINT=//p" /etc/init.d/shadowsocks* | sort -u)
+	ss_watchdog=$(sed -n "s/'//g;s/^WATCHDOG_ENDPOINT=//p" /etc/init.d/shadowsocks* /etc/init.d/xray* /etc/init.d/ssr* | sort -u)
 
 	for plugin in $(uci_get_by_type ${NAME} general plugins); do
 		[ -x /usr/bin/${plugin} ] && {
@@ -102,7 +102,7 @@ start() {
 		echo "server=/${ss_watchdog}/127.0.0.1#${tcpport}" >>${TARGET}/plugin_${plugin}.conf
 	done
 
-	[ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* /etc/config/xray* 2>/dev/null | grep -c 'chnroute') ] &&
+	[ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* /etc/config/xray* /etc/config/ssr* 2>/dev/null | grep -c 'chnroute') ] &&
 		echo -n "IPSET:*_spec_dst_bp for chnroute, " && {
 		uni_cat 'direct' | sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/" >${TARGET}/ipset_direct.conf
 		uni_cat 'direct' | sed "s/^/ipset=\//;s/$/\/ssr_spec_dst_bp/" >>${TARGET}/ipset_direct.conf
@@ -116,7 +116,7 @@ start() {
 		uci_get_by_type ${NAME} general clean_server | sed "s/^/ipset=\//;s/$/\/xray_spec_dst_bp/" >>${TARGET}/ipset_direct.conf
 	}
 
-	if [ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* 2>/dev/null | grep -c 'flag_gfwlist') ]; then
+	if [ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* /etc/config/xray* /etc/config/ssr* 2>/dev/null | grep -c 'flag_gfwlist') ]; then
 		echo -n "IPSET:gfwlist, "
 		uni_cat 'gfwlist' | sed "s/^/ipset=\//;s/$/\/gfwlist/" >${TARGET}/ipset_gfwlist.conf
 
