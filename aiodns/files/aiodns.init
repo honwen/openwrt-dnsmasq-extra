@@ -50,8 +50,12 @@ start_service() {
 	if [ -e /etc/init.d/dnsmasq-extra ]; then
 		mkdir -p /var/$NAME
 		for it in $(uci_get_by_type $NAME extralist); do
-			/etc/init.d/dnsmasq-extra cat $it > /var/$NAME/${it}.txt
-			extralist="${extralist} -L=/var/$NAME/${it}.txt"
+			echo ${it} | grep -q '^http' && {
+				extralist="${extralist} -L=${it}"
+			} || {
+				/etc/init.d/dnsmasq-extra cat $it >/var/$NAME/${it}.txt
+				extralist="${extralist} -L=/var/$NAME/${it}.txt"
+			}
 		done
 	fi
 
@@ -65,7 +69,8 @@ stop_service() {
 
 add_cron() {
 	sed -i "/${NAME}/d" $CRON_FILE
-	echo "*    *    * * * /usr/bin/pgrep -f '/usr/bin/aiodns' || /etc/init.d/${NAME} restart" >> $CRON_FILE
+	echo "0    2    * * * /etc/init.d/${NAME} restart" >>$CRON_FILE
+	echo "*    *    * * * /usr/bin/pgrep -f '/usr/bin/aiodns' || /etc/init.d/${NAME} restart" >>$CRON_FILE
 	/etc/init.d/cron restart
 }
 
