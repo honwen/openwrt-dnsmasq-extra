@@ -34,7 +34,7 @@ uni_cat() {
 
 cat() {
 	if [ -f $1 ]; then
-		cat $1
+		$(which cat) $1
 	else
 		uni_cat $@
 	fi
@@ -45,7 +45,7 @@ start() {
 	echo -en "Geneareting : $NAME\n    "
 	mkdir -p ${TARGET}
 
-	ss_watchdog=$(sed -n "s/'//g;s/^WATCHDOG_ENDPOINT=//p" /etc/init.d/shadowsocks* /etc/init.d/xray* /etc/init.d/ssr* | sort -u)
+	ss_watchdog=$(sed -n "s/'//g;s/^WATCHDOG_ENDPOINT=//p" /etc/init.d/shadowsocks* /etc/init.d/xray* /etc/init.d/ssr* 2>/dev/null| sort -u)
 
 	for plugin in $(uci_get_by_type ${NAME} general plugins); do
 		[ -x /usr/bin/${plugin} ] && {
