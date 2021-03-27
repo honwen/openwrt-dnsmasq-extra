@@ -2,12 +2,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dcompass
-PKG_VERSION:=20210322
-PKG_RELEASE:=0956
+PKG_VERSION:=20210327
+PKG_RELEASE:=0926
 PKG_MAINTAINER:=honwen <https://github.com/honwen>
 
 # OpenWrt ARCH: arm, aarch64, i386, x86_64, mips, mipsel
-# Golang ARCH: arm6, arm64, 386, amd64, mips, mipsle
+# Rust ARCH: armv7, aarch64, i686, x86_64, mips, mipsle
 PKG_ARCH:=$(ARCH)-unknown-linux-musl
 ifeq ($(ARCH),mipsel)
 	PKG_ARCH:=mipsle-unknown-linux-musl
@@ -43,7 +43,7 @@ endef
 
 define Build/Prepare
 	rm -rf $(PKG_BUILD_DIR)/dcompass
-	cp -f "$(DL_DIR)/$(PKG_SOURCE)" $(PKG_BUILD_DIR)/dcompass
+	mv -f "$(DL_DIR)/$(PKG_SOURCE)" $(PKG_BUILD_DIR)/dcompass
 	chmod a+x $(PKG_BUILD_DIR)/dcompass
 endef
 

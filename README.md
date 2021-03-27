@@ -25,11 +25,11 @@
 
 - dnsmasq-extra + aiodns **_(recommended)_**
 
+- dnsmasq-extra + dcompass _(experimental)_
+
 - dnsmasq-extra + dnsproxy
 
 - dnsmasq-extra + smartdns
-
-- dnsmasq-extra + dcompass _(experimental)_
 
 - dnsmasq-extra + adguard-home
 

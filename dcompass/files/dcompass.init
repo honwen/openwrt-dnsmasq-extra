@@ -11,8 +11,20 @@ uci_get_by_type() {
 	echo ${ret:=$3}
 }
 
+uci_get_by_name() {
+	local ret=$(uci get $NAME.$1.$2 2>/dev/null)
+	echo ${ret:=$3}
+}
+
 uci_bool_by_type() {
 	case "$(uci_get_by_type $1 $2)" in
+		1|on|true|yes|enabled) return 0;;
+	esac
+	return 1
+}
+
+uci_bool_by_name() {
+	case "$(uci_get_by_name $1 $2)" in
 		1|on|true|yes|enabled) return 0;;
 	esac
 	return 1
@@ -21,6 +33,7 @@ uci_bool_by_type() {
 start_instance() {
 	procd_open_instance
 	procd_set_param respawn
+	procd_set_param stdout 1
 	procd_set_param stderr 1
 	procd_set_param command $@
 	procd_close_instance
@@ -30,64 +43,69 @@ service_triggers() {
 	procd_add_reload_trigger $NAME
 }
 
-_table_head() {
+gen_table_head() {
 	uci_bool_by_type $NAME block_ipv6 && {
 cat <<-EOF
-- tag: start
-  if:
-    qtype:
+  start:
+    if:
+      qtype:
       - AAAA
-  then:
-  - disable
-  - end
-  else:
-  - dispatch
-- tag: dispatch
+    then:
+    - blackhole
+    - end
+    else:
+    - dispatch
+  dispatch:
 EOF
-	} || echo '- tag: start'
+	} || echo '  start:'
+}
+
+gen_upstreams() {
+	cat <<-EOF
+$(uci_get_by_name $1 alias):
+  $(uci_get_by_name $1 type):
+    no_sni: $(uci_bool_by_name $1 no_sni && echo true || echo false)
+    name: $(uci_get_by_name $1 name)
+    addr: $(uci_get_by_name $1 addr)
+
+EOF
 }
 
 start_service() {
 	uci_bool_by_type $NAME enable || exit 0
 	add_cron
+	config_load $NAME
 
-	cat <<-EOF > "/var/etc/${NAME}.yaml"
-verbosity: $(uci_get_by_type $NAME verbosity info)
-cache_size: $(uci_get_by_type $NAME cache_size 4096)
+	cat <<-EOF | sed 's+ *$++g' > "/var/etc/${NAME}.yaml"
+---
+verbosity: $(uci_get_by_type $NAME verbosity warn)
 address: 0.0.0.0:$(uci_get_by_type $NAME port 7500)
 
 table:
-$(_table_head)
-  if: any
-  then:
-  - query: domestic
-  - check_secure
-- tag: check_secure
-  if:
-    ipcidr:
-    - /etc/dnsmasq-extra.d/chnroute.txt
-  else:
-  - query: secure
-  - end
+$(gen_table_head)
+    if: any
+    then:
+    - query: domestic
+    - check_secure
+  check_secure:
+    if:
+      ipcidr:
+      - /etc/dnsmasq-extra.d/chnroute.txt
+    else:
+    - query: secure
+    - end
 
 upstreams:
-$(
-for it in $(uci_get_by_type $NAME domestic) $(uci_get_by_type $NAME secure); do
-	echo "- method:"
-	echo "$it" | sed 's+||+    +g; s+|+  +g; s+#+\n+g' | sed 's+^+  +g; s/:/: /'
-	echo
-done
-)
+$( config_foreach gen_upstreams domestic | sed 's+^+  +g' )
+$( config_foreach gen_upstreams secure | sed 's+^+  +g' )
 
-- method:
+  domestic:
     hybrid:
-$( for it in $(uci_get_by_type $NAME domestic); do echo "$it" | sed 's+.*tag: *+    - +g'; done )
-  tag: domestic
+$( config_foreach uci_get_by_name domestic alias | sed 's+^+    - +g' )
 
-- method:
+  secure:
     hybrid:
-$( for it in $(uci_get_by_type $NAME secure); do echo "$it" | sed 's+.*tag: *+    - +g'; done )
-  tag: secure
+$( config_foreach uci_get_by_name secure alias | sed 's+^+    - +g' )
 EOF
 
 	start_instance /usr/bin/$NAME -c /var/etc/$NAME.yaml
@@ -95,6 +113,7 @@ EOF
 
 stop_service() {
 	del_cron
+	rm -f /var/etc/$NAME.yaml
 }
 
 add_cron() {
