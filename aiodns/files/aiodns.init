@@ -37,27 +37,15 @@ start_service() {
 	add_cron
 
 	local port=$(uci_get_by_type $NAME port 7200)
-	local args="-l=:${port} -A"
-	args="${args} $(uci_bool_by_type $NAME block_ipv6 && echo '-R')"
-	args="${args} $(uci_bool_by_type $NAME fastest_addr && echo '-F')"
+	local args="-A -l=:${port}"
+	args="$(uci_bool_by_type $NAME block_ipv6 && echo '-R') ${args}"
+	args="$(uci_bool_by_type $NAME fastest_addr && echo '-F') ${args}"
 
-	local special=$(for it in $(uci_get_by_type $NAME special); do echo -n "-U $it "; done)
-	local upstream=$(for it in $(uci_get_by_type $NAME upstream); do echo -n "-u $it "; done)
-	local fallback=$(for it in $(uci_get_by_type $NAME fallback); do echo -n "-f $it "; done)
-	local bootstrap=$(for it in $(uci_get_by_type $NAME bootstrap); do echo -n "-b $it "; done)
-
-	local extralist=''
-	if [ -e /etc/init.d/dnsmasq-extra ]; then
-		mkdir -p /var/$NAME
-		for it in $(uci_get_by_type $NAME extralist); do
-			echo ${it} | grep -q '^http' && {
-				extralist="${extralist} -L=${it}"
-			} || {
-				/etc/init.d/dnsmasq-extra cat $it >/var/$NAME/${it}.txt
-				extralist="${extralist} -L=/var/$NAME/${it}.txt"
-			}
-		done
-	fi
+	local special=$(for it in $(uci_get_by_type $NAME special); do echo -n "-U=$it "; done)
+	local upstream=$(for it in $(uci_get_by_type $NAME upstream); do echo -n "-u=$it "; done)
+	local fallback=$(for it in $(uci_get_by_type $NAME fallback); do echo -n "-f=$it "; done)
+	local bootstrap=$(for it in $(uci_get_by_type $NAME bootstrap); do echo -n "-b=$it "; done)
+	local extralist=$(for it in $(uci_get_by_type $NAME extralist); do echo -n "-L=$it "; done)
 
 	start_instance /usr/bin/$NAME ${args} ${upstream} ${special} ${fallback} ${bootstrap} ${extralist}
 }

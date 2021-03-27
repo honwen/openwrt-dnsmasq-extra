@@ -2,7 +2,7 @@
 # Copyright (C) 2018-2021 honwen <https://github.com/honwen>
 
 START=69
-EXTRA_COMMANDS="cat rules update"
+EXTRA_COMMANDS="rules update"
 
 NAME=dnsmasq-extra
 BLOCK=0.0.0.0
@@ -30,14 +30,6 @@ uni_cat() {
 			cat "${file}"
 		fi
 	done
-}
-
-cat() {
-	if [ -f $1 ]; then
-		$(which cat) $1
-	else
-		uni_cat $@
-	fi
 }
 
 start() {
