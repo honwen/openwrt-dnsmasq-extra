@@ -2,8 +2,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dcompass
-PKG_VERSION:=20210327
-PKG_RELEASE:=0926
+PKG_VERSION:=20210416
+PKG_RELEASE:=0928
 PKG_MAINTAINER:=honwen <https://github.com/honwen>
 
 # OpenWrt ARCH: arm, aarch64, i386, x86_64, mips, mipsel
@@ -22,7 +22,7 @@ ifeq ($(ARCH),aarch64)
 	PKG_ARCH:=aarch64-unknown-linux-musleabihf
 endif
 
-PKG_SOURCE:=dcompass-$(PKG_ARCH)-min
+PKG_SOURCE:=dcompass-$(PKG_ARCH)
 PKG_SOURCE_URL:=https://github.com/LEXUGE/dcompass/releases/download/build-$(PKG_VERSION)_$(PKG_RELEASE)/
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_ARCH)-$(PKG_VERSION)_$(PKG_RELEASE)
 PKG_HASH:=skip

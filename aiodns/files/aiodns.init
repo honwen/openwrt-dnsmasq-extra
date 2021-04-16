@@ -46,8 +46,9 @@ start_service() {
 	local fallback=$(for it in $(uci_get_by_type $NAME fallback); do echo -n "-f=$it "; done)
 	local bootstrap=$(for it in $(uci_get_by_type $NAME bootstrap); do echo -n "-b=$it "; done)
 	local extralist=$(for it in $(uci_get_by_type $NAME extralist); do echo -n "-L=$it "; done)
+	local bypasslist=$(for it in $(uci_get_by_type $NAME bypasslist); do echo -n "-B=$it "; done)
 
-	start_instance /usr/bin/$NAME ${args} ${upstream} ${special} ${fallback} ${bootstrap} ${extralist}
+	start_instance /usr/bin/$NAME ${args} ${upstream} ${special} ${fallback} ${bootstrap} ${extralist} ${bypasslist}
 }
 
 stop_service() {

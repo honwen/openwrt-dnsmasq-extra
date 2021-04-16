@@ -2,8 +2,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=aiodns
-PKG_VERSION:=1.0.0
-PKG_RELEASE:=20210327
+PKG_VERSION:=20210415
+PKG_RELEASE:=39287b4fe4
 PKG_MAINTAINER:=honwen <https://github.com/honwen>
 
 # OpenWrt ARCH: arm, aarch64, i386, x86_64, mips, mipsel
@@ -25,9 +25,9 @@ ifeq ($(ARCH),aarch64)
 	PKG_ARCH:=arm64
 endif
 
-PKG_SOURCE:=$(PKG_NAME)-linux-$(PKG_ARCH)-v$(PKG_RELEASE).tar.gz
-PKG_SOURCE_URL:=https://github.com/honwen/aiodns/releases/download/v$(PKG_RELEASE)/
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_RELEASE)
+PKG_SOURCE:=$(PKG_NAME)-linux-$(PKG_ARCH)-v$(PKG_VERSION)@$(PKG_RELEASE).tar.gz
+PKG_SOURCE_URL:=https://github.com/honwen/aiodns/releases/download/v$(PKG_VERSION)/
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE)
 PKG_HASH:=skip
 
 include $(INCLUDE_DIR)/package.mk
