@@ -8,13 +8,12 @@ config general
 	list pluginsOtcp         'xray'
 	list pluginsOtcp         'ss-tunnel'
 	list pluginsOtcp         'ssr-tunnel'
-	# list clean_server      '1.1.1.1'
-	# list clean_server      '9.9.9.9'
 	option overwrite_resolve  0
 	option overwrite_aiodns   0
 	option overwrite_smartdns 0
 	option overwrite_dnsproxy 0
 	option overwrite_dcompass 0
+
 	# list overwrite_tcp_ns   '1.1.8.8:53'
 	# list overwrite_tcp_ns   '1.1.8.9:53'
 	# list overwrite_tcp_ns   '114.114.114.114:53'
@@ -22,3 +21,7 @@ config general
 	# list overwrite_tcp_ns   '162.14.21.178:53'
 	# list overwrite_tcp_ns   '162.14.21.56:53'
 	# list overwrite_tcp_ns   '101.6.6.6:5353'
+	# list clean_server      '1.1.1.1'
+	# list clean_server      '9.9.9.9'
+	# list clean_server      '9.9.9.11:9953'
+	# list clean_server      '149.112.112.11:9953'
