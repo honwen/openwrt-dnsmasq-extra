@@ -2,8 +2,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dcompass
-PKG_VERSION:=20210416
-PKG_RELEASE:=0928
+PKG_VERSION:=20210429
+PKG_RELEASE:=1007
 PKG_MAINTAINER:=honwen <https://github.com/honwen>
 
 # OpenWrt ARCH: arm, aarch64, i386, x86_64, mips, mipsel
@@ -23,7 +23,7 @@ ifeq ($(ARCH),aarch64)
 endif
 
 PKG_SOURCE:=dcompass-$(PKG_ARCH)
-PKG_SOURCE_URL:=https://github.com/LEXUGE/dcompass/releases/download/build-$(PKG_VERSION)_$(PKG_RELEASE)/
+PKG_SOURCE_URL:=https://github.com/compassd/dcompass/releases/download/build-$(PKG_VERSION)_$(PKG_RELEASE)/
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_ARCH)-$(PKG_VERSION)_$(PKG_RELEASE)
 PKG_HASH:=skip
 
@@ -33,7 +33,7 @@ define Package/$(PKG_NAME)
 	SECTION:=net
 	CATEGORY:=Network
 	TITLE:=A high-performance, routing-scheme-support DNS server
-	URL:=https://github.com/LEXUGE/dcompass
+	URL:=https://github.com/compassd/dcompass
 	DEPENDS:=+ca-bundle
 endef
 

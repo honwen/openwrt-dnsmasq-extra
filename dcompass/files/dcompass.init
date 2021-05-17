@@ -49,13 +49,13 @@ cat <<-EOF
   start:
     if:
       qtype:
-      - AAAA
+        - AAAA
     then:
-    - blackhole
-    - end
+      - blackhole
+      - end
     else:
-    - dispatch
-  dispatch:
+      - dispatch_main
+  dispatch_main:
 EOF
 	} || echo '  start:'
 }
@@ -71,11 +71,28 @@ $(uci_get_by_name $1 alias):
 EOF
 }
 
-gen_secure_matcher(){
+gen_secure_matcher() {
 	[ -f /etc/dnsmasq-extra.d/chnroute.txt ] && {
-		echo -e "ipcidr:\n- /etc/dnsmasq-extra.d/chnroute.txt"
+		echo -e "ipcidr:\n  - /etc/dnsmasq-extra.d/chnroute.txt"
 	} || {
-		echo -e "geoip:\n  codes:\n  - CN"
+		echo -e "geoip:\n  codes:\n    - CN"
+	}
+}
+
+gen_secure_dispatch() {
+	[ -f /etc/dnsmasq-extra.d/gfwlist.gz ] && {
+	echo
+	cat <<-EOF
+      - dispatch_secure
+  dispatch_secure:
+    if:
+      domain:
+        - file: /etc/dnsmasq-extra.d/gfwlist.gz
+    then:
+      - query: secure
+      - end
+    else:
+EOF
 	}
 }
 
@@ -94,19 +111,23 @@ table:
 $(gen_table_head)
     if:
       domain:
-$(for it in $(uci_get_by_type $NAME oversea); do echo "      - qname: $it"; done)
+$(for it in $(uci_get_by_type $NAME oversea); do echo "        - qname: $it"; done)
     then:
-    - query: oversea
-    - end
-    else:
-    - query: domestic
-    - check_secure
+      - query: oversea
+      - end
+    else:$(gen_secure_dispatch)
+      - dispatch_final
+  dispatch_final:
+    if: any
+    then:
+      - query: domestic
+      - check_secure
   check_secure:
     if:
 $(gen_secure_matcher | sed 's+^+      +g' )
     else:
-    - query: secure
-    - end
+      - query: secure
+      - end
 
 upstreams:
 $( config_foreach gen_upstreams domestic | sed 's+^+  +g' )
@@ -116,16 +137,16 @@ $( config_foreach gen_upstreams oversea | sed 's+^+  +g' )
 
   domestic:
     hybrid:
-$( config_foreach uci_get_by_name domestic alias | sed 's+^+    - +g' )
+$( config_foreach uci_get_by_name domestic alias | sed 's+^+      - +g' )
 
   secure:
     hybrid:
-$( config_foreach uci_get_by_name secure alias | sed 's+^+    - +g' )
-$( config_foreach uci_get_by_name oversea alias | sed 's+^+    - +g' )
+$( config_foreach uci_get_by_name secure alias | sed 's+^+      - +g' )
+$( config_foreach uci_get_by_name oversea alias | sed 's+^+      - +g' )
 
   oversea:
     hybrid:
-$( config_foreach uci_get_by_name oversea alias | sed 's+^+    - +g' )
+$( config_foreach uci_get_by_name oversea alias | sed 's+^+      - +g' )
 EOF
 
 	start_instance /usr/bin/$NAME -c /var/etc/$NAME.yaml
