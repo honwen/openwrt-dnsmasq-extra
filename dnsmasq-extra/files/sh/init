@@ -16,7 +16,7 @@ uci_get_by_type() {
 
 uci_bool_by_type() {
 	case "$(uci_get_by_type $1 $2 $3)" in
-		1|on|true|yes|enabled) return 0;;
+	1 | on | true | yes | enabled) return 0 ;;
 	esac
 	return 1
 }
@@ -219,21 +219,21 @@ start() {
 				echo "server=127.0.0.1#${tcpport}" >>${TARGET}/misc_custom.conf
 			done
 
-		[ -f /etc/config/smartdns ] && {
-			echo "# SMARTDNS-INIT" >>${TARGET}/misc_custom.conf
-			sed -n 's+/dns-.*++g; s+$+/114.114.115.115+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
-			sed -n 's+/dns-.*++g; s+$+/162.14.21.178+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
-			sed -n 's+/dns-.*++g; s+$+/162.14.21.56+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
-			sed -n 's+/dns-.*++g; s+$+/223.6.6.6+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
-			echo 'server=/dot.360.cn/114.114.115.115' >>${TARGET}/misc_custom.conf
-			echo 'server=/dot.360.cn/162.14.21.56' >>${TARGET}/misc_custom.conf
-			echo 'server=/doh.360.cn/114.114.115.115' >>${TARGET}/misc_custom.conf
-			echo 'server=/doh.360.cn/162.14.21.56' >>${TARGET}/misc_custom.conf
-			echo 'server=/alidns.com/114.114.115.115' >>${TARGET}/misc_custom.conf
-			echo 'server=/alidns.com/162.14.21.56' >>${TARGET}/misc_custom.conf
-			echo 'server=/dns.pub/114.114.115.115' >>${TARGET}/misc_custom.conf
-			echo 'server=/dns.pub/162.14.21.56' >>${TARGET}/misc_custom.conf
-		}
+			[ -f /etc/config/smartdns ] && {
+				echo "# SMARTDNS-INIT" >>${TARGET}/misc_custom.conf
+				sed -n 's+/dns-.*++g; s+$+/114.114.115.115+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
+				sed -n 's+/dns-.*++g; s+$+/162.14.21.178+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
+				sed -n 's+/dns-.*++g; s+$+/162.14.21.56+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
+				sed -n 's+/dns-.*++g; s+$+/223.6.6.6+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
+				echo 'server=/dot.360.cn/114.114.115.115' >>${TARGET}/misc_custom.conf
+				echo 'server=/dot.360.cn/162.14.21.56' >>${TARGET}/misc_custom.conf
+				echo 'server=/doh.360.cn/114.114.115.115' >>${TARGET}/misc_custom.conf
+				echo 'server=/doh.360.cn/162.14.21.56' >>${TARGET}/misc_custom.conf
+				echo 'server=/alidns.com/114.114.115.115' >>${TARGET}/misc_custom.conf
+				echo 'server=/alidns.com/162.14.21.56' >>${TARGET}/misc_custom.conf
+				echo 'server=/dns.pub/114.114.115.115' >>${TARGET}/misc_custom.conf
+				echo 'server=/dns.pub/162.14.21.56' >>${TARGET}/misc_custom.conf
+			}
 
 			echo -n ", OVERWRITE-RESOLVE" && echo 'no-resolv' >>${TARGET}/misc_custom.conf
 		}
@@ -355,9 +355,13 @@ update_chn() {
 rules() {
 	while iptables -t nat -D PREROUTING -p udp --dport 53 -j REDIRECT --to 53 2>/dev/null; do :; done
 	while iptables -t mangle -D PREROUTING -p udp --dport 53 -j RETURN 2>/dev/null; do :; done
+	while iptables -t nat -D PREROUTING -p tcp --dport 53 -j REDIRECT --to 53 2>/dev/null; do :; done
+	while iptables -t mangle -D PREROUTING -p tcp --dport 53 -j RETURN 2>/dev/null; do :; done
 
 	[ -f ${TARGET}/misc_custom.conf ] || exit 0
 
 	iptables -t nat -I PREROUTING -p udp --dport 53 -j REDIRECT --to 53
 	iptables -t mangle -I PREROUTING -p udp --dport 53 -j RETURN
+	iptables -t nat -I PREROUTING -p tcp --dport 53 -j REDIRECT --to 53
+	iptables -t mangle -I PREROUTING -p tcp --dport 53 -j RETURN
 }
