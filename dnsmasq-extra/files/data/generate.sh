@@ -1,0 +1,67 @@
+#!/bin/bash
+
+# Tools:
+# https://github.com/honwen/shadowsocks-helper
+# https://github.com/zhanhb/cidr-merger
+
+# ------------------ chnroute ------------------
+cidr-merger <<-EOF >chnroute.txt
+	$(curl -sSL https://ispip.clang.cn/all_cn_cidr.txt)
+	$(curl -sSL https://raw.githubusercontents.com/pexcn/daily/gh-pages/chnroute/chnroute.txt)
+	$(curl -sSL https://raw.githubusercontents.com/17mon/china_ip_list/master/china_ip_list.txt)
+	$(shadowsocks-helper asn)
+EOF
+sed '/^[ \t\s]*$/d' -i chnroute.txt
+md5sum chnroute.txt | tee chnroute.txt.md5sum
+# ------------------ chnroute ------------------
+
+# ------------------ gfwlist ------------------
+shadowsocks-helper gfwlist >gfwlist
+# ------------------ gfwlist ------------------
+
+# ------------------ adblock ------------------
+curl -sSL https://anti-ad.net/domains.txt -o adblock
+shadowsocks-helper tide -i adblock -o adblock
+
+# whitelist
+sed '/ip-api.com/d; /pv.sohu.com/d' -i adblock
+sed '/click.union.vip.com/d; /ms.vipstatic.com/d' -i adblock
+# ------------------ adblock ------------------
+
+# ------------------ direct ------------------
+curl -sSL https://raw.githubusercontents.com/pexcn/daily/gh-pages/chinalist/chinalist.txt -o direct.pexcn
+curl -sSL https://s3.amazonaws.com/alexa-static/top-1m.csv.zip | gunzip | sed '3000000,9999999d' | awk -F ',' '{print $2}' >direct.alexa
+
+start=$(($(sed -n -e '/^whatismyip.akamai.com$/=' direct) + 1))
+cat <<-EOF >direct.new
+	$(sed -n "$start,99999p" direct)
+	$(grep -Fx -f direct.pexcn direct.alexa)
+EOF
+
+# blacklist
+sed '/ocsp/d' -i direct.new
+sed '/akamai/d' -i direct.new
+sed '/google/d' -i direct.new
+sed '/gstatic/d' -i direct.new
+sed "$start,99999d" direct >direct.blacklist
+grep -Fx -f gfwlist direct >>direct.blacklist
+wc -l direct.blacklist
+grep -Fxv -f direct.blacklist direct.new >direct.sum
+
+shadowsocks-helper tide -i direct.sum -o direct.sum
+sed "$start,99999d" -i direct
+cat direct.sum >>direct
+rm -f direct.*
+# ------------------ direct ------------------
+
+# ------------------ gzip ------------------
+srcs="tldn gfwlist direct adblock"
+
+for it in $srcs; do
+	echo >>$it
+	sed '/^[ \t\s]*$/d' -i $it
+	gzip -n9fk $it
+	md5sum $it | tee $it.md5sum
+	md5sum $it.gz | tee $it.gz.md5sum
+done
+# ------------------ gzip ------------------
