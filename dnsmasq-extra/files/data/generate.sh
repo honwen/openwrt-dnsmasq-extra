@@ -19,6 +19,7 @@ sed '/^[ \t\s]*$/d' -i chnroute.txt
 
 # ------------------ gfwlist ------------------
 time shadowsocks-helper gfwlist >gfwlist
+sed '/google.*analytics.com/d' -i gfwlist
 # ------------------ gfwlist ------------------
 
 # ------------------ adblock ------------------
