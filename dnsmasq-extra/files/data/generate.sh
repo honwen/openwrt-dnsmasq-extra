@@ -6,7 +6,7 @@
 # https://github.com/zhanhb/cidr-merger
 
 # ------------------ chnroute ------------------
-time cidr-merger <<-EOF >chnroute.txt
+time cidr-merger <<-EOF >chnroute.txt.new
 	$(curl -sSL https://ispip.clang.cn/all_cn_cidr.txt)
 	$(curl -sSL https://cdn.staticaly.com/gh/pexcn/daily/gh-pages/chnroute/chnroute.txt)
 	$(curl -sSL https://raw.githubusercontents.com/pexcn/daily/gh-pages/chnroute/chnroute.txt)
@@ -14,12 +14,27 @@ time cidr-merger <<-EOF >chnroute.txt
 	$(curl -sSL https://raw.githubusercontents.com/17mon/china_ip_list/master/china_ip_list.txt)
 	$(shadowsocks-helper asn)
 EOF
+
+# add checkip.synology.com
+time cidr-merger <<-EOF >chnroute.txt
+	$(cat chnroute.txt.new)
+	104.248.79.120
+	159.89.129.146
+	165.227.63.200
+	138.68.28.244
+	159.89.142.52
+	206.189.214.49
+	142.93.81.166
+	159.65.77.153
+EOF
+
 sed '/^[ \t\s]*$/d' -i chnroute.txt
+rm -f chnroute.txt.*
 # ------------------ chnroute ------------------
 
 # ------------------ gfwlist ------------------
 time shadowsocks-helper gfwlist >gfwlist
-sed '/google.*analytics.com/d' -i gfwlist
+sed '/^google.*analytics.com$/d' -i gfwlist
 # ------------------ gfwlist ------------------
 
 # ------------------ adblock ------------------

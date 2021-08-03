@@ -219,22 +219,6 @@ start() {
 				echo "server=127.0.0.1#${tcpport}" >>${TARGET}/misc_custom.conf
 			done
 
-			[ -f /etc/config/smartdns ] && {
-				echo "# SMARTDNS-INIT" >>${TARGET}/misc_custom.conf
-				sed -n 's+/dns-.*++g; s+$+/114.114.115.115+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
-				sed -n 's+/dns-.*++g; s+$+/162.14.21.178+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
-				sed -n 's+/dns-.*++g; s+$+/162.14.21.56+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
-				sed -n 's+/dns-.*++g; s+$+/223.6.6.6+g; s+.*server_https.*//+server=/+p' /etc/config/smartdns >>${TARGET}/misc_custom.conf
-				echo 'server=/dot.360.cn/114.114.115.115' >>${TARGET}/misc_custom.conf
-				echo 'server=/dot.360.cn/162.14.21.56' >>${TARGET}/misc_custom.conf
-				echo 'server=/doh.360.cn/114.114.115.115' >>${TARGET}/misc_custom.conf
-				echo 'server=/doh.360.cn/162.14.21.56' >>${TARGET}/misc_custom.conf
-				echo 'server=/alidns.com/114.114.115.115' >>${TARGET}/misc_custom.conf
-				echo 'server=/alidns.com/162.14.21.56' >>${TARGET}/misc_custom.conf
-				echo 'server=/dns.pub/114.114.115.115' >>${TARGET}/misc_custom.conf
-				echo 'server=/dns.pub/162.14.21.56' >>${TARGET}/misc_custom.conf
-			}
-
 			echo -n ", OVERWRITE-RESOLVE" && echo 'no-resolv' >>${TARGET}/misc_custom.conf
 		}
 	}
