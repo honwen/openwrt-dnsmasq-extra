@@ -42,15 +42,13 @@ curl -sSL https://anti-ad.net/domains.txt -o adblock
 time shadowsocks-helper tide -i adblock -o adblock
 
 # whitelist
+sed '/wns.windows.com/d' -i adblock
 sed '/ip-api.com/d; /pv.sohu.com/d' -i adblock
 sed '/click.union.vip.com/d; /ms.vipstatic.com/d' -i adblock
 # ------------------ adblock ------------------
 
 # ------------------ direct ------------------
 curl -sSL https://raw.githubusercontents.com/pexcn/daily/gh-pages/chinalist/chinalist.txt -o direct.pexcn
-# curl -sSL https://s3.amazonaws.com/alexa-static/top-1m.csv.zip | gunzip |
-# 	sed '800000,9999999d' | awk -F ',' '{print $2}' >direct.alexa
-# $(grep -Fx -f direct.pexcn direct.alexa)
 
 start=$(($(sed -n -e '/^whatismyip.akamai.com$/=' direct) + 1))
 cat <<-EOF | sort -u >direct.new
@@ -69,7 +67,12 @@ grep -Fxv -f direct.blacklist direct.new >direct.sum
 
 time shadowsocks-helper tide -i direct.sum -o direct.sum
 sed "$start,99999d" -i direct
-cat direct.sum >>direct
+sed 's+$+\$+g; s+\.+\\.+g' tldn gfwlist >direct.suffix
+echo "\.*apple\." >>direct.suffix
+echo "\.*windows\." >>direct.suffix
+echo "\.*microsoft\." >>direct.suffix
+echo "\.*windowsupdate\." >>direct.suffix
+time grep -eF -f direct.suffix direct.sum >>direct
 rm -f direct.*
 # ------------------ direct ------------------
 
