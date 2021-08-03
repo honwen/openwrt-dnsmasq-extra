@@ -3,6 +3,7 @@
 START=90
 NAME=smartdns
 USE_PROCD=1
+EXTRA_COMMANDS="healthcheck"
 
 CRON_FILE=/etc/crontabs/root
 
@@ -13,7 +14,7 @@ uci_get_by_type() {
 
 uci_bool_by_type() {
 	case "$(uci_get_by_type $1 $2)" in
-		1|on|true|yes|enabled) return 0;;
+	1 | on | true | yes | enabled) return 0 ;;
 	esac
 	return 1
 }
@@ -38,66 +39,94 @@ start_service() {
 
 	port=$(uci_get_by_type $NAME port 7700)
 
-	cat <<-EOF > "/var/etc/${NAME}.conf"
-bind 0.0.0.0:${port}
-bind-tcp 0.0.0.0:${port}
-cache-size 768
+	cat <<-EOF >"/var/etc/${NAME}.conf"
+		bind 0.0.0.0:${port}
+		bind-tcp 0.0.0.0:${port}
+		cache-size 768
+		cache-persist no
 
-speed-check-mode tcp:80,ping
-domain-rules /github.com/ -speed-check-mode tcp:22
-domain-rules /githubusercontent.com/ -speed-check-mode tcp:443
+		speed-check-mode tcp:80,ping
+		domain-rules /github.com/ -speed-check-mode tcp:22
+		domain-rules /githubusercontent.com/ -speed-check-mode tcp:443
 
-prefetch-domain $(uci_bool_by_type $NAME prefetch && echo yes || echo no)
-force-AAAA-SOA $(uci_bool_by_type $NAME ipv6 && echo no || echo yes)
+		prefetch-domain $(uci_bool_by_type $NAME prefetch && echo yes || echo no)
+		force-AAAA-SOA $(uci_bool_by_type $NAME ipv6 && echo no || echo yes)
 
-log-level info
-log-file /var/log/smartdns.log
-log-size 512K
-log-num 2
+		log-level info
+		log-file /var/log/smartdns.log
+		log-size 512K
+		log-num 2
 
-$(
-	for type in tls https; do
-		for it in $(uci_get_by_type $NAME server_${type}); do echo "server-${type} ${it} -tls-host-verify"; done
-	done
-)
+		$(
+			for it in $(uci_get_by_type $NAME bootstrap); do
+				# echo "server ${it} -group bootstrap -exclude-default-group"
+				echo "server-tcp ${it} -group bootstrap -exclude-default-group"
+				echo "server-tls ${it} -group bootstrap -exclude-default-group"
+			done
+		)
 
-$(
-	for it in $(uci_get_by_type $NAME ignore_ip); do echo "ignore-ip ${it}"; done
-)
+		$(
+			for type in tls https; do
+				for it in $(uci_get_by_type $NAME server_${type}); do
+					it=$(echo ${it} | sed 's+.*//++g; s+/.*++g')
+					echo ${it} | grep -q '[0-9]$' || echo "nameserver /${it}/bootstrap"
+				done
+			done
+		)
 
-EOF
+		$(
+			for type in tls https; do
+				for it in $(uci_get_by_type $NAME server_${type}); do echo "server-${type} ${it} -tls-host-verify"; done
+			done
+		)
+
+		$(
+			for it in $(uci_get_by_type $NAME ignore_ip); do echo "ignore-ip ${it}"; done
+		)
+
+	EOF
 
 	start_instance /usr/bin/$NAME -c "/var/etc/${NAME}.conf" -f
 
 	uci_bool_by_type $NAME enable_cn && {
-		cat <<-EOF > "/var/etc/${NAME}_cn.conf"
-bind 0.0.0.0:$((port + 1))
-bind-tcp 0.0.0.0:$((port + 1))
-cache-size 384
+		cat <<-EOF >"/var/etc/${NAME}_cn.conf"
+			bind 0.0.0.0:$((port + 1))
+			bind-tcp 0.0.0.0:$((port + 1))
+			cache-size 384
+			cache-persist no
 
-speed-check-mode ping,tcp:80
+			speed-check-mode ping,tcp:80
 
-# prefetch-domain $(uci_bool_by_type $NAME prefetch && echo yes || echo no)
-force-AAAA-SOA $(uci_bool_by_type $NAME ipv6 && echo no || echo yes)
-prefetch-domain no
-serve-expired yes
+			# prefetch-domain $(uci_bool_by_type $NAME prefetch && echo yes || echo no)
+			force-AAAA-SOA $(uci_bool_by_type $NAME ipv6 && echo no || echo yes)
+			prefetch-domain no
+			serve-expired yes
 
-log-level info
-log-file /var/log/smartdns_cn.log
-log-size 512K
-log-num 2
+			log-level info
+			log-file /var/log/smartdns_cn.log
+			log-size 512K
+			log-num 2
 
-server-tcp 1.1.8.8:53
-server-tcp 101.226.4.6:53
-server-tcp 162.14.21.56:53
-server-tcp 162.14.21.178:53
-server-tcp 114.114.115.115:53
-server-tls dns.pub:853
-server-tls 223.6.6.6:853
-server-https https://doh.pub/dns-query
-server-https https://223.5.5.5/dns-query
-server-https https://doh.360.cn/dns-query
-EOF
+			$(
+				for it in $(uci_get_by_type $NAME bootstrap); do
+					echo "server ${it} -group bootstrap -exclude-default-group"
+					echo "server-tcp ${it} -group bootstrap -exclude-default-group"
+				done
+			)
+
+			nameserver /doh.pub/bootstrap
+			nameserver /dot.pub/bootstrap
+			nameserver /dns.pub/bootstrap
+			nameserver /doh.360.cn/bootstrap
+			nameserver /dns.alidns.com/bootstrap
+
+			server-tls dns.pub:853
+			server-tls dot.pub:853
+			server-tls 223.6.6.6:853
+			server-https https://doh.pub/dns-query
+			server-https https://doh.360.cn/dns-query
+			server-https https://dns.alidns.com/dns-query
+		EOF
 
 		start_instance /usr/bin/$NAME -c "/var/etc/${NAME}_cn.conf" -f
 	}
@@ -110,14 +139,34 @@ stop_service() {
 
 add_cron() {
 	sed -i "/${NAME}/d" $CRON_FILE
-	echo "*    *    * * * /usr/bin/pgrep -f ${NAME}.conf || /etc/init.d/${NAME} restart" >> $CRON_FILE
-	uci_bool_by_type $NAME enable_cn && {
-		echo "*    *    * * * /usr/bin/pgrep -f ${NAME}_cn.conf || /etc/init.d/${NAME} restart" >> $CRON_FILE
-	}
+	echo "*    *    * * * /etc/init.d/${NAME} healthcheck" >>$CRON_FILE
 	/etc/init.d/cron restart
 }
 
 del_cron() {
 	sed -i "/${NAME}/d" $CRON_FILE
 	/etc/init.d/cron restart
+}
+
+healthcheck() {
+	# init check
+	grep 'pending' /var/log/${NAME}*.log | grep -q 'failed' && {
+		rm -f /var/log/${NAME}*
+		/etc/init.d/${NAME} restart
+		exit 0
+	}
+
+	# smartdns check
+	/usr/bin/pgrep -f ${NAME}.conf >/dev/null || {
+		/etc/init.d/${NAME} restart
+		exit 0
+	}
+
+	# smartdns_cn check
+	uci_bool_by_type $NAME enable_cn && {
+		/usr/bin/pgrep -f ${NAME}_cn.conf >/dev/null || {
+			/etc/init.d/${NAME} restart
+			exit 0
+		}
+	}
 }
