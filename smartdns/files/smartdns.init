@@ -42,12 +42,16 @@ start_service() {
 	cat <<-EOF >"/var/etc/${NAME}.conf"
 		bind 0.0.0.0:${port}
 		bind-tcp 0.0.0.0:${port}
+		# tcp-idle-time 0
 		cache-size 768
 		cache-persist no
 
 		speed-check-mode tcp:80,ping
-		domain-rules /github.com/ -speed-check-mode tcp:22
-		domain-rules /githubusercontent.com/ -speed-check-mode tcp:443
+		domain-rules /github.com/ -c tcp:22
+		domain-rules /githubusercontent.com/ -c tcp:443
+		domain-rules /github.map.fastly.net/ -c tcp:443
+		domain-rules /github.global.ssl.fastly.net/ -c tcp:443
+		domain-rules /s3.amazonaws.com/ -c tcp:443
 
 		prefetch-domain $(uci_bool_by_type $NAME prefetch && echo yes || echo no)
 		force-AAAA-SOA $(uci_bool_by_type $NAME ipv6 && echo no || echo yes)
@@ -59,9 +63,9 @@ start_service() {
 
 		$(
 			for it in $(uci_get_by_type $NAME bootstrap); do
-				# echo "server ${it} -group bootstrap -exclude-default-group"
+				echo "server ${it} -group bootstrap -exclude-default-group"
 				echo "server-tcp ${it} -group bootstrap -exclude-default-group"
-				echo "server-tls ${it} -group bootstrap -exclude-default-group"
+				# echo "server-tls ${it} -group bootstrap -exclude-default-group"
 			done
 		)
 
@@ -92,14 +96,14 @@ start_service() {
 		cat <<-EOF >"/var/etc/${NAME}_cn.conf"
 			bind 0.0.0.0:$((port + 1))
 			bind-tcp 0.0.0.0:$((port + 1))
-			cache-size 384
+			# tcp-idle-time 0
+			cache-size 1024
 			cache-persist no
 
 			speed-check-mode ping,tcp:80
 
-			# prefetch-domain $(uci_bool_by_type $NAME prefetch && echo yes || echo no)
+			prefetch-domain $(uci_bool_by_type $NAME prefetch && echo yes || echo no)
 			force-AAAA-SOA $(uci_bool_by_type $NAME ipv6 && echo no || echo yes)
-			prefetch-domain no
 			serve-expired yes
 
 			log-level info
@@ -120,12 +124,12 @@ start_service() {
 			nameserver /doh.360.cn/bootstrap
 			nameserver /dns.alidns.com/bootstrap
 
-			server-tls dns.pub:853
-			server-tls dot.pub:853
-			server-tls 223.6.6.6:853
-			server-https https://doh.pub/dns-query
-			server-https https://doh.360.cn/dns-query
-			server-https https://dns.alidns.com/dns-query
+			server-tls dns.pub:853 -host-name dns.pub
+			server-tls dot.pub:853 -host-name dot.pub
+			server-tls 223.6.6.6:853 -host-name dns.alidns.com
+			server-https https://doh.pub/dns-query -host-name doh.pub
+			server-https https://doh.360.cn/dns-query -host-name doh.360.cn
+			server-https https://223.5.5.5/dns-query -host-name dns.alidns.com
 		EOF
 
 		start_instance /usr/bin/$NAME -c "/var/etc/${NAME}_cn.conf" -f
