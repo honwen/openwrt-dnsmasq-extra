@@ -41,15 +41,15 @@ start() {
 
 	# plugins
 	for plugin in $(uci_get_by_type ${NAME} general plugins); do
-		[ -x /usr/bin/${plugin} ] && {
+		[ -x /usr/bin/${plugin} ] || [ "V${plugin}" = "Vss-tunnel" -a -x /usr/bin/sslocal ] && {
 			if echo ${plugin} | grep -q 'tunnel'; then
 				plugin_alias=$(echo -n ${plugin} | sed 's/ss/shadowsocks/g; s/-tunnel//g')
 				plugin_srv=$(uci_get_by_type ${plugin_alias} port_forward server nil)
-				[ "V${plugin_srv}" == "Vnil" ] && continue
+				[ "V${plugin_srv}" = "Vnil" ] && continue
 				plugin_port=$(uci_get_by_type ${plugin_alias} port_forward local_port 5300)
 			else
 				plugin_port=$(uci_get_by_type ${plugin} ${plugin} port 0000)
-				[ "V${port_forward}" == "V0000" ] && continue
+				[ "V${port_forward}" = "V0000" ] && continue
 			fi
 			echo -n "plugin:${plugin}, " | tr [a-z] [A-Z]
 			auto_cat 'gfwlist' 'tldn' | sed "s/^/server=\//;s/$/\/127.0.0.1#${plugin_port}/" >${TARGET}/plugin_${plugin}.conf
@@ -59,17 +59,17 @@ start() {
 
 	# pluginsOtcp
 	for plugin in $(uci_get_by_type ${NAME} general pluginsOtcp); do
-		[ -x /usr/bin/${plugin} ] && {
+		[ -x /usr/bin/${plugin} ] || [ "V${plugin}" = "Vss-tunnel" -a -x /usr/bin/sslocal ] && {
 			if echo ${plugin} | grep -qe 'ray\|tunnel'; then
 				plugin_alias=$(echo -n ${plugin} | sed 's/ss/shadowsocks/g; s/-tunnel//g')
 				plugin_srv=$(uci_get_by_type ${plugin_alias} port_forward server nil)
 				plugin_enable=$(uci_get_by_type ${plugin_alias} port_forward 'enable' 0)
-				[ "V${plugin_srv}" == "Vnil" -a "V${plugin_enable}" == "V0" ] && continue
+				[ "V${plugin_srv}" = "Vnil" -a "V${plugin_enable}" = "V0" ] && continue
 				plugin_port=$(uci_get_by_type ${plugin_alias} port_forward local_port 5300)
 
 			else
 				plugin_port=$(uci_get_by_type ${plugin} ${plugin} port 0000)
-				[ "V${port_forward}" == "V0000" ] && continue
+				[ "V${port_forward}" = "V0000" ] && continue
 			fi
 
 			plugin_tcpport=$((plugin_port + 1))
@@ -260,40 +260,51 @@ restart() {
 }
 
 update() {
+	baseurl="https://raw.githubusercontent.com/honwen/openwrt-${NAME}/master/${NAME}/files"
+
+	if curl --retry 3 --connect-timeout 5 --max-time 20 -ksSL "$(echo $baseurl | sed 's+githubusercontent+githubusercontents+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+githubusercontent+githubusercontents+g')"
+	elif curl --retry 3 --connect-timeout 5 --max-time 20 -ksSL "$(echo $baseurl | sed 's+raw.githubusercontent.com+cdn.staticaly.com/gh+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent.com+cdn.staticaly.com/gh+g')"
+	elif curl --retry 3 --connect-timeout 5 --max-time 20 -ksSL "$(echo $baseurl | sed 's+githubusercontent.com+fastgit.org+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+githubusercontent.com+fastgit.org+g')"
+	fi
+	echo "# SRC: $baseurl"
+
 	# update_chn
-	update_sub 'chnroute.txt'
-	update_sub 'gfwlist.gz'
-	update_sub 'direct.gz'
-	update_others
+	update_sub 'chnroute.txt' "$baseurl"
+	update_sub 'gfwlist.gz' "$baseurl"
+	update_sub 'direct.gz' "$baseurl"
+	update_others "$baseurl"
 }
 
 update_others() {
 	overlay_free=$(df -k | grep -E '^overlay' | awk '{print $4}')
 	# only update data: adblock/tldn when disk free > 1MiB
-	[ "Z$overlay_free" == "Z" ] && return 0
+	[ "Z$overlay_free" = "Z" ] && return 0
 	[ $overlay_free -lt 1024 ] && return 0
-	update_sub 'tldn.gz'
-	update_sub 'adblock.gz'
+	update_sub 'tldn.gz' "$1"
+	update_sub 'adblock.gz' "$1"
 }
 
 update_sub() {
 	sub=$1
 	file="/etc/${NAME}.d/${sub}"
 	ts=$(date '+%s')
-	src="https://raw.githubusercontents.com/chenhw2/openwrt-${NAME}/master/${NAME}/files/data/${sub}"
+	src="${2:-"https://raw.githubusercontent.com/honwen/openwrt-${NAME}/master/${NAME}/files"}/data/${sub}"
 
 	oldHash=$(md5sum ${file} 2>/dev/null | sed 's/ .*//g')
 	newHash=$(curl --retry 3 --connect-timeout 5 --max-time 20 -ksSL "${src}.md5sum?${ts}" | sed 's/ .*//g')
 
 	# echo $oldHash $newHash
-	[ "Z$oldHash" == "Z" -o "Z$newHash" == "Z" ] && return 1
-	[ "$oldHash" == "$newHash" ] && echo "# $file NOT Needed Updated" && return 0
+	[ "Z$oldHash" = "Z" -o "Z$newHash" = "Z" ] && return 1
+	[ "$oldHash" = "$newHash" ] && echo "# $file NOT Needed Updated" && return 0
 
 	bak="/tmp/${sub}.backup"
 	cp -f "${file}" "${bak}"
 	curl --connect-timeout 10 --max-time 60 -ksSL "${src}?${ts}" -o ${file}
 	oldHash=$(md5sum "${file}" 2>/dev/null | sed 's/ .*//g')
-	[ "Z$oldHash" == "Z$newHash" ] && {
+	[ "Z$oldHash" = "Z$newHash" ] && {
 		echo "# ${file} Updated"
 		rm -f "${bak}"
 		return 0

@@ -5,8 +5,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dnsmasq-extra
-PKG_VERSION:=2021-08-07
-PKG_RELEASE:=1.8.6
+PKG_VERSION:=2021-12-31
+PKG_RELEASE:=1.9.0
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
@@ -54,7 +54,7 @@ endef
 define Package/dnsmasq-extra/postrm
 #!/bin/sh
 sed -i '/dnsmasq-extra/d' /etc/crontabs/root
-uci -q delete firewall.dnsmasqextra
+uci -q delete firewall.extra
 uci commit firewall
 exit 0
 endef
@@ -75,14 +75,16 @@ endef
 
 define Package/dnsmasq-extra/install
 	$(INSTALL_DIR) $(1)/etc/config
-	$(INSTALL_DATA) ./files/config $(1)/etc/config/dnsmasq-extra
+	$(INSTALL_DATA) ./files/dnsmasq-extra.conf $(1)/etc/config/dnsmasq-extra
 	$(INSTALL_DIR) $(1)/etc/init.d
-	$(INSTALL_BIN) ./files/sh/init $(1)/etc/init.d/dnsmasq-extra
+	$(INSTALL_BIN) ./files/dnsmasq-extra.init $(1)/etc/init.d/dnsmasq-extra
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
-	$(INSTALL_BIN) ./files/sh/uci-defaults $(1)/etc/uci-defaults/dnsmasq-extra
+	$(INSTALL_BIN) ./files/uci-defaults $(1)/etc/uci-defaults/dnsmasq-extra
 	$(INSTALL_DIR) $(1)/etc/dnsmasq-extra.d
 	$(INSTALL_DATA) ./files/data/*.gz $(1)/etc/dnsmasq-extra.d/
-	$(INSTALL_DATA) ./files/data/{chnroute.txt,custom.conf,bogus.conf} $(1)/etc/dnsmasq-extra.d/
+	$(INSTALL_DATA) ./files/data/*.txt $(1)/etc/dnsmasq-extra.d/
+	$(INSTALL_DATA) ./files/data/*.conf $(1)/etc/dnsmasq-extra.d/
+
 ifeq ($(CONFIG_DNSMASQ_EXTRA_FORCE_AIODNS),y)
 	sed 's+\(overwrite_resolve.*\)[0-9]+\1enabled+g' -i $(1)/etc/config/dnsmasq-extra
 	sed 's+\(overwrite_aiodns.*\)[0-9]+\1enabled+g' -i $(1)/etc/config/dnsmasq-extra
