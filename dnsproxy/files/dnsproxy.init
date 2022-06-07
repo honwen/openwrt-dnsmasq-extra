@@ -13,7 +13,7 @@ uci_get_by_type() {
 
 uci_bool_by_type() {
 	case "$(uci_get_by_type $1 $2)" in
-		1|on|true|yes|enabled) return 0;;
+	1 | on | true | yes | enabled) return 0 ;;
 	esac
 	return 1
 }
@@ -23,6 +23,7 @@ start_instance() {
 	procd_set_param respawn
 	procd_set_param stdout 1
 	procd_set_param stderr 1
+	procd_set_param term_timeout 3
 	procd_set_param command $@
 	procd_close_instance
 }
@@ -37,7 +38,7 @@ start_service() {
 	add_cron
 
 	local port=$(uci_get_by_type $NAME port 7200)
-	local args="--cache --edns --all-servers --refuse-any -p ${port}"
+	local args="--cache --cache-optimistic --edns --all-servers --refuse-any -p ${port}"
 	args="${args} $(uci_bool_by_type $NAME block_ipv6 && echo '--ipv6-disabled')"
 	args="${args} $(uci_bool_by_type $NAME fastest_addr && echo '--cache-min-ttl=999 --fastest-addr')"
 
@@ -50,7 +51,7 @@ start_service() {
 	# ---- cn_dnsproxy -----
 	uci_bool_by_type $NAME enable_cn && {
 		local port_cn=$(uci_get_by_type $NAME port_cn 7201)
-		local args_cn="--cache --edns --all-servers --refuse-any -p ${port_cn}"
+		local args_cn="--cache --cache-optimistic --edns --all-servers --refuse-any -p ${port_cn}"
 		args_cn="${args_cn} $(uci_bool_by_type $NAME block_ipv6 && echo '--ipv6-disabled')"
 		args_cn="${args_cn} $(uci_bool_by_type $NAME fastest_addr && echo '--cache-min-ttl=999 --fastest-addr')"
 
@@ -67,7 +68,7 @@ stop_service() {
 
 add_cron() {
 	sed -i "/${NAME}/d" $CRON_FILE
-	echo "*    *    * * * /usr/bin/pgrep -f all-servers || /etc/init.d/${NAME} restart" >> $CRON_FILE
+	echo "*    *    * * * /usr/bin/pgrep -f all-servers || /etc/init.d/${NAME} restart" >>$CRON_FILE
 	/etc/init.d/cron restart
 }
 
