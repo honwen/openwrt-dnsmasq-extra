@@ -1,13 +1,14 @@
 #!/bin/sh /etc/rc.common
-# Copyright (C) 2018-2021 honwen <https://github.com/honwen>
+# Copyright (C) 2018-2022 honwen <https://github.com/honwen>
 
 START=69
+NAME=dnsmasq-extra
 EXTRA_COMMANDS="rules update"
 
-NAME=dnsmasq-extra
-BLOCK=""
+DNSMASQ_SOA=""
 DATA=/etc/${NAME}.d
 TARGET=/var/dnsmasq.d
+_CURL='curl -H referer:github.com --retry 3 --connect-timeout 5 --max-time 55 -ksSL'
 
 uci_get_by_type() {
 	local ret=$(uci get $1.@$2[0].$3 2>/dev/null)
@@ -128,10 +129,13 @@ start() {
 			add gfwlist 50.23.64.0/18
 			add gfwlist 50.97.0.0/18
 			add gfwlist 75.126.0.0/18
+			add gfwlist 91.105.192.0/23
 			add gfwlist 91.108.0.0/18
+			add gfwlist 95.161.64.0/20
 			add gfwlist 108.168.128.0/17
 			add gfwlist 109.239.128.0/18
 			add gfwlist 149.154.128.0/18
+			add gfwlist 149.154.160.0/20
 			add gfwlist 157.240.0.0/18
 			add gfwlist 158.85.0.0/18
 			add gfwlist 158.85.192.0/18
@@ -155,6 +159,7 @@ start() {
 			add gfwlist 179.60.192.0/18
 			add gfwlist 184.173.128.0/18
 			add gfwlist 185.60.192.0/18
+			add gfwlist 185.76.151.0/24
 			add gfwlist 192.155.192.0/18
 			add gfwlist 198.11.192.0/18
 			add gfwlist 198.23.64.0/18
@@ -164,14 +169,24 @@ start() {
 
 	uci_bool_by_type ${NAME} general adblock && {
 		echo -n "ADBLOCK, "
-		auto_cat 'adblock' | sed "s/^/address=\//;s/$/\/${BLOCK}/" >${TARGET}/misc_adblock.conf
+		auto_cat 'adblock' | sed "s/^/address=\//;s/$/\/${DNSMASQ_SOA}/" >${TARGET}/misc_adblock.conf
 	}
 
 	echo -n "CUSTOM" && {
 		echo "all-servers" >${TARGET}/misc_custom.conf
 		echo "conf-file=${DATA}/custom.conf" >>${TARGET}/misc_custom.conf
 
+		# https://github.com/coolsnowwolf/lede/tree/master/package/network/services/dnsmasq/patches
+		for filter in $(uci_get_by_type ${NAME} general filters); do
+			dnsmasq --help | grep -q "filter-${filter}" && {
+				echo "filter-${filter}" >>${TARGET}/misc_custom.conf
+			}
+		done
+
 		uci_bool_by_type ${NAME} general overwrite_resolve && {
+			_tmp_list="/tmp/.custom.$(date '+%s').list"
+			sed -n 's+#$++p' ${TARGET}/*.conf >$_tmp_list
+
 			sed "/\/#$/d" -i ${TARGET}/*.conf
 
 			uci_bool_by_type ${NAME} general overwrite_aiodns && {
@@ -179,6 +194,7 @@ start() {
 					local aiodns_port=$(uci_get_by_type aiodns aiodns port 7100)
 					echo "server=/${ss_watchdog}/127.0.0.1#${aiodns_port}" >>${TARGET}/misc_custom.conf
 					echo "server=127.0.0.1#$aiodns_port" >>${TARGET}/misc_custom.conf
+					sed "s+$+127.0.0.1#$aiodns_port+g" $_tmp_list >>${TARGET}/misc_direct.conf
 				}
 			}
 
@@ -187,6 +203,7 @@ start() {
 					local dcompass_port=$(uci_get_by_type dcompass dcompass port 7500)
 					echo "server=/${ss_watchdog}/127.0.0.1#${dcompass_port}" >>${TARGET}/misc_custom.conf
 					echo "server=127.0.0.1#$dcompass_port" >>${TARGET}/misc_custom.conf
+					sed "s+$+127.0.0.1#$dcompass_port+g" $_tmp_list >>${TARGET}/misc_direct.conf
 				}
 			}
 
@@ -198,6 +215,7 @@ start() {
 					}
 					local smartdns_port=$(uci_get_by_type smartdns smartdns port 0000)
 					echo "server=127.0.0.1#$((smartdns_port + 1))" >>${TARGET}/misc_custom.conf
+					sed "s+$+127.0.0.1#$((smartdns_port + 1))+g" $_tmp_list >>${TARGET}/misc_direct.conf
 				}
 			}
 
@@ -209,6 +227,7 @@ start() {
 						/etc/init.d/dnsproxy restart >/dev/null 2>&1
 					}
 					echo "server=127.0.0.1#$dnsproxy_port" >>${TARGET}/misc_custom.conf
+					sed "s+$+127.0.0.1#$dnsproxy_port+g" $_tmp_list >>${TARGET}/misc_direct.conf
 				}
 			}
 
@@ -217,9 +236,12 @@ start() {
 				tcpport=$((tcpport + 1))
 				(/usr/bin/dnsFtcp -p $tcpport -s ${server} >/dev/null 2>&1) &
 				echo "server=127.0.0.1#${tcpport}" >>${TARGET}/misc_custom.conf
+				sed "s+$+127.0.0.1#$tcpport+g" $_tmp_list >>${TARGET}/misc_direct.conf
 			done
 
 			echo -n ", OVERWRITE-RESOLVE" && echo 'no-resolv' >>${TARGET}/misc_custom.conf
+			echo "$(sort -u ${TARGET}/misc_direct.conf)" >${TARGET}/misc_direct.conf
+			rm -f /tmp/.custom.*.list
 		}
 	}
 
@@ -262,11 +284,15 @@ restart() {
 update() {
 	baseurl="https://raw.githubusercontent.com/honwen/openwrt-${NAME}/master/${NAME}/files"
 
-	if curl --retry 3 --connect-timeout 5 --max-time 20 -ksSL "$(echo $baseurl | sed 's+githubusercontent+githubusercontents+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+	if ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.com/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.com/https://raw.githubusercontent+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+mirror.ghproxy.com/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+mirror.ghproxy.com/https://raw.githubusercontent+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+githubusercontent+githubusercontents+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+githubusercontent+githubusercontents+g')"
-	elif curl --retry 3 --connect-timeout 5 --max-time 20 -ksSL "$(echo $baseurl | sed 's+raw.githubusercontent.com+cdn.staticaly.com/gh+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent.com+cdn.staticaly.com/gh+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent.com+cdn.staticaly.com/gh+g')"
-	elif curl --retry 3 --connect-timeout 5 --max-time 20 -ksSL "$(echo $baseurl | sed 's+githubusercontent.com+fastgit.org+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+	elif ${_CURL} "$(echo $baseurl | sed 's+githubusercontent.com+fastgit.org+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+githubusercontent.com+fastgit.org+g')"
 	fi
 	echo "# SRC: $baseurl"
@@ -294,7 +320,7 @@ update_sub() {
 	src="${2:-"https://raw.githubusercontent.com/honwen/openwrt-${NAME}/master/${NAME}/files"}/data/${sub}"
 
 	oldHash=$(md5sum ${file} 2>/dev/null | sed 's/ .*//g')
-	newHash=$(curl --retry 3 --connect-timeout 5 --max-time 20 -ksSL "${src}.md5sum?${ts}" | sed 's/ .*//g')
+	newHash=$(${_CURL} "${src}.md5sum?${ts}" | sed 's/ .*//g')
 
 	# echo $oldHash $newHash
 	[ "Z$oldHash" = "Z" -o "Z$newHash" = "Z" ] && return 1
@@ -302,7 +328,8 @@ update_sub() {
 
 	bak="/tmp/${sub}.backup"
 	cp -f "${file}" "${bak}"
-	curl --connect-timeout 10 --max-time 60 -ksSL "${src}?${ts}" -o ${file}
+
+	$(echo "${_CURL}" | sed 's|max-time[ 0-9]*|max-time 120 |g') "${src}?${ts}" -o ${file}
 	oldHash=$(md5sum "${file}" 2>/dev/null | sed 's/ .*//g')
 	[ "Z$oldHash" = "Z$newHash" ] && {
 		echo "# ${file} Updated"
@@ -313,6 +340,7 @@ update_sub() {
 	echo "# $file is broken, failsafe Now!"
 	rm -f "${file}"
 	cp -f "${bak}" "${file}" || cp -f "/rom${file}" "${file}"
+	rm -f "${bak}"
 }
 
 update_chn() {
@@ -321,8 +349,8 @@ update_chn() {
 
 	ts=$(date '+%s')
 	# chnsrc="https://raw.githubusercontents.com/17mon/china_ip_list/master/china_ip_list.txt"
-	# chnsrc="https://ispip.clang.cn/all_cn_cidr.txt"
-	chnsrc="https://raw.githubusercontents.com/gaoyifan/china-operator-ip/ip-lists/china.txt"
+	chnsrc="https://ispip.clang.cn/all_cn_cidr.txt"
+	# chnsrc="https://raw.githubusercontents.com/gaoyifan/china-operator-ip/ip-lists/china.txt"
 
 	echo "# $chnroute Updating"
 	curl --retry 3 --connect-timeout 10 --max-time 120 -ksSL $chnsrc -o $chnroute
