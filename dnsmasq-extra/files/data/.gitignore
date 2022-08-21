@@ -1,0 +1,7 @@
+*.*
+!*.gz
+!*.txt
+!*.conf
+!*.md5sum
+!.gitignore
+!*.lite*

@@ -5,6 +5,7 @@ set -e
 # https://github.com/honwen/shadowsocks-helper
 # https://github.com/zhanhb/cidr-merger
 
+# _date=$(date '+%Y%m%d')
 _date=$(date '+%Y-%m-%d')
 _path=$(dirname $(readlink -f $0))
 
@@ -49,9 +50,15 @@ time cidr-merger <<-EOF >chnroute.txt.new
 			sed -n 's+IP-CIDR,\(.*\),no-resolve+\1+p'
 	)
 
+	$(
+		curl_githubusercontent https://raw.githubusercontent.com/marsgogo/Surge/main/Weixin.list |
+			sed -n 's+IP-CIDR,\(.*\),no-resolve+\1+p'
+	)
+
 	$(for it in 132203 45090 45102 136907 3462 9381 9269 135377 64050 136038 31898 48266; do
 		echo >&2 "ASN$it"
-		curl -skL --speed-limit 100000 --speed-time 30 https://api.bgpview.io/asn/$it/prefixes | jq -r '.data.ipv4_prefixes[]|.prefix'
+		curl -skL --speed-limit 100000 --speed-time 30 https://api.bgpview.io/asn/$it/prefixes | jq -r '.data.ipv4_prefixes[]|.prefix' 2>/dev/null ||
+			curl -skL --speed-limit 50000 --speed-time 90 https://api.bgpview.io/asn/$it/prefixes | jq -r '.data.ipv4_prefixes[]|.prefix'
 	done)
 EOF
 
@@ -93,13 +100,19 @@ time shadowsocks-helper gfwlist >gfwlist
 sed '/^google.*analytics.com$/d' -i gfwlist
 # ------------------ gfwlist ------------------
 
+# ------------------ gfwlist.lite ------------------
+echo >&2 "# gfwlist.lite"
+sed 's|^\.|.*\\.|g; s+$+$+g' tldn >gfwlist.blacklist
+grep -Exv -f gfwlist.blacklist gfwlist >gfwlist.lite
+rm -f gfwlist.blacklist
+# ------------------ gfwlist ------------------
+
 # ------------------ adblock ------------------
 
 curl -sSL https://anti-ad.net/domains.txt -o adblock
-curl_githubusercontent https://raw.githubusercontent.com/neodevpro/neodevhost/master/customblocklist >>adblock
-# curl -sSL https://neodev.team/lite_host -o adblock.neodevhost
-# $(sed -n 's+^0.0.0.0 *++p' adblock.neodevhost)
-cat <<-EOF >>adblock
+curl -sSL https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts | sed -n 's+^0.0.0.0 *++p' >adblock.lite
+curl_githubusercontent https://raw.githubusercontent.com/neodevpro/neodevhost/master/customblocklist | tee -a adblock adblock.lite >/dev/null
+cat <<-EOF | tee -a adblock adblock.lite >/dev/null
 	c.msn.com
 	ntp.msn.com
 	ntp.msn.cn
@@ -107,16 +120,18 @@ cat <<-EOF >>adblock
 	api.msn.com
 	browser.events.data.msn.com
 EOF
-# sort -u adblock -o adblock
+
 echo >&2 "# adblock"
 time shadowsocks-helper tide -i adblock -o adblock
+echo >&2 "# adblock.lite"
+time shadowsocks-helper tide -i adblock.lite -o adblock.lite
 
 # whitelist
-sed '/wns.windows.com/d' -i adblock
-sed '/ip-api.com/d; /pv.sohu.com/d' -i adblock
-sed '/click.simba.taobao.com/d' -i adblock
-sed '/click.union.vip.com/d; /ms.vipstatic.com/d' -i adblock
-# rm -f adblock.*
+sed 's+\.$++g' -i adblock adblock.lite
+sed '/wns.windows.com/d' -i adblock adblock.lite
+sed '/ip-api.com/d; /pv.sohu.com/d' -i adblock adblock.lite
+sed '/click.simba.taobao.com/d' -i adblock adblock.lite
+sed '/click.union.vip.com/d; /ms.vipstatic.com/d' -i adblock adblock.lite
 # ------------------ adblock ------------------
 
 # ------------------ direct ------------------
@@ -134,15 +149,19 @@ curl_githubusercontent https://raw.githubusercontent.com/v2fly/domain-list-commu
 curl_githubusercontent https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/bytedance >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/pluwen/china-domain-allowlist/main/allow-list.sorl |
 	sed -n 's+^*\.++p' | sed '/apple/d; /akadns/d; /doubleclick/d' >>direct.new
+curl_githubusercontent https://raw.githubusercontent.com/eliozy/Qumtumult-X/master/Filter/WeChat.list |
+	sed -n 's+^DOMAIN-SUFFIX,++p' | sed 's+,.*++g' >>direct.new
+curl_githubusercontent https://raw.githubusercontent.com/marsgogo/Surge/main/Weixin.list |
+	sed -n 's+^DOMAIN[^,]*,++p' >>direct.new
 
 # blacklist
 sed '/google/d; /gstatic/d; /youtube/d; /^android/d;' -i direct.new
 sed '/ocsp/d; /akamai/d; /aws/d' -i direct.new
 sed '/sci-hub/d; /scihub/d; /gitbook/d' -i direct.new
 sed '/ebay/d; /lazada/d; /yandex/d' -i direct.new
-cat adblock gfwlist >direct.blacklist
+cat adblock adblock.lite gfwlist >direct.blacklist
 sed "$start,99999d" direct >>direct.blacklist
-grep -Fxv -f direct.blacklist direct.new >direct.sum
+grep -Fv -f direct.blacklist direct.new >direct.sum
 
 time shadowsocks-helper tide -i direct.sum -o direct.sum
 sed "$start,99999d" -i direct
@@ -159,7 +178,7 @@ rm -f direct.*
 # ------------------ gzip ------------------
 md5sum chnroute.txt | tee chnroute.txt.md5sum
 
-srcs="tldn gfwlist direct adblock"
+srcs="tldn gfwlist direct adblock $(ls *.lite)"
 
 for it in $srcs; do
 	echo >>$it
@@ -188,7 +207,7 @@ sed -n "1,$((insert_line - 1))p" Complete.conf >>ShadowrocketEx.conf
 echo -e '\n# > GFWLIST' >>ShadowrocketEx.conf
 (
 	sed -n '/DOMAIN-SUFFIX,.*,PROXY/p' Complete.conf
-	sed '/[0-9]$/d' gfwlist | sed 's+^+DOMAIN-SUFFIX,+g; s+$+,PROXY+g'
+	sed '/[0-9]$/d' gfwlist.lite | sed 's+^+DOMAIN-SUFFIX,+g; s+$+,PROXY+g'
 ) | sort -u >>ShadowrocketEx.conf
 
 echo -e '\n# > DIRECT' >>ShadowrocketEx.conf

@@ -8,7 +8,7 @@ EXTRA_COMMANDS="rules update"
 DNSMASQ_SOA=""
 DATA=/etc/${NAME}.d
 TARGET=/var/dnsmasq.d
-_CURL='curl -H referer:github.com --retry 3 --connect-timeout 5 --max-time 55 -ksSL'
+_CURL='curl -H referer:github.com --retry 3 --connect-timeout 6 --max-time 55 -ksSL'
 
 uci_get_by_type() {
 	local ret=$(uci get $1.@$2[0].$3 2>/dev/null)
@@ -299,18 +299,29 @@ update() {
 
 	# update_chn
 	update_sub 'chnroute.txt' "$baseurl"
-	update_sub 'gfwlist.gz' "$baseurl"
+	if [ -L "/etc/${NAME}.d/gfwlist.gz" ]; then
+		update_sub 'gfwlist.lite.gz' "$baseurl"
+	else
+		update_sub 'gfwlist.gz' "$baseurl"
+	fi
 	update_sub 'direct.gz' "$baseurl"
 	update_others "$baseurl"
 }
 
 update_others() {
+	baseurl="$1"
 	overlay_free=$(df -k | grep -E '^overlay' | awk '{print $4}')
 	# only update data: adblock/tldn when disk free > 1MiB
 	[ "Z$overlay_free" = "Z" ] && return 0
 	[ $overlay_free -lt 1024 ] && return 0
-	update_sub 'tldn.gz' "$1"
-	update_sub 'adblock.gz' "$1"
+
+	update_sub 'tldn.gz' "$baseurl"
+
+	if [ -L "/etc/${NAME}.d/adblock.gz" ]; then
+		update_sub 'adblock.lite.gz' "$baseurl"
+	else
+		update_sub 'adblock.gz' "$baseurl"
+	fi
 }
 
 update_sub() {
@@ -319,17 +330,19 @@ update_sub() {
 	ts=$(date '+%s')
 	src="${2:-"https://raw.githubusercontent.com/honwen/openwrt-${NAME}/master/${NAME}/files"}/data/${sub}"
 
-	oldHash=$(md5sum ${file} 2>/dev/null | sed 's/ .*//g')
 	newHash=$(${_CURL} "${src}.md5sum?${ts}" | sed 's/ .*//g')
+	[ -e $file ] && {
+		oldHash=$(md5sum ${file} 2>/dev/null | sed 's/ .*//g')
+		# echo $oldHash $newHash
 
-	# echo $oldHash $newHash
-	[ "Z$oldHash" = "Z" -o "Z$newHash" = "Z" ] && return 1
-	[ "$oldHash" = "$newHash" ] && echo "# $file NOT Needed Updated" && return 0
+		[ "Z$oldHash" = "Z" -o "Z$newHash" = "Z" ] && return 1
+		[ "$oldHash" = "$newHash" ] && echo "# $file NOT Needed Updated" && return 0
 
-	bak="/tmp/${sub}.backup"
-	cp -f "${file}" "${bak}"
+		bak="/tmp/${sub}.backup"
+		cp -f "${file}" "${bak}"
+	}
 
-	$(echo "${_CURL}" | sed 's|max-time[ 0-9]*|max-time 120 |g') "${src}?${ts}" -o ${file}
+	$(echo "${_CURL}" | sed 's|max-time[ 0-9]*|max-time 150 |g') "${src}?${ts}" -o ${file}
 	oldHash=$(md5sum "${file}" 2>/dev/null | sed 's/ .*//g')
 	[ "Z$oldHash" = "Z$newHash" ] && {
 		echo "# ${file} Updated"
