@@ -6,6 +6,7 @@ USE_PROCD=1
 EXTRA_COMMANDS="healthcheck"
 
 CRON_FILE=/etc/crontabs/root
+LOG_DIR=/var/log/$NAME
 
 uci_get_by_type() {
 	local ret=$(uci get $NAME.@$1[0].$2 2>/dev/null)
@@ -37,55 +38,86 @@ start_service() {
 	add_cron
 	add_hotplug
 
-	mkdir -p /var/etc/ /var/log/
+	mkdir -p /var/etc/ $(dirname ${LOG_DIR})
 
 	port=$(uci_get_by_type $NAME port 7700)
 
-	cat <<-EOF >"/var/etc/${NAME}.conf"
-		bind 0.0.0.0:${port}
-		bind-tcp 0.0.0.0:${port}
-		# tcp-idle-time 0
-		cache-size 768
+	# -------------------- user --------------------
+	if [ 1024 -lt $port ]; then
+		if grep -q 'dnsmasq' /etc/shadow; then
+			user='dnsmasq'
+		elif grep -q 'nobody' /etc/shadow; then
+			user='nobody'
+		fi
+	fi
+	[ "V$user" = "V" ] && user='root'
+	# -------------------- user --------------------
+
+	echo "user $user" >"/var/etc/${NAME}.conf"
+	uci_bool_by_type $NAME cache && cat <<-EOF >>"/var/etc/${NAME}.conf"
+		cache-size 1024
 		cache-persist no
 		serve-expired yes
+		prefetch-domain yes
+	EOF
 
-		speed-check-mode tcp:80,ping
-		domain-rules /github.com/ -c tcp:22
-		domain-rules /githubusercontent.com/ -c tcp:443
-		domain-rules /github.map.fastly.net/ -c tcp:443
-		domain-rules /github.global.ssl.fastly.net/ -c tcp:443
-		domain-rules /s3.amazonaws.com/ -c tcp:443
+	cat <<-EOF >>"/var/etc/${NAME}.conf"
+		bind 0.0.0.0:${port}
+		bind-tcp 0.0.0.0:${port}
 
-		prefetch-domain $(uci_bool_by_type $NAME prefetch && echo yes || echo no)
-		force-AAAA-SOA $(uci_bool_by_type $NAME ipv6 && echo no || echo yes)
+		rr-ttl-min 120
+		max-reply-ip-num 2
+		rr-ttl-reply-max 600
+		response-mode $(uci_get_by_type $NAME response_mode)
+		speed-check-mode $(uci_get_by_type $NAME speed_check_mode)
+		$(
+			for it in $(uci_get_by_type $NAME extra_rules | sed "s+ +_+g; s+'_'+ +g; s+'++g"); do
+				echo "domain-rules $it" | sed 's+_+ +g'
+			done
+		)
+
 		dualstack-ip-selection $(uci_bool_by_type $NAME ipv6 && echo yes || echo no)
+		force-AAAA-SOA $(uci_bool_by_type $NAME ipv6 && echo no || echo yes)
+		force-qtype-SOA 65
 
 		log-level info
-		log-file /var/log/smartdns.log
-		log-size 512K
-		log-num 2
+		log-file ${LOG_DIR}/${NAME}.log
+		log-size 256K
+		log-num 3
 
 		address /dns11.quad9.net/149.112.112.11
 		$(
 			for it in $(uci_get_by_type $NAME bootstrap); do
 				echo "server ${it} -group bootstrap -exclude-default-group"
-				echo "server-tcp ${it} -group bootstrap -exclude-default-group"
+				echo ${it} | grep -qE '^223\.' || {
+					echo "server-tcp ${it} -group bootstrap -exclude-default-group"
+				}
 			done
 		)
 
 		$(
 			for type in tls https; do
 				for it in $(uci_get_by_type $NAME server_${type}); do
-					it=$(echo ${it} | sed 's+.*//++g; s+/.*++g' | sed 's+@.*++g')
+					it=$(echo ${it} | sed 's+.*//++g; s+/.*++g' | sed 's+@.*++g; s+:.*++g')
 					echo ${it} | grep -q '[0-9]$' || echo "nameserver /${it}/bootstrap"
 				done
-			done
+			done | sort -u
 		)
 
 		$(
 			for type in tls https; do
 				for it in $(uci_get_by_type $NAME server_${type}); do
-					echo "server-${type} ${it} -tls-host-verify" | sed 's+@+ -host-name +g'
+					echo -n "server-${type} "
+					if echo ${it} | grep -q '@'; then
+						echo "${it} -tls-host-verify" | sed 's+@+ -host-name +g'
+					else
+						echo -n ${it}
+						dname=$(echo ${it} | sed 's+.*//++g; s+/.*++g' | sed 's+@.*++g; s+:.*++g')
+						if ! echo ${dname} | grep -q '[0-9]$'; then
+							echo -n " -host-name ${dname}"
+						fi
+						echo " -tls-host-verify"
+					fi
 				done
 			done
 		)
@@ -96,32 +128,48 @@ start_service() {
 
 	EOF
 
-	start_instance /usr/bin/$NAME -c "/var/etc/${NAME}.conf" -f
+	start_instance /usr/bin/$NAME -p- -c "/var/etc/${NAME}.conf" -f
 
+	# -------------------- enable_cn --------------------
 	uci_bool_by_type $NAME enable_cn && {
-		cat <<-EOF >"/var/etc/${NAME}_cn.conf"
-			bind 0.0.0.0:$((port + 1))
-			bind-tcp 0.0.0.0:$((port + 1))
-			# tcp-idle-time 0
-			cache-size 1024
+		echo "user $user" >"/var/etc/${NAME}_cn.conf"
+		uci_bool_by_type $NAME cache && cat <<-EOF >>"/var/etc/${NAME}_cn.conf"
+			cache-size 2048
 			cache-persist no
 			serve-expired yes
+			prefetch-domain yes
+		EOF
 
-			speed-check-mode ping,tcp:80
+		cat <<-EOF >>"/var/etc/${NAME}_cn.conf"
+			bind 0.0.0.0:$((port + 1))
+			bind-tcp 0.0.0.0:$((port + 1))
 
-			prefetch-domain $(uci_bool_by_type $NAME prefetch && echo yes || echo no)
-			force-AAAA-SOA $(uci_bool_by_type $NAME ipv6 && echo no || echo yes)
+			rr-ttl-min 300
+			max-reply-ip-num 4
+			rr-ttl-reply-max 120
+			response-mode $(uci_get_by_type $NAME response_mode)
+			speed-check-mode $(uci_get_by_type $NAME speed_check_mode)
+			$(
+				for it in $(uci_get_by_type $NAME extra_rules | sed "s+ +_+g; s+'_'+ +g; s+'++g"); do
+					echo "domain-rules $it" | sed 's+_+ +g'
+				done
+			)
+
 			dualstack-ip-selection $(uci_bool_by_type $NAME ipv6 && echo yes || echo no)
+			force-AAAA-SOA $(uci_bool_by_type $NAME ipv6 && echo no || echo yes)
+			force-qtype-SOA 65
 
 			log-level info
-			log-file /var/log/smartdns_cn.log
-			log-size 512K
-			log-num 2
+			log-file ${LOG_DIR}/${NAME}_cn.log
+			log-size 256K
+			log-num 3
 
 			$(
 				for it in $(uci_get_by_type $NAME bootstrap); do
 					echo "server ${it} -group bootstrap -exclude-default-group"
-					echo "server-tcp ${it} -group bootstrap -exclude-default-group"
+					echo ${it} | grep -qE '^223\.' || {
+						echo "server-tcp ${it} -group bootstrap -exclude-default-group"
+					}
 				done
 			)
 
@@ -133,20 +181,20 @@ start_service() {
 			nameserver /dns.alidns.com/bootstrap
 
 			server-tls 120.53.53.53:853 -host-name dot.pub -tls-host-verify
-			server-tls 223.6.6.6:853 -host-name dns.alidns.com -tls-host-verify
 			server-tls dot.360.cn:853 -host-name dot.360.cn -tls-host-verify
 			server-https https://1.12.12.12/dns-query -host-name doh.pub -tls-host-verify
 			server-https https://223.5.5.5/dns-query -host-name dns.alidns.com -tls-host-verify
+			server-https https://223.6.6.6/dns-query -host-name dns.alidns.com -tls-host-verify
 			server-https https://doh.360.cn/dns-query -host-name doh.360.cn -tls-host-verify
 		EOF
 
 		uci_bool_by_type $NAME enable_cdn_cn && {
 			echo -e "\n# CN-CDN" >>"/var/etc/${NAME}_cn.conf"
-			# server 202.141.162.123 -group cdn -exclude-default-group
-			# server-tcp 202.141.162.123 -group cdn -exclude-default-group
-			# server 202.141.176.93 -group cdn -exclude-default-group
-			# server-tcp 202.141.176.93 -group cdn -exclude-default-group
 			cat <<-EOF >>"/var/etc/${NAME}_cn.conf"
+				server 202.141.162.123 -group cdn -exclude-default-group
+				server-tcp 202.141.162.123 -group cdn -exclude-default-group
+				server 202.141.176.93 -group cdn -exclude-default-group
+				server-tcp 202.141.176.93 -group cdn -exclude-default-group
 				server 61.132.163.68 -group cdn -exclude-default-group
 				server-tcp 61.132.163.68 -group cdn -exclude-default-group
 				server 202.102.213.68 -group cdn -exclude-default-group
@@ -173,11 +221,16 @@ start_service() {
 				domain-rules /xmcdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /xycdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /yecdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
+				domain-rules /qtlcdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
+				domain-rules /mwcname.com/ -nameserver cdn -speed-check-mode tcp:443,ping
+				domain-rules /alikunlun.com/ -nameserver cdn -speed-check-mode tcp:443,ping
+				domain-rules /ks-cdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 			EOF
 		}
 
-		start_instance /usr/bin/$NAME -c "/var/etc/${NAME}_cn.conf" -f
+		start_instance /usr/bin/$NAME -p- -c "/var/etc/${NAME}_cn.conf" -f
 	}
+	# -------------------- enable_cn --------------------
 }
 
 stop_service() {
@@ -187,8 +240,8 @@ stop_service() {
 
 add_cron() {
 	sed -i "/${NAME}/d" $CRON_FILE
-	echo "0    *    * * *  rm -f /var/log/${NAME}_healthcheck.log 2>&1" >>$CRON_FILE
-	echo "*    *    * * * /etc/init.d/${NAME} healthcheck >> /var/log/${NAME}_healthcheck.log 2>&1" >>$CRON_FILE
+	echo "0    *    * * *  rm -f ${LOG_DIR}_healthcheck.log 2>&1" >>$CRON_FILE
+	echo "*    *    * * * /etc/init.d/${NAME} healthcheck >> ${LOG_DIR}_healthcheck.log 2>&1" >>$CRON_FILE
 	/etc/init.d/cron restart
 }
 
@@ -210,7 +263,7 @@ logger -t hotplug smartdns-reload
 
 exit $?
 EOF
-	chmod +x "/etc/hotplug.d/iface/${START}-${NAME}"
+	chmod a+x "/etc/hotplug.d/iface/${START}-${NAME}"
 }
 
 healthcheck() {
@@ -221,8 +274,8 @@ healthcheck() {
 
 	# init check
 	LOGTIME=$(date "+%Y-%m-%d %H:%M:%S")
-	grep 'pending' /var/log/${NAME}*.log | grep -q 'failed' && {
-		rm -f /var/log/${NAME}*
+	grep 'pending' ${LOG_DIR}/${NAME}*.log | grep -qE 'failed.$' && {
+		rm -rf ${LOG_DIR}
 		echo "[${LOGTIME}] Problem-Init decteted, restarting ${NAME}..."
 		/etc/init.d/${NAME} restart
 		return 0
@@ -243,6 +296,9 @@ healthcheck() {
 			return 0
 		}
 	}
+
+	# log.gz cleanup
+	rm -f $(ls ${LOG_DIR}/*.gz 2>/dev/null | grep -v $(date +"%Y%m%d"))
 
 	echo "[${LOGTIME}] ${NAME} No Problem."
 }

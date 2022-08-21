@@ -23,7 +23,8 @@ ifeq ($(ARCH),aarch64)
 endif
 
 PKG_SOURCE:=dcompass-$(PKG_ARCH)
-PKG_SOURCE_URL:=https://github.com/compassd/dcompass/releases/download/build-$(PKG_VERSION)_$(PKG_RELEASE)/
+# PKG_SOURCE_URL:=https://github.com/compassd/dcompass/releases/download/build-$(PKG_VERSION)_$(PKG_RELEASE)/
+PKG_SOURCE_URL:=https://github.com/honwen/dcompass/releases/download/build-$(PKG_VERSION)_$(PKG_RELEASE)/
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_ARCH)-$(PKG_VERSION)_$(PKG_RELEASE)
 PKG_HASH:=skip
 
