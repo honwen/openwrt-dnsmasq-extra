@@ -24,6 +24,11 @@ start_instance() {
 	procd_set_param stdout 1
 	procd_set_param stderr 1
 	procd_set_param term_timeout 3
+	procd_set_param nice -5
+	procd_set_param limits nofile="65535 65535"
+	[ -e /proc/sys/kernel/core_pattern ] && {
+		procd_append_param limits core="unlimited"
+	}
 	procd_set_param command $@
 	procd_close_instance
 }

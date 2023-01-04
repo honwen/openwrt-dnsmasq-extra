@@ -36,6 +36,11 @@ start_instance() {
 	procd_set_param stdout 1
 	procd_set_param stderr 1
 	procd_set_param term_timeout 3
+	procd_set_param nice -5
+	procd_set_param limits nofile="65535 65535"
+	[ -e /proc/sys/kernel/core_pattern ] && {
+		procd_append_param limits core="unlimited"
+	}
 	procd_set_param command $@
 	procd_close_instance
 }
@@ -48,9 +53,7 @@ gen_table_head() {
 	uci_bool_by_type $NAME block_ipv6 && {
 cat <<-EOF
   start:
-    if:
-      qtype:
-        - AAAA
+    if: 'qtype([AAAA])'
     then:
       - blackhole
       - end
@@ -65,18 +68,19 @@ gen_upstreams() {
 	cat <<-EOF
 $(uci_get_by_name $1 alias):
   $(uci_get_by_name $1 type):
-    no_sni: $(uci_bool_by_name $1 no_sni && echo true || echo false)
-    name: $(uci_get_by_name $1 name)
+    sni: $(uci_bool_by_name $1 sni && echo true || echo false)
+    $(uci_get_by_name $1 query_opt)
     addr: $(uci_get_by_name $1 addr)
+    timeout: $(uci_get_by_name $1 timeout 5)
 
 EOF
 }
 
 gen_secure_matcher() {
 	[ -f /etc/dnsmasq-extra.d/chnroute.txt ] && {
-		echo -e "ipcidr:\n  - /etc/dnsmasq-extra.d/chnroute.txt"
+		echo -e 'ipcidr(["/etc/dnsmasq-extra.d/chnroute.txt"])'
 	} || {
-		echo -e "geoip:\n  codes:\n    - CN"
+		echo -e 'geoip(codes: ["CN"])'
 	}
 }
 
@@ -86,9 +90,7 @@ gen_secure_dispatch() {
 	cat <<-EOF
       - dispatch_secure
   dispatch_secure:
-    if:
-      domain:
-        - file: /etc/dnsmasq-extra.d/gfwlist.gz
+    if: 'domain([file("/etc/dnsmasq-extra.d/gfwlist.gz")])'
     then:
       - query: secure
       - end
@@ -110,22 +112,20 @@ address: 0.0.0.0:$(uci_get_by_type $NAME port 7500)
 
 table:
 $(gen_table_head)
-    if:
-      domain:
-$(for it in $(uci_get_by_type $NAME oversea); do echo "        - qname: $it"; done)
+    if: >
+      domain([
+$(for it in $(uci_get_by_type $NAME oversea); do echo "        qname(\"$it\"),"; done)
+      ])
     then:
       - query: oversea
       - end
     else:$(gen_secure_dispatch)
       - dispatch_final
   dispatch_final:
-    if: any
-    then:
-      - query: domestic
-      - check_secure
+    - query: domestic
+    - check_secure
   check_secure:
-    if:
-$(gen_secure_matcher | sed 's+^+      +g' )
+    if: '$(gen_secure_matcher)'
     else:
       - query: secure
       - end

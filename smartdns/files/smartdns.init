@@ -23,8 +23,14 @@ uci_bool_by_type() {
 start_instance() {
 	procd_open_instance
 	procd_set_param respawn
+	procd_set_param stdout 1
 	procd_set_param stderr 1
 	procd_set_param term_timeout 3
+	procd_set_param nice -5
+	procd_set_param limits nofile="65535 65535"
+	[ -e /proc/sys/kernel/core_pattern ] && {
+		procd_append_param limits core="unlimited"
+	}
 	procd_set_param command $@
 	procd_close_instance
 }
@@ -186,6 +192,11 @@ start_service() {
 			server-https https://223.5.5.5/dns-query -host-name dns.alidns.com -tls-host-verify
 			server-https https://223.6.6.6/dns-query -host-name dns.alidns.com -tls-host-verify
 			server-https https://doh.360.cn/dns-query -host-name doh.360.cn -tls-host-verify
+
+			$(
+				for it in $(uci_get_by_type $NAME ignore_ip); do echo "ignore-ip ${it}"; done
+			)
+
 		EOF
 
 		uci_bool_by_type $NAME enable_cdn_cn && {
@@ -205,6 +216,7 @@ start_service() {
 				domain-rules /360buyimg.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /aicdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /alicdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
+				domain-rules /bootcdn.net/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /cnbetacdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /elemecdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /momentcdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
@@ -225,6 +237,7 @@ start_service() {
 				domain-rules /mwcname.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /alikunlun.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /ks-cdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
+				domain-rules /zhimg.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 			EOF
 		}
 
