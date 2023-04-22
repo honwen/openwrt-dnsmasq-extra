@@ -62,14 +62,15 @@ start_service() {
 	echo "user $user" >"/var/etc/${NAME}.conf"
 	uci_bool_by_type $NAME cache && cat <<-EOF >>"/var/etc/${NAME}.conf"
 		cache-size 1024
-		cache-persist no
+		cache-file /tmp/smartdns.cache
 		serve-expired yes
 		prefetch-domain yes
 	EOF
 
 	cat <<-EOF >>"/var/etc/${NAME}.conf"
-		bind 0.0.0.0:${port}
-		bind-tcp 0.0.0.0:${port}
+		cache-persist $(uci_bool_by_type $NAME cache && echo 'yes' || echo 'no')
+		bind 0.0.0.0:${port}$(uci_bool_by_type $NAME cache || echo ' -no-cache')
+		bind-tcp 0.0.0.0:${port}$(uci_bool_by_type $NAME cache || echo ' -no-cache')
 
 		rr-ttl-min 120
 		max-reply-ip-num 2
@@ -79,6 +80,12 @@ start_service() {
 		$(
 			for it in $(uci_get_by_type $NAME extra_rules | sed "s+ +_+g; s+'_'+ +g; s+'++g"); do
 				echo "domain-rules $it" | sed 's+_+ +g'
+			done
+		)
+
+		$(
+			for it in $(uci_get_by_type $NAME cnames); do
+				echo "cname $it"
 			done
 		)
 
@@ -94,20 +101,11 @@ start_service() {
 		address /dns11.quad9.net/149.112.112.11
 		$(
 			for it in $(uci_get_by_type $NAME bootstrap); do
-				echo "server ${it} -group bootstrap -exclude-default-group"
+				echo "server ${it} -bootstrap-dns"
 				echo ${it} | grep -qE '^223\.' || {
-					echo "server-tcp ${it} -group bootstrap -exclude-default-group"
+					echo "server-tcp ${it} -bootstrap-dns"
 				}
 			done
-		)
-
-		$(
-			for type in tls https; do
-				for it in $(uci_get_by_type $NAME server_${type}); do
-					it=$(echo ${it} | sed 's+.*//++g; s+/.*++g' | sed 's+@.*++g; s+:.*++g')
-					echo ${it} | grep -q '[0-9]$' || echo "nameserver /${it}/bootstrap"
-				done
-			done | sort -u
 		)
 
 		$(
@@ -141,14 +139,15 @@ start_service() {
 		echo "user $user" >"/var/etc/${NAME}_cn.conf"
 		uci_bool_by_type $NAME cache && cat <<-EOF >>"/var/etc/${NAME}_cn.conf"
 			cache-size 2048
-			cache-persist no
+			cache-file /tmp/smartdns_cn.cache
 			serve-expired yes
 			prefetch-domain yes
 		EOF
 
 		cat <<-EOF >>"/var/etc/${NAME}_cn.conf"
-			bind 0.0.0.0:$((port + 1))
-			bind-tcp 0.0.0.0:$((port + 1))
+			cache-persist $(uci_bool_by_type $NAME cache && echo 'yes' || echo 'no')
+			bind 0.0.0.0:$((port + 1))$(uci_bool_by_type $NAME cache || echo ' -no-cache')
+			bind-tcp 0.0.0.0:$((port + 1))$(uci_bool_by_type $NAME cache  || echo ' -no-cache')
 
 			rr-ttl-min 300
 			max-reply-ip-num 4
@@ -158,6 +157,12 @@ start_service() {
 			$(
 				for it in $(uci_get_by_type $NAME extra_rules | sed "s+ +_+g; s+'_'+ +g; s+'++g"); do
 					echo "domain-rules $it" | sed 's+_+ +g'
+				done
+			)
+
+			$(
+				for it in $(uci_get_by_type $NAME cnames); do
+					echo "cname $it"
 				done
 			)
 
@@ -172,19 +177,12 @@ start_service() {
 
 			$(
 				for it in $(uci_get_by_type $NAME bootstrap); do
-					echo "server ${it} -group bootstrap -exclude-default-group"
+					echo "server ${it} -bootstrap-dns"
 					echo ${it} | grep -qE '^223\.' || {
-						echo "server-tcp ${it} -group bootstrap -exclude-default-group"
+						echo "server-tcp ${it} -bootstrap-dns"
 					}
 				done
 			)
-
-			nameserver /doh.pub/bootstrap
-			nameserver /dot.pub/bootstrap
-			nameserver /dns.pub/bootstrap
-			nameserver /doh.360.cn/bootstrap
-			nameserver /dot.360.cn/bootstrap
-			nameserver /dns.alidns.com/bootstrap
 
 			server-tls 120.53.53.53:853 -host-name dot.pub -tls-host-verify
 			server-tls dot.360.cn:853 -host-name dot.360.cn -tls-host-verify
@@ -217,7 +215,8 @@ start_service() {
 				domain-rules /aicdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /alicdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /bootcdn.net/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /cnbetacdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
+				domain-rules /douyincdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
+				domain-rules /douyinvod.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /elemecdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /momentcdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /qcloudcdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
