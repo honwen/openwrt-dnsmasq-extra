@@ -1,12 +1,12 @@
 #
-# Copyright (C) 2018-2022 honwen <https://github.com/honwen>
+# Copyright (C) 2018-2023 honwen <https://github.com/honwen>
 #
 
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dnsmasq-extra
-PKG_VERSION:=2022-08-20
-PKG_RELEASE:=1.9.10
+PKG_VERSION:=2023-04-30
+PKG_RELEASE:=1.10.0
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
@@ -26,7 +26,7 @@ define Package/dnsmasq-extra/config
 menu "DNSMASQ-Extra Configuration"
 	depends on PACKAGE_dnsmasq-extra && ( PACKAGE_smartdns || PACKAGE_dnsproxy || PACKAGE_dcompass || PACKAGE_aiodns)
 	config DNSMASQ_EXTRA_LITE
-		bool "lite date: gfwlist/adblock."
+		bool "lite data: gfwlist/adblock."
 		default y
 	config DNSMASQ_EXTRA_FORCE_AIODNS
 		depends on PACKAGE_aiodns

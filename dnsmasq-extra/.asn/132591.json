@@ -1,0 +1,47 @@
+{
+    "status": "ok",
+    "status_message": "Query was successful",
+    "data": {
+        "ipv4_prefixes": [
+            {
+                "prefix": "158.79.1.0/24",
+                "ip": "158.79.1.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "TENCENT-CN",
+                "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "158.79.0.0/16",
+                    "ip": "158.79.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            }
+        ],
+        "ipv6_prefixes": [
+            {
+                "prefix": "240d:c010:50::/48",
+                "ip": "240d:c010:50::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "ACEVILLEPTELTD-SG",
+                "description": "ACEVILLE PTE.LTD.",
+                "country_code": "SG",
+                "parent": {
+                    "prefix": "240d:c000::/24",
+                    "ip": "240d:c000::",
+                    "cidr": 24,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            }
+        ]
+    },
+    "@meta": {
+        "time_zone": "UTC",
+        "api_version": 1,
+        "execution_time": "19.41 ms"
+    }
+}

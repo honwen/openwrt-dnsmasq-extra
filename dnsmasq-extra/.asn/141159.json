@@ -1,0 +1,686 @@
+{
+    "status": "ok",
+    "status_message": "Query was successful",
+    "data": {
+        "ipv4_prefixes": [
+            {
+                "prefix": "103.155.122.0/24",
+                "ip": "103.155.122.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "INCOMPARABLEHKNET-HK",
+                "description": "Incomparable(HK)Network Co., Limited",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "103.155.122.0/23",
+                    "ip": "103.155.122.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.155.123.0/24",
+                "ip": "103.155.123.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "INCOMPARABLEHKNET-HK",
+                "description": "Incomparable(HK)Network Co., Limited",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "103.155.122.0/23",
+                    "ip": "103.155.122.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.167.54.0/24",
+                "ip": "103.167.54.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "HKLNTCL-HK",
+                "description": "Hong Kong LIBA Network Technology Co., Limited",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "103.167.54.0/23",
+                    "ip": "103.167.54.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.167.55.0/24",
+                "ip": "103.167.55.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "HKLNTCL-HK",
+                "description": "Hong Kong LIBA Network Technology Co., Limited",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "103.167.54.0/23",
+                    "ip": "103.167.54.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "154.7.8.0/24",
+                "ip": "154.7.8.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-154-7-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "154.7.0.0/16",
+                    "ip": "154.7.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "154.7.9.0/24",
+                "ip": "154.7.9.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-154-7-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "154.7.0.0/16",
+                    "ip": "154.7.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "154.7.10.0/24",
+                "ip": "154.7.10.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-154-7-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "154.7.0.0/16",
+                    "ip": "154.7.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "154.7.11.0/24",
+                "ip": "154.7.11.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-154-7-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "154.7.0.0/16",
+                    "ip": "154.7.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "154.7.12.0/24",
+                "ip": "154.7.12.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-154-7-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "154.7.0.0/16",
+                    "ip": "154.7.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "154.7.13.0/24",
+                "ip": "154.7.13.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-154-7-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "154.7.0.0/16",
+                    "ip": "154.7.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "154.22.113.0/24",
+                "ip": "154.22.113.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-154-22-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "154.22.0.0/16",
+                    "ip": "154.22.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "154.22.114.0/24",
+                "ip": "154.22.114.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-154-22-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "154.22.0.0/16",
+                    "ip": "154.22.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "154.22.115.0/24",
+                "ip": "154.22.115.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-154-22-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "154.22.0.0/16",
+                    "ip": "154.22.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "154.22.117.0/24",
+                "ip": "154.22.117.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-154-22-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "154.22.0.0/16",
+                    "ip": "154.22.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "154.31.7.0/24",
+                "ip": "154.31.7.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-154-31-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "154.31.0.0/16",
+                    "ip": "154.31.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "154.31.20.0/24",
+                "ip": "154.31.20.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-154-31-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "154.31.0.0/16",
+                    "ip": "154.31.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "154.31.23.0/24",
+                "ip": "154.31.23.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-154-31-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "154.31.0.0/16",
+                    "ip": "154.31.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "154.31.24.0/24",
+                "ip": "154.31.24.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-154-31-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "154.31.0.0/16",
+                    "ip": "154.31.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "154.31.26.0/24",
+                "ip": "154.31.26.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-154-31-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "154.31.0.0/16",
+                    "ip": "154.31.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "154.31.31.0/24",
+                "ip": "154.31.31.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-154-31-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "154.31.0.0/16",
+                    "ip": "154.31.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "163.197.42.0/24",
+                "ip": "163.197.42.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "ANGLONET",
+                "description": "Anglo American",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "163.197.0.0/16",
+                    "ip": "163.197.0.0",
+                    "cidr": 16,
+                    "rir_name": "AfriNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "163.197.43.0/24",
+                "ip": "163.197.43.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "ANGLONET",
+                "description": "Anglo American",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "163.197.0.0/16",
+                    "ip": "163.197.0.0",
+                    "cidr": 16,
+                    "rir_name": "AfriNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "163.197.44.0/24",
+                "ip": "163.197.44.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "ANGLONET",
+                "description": "Anglo American",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "163.197.0.0/16",
+                    "ip": "163.197.0.0",
+                    "cidr": 16,
+                    "rir_name": "AfriNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "163.197.45.0/24",
+                "ip": "163.197.45.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "ANGLONET",
+                "description": "Anglo American",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "163.197.0.0/16",
+                    "ip": "163.197.0.0",
+                    "cidr": 16,
+                    "rir_name": "AfriNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "163.197.46.0/24",
+                "ip": "163.197.46.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "ANGLONET",
+                "description": "Anglo American",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "163.197.0.0/16",
+                    "ip": "163.197.0.0",
+                    "cidr": 16,
+                    "rir_name": "AfriNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "163.197.47.0/24",
+                "ip": "163.197.47.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "ANGLONET",
+                "description": "Anglo American",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "163.197.0.0/16",
+                    "ip": "163.197.0.0",
+                    "cidr": 16,
+                    "rir_name": "AfriNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "163.197.48.0/24",
+                "ip": "163.197.48.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "ANGLONET",
+                "description": "Anglo American",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "163.197.0.0/16",
+                    "ip": "163.197.0.0",
+                    "cidr": 16,
+                    "rir_name": "AfriNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "163.197.49.0/24",
+                "ip": "163.197.49.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "ANGLONET",
+                "description": "Anglo American",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "163.197.0.0/16",
+                    "ip": "163.197.0.0",
+                    "cidr": 16,
+                    "rir_name": "AfriNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "163.197.50.0/23",
+                "ip": "163.197.50.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "ANGLONET",
+                "description": "Anglo American",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "163.197.0.0/16",
+                    "ip": "163.197.0.0",
+                    "cidr": 16,
+                    "rir_name": "AfriNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "163.197.52.0/23",
+                "ip": "163.197.52.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "ANGLONET",
+                "description": "Anglo American",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "163.197.0.0/16",
+                    "ip": "163.197.0.0",
+                    "cidr": 16,
+                    "rir_name": "AfriNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "163.197.54.0/24",
+                "ip": "163.197.54.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "ANGLONET",
+                "description": "Anglo American",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "163.197.0.0/16",
+                    "ip": "163.197.0.0",
+                    "cidr": 16,
+                    "rir_name": "AfriNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "163.197.55.0/24",
+                "ip": "163.197.55.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "ANGLONET",
+                "description": "Anglo American",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "163.197.0.0/16",
+                    "ip": "163.197.0.0",
+                    "cidr": 16,
+                    "rir_name": "AfriNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "163.197.56.0/24",
+                "ip": "163.197.56.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "ANGLONET",
+                "description": "Anglo American",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "163.197.0.0/16",
+                    "ip": "163.197.0.0",
+                    "cidr": 16,
+                    "rir_name": "AfriNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "163.197.57.0/24",
+                "ip": "163.197.57.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "ANGLONET",
+                "description": "Anglo American",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "163.197.0.0/16",
+                    "ip": "163.197.0.0",
+                    "cidr": 16,
+                    "rir_name": "AfriNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "164.155.48.0/24",
+                "ip": "164.155.48.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "SENTRACHEM",
+                "description": "Sentrachem Limited",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "164.155.0.0/16",
+                    "ip": "164.155.0.0",
+                    "cidr": 16,
+                    "rir_name": "AfriNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "185.133.195.0/24",
+                "ip": "185.133.195.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": null,
+                "description": null,
+                "country_code": "AT",
+                "parent": {
+                    "prefix": "185.133.192.0/22",
+                    "ip": "185.133.192.0",
+                    "cidr": 22,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "185.142.143.0/24",
+                "ip": "185.142.143.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": null,
+                "description": null,
+                "country_code": "AT",
+                "parent": {
+                    "prefix": "185.142.140.0/22",
+                    "ip": "185.142.140.0",
+                    "cidr": 22,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "185.182.48.0/24",
+                "ip": "185.182.48.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": null,
+                "description": null,
+                "country_code": "AT",
+                "parent": {
+                    "prefix": "185.142.116.0/22",
+                    "ip": "185.142.116.0",
+                    "cidr": 22,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "185.182.49.0/24",
+                "ip": "185.182.49.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": null,
+                "description": null,
+                "country_code": "AT",
+                "parent": {
+                    "prefix": "185.182.48.0/22",
+                    "ip": "185.182.48.0",
+                    "cidr": 22,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "185.236.83.0/24",
+                "ip": "185.236.83.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": null,
+                "description": null,
+                "country_code": "AT",
+                "parent": {
+                    "prefix": "185.236.80.0/22",
+                    "ip": "185.236.80.0",
+                    "cidr": 22,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "206.2.220.0/24",
+                "ip": "206.2.220.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-206-0-1-2-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "206.2.0.0/16",
+                    "ip": "206.2.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "206.2.221.0/24",
+                "ip": "206.2.221.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-206-0-1-2-16",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "206.2.0.0/16",
+                    "ip": "206.2.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            }
+        ],
+        "ipv6_prefixes": []
+    },
+    "@meta": {
+        "time_zone": "UTC",
+        "api_version": 1,
+        "execution_time": "40.39 ms"
+    }
+}

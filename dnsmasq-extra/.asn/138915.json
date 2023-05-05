@@ -1,0 +1,3999 @@
+{
+    "status": "ok",
+    "status_message": "Query was successful",
+    "data": {
+        "ipv4_prefixes": [
+            {
+                "prefix": "27.0.132.0/22",
+                "ip": "27.0.132.0",
+                "cidr": 22,
+                "roa_status": "None",
+                "name": "kaopy",
+                "description": "Kaopu Cloud",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "27.0.132.0/22",
+                    "ip": "27.0.132.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.1.0/24",
+                "ip": "38.54.1.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "COGENT-A",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.2.0/23",
+                "ip": "38.54.2.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "COGENT-A",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.4.0/23",
+                "ip": "38.54.4.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "COGENT-A",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.6.0/23",
+                "ip": "38.54.6.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "COGENT-A",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.8.0/23",
+                "ip": "38.54.8.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "COGENT-A",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.10.0/23",
+                "ip": "38.54.10.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "COGENT-A",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.12.0/23",
+                "ip": "38.54.12.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "COGENT-A",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.14.0/23",
+                "ip": "38.54.14.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPU-CGNT-NET-1",
+                "description": "Kaopu Cloud HK Limited",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.16.0/23",
+                "ip": "38.54.16.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD",
+                "description": "KAOPUCLOUD-SG",
+                "country_code": "SG",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.23.0/24",
+                "ip": "38.54.23.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-HK",
+                "description": "Lightnode-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.24.0/23",
+                "ip": "38.54.24.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "COGENT-A",
+                "description": "PSINet, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.26.0/23",
+                "ip": "38.54.26.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPU-CGNT-NET-1",
+                "description": "Kaopu Cloud HK Limited",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.28.0/23",
+                "ip": "38.54.28.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPU-CGNT-NET-1",
+                "description": "Kaopu Cloud HK Limited",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.28.0/24",
+                "ip": "38.54.28.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-GR",
+                "description": "KaopuCloud-GR",
+                "country_code": "GR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.29.0/24",
+                "ip": "38.54.29.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-GR",
+                "description": "LightNode-GR",
+                "country_code": "GR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.32.0/23",
+                "ip": "38.54.32.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPU-CGNT-NET-1",
+                "description": "Kaopu Cloud HK Limited",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.34.0/23",
+                "ip": "38.54.34.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-HK",
+                "description": "KAOPUCLOUD-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.35.0/24",
+                "ip": "38.54.35.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-HK",
+                "description": "KAOPUCLOUD-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.36.0/24",
+                "ip": "38.54.36.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE",
+                "description": "Lightnode-PH",
+                "country_code": "PH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.37.0/24",
+                "ip": "38.54.37.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD",
+                "description": "KAOPUCLOUD-PH",
+                "country_code": "PH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.38.0/24",
+                "ip": "38.54.38.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-SA",
+                "description": "Lightnode-SA",
+                "country_code": "SA",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.39.0/24",
+                "ip": "38.54.39.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-SA",
+                "description": "Kaopuclou-SA",
+                "country_code": "SA",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.40.0/24",
+                "ip": "38.54.40.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE",
+                "description": "Lightnode-KR",
+                "country_code": "KR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.41.0/24",
+                "ip": "38.54.41.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-KR",
+                "description": "KAOPUCLOUD-KR",
+                "country_code": "KR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.42.0/24",
+                "ip": "38.54.42.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-BN",
+                "description": "Lightnode-BN",
+                "country_code": "BD",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.43.0/24",
+                "ip": "38.54.43.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-BN",
+                "description": "Kaopucloud-BN",
+                "country_code": "BD",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.44.0/23",
+                "ip": "38.54.44.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-AR",
+                "description": "KAOPUCLOUD-AR",
+                "country_code": "AR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.46.0/23",
+                "ip": "38.54.46.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-CHI",
+                "description": "KAOPUCLOUD-CHI",
+                "country_code": "CL",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.48.0/23",
+                "ip": "38.54.48.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-SA",
+                "description": "Private Customer",
+                "country_code": "SA",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.50.0/24",
+                "ip": "38.54.50.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-JP",
+                "description": "Lightnode-JP",
+                "country_code": "JP",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.51.0/24",
+                "ip": "38.54.51.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-JP",
+                "description": "Kaopucloud-JP",
+                "country_code": "JP",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.54.0/23",
+                "ip": "38.54.54.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-TR",
+                "description": "Kaopucloud-TR",
+                "country_code": "TR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.56.0/24",
+                "ip": "38.54.56.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-JP",
+                "description": "Lightnode-JP",
+                "country_code": "JP",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.57.0/24",
+                "ip": "38.54.57.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-BR",
+                "description": "LightNode-BR",
+                "country_code": "BR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.58.0/24",
+                "ip": "38.54.58.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-BR",
+                "description": "KaopuCloud-BR",
+                "country_code": "BR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.59.0/24",
+                "ip": "38.54.59.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-EG",
+                "description": "LightNode-EG",
+                "country_code": "EG",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.60.0/24",
+                "ip": "38.54.60.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-EG",
+                "description": "KaopuCloud-EG",
+                "country_code": "EG",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.61.0/24",
+                "ip": "38.54.61.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-SA",
+                "description": "LightNode-SA",
+                "country_code": "SA",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.62.0/24",
+                "ip": "38.54.62.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-SA",
+                "description": "KaopuCloud-SA",
+                "country_code": "SA",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.63.0/24",
+                "ip": "38.54.63.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-ZA",
+                "description": "LightNode-ZA",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.64.0/24",
+                "ip": "38.54.64.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-ZA",
+                "description": "KaopuCloud-ZA",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.66.0/23",
+                "ip": "38.54.66.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-SA",
+                "description": "KAOPUCLOUD-SA",
+                "country_code": "SA",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.68.0/23",
+                "ip": "38.54.68.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPU-CGNT-NET-1",
+                "description": "Kaopu Cloud HK Limited",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.70.0/23",
+                "ip": "38.54.70.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-NP",
+                "description": "KAOPUCLOUD-NP",
+                "country_code": "NP",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.72.0/24",
+                "ip": "38.54.72.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-SA",
+                "description": "KAOCLOUD-SA",
+                "country_code": "SA",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.73.0/24",
+                "ip": "38.54.73.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-HK",
+                "description": "KAOPUCLOUD-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.74.0/24",
+                "ip": "38.54.74.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-QA",
+                "description": "KAOCLOUD-QA",
+                "country_code": "QA",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.75.0/24",
+                "ip": "38.54.75.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-ARE",
+                "description": "Lightnode-UAE",
+                "country_code": "AE",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.76.0/24",
+                "ip": "38.54.76.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE",
+                "description": "Lightnode-UAE",
+                "country_code": "AE",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.77.0/24",
+                "ip": "38.54.77.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-HK",
+                "description": "Kaopucloud-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.78.0/23",
+                "ip": "38.54.78.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-PK",
+                "description": "Kaopucloud-PK",
+                "country_code": "PK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.80.0/23",
+                "ip": "38.54.80.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "LIGHTNODE-PH",
+                "description": "Lightnode-PH",
+                "country_code": "PH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.82.0/23",
+                "ip": "38.54.82.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "LIGHTNODE-TH",
+                "description": "Lightnode-TH",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.84.0/24",
+                "ip": "38.54.84.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-GE",
+                "description": "Lightnode-GER",
+                "country_code": "DE",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.85.0/24",
+                "ip": "38.54.85.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-HK",
+                "description": "Lightnode-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.86.0/23",
+                "ip": "38.54.86.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "LIGHTNODE-PH",
+                "description": "Lightnode-PH",
+                "country_code": "PH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.88.0/24",
+                "ip": "38.54.88.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-JP",
+                "description": "LightNode-JP",
+                "country_code": "JP",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.89.0/24",
+                "ip": "38.54.89.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-JP",
+                "description": "LightNode-JP",
+                "country_code": "JP",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.93.0/24",
+                "ip": "38.54.93.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-KH",
+                "description": "Lightnode-KH",
+                "country_code": "KH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.94.0/24",
+                "ip": "38.54.94.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-US",
+                "description": "Lightnode-US",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.95.0/24",
+                "ip": "38.54.95.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-US",
+                "description": "LightNode-US",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.96.0/23",
+                "ip": "38.54.96.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "LIGHTNODE-MY",
+                "description": "LightNode-MY",
+                "country_code": "MY",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.98.0/23",
+                "ip": "38.54.98.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-MY",
+                "description": "KaopuCloud-MY",
+                "country_code": "MY",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.101.0/24",
+                "ip": "38.54.101.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-US",
+                "description": "LightNode-US",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.102.0/24",
+                "ip": "38.54.102.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-KW",
+                "description": "KaopuCloud-KW",
+                "country_code": "KW",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.103.0/24",
+                "ip": "38.54.103.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-US",
+                "description": "LightNode-US",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.104.0/24",
+                "ip": "38.54.104.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-US",
+                "description": "LightNode-US",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.105.0/24",
+                "ip": "38.54.105.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-TR",
+                "description": "LightNode-TR",
+                "country_code": "TR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.106.0/24",
+                "ip": "38.54.106.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-TW",
+                "description": "KAOPUCLOUD-TW",
+                "country_code": "TW",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.107.0/24",
+                "ip": "38.54.107.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-TW",
+                "description": "Lightnode-TW",
+                "country_code": "TW",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.108.0/24",
+                "ip": "38.54.108.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-US",
+                "description": "LightNode-US",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.109.0/24",
+                "ip": "38.54.109.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-HK",
+                "description": "KaopuCloud-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.110.0/24",
+                "ip": "38.54.110.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-US",
+                "description": "LightNode-US",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.111.0/24",
+                "ip": "38.54.111.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-US",
+                "description": "LightNode-US",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.112.0/24",
+                "ip": "38.54.112.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-MY",
+                "description": "LightNode-MY",
+                "country_code": "MY",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.113.0/24",
+                "ip": "38.54.113.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-MY",
+                "description": "LightNode-MY",
+                "country_code": "MY",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.114.0/24",
+                "ip": "38.54.114.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-SA",
+                "description": "LightNode-SA",
+                "country_code": "SA",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.116.0/24",
+                "ip": "38.54.116.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-OM",
+                "description": "LightNode-OM",
+                "country_code": "OM",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.117.0/24",
+                "ip": "38.54.117.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-TH",
+                "description": "LightNode-TH",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.118.0/24",
+                "ip": "38.54.118.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-TH",
+                "description": "LightNode-TH",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.119.0/24",
+                "ip": "38.54.119.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-SG",
+                "description": "LightNode-SG",
+                "country_code": "SG",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.121.0/24",
+                "ip": "38.54.121.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-PK",
+                "description": "KaopuCloud-PK",
+                "country_code": "PK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.122.0/24",
+                "ip": "38.54.122.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-FR",
+                "description": "LightNode-FR",
+                "country_code": "FR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.123.0/24",
+                "ip": "38.54.123.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-FR",
+                "description": "KaopuCloud-FR",
+                "country_code": "FR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.124.0/24",
+                "ip": "38.54.124.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-KW",
+                "description": "LightNode-KW",
+                "country_code": "KW",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.125.0/24",
+                "ip": "38.54.125.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-MY",
+                "description": "LightNode-MY",
+                "country_code": "MY",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.126.0/24",
+                "ip": "38.54.126.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-UK",
+                "description": "LightNode-UK",
+                "country_code": "GB",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.54.127.0/24",
+                "ip": "38.54.127.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-AE",
+                "description": "KaopuCloud-AE",
+                "country_code": "AE",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.128.0/24",
+                "ip": "38.60.128.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-HK",
+                "description": "KaopuCloud-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.129.0/24",
+                "ip": "38.60.129.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-HK",
+                "description": "KaopuCloud-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.130.0/24",
+                "ip": "38.60.130.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-HK",
+                "description": "KaopuCloud-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.131.0/24",
+                "ip": "38.60.131.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-HK",
+                "description": "KaopuCloud-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.132.0/24",
+                "ip": "38.60.132.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-HK",
+                "description": "KaopuCloud-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.133.0/24",
+                "ip": "38.60.133.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-HK",
+                "description": "KaopuCloud-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.134.0/24",
+                "ip": "38.60.134.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-FR",
+                "description": "KaopuCloud-FR",
+                "country_code": "FR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.135.0/24",
+                "ip": "38.60.135.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-FR",
+                "description": "KaopuCloud-FR",
+                "country_code": "FR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.136.0/24",
+                "ip": "38.60.136.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-FR",
+                "description": "KaopuCloud-FR",
+                "country_code": "FR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.137.0/24",
+                "ip": "38.60.137.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-JP",
+                "description": "KaopuCloud-JP",
+                "country_code": "JP",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.138.0/24",
+                "ip": "38.60.138.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-AE",
+                "description": "KaopuCloud-AE",
+                "country_code": "AE",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.139.0/24",
+                "ip": "38.60.139.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-TH",
+                "description": "KaopuCloud-TH",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.140.0/24",
+                "ip": "38.60.140.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-TW",
+                "description": "KaopuCloud-TW",
+                "country_code": "TW",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.141.0/24",
+                "ip": "38.60.141.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-TW",
+                "description": "KaopuCloud-TW",
+                "country_code": "TW",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.142.0/24",
+                "ip": "38.60.142.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-HK",
+                "description": "KaopuCloud-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.143.0/24",
+                "ip": "38.60.143.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-HK",
+                "description": "KaopuCloud-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.144.0/24",
+                "ip": "38.60.144.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-HK",
+                "description": "KaopuCloud-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.145.0/24",
+                "ip": "38.60.145.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-HK",
+                "description": "KaopuCloud-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.146.0/23",
+                "ip": "38.60.146.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPU-CGNT-NET-2",
+                "description": "Kaopu Cloud HK Limited",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.150.0/24",
+                "ip": "38.60.150.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-PH",
+                "description": "KaopuCloud-PH",
+                "country_code": "PH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.151.0/24",
+                "ip": "38.60.151.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-PH",
+                "description": "KaopuCloud-PH",
+                "country_code": "PH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.152.0/24",
+                "ip": "38.60.152.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-PH",
+                "description": "KaopuCloud-PH",
+                "country_code": "PH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.153.0/24",
+                "ip": "38.60.153.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-PH",
+                "description": "KaopuCloud-PH",
+                "country_code": "PH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.154.0/24",
+                "ip": "38.60.154.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-TH",
+                "description": "KaopuCloud-TH",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.155.0/24",
+                "ip": "38.60.155.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-TH",
+                "description": "KaopuCloud-TH",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.156.0/24",
+                "ip": "38.60.156.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-TH",
+                "description": "KaopuCloud-TH",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.157.0/24",
+                "ip": "38.60.157.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-TH",
+                "description": "KaopuCloud-TH",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.158.0/23",
+                "ip": "38.60.158.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPU-CGNT-NET-2",
+                "description": "Kaopu Cloud HK Limited",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.160.0/23",
+                "ip": "38.60.160.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPU-CGNT-NET-2",
+                "description": "Kaopu Cloud HK Limited",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.162.0/23",
+                "ip": "38.60.162.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPU-CGNT-NET-2",
+                "description": "Kaopu Cloud HK Limited",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.164.0/23",
+                "ip": "38.60.164.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPU-CGNT-NET-2",
+                "description": "Kaopu Cloud HK Limited",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.166.0/23",
+                "ip": "38.60.166.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPU-CGNT-NET-2",
+                "description": "Kaopu Cloud HK Limited",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.168.0/23",
+                "ip": "38.60.168.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "KAOPU-CGNT-NET-2",
+                "description": "Kaopu Cloud HK Limited",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.170.0/24",
+                "ip": "38.60.170.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-TR",
+                "description": "KaopuCloud-TR",
+                "country_code": "TR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.172.0/24",
+                "ip": "38.60.172.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-PH",
+                "description": "KaopuCloud-PH",
+                "country_code": "PH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.173.0/24",
+                "ip": "38.60.173.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-TH",
+                "description": "KaopuCloud-TH",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.174.0/24",
+                "ip": "38.60.174.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-TH",
+                "description": "KaopuCloud-TH",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.175.0/24",
+                "ip": "38.60.175.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-FR",
+                "description": "KaopuCloud-FR",
+                "country_code": "FR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.176.0/24",
+                "ip": "38.60.176.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-FR",
+                "description": "KaopuCloud-FR",
+                "country_code": "FR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.181.0/24",
+                "ip": "38.60.181.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-KR",
+                "description": "KaopuCloud-KR",
+                "country_code": "KR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.185.0/24",
+                "ip": "38.60.185.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-FR",
+                "description": "KaopuCloud-FR",
+                "country_code": "FR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.186.0/24",
+                "ip": "38.60.186.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-HK",
+                "description": "KaopuCloud-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.192.0/22",
+                "ip": "38.60.192.0",
+                "cidr": 22,
+                "roa_status": "None",
+                "name": "LIGHTNODE-MY",
+                "description": "LightNode-MY",
+                "country_code": "MY",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.196.0/23",
+                "ip": "38.60.196.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "LIGHTNODE-UK",
+                "description": "LightNode-UK",
+                "country_code": "GB",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.198.0/23",
+                "ip": "38.60.198.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "LIGHTNODE-SG",
+                "description": "LightNode-SG",
+                "country_code": "SG",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.200.0/24",
+                "ip": "38.60.200.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-TH",
+                "description": "LightNode-TH",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.201.0/24",
+                "ip": "38.60.201.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-TH",
+                "description": "LightNode-TH",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.202.0/24",
+                "ip": "38.60.202.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-AE",
+                "description": "LightNode-AE",
+                "country_code": "AE",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.203.0/24",
+                "ip": "38.60.203.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-HK",
+                "description": "LightNode-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.204.0/23",
+                "ip": "38.60.204.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "LIGHTNODE-US",
+                "description": "LightNode-US",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.206.0/23",
+                "ip": "38.60.206.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "LIGHTNODE-US",
+                "description": "LightNode-US",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.208.0/24",
+                "ip": "38.60.208.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-TR",
+                "description": "LightNode-TR",
+                "country_code": "TR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.209.0/24",
+                "ip": "38.60.209.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-BR",
+                "description": "LightNode-BR",
+                "country_code": "BR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.210.0/24",
+                "ip": "38.60.210.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-SA",
+                "description": "LightNode-SA",
+                "country_code": "SA",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.211.0/24",
+                "ip": "38.60.211.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-DE",
+                "description": "LightNode-DE",
+                "country_code": "DE",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.212.0/24",
+                "ip": "38.60.212.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-JP",
+                "description": "LightNode-JP",
+                "country_code": "JP",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.214.0/24",
+                "ip": "38.60.214.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-TW",
+                "description": "LightNode-TW",
+                "country_code": "TW",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.215.0/24",
+                "ip": "38.60.215.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-GR",
+                "description": "LightNode-GR",
+                "country_code": "GR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.216.0/24",
+                "ip": "38.60.216.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-FR",
+                "description": "LightNode-FR",
+                "country_code": "FR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.217.0/24",
+                "ip": "38.60.217.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-PK",
+                "description": "LightNode-PK",
+                "country_code": "PK",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.218.0/24",
+                "ip": "38.60.218.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-RU",
+                "description": "LightNode-RU",
+                "country_code": "RU",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.219.0/24",
+                "ip": "38.60.219.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-VN",
+                "description": "LightNode-VN",
+                "country_code": "VN",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.220.0/24",
+                "ip": "38.60.220.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-KR",
+                "description": "LightNode-KR",
+                "country_code": "KR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.221.0/24",
+                "ip": "38.60.221.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-RU",
+                "description": "LightNode-RU",
+                "country_code": "RU",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.222.0/24",
+                "ip": "38.60.222.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-FR",
+                "description": "LightNode-FR",
+                "country_code": "FR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.223.0/24",
+                "ip": "38.60.223.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-RU",
+                "description": "LightNode-RU",
+                "country_code": "RU",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.225.0/24",
+                "ip": "38.60.225.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-VN",
+                "description": "KaopuCloud-VN",
+                "country_code": "VN",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.247.0/24",
+                "ip": "38.60.247.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-BG",
+                "description": "LightNode-BG",
+                "country_code": "BG",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.248.0/24",
+                "ip": "38.60.248.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-UK",
+                "description": "LightNode-UK",
+                "country_code": "GB",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.249.0/24",
+                "ip": "38.60.249.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-DE",
+                "description": "LightNode-DE",
+                "country_code": "DE",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.250.0/24",
+                "ip": "38.60.250.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-DE",
+                "description": "LightNode-DE",
+                "country_code": "DE",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.251.0/24",
+                "ip": "38.60.251.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-US",
+                "description": "LightNode-US",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "38.60.255.0/24",
+                "ip": "38.60.255.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "LIGHTNODE-TR",
+                "description": "LightNode-TR",
+                "country_code": "TR",
+                "parent": {
+                    "prefix": "38.0.0.0/8",
+                    "ip": "38.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "43.224.20.0/24",
+                "ip": "43.224.20.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "DWINS-NET",
+                "description": "DWINS Digital Service Corp.",
+                "country_code": "TW",
+                "parent": {
+                    "prefix": "43.225.64.0/22",
+                    "ip": "43.225.64.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "45.158.180.0/24",
+                "ip": "45.158.180.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": null,
+                "description": null,
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "45.10.68.0/22",
+                    "ip": "45.10.68.0",
+                    "cidr": 22,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "45.158.181.0/24",
+                "ip": "45.158.181.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": null,
+                "description": null,
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "45.158.180.0/22",
+                    "ip": "45.158.180.0",
+                    "cidr": 22,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "45.158.182.0/24",
+                "ip": "45.158.182.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": null,
+                "description": null,
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "45.158.180.0/22",
+                    "ip": "45.158.180.0",
+                    "cidr": 22,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "49.229.95.0/24",
+                "ip": "49.229.95.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "TH-AIS-Corporate",
+                "description": "AIS Corporate",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "49.228.0.0/14",
+                    "ip": "49.228.0.0",
+                    "cidr": 14,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.153.156.0/24",
+                "ip": "59.153.156.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-OM",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "OM",
+                "parent": {
+                    "prefix": "59.153.156.0/22",
+                    "ip": "59.153.156.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.153.157.0/24",
+                "ip": "59.153.157.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-TH",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "59.153.156.0/22",
+                    "ip": "59.153.156.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.153.158.0/24",
+                "ip": "59.153.158.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-BAN",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "BN",
+                "parent": {
+                    "prefix": "59.153.156.0/22",
+                    "ip": "59.153.156.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.153.159.0/24",
+                "ip": "59.153.159.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-KW",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "KW",
+                "parent": {
+                    "prefix": "59.153.156.0/22",
+                    "ip": "59.153.156.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "102.217.238.0/24",
+                "ip": "102.217.238.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "KAOPUCLOUD-CO",
+                "description": "KAOPUCLOUD Data Center",
+                "country_code": "CO",
+                "parent": {
+                    "prefix": "102.217.236.0/22",
+                    "ip": "102.217.236.0",
+                    "cidr": 22,
+                    "rir_name": "AfriNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.84.109.0/24",
+                "ip": "103.84.109.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-TH",
+                "description": "Kaopu Cloud Data Center",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "103.138.182.0/23",
+                    "ip": "103.138.182.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.136.248.0/24",
+                "ip": "103.136.248.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-TH",
+                "description": "Kaopu Cloud Inc True Internet Data Center",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "103.136.248.0/22",
+                    "ip": "103.136.248.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.136.249.0/24",
+                "ip": "103.136.249.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-SG",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "SG",
+                "parent": {
+                    "prefix": "103.136.248.0/22",
+                    "ip": "103.136.248.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.136.250.0/24",
+                "ip": "103.136.250.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-TW",
+                "description": "Kaopu Cloud Inc Taiwan Data Center",
+                "country_code": "TW",
+                "parent": {
+                    "prefix": "103.65.192.0/22",
+                    "ip": "103.65.192.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.136.251.0/24",
+                "ip": "103.136.251.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-HK",
+                "description": "Kaopu Cloud Inc HK Data Center",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "103.136.248.0/22",
+                    "ip": "103.136.248.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.145.73.0/24",
+                "ip": "103.145.73.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-HK",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "103.145.72.0/23",
+                    "ip": "103.145.72.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.151.138.0/24",
+                "ip": "103.151.138.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-KR",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "KR",
+                "parent": {
+                    "prefix": "103.151.138.0/23",
+                    "ip": "103.151.138.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.151.139.0/24",
+                "ip": "103.151.139.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-JP",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "JP",
+                "parent": {
+                    "prefix": "103.151.138.0/23",
+                    "ip": "103.151.138.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.152.14.0/24",
+                "ip": "103.152.14.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-ARE",
+                "description": "Kaopu Cloud Inc ARE Data Center",
+                "country_code": "AE",
+                "parent": {
+                    "prefix": "103.152.14.0/23",
+                    "ip": "103.152.14.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.152.15.0/24",
+                "ip": "103.152.15.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-ARE",
+                "description": "Kaopu Cloud Inc ARE Data Center",
+                "country_code": "AE",
+                "parent": {
+                    "prefix": "103.152.14.0/23",
+                    "ip": "103.152.14.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.152.98.0/24",
+                "ip": "103.152.98.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-KH",
+                "description": "Kaopu Cloud Inc KH Data Center",
+                "country_code": "KH",
+                "parent": {
+                    "prefix": "103.97.140.0/23",
+                    "ip": "103.97.140.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.152.99.0/24",
+                "ip": "103.152.99.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-BRN",
+                "description": "Kaopu Cloud Inc ARE Data Center",
+                "country_code": "BH",
+                "parent": {
+                    "prefix": "103.152.98.0/23",
+                    "ip": "103.152.98.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.154.242.0/24",
+                "ip": "103.154.242.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-SA",
+                "description": "Kaopu Cloud Data Center",
+                "country_code": "SA",
+                "parent": {
+                    "prefix": "103.154.242.0/23",
+                    "ip": "103.154.242.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.154.243.0/24",
+                "ip": "103.154.243.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-HK",
+                "description": "Kaopu Cloud Inc HK Data Center",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "103.154.242.0/23",
+                    "ip": "103.154.242.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.155.16.0/24",
+                "ip": "103.155.16.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-SG",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "SG",
+                "parent": {
+                    "prefix": "103.155.16.0/23",
+                    "ip": "103.155.16.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.155.17.0/24",
+                "ip": "103.155.17.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-QA",
+                "description": "Kaopu Cloud Data Center",
+                "country_code": "QA",
+                "parent": {
+                    "prefix": "103.155.16.0/23",
+                    "ip": "103.155.16.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.191.48.0/24",
+                "ip": "103.191.48.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "Kaopucloud-SG",
+                "description": "Kaopucloud-datacenter",
+                "country_code": "SG",
+                "parent": {
+                    "prefix": "103.191.48.0/23",
+                    "ip": "103.191.48.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.198.200.0/24",
+                "ip": "103.198.200.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-HK",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "103.198.200.0/22",
+                    "ip": "103.198.200.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.198.201.0/24",
+                "ip": "103.198.201.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-SA",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "SA",
+                "parent": {
+                    "prefix": "103.198.200.0/22",
+                    "ip": "103.198.200.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.198.202.0/24",
+                "ip": "103.198.202.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-EG",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "EG",
+                "parent": {
+                    "prefix": "103.198.200.0/22",
+                    "ip": "103.198.200.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "103.206.154.0/24",
+                "ip": "103.206.154.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "RT-HK",
+                "description": "RT-HK",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "103.206.154.0/23",
+                    "ip": "103.206.154.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "119.46.51.0/24",
+                "ip": "119.46.51.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "TRUEINTERNET-TH",
+                "description": "True Internet Corporation Co. Ltd.",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "119.46.0.0/16",
+                    "ip": "119.46.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "150.116.117.0/24",
+                "ip": "150.116.117.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "CHIEF-AS-AP",
+                "description": "Chief Telecom Inc.",
+                "country_code": "TW",
+                "parent": {
+                    "prefix": "150.116.0.0/15",
+                    "ip": "150.116.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "175.176.192.0/24",
+                "ip": "175.176.192.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-HK",
+                "description": "Kaopu Cloud Data Center",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "175.176.192.0/22",
+                    "ip": "175.176.192.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "175.176.193.0/24",
+                "ip": "175.176.193.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-TH",
+                "description": "Kaopu Cloud Data Center",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "175.176.192.0/22",
+                    "ip": "175.176.192.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "185.23.180.0/24",
+                "ip": "185.23.180.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": null,
+                "description": null,
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "185.23.180.0/22",
+                    "ip": "185.23.180.0",
+                    "cidr": 22,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "185.23.181.0/24",
+                "ip": "185.23.181.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": null,
+                "description": null,
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "185.70.224.0/22",
+                    "ip": "185.70.224.0",
+                    "cidr": 22,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "185.23.182.0/24",
+                "ip": "185.23.182.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": null,
+                "description": null,
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "185.23.180.0/22",
+                    "ip": "185.23.180.0",
+                    "cidr": 22,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "185.23.183.0/24",
+                "ip": "185.23.183.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": null,
+                "description": null,
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "182.253.0.0/16",
+                    "ip": "182.253.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "194.26.72.0/24",
+                "ip": "194.26.72.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-HK",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "194.26.72.0/22",
+                    "ip": "194.26.72.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "194.26.73.0/24",
+                "ip": "194.26.73.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-BR",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "BR",
+                "parent": {
+                    "prefix": "194.26.72.0/22",
+                    "ip": "194.26.72.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "194.26.74.0/24",
+                "ip": "194.26.74.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-HK",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "194.26.72.0/22",
+                    "ip": "194.26.72.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "194.26.75.0/24",
+                "ip": "194.26.75.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-PH",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "PH",
+                "parent": {
+                    "prefix": "194.26.72.0/22",
+                    "ip": "194.26.72.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "194.110.134.0/24",
+                "ip": "194.110.134.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-ZA",
+                "description": "KAOPUCLOUD ZA",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "194.110.134.0/23",
+                    "ip": "194.110.134.0",
+                    "cidr": 23,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "194.110.135.0/24",
+                "ip": "194.110.135.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-BR",
+                "description": "KAOPUCLOUD BR",
+                "country_code": "BR",
+                "parent": {
+                    "prefix": "194.110.134.0/23",
+                    "ip": "194.110.134.0",
+                    "cidr": 23,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "194.110.138.0/24",
+                "ip": "194.110.138.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "kaopucloud-VN",
+                "description": "kaopucloud VN",
+                "country_code": "VN",
+                "parent": {
+                    "prefix": "194.110.138.0/23",
+                    "ip": "194.110.138.0",
+                    "cidr": 23,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "194.110.139.0/24",
+                "ip": "194.110.139.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-TR",
+                "description": "KAOPUCLOUD TR",
+                "country_code": "TR",
+                "parent": {
+                    "prefix": "194.110.138.0/23",
+                    "ip": "194.110.138.0",
+                    "cidr": 23,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "211.155.96.0/22",
+                "ip": "211.155.96.0",
+                "cidr": 22,
+                "roa_status": "None",
+                "name": "kaopy",
+                "description": "Kaopu Cloud",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "211.155.96.0/19",
+                    "ip": "211.155.96.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "211.155.100.0/22",
+                "ip": "211.155.100.0",
+                "cidr": 22,
+                "roa_status": "None",
+                "name": "kaopy",
+                "description": "Kaopu Cloud",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "211.155.96.0/19",
+                    "ip": "211.155.96.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "211.155.104.0/22",
+                "ip": "211.155.104.0",
+                "cidr": 22,
+                "roa_status": "None",
+                "name": "kaopy",
+                "description": "Kaopu Cloud",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "211.155.96.0/19",
+                    "ip": "211.155.96.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "211.155.115.0/24",
+                "ip": "211.155.115.0",
+                "cidr": 24,
+                "roa_status": "None",
+                "name": "kaopy",
+                "description": "Kaopu Cloud",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "211.155.96.0/19",
+                    "ip": "211.155.96.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            }
+        ],
+        "ipv6_prefixes": [
+            {
+                "prefix": "2404:8d04:2642::/48",
+                "ip": "2404:8d04:2642::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "DTN-IIGv6-AP",
+                "description": "DTN IIGv6 Network",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "2404:8d04::/30",
+                    "ip": "2404:8d04::",
+                    "cidr": 30,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:2::/48",
+                "ip": "2404:a140:2::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-TR",
+                "description": "Kaopu Cloud Inc Tur Data Center",
+                "country_code": "TR",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:3::/48",
+                "ip": "2404:a140:3::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-HK",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:5::/48",
+                "ip": "2404:a140:5::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:6::/48",
+                "ip": "2404:a140:6::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:7::/48",
+                "ip": "2404:a140:7::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:8::/48",
+                "ip": "2404:a140:8::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-PH",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "PH",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:a::/48",
+                "ip": "2404:a140:a::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-KH",
+                "description": "Kaopu Cloud Inc KH Data Center",
+                "country_code": "KH",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:b::/48",
+                "ip": "2404:a140:b::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:c::/48",
+                "ip": "2404:a140:c::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:d::/48",
+                "ip": "2404:a140:d::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:f::/48",
+                "ip": "2404:a140:f::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-ZA",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "ZA",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:11::/48",
+                "ip": "2404:a140:11::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPUCLOUD-HK",
+                "description": "Kaopu Cloud Inc Data Center",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:12::/48",
+                "ip": "2404:a140:12::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:14::/48",
+                "ip": "2404:a140:14::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:15::/48",
+                "ip": "2404:a140:15::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:16::/48",
+                "ip": "2404:a140:16::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:17::/48",
+                "ip": "2404:a140:17::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:19::/48",
+                "ip": "2404:a140:19::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:1a::/48",
+                "ip": "2404:a140:1a::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:1b::/48",
+                "ip": "2404:a140:1b::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:1c::/48",
+                "ip": "2404:a140:1c::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:1d::/48",
+                "ip": "2404:a140:1d::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:1f::/48",
+                "ip": "2404:a140:1f::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:20::/48",
+                "ip": "2404:a140:20::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:21::/48",
+                "ip": "2404:a140:21::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:25::/48",
+                "ip": "2404:a140:25::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:26::/48",
+                "ip": "2404:a140:26::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:28::/48",
+                "ip": "2404:a140:28::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:29::/48",
+                "ip": "2404:a140:29::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": null,
+                "description": null,
+                "country_code": null,
+                "parent": {
+                    "prefix": null,
+                    "ip": null,
+                    "cidr": null,
+                    "rir_name": null,
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:2b::/48",
+                "ip": "2404:a140:2b::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:2c::/48",
+                "ip": "2404:a140:2c::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "KAOPU-HK",
+                "description": "KAOPU CLOUD HK LIMITED",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:2d::/48",
+                "ip": "2404:a140:2d::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "Kaopucloud-TW",
+                "description": "Kaopucloud-datacenter",
+                "country_code": "TW",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2404:a140:2e::/48",
+                "ip": "2404:a140:2e::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "Kaopucloud-FR",
+                "description": "Kaopucloud-datacenter",
+                "country_code": "FR",
+                "parent": {
+                    "prefix": "2404:a140::/32",
+                    "ip": "2404:a140::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2405:9800:c92d::/48",
+                "ip": "2405:9800:c92d::",
+                "cidr": 48,
+                "roa_status": "Valid",
+                "name": "AWN-CO-LTD-TH",
+                "description": "408/60 PHP Bld. 15th Fl Phaholyothin Rd Samsen Nai Phayathai",
+                "country_code": "TH",
+                "parent": {
+                    "prefix": "2405:9800::/32",
+                    "ip": "2405:9800::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "2407:7d00:1::/48",
+                "ip": "2407:7d00:1::",
+                "cidr": 48,
+                "roa_status": "None",
+                "name": "kaopy",
+                "description": "Kaopu Cloud",
+                "country_code": "CN",
+                "parent": {
+                    "prefix": "2407:7d00::/32",
+                    "ip": "2407:7d00::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            }
+        ]
+    },
+    "@meta": {
+        "time_zone": "UTC",
+        "api_version": 1,
+        "execution_time": "173.34 ms"
+    }
+}

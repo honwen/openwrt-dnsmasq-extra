@@ -1,0 +1,3231 @@
+{
+    "status": "ok",
+    "status_message": "Query was successful",
+    "data": {
+        "ipv4_prefixes": [
+            {
+                "prefix": "14.136.0.0/18",
+                "ip": "14.136.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.136.0.0/16",
+                    "ip": "14.136.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.136.0.0/16",
+                "ip": "14.136.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.136.0.0/16",
+                    "ip": "14.136.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.136.64.0/18",
+                "ip": "14.136.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "23.64.0.0/14",
+                    "ip": "23.64.0.0",
+                    "cidr": 14,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.136.128.0/18",
+                "ip": "14.136.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.136.0.0/16",
+                    "ip": "14.136.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.136.131.0/24",
+                "ip": "14.136.131.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.136.0.0/16",
+                    "ip": "14.136.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.136.132.0/24",
+                "ip": "14.136.132.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.136.0.0/16",
+                    "ip": "14.136.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.136.134.0/24",
+                "ip": "14.136.134.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.136.0.0/16",
+                    "ip": "14.136.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.136.136.0/24",
+                "ip": "14.136.136.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.136.0.0/16",
+                    "ip": "14.136.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.136.137.0/24",
+                "ip": "14.136.137.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.136.0.0/16",
+                    "ip": "14.136.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.136.139.0/24",
+                "ip": "14.136.139.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.136.0.0/16",
+                    "ip": "14.136.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.136.192.0/18",
+                "ip": "14.136.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.136.0.0/16",
+                    "ip": "14.136.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.198.0.0/18",
+                "ip": "14.198.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "17.0.0.0/8",
+                    "ip": "17.0.0.0",
+                    "cidr": 8,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.198.64.0/18",
+                "ip": "14.198.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.198.0.0/17",
+                    "ip": "14.198.0.0",
+                    "cidr": 17,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.198.128.0/18",
+                "ip": "14.198.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.198.128.0/18",
+                    "ip": "14.198.128.0",
+                    "cidr": 18,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.198.192.0/19",
+                "ip": "14.198.192.0",
+                "cidr": 19,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.198.192.0/19",
+                    "ip": "14.198.192.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.198.224.0/20",
+                "ip": "14.198.224.0",
+                "cidr": 20,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.198.224.0/20",
+                    "ip": "14.198.224.0",
+                    "cidr": 20,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.199.0.0/16",
+                "ip": "14.199.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.199.0.0/16",
+                    "ip": "14.199.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.199.0.0/18",
+                "ip": "14.199.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.199.0.0/16",
+                    "ip": "14.199.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.199.1.0/24",
+                "ip": "14.199.1.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.199.0.0/16",
+                    "ip": "14.199.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.199.64.0/18",
+                "ip": "14.199.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.199.0.0/16",
+                    "ip": "14.199.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.199.128.0/18",
+                "ip": "14.199.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.199.0.0/16",
+                    "ip": "14.199.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "14.199.192.0/18",
+                "ip": "14.199.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "14.199.0.0/16",
+                    "ip": "14.199.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "23.56.180.0/22",
+                "ip": "23.56.180.0",
+                "cidr": 22,
+                "roa_status": "None",
+                "name": "AKAMAI",
+                "description": "Akamai Technologies, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "24.123.0.0/17",
+                    "ip": "24.123.0.0",
+                    "cidr": 17,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "58.176.0.0/18",
+                "ip": "58.176.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "58.176.0.0/15",
+                    "ip": "58.176.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "58.176.0.0/15",
+                "ip": "58.176.0.0",
+                "cidr": 15,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "58.176.0.0/15",
+                    "ip": "58.176.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "58.176.0.0/16",
+                "ip": "58.176.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "52.216.0.0/14",
+                    "ip": "52.216.0.0",
+                    "cidr": 14,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "58.176.64.0/18",
+                "ip": "58.176.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "58.176.0.0/15",
+                    "ip": "58.176.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "58.176.88.0/24",
+                "ip": "58.176.88.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "58.176.0.0/15",
+                    "ip": "58.176.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "58.176.89.0/24",
+                "ip": "58.176.89.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "58.176.0.0/15",
+                    "ip": "58.176.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "58.176.90.0/24",
+                "ip": "58.176.90.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "58.176.0.0/15",
+                    "ip": "58.176.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "58.176.91.0/24",
+                "ip": "58.176.91.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "58.176.0.0/15",
+                    "ip": "58.176.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "58.176.128.0/18",
+                "ip": "58.176.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "58.176.0.0/15",
+                    "ip": "58.176.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "58.176.192.0/18",
+                "ip": "58.176.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "58.176.0.0/15",
+                    "ip": "58.176.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "58.177.0.0/18",
+                "ip": "58.177.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "58.176.0.0/15",
+                    "ip": "58.176.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "58.177.0.0/16",
+                "ip": "58.177.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "58.176.0.0/15",
+                    "ip": "58.176.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "58.177.64.0/18",
+                "ip": "58.177.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "58.176.0.0/15",
+                    "ip": "58.176.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "58.177.128.0/18",
+                "ip": "58.177.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "58.176.0.0/15",
+                    "ip": "58.176.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "58.177.192.0/18",
+                "ip": "58.177.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "47.240.0.0/14",
+                    "ip": "47.240.0.0",
+                    "cidr": 14,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.148.0.0/18",
+                "ip": "59.148.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.148.0.0/16",
+                "ip": "59.148.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "54.224.0.0/11",
+                    "ip": "54.224.0.0",
+                    "cidr": 11,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.148.0.0/15",
+                "ip": "59.148.0.0",
+                "cidr": 15,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.148.64.0/18",
+                "ip": "59.148.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.148.128.0/18",
+                "ip": "59.148.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.148.182.0/23",
+                "ip": "59.148.182.0",
+                "cidr": 23,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.148.192.0/18",
+                "ip": "59.148.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.149.0.0/16",
+                "ip": "59.149.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.149.0.0/18",
+                "ip": "59.149.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.149.64.0/18",
+                "ip": "59.149.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "50.62.0.0/15",
+                    "ip": "50.62.0.0",
+                    "cidr": 15,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.149.128.0/18",
+                "ip": "59.149.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.149.192.0/18",
+                "ip": "59.149.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.149.208.0/24",
+                "ip": "59.149.208.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.149.209.0/24",
+                "ip": "59.149.209.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.149.210.0/24",
+                "ip": "59.149.210.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.149.211.0/24",
+                "ip": "59.149.211.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.149.212.0/24",
+                "ip": "59.149.212.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.149.213.0/24",
+                "ip": "59.149.213.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.149.214.0/24",
+                "ip": "59.149.214.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "59.149.215.0/24",
+                "ip": "59.149.215.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "59.148.0.0/15",
+                    "ip": "59.148.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.92.0.0/18",
+                "ip": "61.92.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.92.0.0/16",
+                    "ip": "61.92.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.92.0.0/16",
+                "ip": "61.92.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.92.0.0/16",
+                    "ip": "61.92.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.92.23.0/24",
+                "ip": "61.92.23.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.92.0.0/16",
+                    "ip": "61.92.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.92.56.0/21",
+                "ip": "61.92.56.0",
+                "cidr": 21,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.92.0.0/16",
+                    "ip": "61.92.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.92.64.0/18",
+                "ip": "61.92.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.92.0.0/16",
+                    "ip": "61.92.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.92.128.0/18",
+                "ip": "61.92.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.92.0.0/16",
+                    "ip": "61.92.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.92.160.0/20",
+                "ip": "61.92.160.0",
+                "cidr": 20,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.92.0.0/16",
+                    "ip": "61.92.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.92.192.0/18",
+                "ip": "61.92.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.92.0.0/16",
+                    "ip": "61.92.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.92.240.0/20",
+                "ip": "61.92.240.0",
+                "cidr": 20,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.92.0.0/16",
+                    "ip": "61.92.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.93.0.0/18",
+                "ip": "61.93.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.93.0.0/16",
+                    "ip": "61.93.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.93.0.0/16",
+                "ip": "61.93.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.93.0.0/16",
+                    "ip": "61.93.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.93.64.0/18",
+                "ip": "61.93.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.93.0.0/16",
+                    "ip": "61.93.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.93.92.0/22",
+                "ip": "61.93.92.0",
+                "cidr": 22,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.93.0.0/16",
+                    "ip": "61.93.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.93.128.0/18",
+                "ip": "61.93.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.93.0.0/16",
+                    "ip": "61.93.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.93.160.0/22",
+                "ip": "61.93.160.0",
+                "cidr": 22,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "64.179.128.0/18",
+                    "ip": "64.179.128.0",
+                    "cidr": 18,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.93.192.0/18",
+                "ip": "61.93.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.93.0.0/16",
+                    "ip": "61.93.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.238.0.0/16",
+                "ip": "61.238.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.238.0.0/16",
+                    "ip": "61.238.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.238.0.0/18",
+                "ip": "61.238.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.249.224.0/19",
+                    "ip": "61.249.224.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.238.32.0/24",
+                "ip": "61.238.32.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.238.0.0/16",
+                    "ip": "61.238.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.238.64.0/18",
+                "ip": "61.238.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.238.0.0/16",
+                    "ip": "61.238.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.238.128.0/18",
+                "ip": "61.238.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.238.0.0/16",
+                    "ip": "61.238.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.238.192.0/18",
+                "ip": "61.238.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.93.0.0/16",
+                    "ip": "61.93.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.238.226.0/24",
+                "ip": "61.238.226.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.238.0.0/16",
+                    "ip": "61.238.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.238.227.0/24",
+                "ip": "61.238.227.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.238.0.0/16",
+                    "ip": "61.238.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.239.0.0/18",
+                "ip": "61.239.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.239.0.0/16",
+                    "ip": "61.239.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.239.0.0/16",
+                "ip": "61.239.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.239.0.0/16",
+                    "ip": "61.239.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.239.64.0/18",
+                "ip": "61.239.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "64.107.0.0/16",
+                    "ip": "64.107.0.0",
+                    "cidr": 16,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.239.128.0/18",
+                "ip": "61.239.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.239.0.0/16",
+                    "ip": "61.239.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.239.179.0/24",
+                "ip": "61.239.179.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.239.0.0/16",
+                    "ip": "61.239.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.239.184.0/24",
+                "ip": "61.239.184.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.239.0.0/16",
+                    "ip": "61.239.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.239.192.0/18",
+                "ip": "61.239.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "63.64.0.0/10",
+                    "ip": "63.64.0.0",
+                    "cidr": 10,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.239.197.0/24",
+                "ip": "61.239.197.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.239.0.0/16",
+                    "ip": "61.239.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.239.203.0/24",
+                "ip": "61.239.203.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.239.0.0/16",
+                    "ip": "61.239.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.244.0.0/16",
+                "ip": "61.244.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.244.0.0/16",
+                    "ip": "61.244.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.244.0.0/18",
+                "ip": "61.244.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.244.0.0/16",
+                    "ip": "61.244.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.244.64.0/18",
+                "ip": "61.244.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.244.0.0/16",
+                    "ip": "61.244.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.244.110.0/24",
+                "ip": "61.244.110.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.244.0.0/16",
+                    "ip": "61.244.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.244.111.0/24",
+                "ip": "61.244.111.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.244.0.0/16",
+                    "ip": "61.244.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.244.128.0/18",
+                "ip": "61.244.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.244.0.0/16",
+                    "ip": "61.244.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.244.136.0/21",
+                "ip": "61.244.136.0",
+                "cidr": 21,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.244.0.0/16",
+                    "ip": "61.244.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.244.192.0/18",
+                "ip": "61.244.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.244.0.0/16",
+                    "ip": "61.244.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "61.244.242.0/24",
+                "ip": "61.244.242.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "61.244.0.0/16",
+                    "ip": "61.244.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "110.235.0.0/17",
+                "ip": "110.235.0.0",
+                "cidr": 17,
+                "roa_status": "Valid",
+                "name": "HKBN-HK",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "110.235.0.0/17",
+                    "ip": "110.235.0.0",
+                    "cidr": 17,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "110.235.0.0/18",
+                "ip": "110.235.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN-HK",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "110.235.0.0/17",
+                    "ip": "110.235.0.0",
+                    "cidr": 17,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "110.235.64.0/18",
+                "ip": "110.235.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN-HK",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "110.235.0.0/17",
+                    "ip": "110.235.0.0",
+                    "cidr": 17,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "119.246.0.0/16",
+                "ip": "119.246.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "118.127.0.0/18",
+                    "ip": "118.127.0.0",
+                    "cidr": 18,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "119.246.0.0/15",
+                "ip": "119.246.0.0",
+                "cidr": 15,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "119.246.0.0/15",
+                    "ip": "119.246.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "119.246.0.0/18",
+                "ip": "119.246.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "119.246.0.0/15",
+                    "ip": "119.246.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "119.246.64.0/18",
+                "ip": "119.246.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "119.246.0.0/15",
+                    "ip": "119.246.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "119.246.128.0/18",
+                "ip": "119.246.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "117.16.0.0/15",
+                    "ip": "117.16.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "119.246.192.0/18",
+                "ip": "119.246.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "119.246.0.0/15",
+                    "ip": "119.246.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "119.247.0.0/18",
+                "ip": "119.247.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "119.246.0.0/15",
+                    "ip": "119.246.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "119.247.0.0/16",
+                "ip": "119.247.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "119.246.0.0/15",
+                    "ip": "119.246.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "119.247.64.0/18",
+                "ip": "119.247.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "119.226.0.0/15",
+                    "ip": "119.226.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "119.247.128.0/18",
+                "ip": "119.247.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "119.246.0.0/15",
+                    "ip": "119.246.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "119.247.192.0/18",
+                "ip": "119.247.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "119.246.0.0/15",
+                    "ip": "119.246.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "123.1.128.0/17",
+                "ip": "123.1.128.0",
+                "cidr": 17,
+                "roa_status": "Valid",
+                "name": "HKBNESL-HK",
+                "description": "HKBN Enterprise Solutions Limited",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "123.1.128.0/17",
+                    "ip": "123.1.128.0",
+                    "cidr": 17,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "123.1.224.0/19",
+                "ip": "123.1.224.0",
+                "cidr": 19,
+                "roa_status": "Valid",
+                "name": "HKBNESL-HK",
+                "description": "HKBN Enterprise Solutions Limited",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "123.1.128.0/17",
+                    "ip": "123.1.128.0",
+                    "cidr": 17,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "123.202.0.0/15",
+                "ip": "123.202.0.0",
+                "cidr": 15,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "123.202.0.0/15",
+                    "ip": "123.202.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "123.202.0.0/18",
+                "ip": "123.202.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "122.248.128.0/18",
+                    "ip": "122.248.128.0",
+                    "cidr": 18,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "123.202.0.0/16",
+                "ip": "123.202.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "123.202.0.0/15",
+                    "ip": "123.202.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "123.202.64.0/18",
+                "ip": "123.202.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "123.202.0.0/15",
+                    "ip": "123.202.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "123.202.128.0/18",
+                "ip": "123.202.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "123.202.0.0/15",
+                    "ip": "123.202.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "123.202.192.0/18",
+                "ip": "123.202.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "123.202.0.0/15",
+                    "ip": "123.202.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "123.203.0.0/18",
+                "ip": "123.203.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "124.47.128.0/18",
+                    "ip": "124.47.128.0",
+                    "cidr": 18,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "123.203.0.0/16",
+                "ip": "123.203.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "123.202.0.0/15",
+                    "ip": "123.202.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "123.203.64.0/18",
+                "ip": "123.203.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "123.202.0.0/15",
+                    "ip": "123.202.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "123.203.128.0/18",
+                "ip": "123.203.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "123.202.0.0/15",
+                    "ip": "123.202.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "123.203.192.0/18",
+                "ip": "123.203.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "123.202.0.0/15",
+                    "ip": "123.202.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "123.203.224.0/19",
+                "ip": "123.203.224.0",
+                "cidr": 19,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "123.202.0.0/15",
+                    "ip": "123.202.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "124.244.0.0/16",
+                "ip": "124.244.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "124.244.0.0/16",
+                    "ip": "124.244.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "124.244.0.0/18",
+                "ip": "124.244.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "124.244.0.0/16",
+                    "ip": "124.244.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "124.244.64.0/18",
+                "ip": "124.244.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "124.244.0.0/16",
+                    "ip": "124.244.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "124.244.128.0/18",
+                "ip": "124.244.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "124.244.0.0/16",
+                    "ip": "124.244.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "124.244.192.0/18",
+                "ip": "124.244.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "124.244.0.0/16",
+                    "ip": "124.244.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "138.19.0.0/16",
+                "ip": "138.19.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "ERX-NETBLOCK",
+                "description": "Early registration addresses",
+                "country_code": "AU",
+                "parent": {
+                    "prefix": "138.19.0.0/16",
+                    "ip": "138.19.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "138.19.0.0/18",
+                "ip": "138.19.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN-HK",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "141.226.96.0/20",
+                    "ip": "141.226.96.0",
+                    "cidr": 20,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "138.19.64.0/18",
+                "ip": "138.19.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN-HK",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "138.19.0.0/16",
+                    "ip": "138.19.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "138.19.128.0/18",
+                "ip": "138.19.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN-HK",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "138.19.0.0/16",
+                    "ip": "138.19.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "138.19.192.0/18",
+                "ip": "138.19.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN-HK",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "138.19.0.0/16",
+                    "ip": "138.19.0.0",
+                    "cidr": 16,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "155.137.128.0/17",
+                "ip": "155.137.128.0",
+                "cidr": 17,
+                "roa_status": "Valid",
+                "name": "ERX-NETBLOCK",
+                "description": "Early registration addresses",
+                "country_code": "AU",
+                "parent": {
+                    "prefix": "155.137.128.0/17",
+                    "ip": "155.137.128.0",
+                    "cidr": 17,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "155.137.128.0/18",
+                "ip": "155.137.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN-HK",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "155.137.128.0/18",
+                    "ip": "155.137.128.0",
+                    "cidr": 18,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "155.137.192.0/18",
+                "ip": "155.137.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN-HK",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "155.137.192.0/18",
+                    "ip": "155.137.192.0",
+                    "cidr": 18,
+                    "rir_name": "RIPE",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "159.117.224.0/19",
+                "ip": "159.117.224.0",
+                "cidr": 19,
+                "roa_status": "Valid",
+                "name": "HKBN-HK",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "159.117.224.0/19",
+                    "ip": "159.117.224.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "165.84.128.0/18",
+                "ip": "165.84.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN-HK",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "165.84.128.0/18",
+                    "ip": "165.84.128.0",
+                    "cidr": 18,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "173.223.80.0/20",
+                "ip": "173.223.80.0",
+                "cidr": 20,
+                "roa_status": "None",
+                "name": "AKAMAI",
+                "description": "Akamai Technologies, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "173.222.0.0/15",
+                    "ip": "173.222.0.0",
+                    "cidr": 15,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "183.178.0.0/15",
+                "ip": "183.178.0.0",
+                "cidr": 15,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "183.178.0.0/15",
+                    "ip": "183.178.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "183.178.0.0/16",
+                "ip": "183.178.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "183.178.0.0/15",
+                    "ip": "183.178.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "183.178.0.0/18",
+                "ip": "183.178.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "183.178.0.0/15",
+                    "ip": "183.178.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "183.178.64.0/18",
+                "ip": "183.178.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "183.178.0.0/15",
+                    "ip": "183.178.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "183.178.128.0/18",
+                "ip": "183.178.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "183.178.0.0/15",
+                    "ip": "183.178.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "183.178.192.0/18",
+                "ip": "183.178.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "183.178.0.0/15",
+                    "ip": "183.178.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "183.179.0.0/18",
+                "ip": "183.179.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "183.178.0.0/15",
+                    "ip": "183.178.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "183.179.0.0/16",
+                "ip": "183.179.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "183.178.0.0/15",
+                    "ip": "183.178.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "183.179.64.0/18",
+                "ip": "183.179.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "183.178.0.0/15",
+                    "ip": "183.178.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "183.179.128.0/18",
+                "ip": "183.179.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "183.178.0.0/15",
+                    "ip": "183.178.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "183.179.192.0/18",
+                "ip": "183.179.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "183.178.0.0/15",
+                    "ip": "183.178.0.0",
+                    "cidr": 15,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "184.84.204.0/22",
+                "ip": "184.84.204.0",
+                "cidr": 22,
+                "roa_status": "None",
+                "name": "AKAMAI",
+                "description": "Akamai Technologies, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "184.84.0.0/14",
+                    "ip": "184.84.0.0",
+                    "cidr": 14,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "184.87.96.0/20",
+                "ip": "184.87.96.0",
+                "cidr": 20,
+                "roa_status": "None",
+                "name": "AKAMAI",
+                "description": "Akamai Technologies, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "184.84.0.0/14",
+                    "ip": "184.84.0.0",
+                    "cidr": 14,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "184.87.198.0/23",
+                "ip": "184.87.198.0",
+                "cidr": 23,
+                "roa_status": "None",
+                "name": "AKAMAI",
+                "description": "Akamai Technologies, Inc.",
+                "country_code": "US",
+                "parent": {
+                    "prefix": "184.84.0.0/14",
+                    "ip": "184.84.0.0",
+                    "cidr": 14,
+                    "rir_name": "ARIN",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "202.77.4.0/22",
+                "ip": "202.77.4.0",
+                "cidr": 22,
+                "roa_status": "Valid",
+                "name": "HKBN-HK",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "202.77.4.0/22",
+                    "ip": "202.77.4.0",
+                    "cidr": 22,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "202.77.24.0/21",
+                "ip": "202.77.24.0",
+                "cidr": 21,
+                "roa_status": "Valid",
+                "name": "HKBN-HK",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "202.77.24.0/21",
+                    "ip": "202.77.24.0",
+                    "cidr": 21,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.80.64.0/18",
+                "ip": "203.80.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "APNIC-AP",
+                "description": "Asia Pacific Network Information Centre",
+                "country_code": "AU",
+                "parent": {
+                    "prefix": "203.80.64.0/19",
+                    "ip": "203.80.64.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.80.81.0/24",
+                "ip": "203.80.81.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.80.64.0/19",
+                    "ip": "203.80.64.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.80.96.0/24",
+                "ip": "203.80.96.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.80.96.0/19",
+                    "ip": "203.80.96.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.80.97.0/24",
+                "ip": "203.80.97.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.80.96.0/19",
+                    "ip": "203.80.96.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.80.102.0/24",
+                "ip": "203.80.102.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "202.204.0.0/14",
+                    "ip": "202.204.0.0",
+                    "cidr": 14,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.80.126.0/24",
+                "ip": "203.80.126.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.80.96.0/19",
+                    "ip": "203.80.96.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.80.192.0/18",
+                "ip": "203.80.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.80.192.0/18",
+                    "ip": "203.80.192.0",
+                    "cidr": 18,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.80.202.0/24",
+                "ip": "203.80.202.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.80.192.0/18",
+                    "ip": "203.80.192.0",
+                    "cidr": 18,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.80.210.0/24",
+                "ip": "203.80.210.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.80.192.0/18",
+                    "ip": "203.80.192.0",
+                    "cidr": 18,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.80.224.0/19",
+                "ip": "203.80.224.0",
+                "cidr": 19,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.80.192.0/18",
+                    "ip": "203.80.192.0",
+                    "cidr": 18,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.176.192.0/18",
+                "ip": "203.176.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBNESL-HK",
+                "description": "HKBN Enterprise Solutions Limited",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.176.192.0/18",
+                    "ip": "203.176.192.0",
+                    "cidr": 18,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.185.0.0/24",
+                "ip": "203.185.0.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.185.0.0/20",
+                    "ip": "203.185.0.0",
+                    "cidr": 20,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.185.0.0/18",
+                "ip": "203.185.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "APNIC-AP",
+                "description": "Asia Pacific Network Information Centre",
+                "country_code": "AU",
+                "parent": {
+                    "prefix": "203.185.0.0/20",
+                    "ip": "203.185.0.0",
+                    "cidr": 20,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.185.10.0/24",
+                "ip": "203.185.10.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.185.0.0/20",
+                    "ip": "203.185.0.0",
+                    "cidr": 20,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.185.17.0/24",
+                "ip": "203.185.17.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.185.16.0/20",
+                    "ip": "203.185.16.0",
+                    "cidr": 20,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.185.21.0/24",
+                "ip": "203.185.21.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.185.16.0/20",
+                    "ip": "203.185.16.0",
+                    "cidr": 20,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.185.38.0/24",
+                "ip": "203.185.38.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.185.32.0/19",
+                    "ip": "203.185.32.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.186.0.0/18",
+                "ip": "203.186.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.186.0.0/18",
+                    "ip": "203.186.0.0",
+                    "cidr": 18,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.186.0.0/16",
+                "ip": "203.186.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "APNIC-AP",
+                "description": "Asia Pacific Network Information Centre",
+                "country_code": "AU",
+                "parent": {
+                    "prefix": "203.186.0.0/18",
+                    "ip": "203.186.0.0",
+                    "cidr": 18,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.186.14.0/24",
+                "ip": "203.186.14.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "202.179.0.0/19",
+                    "ip": "202.179.0.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.186.47.0/24",
+                "ip": "203.186.47.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.22.164.0/23",
+                    "ip": "203.22.164.0",
+                    "cidr": 23,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.186.64.0/19",
+                "ip": "203.186.64.0",
+                "cidr": 19,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.186.64.0/19",
+                    "ip": "203.186.64.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.186.94.0/24",
+                "ip": "203.186.94.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "202.134.16.0/21",
+                    "ip": "202.134.16.0",
+                    "cidr": 21,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.186.95.0/24",
+                "ip": "203.186.95.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.186.64.0/19",
+                    "ip": "203.186.64.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.186.96.0/20",
+                "ip": "203.186.96.0",
+                "cidr": 20,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.186.96.0/19",
+                    "ip": "203.186.96.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.186.112.0/22",
+                "ip": "203.186.112.0",
+                "cidr": 22,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "202.158.96.0/19",
+                    "ip": "202.158.96.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.186.120.0/22",
+                "ip": "203.186.120.0",
+                "cidr": 22,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.186.96.0/19",
+                    "ip": "203.186.96.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.186.124.0/22",
+                "ip": "203.186.124.0",
+                "cidr": 22,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.186.96.0/19",
+                    "ip": "203.186.96.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.186.128.0/18",
+                "ip": "203.186.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.186.128.0/17",
+                    "ip": "203.186.128.0",
+                    "cidr": 17,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.186.128.0/17",
+                "ip": "203.186.128.0",
+                "cidr": 17,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.186.128.0/17",
+                    "ip": "203.186.128.0",
+                    "cidr": 17,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.186.129.0/24",
+                "ip": "203.186.129.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.186.128.0/17",
+                    "ip": "203.186.128.0",
+                    "cidr": 17,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.186.192.0/18",
+                "ip": "203.186.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.186.128.0/17",
+                    "ip": "203.186.128.0",
+                    "cidr": 17,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "203.186.206.0/24",
+                "ip": "203.186.206.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "203.186.128.0/17",
+                    "ip": "203.186.128.0",
+                    "cidr": 17,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "210.6.0.0/16",
+                "ip": "210.6.0.0",
+                "cidr": 16,
+                "roa_status": "Valid",
+                "name": "APNIC-AP",
+                "description": "Asia Pacific Network Information Centre",
+                "country_code": "AU",
+                "parent": {
+                    "prefix": "210.6.0.0/18",
+                    "ip": "210.6.0.0",
+                    "cidr": 18,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "210.6.0.0/18",
+                "ip": "210.6.0.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "210.6.0.0/18",
+                    "ip": "210.6.0.0",
+                    "cidr": 18,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "210.6.64.0/18",
+                "ip": "210.6.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "210.6.64.0/21",
+                    "ip": "210.6.64.0",
+                    "cidr": 21,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "210.6.98.0/24",
+                "ip": "210.6.98.0",
+                "cidr": 24,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "210.6.96.0/19",
+                    "ip": "210.6.96.0",
+                    "cidr": 19,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "210.6.128.0/18",
+                "ip": "210.6.128.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "210.6.128.0/17",
+                    "ip": "210.6.128.0",
+                    "cidr": 17,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "210.6.192.0/18",
+                "ip": "210.6.192.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "210.6.128.0/17",
+                    "ip": "210.6.128.0",
+                    "cidr": 17,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            },
+            {
+                "prefix": "210.209.64.0/18",
+                "ip": "210.209.64.0",
+                "cidr": 18,
+                "roa_status": "Valid",
+                "name": "HKBNESL-HK",
+                "description": "HKBN Enterprise Solutions Limited",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "210.209.64.0/18",
+                    "ip": "210.209.64.0",
+                    "cidr": 18,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            }
+        ],
+        "ipv6_prefixes": [
+            {
+                "prefix": "2401:f400::/32",
+                "ip": "2401:f400::",
+                "cidr": 32,
+                "roa_status": "Valid",
+                "name": "HKBN",
+                "description": "Hong Kong Broadband Network Ltd",
+                "country_code": "HK",
+                "parent": {
+                    "prefix": "2401:f400::/32",
+                    "ip": "2401:f400::",
+                    "cidr": 32,
+                    "rir_name": "APNIC",
+                    "allocation_status": "unknown"
+                }
+            }
+        ]
+    },
+    "@meta": {
+        "time_zone": "UTC",
+        "api_version": 1,
+        "execution_time": "171.7 ms"
+    }
+}

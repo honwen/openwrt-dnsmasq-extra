@@ -1,5 +1,5 @@
 #!/bin/sh /etc/rc.common
-# Copyright (C) 2018-2022 honwen <https://github.com/honwen>
+# Copyright (C) 2018-2023 honwen <https://github.com/honwen>
 
 START=69
 NAME=dnsmasq-extra
@@ -38,7 +38,7 @@ start() {
 	echo -en "Geneareting : $NAME\n    "
 	mkdir -p ${TARGET}
 
-	ss_watchdog=$(sed -n "s/'//g;s/^WATCHDOG_ENDPOINT=//p" /etc/init.d/shadowsocks* /etc/init.d/xray* /etc/init.d/ssr* 2>/dev/null | sort -u)
+	x_watchdog=$(sed -n "s/'//g;s/^WATCHDOG_ENDPOINT=//p" /etc/init.d/shadowsocks* /etc/init.d/xray* /etc/init.d/ssr* 2>/dev/null | sort -u)
 
 	# plugins
 	for plugin in $(uci_get_by_type ${NAME} general plugins); do
@@ -54,7 +54,9 @@ start() {
 			fi
 			echo -n "plugin:${plugin}, " | tr [a-z] [A-Z]
 			auto_cat 'gfwlist' 'tldn' | sed "s/^/server=\//;s/$/\/127.0.0.1#${plugin_port}/" >${TARGET}/plugin_${plugin}.conf
-			echo "server=/${ss_watchdog}/127.0.0.1#${plugin_port}" >>${TARGET}/plugin_${plugin}.conf
+			for it in $x_watchdog; do
+				echo "server=/${it}/127.0.0.1#${plugin_port}" >>${TARGET}/plugin_${plugin}.conf
+			done
 		}
 	done
 
@@ -78,7 +80,9 @@ start() {
 
 			echo -n "plugin-tcp:${plugin}, " | tr [a-z] [A-Z]
 			auto_cat 'gfwlist' 'tldn' | sed "s/^/server=\//;s/$/\/127.0.0.1#${plugin_tcpport}/" >${TARGET}/plugin_${plugin}.conf
-			echo "server=/${ss_watchdog}/127.0.0.1#${plugin_tcpport}" >>${TARGET}/plugin_${plugin}.conf
+			for it in $x_watchdog; do
+				echo "server=/${it}/127.0.0.1#${plugin_tcpport}" >>${TARGET}/plugin_${plugin}.conf
+			done
 		}
 	done
 
@@ -94,8 +98,10 @@ start() {
 		echo -n "CLEAN-DNS-TCP:${server}, "
 		auto_cat 'gfwlist' 'tldn' | sed "s/^/server=\//;s/$/\/127.0.0.1#${tcpport}/" >>${TARGET}/clean_${server}.conf
 
-		echo "server=/${ss_watchdog}/${server}" >>${TARGET}/plugin_${plugin}.conf
-		echo "server=/${ss_watchdog}/127.0.0.1#${tcpport}" >>${TARGET}/plugin_${plugin}.conf
+		for it in $x_watchdog; do
+			echo "server=/${it}/${server}" >>${TARGET}/plugin_${plugin}.conf
+			echo "server=/${it}/127.0.0.1#${tcpport}" >>${TARGET}/plugin_${plugin}.conf
+		done
 	done
 
 	[ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* /etc/config/xray* /etc/config/ssr* 2>/dev/null | grep -c 'chnroute') ] &&
@@ -192,7 +198,9 @@ start() {
 			uci_bool_by_type ${NAME} general overwrite_aiodns && {
 				[ -x /usr/bin/aiodns ] && {
 					local aiodns_port=$(uci_get_by_type aiodns aiodns port 7100)
-					echo "server=/${ss_watchdog}/127.0.0.1#${aiodns_port}" >>${TARGET}/misc_custom.conf
+					for it in $x_watchdog; do
+						echo "server=/${it}/127.0.0.1#${aiodns_port}" >>${TARGET}/misc_custom
+					done
 					echo "server=127.0.0.1#$aiodns_port" >>${TARGET}/misc_custom.conf
 					sed "s+$+127.0.0.1#$aiodns_port+g" $_tmp_list >>${TARGET}/misc_direct.conf
 				}
@@ -201,7 +209,9 @@ start() {
 			uci_bool_by_type ${NAME} general overwrite_dcompass && {
 				[ -x /usr/bin/dcompass ] && {
 					local dcompass_port=$(uci_get_by_type dcompass dcompass port 7500)
-					echo "server=/${ss_watchdog}/127.0.0.1#${dcompass_port}" >>${TARGET}/misc_custom.conf
+					for it in $x_watchdog; do
+						echo "server=/${it}/127.0.0.1#${dcompass_port}" >>${TARGET}/misc_custom
+					done
 					echo "server=127.0.0.1#$dcompass_port" >>${TARGET}/misc_custom.conf
 					sed "s+$+127.0.0.1#$dcompass_port+g" $_tmp_list >>${TARGET}/misc_direct.conf
 				}
@@ -210,7 +220,7 @@ start() {
 			uci_bool_by_type ${NAME} general overwrite_smartdns && {
 				[ -x /usr/bin/smartdns ] && {
 					pgrep -f 'smartdns.cn.conf' >/dev/null || {
-						sed 's+\(enable_cn.*\)[0-9]+\11+g' -i /etc/config/smartdns
+						sed 's+\(enable_cn[ \t]*\)[^ ]*$+\1yes+g' -i /etc/config/smartdns
 						/etc/init.d/smartdns restart >/dev/null 2>&1
 					}
 					local smartdns_port=$(uci_get_by_type smartdns smartdns port 0000)
@@ -223,7 +233,7 @@ start() {
 				[ -x /usr/bin/dnsproxy ] && {
 					local dnsproxy_port=$(uci_get_by_type dnsproxy dnsproxy port_cn 0000)
 					pgrep -f "\-p $dnsproxy_port" >/dev/null || {
-						sed 's+\(enable_cn.*\)[0-9]+\11+g' -i /etc/config/dnsproxy
+						sed 's+\(enable_cn[ \t]*\)[^ ]*$+\1yes+g' -i /etc/config/dnsproxy
 						/etc/init.d/dnsproxy restart >/dev/null 2>&1
 					}
 					echo "server=127.0.0.1#$dnsproxy_port" >>${TARGET}/misc_custom.conf
@@ -248,6 +258,7 @@ start() {
 	sed '/\/\//d; /[0-9]\/[0-9]/d' -i ${TARGET}/*
 
 	(/etc/init.d/dnsmasq restart >/dev/null 2>&1) && rules
+	# (/etc/init.d/dnsmasq reload >/dev/null 2>&1) && rules
 	echo " ."
 }
 
@@ -286,8 +297,10 @@ update() {
 
 	if ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.com/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.com/https://raw.githubusercontent+g')"
-	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+mirror.ghproxy.com/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
-		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+mirror.ghproxy.com/https://raw.githubusercontent+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+gh.con.sh/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+gh.con.sh/https://raw.githubusercontent+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.net/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.net/https://raw.githubusercontent+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+githubusercontent+githubusercontents+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+githubusercontent+githubusercontents+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent.com+cdn.staticaly.com/gh+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then

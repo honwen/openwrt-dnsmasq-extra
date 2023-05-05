@@ -12,7 +12,7 @@ _path=$(dirname $(readlink -f $0))
 curl_githubusercontent() {
 	url="$1"
 	curl -skL --speed-limit 100000 --speed-time 10 "https://ghproxy.com/${url}" ||
-		curl -skL --speed-limit 100000 --speed-time 10 "https://ghproxy.com/${url}" ||
+		curl -skL --speed-limit 100000 --speed-time 10 "https://ghproxy.net/${url}" ||
 		curl -skL --speed-limit 100000 --speed-time 10 "$(echo ${url} | sed 's+raw.githubusercontent.com+cdn.staticaly.com/gh+g')" ||
 		curl -skL --speed-limit 100000 --speed-time 10 "${url}"
 }
@@ -46,6 +46,11 @@ time cidr-merger <<-EOF >chnroute.txt.new
 	$(curl_githubusercontent https://raw.githubusercontent.com/PaPerseller/chn-iplist/master/chnroute-ipv4.txt)
 
 	$(
+		curl_githubusercontent https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list |
+			sed -n 's+IP-CIDR,\(.*\),no-resolve+\1+p'
+	)
+
+	$(
 		curl_githubusercontent https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/WeChat.list |
 			sed -n 's+IP-CIDR,\(.*\),no-resolve+\1+p'
 	)
@@ -55,27 +60,36 @@ time cidr-merger <<-EOF >chnroute.txt.new
 			sed -n 's+IP-CIDR,\(.*\),no-resolve+\1+p'
 	)
 
-	$(for it in 132203 45090 45102 136907 3462 9381 9269 135377 64050 136038 31898 48266; do
+	$(for it in 3462 9269 9381 25820 31898 45090 45102 48266 64050 132203 132591 135377 136038 136907 138915 141159; do
 		echo >&2 "ASN$it"
-		curl -skL --speed-limit 100000 --speed-time 30 https://api.bgpview.io/asn/$it/prefixes | jq -r '.data.ipv4_prefixes[]|.prefix' 2>/dev/null ||
-			curl -skL --speed-limit 50000 --speed-time 90 https://api.bgpview.io/asn/$it/prefixes | jq -r '.data.ipv4_prefixes[]|.prefix'
+		echo
+		jq -r '.data.ipv4_prefixes[]|.prefix' ../../.asn/$it.json
+		# curl -skL --speed-limit 100000 --speed-time 30 https://api.bgpview.io/asn/$it/prefixes | jq -r '.data.ipv4_prefixes[]|.prefix' 2>/dev/null ||
+		#  curl -skL --speed-limit 50000 --speed-time 90 https://api.bgpview.io/asn/$it/prefixes | jq -r '.data.ipv4_prefixes[]|.prefix'
 	done)
 EOF
 
 # add checkip.synology.com
 time cidr-merger <<-EOF >>chnroute.txt.new
 	104.248.79.120
-	159.89.129.146
-	165.227.63.200
 	138.68.28.244
-	159.89.142.52
-	206.189.214.49
 	142.93.81.166
 	159.65.77.153
+	159.89.129.146
+	159.89.142.52
+	165.227.63.200
+	206.189.214.49
 EOF
 
 # add wechat
 time cidr-merger <<-EOF >>chnroute.txt.new
+	43.156.222.0/24
+	101.32.104.0/24
+	101.32.118.0/24
+	101.32.133.0/24
+	129.226.3.0/24
+	129.226.107.0/24
+	162.62.163.0/24
 	109.244.0.0/16
 	101.32.118.0/23
 	101.32.104.0/21
@@ -105,13 +119,16 @@ echo >&2 "# gfwlist.lite"
 sed 's|^\.|.*\\.|g; s+$+$+g' tldn >gfwlist.blacklist
 grep -Exv -f gfwlist.blacklist gfwlist >gfwlist.lite
 rm -f gfwlist.blacklist
+echo
 # ------------------ gfwlist ------------------
 
 # ------------------ adblock ------------------
 
 curl -sSL https://anti-ad.net/domains.txt -o adblock
-curl -sSL https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts | sed -n 's+^0.0.0.0 *++p' >adblock.lite
+curl_githubusercontent https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts | sed -n 's+^0.0.0.0 *++p' >adblock.lite
 curl_githubusercontent https://raw.githubusercontent.com/neodevpro/neodevhost/master/customblocklist | tee -a adblock adblock.lite >/dev/null
+curl_githubusercontent https://raw.githubusercontent.com/code-shiromi/Quantumult-X-Resources/main/remote/filters/ad.list |
+	sed -n 's+^HOST.*,\(.*\),AdBlock$+\1+p' | tee -a adblock adblock.lite >/dev/null
 cat <<-EOF | tee -a adblock adblock.lite >/dev/null
 	c.msn.com
 	ntp.msn.com
@@ -124,14 +141,19 @@ EOF
 echo >&2 "# adblock"
 time shadowsocks-helper tide -i adblock -o adblock
 echo >&2 "# adblock.lite"
-time shadowsocks-helper tide -i adblock.lite -o adblock.lite
+time shadowsocks-helper tide -i adblock.lite -o adblock.lite_whitelist
+grep -Ex -f adblock.lite_whitelist adblock >adblock.lite
 
 # whitelist
 sed 's+\.$++g' -i adblock adblock.lite
+sed '/^bj.bcebos.com/d; /^puui.qpic.cn/d; /^zhanzhang.toutiao.com/d' -i adblock adblock.lite
+sed '/weixinbridge/d' -i adblock adblock.lite
+sed '/bootcdn.net/d' -i adblock adblock.lite
 sed '/wns.windows.com/d' -i adblock adblock.lite
 sed '/ip-api.com/d; /pv.sohu.com/d' -i adblock adblock.lite
 sed '/click.simba.taobao.com/d' -i adblock adblock.lite
 sed '/click.union.vip.com/d; /ms.vipstatic.com/d' -i adblock adblock.lite
+rm adblock.lite_*
 # ------------------ adblock ------------------
 
 # ------------------ direct ------------------
@@ -143,6 +165,7 @@ cat <<-EOF | sort -u >direct.new
 	$(sed '/^www.apple.com$/,+99999d' direct.pexcn)
 EOF
 
+curl_githubusercontent https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf | awk -F'/' '{print $2}' >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/apple.txt >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/tencent >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/alibaba >>direct.new
@@ -151,8 +174,22 @@ curl_githubusercontent https://raw.githubusercontent.com/pluwen/china-domain-all
 	sed -n 's+^*\.++p' | sed '/apple/d; /akadns/d; /doubleclick/d' >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/eliozy/Qumtumult-X/master/Filter/WeChat.list |
 	sed -n 's+^DOMAIN-SUFFIX,++p' | sed 's+,.*++g' >>direct.new
+curl_githubusercontent https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Ruleset/Wechat.list |
+	sed -n 's+^DOMAIN[^,]*,++p' >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/marsgogo/Surge/main/Weixin.list |
 	sed -n 's+^DOMAIN[^,]*,++p' >>direct.new
+curl_githubusercontent https://raw.githubusercontent.com/JC-SYSU/test/main/WhiteList.list |
+	awk -F',' '{print $2}' | sed '/[0-9]$/d' >>direct.new
+curl_githubusercontent https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list |
+	sed -n 's+^DOMAIN[^,]*,++p' >>direct.new
+curl_githubusercontent https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list |
+	sed -n 's+^DOMAIN[^,]*,++p' >>direct.new
+curl_githubusercontent https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/WeChat/WeChat.list |
+	grep -v 'KEYWORD' | grep '^HOST' | awk -F',' '{print $2}' >>direct.new
+curl_githubusercontent https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/XianYu/XianYu.list |
+	grep -v 'KEYWORD' | grep '^DOMAIN' | awk -F',' '{print $2}' >>direct.new
+curl_githubusercontent https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/DouYin/DouYin.list |
+	grep -v 'KEYWORD' | grep '^DOMAIN' | awk -F',' '{print $2}' >>direct.new
 
 # blacklist
 sed '/google/d; /gstatic/d; /youtube/d; /^android/d;' -i direct.new
@@ -163,6 +200,7 @@ cat adblock adblock.lite gfwlist >direct.blacklist
 sed "$start,99999d" direct >>direct.blacklist
 grep -Fv -f direct.blacklist direct.new >direct.sum
 
+echo >&2 "# direct.sum"
 time shadowsocks-helper tide -i direct.sum -o direct.sum
 sed "$start,99999d" -i direct
 sed 's+$+\$+g; s+\.+\\.+g' tldn gfwlist >direct.suffix
@@ -190,117 +228,7 @@ done
 # ------------------ gzip ------------------
 
 # ----------- ShadowrocketEx.conf ----------
-
-curl_githubusercontent https://raw.githubusercontent.com/xiangsanliu/Rules/main/merge-lhie1.conf >ADBLOCK.conf
-curl_githubusercontent https://raw.githubusercontent.com/xiangsanliu/Rules/main/gen/gfw.conf >Complete.conf
-sed 's+^dns-server.*+dns-server = system, tls://223.5.5.5, tls://120.53.53.53, https://1.12.12.12/dns-query+g' -i Complete.conf
-sed 's+^bypass-tun *= *+bypass-tun = 119.29.0.0/16, 223.5.5.0/24, 223.6.6.0/24, 120.53.52.0/23, 1.12.0.0/20, 129.226.0.0/16, 101.32.0.0/16, 109.244.0.0/16, +g' -i Complete.conf
-sed '/bypass-tun/adns-direct-fallback-proxy = true' -i Complete.conf
-sed 's+bypass-tun+tun-excluded-routes+g' -i Complete.conf
-sed '/^skip-proxy/{s+$+, captive.apple.com, netcts.cdn-apple.com, *.qq.com, *.gtimg.com, *.qpic.cn, *.qlogo.cn, *.wechat.com, *.weixin.com, *.iot-tencent.com, *.tencent-cloud.net, *.wechatos.net, *.servicewechat.com+g}' -i Complete.conf
-
-insert_line=$(sed -n -e '/^# Proxy$/=' Complete.conf)
-
-echo >&2 "# ShadowrocketEx"
-echo "# Generated At ${_date}" >ShadowrocketEx.conf
-sed -n "1,$((insert_line - 1))p" Complete.conf >>ShadowrocketEx.conf
-echo -e '\n# > GFWLIST' >>ShadowrocketEx.conf
-(
-	sed -n '/DOMAIN-SUFFIX,.*,PROXY/p' Complete.conf
-	sed '/[0-9]$/d' gfwlist.lite | sed 's+^+DOMAIN-SUFFIX,+g; s+$+,PROXY+g'
-) | sort -u >>ShadowrocketEx.conf
-
-echo -e '\n# > DIRECT' >>ShadowrocketEx.conf
-(
-	sed -n "$start,999999p" direct | sed 's+^+DOMAIN-SUFFIX,+g; s+$+,DIRECT,no-resolve+g'
-) | sort -u | sed '/^[ \t\s]*$/d' >>ShadowrocketEx.conf
-
-echo -e '\n# > ADBLOCK' >>ShadowrocketEx.conf
-(
-	sed -n '/^DOMAIN-SUFFIX,.*,REJECT$/p' ADBLOCK.conf
-) | sort -u | sed '/^[ \t\s]*$/d' >>ShadowrocketEx.conf
-
-# echo -e '\n# > CHNROUTE' >>ShadowrocketEx.conf
-# sed 's+^+IP-CIDR,+g; s+$+,DIRECT,no-resolve+g' chnroute.txt >>ShadowrocketEx.conf
-
-# # > FINAL
-# FINAL,PROXY
-
-cat <<-EOF >>ShadowrocketEx.conf
-	# > CN
-	GEOIP,CN,DIRECT
-	DOMAIN-SUFFIX,cn,DIRECT
-
-	IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
-	IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
-	IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
-	IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
-	IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
-
-	# > WeChat
-	DOMAIN,dl.wechat.com,DIRECT
-	DOMAIN,sglong.wechat.com,DIRECT
-	DOMAIN,sgminorshort.wechat.com,DIRECT
-	DOMAIN,sgshort.wechat.com,DIRECT
-	DOMAIN,tencentmap.wechat.com,DIRECT
-	IP-CIDR,101.32.104.4/32,DIRECT,no-resolve
-	IP-CIDR,101.32.104.41/32,DIRECT,no-resolve
-	IP-CIDR,101.32.104.56/32,DIRECT,no-resolve
-	IP-CIDR,101.32.118.25/32,DIRECT,no-resolve
-	IP-CIDR,101.32.133.16/32,DIRECT,no-resolve
-	IP-CIDR,101.32.133.53/32,DIRECT,no-resolve
-	IP-CIDR,101.32.133.209/32,DIRECT,no-resolve
-	IP-CIDR,129.226.3.47/32,DIRECT,no-resolve
-	IP-CIDR,129.226.107.244/32,DIRECT,no-resolve
-
-
-	# > Apple API
-	DOMAIN-SUFFIX,aaplimg.com,PROXY
-	DOMAIN-SUFFIX,Proxy.co,PROXY
-	DOMAIN-SUFFIX,Proxy.com,PROXY
-	DOMAIN-SUFFIX,Proxy-cloudkit.com,PROXY
-	DOMAIN-SUFFIX,appsto.re,PROXY
-	DOMAIN-SUFFIX,cdn-apple.com,PROXY
-	DOMAIN-SUFFIX,icloud.com,PROXY
-	DOMAIN-SUFFIX,icloud-content.com,PROXY
-	DOMAIN-SUFFIX,itunes.com,PROXY
-	DOMAIN-SUFFIX,me.com,PROXY
-	IP-CIDR,17.0.0.0/8,PROXY,no-resolve
-	IP-CIDR,63.92.224.0/19,PROXY,no-resolve
-	IP-CIDR,65.199.22.0/23,PROXY,no-resolve
-	IP-CIDR,139.178.128.0/18,PROXY,no-resolve
-	IP-CIDR,144.178.0.0/19,PROXY,no-resolve
-	IP-CIDR,144.178.36.0/22,PROXY,no-resolve
-	IP-CIDR,144.178.48.0/20,PROXY,no-resolve
-	IP-CIDR,192.35.50.0/24,PROXY,no-resolve
-	IP-CIDR,198.183.17.0/24,PROXY,no-resolve
-	IP-CIDR,205.180.175.0/24,PROXY,no-resolve
-
-	# > Apple News
-	DOMAIN-SUFFIX,Proxy.news,PROXY
-
-	# > Apple CDN
-	DOMAIN,aod.itunes.apple.com,DIRECT
-	DOMAIN,api.smoot.apple.cn,DIRECT
-	DOMAIN,appldnld.apple.com,DIRECT
-	DOMAIN,apptrailers.itunes.apple.com,DIRECT
-	DOMAIN,gs-loc-cn.apple.com,DIRECT
-	DOMAIN,iosapps.itunes.apple.com,DIRECT
-	DOMAIN,music.apple.com,DIRECT
-	DOMAIN,mvod.itunes.apple.com,DIRECT
-	DOMAIN,osxapps.itunes.apple.com,DIRECT
-	DOMAIN,supportdownload.apple.com,DIRECT
-	DOMAIN,swcdn.apple.com,DIRECT
-	DOMAIN,updates-http.cdn-apple.com,DIRECT
-	DOMAIN-SUFFIX,ls.apple.com,DIRECT
-	DOMAIN-SUFFIX,mzstatic.com,DIRECT
-
-	[URL Rewrite]
-	^http://(www.)?google.cn https://www.google.com 302
-EOF
-
-mv ShadowrocketEx.conf $_path/.shadowrocket/ex.conf
-rm -f Complete.conf ADBLOCK.conf
+sed 's+^+IP-CIDR,+g; s+$+,no-resolve+g' chnroute.txt >$_path/.shadowrocket/cncidr.txt
 # ----------- ShadowrocketEx.conf ----------
 
 cd -
