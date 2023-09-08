@@ -62,10 +62,11 @@ time cidr-merger <<-EOF >chnroute.txt.new
 
 	$(for it in 3462 9269 9381 25820 31898 45090 45102 48266 64050 132203 132591 135377 136038 136907 138915 141159; do
 		echo >&2 "ASN$it"
-		echo
+
+		# curl -skL --speed-limit 50000 --speed-time 90 https://api.bgpview.io/asn/$it/prefixes | jq . >../../.asn/$it.json
+		# sleep 99
+
 		jq -r '.data.ipv4_prefixes[]|.prefix' ../../.asn/$it.json
-		# curl -skL --speed-limit 100000 --speed-time 30 https://api.bgpview.io/asn/$it/prefixes | jq -r '.data.ipv4_prefixes[]|.prefix' 2>/dev/null ||
-		#  curl -skL --speed-limit 50000 --speed-time 90 https://api.bgpview.io/asn/$it/prefixes | jq -r '.data.ipv4_prefixes[]|.prefix'
 	done)
 EOF
 
@@ -126,6 +127,8 @@ echo
 
 curl -sSL https://anti-ad.net/domains.txt -o adblock
 curl_githubusercontent https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts | sed -n 's+^0.0.0.0 *++p' >adblock.lite
+
+curl_githubusercontent https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts | sed -n 's+^127.0.0.1 *++p' | tee -a adblock adblock.lite >/dev/null
 curl_githubusercontent https://raw.githubusercontent.com/neodevpro/neodevhost/master/customblocklist | tee -a adblock adblock.lite >/dev/null
 curl_githubusercontent https://raw.githubusercontent.com/code-shiromi/Quantumult-X-Resources/main/remote/filters/ad.list |
 	sed -n 's+^HOST.*,\(.*\),AdBlock$+\1+p' | tee -a adblock adblock.lite >/dev/null
@@ -137,6 +140,7 @@ cat <<-EOF | tee -a adblock adblock.lite >/dev/null
 	api.msn.com
 	browser.events.data.msn.com
 EOF
+grep -v '^#' adblock.ext | sort -u | tee -a adblock adblock.lite >/dev/null
 
 echo >&2 "# adblock"
 time shadowsocks-helper tide -i adblock -o adblock
@@ -146,7 +150,9 @@ grep -Ex -f adblock.lite_whitelist adblock >adblock.lite
 
 # whitelist
 sed 's+\.$++g' -i adblock adblock.lite
+sed 's+localhost++g' -i adblock adblock.lite
 sed '/^bj.bcebos.com/d; /^puui.qpic.cn/d; /^zhanzhang.toutiao.com/d' -i adblock adblock.lite
+sed '/tencent-cloud/d' -i adblock adblock.lite
 sed '/weixinbridge/d' -i adblock adblock.lite
 sed '/bootcdn.net/d' -i adblock adblock.lite
 sed '/wns.windows.com/d' -i adblock adblock.lite
@@ -178,8 +184,6 @@ curl_githubusercontent https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Rule
 	sed -n 's+^DOMAIN[^,]*,++p' >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/marsgogo/Surge/main/Weixin.list |
 	sed -n 's+^DOMAIN[^,]*,++p' >>direct.new
-curl_githubusercontent https://raw.githubusercontent.com/JC-SYSU/test/main/WhiteList.list |
-	awk -F',' '{print $2}' | sed '/[0-9]$/d' >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list |
 	sed -n 's+^DOMAIN[^,]*,++p' >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list |

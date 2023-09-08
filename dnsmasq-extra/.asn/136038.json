@@ -1,286 +1,286 @@
 {
-    "status": "ok",
-    "status_message": "Query was successful",
-    "data": {
-        "ipv4_prefixes": [
-            {
-                "prefix": "2.59.154.0/24",
-                "ip": "2.59.154.0",
-                "cidr": 24,
-                "roa_status": "Valid",
-                "name": null,
-                "description": null,
-                "country_code": "HK",
-                "parent": {
-                    "prefix": "2.56.204.0/22",
-                    "ip": "2.56.204.0",
-                    "cidr": 22,
-                    "rir_name": "RIPE",
-                    "allocation_status": "unknown"
-                }
-            },
-            {
-                "prefix": "2.59.155.0/24",
-                "ip": "2.59.155.0",
-                "cidr": 24,
-                "roa_status": "Valid",
-                "name": null,
-                "description": null,
-                "country_code": "HK",
-                "parent": {
-                    "prefix": "2.59.152.0/22",
-                    "ip": "2.59.152.0",
-                    "cidr": 22,
-                    "rir_name": "RIPE",
-                    "allocation_status": "unknown"
-                }
-            },
-            {
-                "prefix": "45.91.226.0/24",
-                "ip": "45.91.226.0",
-                "cidr": 24,
-                "roa_status": "Valid",
-                "name": null,
-                "description": null,
-                "country_code": "HK",
-                "parent": {
-                    "prefix": "45.91.224.0/22",
-                    "ip": "45.91.224.0",
-                    "cidr": 22,
-                    "rir_name": "RIPE",
-                    "allocation_status": "unknown"
-                }
-            },
-            {
-                "prefix": "45.91.227.0/24",
-                "ip": "45.91.227.0",
-                "cidr": 24,
-                "roa_status": "Valid",
-                "name": null,
-                "description": null,
-                "country_code": "HK",
-                "parent": {
-                    "prefix": "45.91.224.0/22",
-                    "ip": "45.91.224.0",
-                    "cidr": 22,
-                    "rir_name": "RIPE",
-                    "allocation_status": "unknown"
-                }
-            },
-            {
-                "prefix": "45.142.152.0/24",
-                "ip": "45.142.152.0",
-                "cidr": 24,
-                "roa_status": "Valid",
-                "name": null,
-                "description": null,
-                "country_code": "HK",
-                "parent": {
-                    "prefix": "45.142.152.0/22",
-                    "ip": "45.142.152.0",
-                    "cidr": 22,
-                    "rir_name": "RIPE",
-                    "allocation_status": "unknown"
-                }
-            },
-            {
-                "prefix": "45.142.155.0/24",
-                "ip": "45.142.155.0",
-                "cidr": 24,
-                "roa_status": "Valid",
-                "name": null,
-                "description": null,
-                "country_code": "HK",
-                "parent": {
-                    "prefix": "45.142.152.0/22",
-                    "ip": "45.142.152.0",
-                    "cidr": 22,
-                    "rir_name": "RIPE",
-                    "allocation_status": "unknown"
-                }
-            },
-            {
-                "prefix": "103.80.135.0/24",
-                "ip": "103.80.135.0",
-                "cidr": 24,
-                "roa_status": "Valid",
-                "name": "ALLCLOUD_KR",
-                "description": "HDTIDC LIMITED",
-                "country_code": "KR",
-                "parent": {
-                    "prefix": "103.80.132.0/22",
-                    "ip": "103.80.132.0",
-                    "cidr": 22,
-                    "rir_name": "APNIC",
-                    "allocation_status": "unknown"
-                }
-            },
-            {
-                "prefix": "103.254.72.0/24",
-                "ip": "103.254.72.0",
-                "cidr": 24,
-                "roa_status": "Valid",
-                "name": "ALLCLOUD_HK",
-                "description": "ALLCLOUD_HK",
-                "country_code": "HK",
-                "parent": {
-                    "prefix": "103.254.72.0/22",
-                    "ip": "103.254.72.0",
-                    "cidr": 22,
-                    "rir_name": "APNIC",
-                    "allocation_status": "unknown"
-                }
-            },
-            {
-                "prefix": "103.254.74.0/24",
-                "ip": "103.254.74.0",
-                "cidr": 24,
-                "roa_status": "Valid",
-                "name": "ALLCLOUD_JP",
-                "description": "HDTIDC LIMITED",
-                "country_code": "JP",
-                "parent": {
-                    "prefix": "103.254.72.0/22",
-                    "ip": "103.254.72.0",
-                    "cidr": 22,
-                    "rir_name": "APNIC",
-                    "allocation_status": "unknown"
-                }
-            },
-            {
-                "prefix": "103.254.75.0/24",
-                "ip": "103.254.75.0",
-                "cidr": 24,
-                "roa_status": "Valid",
-                "name": "ALLCLOUD_HK",
-                "description": "HDTIDC LIMITED",
-                "country_code": "HK",
-                "parent": {
-                    "prefix": "103.254.72.0/22",
-                    "ip": "103.254.72.0",
-                    "cidr": 22,
-                    "rir_name": "APNIC",
-                    "allocation_status": "unknown"
-                }
-            },
-            {
-                "prefix": "185.202.103.0/24",
-                "ip": "185.202.103.0",
-                "cidr": 24,
-                "roa_status": "Valid",
-                "name": null,
-                "description": null,
-                "country_code": "CN",
-                "parent": {
-                    "prefix": "185.202.100.0/22",
-                    "ip": "185.202.100.0",
-                    "cidr": 22,
-                    "rir_name": "RIPE",
-                    "allocation_status": "unknown"
-                }
-            },
-            {
-                "prefix": "192.51.188.0/24",
-                "ip": "192.51.188.0",
-                "cidr": 24,
-                "roa_status": "Valid",
-                "name": "ZADCTL-CN",
-                "description": "Zhengzhou, a Dream Computer Technology Limited",
-                "country_code": "CN",
-                "parent": {
-                    "prefix": "192.51.188.0/24",
-                    "ip": "192.51.188.0",
-                    "cidr": 24,
-                    "rir_name": "APNIC",
-                    "allocation_status": "unknown"
-                }
-            },
-            {
-                "prefix": "192.197.113.0/24",
-                "ip": "192.197.113.0",
-                "cidr": 24,
-                "roa_status": "Valid",
-                "name": "ZADCTL-CN",
-                "description": "Zhengzhou, a Dream Computer Technology Limited",
-                "country_code": "CN",
-                "parent": {
-                    "prefix": "192.197.113.0/24",
-                    "ip": "192.197.113.0",
-                    "cidr": 24,
-                    "rir_name": "APNIC",
-                    "allocation_status": "unknown"
-                }
-            },
-            {
-                "prefix": "193.239.154.0/24",
-                "ip": "193.239.154.0",
-                "cidr": 24,
-                "roa_status": "Valid",
-                "name": null,
-                "description": null,
-                "country_code": "HK",
-                "parent": {
-                    "prefix": "195.214.64.0/18",
-                    "ip": "195.214.64.0",
-                    "cidr": 18,
-                    "rir_name": "RIPE",
-                    "allocation_status": "unknown"
-                }
-            },
-            {
-                "prefix": "194.126.202.0/24",
-                "ip": "194.126.202.0",
-                "cidr": 24,
-                "roa_status": "Valid",
-                "name": "HK-ALLCLOUD2-20191122",
-                "description": "ALLCLOUD Limited",
-                "country_code": "GB",
-                "parent": {
-                    "prefix": "194.126.202.0/24",
-                    "ip": "194.126.202.0",
-                    "cidr": 24,
-                    "rir_name": "RIPE",
-                    "allocation_status": "unknown"
-                }
-            },
-            {
-                "prefix": "194.126.227.0/24",
-                "ip": "194.126.227.0",
-                "cidr": 24,
-                "roa_status": "None",
-                "name": null,
-                "description": null,
-                "country_code": "HK",
-                "parent": {
-                    "prefix": "194.126.227.0/24",
-                    "ip": "194.126.227.0",
-                    "cidr": 24,
-                    "rir_name": "RIPE",
-                    "allocation_status": "unknown"
-                }
-            },
-            {
-                "prefix": "199.212.57.0/24",
-                "ip": "199.212.57.0",
-                "cidr": 24,
-                "roa_status": "Valid",
-                "name": "ZADCTL-CN",
-                "description": "Zhengzhou, a Dream Computer Technology Limited",
-                "country_code": "CN",
-                "parent": {
-                    "prefix": "199.212.57.0/24",
-                    "ip": "199.212.57.0",
-                    "cidr": 24,
-                    "rir_name": "APNIC",
-                    "allocation_status": "unknown"
-                }
-            }
-        ],
-        "ipv6_prefixes": []
-    },
-    "@meta": {
-        "time_zone": "UTC",
-        "api_version": 1,
-        "execution_time": "26.03 ms"
-    }
+  "status": "ok",
+  "status_message": "Query was successful",
+  "data": {
+    "ipv4_prefixes": [
+      {
+        "prefix": "2.59.154.0/24",
+        "ip": "2.59.154.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": "HK",
+        "parent": {
+          "prefix": "2.56.204.0/22",
+          "ip": "2.56.204.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2.59.155.0/24",
+        "ip": "2.59.155.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": "HK",
+        "parent": {
+          "prefix": "2.59.152.0/22",
+          "ip": "2.59.152.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.91.226.0/24",
+        "ip": "45.91.226.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": "HK",
+        "parent": {
+          "prefix": "45.91.224.0/22",
+          "ip": "45.91.224.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.91.227.0/24",
+        "ip": "45.91.227.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": "HK",
+        "parent": {
+          "prefix": "45.91.224.0/22",
+          "ip": "45.91.224.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.142.152.0/24",
+        "ip": "45.142.152.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": "HK",
+        "parent": {
+          "prefix": "45.142.152.0/22",
+          "ip": "45.142.152.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.142.155.0/24",
+        "ip": "45.142.155.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": "HK",
+        "parent": {
+          "prefix": "45.142.152.0/22",
+          "ip": "45.142.152.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "103.80.135.0/24",
+        "ip": "103.80.135.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "ALLCLOUD_KR",
+        "description": "HDTIDC LIMITED",
+        "country_code": "KR",
+        "parent": {
+          "prefix": "103.80.132.0/22",
+          "ip": "103.80.132.0",
+          "cidr": 22,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "103.254.72.0/24",
+        "ip": "103.254.72.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "ALLCLOUD_HK",
+        "description": "ALLCLOUD_HK",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "103.254.72.0/22",
+          "ip": "103.254.72.0",
+          "cidr": 22,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "103.254.74.0/24",
+        "ip": "103.254.74.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "ALLCLOUD_JP",
+        "description": "HDTIDC LIMITED",
+        "country_code": "JP",
+        "parent": {
+          "prefix": "103.254.72.0/22",
+          "ip": "103.254.72.0",
+          "cidr": 22,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "103.254.75.0/24",
+        "ip": "103.254.75.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "ALLCLOUD_HK",
+        "description": "HDTIDC LIMITED",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "103.254.72.0/22",
+          "ip": "103.254.72.0",
+          "cidr": 22,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.202.103.0/24",
+        "ip": "185.202.103.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": "CN",
+        "parent": {
+          "prefix": "185.202.100.0/22",
+          "ip": "185.202.100.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "192.51.188.0/24",
+        "ip": "192.51.188.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "ZADCTL-CN",
+        "description": "Zhengzhou, a Dream Computer Technology Limited",
+        "country_code": "CN",
+        "parent": {
+          "prefix": "192.51.188.0/24",
+          "ip": "192.51.188.0",
+          "cidr": 24,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "192.197.113.0/24",
+        "ip": "192.197.113.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "ZADCTL-CN",
+        "description": "Zhengzhou, a Dream Computer Technology Limited",
+        "country_code": "CN",
+        "parent": {
+          "prefix": "192.197.113.0/24",
+          "ip": "192.197.113.0",
+          "cidr": 24,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "193.239.154.0/24",
+        "ip": "193.239.154.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": "HK",
+        "parent": {
+          "prefix": "195.214.64.0/18",
+          "ip": "195.214.64.0",
+          "cidr": 18,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "194.126.202.0/24",
+        "ip": "194.126.202.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "HK-ALLCLOUD2-20191122",
+        "description": "ALLCLOUD Limited",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "194.126.202.0/24",
+          "ip": "194.126.202.0",
+          "cidr": 24,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "194.126.219.0/24",
+        "ip": "194.126.219.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "HK-ALLCLOUD2-20191122",
+        "description": "ALLCLOUD Limited",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "194.126.219.0/24",
+          "ip": "194.126.219.0",
+          "cidr": 24,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "199.212.57.0/24",
+        "ip": "199.212.57.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "ZADCTL-CN",
+        "description": "Zhengzhou, a Dream Computer Technology Limited",
+        "country_code": "CN",
+        "parent": {
+          "prefix": "199.212.57.0/24",
+          "ip": "199.212.57.0",
+          "cidr": 24,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      }
+    ],
+    "ipv6_prefixes": []
+  },
+  "@meta": {
+    "time_zone": "UTC",
+    "api_version": 1,
+    "execution_time": "404.5 ms"
+  }
 }
