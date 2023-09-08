@@ -63,6 +63,7 @@ start_service() {
 	uci_bool_by_type $NAME cache && cat <<-EOF >>"/var/etc/${NAME}.conf"
 		cache-size 1024
 		cache-file /tmp/smartdns.cache
+		cache-checkpoint-time 600
 		serve-expired yes
 		prefetch-domain yes
 	EOF
@@ -75,17 +76,12 @@ start_service() {
 		rr-ttl-min 120
 		max-reply-ip-num 2
 		rr-ttl-reply-max 600
+		expand-ptr-from-address yes
 		response-mode $(uci_get_by_type $NAME response_mode)
 		speed-check-mode $(uci_get_by_type $NAME speed_check_mode)
 		$(
 			for it in $(uci_get_by_type $NAME extra_rules | sed "s+ +_+g; s+'_'+ +g; s+'++g"); do
 				echo "domain-rules $it" | sed 's+_+ +g'
-			done
-		)
-
-		$(
-			for it in $(uci_get_by_type $NAME cnames); do
-				echo "cname $it"
 			done
 		)
 
@@ -98,7 +94,15 @@ start_service() {
 		log-size 256K
 		log-num 3
 
-		address /dns11.quad9.net/149.112.112.11
+		$(
+			for cfg in address cname ignore_ip; do
+				for it in $(uci_get_by_type $NAME $cfg); do
+					echo "$cfg $it"
+				done
+				echo
+			done
+		)
+
 		$(
 			for it in $(uci_get_by_type $NAME bootstrap); do
 				echo "server ${it} -bootstrap-dns"
@@ -125,11 +129,6 @@ start_service() {
 				done
 			done
 		)
-
-		$(
-			for it in $(uci_get_by_type $NAME ignore_ip); do echo "ignore-ip ${it}"; done
-		)
-
 	EOF
 
 	start_instance /usr/bin/$NAME -p- -c "/var/etc/${NAME}.conf" -f
@@ -140,6 +139,7 @@ start_service() {
 		uci_bool_by_type $NAME cache && cat <<-EOF >>"/var/etc/${NAME}_cn.conf"
 			cache-size 2048
 			cache-file /tmp/smartdns_cn.cache
+			cache-checkpoint-time 600
 			serve-expired yes
 			prefetch-domain yes
 		EOF
@@ -147,22 +147,17 @@ start_service() {
 		cat <<-EOF >>"/var/etc/${NAME}_cn.conf"
 			cache-persist $(uci_bool_by_type $NAME cache && echo 'yes' || echo 'no')
 			bind 0.0.0.0:$((port + 1))$(uci_bool_by_type $NAME cache || echo ' -no-cache')
-			bind-tcp 0.0.0.0:$((port + 1))$(uci_bool_by_type $NAME cache  || echo ' -no-cache')
+			bind-tcp 0.0.0.0:$((port + 1))$(uci_bool_by_type $NAME cache || echo ' -no-cache')
 
 			rr-ttl-min 300
 			max-reply-ip-num 4
 			rr-ttl-reply-max 120
+			expand-ptr-from-address yes
 			response-mode $(uci_get_by_type $NAME response_mode)
 			speed-check-mode $(uci_get_by_type $NAME speed_check_mode)
 			$(
 				for it in $(uci_get_by_type $NAME extra_rules | sed "s+ +_+g; s+'_'+ +g; s+'++g"); do
 					echo "domain-rules $it" | sed 's+_+ +g'
-				done
-			)
-
-			$(
-				for it in $(uci_get_by_type $NAME cnames); do
-					echo "cname $it"
 				done
 			)
 
@@ -175,6 +170,14 @@ start_service() {
 			log-size 256K
 			log-num 3
 
+			$(
+				for cfg in address cname ignore_ip; do
+					for it in $(uci_get_by_type $NAME $cfg); do
+						echo "$cfg $it"
+					done
+					echo
+				done
+			)
 			$(
 				for it in $(uci_get_by_type $NAME bootstrap); do
 					echo "server ${it} -bootstrap-dns"
@@ -189,12 +192,7 @@ start_service() {
 			server-https https://1.12.12.12/dns-query -host-name doh.pub -tls-host-verify
 			server-https https://223.5.5.5/dns-query -host-name dns.alidns.com -tls-host-verify
 			server-https https://223.6.6.6/dns-query -host-name dns.alidns.com -tls-host-verify
-			server-https https://doh.360.cn/dns-query -host-name doh.360.cn -tls-host-verify
-
-			$(
-				for it in $(uci_get_by_type $NAME ignore_ip); do echo "ignore-ip ${it}"; done
-			)
-
+			# server-https https://doh.360.cn/dns-query -host-name doh.360.cn -tls-host-verify
 		EOF
 
 		uci_bool_by_type $NAME enable_cdn_cn && {
@@ -237,6 +235,7 @@ start_service() {
 				domain-rules /alikunlun.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /ks-cdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /zhimg.com/ -nameserver cdn -speed-check-mode tcp:443,ping
+				domain-rules /qpic.cn/ -nameserver cdn -speed-check-mode tcp:443,ping
 			EOF
 		}
 
