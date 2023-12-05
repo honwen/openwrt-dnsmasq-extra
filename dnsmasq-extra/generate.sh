@@ -11,7 +11,8 @@ _path=$(dirname $(readlink -f $0))
 
 curl_githubusercontent() {
 	url="$1"
-	curl -skL --speed-limit 100000 --speed-time 10 "https://ghproxy.com/${url}" ||
+	curl -skL --speed-limit 100000 --speed-time 10 "https://mirror.ghproxy.com/${url}" ||
+		curl -skL --speed-limit 100000 --speed-time 10 "https://hub.gitmirror.com/${url}" ||
 		curl -skL --speed-limit 100000 --speed-time 10 "https://ghproxy.net/${url}" ||
 		curl -skL --speed-limit 100000 --speed-time 10 "$(echo ${url} | sed 's+raw.githubusercontent.com+cdn.staticaly.com/gh+g')" ||
 		curl -skL --speed-limit 100000 --speed-time 10 "${url}"
@@ -60,11 +61,11 @@ time cidr-merger <<-EOF >chnroute.txt.new
 			sed -n 's+IP-CIDR,\(.*\),no-resolve+\1+p'
 	)
 
-	$(for it in 3462 9269 9381 25820 31898 45090 45102 48266 64050 132203 132591 135377 136038 136907 138915 141159; do
+	$(for it in 3462 9269 9381 25820 31898 35916 36352 45090 45102 48266 64050 132203 132591 135377 136038 136907 138915 141159; do
 		echo >&2 "ASN$it"
 
 		# curl -skL --speed-limit 50000 --speed-time 90 https://api.bgpview.io/asn/$it/prefixes | jq . >../../.asn/$it.json
-		# sleep 99
+		# sleep 33
 
 		jq -r '.data.ipv4_prefixes[]|.prefix' ../../.asn/$it.json
 	done)
@@ -113,6 +114,7 @@ rm -f chnroute.txt.*
 echo >&2 "# gfwlist"
 time shadowsocks-helper gfwlist >gfwlist
 sed '/^google.*analytics.com$/d' -i gfwlist
+sed '/^apple.com$/d' -i gfwlist
 # ------------------ gfwlist ------------------
 
 # ------------------ gfwlist.lite ------------------
@@ -156,6 +158,7 @@ sed '/tencent-cloud/d' -i adblock adblock.lite
 sed '/weixinbridge/d' -i adblock adblock.lite
 sed '/bootcdn.net/d' -i adblock adblock.lite
 sed '/wns.windows.com/d' -i adblock adblock.lite
+sed '/e.189.cn/d' -i adblock adblock.lite
 sed '/ip-api.com/d; /pv.sohu.com/d' -i adblock adblock.lite
 sed '/click.simba.taobao.com/d' -i adblock adblock.lite
 sed '/click.union.vip.com/d; /ms.vipstatic.com/d' -i adblock adblock.lite
@@ -166,7 +169,6 @@ rm adblock.lite_*
 curl_githubusercontent https://raw.githubusercontent.com/pexcn/daily/gh-pages/chinalist/chinalist.txt >direct.pexcn
 
 start=$(($(sed -n -e '/^whatismyip.akamai.com$/=' direct) + 1))
-# $(sed -n "$start,99999p" direct)
 cat <<-EOF | sort -u >direct.new
 	$(sed '/^www.apple.com$/,+99999d' direct.pexcn)
 EOF
@@ -180,7 +182,7 @@ curl_githubusercontent https://raw.githubusercontent.com/pluwen/china-domain-all
 	sed -n 's+^*\.++p' | sed '/apple/d; /akadns/d; /doubleclick/d' >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/eliozy/Qumtumult-X/master/Filter/WeChat.list |
 	sed -n 's+^DOMAIN-SUFFIX,++p' | sed 's+,.*++g' >>direct.new
-curl_githubusercontent https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Ruleset/Wechat.list |
+curl_githubusercontent https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Wechat.list |
 	sed -n 's+^DOMAIN[^,]*,++p' >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/marsgogo/Surge/main/Weixin.list |
 	sed -n 's+^DOMAIN[^,]*,++p' >>direct.new
@@ -202,6 +204,7 @@ sed '/sci-hub/d; /scihub/d; /gitbook/d' -i direct.new
 sed '/ebay/d; /lazada/d; /yandex/d' -i direct.new
 cat adblock adblock.lite gfwlist >direct.blacklist
 sed "$start,99999d" direct >>direct.blacklist
+sed 's+\.+\\.+g' -i direct.blacklist
 grep -Fv -f direct.blacklist direct.new >direct.sum
 
 echo >&2 "# direct.sum"
