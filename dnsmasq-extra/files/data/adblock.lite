@@ -165,6 +165,7 @@ www.grjs01.com
 irs01.com
 dai18.mumu01.com
 jian18.mumu01.com
+www.a0b11.com
 m.guanren11.com
 q.ox11.com
 youyijia021.com
@@ -194,6 +195,7 @@ woaizhongguo.cdn111222.com
 www.jinshagt222.com
 www.um0592.com
 www.83692.com
+httpdns.c.cdnhwc2.com
 count.wk2.com
 beacons.gcp.gvt2.com
 gm.uc003.com
@@ -483,6 +485,7 @@ rank.hit.china.com
 tongji.wlongchina.com
 miaobeichina.com
 flstudiochina.com
+xiazai.crossoverchina.com
 analytics3.starschina.com
 ssp.cibn.starschina.com
 app.starschina.com
@@ -1420,6 +1423,7 @@ browser.sentry-cdn.com
 s.17173cdn.com
 sm.domobcdn.com
 acdcdn.com
+pix.tagcdn.com
 static.baixingcdn.com
 atanx2.alicdn.com
 alimama.alicdn.com
@@ -1546,10 +1550,6 @@ www.18dusun.com
 hxsame.hexun.com
 utrack.hexun.com
 itv.hexun.com
-lx-upload-log.yidianzixun.com
-l.yidianzixun.com
-s.yidianzixun.com
-imagelx.yidianzixun.com
 ad.1kxun.com
 wpan.sc2yun.com
 ye.dun.163yun.com
@@ -2059,6 +2059,7 @@ hzyd.cdn.bcebos.com
 mobads-pre-config.cdn.bcebos.com
 cpu-baidu-com-block.cdn.bcebos.com
 xsapp.cdn.bcebos.com
+staticsns.cdn.bcebos.com
 adbuyer3.lycos.com
 cm8.lycos.com
 guestworld.tripod.lycos.com
@@ -2424,6 +2425,7 @@ mvads.kugou.com
 log.stat.kugou.com
 kgmobilestat.kugou.com
 adserviceretry.kugou.com
+static.m.sjzhushou.com
 b.tvsou.com
 gw.365you.com
 imgapp.yeyou.com
@@ -2620,6 +2622,7 @@ tapjoy.com
 e.khuoy.com
 m.khuoy.com
 c.cyto-biotherapy.com
+a9.xlgqy.com
 app.xyjqy.com
 omnikool.discovery.com
 flurry.com
@@ -3006,7 +3009,6 @@ log.mix.sina.com.cn
 interest.mix.sina.com.cn
 domob.com.cn
 adeq.hiidc.com.cn
-sdktmp.hubcloud.com.cn
 www.fastcache.com.cn
 pmm.people.com.cn
 33.autohome.com.cn
@@ -3100,8 +3102,6 @@ bjdnserror7.wo.com.cn
 lndnserror7.wo.com.cn
 sddnserror8.wo.com.cn
 sddnserror9.wo.com.cn
-bd3.idgdmgroup.com.cn
-bd4.idgdmgroup.com.cn
 js.idgdmgroup.com.cn
 bs.csshq.com.cn
 d0.xcar.com.cn

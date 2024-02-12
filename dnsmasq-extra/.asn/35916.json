@@ -4,22 +4,6 @@
   "data": {
     "ipv4_prefixes": [
       {
-        "prefix": "23.234.192.0/18",
-        "ip": "23.234.192.0",
-        "cidr": 18,
-        "roa_status": "Valid",
-        "name": "MULTA-NET16",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "23.234.192.0/18",
-          "ip": "23.234.192.0",
-          "cidr": 18,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "23.236.72.0/24",
         "ip": "23.236.72.0",
         "cidr": 24,
@@ -100,26 +84,10 @@
         }
       },
       {
-        "prefix": "43.226.24.0/22",
-        "ip": "43.226.24.0",
-        "cidr": 22,
-        "roa_status": "Valid",
-        "name": "MULTA",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "43.226.24.0/22",
-          "ip": "43.226.24.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "45.194.80.0/20",
         "ip": "45.194.80.0",
         "cidr": 20,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "Cloud-Innovation-v4-I",
         "description": "Cloud Innovation Ltd",
         "country_code": "MU",
@@ -292,70 +260,6 @@
         }
       },
       {
-        "prefix": "46.37.119.0/24",
-        "ip": "46.37.119.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": null,
-        "description": null,
-        "country_code": "GB",
-        "parent": {
-          "prefix": "45.227.44.0/22",
-          "ip": "45.227.44.0",
-          "cidr": 22,
-          "rir_name": "Lacnic",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "50.114.51.0/24",
-        "ip": "50.114.51.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HEFICED",
-        "description": "IPXO LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "50.114.0.0/16",
-          "ip": "50.114.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "50.114.123.0/24",
-        "ip": "50.114.123.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "IPXO",
-        "description": "IPXO LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "50.114.0.0/16",
-          "ip": "50.114.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "64.27.0.0/19",
-        "ip": "64.27.0.0",
-        "cidr": 19,
-        "roa_status": "Valid",
-        "name": "MULTA",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "64.27.0.0/19",
-          "ip": "64.27.0.0",
-          "cidr": 19,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "64.69.32.0/20",
         "ip": "64.69.32.0",
         "cidr": 20,
@@ -452,17 +356,17 @@
         }
       },
       {
-        "prefix": "66.152.160.0/19",
-        "ip": "66.152.160.0",
-        "cidr": 19,
+        "prefix": "69.80.226.0/24",
+        "ip": "69.80.226.0",
+        "cidr": 24,
         "roa_status": "Valid",
-        "name": "MULTA-NET4",
-        "description": "MULTACOM CORPORATION",
+        "name": "CUPCAKE-CLOUD-01",
+        "description": "Cupcake, Inc.",
         "country_code": "US",
         "parent": {
-          "prefix": "66.152.160.0/19",
-          "ip": "66.152.160.0",
-          "cidr": 19,
+          "prefix": "69.80.226.0/23",
+          "ip": "69.80.226.0",
+          "cidr": 23,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -479,22 +383,6 @@
           "prefix": "72.18.80.0/22",
           "ip": "72.18.80.0",
           "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "72.44.64.0/20",
-        "ip": "72.44.64.0",
-        "cidr": 20,
-        "roa_status": "Valid",
-        "name": "MULTA-NET5",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "72.44.64.0/20",
-          "ip": "72.44.64.0",
-          "cidr": 20,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -580,90 +468,10 @@
         }
       },
       {
-        "prefix": "96.43.80.0/20",
-        "ip": "96.43.80.0",
-        "cidr": 20,
-        "roa_status": "Valid",
-        "name": "MULTA-NET7",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "96.43.80.0/20",
-          "ip": "96.43.80.0",
-          "cidr": 20,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "96.45.160.0/20",
-        "ip": "96.45.160.0",
-        "cidr": 20,
-        "roa_status": "Valid",
-        "name": "MULTA-NET8",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "96.45.160.0/20",
-          "ip": "96.45.160.0",
-          "cidr": 20,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "100.42.64.0/20",
-        "ip": "100.42.64.0",
-        "cidr": 20,
-        "roa_status": "Valid",
-        "name": "MULTA-NET10",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "100.42.64.0/20",
-          "ip": "100.42.64.0",
-          "cidr": 20,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "102.129.148.0/24",
-        "ip": "102.129.148.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "Rainbow-Network-Limited",
-        "description": "Rainbow Network Limited",
-        "country_code": "US",
-        "parent": {
-          "prefix": "102.129.128.0/17",
-          "ip": "102.129.128.0",
-          "cidr": 17,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "103.101.28.0/24",
-        "ip": "103.101.28.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "XYPNTCL-CN",
-        "description": "Xiamen Yue Pu Network Technology Co., Ltd",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "103.101.28.0/22",
-          "ip": "103.101.28.0",
-          "cidr": 22,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "103.101.29.0/24",
         "ip": "103.101.29.0",
         "cidr": 24,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "XYPNTCL-CN",
         "description": "Xiamen Yue Pu Network Technology Co., Ltd",
         "country_code": "CN",
@@ -679,7 +487,7 @@
         "prefix": "103.127.158.0/24",
         "ip": "103.127.158.0",
         "cidr": 24,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "CLOUDPS-IN158",
         "description": "MicroHost Cloud",
         "country_code": "US",
@@ -724,22 +532,6 @@
         }
       },
       {
-        "prefix": "104.194.224.0/19",
-        "ip": "104.194.224.0",
-        "cidr": 19,
-        "roa_status": "Valid",
-        "name": "MULTA-NET18",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "104.194.224.0/19",
-          "ip": "104.194.224.0",
-          "cidr": 19,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "104.249.156.0/22",
         "ip": "104.249.156.0",
         "cidr": 22,
@@ -756,26 +548,10 @@
         }
       },
       {
-        "prefix": "108.166.192.0/19",
-        "ip": "108.166.192.0",
-        "cidr": 19,
-        "roa_status": "Valid",
-        "name": "MULTA-NET11",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "108.166.192.0/19",
-          "ip": "108.166.192.0",
-          "cidr": 19,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "134.195.208.0/24",
         "ip": "134.195.208.0",
         "cidr": 24,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "IPV4",
         "description": "CloudCone, LLC",
         "country_code": "US",
@@ -791,7 +567,7 @@
         "prefix": "134.195.209.0/24",
         "ip": "134.195.209.0",
         "cidr": 24,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "IPV4",
         "description": "CloudCone, LLC",
         "country_code": "US",
@@ -807,7 +583,7 @@
         "prefix": "134.195.210.0/24",
         "ip": "134.195.210.0",
         "cidr": 24,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "IPV4",
         "description": "CloudCone, LLC",
         "country_code": "US",
@@ -823,7 +599,7 @@
         "prefix": "134.195.211.0/24",
         "ip": "134.195.211.0",
         "cidr": 24,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "IPV4",
         "description": "CloudCone, LLC",
         "country_code": "US",
@@ -839,7 +615,7 @@
         "prefix": "140.174.4.0/22",
         "ip": "140.174.4.0",
         "cidr": 22,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "NTTA-140-174",
         "description": "NTT America, Inc.",
         "country_code": "US",
@@ -855,9 +631,9 @@
         "prefix": "142.171.0.0/16",
         "ip": "142.171.0.0",
         "cidr": 16,
-        "roa_status": "Valid",
-        "name": "STEN-BELL-171",
-        "description": "Bell Canada",
+        "roa_status": "None",
+        "name": "TACE",
+        "description": "TELUS Communications Inc.",
         "country_code": "CA",
         "parent": {
           "prefix": "142.171.0.0/16",
@@ -871,7 +647,7 @@
         "prefix": "142.171.200.0/24",
         "ip": "142.171.200.0",
         "cidr": 24,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "TACE",
         "description": "TELUS Communications Inc.",
         "country_code": "CA",
@@ -887,7 +663,7 @@
         "prefix": "148.135.0.0/17",
         "ip": "148.135.0.0",
         "cidr": 17,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "IPXO",
         "description": "Brander Group Inc.",
         "country_code": "US",
@@ -1172,22 +948,6 @@
         }
       },
       {
-        "prefix": "154.202.4.0/24",
-        "ip": "154.202.4.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "CSNE_Co_Ltd",
-        "description": "CSNE Co.,Ltd",
-        "country_code": "TH",
-        "parent": {
-          "prefix": "154.192.0.0/11",
-          "ip": "154.192.0.0",
-          "cidr": 11,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "154.203.0.0/17",
         "ip": "154.203.0.0",
         "cidr": 17,
@@ -1344,22 +1104,6 @@
           "ip": "154.192.0.0",
           "cidr": 11,
           "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "154.216.0.0/16",
-        "ip": "154.216.0.0",
-        "cidr": 16,
-        "roa_status": "None",
-        "name": "Cloud-Innovation-v4-II",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "SC",
-        "parent": {
-          "prefix": "159.192.0.0/16",
-          "ip": "159.192.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
       },
@@ -1748,82 +1492,18 @@
         }
       },
       {
-        "prefix": "170.178.192.0/19",
-        "ip": "170.178.192.0",
-        "cidr": 19,
-        "roa_status": "Valid",
-        "name": "MULTA-NET17",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "170.178.192.0/19",
-          "ip": "170.178.192.0",
-          "cidr": 19,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "173.82.0.0/16",
-        "ip": "173.82.0.0",
-        "cidr": 16,
-        "roa_status": "Valid",
-        "name": "MULTA-NET20",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "173.82.0.0/16",
-          "ip": "173.82.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "173.82.152.0/24",
-        "ip": "173.82.152.0",
+        "prefix": "172.111.57.0/24",
+        "ip": "172.111.57.0",
         "cidr": 24,
-        "roa_status": "Valid",
-        "name": "QUADCONE",
-        "description": "Quadcone, LLC",
+        "roa_status": "None",
+        "name": "WINSTRI-V4NET3",
+        "description": "Winstri Corporation",
         "country_code": "US",
         "parent": {
-          "prefix": "176.60.0.0/16",
-          "ip": "176.60.0.0",
-          "cidr": 16,
-          "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "173.82.163.0/24",
-        "ip": "173.82.163.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "MULTA-NET20",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "173.82.0.0/16",
-          "ip": "173.82.0.0",
-          "cidr": 16,
+          "prefix": "172.111.56.0/22",
+          "ip": "172.111.56.0",
+          "cidr": 22,
           "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "178.236.228.0/24",
-        "ip": "178.236.228.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "multacom",
-        "description": "multacom",
-        "country_code": "US",
-        "parent": {
-          "prefix": "180.212.0.0/15",
-          "ip": "180.212.0.0",
-          "cidr": 15,
-          "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
       },
@@ -1831,7 +1511,7 @@
         "prefix": "178.236.228.0/22",
         "ip": "178.236.228.0",
         "cidr": 22,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": null,
         "description": null,
         "country_code": "CN",
@@ -1844,10 +1524,26 @@
         }
       },
       {
+        "prefix": "178.236.228.0/24",
+        "ip": "178.236.228.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "multacom",
+        "description": "multacom",
+        "country_code": "US",
+        "parent": {
+          "prefix": "180.212.0.0/15",
+          "ip": "180.212.0.0",
+          "cidr": 15,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "185.77.224.0/22",
         "ip": "185.77.224.0",
         "cidr": 22,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": null,
         "description": null,
         "country_code": "US",
@@ -1863,7 +1559,7 @@
         "prefix": "188.208.142.0/24",
         "ip": "188.208.142.0",
         "cidr": 24,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "LEAPSWITCH-188-208-142-0-24",
         "description": "LEAPSWITCH 188 208 142 0 24",
         "country_code": "US",
@@ -1872,70 +1568,6 @@
           "ip": "188.208.140.0",
           "cidr": 22,
           "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "198.52.96.0/19",
-        "ip": "198.52.96.0",
-        "cidr": 19,
-        "roa_status": "Valid",
-        "name": "MULTA-NET14",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "198.52.96.0/19",
-          "ip": "198.52.96.0",
-          "cidr": 19,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "198.74.96.0/19",
-        "ip": "198.74.96.0",
-        "cidr": 19,
-        "roa_status": "Valid",
-        "name": "MULTA-NET13",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "198.74.96.0/19",
-          "ip": "198.74.96.0",
-          "cidr": 19,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "198.148.96.0/19",
-        "ip": "198.148.96.0",
-        "cidr": 19,
-        "roa_status": "Valid",
-        "name": "MULTA-NET12",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "198.148.96.0/19",
-          "ip": "198.148.96.0",
-          "cidr": 19,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "198.211.0.0/18",
-        "ip": "198.211.0.0",
-        "cidr": 18,
-        "roa_status": "Valid",
-        "name": "MULTA-NET15",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "198.211.0.0/18",
-          "ip": "198.211.0.0",
-          "cidr": 18,
-          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -2023,7 +1655,7 @@
         "prefix": "204.13.152.0/22",
         "ip": "204.13.152.0",
         "cidr": 22,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "MULTA-NET1",
         "description": "MULTACOM CORPORATION",
         "country_code": "US",
@@ -2031,54 +1663,6 @@
           "prefix": "204.13.152.0/22",
           "ip": "204.13.152.0",
           "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "204.15.72.0/21",
-        "ip": "204.15.72.0",
-        "cidr": 21,
-        "roa_status": "Valid",
-        "name": "MULTA-NET2",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "204.15.72.0/21",
-          "ip": "204.15.72.0",
-          "cidr": 21,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "205.172.176.0/22",
-        "ip": "205.172.176.0",
-        "cidr": 22,
-        "roa_status": "Valid",
-        "name": "MULTA",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "205.172.176.0/22",
-          "ip": "205.172.176.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "206.125.40.0/21",
-        "ip": "206.125.40.0",
-        "cidr": 21,
-        "roa_status": "Valid",
-        "name": "MULTA",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "206.125.40.0/21",
-          "ip": "206.125.40.0",
-          "cidr": 21,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -2116,54 +1700,6 @@
         }
       },
       {
-        "prefix": "208.64.224.0/21",
-        "ip": "208.64.224.0",
-        "cidr": 21,
-        "roa_status": "Valid",
-        "name": "MULTA-NET3",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "208.64.224.0/21",
-          "ip": "208.64.224.0",
-          "cidr": 21,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "208.70.72.0/21",
-        "ip": "208.70.72.0",
-        "cidr": 21,
-        "roa_status": "Valid",
-        "name": "MULTA",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "208.70.72.0/21",
-          "ip": "208.70.72.0",
-          "cidr": 21,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "208.70.79.0/24",
-        "ip": "208.70.79.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "MULTA",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "208.70.72.0/21",
-          "ip": "208.70.72.0",
-          "cidr": 21,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "208.162.36.0/22",
         "ip": "208.162.36.0",
         "cidr": 22,
@@ -2194,54 +1730,6 @@
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
-      },
-      {
-        "prefix": "216.24.240.0/20",
-        "ip": "216.24.240.0",
-        "cidr": 20,
-        "roa_status": "Valid",
-        "name": "MULTA-NET9",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "216.24.240.0/20",
-          "ip": "216.24.240.0",
-          "cidr": 20,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "216.127.160.0/19",
-        "ip": "216.127.160.0",
-        "cidr": 19,
-        "roa_status": "Valid",
-        "name": "MULTA-NET6",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "216.127.160.0/19",
-          "ip": "216.127.160.0",
-          "cidr": 19,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "216.240.128.0/19",
-        "ip": "216.240.128.0",
-        "cidr": 19,
-        "roa_status": "Valid",
-        "name": "MULTA",
-        "description": "MULTACOM CORPORATION",
-        "country_code": "US",
-        "parent": {
-          "prefix": "216.240.128.0/19",
-          "ip": "216.240.128.0",
-          "cidr": 19,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
       }
     ],
     "ipv6_prefixes": [
@@ -2249,7 +1737,7 @@
         "prefix": "2607:9a00::/32",
         "ip": "2607:9a00::",
         "cidr": 32,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "MULTA2",
         "description": "CALPOP.COM, INC.",
         "country_code": "US",
@@ -2265,7 +1753,7 @@
         "prefix": "2607:f130::/32",
         "ip": "2607:f130::",
         "cidr": 32,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "MULTA6-BLOCK1",
         "description": "MULTACOM CORPORATION",
         "country_code": "US",
@@ -2314,6 +1802,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "130.54 ms"
+    "execution_time": "102.54 ms"
   }
 }

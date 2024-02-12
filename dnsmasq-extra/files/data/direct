@@ -193,6 +193,7 @@ vss.im
 wht.im
 totheglory.im
 beacons.gcp.gvt2.com
+beacons.gvt2.com
 office365.com
 kunlunea.com
 hrtsea.com
@@ -220,6 +221,7 @@ hicloud.com
 jdkindle.com
 appleid.cdn-apple.com
 icloud.cdn-apple.com
+ml.cdn-apple.com
 app-site-association.cdn-apple.com
 updates-http.cdn-apple.com
 store.storeimages.cdn-apple.com
@@ -349,6 +351,7 @@ ubuntukylin.com
 deepin.com
 liepin.com
 zhipin.com
+bosszhipin.com
 zhaopin.com
 alizhaopin.com
 xiaomiyoupin.com
@@ -390,6 +393,7 @@ helpshift.com
 didialift.com
 kingsoft.com
 alisoft.com
+dl.delivery.mp.microsoft.com
 ksosoft.com
 iplaysoft.com
 jfrft.com
@@ -407,6 +411,18 @@ app-measurement.com
 icloud-content.com
 nanyangpt.com
 xz.pphimalayanrt.com
+byted-dast.com
+dhrest.com
+ipv6-test.com
+byte-test.com
+bdns-test.com
+volcdns-test.com
+bdsagslbtest.com
+geetest.com
+msftconnecttest.com
+pingwest.com
+tigerlust.com
+bytenewst.com
 qeeyou.com
 pengyou.com
 xunyou.com
@@ -450,8 +466,6 @@ toutiaoimg.cn
 gtimg.cn
 ieshuodong.cn
 saee.org.cn
-dota2.wmsj.cn
-csgo.wmsj.cn
 ifigma.design
 arco.design
 ics.design
@@ -467,6 +481,8 @@ gongyi.xin
 xin.xin
 philanthropy.xin
 kesong.co
+bilibili.co
+biliintl.co
 chdbits.co
 undraw.co
 steamdb.info
@@ -496,6 +512,7 @@ xitu.io
 xiaotu.io
 zimuzu.io
 draw.io
+tebex.io
 0o0.ooo
 lifan.ooo
 oekaki.so

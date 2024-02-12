@@ -52,10 +52,26 @@
         }
       },
       {
+        "prefix": "45.142.154.0/24",
+        "ip": "45.142.154.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "HK-ALLCLOUD-20190819",
+        "description": "ALLCLOUD Limited",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "45.142.152.0/22",
+          "ip": "45.142.152.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "103.80.135.0/24",
         "ip": "103.80.135.0",
         "cidr": 24,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "ALLCLOUD_KR",
         "description": "HDTIDC LIMITED",
         "country_code": "KR",
@@ -71,7 +87,7 @@
         "prefix": "103.254.72.0/24",
         "ip": "103.254.72.0",
         "cidr": 24,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "ALLCLOUD_HK",
         "description": "ALLCLOUD_HK",
         "country_code": "HK",
@@ -87,7 +103,7 @@
         "prefix": "103.254.75.0/24",
         "ip": "103.254.75.0",
         "cidr": 24,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "ALLCLOUD_HK",
         "description": "HDTIDC LIMITED",
         "country_code": "HK",
@@ -100,10 +116,26 @@
         }
       },
       {
+        "prefix": "185.202.103.0/24",
+        "ip": "185.202.103.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": "CN",
+        "parent": {
+          "prefix": "185.202.100.0/22",
+          "ip": "185.202.100.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "192.197.113.0/24",
         "ip": "192.197.113.0",
         "cidr": 24,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "ZADCTL-CN",
         "description": "Zhengzhou, a Dream Computer Technology Limited",
         "country_code": "CN",
@@ -119,7 +151,7 @@
         "prefix": "193.239.150.0/24",
         "ip": "193.239.150.0",
         "cidr": 24,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "HK-KIDCLIMITED1-20191017",
         "description": "KIDC Limited",
         "country_code": "HK",
@@ -132,29 +164,13 @@
         }
       },
       {
-        "prefix": "193.239.155.0/24",
-        "ip": "193.239.155.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "HK-KIDCLIMITED1-20191017",
-        "description": "KIDC Limited",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "193.239.154.0/23",
-          "ip": "193.239.154.0",
-          "cidr": 23,
-          "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "194.126.202.0/24",
         "ip": "194.126.202.0",
         "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HK-ALLCLOUD2-20191122",
-        "description": "ALLCLOUD Limited",
-        "country_code": "GB",
+        "roa_status": "None",
+        "name": "HK-HDTIDC-20191122",
+        "description": "HDTIDC LIMITED",
+        "country_code": "HK",
         "parent": {
           "prefix": "194.126.202.0/24",
           "ip": "194.126.202.0",
@@ -167,7 +183,7 @@
         "prefix": "199.212.57.0/24",
         "ip": "199.212.57.0",
         "cidr": 24,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "ZADCTL-CN",
         "description": "Zhengzhou, a Dream Computer Technology Limited",
         "country_code": "CN",
@@ -185,6 +201,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "16.65 ms"
+    "execution_time": "19.08 ms"
   }
 }

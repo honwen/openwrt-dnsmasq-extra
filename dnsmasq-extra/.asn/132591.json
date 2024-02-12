@@ -25,7 +25,7 @@
         "prefix": "240d:c010:50::/48",
         "ip": "240d:c010:50::",
         "cidr": 48,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "ACEVILLE PTE.LTD.",
         "country_code": "SG",
@@ -42,6 +42,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "14.79 ms"
+    "execution_time": "15.03 ms"
   }
 }

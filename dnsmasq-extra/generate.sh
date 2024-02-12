@@ -65,7 +65,7 @@ time cidr-merger <<-EOF >chnroute.txt.new
 		echo >&2 "ASN$it"
 
 		# curl -skL --speed-limit 50000 --speed-time 90 https://api.bgpview.io/asn/$it/prefixes | jq . >../../.asn/$it.json
-		# sleep 33
+		# sleep 11
 
 		jq -r '.data.ipv4_prefixes[]|.prefix' ../../.asn/$it.json
 	done)
@@ -236,6 +236,16 @@ done
 
 # ----------- ShadowrocketEx.conf ----------
 sed 's+^+IP-CIDR,+g; s+$+,no-resolve+g' chnroute.txt >$_path/.shadowrocket/cncidr.txt
+curl_githubusercontent https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/release/sr_top500_banlist.conf >$_path/.shadowrocket/banlist.conf
+curl_githubusercontent https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/release/sr_top500_whitelist.conf >$_path/.shadowrocket/whitelist.conf
+sed '/ios_rule_script/iDOMAIN-SET,https://raw.githubusercontent.com/honwen/openwrt-dnsmasq-extra/master/dnsmasq-extra/files/data/adblock.ext,REJECT' -i $_path/.shadowrocket/*list.conf
+sed 's+https://raw.githubusercontent.com+https://mirror.ghproxy.com/https://raw.githubusercontent.com+g' -i $_path/.shadowrocket/*list.conf
+sed '/^#/d' -i $_path/.shadowrocket/*list.conf
+sed -i '/MITM/,+2d' -i $_path/.shadowrocket/*list.conf
+
+sed '/^[ \t]*$/d' -i $_path/.shadowrocket/*list.conf
+sed 's+^\[+\n[+g' -i $_path/.shadowrocket/*list.conf
+sed '/./,$!d' -i $_path/.shadowrocket/*list.conf
 # ----------- ShadowrocketEx.conf ----------
 
 cd -
