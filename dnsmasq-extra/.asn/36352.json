@@ -6135,7 +6135,7 @@
         "prefix": "104.166.112.0/24",
         "ip": "104.166.112.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "MBH-NET1",
         "description": "MBH INC",
         "country_code": "US",
@@ -9124,22 +9124,6 @@
         }
       },
       {
-        "prefix": "107.172.152.0/24",
-        "ip": "107.172.152.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "CC-17",
-        "description": "ColoCrossing",
-        "country_code": "US",
-        "parent": {
-          "prefix": "106.8.0.0/15",
-          "ip": "106.8.0.0",
-          "cidr": 15,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "107.172.152.0/22",
         "ip": "107.172.152.0",
         "cidr": 22,
@@ -9152,6 +9136,22 @@
           "ip": "107.172.0.0",
           "cidr": 14,
           "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "107.172.152.0/24",
+        "ip": "107.172.152.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "CC-17",
+        "description": "ColoCrossing",
+        "country_code": "US",
+        "parent": {
+          "prefix": "106.8.0.0/15",
+          "ip": "106.8.0.0",
+          "cidr": 15,
+          "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
       },
@@ -17223,7 +17223,7 @@
         "prefix": "128.254.228.0/22",
         "ip": "128.254.228.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "FAST2",
         "description": "Fast Virtual Host",
         "country_code": "US",
@@ -17239,7 +17239,7 @@
         "prefix": "141.98.46.0/24",
         "ip": "141.98.46.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": null,
         "description": null,
         "country_code": "DE",
@@ -17431,7 +17431,7 @@
         "prefix": "162.245.100.0/22",
         "ip": "162.245.100.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "FASTVHOST-IPV4-RANGE1",
         "description": "Fast Virtual Host",
         "country_code": "US",
@@ -19495,7 +19495,7 @@
         "prefix": "185.142.25.0/24",
         "ip": "185.142.25.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "SUBNET-H-41",
         "description": "Digital Energy Technologies Limited",
         "country_code": "US",
@@ -23576,9 +23576,9 @@
         "ip": "193.218.188.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "FMS-CHELYABINSK-NET",
-        "description": "Bagira LLC",
-        "country_code": "RU",
+        "name": "RU-IPSERVER-20120510",
+        "description": "IP SERVER LLC",
+        "country_code": "US",
         "parent": {
           "prefix": "193.218.188.0/24",
           "ip": "193.218.188.0",
@@ -23591,7 +23591,7 @@
         "prefix": "194.31.143.0/24",
         "ip": "194.31.143.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "SMARTHOST",
         "description": "SMARTHOST",
         "country_code": "US",
@@ -24932,9 +24932,9 @@
         }
       },
       {
-        "prefix": "198.46.128.0/24",
+        "prefix": "198.46.128.0/21",
         "ip": "198.46.128.0",
-        "cidr": 24,
+        "cidr": 21,
         "roa_status": "None",
         "name": "CC-13",
         "description": "ColoCrossing",
@@ -24948,9 +24948,9 @@
         }
       },
       {
-        "prefix": "198.46.128.0/21",
+        "prefix": "198.46.128.0/24",
         "ip": "198.46.128.0",
-        "cidr": 21,
+        "cidr": 24,
         "roa_status": "None",
         "name": "CC-13",
         "description": "ColoCrossing",
@@ -26311,7 +26311,7 @@
         "prefix": "205.234.203.0/24",
         "ip": "205.234.203.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "SCNET-205-234-203-0-24",
         "description": "ColoCrossing",
         "country_code": "US",
@@ -26761,6 +26761,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "780.08 ms"
+    "execution_time": "753.45 ms"
   }
 }

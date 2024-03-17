@@ -4,38 +4,6 @@
   "data": {
     "ipv4_prefixes": [
       {
-        "prefix": "1.12.0.0/18",
-        "ip": "1.12.0.0",
-        "cidr": 18,
-        "roa_status": "None",
-        "name": "TencentCloud",
-        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "1.12.0.0/14",
-          "ip": "1.12.0.0",
-          "cidr": 14,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "1.12.0.0/20",
-        "ip": "1.12.0.0",
-        "cidr": 20,
-        "roa_status": "None",
-        "name": "TencentCloud",
-        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "1.12.0.0/14",
-          "ip": "1.12.0.0",
-          "cidr": 14,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "1.12.0.0/14",
         "ip": "1.12.0.0",
         "cidr": 14,
@@ -52,9 +20,9 @@
         }
       },
       {
-        "prefix": "1.12.14.0/23",
-        "ip": "1.12.14.0",
-        "cidr": 23,
+        "prefix": "1.12.0.0/18",
+        "ip": "1.12.0.0",
+        "cidr": 18,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -68,8 +36,8 @@
         }
       },
       {
-        "prefix": "1.12.34.0/23",
-        "ip": "1.12.34.0",
+        "prefix": "1.12.14.0/23",
+        "ip": "1.12.14.0",
         "cidr": 23,
         "roa_status": "None",
         "name": "TencentCloud",
@@ -708,9 +676,9 @@
         }
       },
       {
-        "prefix": "42.194.128.0/18",
+        "prefix": "42.194.128.0/17",
         "ip": "42.194.128.0",
-        "cidr": 18,
+        "cidr": 17,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -724,9 +692,9 @@
         }
       },
       {
-        "prefix": "42.194.128.0/17",
+        "prefix": "42.194.128.0/18",
         "ip": "42.194.128.0",
-        "cidr": 17,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -756,13 +724,13 @@
         }
       },
       {
-        "prefix": "43.136.0.0/14",
+        "prefix": "43.136.0.0/18",
         "ip": "43.136.0.0",
-        "cidr": 14,
+        "cidr": 18,
         "roa_status": "None",
-        "name": "APNIC-AP-ERX",
-        "description": "Asia Pacific Network Information Center, Pty. Ltd.",
-        "country_code": "AU",
+        "name": "TENCENT-CN",
+        "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
+        "country_code": "CN",
         "parent": {
           "prefix": "43.136.0.0/13",
           "ip": "43.136.0.0",
@@ -772,13 +740,13 @@
         }
       },
       {
-        "prefix": "43.136.0.0/18",
+        "prefix": "43.136.0.0/14",
         "ip": "43.136.0.0",
-        "cidr": 18,
+        "cidr": 14,
         "roa_status": "None",
-        "name": "TENCENT-CN",
-        "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
-        "country_code": "CN",
+        "name": "APNIC-AP-ERX",
+        "description": "Asia Pacific Network Information Center, Pty. Ltd.",
+        "country_code": "AU",
         "parent": {
           "prefix": "43.136.0.0/13",
           "ip": "43.136.0.0",
@@ -1444,9 +1412,9 @@
         }
       },
       {
-        "prefix": "45.40.192.0/18",
+        "prefix": "45.40.192.0/22",
         "ip": "45.40.192.0",
-        "cidr": 18,
+        "cidr": 22,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -1460,9 +1428,9 @@
         }
       },
       {
-        "prefix": "45.40.192.0/22",
+        "prefix": "45.40.192.0/18",
         "ip": "45.40.192.0",
-        "cidr": 22,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -2836,9 +2804,9 @@
         }
       },
       {
-        "prefix": "62.234.0.0/16",
+        "prefix": "62.234.0.0/20",
         "ip": "62.234.0.0",
-        "cidr": 16,
+        "cidr": 20,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -2852,9 +2820,9 @@
         }
       },
       {
-        "prefix": "62.234.0.0/20",
+        "prefix": "62.234.0.0/16",
         "ip": "62.234.0.0",
-        "cidr": 20,
+        "cidr": 16,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -3188,9 +3156,9 @@
         }
       },
       {
-        "prefix": "81.68.0.0/14",
+        "prefix": "81.68.0.0/18",
         "ip": "81.68.0.0",
-        "cidr": 14,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -3204,9 +3172,9 @@
         }
       },
       {
-        "prefix": "81.68.0.0/18",
+        "prefix": "81.68.0.0/14",
         "ip": "81.68.0.0",
-        "cidr": 18,
+        "cidr": 14,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -3460,9 +3428,9 @@
         }
       },
       {
-        "prefix": "82.156.0.0/18",
+        "prefix": "82.156.0.0/15",
         "ip": "82.156.0.0",
-        "cidr": 18,
+        "cidr": 15,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -3476,9 +3444,9 @@
         }
       },
       {
-        "prefix": "82.156.0.0/15",
+        "prefix": "82.156.0.0/18",
         "ip": "82.156.0.0",
-        "cidr": 15,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -3604,9 +3572,9 @@
         }
       },
       {
-        "prefix": "94.191.0.0/17",
+        "prefix": "94.191.0.0/20",
         "ip": "94.191.0.0",
-        "cidr": 17,
+        "cidr": 20,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -3620,9 +3588,9 @@
         }
       },
       {
-        "prefix": "94.191.0.0/20",
+        "prefix": "94.191.0.0/17",
         "ip": "94.191.0.0",
-        "cidr": 20,
+        "cidr": 17,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -3814,70 +3782,6 @@
       {
         "prefix": "101.33.156.0/22",
         "ip": "101.33.156.0",
-        "cidr": 22,
-        "roa_status": "None",
-        "name": "TENCENT-CN",
-        "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "101.33.128.0/17",
-          "ip": "101.33.128.0",
-          "cidr": 17,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "101.33.160.0/22",
-        "ip": "101.33.160.0",
-        "cidr": 22,
-        "roa_status": "None",
-        "name": "TENCENT-CN",
-        "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "101.33.128.0/17",
-          "ip": "101.33.128.0",
-          "cidr": 17,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "101.33.164.0/22",
-        "ip": "101.33.164.0",
-        "cidr": 22,
-        "roa_status": "None",
-        "name": "TENCENT-CN",
-        "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "101.33.128.0/17",
-          "ip": "101.33.128.0",
-          "cidr": 17,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "101.33.168.0/22",
-        "ip": "101.33.168.0",
-        "cidr": 22,
-        "roa_status": "None",
-        "name": "TENCENT-CN",
-        "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "101.33.128.0/17",
-          "ip": "101.33.128.0",
-          "cidr": 17,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "101.33.172.0/22",
-        "ip": "101.33.172.0",
         "cidr": 22,
         "roa_status": "None",
         "name": "TENCENT-CN",
@@ -4116,9 +4020,9 @@
         }
       },
       {
-        "prefix": "101.42.0.0/18",
+        "prefix": "101.42.0.0/15",
         "ip": "101.42.0.0",
-        "cidr": 18,
+        "cidr": 15,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -4132,9 +4036,9 @@
         }
       },
       {
-        "prefix": "101.42.0.0/15",
+        "prefix": "101.42.0.0/18",
         "ip": "101.42.0.0",
-        "cidr": 15,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -4292,13 +4196,13 @@
         }
       },
       {
-        "prefix": "106.52.0.0/14",
+        "prefix": "106.52.0.0/15",
         "ip": "106.52.0.0",
-        "cidr": 14,
+        "cidr": 15,
         "roa_status": "None",
-        "name": "APNIC-AP",
-        "description": "Asia Pacific Network Information Centre",
-        "country_code": "AU",
+        "name": "TencentCloud",
+        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
+        "country_code": "CN",
         "parent": {
           "prefix": "106.52.0.0/14",
           "ip": "106.52.0.0",
@@ -4324,13 +4228,13 @@
         }
       },
       {
-        "prefix": "106.52.0.0/15",
+        "prefix": "106.52.0.0/14",
         "ip": "106.52.0.0",
-        "cidr": 15,
+        "cidr": 14,
         "roa_status": "None",
-        "name": "TencentCloud",
-        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "CN",
+        "name": "APNIC-AP",
+        "description": "Asia Pacific Network Information Centre",
+        "country_code": "AU",
         "parent": {
           "prefix": "106.52.0.0/14",
           "ip": "106.52.0.0",
@@ -4916,22 +4820,6 @@
         }
       },
       {
-        "prefix": "106.55.0.0/16",
-        "ip": "106.55.0.0",
-        "cidr": 16,
-        "roa_status": "None",
-        "name": "TencentCloud",
-        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "108.156.0.0/14",
-          "ip": "108.156.0.0",
-          "cidr": 14,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "106.55.0.0/18",
         "ip": "106.55.0.0",
         "cidr": 18,
@@ -4944,6 +4832,22 @@
           "ip": "106.52.0.0",
           "cidr": 14,
           "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "106.55.0.0/16",
+        "ip": "106.55.0.0",
+        "cidr": 16,
+        "roa_status": "None",
+        "name": "TencentCloud",
+        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
+        "country_code": "CN",
+        "parent": {
+          "prefix": "108.156.0.0/14",
+          "ip": "108.156.0.0",
+          "cidr": 14,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -4999,7 +4903,7 @@
         "prefix": "109.244.0.0/20",
         "ip": "109.244.0.0",
         "cidr": 20,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5015,7 +4919,7 @@
         "prefix": "109.244.0.0/23",
         "ip": "109.244.0.0",
         "cidr": 23,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5031,7 +4935,7 @@
         "prefix": "109.244.0.0/21",
         "ip": "109.244.0.0",
         "cidr": 21,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5047,7 +4951,7 @@
         "prefix": "109.244.0.0/16",
         "ip": "109.244.0.0",
         "cidr": 16,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5063,7 +4967,7 @@
         "prefix": "109.244.8.0/23",
         "ip": "109.244.8.0",
         "cidr": 23,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5079,7 +4983,7 @@
         "prefix": "109.244.10.0/23",
         "ip": "109.244.10.0",
         "cidr": 23,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5095,7 +4999,7 @@
         "prefix": "109.244.16.0/20",
         "ip": "109.244.16.0",
         "cidr": 20,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5111,7 +5015,7 @@
         "prefix": "109.244.32.0/20",
         "ip": "109.244.32.0",
         "cidr": 20,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5127,7 +5031,7 @@
         "prefix": "109.244.48.0/20",
         "ip": "109.244.48.0",
         "cidr": 20,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5143,7 +5047,7 @@
         "prefix": "109.244.64.0/20",
         "ip": "109.244.64.0",
         "cidr": 20,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5159,7 +5063,7 @@
         "prefix": "109.244.80.0/20",
         "ip": "109.244.80.0",
         "cidr": 20,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5175,7 +5079,7 @@
         "prefix": "109.244.96.0/24",
         "ip": "109.244.96.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5191,7 +5095,7 @@
         "prefix": "109.244.96.0/20",
         "ip": "109.244.96.0",
         "cidr": 20,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5207,7 +5111,7 @@
         "prefix": "109.244.112.0/20",
         "ip": "109.244.112.0",
         "cidr": 20,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5223,7 +5127,7 @@
         "prefix": "109.244.128.0/21",
         "ip": "109.244.128.0",
         "cidr": 21,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5239,7 +5143,7 @@
         "prefix": "109.244.136.0/22",
         "ip": "109.244.136.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5255,7 +5159,7 @@
         "prefix": "109.244.140.0/22",
         "ip": "109.244.140.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5271,7 +5175,7 @@
         "prefix": "109.244.144.0/21",
         "ip": "109.244.144.0",
         "cidr": 21,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5287,7 +5191,7 @@
         "prefix": "109.244.152.0/21",
         "ip": "109.244.152.0",
         "cidr": 21,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5303,7 +5207,7 @@
         "prefix": "109.244.160.0/21",
         "ip": "109.244.160.0",
         "cidr": 21,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5319,7 +5223,7 @@
         "prefix": "109.244.168.0/22",
         "ip": "109.244.168.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5335,7 +5239,7 @@
         "prefix": "109.244.172.0/22",
         "ip": "109.244.172.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5351,7 +5255,7 @@
         "prefix": "109.244.176.0/21",
         "ip": "109.244.176.0",
         "cidr": 21,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5367,7 +5271,7 @@
         "prefix": "109.244.184.0/21",
         "ip": "109.244.184.0",
         "cidr": 21,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5383,7 +5287,7 @@
         "prefix": "109.244.192.0/22",
         "ip": "109.244.192.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5399,7 +5303,7 @@
         "prefix": "109.244.196.0/22",
         "ip": "109.244.196.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5415,7 +5319,7 @@
         "prefix": "109.244.200.0/22",
         "ip": "109.244.200.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5431,7 +5335,7 @@
         "prefix": "109.244.204.0/22",
         "ip": "109.244.204.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5447,7 +5351,7 @@
         "prefix": "109.244.208.0/20",
         "ip": "109.244.208.0",
         "cidr": 20,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5463,7 +5367,7 @@
         "prefix": "109.244.224.0/21",
         "ip": "109.244.224.0",
         "cidr": 21,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5479,7 +5383,7 @@
         "prefix": "109.244.232.0/22",
         "ip": "109.244.232.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5495,7 +5399,7 @@
         "prefix": "109.244.236.0/22",
         "ip": "109.244.236.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5511,7 +5415,7 @@
         "prefix": "109.244.240.0/21",
         "ip": "109.244.240.0",
         "cidr": 21,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5527,7 +5431,7 @@
         "prefix": "109.244.248.0/21",
         "ip": "109.244.248.0",
         "cidr": 21,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -5588,9 +5492,9 @@
         }
       },
       {
-        "prefix": "110.42.128.0/17",
+        "prefix": "110.42.128.0/18",
         "ip": "110.42.128.0",
-        "cidr": 17,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -5604,9 +5508,9 @@
         }
       },
       {
-        "prefix": "110.42.128.0/18",
+        "prefix": "110.42.128.0/17",
         "ip": "110.42.128.0",
-        "cidr": 18,
+        "cidr": 17,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -6260,9 +6164,9 @@
         }
       },
       {
-        "prefix": "111.230.64.0/18",
+        "prefix": "111.230.64.0/23",
         "ip": "111.230.64.0",
-        "cidr": 18,
+        "cidr": 23,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -6276,9 +6180,9 @@
         }
       },
       {
-        "prefix": "111.230.64.0/23",
+        "prefix": "111.230.64.0/18",
         "ip": "111.230.64.0",
-        "cidr": 23,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -6788,22 +6692,6 @@
         }
       },
       {
-        "prefix": "111.230.128.0/23",
-        "ip": "111.230.128.0",
-        "cidr": 23,
-        "roa_status": "None",
-        "name": "TencentCloud",
-        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "113.22.0.0/16",
-          "ip": "113.22.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "111.230.128.0/18",
         "ip": "111.230.128.0",
         "cidr": 18,
@@ -6815,6 +6703,22 @@
           "prefix": "111.228.0.0/14",
           "ip": "111.228.0.0",
           "cidr": 14,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "111.230.128.0/23",
+        "ip": "111.230.128.0",
+        "cidr": 23,
+        "roa_status": "None",
+        "name": "TencentCloud",
+        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
+        "country_code": "CN",
+        "parent": {
+          "prefix": "113.22.0.0/16",
+          "ip": "113.22.0.0",
+          "cidr": 16,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -9156,22 +9060,6 @@
         }
       },
       {
-        "prefix": "114.117.0.0/16",
-        "ip": "114.117.0.0",
-        "cidr": 16,
-        "roa_status": "None",
-        "name": "APNIC-AP",
-        "description": "Asia Pacific Network Information Centre",
-        "country_code": "AU",
-        "parent": {
-          "prefix": "114.117.0.0/16",
-          "ip": "114.117.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "114.117.0.0/19",
         "ip": "114.117.0.0",
         "cidr": 19,
@@ -9183,6 +9071,22 @@
           "prefix": "114.117.0.0/17",
           "ip": "114.117.0.0",
           "cidr": 17,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "114.117.0.0/16",
+        "ip": "114.117.0.0",
+        "cidr": 16,
+        "roa_status": "None",
+        "name": "APNIC-AP",
+        "description": "Asia Pacific Network Information Centre",
+        "country_code": "AU",
+        "parent": {
+          "prefix": "114.117.0.0/16",
+          "ip": "114.117.0.0",
+          "cidr": 16,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -9204,10 +9108,10 @@
         }
       },
       {
-        "prefix": "114.117.128.0/21",
+        "prefix": "114.117.128.0/22",
         "ip": "114.117.128.0",
-        "cidr": 21,
-        "roa_status": "None",
+        "cidr": 22,
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -9220,10 +9124,10 @@
         }
       },
       {
-        "prefix": "114.117.128.0/22",
+        "prefix": "114.117.128.0/21",
         "ip": "114.117.128.0",
-        "cidr": 22,
-        "roa_status": "None",
+        "cidr": 21,
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -9239,7 +9143,7 @@
         "prefix": "114.117.132.0/22",
         "ip": "114.117.132.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
@@ -9412,9 +9316,9 @@
         }
       },
       {
-        "prefix": "115.159.0.0/16",
+        "prefix": "115.159.0.0/23",
         "ip": "115.159.0.0",
-        "cidr": 16,
+        "cidr": 23,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -9428,9 +9332,9 @@
         }
       },
       {
-        "prefix": "115.159.0.0/23",
+        "prefix": "115.159.0.0/16",
         "ip": "115.159.0.0",
-        "cidr": 23,
+        "cidr": 16,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -11460,12 +11364,12 @@
         }
       },
       {
-        "prefix": "118.24.0.0/15",
+        "prefix": "118.24.0.0/22",
         "ip": "118.24.0.0",
-        "cidr": 15,
+        "cidr": 22,
         "roa_status": "None",
-        "name": "Tencent Cloud administrator",
-        "description": "Tencent Cloud administrator",
+        "name": "TENCENT-CN",
+        "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
         "country_code": "CN",
         "parent": {
           "prefix": "118.24.0.0/15",
@@ -11476,12 +11380,12 @@
         }
       },
       {
-        "prefix": "118.24.0.0/22",
+        "prefix": "118.24.0.0/15",
         "ip": "118.24.0.0",
-        "cidr": 22,
+        "cidr": 15,
         "roa_status": "None",
-        "name": "TENCENT-CN",
-        "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
+        "name": "Tencent Cloud administrator",
+        "description": "Tencent Cloud administrator",
         "country_code": "CN",
         "parent": {
           "prefix": "118.24.0.0/15",
@@ -12276,9 +12180,9 @@
         }
       },
       {
-        "prefix": "118.24.192.0/24",
+        "prefix": "118.24.192.0/20",
         "ip": "118.24.192.0",
-        "cidr": 24,
+        "cidr": 20,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -12292,9 +12196,9 @@
         }
       },
       {
-        "prefix": "118.24.192.0/20",
+        "prefix": "118.24.192.0/24",
         "ip": "118.24.192.0",
-        "cidr": 20,
+        "cidr": 24,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -15140,9 +15044,9 @@
         }
       },
       {
-        "prefix": "118.89.252.0/22",
+        "prefix": "118.89.252.0/23",
         "ip": "118.89.252.0",
-        "cidr": 22,
+        "cidr": 23,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -15156,9 +15060,9 @@
         }
       },
       {
-        "prefix": "118.89.252.0/23",
+        "prefix": "118.89.252.0/22",
         "ip": "118.89.252.0",
-        "cidr": 23,
+        "cidr": 22,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -15588,9 +15492,9 @@
         }
       },
       {
-        "prefix": "118.195.128.0/18",
+        "prefix": "118.195.128.0/17",
         "ip": "118.195.128.0",
-        "cidr": 18,
+        "cidr": 17,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -15604,9 +15508,9 @@
         }
       },
       {
-        "prefix": "118.195.128.0/17",
+        "prefix": "118.195.128.0/18",
         "ip": "118.195.128.0",
-        "cidr": 17,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -15668,22 +15572,6 @@
         }
       },
       {
-        "prefix": "119.29.0.0/18",
-        "ip": "119.29.0.0",
-        "cidr": 18,
-        "roa_status": "None",
-        "name": "TencentCloud",
-        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "119.92.0.0/14",
-          "ip": "119.92.0.0",
-          "cidr": 14,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "119.29.0.0/16",
         "ip": "119.29.0.0",
         "cidr": 16,
@@ -15695,6 +15583,22 @@
           "prefix": "119.28.0.0/15",
           "ip": "119.28.0.0",
           "cidr": 15,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "119.29.0.0/18",
+        "ip": "119.29.0.0",
+        "cidr": 18,
+        "roa_status": "None",
+        "name": "TencentCloud",
+        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "119.92.0.0/14",
+          "ip": "119.92.0.0",
+          "cidr": 14,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -16196,22 +16100,6 @@
         }
       },
       {
-        "prefix": "119.29.64.0/23",
-        "ip": "119.29.64.0",
-        "cidr": 23,
-        "roa_status": "None",
-        "name": "TencentCloud",
-        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "119.28.0.0/15",
-          "ip": "119.28.0.0",
-          "cidr": 15,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "119.29.64.0/18",
         "ip": "119.29.64.0",
         "cidr": 18,
@@ -16223,6 +16111,22 @@
           "prefix": "117.21.0.0/16",
           "ip": "117.21.0.0",
           "cidr": 16,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "119.29.64.0/23",
+        "ip": "119.29.64.0",
+        "cidr": 23,
+        "roa_status": "None",
+        "name": "TencentCloud",
+        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "119.28.0.0/15",
+          "ip": "119.28.0.0",
+          "cidr": 15,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -17732,9 +17636,9 @@
         }
       },
       {
-        "prefix": "119.45.0.0/20",
+        "prefix": "119.45.0.0/16",
         "ip": "119.45.0.0",
-        "cidr": 20,
+        "cidr": 16,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -17748,9 +17652,9 @@
         }
       },
       {
-        "prefix": "119.45.0.0/16",
+        "prefix": "119.45.0.0/20",
         "ip": "119.45.0.0",
-        "cidr": 16,
+        "cidr": 20,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -18004,9 +17908,9 @@
         }
       },
       {
-        "prefix": "119.91.0.0/18",
+        "prefix": "119.91.0.0/16",
         "ip": "119.91.0.0",
-        "cidr": 18,
+        "cidr": 16,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -18020,9 +17924,9 @@
         }
       },
       {
-        "prefix": "119.91.0.0/16",
+        "prefix": "119.91.0.0/18",
         "ip": "119.91.0.0",
-        "cidr": 16,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -18106,22 +18010,6 @@
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "120.53.0.0/16",
-          "ip": "120.53.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "120.53.52.0/23",
-        "ip": "120.53.52.0",
-        "cidr": 23,
-        "roa_status": "None",
-        "name": "Voda",
-        "description": "Beijing Voda Telecom Technology Co. Ltd.",
         "country_code": "CN",
         "parent": {
           "prefix": "120.53.0.0/16",
@@ -18279,22 +18167,6 @@
         "prefix": "121.4.0.0/15",
         "ip": "121.4.0.0",
         "cidr": 15,
-        "roa_status": "None",
-        "name": "TencentCloud",
-        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "121.4.0.0/15",
-          "ip": "121.4.0.0",
-          "cidr": 15,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "121.4.4.0/22",
-        "ip": "121.4.4.0",
-        "cidr": 22,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -20068,9 +19940,9 @@
         }
       },
       {
-        "prefix": "122.152.192.0/18",
+        "prefix": "122.152.192.0/22",
         "ip": "122.152.192.0",
-        "cidr": 18,
+        "cidr": 22,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -20084,9 +19956,9 @@
         }
       },
       {
-        "prefix": "122.152.192.0/22",
+        "prefix": "122.152.192.0/18",
         "ip": "122.152.192.0",
-        "cidr": 22,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -20484,9 +20356,9 @@
         }
       },
       {
-        "prefix": "123.206.0.0/24",
+        "prefix": "123.206.0.0/15",
         "ip": "123.206.0.0",
-        "cidr": 24,
+        "cidr": 15,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -20500,9 +20372,9 @@
         }
       },
       {
-        "prefix": "123.206.0.0/15",
+        "prefix": "123.206.0.0/24",
         "ip": "123.206.0.0",
-        "cidr": 15,
+        "cidr": 24,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -23671,7 +23543,7 @@
         "prefix": "124.220.0.0/14",
         "ip": "124.220.0.0",
         "cidr": 14,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23687,7 +23559,7 @@
         "prefix": "124.220.0.0/18",
         "ip": "124.220.0.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23703,7 +23575,7 @@
         "prefix": "124.220.64.0/18",
         "ip": "124.220.64.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23719,7 +23591,7 @@
         "prefix": "124.220.128.0/18",
         "ip": "124.220.128.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23735,7 +23607,7 @@
         "prefix": "124.220.192.0/18",
         "ip": "124.220.192.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23751,7 +23623,7 @@
         "prefix": "124.221.0.0/18",
         "ip": "124.221.0.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23767,7 +23639,7 @@
         "prefix": "124.221.64.0/18",
         "ip": "124.221.64.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23783,7 +23655,7 @@
         "prefix": "124.221.128.0/18",
         "ip": "124.221.128.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23799,7 +23671,7 @@
         "prefix": "124.221.192.0/18",
         "ip": "124.221.192.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23815,7 +23687,7 @@
         "prefix": "124.222.0.0/18",
         "ip": "124.222.0.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23831,7 +23703,7 @@
         "prefix": "124.222.64.0/18",
         "ip": "124.222.64.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23847,7 +23719,7 @@
         "prefix": "124.222.128.0/18",
         "ip": "124.222.128.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23863,7 +23735,7 @@
         "prefix": "124.222.192.0/18",
         "ip": "124.222.192.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23879,7 +23751,7 @@
         "prefix": "124.223.0.0/18",
         "ip": "124.223.0.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23895,7 +23767,7 @@
         "prefix": "124.223.64.0/18",
         "ip": "124.223.64.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23911,7 +23783,7 @@
         "prefix": "124.223.128.0/18",
         "ip": "124.223.128.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23927,7 +23799,7 @@
         "prefix": "124.223.192.0/18",
         "ip": "124.223.192.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -23940,9 +23812,9 @@
         }
       },
       {
-        "prefix": "128.108.0.0/21",
+        "prefix": "128.108.0.0/16",
         "ip": "128.108.0.0",
-        "cidr": 21,
+        "cidr": 16,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -23956,9 +23828,9 @@
         }
       },
       {
-        "prefix": "128.108.0.0/16",
+        "prefix": "128.108.0.0/21",
         "ip": "128.108.0.0",
-        "cidr": 16,
+        "cidr": 21,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -24820,9 +24692,9 @@
         }
       },
       {
-        "prefix": "129.211.0.0/16",
+        "prefix": "129.211.0.0/18",
         "ip": "129.211.0.0",
-        "cidr": 16,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -24836,9 +24708,9 @@
         }
       },
       {
-        "prefix": "129.211.0.0/18",
+        "prefix": "129.211.0.0/16",
         "ip": "129.211.0.0",
-        "cidr": 18,
+        "cidr": 16,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -25796,9 +25668,9 @@
         }
       },
       {
-        "prefix": "139.186.0.0/16",
+        "prefix": "139.186.0.0/20",
         "ip": "139.186.0.0",
-        "cidr": 16,
+        "cidr": 20,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -25812,9 +25684,9 @@
         }
       },
       {
-        "prefix": "139.186.0.0/20",
+        "prefix": "139.186.0.0/16",
         "ip": "139.186.0.0",
-        "cidr": 20,
+        "cidr": 16,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -26068,9 +25940,9 @@
         }
       },
       {
-        "prefix": "139.199.0.0/16",
+        "prefix": "139.199.0.0/23",
         "ip": "139.199.0.0",
-        "cidr": 16,
+        "cidr": 23,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -26084,9 +25956,9 @@
         }
       },
       {
-        "prefix": "139.199.0.0/23",
+        "prefix": "139.199.0.0/16",
         "ip": "139.199.0.0",
-        "cidr": 23,
+        "cidr": 16,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -26836,18 +26708,18 @@
         }
       },
       {
-        "prefix": "139.199.140.0/23",
+        "prefix": "139.199.140.0/22",
         "ip": "139.199.140.0",
-        "cidr": 23,
+        "cidr": 22,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
         "parent": {
-          "prefix": "142.217.0.0/16",
-          "ip": "142.217.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
+          "prefix": "139.196.0.0/14",
+          "ip": "139.196.0.0",
+          "cidr": 14,
+          "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
       },
@@ -26868,18 +26740,18 @@
         }
       },
       {
-        "prefix": "139.199.140.0/22",
+        "prefix": "139.199.140.0/23",
         "ip": "139.199.140.0",
-        "cidr": 22,
+        "cidr": 23,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
         "parent": {
-          "prefix": "139.196.0.0/14",
-          "ip": "139.196.0.0",
-          "cidr": 14,
-          "rir_name": "APNIC",
+          "prefix": "142.217.0.0/16",
+          "ip": "142.217.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -27764,9 +27636,9 @@
         }
       },
       {
-        "prefix": "140.143.0.0/16",
+        "prefix": "140.143.0.0/20",
         "ip": "140.143.0.0",
-        "cidr": 16,
+        "cidr": 20,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -27780,9 +27652,9 @@
         }
       },
       {
-        "prefix": "140.143.0.0/20",
+        "prefix": "140.143.0.0/16",
         "ip": "140.143.0.0",
-        "cidr": 20,
+        "cidr": 16,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -28548,9 +28420,9 @@
         }
       },
       {
-        "prefix": "146.56.192.0/18",
+        "prefix": "146.56.192.0/19",
         "ip": "146.56.192.0",
-        "cidr": 18,
+        "cidr": 19,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -28564,9 +28436,9 @@
         }
       },
       {
-        "prefix": "146.56.192.0/19",
+        "prefix": "146.56.192.0/18",
         "ip": "146.56.192.0",
-        "cidr": 19,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -29428,9 +29300,9 @@
         }
       },
       {
-        "prefix": "152.136.192.0/18",
+        "prefix": "152.136.192.0/22",
         "ip": "152.136.192.0",
-        "cidr": 18,
+        "cidr": 22,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -29444,9 +29316,9 @@
         }
       },
       {
-        "prefix": "152.136.192.0/22",
+        "prefix": "152.136.192.0/18",
         "ip": "152.136.192.0",
-        "cidr": 22,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -29652,22 +29524,6 @@
         }
       },
       {
-        "prefix": "154.8.128.0/23",
-        "ip": "154.8.128.0",
-        "cidr": 23,
-        "roa_status": "None",
-        "name": "TENCENT-CN",
-        "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "155.201.0.0/16",
-          "ip": "155.201.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "154.8.128.0/17",
         "ip": "154.8.128.0",
         "cidr": 17,
@@ -29680,6 +29536,22 @@
           "ip": "154.8.128.0",
           "cidr": 17,
           "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.8.128.0/23",
+        "ip": "154.8.128.0",
+        "cidr": 23,
+        "roa_status": "None",
+        "name": "TENCENT-CN",
+        "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
+        "country_code": "CN",
+        "parent": {
+          "prefix": "155.201.0.0/16",
+          "ip": "155.201.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -29876,9 +29748,9 @@
         }
       },
       {
-        "prefix": "154.8.240.0/21",
+        "prefix": "154.8.240.0/20",
         "ip": "154.8.240.0",
-        "cidr": 21,
+        "cidr": 20,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -29892,9 +29764,9 @@
         }
       },
       {
-        "prefix": "154.8.240.0/20",
+        "prefix": "154.8.240.0/21",
         "ip": "154.8.240.0",
-        "cidr": 20,
+        "cidr": 21,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -29924,9 +29796,9 @@
         }
       },
       {
-        "prefix": "159.75.0.0/16",
+        "prefix": "159.75.0.0/18",
         "ip": "159.75.0.0",
-        "cidr": 16,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -29940,9 +29812,9 @@
         }
       },
       {
-        "prefix": "159.75.0.0/18",
+        "prefix": "159.75.0.0/16",
         "ip": "159.75.0.0",
-        "cidr": 18,
+        "cidr": 16,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -30004,22 +29876,6 @@
         }
       },
       {
-        "prefix": "162.14.0.0/22",
-        "ip": "162.14.0.0",
-        "cidr": 22,
-        "roa_status": "None",
-        "name": "TENCENT-CN",
-        "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "162.14.0.0/16",
-          "ip": "162.14.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "162.14.0.0/18",
         "ip": "162.14.0.0",
         "cidr": 18,
@@ -30048,22 +29904,6 @@
           "ip": "162.14.0.0",
           "cidr": 16,
           "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "162.14.4.0/22",
-        "ip": "162.14.4.0",
-        "cidr": 22,
-        "roa_status": "None",
-        "name": "TENCENT-CN",
-        "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "162.221.200.0/21",
-          "ip": "162.221.200.0",
-          "cidr": 21,
-          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -30228,9 +30068,9 @@
         }
       },
       {
-        "prefix": "172.81.192.0/21",
+        "prefix": "172.81.192.0/18",
         "ip": "172.81.192.0",
-        "cidr": 21,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -30244,9 +30084,9 @@
         }
       },
       {
-        "prefix": "172.81.192.0/18",
+        "prefix": "172.81.192.0/21",
         "ip": "172.81.192.0",
-        "cidr": 18,
+        "cidr": 21,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -30356,9 +30196,9 @@
         }
       },
       {
-        "prefix": "175.24.0.0/18",
+        "prefix": "175.24.0.0/16",
         "ip": "175.24.0.0",
-        "cidr": 18,
+        "cidr": 16,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -30372,9 +30212,9 @@
         }
       },
       {
-        "prefix": "175.24.0.0/16",
+        "prefix": "175.24.0.0/18",
         "ip": "175.24.0.0",
-        "cidr": 16,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -30679,7 +30519,7 @@
         "prefix": "175.178.0.0/16",
         "ip": "175.178.0.0",
         "cidr": 16,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -30695,7 +30535,7 @@
         "prefix": "175.178.0.0/18",
         "ip": "175.178.0.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -30711,7 +30551,7 @@
         "prefix": "175.178.64.0/18",
         "ip": "175.178.64.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -30727,7 +30567,7 @@
         "prefix": "175.178.128.0/18",
         "ip": "175.178.128.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -30743,7 +30583,7 @@
         "prefix": "175.178.192.0/18",
         "ip": "175.178.192.0",
         "cidr": 18,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
         "country_code": "CN",
@@ -32468,22 +32308,6 @@
         }
       },
       {
-        "prefix": "188.131.128.0/20",
-        "ip": "188.131.128.0",
-        "cidr": 20,
-        "roa_status": "None",
-        "name": "TENCENT-CN",
-        "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "189.128.0.0/11",
-          "ip": "189.128.0.0",
-          "cidr": 11,
-          "rir_name": "Lacnic",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "188.131.128.0/17",
         "ip": "188.131.128.0",
         "cidr": 17,
@@ -32496,6 +32320,22 @@
           "ip": "188.131.128.0",
           "cidr": 17,
           "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "188.131.128.0/20",
+        "ip": "188.131.128.0",
+        "cidr": 20,
+        "roa_status": "None",
+        "name": "TENCENT-CN",
+        "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
+        "country_code": "CN",
+        "parent": {
+          "prefix": "189.128.0.0/11",
+          "ip": "189.128.0.0",
+          "cidr": 11,
+          "rir_name": "Lacnic",
           "allocation_status": "unknown"
         }
       },
@@ -32564,9 +32404,9 @@
         }
       },
       {
-        "prefix": "188.131.208.0/23",
+        "prefix": "188.131.208.0/20",
         "ip": "188.131.208.0",
-        "cidr": 23,
+        "cidr": 20,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -32580,9 +32420,9 @@
         }
       },
       {
-        "prefix": "188.131.208.0/20",
+        "prefix": "188.131.208.0/23",
         "ip": "188.131.208.0",
-        "cidr": 20,
+        "cidr": 23,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -32628,9 +32468,9 @@
         }
       },
       {
-        "prefix": "192.144.128.0/17",
+        "prefix": "192.144.128.0/18",
         "ip": "192.144.128.0",
-        "cidr": 17,
+        "cidr": 18,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -32644,9 +32484,9 @@
         }
       },
       {
-        "prefix": "192.144.128.0/18",
+        "prefix": "192.144.128.0/17",
         "ip": "192.144.128.0",
-        "cidr": 18,
+        "cidr": 17,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -32708,6 +32548,22 @@
         }
       },
       {
+        "prefix": "193.112.0.0/18",
+        "ip": "193.112.0.0",
+        "cidr": 18,
+        "roa_status": "None",
+        "name": "TENCENT-CN",
+        "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
+        "country_code": "CN",
+        "parent": {
+          "prefix": "193.112.0.0/16",
+          "ip": "193.112.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "193.112.0.0/23",
         "ip": "193.112.0.0",
         "cidr": 23,
@@ -32727,22 +32583,6 @@
         "prefix": "193.112.0.0/16",
         "ip": "193.112.0.0",
         "cidr": 16,
-        "roa_status": "None",
-        "name": "TENCENT-CN",
-        "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "193.112.0.0/16",
-          "ip": "193.112.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "193.112.0.0/18",
-        "ip": "193.112.0.0",
-        "cidr": 18,
         "roa_status": "None",
         "name": "TENCENT-CN",
         "description": "Tencent Cloud Computing (Beijing) Co., Ltd",
@@ -34132,9 +33972,9 @@
         }
       },
       {
-        "prefix": "211.159.128.0/23",
+        "prefix": "211.159.128.0/17",
         "ip": "211.159.128.0",
-        "cidr": 23,
+        "cidr": 17,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -34148,9 +33988,9 @@
         }
       },
       {
-        "prefix": "211.159.128.0/17",
+        "prefix": "211.159.128.0/23",
         "ip": "211.159.128.0",
-        "cidr": 17,
+        "cidr": 23,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -35366,9 +35206,9 @@
     ],
     "ipv6_prefixes": [
       {
-        "prefix": "2402:4e00::/33",
+        "prefix": "2402:4e00::/35",
         "ip": "2402:4e00::",
-        "cidr": 33,
+        "cidr": 35,
         "roa_status": "None",
         "name": "TENCENT-NET-AP",
         "description": "Shenzhen Tencent Computer Systems Company Limited",
@@ -35382,9 +35222,9 @@
         }
       },
       {
-        "prefix": "2402:4e00::/35",
+        "prefix": "2402:4e00::/33",
         "ip": "2402:4e00::",
-        "cidr": 35,
+        "cidr": 33,
         "roa_status": "None",
         "name": "TENCENT-NET-AP",
         "description": "Shenzhen Tencent Computer Systems Company Limited",
@@ -35878,9 +35718,9 @@
         }
       },
       {
-        "prefix": "2402:4e00:8000::/48",
+        "prefix": "2402:4e00:8000::/33",
         "ip": "2402:4e00:8000::",
-        "cidr": 48,
+        "cidr": 33,
         "roa_status": "None",
         "name": "TENCENT-NET-AP",
         "description": "Shenzhen Tencent Computer Systems Company Limited",
@@ -35894,9 +35734,9 @@
         }
       },
       {
-        "prefix": "2402:4e00:8000::/33",
+        "prefix": "2402:4e00:8000::/48",
         "ip": "2402:4e00:8000::",
-        "cidr": 33,
+        "cidr": 48,
         "roa_status": "None",
         "name": "TENCENT-NET-AP",
         "description": "Shenzhen Tencent Computer Systems Company Limited",
@@ -35994,6 +35834,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "1063.72 ms"
+    "execution_time": "1050.69 ms"
   }
 }

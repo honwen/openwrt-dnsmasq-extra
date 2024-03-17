@@ -46,6 +46,8 @@ time cidr-merger <<-EOF >chnroute.txt.new
 
 	$(curl_githubusercontent https://raw.githubusercontent.com/PaPerseller/chn-iplist/master/chnroute-ipv4.txt)
 
+	$(curl_githubusercontent https://raw.githubusercontent.com/soffchen/GeoIP2-CN/release/CN-ip-cidr.txt)
+
 	$(
 		curl_githubusercontent https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list |
 			sed -n 's+IP-CIDR,\(.*\),no-resolve+\1+p'
@@ -128,13 +130,12 @@ echo
 # ------------------ adblock ------------------
 
 curl -sSL https://anti-ad.net/domains.txt -o adblock
-curl_githubusercontent https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts | sed -n 's+^0.0.0.0 *++p' >adblock.lite
-
-curl_githubusercontent https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts | sed -n 's+^127.0.0.1 *++p' | tee -a adblock adblock.lite >/dev/null
-curl_githubusercontent https://raw.githubusercontent.com/neodevpro/neodevhost/master/customblocklist | tee -a adblock adblock.lite >/dev/null
+curl_githubusercontent https://raw.githubusercontent.com/neodevpro/neodevhost/master/domain | sed -n '/^#/d' >>adblock
+curl_githubusercontent https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts | sed -n 's+^127.0.0.1 *++p' | tee -a adblock >/dev/null
+curl_githubusercontent https://raw.githubusercontent.com/neodevpro/neodevhost/master/customblocklist | tee -a adblock >/dev/null
 curl_githubusercontent https://raw.githubusercontent.com/code-shiromi/Quantumult-X-Resources/main/remote/filters/ad.list |
-	sed -n 's+^HOST.*,\(.*\),AdBlock$+\1+p' | tee -a adblock adblock.lite >/dev/null
-cat <<-EOF | tee -a adblock adblock.lite >/dev/null
+	sed -n 's+^HOST.*,\(.*\),AdBlock$+\1+p' | tee -a adblock >/dev/null
+cat <<-EOF | tee -a adblock >/dev/null
 	c.msn.com
 	ntp.msn.com
 	ntp.msn.cn
@@ -142,27 +143,30 @@ cat <<-EOF | tee -a adblock adblock.lite >/dev/null
 	api.msn.com
 	browser.events.data.msn.com
 EOF
-grep -v '^#' adblock.ext | sort -u | tee -a adblock adblock.lite >/dev/null
+grep -v '^#' adblock.ext | sort -u | tee -a adblock >/dev/null
 
 echo >&2 "# adblock"
 time shadowsocks-helper tide -i adblock -o adblock
-echo >&2 "# adblock.lite"
-time shadowsocks-helper tide -i adblock.lite -o adblock.lite_whitelist
-grep -Ex -f adblock.lite_whitelist adblock >adblock.lite
 
 # whitelist
-sed 's+\.$++g' -i adblock adblock.lite
-sed 's+localhost++g' -i adblock adblock.lite
-sed '/^bj.bcebos.com/d; /^puui.qpic.cn/d; /^zhanzhang.toutiao.com/d' -i adblock adblock.lite
-sed '/tencent-cloud/d' -i adblock adblock.lite
-sed '/weixinbridge/d' -i adblock adblock.lite
-sed '/bootcdn.net/d' -i adblock adblock.lite
-sed '/wns.windows.com/d' -i adblock adblock.lite
-sed '/e.189.cn/d' -i adblock adblock.lite
-sed '/ip-api.com/d; /pv.sohu.com/d' -i adblock adblock.lite
-sed '/click.simba.taobao.com/d' -i adblock adblock.lite
-sed '/click.union.vip.com/d; /ms.vipstatic.com/d' -i adblock adblock.lite
-rm adblock.lite_*
+sed 's+\.$++g' -i adblock
+sed 's+localhost++g' -i adblock
+sed '/^bj.bcebos.com/d; /^puui.qpic.cn/d; /^zhanzhang.toutiao.com/d' -i adblock
+sed '/tencent-cloud/d' -i adblock
+sed '/weixinbridge/d' -i adblock
+sed '/bootcdn.net/d' -i adblock
+sed '/wns.windows.com/d' -i adblock
+sed '/e.189.cn/d' -i adblock
+sed '/ip-api.com/d; /pv.sohu.com/d' -i adblock
+sed '/click.simba.taobao.com/d' -i adblock
+sed '/click.union.vip.com/d; /ms.vipstatic.com/d' -i adblock
+# rm_*
+
+# compat old version update
+cp adblock adblock.lite
+cp adblock.md5sum adblock.lite.md5sum
+cp adblock.gz adblock.lite.gz
+cp adblock.gz.md5sum adblock.lite.gz.md5sum
 # ------------------ adblock ------------------
 
 # ------------------ direct ------------------
@@ -178,6 +182,7 @@ curl_githubusercontent https://raw.githubusercontent.com/Loyalsoldier/surge-rule
 curl_githubusercontent https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/tencent >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/alibaba >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/bytedance >>direct.new
+curl_githubusercontent https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Domain.txt | sed '/^#/d' | sed '/akadns.net/d; /microsoft/d' >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/pluwen/china-domain-allowlist/main/allow-list.sorl |
 	sed -n 's+^*\.++p' | sed '/apple/d; /akadns/d; /doubleclick/d' >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/eliozy/Qumtumult-X/master/Filter/WeChat.list |
@@ -202,7 +207,7 @@ sed '/google/d; /gstatic/d; /youtube/d; /^android/d;' -i direct.new
 sed '/ocsp/d; /akamai/d; /aws/d' -i direct.new
 sed '/sci-hub/d; /scihub/d; /gitbook/d' -i direct.new
 sed '/ebay/d; /lazada/d; /yandex/d' -i direct.new
-cat adblock adblock.lite gfwlist >direct.blacklist
+cat adblock gfwlist >direct.blacklist
 sed "$start,99999d" direct >>direct.blacklist
 sed 's+\.+\\.+g' -i direct.blacklist
 grep -Fv -f direct.blacklist direct.new >direct.sum

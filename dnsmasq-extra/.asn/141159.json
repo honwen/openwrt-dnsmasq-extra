@@ -457,6 +457,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "38.68 ms"
+    "execution_time": "27.09 ms"
   }
 }
