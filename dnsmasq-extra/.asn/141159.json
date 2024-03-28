@@ -388,38 +388,6 @@
         }
       },
       {
-        "prefix": "163.197.56.0/24",
-        "ip": "163.197.56.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "ANGLONET",
-        "description": "Anglo American",
-        "country_code": "ZA",
-        "parent": {
-          "prefix": "163.197.0.0/16",
-          "ip": "163.197.0.0",
-          "cidr": 16,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "163.197.57.0/24",
-        "ip": "163.197.57.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "ANGLONET",
-        "description": "Anglo American",
-        "country_code": "ZA",
-        "parent": {
-          "prefix": "163.197.0.0/16",
-          "ip": "163.197.0.0",
-          "cidr": 16,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "206.2.220.0/24",
         "ip": "206.2.220.0",
         "cidr": 24,
@@ -457,6 +425,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "27.09 ms"
+    "execution_time": "27.2 ms"
   }
 }

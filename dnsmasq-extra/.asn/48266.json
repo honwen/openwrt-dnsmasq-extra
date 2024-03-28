@@ -233,7 +233,7 @@
         "prefix": "2a12:8c00::/36",
         "ip": "2a12:8c00::",
         "cidr": 36,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "Catixs-Ltd",
         "description": "Catixs Ltd",
         "country_code": "SG",
@@ -250,6 +250,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "22.94 ms"
+    "execution_time": "23.73 ms"
   }
 }

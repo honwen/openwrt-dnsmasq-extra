@@ -6356,22 +6356,6 @@
         }
       },
       {
-        "prefix": "156.255.64.0/24",
-        "ip": "156.255.64.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "STEPGO_LIMITED",
-        "description": "STEPGO LIMITED",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "156.224.0.0/11",
-          "ip": "156.224.0.0",
-          "cidr": 11,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "165.154.0.0/24",
         "ip": "165.154.0.0",
         "cidr": 24,
@@ -9044,22 +9028,6 @@
         }
       },
       {
-        "prefix": "165.154.168.0/24",
-        "ip": "165.154.168.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "UCLOUD-HK",
-        "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "165.154.128.0/18",
-          "ip": "165.154.128.0",
-          "cidr": 18,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "165.154.169.0/24",
         "ip": "165.154.169.0",
         "cidr": 24,
@@ -9594,6 +9562,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "289.79 ms"
+    "execution_time": "273 ms"
   }
 }

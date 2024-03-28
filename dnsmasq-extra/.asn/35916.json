@@ -471,7 +471,7 @@
         "prefix": "103.101.29.0/24",
         "ip": "103.101.29.0",
         "cidr": 24,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "XYPNTCL-CN",
         "description": "Xiamen Yue Pu Network Technology Co., Ltd",
         "country_code": "CN",
@@ -1508,22 +1508,6 @@
         }
       },
       {
-        "prefix": "163.5.202.0/24",
-        "ip": "163.5.202.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": null,
-        "description": null,
-        "country_code": "FR",
-        "parent": {
-          "prefix": "163.5.0.0/16",
-          "ip": "163.5.0.0",
-          "cidr": 16,
-          "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "172.111.57.0/24",
         "ip": "172.111.57.0",
         "cidr": 24,
@@ -1540,22 +1524,6 @@
         }
       },
       {
-        "prefix": "178.236.228.0/24",
-        "ip": "178.236.228.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "multacom",
-        "description": "multacom",
-        "country_code": "US",
-        "parent": {
-          "prefix": "180.212.0.0/15",
-          "ip": "180.212.0.0",
-          "cidr": 15,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "178.236.228.0/22",
         "ip": "178.236.228.0",
         "cidr": 22,
@@ -1568,6 +1536,22 @@
           "ip": "178.236.224.0",
           "cidr": 20,
           "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "178.236.228.0/24",
+        "ip": "178.236.228.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "multacom",
+        "description": "multacom",
+        "country_code": "US",
+        "parent": {
+          "prefix": "180.212.0.0/15",
+          "ip": "180.212.0.0",
+          "cidr": 15,
+          "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
       },
@@ -1604,12 +1588,12 @@
         }
       },
       {
-        "prefix": "199.255.96.0/22",
+        "prefix": "199.255.96.0/24",
         "ip": "199.255.96.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "None",
-        "name": "NET-199-255-96-0-1",
-        "description": "Spectero",
+        "name": "IPV4",
+        "description": "CloudCone, LLC",
         "country_code": "US",
         "parent": {
           "prefix": "199.255.96.0/22",
@@ -1620,12 +1604,12 @@
         }
       },
       {
-        "prefix": "199.255.96.0/24",
+        "prefix": "199.255.96.0/22",
         "ip": "199.255.96.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "None",
-        "name": "IPV4",
-        "description": "CloudCone, LLC",
+        "name": "NET-199-255-96-0-1",
+        "description": "Spectero",
         "country_code": "US",
         "parent": {
           "prefix": "199.255.96.0/22",
@@ -1834,6 +1818,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "110.74 ms"
+    "execution_time": "108.92 ms"
   }
 }
