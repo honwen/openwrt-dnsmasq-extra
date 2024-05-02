@@ -2840,9 +2840,9 @@
         "ip": "118.194.230.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "UCLOUD-HK",
+        "name": "UCLOUD-JP",
         "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
-        "country_code": "HK",
+        "country_code": "JP",
         "parent": {
           "prefix": "118.102.64.0/19",
           "ip": "118.102.64.0",
@@ -5928,9 +5928,9 @@
         "ip": "152.32.229.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "UCLOUD-HK",
+        "name": "UCLOUD-TW",
         "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
-        "country_code": "HK",
+        "country_code": "TW",
         "parent": {
           "prefix": "152.32.229.0/24",
           "ip": "152.32.229.0",
@@ -6356,18 +6356,66 @@
         }
       },
       {
-        "prefix": "156.255.64.0/24",
-        "ip": "156.255.64.0",
+        "prefix": "154.202.65.0/24",
+        "ip": "154.202.65.0",
         "cidr": 24,
-        "roa_status": "None",
-        "name": "STEPGO_LIMITED",
-        "description": "STEPGO LIMITED",
-        "country_code": "HK",
+        "roa_status": "Valid",
+        "name": "Sprious_LLC",
+        "description": "Sprious LLC",
+        "country_code": "NL",
         "parent": {
-          "prefix": "156.224.0.0/11",
-          "ip": "156.224.0.0",
+          "prefix": "154.192.0.0/11",
+          "ip": "154.192.0.0",
           "cidr": 11,
           "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.202.66.0/24",
+        "ip": "154.202.66.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Sprious_LLC",
+        "description": "Sprious LLC",
+        "country_code": "NL",
+        "parent": {
+          "prefix": "154.192.0.0/11",
+          "ip": "154.192.0.0",
+          "cidr": 11,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.202.67.0/24",
+        "ip": "154.202.67.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Sprious_LLC",
+        "description": "Sprious LLC",
+        "country_code": "NL",
+        "parent": {
+          "prefix": "154.192.0.0/11",
+          "ip": "154.192.0.0",
+          "cidr": 11,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.202.68.0/24",
+        "ip": "154.202.68.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Sprious_LLC",
+        "description": "Sprious LLC",
+        "country_code": "NL",
+        "parent": {
+          "prefix": "159.206.0.0/16",
+          "ip": "159.206.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -9594,6 +9642,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "289.79 ms"
+    "execution_time": "271.97 ms"
   }
 }

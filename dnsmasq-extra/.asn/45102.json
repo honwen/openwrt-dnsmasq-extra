@@ -20,6 +20,22 @@
         }
       },
       {
+        "prefix": "8.208.0.0/16",
+        "ip": "8.208.0.0",
+        "cidr": 16,
+        "roa_status": "Valid",
+        "name": "ALICLOUD-GB",
+        "description": "Aliyun Computing Co.LTD",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "5.101.0.0/21",
+          "ip": "5.101.0.0",
+          "cidr": 21,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "8.208.0.0/17",
         "ip": "8.208.0.0",
         "cidr": 17,
@@ -32,22 +48,6 @@
           "ip": "8.0.0.0",
           "cidr": 9,
           "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "8.208.0.0/18",
-        "ip": "8.208.0.0",
-        "cidr": 18,
-        "roa_status": "Valid",
-        "name": "ALICLOUD-GB",
-        "description": "Aliyun Computing Co.LTD",
-        "country_code": "GB",
-        "parent": {
-          "prefix": "2.176.0.0/12",
-          "ip": "2.176.0.0",
-          "cidr": 12,
-          "rir_name": "RIPE",
           "allocation_status": "unknown"
         }
       },
@@ -68,17 +68,17 @@
         }
       },
       {
-        "prefix": "8.208.0.0/16",
+        "prefix": "8.208.0.0/18",
         "ip": "8.208.0.0",
-        "cidr": 16,
+        "cidr": 18,
         "roa_status": "Valid",
         "name": "ALICLOUD-GB",
         "description": "Aliyun Computing Co.LTD",
         "country_code": "GB",
         "parent": {
-          "prefix": "5.101.0.0/21",
-          "ip": "5.101.0.0",
-          "cidr": 21,
+          "prefix": "2.176.0.0/12",
+          "ip": "2.176.0.0",
+          "cidr": 12,
           "rir_name": "RIPE",
           "allocation_status": "unknown"
         }
@@ -116,9 +116,9 @@
         }
       },
       {
-        "prefix": "8.209.0.0/20",
+        "prefix": "8.209.0.0/19",
         "ip": "8.209.0.0",
-        "cidr": 20,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "ALICLOUD-RU",
         "description": "Aliyun Computing Co.LTD",
@@ -132,9 +132,9 @@
         }
       },
       {
-        "prefix": "8.209.0.0/19",
+        "prefix": "8.209.0.0/20",
         "ip": "8.209.0.0",
-        "cidr": 19,
+        "cidr": 20,
         "roa_status": "Valid",
         "name": "ALICLOUD-RU",
         "description": "Aliyun Computing Co.LTD",
@@ -164,12 +164,12 @@
         }
       },
       {
-        "prefix": "8.209.36.0/23",
+        "prefix": "8.209.36.0/24",
         "ip": "8.209.36.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
-        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "description": "Alibaba Cloud (Singapore) Private Limited",
         "country_code": "SG",
         "parent": {
           "prefix": "8.208.0.0/12",
@@ -180,12 +180,12 @@
         }
       },
       {
-        "prefix": "8.209.36.0/24",
+        "prefix": "8.209.36.0/23",
         "ip": "8.209.36.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
-        "description": "Alibaba Cloud (Singapore) Private Limited",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
         "country_code": "SG",
         "parent": {
           "prefix": "8.208.0.0/12",
@@ -260,22 +260,6 @@
         }
       },
       {
-        "prefix": "8.209.40.0/22",
-        "ip": "8.209.40.0",
-        "cidr": 22,
-        "roa_status": "Valid",
-        "name": "ASEPL-SG",
-        "description": "Alibaba.com Singapore E-Commerce Private Limited",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "8.208.0.0/12",
-          "ip": "8.208.0.0",
-          "cidr": 12,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "8.209.40.0/23",
         "ip": "8.209.40.0",
         "cidr": 23,
@@ -292,8 +276,40 @@
         }
       },
       {
+        "prefix": "8.209.40.0/22",
+        "ip": "8.209.40.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "8.208.0.0/12",
+          "ip": "8.208.0.0",
+          "cidr": 12,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "8.209.42.0/23",
         "ip": "8.209.42.0",
+        "cidr": 23,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "8.208.0.0/12",
+          "ip": "8.208.0.0",
+          "cidr": 12,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "8.209.44.0/23",
+        "ip": "8.209.44.0",
         "cidr": 23,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
@@ -324,41 +340,9 @@
         }
       },
       {
-        "prefix": "8.209.44.0/23",
-        "ip": "8.209.44.0",
-        "cidr": 23,
-        "roa_status": "Valid",
-        "name": "ASEPL-SG",
-        "description": "Alibaba.com Singapore E-Commerce Private Limited",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "8.208.0.0/12",
-          "ip": "8.208.0.0",
-          "cidr": 12,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "8.209.46.0/23",
         "ip": "8.209.46.0",
         "cidr": 23,
-        "roa_status": "Valid",
-        "name": "ASEPL-SG",
-        "description": "Alibaba.com Singapore E-Commerce Private Limited",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "8.208.0.0/12",
-          "ip": "8.208.0.0",
-          "cidr": 12,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "8.209.48.0/21",
-        "ip": "8.209.48.0",
-        "cidr": 21,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -388,8 +372,8 @@
         }
       },
       {
-        "prefix": "8.209.56.0/21",
-        "ip": "8.209.56.0",
+        "prefix": "8.209.48.0/21",
+        "ip": "8.209.48.0",
         "cidr": 21,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
@@ -404,13 +388,13 @@
         }
       },
       {
-        "prefix": "8.209.64.0/18",
-        "ip": "8.209.64.0",
-        "cidr": 18,
+        "prefix": "8.209.56.0/21",
+        "ip": "8.209.56.0",
+        "cidr": 21,
         "roa_status": "Valid",
-        "name": "ALICLOUD-DE",
-        "description": "Westendstrabe 28, 60325 Frankfurt am Main",
-        "country_code": "DE",
+        "name": "ASEPL-SG",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
         "parent": {
           "prefix": "8.208.0.0/12",
           "ip": "8.208.0.0",
@@ -436,6 +420,22 @@
         }
       },
       {
+        "prefix": "8.209.64.0/18",
+        "ip": "8.209.64.0",
+        "cidr": 18,
+        "roa_status": "Valid",
+        "name": "ALICLOUD-DE",
+        "description": "Westendstrabe 28, 60325 Frankfurt am Main",
+        "country_code": "DE",
+        "parent": {
+          "prefix": "8.208.0.0/12",
+          "ip": "8.208.0.0",
+          "cidr": 12,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "8.209.96.0/19",
         "ip": "8.209.96.0",
         "cidr": 19,
@@ -443,6 +443,22 @@
         "name": "ALICLOUD-DE",
         "description": "Westendstrabe 28, 60325 Frankfurt am Main",
         "country_code": "DE",
+        "parent": {
+          "prefix": "8.208.0.0/12",
+          "ip": "8.208.0.0",
+          "cidr": 12,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "8.209.128.0/18",
+        "ip": "8.209.128.0",
+        "cidr": 18,
+        "roa_status": "Valid",
+        "name": "ALICLOUD-RU",
+        "description": "Aliyun Computing Co.LTD",
+        "country_code": "RU",
         "parent": {
           "prefix": "8.208.0.0/12",
           "ip": "8.208.0.0",
@@ -464,22 +480,6 @@
           "ip": "5.21.0.0",
           "cidr": 16,
           "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "8.209.128.0/18",
-        "ip": "8.209.128.0",
-        "cidr": 18,
-        "roa_status": "Valid",
-        "name": "ALICLOUD-RU",
-        "description": "Aliyun Computing Co.LTD",
-        "country_code": "RU",
-        "parent": {
-          "prefix": "8.208.0.0/12",
-          "ip": "8.208.0.0",
-          "cidr": 12,
-          "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
       },
@@ -612,22 +612,6 @@
         }
       },
       {
-        "prefix": "8.211.0.0/18",
-        "ip": "8.211.0.0",
-        "cidr": 18,
-        "roa_status": "Valid",
-        "name": "ASEPL-SG",
-        "description": "Alibaba.com Singapore E-Commerce Private Limited",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "5.188.192.0/22",
-          "ip": "5.188.192.0",
-          "cidr": 22,
-          "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "8.211.0.0/17",
         "ip": "8.211.0.0",
         "cidr": 17,
@@ -640,6 +624,22 @@
           "ip": "8.208.0.0",
           "cidr": 12,
           "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "8.211.0.0/18",
+        "ip": "8.211.0.0",
+        "cidr": 18,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "5.188.192.0/22",
+          "ip": "5.188.192.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
           "allocation_status": "unknown"
         }
       },
@@ -708,9 +708,9 @@
         }
       },
       {
-        "prefix": "8.211.192.0/18",
+        "prefix": "8.211.192.0/19",
         "ip": "8.211.192.0",
-        "cidr": 18,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -724,9 +724,9 @@
         }
       },
       {
-        "prefix": "8.211.192.0/19",
+        "prefix": "8.211.192.0/18",
         "ip": "8.211.192.0",
-        "cidr": 19,
+        "cidr": 18,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -746,6 +746,22 @@
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "8.208.0.0/12",
+          "ip": "8.208.0.0",
+          "cidr": 12,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "8.211.226.0/24",
+        "ip": "8.211.226.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba Cloud (Singapore) Private Limited",
         "country_code": "SG",
         "parent": {
           "prefix": "8.208.0.0/12",
@@ -804,22 +820,6 @@
         }
       },
       {
-        "prefix": "8.212.128.0/19",
-        "ip": "8.212.128.0",
-        "cidr": 19,
-        "roa_status": "Valid",
-        "name": "ASEPL-SG",
-        "description": "Alibaba.com Singapore E-Commerce Private Limited",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "8.208.0.0/12",
-          "ip": "8.208.0.0",
-          "cidr": 12,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "8.212.128.0/18",
         "ip": "8.212.128.0",
         "cidr": 18,
@@ -836,8 +836,40 @@
         }
       },
       {
+        "prefix": "8.212.128.0/19",
+        "ip": "8.212.128.0",
+        "cidr": 19,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "8.208.0.0/12",
+          "ip": "8.208.0.0",
+          "cidr": 12,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "8.212.160.0/19",
         "ip": "8.212.160.0",
+        "cidr": 19,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "8.208.0.0/12",
+          "ip": "8.208.0.0",
+          "cidr": 12,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "8.212.192.0/19",
+        "ip": "8.212.192.0",
         "cidr": 19,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
@@ -868,41 +900,9 @@
         }
       },
       {
-        "prefix": "8.212.192.0/19",
-        "ip": "8.212.192.0",
-        "cidr": 19,
-        "roa_status": "Valid",
-        "name": "ASEPL-SG",
-        "description": "Alibaba.com Singapore E-Commerce Private Limited",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "8.208.0.0/12",
-          "ip": "8.208.0.0",
-          "cidr": 12,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "8.212.224.0/19",
         "ip": "8.212.224.0",
         "cidr": 19,
-        "roa_status": "Valid",
-        "name": "ASEPL-SG",
-        "description": "Alibaba.com Singapore E-Commerce Private Limited",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "8.208.0.0/12",
-          "ip": "8.208.0.0",
-          "cidr": 12,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "8.213.0.0/18",
-        "ip": "8.213.0.0",
-        "cidr": 18,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -932,6 +932,22 @@
         }
       },
       {
+        "prefix": "8.213.0.0/18",
+        "ip": "8.213.0.0",
+        "cidr": 18,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "8.208.0.0/12",
+          "ip": "8.208.0.0",
+          "cidr": 12,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "8.213.64.0/18",
         "ip": "8.213.64.0",
         "cidr": 18,
@@ -948,9 +964,9 @@
         }
       },
       {
-        "prefix": "8.213.128.0/19",
+        "prefix": "8.213.128.0/20",
         "ip": "8.213.128.0",
-        "cidr": 19,
+        "cidr": 20,
         "roa_status": "Valid",
         "name": "ALICLOUD-KR",
         "description": "Alibaba Cloud South Korea",
@@ -964,9 +980,9 @@
         }
       },
       {
-        "prefix": "8.213.128.0/20",
+        "prefix": "8.213.128.0/19",
         "ip": "8.213.128.0",
-        "cidr": 20,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "ALICLOUD-KR",
         "description": "Alibaba Cloud South Korea",
@@ -1044,9 +1060,9 @@
         }
       },
       {
-        "prefix": "8.213.192.0/19",
+        "prefix": "8.213.192.0/18",
         "ip": "8.213.192.0",
-        "cidr": 19,
+        "cidr": 18,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba Cloud (Singapore) Private Limited",
@@ -1060,9 +1076,9 @@
         }
       },
       {
-        "prefix": "8.213.192.0/18",
+        "prefix": "8.213.192.0/19",
         "ip": "8.213.192.0",
-        "cidr": 18,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba Cloud (Singapore) Private Limited",
@@ -1124,9 +1140,9 @@
         }
       },
       {
-        "prefix": "8.214.0.0/16",
+        "prefix": "8.214.0.0/17",
         "ip": "8.214.0.0",
-        "cidr": 16,
+        "cidr": 17,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -1140,9 +1156,9 @@
         }
       },
       {
-        "prefix": "8.214.0.0/17",
+        "prefix": "8.214.0.0/16",
         "ip": "8.214.0.0",
-        "cidr": 17,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -1172,9 +1188,9 @@
         }
       },
       {
-        "prefix": "8.215.0.0/17",
+        "prefix": "8.215.0.0/16",
         "ip": "8.215.0.0",
-        "cidr": 17,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -1188,9 +1204,9 @@
         }
       },
       {
-        "prefix": "8.215.0.0/16",
+        "prefix": "8.215.0.0/17",
         "ip": "8.215.0.0",
-        "cidr": 16,
+        "cidr": 17,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -1444,9 +1460,9 @@
         }
       },
       {
-        "prefix": "8.219.0.0/16",
+        "prefix": "8.219.0.0/17",
         "ip": "8.219.0.0",
-        "cidr": 16,
+        "cidr": 17,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -1460,9 +1476,9 @@
         }
       },
       {
-        "prefix": "8.219.0.0/17",
+        "prefix": "8.219.0.0/16",
         "ip": "8.219.0.0",
-        "cidr": 17,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -1492,9 +1508,9 @@
         }
       },
       {
-        "prefix": "8.220.0.0/19",
+        "prefix": "8.220.0.0/18",
         "ip": "8.220.0.0",
-        "cidr": 19,
+        "cidr": 18,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -1508,9 +1524,9 @@
         }
       },
       {
-        "prefix": "8.220.0.0/18",
+        "prefix": "8.220.0.0/19",
         "ip": "8.220.0.0",
-        "cidr": 18,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -1540,12 +1556,12 @@
         }
       },
       {
-        "prefix": "8.220.64.0/19",
+        "prefix": "8.220.64.0/18",
         "ip": "8.220.64.0",
-        "cidr": 19,
+        "cidr": 18,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
-        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "description": "Alibaba Cloud (Singapore) Private Limited",
         "country_code": "SG",
         "parent": {
           "prefix": "8.208.0.0/12",
@@ -1556,12 +1572,12 @@
         }
       },
       {
-        "prefix": "8.220.64.0/18",
+        "prefix": "8.220.64.0/19",
         "ip": "8.220.64.0",
-        "cidr": 18,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
-        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "description": "Alibaba Cloud (Singapore) Private Limited",
         "country_code": "SG",
         "parent": {
           "prefix": "8.208.0.0/12",
@@ -1575,6 +1591,54 @@
         "prefix": "8.220.96.0/19",
         "ip": "8.220.96.0",
         "cidr": 19,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba Cloud (Singapore) Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "8.208.0.0/12",
+          "ip": "8.208.0.0",
+          "cidr": 12,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "8.220.116.0/24",
+        "ip": "8.220.116.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba Cloud (Singapore) Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "8.208.0.0/12",
+          "ip": "8.208.0.0",
+          "cidr": 12,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "8.220.116.0/23",
+        "ip": "8.220.116.0",
+        "cidr": 23,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba Cloud (Singapore) Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "8.208.0.0/12",
+          "ip": "8.208.0.0",
+          "cidr": 12,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "8.220.128.0/18",
+        "ip": "8.220.128.0",
+        "cidr": 18,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -1591,22 +1655,6 @@
         "prefix": "8.220.128.0/19",
         "ip": "8.220.128.0",
         "cidr": 19,
-        "roa_status": "Valid",
-        "name": "ASEPL-SG",
-        "description": "Alibaba.com Singapore E-Commerce Private Limited",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "8.208.0.0/12",
-          "ip": "8.208.0.0",
-          "cidr": 12,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "8.220.128.0/18",
-        "ip": "8.220.128.0",
-        "cidr": 18,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -1764,9 +1812,9 @@
         }
       },
       {
-        "prefix": "8.221.128.0/18",
+        "prefix": "8.221.128.0/17",
         "ip": "8.221.128.0",
-        "cidr": 18,
+        "cidr": 17,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -1780,9 +1828,9 @@
         }
       },
       {
-        "prefix": "8.221.128.0/17",
+        "prefix": "8.221.128.0/18",
         "ip": "8.221.128.0",
-        "cidr": 17,
+        "cidr": 18,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -1812,9 +1860,9 @@
         }
       },
       {
-        "prefix": "8.222.0.0/20",
+        "prefix": "8.222.0.0/21",
         "ip": "8.222.0.0",
-        "cidr": 20,
+        "cidr": 21,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -1828,9 +1876,9 @@
         }
       },
       {
-        "prefix": "8.222.0.0/21",
+        "prefix": "8.222.0.0/20",
         "ip": "8.222.0.0",
-        "cidr": 21,
+        "cidr": 20,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -1956,9 +2004,9 @@
         }
       },
       {
-        "prefix": "8.222.48.0/20",
+        "prefix": "8.222.48.0/21",
         "ip": "8.222.48.0",
-        "cidr": 20,
+        "cidr": 21,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -1972,9 +2020,9 @@
         }
       },
       {
-        "prefix": "8.222.48.0/21",
+        "prefix": "8.222.48.0/20",
         "ip": "8.222.48.0",
-        "cidr": 21,
+        "cidr": 20,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -2004,9 +2052,9 @@
         }
       },
       {
-        "prefix": "8.222.64.0/20",
+        "prefix": "8.222.64.0/21",
         "ip": "8.222.64.0",
-        "cidr": 20,
+        "cidr": 21,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -2020,9 +2068,9 @@
         }
       },
       {
-        "prefix": "8.222.64.0/21",
+        "prefix": "8.222.64.0/20",
         "ip": "8.222.64.0",
-        "cidr": 21,
+        "cidr": 20,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -2100,9 +2148,9 @@
         }
       },
       {
-        "prefix": "8.222.128.0/17",
+        "prefix": "8.222.128.0/18",
         "ip": "8.222.128.0",
-        "cidr": 17,
+        "cidr": 18,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -2116,9 +2164,9 @@
         }
       },
       {
-        "prefix": "8.222.128.0/18",
+        "prefix": "8.222.128.0/17",
         "ip": "8.222.128.0",
-        "cidr": 18,
+        "cidr": 17,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -2852,9 +2900,9 @@
         }
       },
       {
-        "prefix": "47.52.0.0/16",
+        "prefix": "47.52.0.0/17",
         "ip": "47.52.0.0",
-        "cidr": 16,
+        "cidr": 17,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -2868,9 +2916,9 @@
         }
       },
       {
-        "prefix": "47.52.0.0/17",
+        "prefix": "47.52.0.0/16",
         "ip": "47.52.0.0",
-        "cidr": 17,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -2921,7 +2969,7 @@
         "cidr": 15,
         "roa_status": "None",
         "name": "AL-3",
-        "description": "Alibaba.com LLC",
+        "description": "Alibaba Cloud LLC",
         "country_code": "US",
         "parent": {
           "prefix": "47.56.0.0/15",
@@ -3012,22 +3060,6 @@
         }
       },
       {
-        "prefix": "47.74.64.0/19",
-        "ip": "47.74.64.0",
-        "cidr": 19,
-        "roa_status": "Valid",
-        "name": "ALICLOUD-AU",
-        "description": "ALICLOUD-AU",
-        "country_code": "AU",
-        "parent": {
-          "prefix": "59.64.0.0/14",
-          "ip": "59.64.0.0",
-          "cidr": 14,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "47.74.64.0/18",
         "ip": "47.74.64.0",
         "cidr": 18,
@@ -3040,6 +3072,22 @@
           "ip": "47.74.0.0",
           "cidr": 15,
           "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.74.64.0/19",
+        "ip": "47.74.64.0",
+        "cidr": 19,
+        "roa_status": "Valid",
+        "name": "ALICLOUD-AU",
+        "description": "ALICLOUD-AU",
+        "country_code": "AU",
+        "parent": {
+          "prefix": "59.64.0.0/14",
+          "ip": "59.64.0.0",
+          "cidr": 14,
+          "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
       },
@@ -3060,22 +3108,6 @@
         }
       },
       {
-        "prefix": "47.74.128.0/18",
-        "ip": "47.74.128.0",
-        "cidr": 18,
-        "roa_status": "Valid",
-        "name": "ALICLOUD-SG",
-        "description": "Alibaba Cloud (Singapore) Private Limited",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "47.74.0.0/15",
-          "ip": "47.74.0.0",
-          "cidr": 15,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "47.74.128.0/17",
         "ip": "47.74.128.0",
         "cidr": 17,
@@ -3087,6 +3119,22 @@
           "prefix": "54.64.0.0/11",
           "ip": "54.64.0.0",
           "cidr": 11,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.74.128.0/18",
+        "ip": "47.74.128.0",
+        "cidr": 18,
+        "roa_status": "Valid",
+        "name": "ALICLOUD-SG",
+        "description": "Alibaba Cloud (Singapore) Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "47.74.0.0/15",
+          "ip": "47.74.0.0",
+          "cidr": 15,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -3156,9 +3204,9 @@
         }
       },
       {
-        "prefix": "47.76.0.0/17",
+        "prefix": "47.76.0.0/16",
         "ip": "47.76.0.0",
-        "cidr": 17,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -3172,9 +3220,9 @@
         }
       },
       {
-        "prefix": "47.76.0.0/16",
+        "prefix": "47.76.0.0/17",
         "ip": "47.76.0.0",
-        "cidr": 16,
+        "cidr": 17,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -3204,9 +3252,9 @@
         }
       },
       {
-        "prefix": "47.77.0.0/22",
+        "prefix": "47.77.0.0/23",
         "ip": "47.77.0.0",
-        "cidr": 22,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -3220,9 +3268,9 @@
         }
       },
       {
-        "prefix": "47.77.0.0/23",
+        "prefix": "47.77.0.0/22",
         "ip": "47.77.0.0",
-        "cidr": 23,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -3252,9 +3300,9 @@
         }
       },
       {
-        "prefix": "47.77.4.0/22",
+        "prefix": "47.77.4.0/23",
         "ip": "47.77.4.0",
-        "cidr": 22,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -3268,9 +3316,9 @@
         }
       },
       {
-        "prefix": "47.77.4.0/23",
+        "prefix": "47.77.4.0/22",
         "ip": "47.77.4.0",
-        "cidr": 23,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -3396,9 +3444,9 @@
         }
       },
       {
-        "prefix": "47.79.16.0/21",
+        "prefix": "47.79.16.0/20",
         "ip": "47.79.16.0",
-        "cidr": 21,
+        "cidr": 20,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba Cloud LLC",
@@ -3412,9 +3460,9 @@
         }
       },
       {
-        "prefix": "47.79.16.0/20",
+        "prefix": "47.79.16.0/21",
         "ip": "47.79.16.0",
-        "cidr": 20,
+        "cidr": 21,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba Cloud LLC",
@@ -3492,6 +3540,22 @@
         }
       },
       {
+        "prefix": "47.79.48.0/21",
+        "ip": "47.79.48.0",
+        "cidr": 21,
+        "roa_status": "Valid",
+        "name": "AL-3",
+        "description": "Alibaba Cloud LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "47.76.0.0/14",
+          "ip": "47.76.0.0",
+          "cidr": 14,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "47.79.48.0/20",
         "ip": "47.79.48.0",
         "cidr": 20,
@@ -3508,9 +3572,25 @@
         }
       },
       {
-        "prefix": "47.79.48.0/21",
-        "ip": "47.79.48.0",
-        "cidr": 21,
+        "prefix": "47.79.52.0/23",
+        "ip": "47.79.52.0",
+        "cidr": 23,
+        "roa_status": "Valid",
+        "name": "AL-3",
+        "description": "Alibaba Cloud LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "47.76.0.0/14",
+          "ip": "47.76.0.0",
+          "cidr": 14,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.79.54.0/23",
+        "ip": "47.79.54.0",
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba Cloud LLC",
@@ -3540,9 +3620,57 @@
         }
       },
       {
-        "prefix": "47.79.64.0/21",
-        "ip": "47.79.64.0",
-        "cidr": 21,
+        "prefix": "47.79.56.0/23",
+        "ip": "47.79.56.0",
+        "cidr": 23,
+        "roa_status": "Valid",
+        "name": "AL-3",
+        "description": "Alibaba Cloud LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "47.76.0.0/14",
+          "ip": "47.76.0.0",
+          "cidr": 14,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.79.58.0/23",
+        "ip": "47.79.58.0",
+        "cidr": 23,
+        "roa_status": "Valid",
+        "name": "AL-3",
+        "description": "Alibaba Cloud LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "47.76.0.0/14",
+          "ip": "47.76.0.0",
+          "cidr": 14,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.79.60.0/23",
+        "ip": "47.79.60.0",
+        "cidr": 23,
+        "roa_status": "Valid",
+        "name": "AL-3",
+        "description": "Alibaba Cloud LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "47.76.0.0/14",
+          "ip": "47.76.0.0",
+          "cidr": 14,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.79.62.0/23",
+        "ip": "47.79.62.0",
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba Cloud LLC",
@@ -3559,6 +3687,22 @@
         "prefix": "47.79.64.0/20",
         "ip": "47.79.64.0",
         "cidr": 20,
+        "roa_status": "Valid",
+        "name": "AL-3",
+        "description": "Alibaba Cloud LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "47.76.0.0/14",
+          "ip": "47.76.0.0",
+          "cidr": 14,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.79.64.0/21",
+        "ip": "47.79.64.0",
+        "cidr": 21,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba Cloud LLC",
@@ -3684,22 +3828,6 @@
         }
       },
       {
-        "prefix": "47.88.128.0/17",
-        "ip": "47.88.128.0",
-        "cidr": 17,
-        "roa_status": "Valid",
-        "name": "ALICLOUD-SG",
-        "description": "ALICLOUD-SG",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "60.241.0.0/16",
-          "ip": "60.241.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "47.88.128.0/18",
         "ip": "47.88.128.0",
         "cidr": 18,
@@ -3710,6 +3838,22 @@
         "parent": {
           "prefix": "58.42.0.0/16",
           "ip": "58.42.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.88.128.0/17",
+        "ip": "47.88.128.0",
+        "cidr": 17,
+        "roa_status": "Valid",
+        "name": "ALICLOUD-SG",
+        "description": "ALICLOUD-SG",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "60.241.0.0/16",
+          "ip": "60.241.0.0",
           "cidr": 16,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
@@ -3748,22 +3892,6 @@
         }
       },
       {
-        "prefix": "47.89.0.0/19",
-        "ip": "47.89.0.0",
-        "cidr": 19,
-        "roa_status": "Valid",
-        "name": "ALICLOUD-HK",
-        "description": "ALICLOUD-HK",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "47.88.0.0/14",
-          "ip": "47.88.0.0",
-          "cidr": 14,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "47.89.0.0/18",
         "ip": "47.89.0.0",
         "cidr": 18,
@@ -3774,6 +3902,22 @@
         "parent": {
           "prefix": "52.216.0.0/14",
           "ip": "52.216.0.0",
+          "cidr": 14,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.89.0.0/19",
+        "ip": "47.89.0.0",
+        "cidr": 19,
+        "roa_status": "Valid",
+        "name": "ALICLOUD-HK",
+        "description": "ALICLOUD-HK",
+        "country_code": "CN",
+        "parent": {
+          "prefix": "47.88.0.0/14",
+          "ip": "47.88.0.0",
           "cidr": 14,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
@@ -3812,9 +3956,9 @@
         }
       },
       {
-        "prefix": "47.89.72.0/22",
+        "prefix": "47.89.72.0/23",
         "ip": "47.89.72.0",
-        "cidr": 22,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -3828,9 +3972,9 @@
         }
       },
       {
-        "prefix": "47.89.72.0/23",
+        "prefix": "47.89.72.0/22",
         "ip": "47.89.72.0",
-        "cidr": 23,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -4009,7 +4153,7 @@
         "cidr": 23,
         "roa_status": "Valid",
         "name": "AL-3",
-        "description": "Alibaba.com LLC",
+        "description": "Alibaba Cloud LLC",
         "country_code": "US",
         "parent": {
           "prefix": "59.0.0.0/11",
@@ -4276,9 +4420,9 @@
         }
       },
       {
-        "prefix": "47.89.124.0/24",
+        "prefix": "47.89.124.0/23",
         "ip": "47.89.124.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -4292,9 +4436,9 @@
         }
       },
       {
-        "prefix": "47.89.124.0/23",
+        "prefix": "47.89.124.0/24",
         "ip": "47.89.124.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -4404,6 +4548,22 @@
         }
       },
       {
+        "prefix": "47.89.221.0/24",
+        "ip": "47.89.221.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "ALICLOUD-US",
+        "description": "ALICLOUD-US",
+        "country_code": "US",
+        "parent": {
+          "prefix": "47.88.0.0/14",
+          "ip": "47.88.0.0",
+          "cidr": 14,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "47.89.224.0/19",
         "ip": "47.89.224.0",
         "cidr": 19,
@@ -4411,6 +4571,22 @@
         "name": "ALICLOUD-US",
         "description": "ALICLOUD-US",
         "country_code": "US",
+        "parent": {
+          "prefix": "47.88.0.0/14",
+          "ip": "47.88.0.0",
+          "cidr": 14,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.90.0.0/17",
+        "ip": "47.90.0.0",
+        "cidr": 17,
+        "roa_status": "Valid",
+        "name": "ALICLOUD-HK",
+        "description": "ALICLOUD-HK",
+        "country_code": "CN",
         "parent": {
           "prefix": "47.88.0.0/14",
           "ip": "47.88.0.0",
@@ -4436,22 +4612,6 @@
         }
       },
       {
-        "prefix": "47.90.0.0/17",
-        "ip": "47.90.0.0",
-        "cidr": 17,
-        "roa_status": "Valid",
-        "name": "ALICLOUD-HK",
-        "description": "ALICLOUD-HK",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "47.88.0.0/14",
-          "ip": "47.88.0.0",
-          "cidr": 14,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "47.90.64.0/18",
         "ip": "47.90.64.0",
         "cidr": 18,
@@ -4468,9 +4628,9 @@
         }
       },
       {
-        "prefix": "47.90.128.0/18",
+        "prefix": "47.90.128.0/17",
         "ip": "47.90.128.0",
-        "cidr": 18,
+        "cidr": 17,
         "roa_status": "Valid",
         "name": "ALICLOUD-US",
         "description": "ALICLOUD-US",
@@ -4484,9 +4644,9 @@
         }
       },
       {
-        "prefix": "47.90.128.0/17",
+        "prefix": "47.90.128.0/18",
         "ip": "47.90.128.0",
-        "cidr": 17,
+        "cidr": 18,
         "roa_status": "Valid",
         "name": "ALICLOUD-US",
         "description": "ALICLOUD-US",
@@ -4516,22 +4676,6 @@
         }
       },
       {
-        "prefix": "47.91.0.0/20",
-        "ip": "47.91.0.0",
-        "cidr": 20,
-        "roa_status": "Valid",
-        "name": "ALICLOUD-JP",
-        "description": "ALICLOUD-JP",
-        "country_code": "JP",
-        "parent": {
-          "prefix": "47.88.0.0/14",
-          "ip": "47.88.0.0",
-          "cidr": 14,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "47.91.0.0/19",
         "ip": "47.91.0.0",
         "cidr": 19,
@@ -4543,6 +4687,22 @@
           "prefix": "50.114.0.0/16",
           "ip": "50.114.0.0",
           "cidr": 16,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.91.0.0/20",
+        "ip": "47.91.0.0",
+        "cidr": 20,
+        "roa_status": "Valid",
+        "name": "ALICLOUD-JP",
+        "description": "ALICLOUD-JP",
+        "country_code": "JP",
+        "parent": {
+          "prefix": "47.88.0.0/14",
+          "ip": "47.88.0.0",
+          "cidr": 14,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -4612,9 +4772,9 @@
         }
       },
       {
-        "prefix": "47.91.64.0/19",
+        "prefix": "47.91.64.0/20",
         "ip": "47.91.64.0",
-        "cidr": 19,
+        "cidr": 20,
         "roa_status": "Valid",
         "name": "ALICLOUD-GM",
         "description": "ALICLOUD-GM",
@@ -4628,9 +4788,9 @@
         }
       },
       {
-        "prefix": "47.91.64.0/20",
+        "prefix": "47.91.64.0/19",
         "ip": "47.91.64.0",
-        "cidr": 20,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "ALICLOUD-GM",
         "description": "ALICLOUD-GM",
@@ -4793,7 +4953,7 @@
         "cidr": 22,
         "roa_status": "Valid",
         "name": "AL-3",
-        "description": "Alibaba.com LLC",
+        "description": "Alibaba Cloud LLC",
         "country_code": "US",
         "parent": {
           "prefix": "58.194.0.0/15",
@@ -4868,9 +5028,9 @@
         }
       },
       {
-        "prefix": "47.235.6.0/24",
+        "prefix": "47.235.6.0/23",
         "ip": "47.235.6.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -4884,9 +5044,9 @@
         }
       },
       {
-        "prefix": "47.235.6.0/23",
+        "prefix": "47.235.6.0/24",
         "ip": "47.235.6.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -4996,22 +5156,6 @@
         }
       },
       {
-        "prefix": "47.235.12.0/24",
-        "ip": "47.235.12.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "AL-3",
-        "description": "Alibaba.com LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "47.235.0.0/16",
-          "ip": "47.235.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "47.235.12.0/23",
         "ip": "47.235.12.0",
         "cidr": 23,
@@ -5023,6 +5167,22 @@
           "prefix": "50.80.0.0/14",
           "ip": "50.80.0.0",
           "cidr": 14,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.235.12.0/24",
+        "ip": "47.235.12.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "AL-3",
+        "description": "Alibaba.com LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "47.235.0.0/16",
+          "ip": "47.235.0.0",
+          "cidr": 16,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -5044,9 +5204,9 @@
         }
       },
       {
-        "prefix": "47.235.16.0/23",
+        "prefix": "47.235.16.0/24",
         "ip": "47.235.16.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -5060,9 +5220,9 @@
         }
       },
       {
-        "prefix": "47.235.16.0/24",
+        "prefix": "47.235.16.0/23",
         "ip": "47.235.16.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -5172,9 +5332,9 @@
         }
       },
       {
-        "prefix": "47.235.24.0/22",
+        "prefix": "47.235.24.0/23",
         "ip": "47.235.24.0",
-        "cidr": 22,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -5188,9 +5348,9 @@
         }
       },
       {
-        "prefix": "47.235.24.0/23",
+        "prefix": "47.235.24.0/22",
         "ip": "47.235.24.0",
-        "cidr": 23,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -5220,9 +5380,9 @@
         }
       },
       {
-        "prefix": "47.235.28.0/24",
+        "prefix": "47.235.28.0/23",
         "ip": "47.235.28.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba Cloud LLC",
@@ -5236,9 +5396,9 @@
         }
       },
       {
-        "prefix": "47.235.28.0/23",
+        "prefix": "47.235.28.0/24",
         "ip": "47.235.28.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba Cloud LLC",
@@ -5364,9 +5524,9 @@
         }
       },
       {
-        "prefix": "47.240.0.0/17",
+        "prefix": "47.240.0.0/16",
         "ip": "47.240.0.0",
-        "cidr": 17,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -5380,9 +5540,9 @@
         }
       },
       {
-        "prefix": "47.240.0.0/16",
+        "prefix": "47.240.0.0/17",
         "ip": "47.240.0.0",
-        "cidr": 16,
+        "cidr": 17,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -5412,9 +5572,9 @@
         }
       },
       {
-        "prefix": "47.241.0.0/16",
+        "prefix": "47.241.0.0/17",
         "ip": "47.241.0.0",
-        "cidr": 16,
+        "cidr": 17,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -5428,9 +5588,9 @@
         }
       },
       {
-        "prefix": "47.241.0.0/17",
+        "prefix": "47.241.0.0/16",
         "ip": "47.241.0.0",
-        "cidr": 17,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -5572,22 +5732,6 @@
         }
       },
       {
-        "prefix": "47.245.0.0/18",
-        "ip": "47.245.0.0",
-        "cidr": 18,
-        "roa_status": "Valid",
-        "name": "ALICLOUD-JP",
-        "description": "ALICLOUD-JP",
-        "country_code": "JP",
-        "parent": {
-          "prefix": "47.244.0.0/15",
-          "ip": "47.244.0.0",
-          "cidr": 15,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "47.245.0.0/19",
         "ip": "47.245.0.0",
         "cidr": 19,
@@ -5600,6 +5744,22 @@
           "ip": "49.50.64.0",
           "cidr": 18,
           "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.245.0.0/18",
+        "ip": "47.245.0.0",
+        "cidr": 18,
+        "roa_status": "Valid",
+        "name": "ALICLOUD-JP",
+        "description": "ALICLOUD-JP",
+        "country_code": "JP",
+        "parent": {
+          "prefix": "47.244.0.0/15",
+          "ip": "47.244.0.0",
+          "cidr": 15,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -5828,9 +5988,9 @@
         }
       },
       {
-        "prefix": "47.246.72.0/22",
+        "prefix": "47.246.72.0/21",
         "ip": "47.246.72.0",
-        "cidr": 22,
+        "cidr": 21,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -5844,9 +6004,9 @@
         }
       },
       {
-        "prefix": "47.246.72.0/21",
+        "prefix": "47.246.72.0/22",
         "ip": "47.246.72.0",
-        "cidr": 21,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -6036,22 +6196,6 @@
         }
       },
       {
-        "prefix": "47.246.92.0/24",
-        "ip": "47.246.92.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "AL-3",
-        "description": "Alibaba.com LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "47.246.0.0/16",
-          "ip": "47.246.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "47.246.92.0/23",
         "ip": "47.246.92.0",
         "cidr": 23,
@@ -6068,8 +6212,8 @@
         }
       },
       {
-        "prefix": "47.246.93.0/24",
-        "ip": "47.246.93.0",
+        "prefix": "47.246.92.0/24",
+        "ip": "47.246.92.0",
         "cidr": 24,
         "roa_status": "Valid",
         "name": "AL-3",
@@ -6084,9 +6228,9 @@
         }
       },
       {
-        "prefix": "47.246.96.0/21",
-        "ip": "47.246.96.0",
-        "cidr": 21,
+        "prefix": "47.246.93.0/24",
+        "ip": "47.246.93.0",
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -6116,8 +6260,40 @@
         }
       },
       {
+        "prefix": "47.246.96.0/21",
+        "ip": "47.246.96.0",
+        "cidr": 21,
+        "roa_status": "Valid",
+        "name": "AL-3",
+        "description": "Alibaba.com LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "47.246.0.0/16",
+          "ip": "47.246.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "47.246.100.0/22",
         "ip": "47.246.100.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "AL-3",
+        "description": "Alibaba.com LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "47.246.0.0/16",
+          "ip": "47.246.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.246.104.0/22",
+        "ip": "47.246.104.0",
         "cidr": 22,
         "roa_status": "Valid",
         "name": "AL-3",
@@ -6135,22 +6311,6 @@
         "prefix": "47.246.104.0/21",
         "ip": "47.246.104.0",
         "cidr": 21,
-        "roa_status": "Valid",
-        "name": "AL-3",
-        "description": "Alibaba.com LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "47.246.0.0/16",
-          "ip": "47.246.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "47.246.104.0/22",
-        "ip": "47.246.104.0",
-        "cidr": 22,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -6276,22 +6436,6 @@
         }
       },
       {
-        "prefix": "47.246.128.0/22",
-        "ip": "47.246.128.0",
-        "cidr": 22,
-        "roa_status": "Valid",
-        "name": "AL-3",
-        "description": "Alibaba.com LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "49.228.0.0/14",
-          "ip": "49.228.0.0",
-          "cidr": 14,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "47.246.128.0/23",
         "ip": "47.246.128.0",
         "cidr": 23,
@@ -6308,12 +6452,28 @@
         }
       },
       {
+        "prefix": "47.246.128.0/22",
+        "ip": "47.246.128.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "AL-3",
+        "description": "Alibaba.com LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "49.228.0.0/14",
+          "ip": "49.228.0.0",
+          "cidr": 14,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "47.246.130.0/23",
         "ip": "47.246.130.0",
         "cidr": 23,
         "roa_status": "Valid",
         "name": "AL-3",
-        "description": "Alibaba.com LLC",
+        "description": "Alibaba Cloud LLC",
         "country_code": "US",
         "parent": {
           "prefix": "49.14.0.0/15",
@@ -6372,9 +6532,9 @@
         }
       },
       {
-        "prefix": "47.246.136.0/21",
+        "prefix": "47.246.136.0/22",
         "ip": "47.246.136.0",
-        "cidr": 21,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -6388,9 +6548,9 @@
         }
       },
       {
-        "prefix": "47.246.136.0/22",
+        "prefix": "47.246.136.0/21",
         "ip": "47.246.136.0",
-        "cidr": 22,
+        "cidr": 21,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -6505,7 +6665,7 @@
         "cidr": 24,
         "roa_status": "Valid",
         "name": "AL-3",
-        "description": "Alibaba.com LLC",
+        "description": "Alibaba Cloud LLC",
         "country_code": "US",
         "parent": {
           "prefix": "59.128.0.0/12",
@@ -6516,9 +6676,9 @@
         }
       },
       {
-        "prefix": "47.246.148.0/24",
+        "prefix": "47.246.148.0/23",
         "ip": "47.246.148.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -6532,9 +6692,9 @@
         }
       },
       {
-        "prefix": "47.246.148.0/23",
+        "prefix": "47.246.148.0/24",
         "ip": "47.246.148.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -6564,9 +6724,9 @@
         }
       },
       {
-        "prefix": "47.246.150.0/23",
+        "prefix": "47.246.150.0/24",
         "ip": "47.246.150.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -6580,9 +6740,9 @@
         }
       },
       {
-        "prefix": "47.246.150.0/24",
+        "prefix": "47.246.150.0/23",
         "ip": "47.246.150.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -6612,9 +6772,9 @@
         }
       },
       {
-        "prefix": "47.246.152.0/24",
+        "prefix": "47.246.152.0/23",
         "ip": "47.246.152.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -6628,9 +6788,9 @@
         }
       },
       {
-        "prefix": "47.246.152.0/23",
+        "prefix": "47.246.152.0/24",
         "ip": "47.246.152.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -6745,7 +6905,7 @@
         "cidr": 20,
         "roa_status": "Valid",
         "name": "AL-3",
-        "description": "Alibaba.com LLC",
+        "description": "Alibaba Cloud LLC",
         "country_code": "US",
         "parent": {
           "prefix": "50.20.0.0/17",
@@ -6884,9 +7044,9 @@
         }
       },
       {
-        "prefix": "47.246.196.0/23",
+        "prefix": "47.246.196.0/22",
         "ip": "47.246.196.0",
-        "cidr": 23,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -6900,9 +7060,9 @@
         }
       },
       {
-        "prefix": "47.246.196.0/22",
+        "prefix": "47.246.196.0/23",
         "ip": "47.246.196.0",
-        "cidr": 22,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -6932,9 +7092,9 @@
         }
       },
       {
-        "prefix": "47.250.0.0/17",
+        "prefix": "47.250.0.0/18",
         "ip": "47.250.0.0",
-        "cidr": 17,
+        "cidr": 18,
         "roa_status": "Valid",
         "name": "ALICLOUD-MYS",
         "description": "ALICLOUD-MYS",
@@ -6948,9 +7108,9 @@
         }
       },
       {
-        "prefix": "47.250.0.0/18",
+        "prefix": "47.250.0.0/17",
         "ip": "47.250.0.0",
-        "cidr": 18,
+        "cidr": 17,
         "roa_status": "Valid",
         "name": "ALICLOUD-MYS",
         "description": "ALICLOUD-MYS",
@@ -6996,9 +7156,9 @@
         }
       },
       {
-        "prefix": "47.250.128.0/17",
+        "prefix": "47.250.128.0/18",
         "ip": "47.250.128.0",
-        "cidr": 17,
+        "cidr": 18,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -7012,9 +7172,9 @@
         }
       },
       {
-        "prefix": "47.250.128.0/18",
+        "prefix": "47.250.128.0/17",
         "ip": "47.250.128.0",
-        "cidr": 18,
+        "cidr": 17,
         "roa_status": "Valid",
         "name": "AL-3",
         "description": "Alibaba.com LLC",
@@ -7092,22 +7252,6 @@
         }
       },
       {
-        "prefix": "47.252.0.0/18",
-        "ip": "47.252.0.0",
-        "cidr": 18,
-        "roa_status": "Valid",
-        "name": "ALICLOUD-US",
-        "description": "ALICLOUD-US",
-        "country_code": "US",
-        "parent": {
-          "prefix": "58.224.0.0/12",
-          "ip": "58.224.0.0",
-          "cidr": 12,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "47.252.0.0/17",
         "ip": "47.252.0.0",
         "cidr": 17,
@@ -7120,6 +7264,22 @@
           "ip": "50.2.0.0",
           "cidr": 15,
           "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.252.0.0/18",
+        "ip": "47.252.0.0",
+        "cidr": 18,
+        "roa_status": "Valid",
+        "name": "ALICLOUD-US",
+        "description": "ALICLOUD-US",
+        "country_code": "US",
+        "parent": {
+          "prefix": "58.224.0.0/12",
+          "ip": "58.224.0.0",
+          "cidr": 12,
+          "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
       },
@@ -7140,9 +7300,25 @@
         }
       },
       {
-        "prefix": "47.252.128.0/18",
+        "prefix": "47.252.67.0/24",
+        "ip": "47.252.67.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "ALICLOUD-US",
+        "description": "ALICLOUD-US",
+        "country_code": "US",
+        "parent": {
+          "prefix": "47.252.0.0/15",
+          "ip": "47.252.0.0",
+          "cidr": 15,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.252.128.0/17",
         "ip": "47.252.128.0",
-        "cidr": 18,
+        "cidr": 17,
         "roa_status": "Valid",
         "name": "ALICLOUD-AU",
         "description": "ALICLOUD-AU",
@@ -7156,9 +7332,9 @@
         }
       },
       {
-        "prefix": "47.252.128.0/17",
+        "prefix": "47.252.128.0/18",
         "ip": "47.252.128.0",
-        "cidr": 17,
+        "cidr": 18,
         "roa_status": "Valid",
         "name": "ALICLOUD-AU",
         "description": "ALICLOUD-AU",
@@ -7188,22 +7364,6 @@
         }
       },
       {
-        "prefix": "47.253.0.0/16",
-        "ip": "47.253.0.0",
-        "cidr": 16,
-        "roa_status": "Valid",
-        "name": "AL-3",
-        "description": "Alibaba.com LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "55.0.0.0/8",
-          "ip": "55.0.0.0",
-          "cidr": 8,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "47.253.0.0/17",
         "ip": "47.253.0.0",
         "cidr": 17,
@@ -7215,6 +7375,22 @@
           "prefix": "50.115.80.0/20",
           "ip": "50.115.80.0",
           "cidr": 20,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "47.253.0.0/16",
+        "ip": "47.253.0.0",
+        "cidr": 16,
+        "roa_status": "Valid",
+        "name": "AL-3",
+        "description": "Alibaba Cloud LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "55.0.0.0/8",
+          "ip": "55.0.0.0",
+          "cidr": 8,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -7300,9 +7476,9 @@
         }
       },
       {
-        "prefix": "47.254.128.0/19",
+        "prefix": "47.254.128.0/18",
         "ip": "47.254.128.0",
-        "cidr": 19,
+        "cidr": 18,
         "roa_status": "Valid",
         "name": "ALICLOUD-GM",
         "description": "AliCloud (Germany) GmbH",
@@ -7316,9 +7492,9 @@
         }
       },
       {
-        "prefix": "47.254.128.0/18",
+        "prefix": "47.254.128.0/19",
         "ip": "47.254.128.0",
-        "cidr": 18,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "ALICLOUD-GM",
         "description": "AliCloud (Germany) GmbH",
@@ -7348,9 +7524,9 @@
         }
       },
       {
-        "prefix": "47.254.192.0/19",
+        "prefix": "47.254.192.0/18",
         "ip": "47.254.192.0",
-        "cidr": 19,
+        "cidr": 18,
         "roa_status": "Valid",
         "name": "ALICLOUD-MYS",
         "description": "ALICLOUD-MYS",
@@ -7364,9 +7540,9 @@
         }
       },
       {
-        "prefix": "47.254.192.0/18",
+        "prefix": "47.254.192.0/19",
         "ip": "47.254.192.0",
-        "cidr": 18,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "ALICLOUD-MYS",
         "description": "ALICLOUD-MYS",
@@ -7392,6 +7568,22 @@
           "ip": "47.254.0.0",
           "cidr": 16,
           "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "59.82.136.0/23",
+        "ip": "59.82.136.0",
+        "cidr": 23,
+        "roa_status": "Valid",
+        "name": "ALIBABA-CN-NET",
+        "description": "Hangzhou Alibaba Advertising Co.,Ltd.",
+        "country_code": "CN",
+        "parent": {
+          "prefix": "59.82.0.0/15",
+          "ip": "59.82.0.0",
+          "cidr": 15,
+          "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
       },
@@ -7668,9 +7860,9 @@
         }
       },
       {
-        "prefix": "147.139.0.0/18",
+        "prefix": "147.139.0.0/17",
         "ip": "147.139.0.0",
-        "cidr": 18,
+        "cidr": 17,
         "roa_status": "Valid",
         "name": "ALICLOUD-IN",
         "description": "ALICLOUD-IN",
@@ -7684,9 +7876,9 @@
         }
       },
       {
-        "prefix": "147.139.0.0/17",
+        "prefix": "147.139.0.0/18",
         "ip": "147.139.0.0",
-        "cidr": 17,
+        "cidr": 18,
         "roa_status": "Valid",
         "name": "ALICLOUD-IN",
         "description": "ALICLOUD-IN",
@@ -7780,9 +7972,9 @@
         }
       },
       {
-        "prefix": "149.129.0.0/20",
+        "prefix": "149.129.0.0/21",
         "ip": "149.129.0.0",
-        "cidr": 20,
+        "cidr": 21,
         "roa_status": "Valid",
         "name": "ALICLOUD-KR",
         "description": "(Yeoksam-dong, Gangnam Finance Center) 14 Floor, 152, Teheran-ro, Gangnam-gu, Seoul, Korea",
@@ -7796,9 +7988,9 @@
         }
       },
       {
-        "prefix": "149.129.0.0/21",
+        "prefix": "149.129.0.0/20",
         "ip": "149.129.0.0",
-        "cidr": 21,
+        "cidr": 20,
         "roa_status": "Valid",
         "name": "ALICLOUD-KR",
         "description": "(Yeoksam-dong, Gangnam Finance Center) 14 Floor, 152, Teheran-ro, Gangnam-gu, Seoul, Korea",
@@ -7924,9 +8116,9 @@
         }
       },
       {
-        "prefix": "149.129.128.0/18",
+        "prefix": "149.129.128.0/19",
         "ip": "149.129.128.0",
-        "cidr": 18,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "ALICLOUD-IN",
         "description": "101A Platina Building, Plot No. C-59, Bandra Kurla Complex, Bandra East, Mumbai a 400051",
@@ -7940,9 +8132,9 @@
         }
       },
       {
-        "prefix": "149.129.128.0/19",
+        "prefix": "149.129.128.0/18",
         "ip": "149.129.128.0",
-        "cidr": 19,
+        "cidr": 18,
         "roa_status": "Valid",
         "name": "ALICLOUD-IN",
         "description": "101A Platina Building, Plot No. C-59, Bandra Kurla Complex, Bandra East, Mumbai a 400051",
@@ -8100,12 +8292,12 @@
         }
       },
       {
-        "prefix": "161.117.0.0/16",
+        "prefix": "161.117.0.0/17",
         "ip": "161.117.0.0",
-        "cidr": 16,
+        "cidr": 17,
         "roa_status": "Valid",
-        "name": "ASEPL-SG",
-        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "name": "ALICLOUD-SG",
+        "description": "1 Raffles Place, # 59-00 One Raffles Place",
         "country_code": "SG",
         "parent": {
           "prefix": "161.117.0.0/16",
@@ -8116,12 +8308,12 @@
         }
       },
       {
-        "prefix": "161.117.0.0/17",
+        "prefix": "161.117.0.0/16",
         "ip": "161.117.0.0",
-        "cidr": 17,
+        "cidr": 16,
         "roa_status": "Valid",
-        "name": "ALICLOUD-SG",
-        "description": "1 Raffles Place, # 59-00 One Raffles Place",
+        "name": "ASEPL-SG",
+        "description": "Alibaba Cloud (Singapore) Private Limited",
         "country_code": "SG",
         "parent": {
           "prefix": "161.117.0.0/16",
@@ -8372,6 +8564,134 @@
         }
       },
       {
+        "prefix": "170.33.72.0/24",
+        "ip": "170.33.72.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "168.235.224.0/20",
+          "ip": "168.235.224.0",
+          "cidr": 20,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "170.33.73.0/24",
+        "ip": "170.33.73.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "170.33.0.0/16",
+          "ip": "170.33.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "170.33.74.0/24",
+        "ip": "170.33.74.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "170.33.0.0/16",
+          "ip": "170.33.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "170.33.75.0/24",
+        "ip": "170.33.75.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "170.33.0.0/16",
+          "ip": "170.33.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "170.33.76.0/24",
+        "ip": "170.33.76.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "170.33.0.0/16",
+          "ip": "170.33.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "170.33.77.0/24",
+        "ip": "170.33.77.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "170.33.0.0/16",
+          "ip": "170.33.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "170.33.78.0/24",
+        "ip": "170.33.78.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "170.33.0.0/16",
+          "ip": "170.33.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "170.33.79.0/24",
+        "ip": "170.33.79.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "170.39.236.0/22",
+          "ip": "170.39.236.0",
+          "cidr": 22,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "170.33.80.0/24",
         "ip": "170.33.80.0",
         "cidr": 24,
@@ -8608,22 +8928,6 @@
           "ip": "198.11.128.0",
           "cidr": 18,
           "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "198.44.244.0/22",
-        "ip": "198.44.244.0",
-        "cidr": 22,
-        "roa_status": "None",
-        "name": "DFD-ALI-01",
-        "description": "Defender cloud international llc",
-        "country_code": "US",
-        "parent": {
-          "prefix": "198.49.132.0/23",
-          "ip": "198.49.132.0",
-          "cidr": 23,
-          "rir_name": "Lacnic",
           "allocation_status": "unknown"
         }
       },
@@ -8966,9 +9270,9 @@
         }
       },
       {
-        "prefix": "2404:2280:2000::/37",
+        "prefix": "2404:2280:2000::/36",
         "ip": "2404:2280:2000::",
-        "cidr": 37,
+        "cidr": 36,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "1 Raffles Place # 59-00 One Raffles Place",
@@ -8982,9 +9286,9 @@
         }
       },
       {
-        "prefix": "2404:2280:2000::/36",
+        "prefix": "2404:2280:2000::/37",
         "ip": "2404:2280:2000::",
-        "cidr": 36,
+        "cidr": 37,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "1 Raffles Place # 59-00 One Raffles Place",
@@ -9062,9 +9366,9 @@
         }
       },
       {
-        "prefix": "240b:4000::/32",
+        "prefix": "240b:4000::/33",
         "ip": "240b:4000::",
-        "cidr": 32,
+        "cidr": 33,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -9078,9 +9382,9 @@
         }
       },
       {
-        "prefix": "240b:4000::/33",
+        "prefix": "240b:4000::/32",
         "ip": "240b:4000::",
-        "cidr": 33,
+        "cidr": 32,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -9158,9 +9462,9 @@
         }
       },
       {
-        "prefix": "240b:4002::/32",
+        "prefix": "240b:4002::/33",
         "ip": "240b:4002::",
-        "cidr": 32,
+        "cidr": 33,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -9174,9 +9478,9 @@
         }
       },
       {
-        "prefix": "240b:4002::/33",
+        "prefix": "240b:4002::/32",
         "ip": "240b:4002::",
-        "cidr": 33,
+        "cidr": 32,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -9254,9 +9558,9 @@
         }
       },
       {
-        "prefix": "240b:4004::/33",
+        "prefix": "240b:4004::/32",
         "ip": "240b:4004::",
-        "cidr": 33,
+        "cidr": 32,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba Cloud (Singapore) Private Limited",
@@ -9270,9 +9574,9 @@
         }
       },
       {
-        "prefix": "240b:4004::/32",
+        "prefix": "240b:4004::/33",
         "ip": "240b:4004::",
-        "cidr": 32,
+        "cidr": 33,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba Cloud (Singapore) Private Limited",
@@ -9302,9 +9606,9 @@
         }
       },
       {
-        "prefix": "240b:4005::/32",
+        "prefix": "240b:4005::/33",
         "ip": "240b:4005::",
-        "cidr": 32,
+        "cidr": 33,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -9318,9 +9622,9 @@
         }
       },
       {
-        "prefix": "240b:4005::/33",
+        "prefix": "240b:4005::/32",
         "ip": "240b:4005::",
-        "cidr": 33,
+        "cidr": 32,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -9462,22 +9766,6 @@
         }
       },
       {
-        "prefix": "240b:400b::/32",
-        "ip": "240b:400b::",
-        "cidr": 32,
-        "roa_status": "Valid",
-        "name": "ASEPL-SG",
-        "description": "Alibaba.com Singapore E-Commerce Private Limited",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "240b:4000::/22",
-          "ip": "240b:4000::",
-          "cidr": 22,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "240b:400b::/33",
         "ip": "240b:400b::",
         "cidr": 33,
@@ -9494,9 +9782,9 @@
         }
       },
       {
-        "prefix": "240b:400b:8000::/33",
-        "ip": "240b:400b:8000::",
-        "cidr": 33,
+        "prefix": "240b:400b::/32",
+        "ip": "240b:400b::",
+        "cidr": 32,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -9510,9 +9798,9 @@
         }
       },
       {
-        "prefix": "240b:400c::/41",
-        "ip": "240b:400c::",
-        "cidr": 41,
+        "prefix": "240b:400b:8000::/33",
+        "ip": "240b:400b:8000::",
+        "cidr": 33,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -9574,8 +9862,8 @@
         }
       },
       {
-        "prefix": "240b:400c:80::/41",
-        "ip": "240b:400c:80::",
+        "prefix": "240b:400c::/41",
+        "ip": "240b:400c::",
         "cidr": 41,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
@@ -9590,8 +9878,8 @@
         }
       },
       {
-        "prefix": "240b:400c:100::/41",
-        "ip": "240b:400c:100::",
+        "prefix": "240b:400c:80::/41",
+        "ip": "240b:400c:80::",
         "cidr": 41,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
@@ -9609,6 +9897,22 @@
         "prefix": "240b:400c:100::/40",
         "ip": "240b:400c:100::",
         "cidr": 40,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba.com Singapore E-Commerce Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "240b:4000::/22",
+          "ip": "240b:4000::",
+          "cidr": 22,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "240b:400c:100::/41",
+        "ip": "240b:400c:100::",
+        "cidr": 41,
         "roa_status": "Valid",
         "name": "ASEPL-SG",
         "description": "Alibaba.com Singapore E-Commerce Private Limited",
@@ -9830,6 +10134,54 @@
         }
       },
       {
+        "prefix": "240b:4011::/33",
+        "ip": "240b:4011::",
+        "cidr": 33,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba Cloud (Singapore) Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "240b:4000::/22",
+          "ip": "240b:4000::",
+          "cidr": 22,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "240b:4011::/32",
+        "ip": "240b:4011::",
+        "cidr": 32,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba Cloud (Singapore) Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "240b:4000::/22",
+          "ip": "240b:4000::",
+          "cidr": 22,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "240b:4011:8000::/33",
+        "ip": "240b:4011:8000::",
+        "cidr": 33,
+        "roa_status": "Valid",
+        "name": "ASEPL-SG",
+        "description": "Alibaba Cloud (Singapore) Private Limited",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "240b:4000::/22",
+          "ip": "240b:4000::",
+          "cidr": 22,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "240b:4012::/48",
         "ip": "240b:4012::",
         "cidr": 48,
@@ -9850,6 +10202,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "309.53 ms"
+    "execution_time": "287.62 ms"
   }
 }
