@@ -472,9 +472,9 @@
         "ip": "103.101.29.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "XYPNTCL-CN",
-        "description": "Xiamen Yue Pu Network Technology Co., Ltd",
-        "country_code": "CN",
+        "name": "APNIC-AP",
+        "description": "Asia Pacific Network Information Centre",
+        "country_code": "AU",
         "parent": {
           "prefix": "103.113.184.0/22",
           "ip": "103.113.184.0",
@@ -688,22 +688,6 @@
           "ip": "148.135.0.0",
           "cidr": 16,
           "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "154.82.0.0/16",
-        "ip": "154.82.0.0",
-        "cidr": 16,
-        "roa_status": "None",
-        "name": "Cloud-Innovation-v4-I",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "SC",
-        "parent": {
-          "prefix": "156.11.0.0/16",
-          "ip": "156.11.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -1076,22 +1060,6 @@
         }
       },
       {
-        "prefix": "154.213.0.0/16",
-        "ip": "154.213.0.0",
-        "cidr": 16,
-        "roa_status": "None",
-        "name": "Cloud-Innovation-v4-II",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "SC",
-        "parent": {
-          "prefix": "154.192.0.0/11",
-          "ip": "154.192.0.0",
-          "cidr": 11,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "154.214.0.0/16",
         "ip": "154.214.0.0",
         "cidr": 16,
@@ -1142,22 +1110,6 @@
       {
         "prefix": "154.218.0.0/16",
         "ip": "154.218.0.0",
-        "cidr": 16,
-        "roa_status": "None",
-        "name": "Cloud-Innovation-v4-II",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "SC",
-        "parent": {
-          "prefix": "154.192.0.0/11",
-          "ip": "154.192.0.0",
-          "cidr": 11,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "154.219.0.0/16",
-        "ip": "154.219.0.0",
         "cidr": 16,
         "roa_status": "None",
         "name": "Cloud-Innovation-v4-II",
@@ -1508,6 +1460,22 @@
         }
       },
       {
+        "prefix": "157.254.218.0/24",
+        "ip": "157.254.218.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "IPXO-157-254-218-0-23",
+        "description": "IPXO LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "157.254.0.0/16",
+          "ip": "157.254.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "163.5.104.0/24",
         "ip": "163.5.104.0",
         "cidr": 24,
@@ -1540,22 +1508,6 @@
         }
       },
       {
-        "prefix": "178.236.228.0/22",
-        "ip": "178.236.228.0",
-        "cidr": 22,
-        "roa_status": "Valid",
-        "name": null,
-        "description": null,
-        "country_code": "CN",
-        "parent": {
-          "prefix": "178.236.224.0/20",
-          "ip": "178.236.224.0",
-          "cidr": 20,
-          "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "178.236.228.0/24",
         "ip": "178.236.228.0",
         "cidr": 24,
@@ -1568,6 +1520,22 @@
           "ip": "180.212.0.0",
           "cidr": 15,
           "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "178.236.228.0/22",
+        "ip": "178.236.228.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": null,
+        "description": null,
+        "country_code": "CN",
+        "parent": {
+          "prefix": "178.236.224.0/20",
+          "ip": "178.236.224.0",
+          "cidr": 20,
+          "rir_name": "RIPE",
           "allocation_status": "unknown"
         }
       },
@@ -1604,12 +1572,12 @@
         }
       },
       {
-        "prefix": "199.255.96.0/24",
+        "prefix": "199.255.96.0/22",
         "ip": "199.255.96.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "None",
-        "name": "IPV4",
-        "description": "CloudCone, LLC",
+        "name": "NET-199-255-96-0-1",
+        "description": "Spectero",
         "country_code": "US",
         "parent": {
           "prefix": "199.255.96.0/22",
@@ -1620,12 +1588,12 @@
         }
       },
       {
-        "prefix": "199.255.96.0/22",
+        "prefix": "199.255.96.0/24",
         "ip": "199.255.96.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "None",
-        "name": "NET-199-255-96-0-1",
-        "description": "Spectero",
+        "name": "IPV4",
+        "description": "CloudCone, LLC",
         "country_code": "US",
         "parent": {
           "prefix": "199.255.96.0/22",
@@ -1752,8 +1720,8 @@
         "ip": "208.162.40.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "MULTACOM-CORPORATION",
-        "description": "MULTACOM CORPORATION",
+        "name": "CENTURYLINK-LEGACY-SAVVIS-BLK75",
+        "description": "CenturyLink Communications, LLC",
         "country_code": "US",
         "parent": {
           "prefix": "207.224.0.0/15",
@@ -1834,6 +1802,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "113.27 ms"
+    "execution_time": "114.15 ms"
   }
 }

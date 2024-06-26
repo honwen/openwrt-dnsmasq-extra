@@ -452,6 +452,22 @@
         }
       },
       {
+        "prefix": "45.78.0.0/24",
+        "ip": "45.78.0.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "IT7NET",
+        "description": "IT7 Networks Inc",
+        "country_code": "CA",
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "45.78.1.0/24",
         "ip": "45.78.1.0",
         "cidr": 24,
@@ -1316,9 +1332,9 @@
         }
       },
       {
-        "prefix": "94.103.4.0/22",
+        "prefix": "94.103.4.0/24",
         "ip": "94.103.4.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "CL-1210",
         "description": "Cluster Logic Inc",
@@ -1332,9 +1348,9 @@
         }
       },
       {
-        "prefix": "94.103.4.0/24",
+        "prefix": "94.103.4.0/22",
         "ip": "94.103.4.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "CL-1210",
         "description": "Cluster Logic Inc",
@@ -3449,6 +3465,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "166.69 ms"
+    "execution_time": "179.45 ms"
   }
 }

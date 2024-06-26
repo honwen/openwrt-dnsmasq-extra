@@ -10,12 +10,14 @@ _date=$(date '+%Y-%m-%d')
 _path=$(dirname $(readlink -f $0))
 
 curl_githubusercontent() {
-	url="$1"
-	curl -skL --speed-limit 100000 --speed-time 10 "https://mirror.ghproxy.com/${url}" ||
-		curl -skL --speed-limit 100000 --speed-time 10 "https://hub.gitmirror.com/${url}" ||
-		curl -skL --speed-limit 100000 --speed-time 10 "https://ghproxy.net/${url}" ||
-		curl -skL --speed-limit 100000 --speed-time 10 "$(echo ${url} | sed 's+raw.githubusercontent.com+cdn.staticaly.com/gh+g')" ||
-		curl -skL --speed-limit 100000 --speed-time 10 "${url}"
+	url="$(echo $1 | sed 's+^https*://++g')"
+	curl -skL --speed-limit 100000 --speed-time 10 "https://mirror.ghproxy.com/https://${url}" ||
+		curl -skL --speed-limit 100000 --speed-time 10 "https://files.m.daocloud.io/${url}" ||
+		curl -skL --speed-limit 100000 --speed-time 10 "https://hub.gitmirror.com/https://${url}" ||
+		curl -skL --speed-limit 100000 --speed-time 10 "https://ghproxy.net/https://${url}" ||
+		curl -skL --speed-limit 100000 --speed-time 10 "https://ghproxy.cc/https://${url}" ||
+		curl -skL --speed-limit 100000 --speed-time 10 "$(echo https://${url} | sed 's+raw.githubusercontent.com+cdn.staticaly.com/gh+g')" ||
+		curl -skL --speed-limit 100000 --speed-time 10 "https://${url}"
 }
 
 sed "s+PKG_VERSION:=.*+PKG_VERSION:=${_date}+g" -i $_path/Makefile
@@ -117,6 +119,10 @@ echo >&2 "# gfwlist"
 time shadowsocks-helper gfwlist >gfwlist
 sed '/^google.*analytics.com$/d' -i gfwlist
 sed '/^apple.com$/d' -i gfwlist
+echo 'ess.apple.com' >>gfwlist
+echo 'push.apple.com' >>gfwlist
+curl_githubusercontent https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/OpenAI.list |
+	grep -v 'KEYWORD' | grep '^DOMAIN' | awk -F',' '{print $2}' >>gfwlist
 # ------------------ gfwlist ------------------
 
 # ------------------ gfwlist.lite ------------------
@@ -222,6 +228,7 @@ echo "\.*microsoft\." >>direct.suffix
 echo "\.*windowsupdate\." >>direct.suffix
 echo >&2 "# direct"
 time grep -eF -f direct.suffix direct.sum >>direct
+sed '/gvt2.com/d; /www.microsoft.com/d' -i direct
 rm -f direct.*
 # ------------------ direct ------------------
 

@@ -23,7 +23,7 @@
         "prefix": "45.61.163.0/24",
         "ip": "45.61.163.0",
         "cidr": 24,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "HOSTPL-NEKOLLC-NET",
         "description": "Neko LLC",
         "country_code": "US",
@@ -194,6 +194,22 @@
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
+      },
+      {
+        "prefix": "213.218.238.0/24",
+        "ip": "213.218.238.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "NET-213-218-238-0-24",
+        "description": "Onet IDC",
+        "country_code": "VN",
+        "parent": {
+          "prefix": "213.218.224.0/19",
+          "ip": "213.218.224.0",
+          "cidr": 19,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
       }
     ],
     "ipv6_prefixes": [
@@ -330,6 +346,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "33.38 ms"
+    "execution_time": "28.27 ms"
   }
 }
