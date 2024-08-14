@@ -68,7 +68,7 @@ time cidr-merger <<-EOF >chnroute.txt.new
 	$(for it in 3462 9269 9381 25820 31898 35916 36352 45090 45102 48266 64050 132203 132591 135377 136038 136907 138915 141159; do
 		echo >&2 "ASN$it"
 
-		# curl -skL --speed-limit 50000 --speed-time 90 https://api.bgpview.io/asn/$it/prefixes | jq . >../../.asn/$it.json
+		# curl -skL -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64)' --speed-limit 50000 --speed-time 90 https://api.bgpview.io/asn/$it/prefixes | jq . >../../.asn/$it.json
 		# sleep 11
 
 		jq -r '.data.ipv4_prefixes[]|.prefix' ../../.asn/$it.json

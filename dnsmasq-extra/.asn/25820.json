@@ -260,6 +260,22 @@
         }
       },
       {
+        "prefix": "23.252.97.0/24",
+        "ip": "23.252.97.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "IT7NET-23-252-96-0-23",
+        "description": "IT7 Networks Inc",
+        "country_code": "US",
+        "parent": {
+          "prefix": "23.252.96.0/20",
+          "ip": "23.252.96.0",
+          "cidr": 20,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "23.252.100.0/24",
         "ip": "23.252.100.0",
         "cidr": 24,
@@ -555,6 +571,134 @@
         "name": "IT7NET",
         "description": "IT7 Networks Inc",
         "country_code": "CA",
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.78.16.0/22",
+        "ip": "45.78.16.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "IT7-45-78-16-0-22",
+        "description": "IT7 Networks Inc",
+        "country_code": "HK",
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.78.20.0/22",
+        "ip": "45.78.20.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "IT7-45-78-20-0-22",
+        "description": "IT7 Networks Inc",
+        "country_code": "HK",
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.78.24.0/22",
+        "ip": "45.78.24.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "IT7-45-78-24-0-22",
+        "description": "IT7 Networks Inc",
+        "country_code": "HK",
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.78.28.0/22",
+        "ip": "45.78.28.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "IT7-45-78-28-0-22",
+        "description": "IT7 Networks Inc",
+        "country_code": "HK",
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.78.32.0/22",
+        "ip": "45.78.32.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "IT7-45-78-32-0-22",
+        "description": "IT7 Networks Inc",
+        "country_code": "HK",
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.78.36.0/22",
+        "ip": "45.78.36.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "IT7-45-78-36-0-22",
+        "description": "IT7 Networks Inc",
+        "country_code": "HK",
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.78.40.0/22",
+        "ip": "45.78.40.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "IT7-45-78-40-0-22",
+        "description": "IT7 Networks Inc",
+        "country_code": "HK",
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.78.44.0/22",
+        "ip": "45.78.44.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "IT7-45-78-44-0-22",
+        "description": "IT7 Networks Inc",
+        "country_code": "HK",
         "parent": {
           "prefix": null,
           "ip": null,
@@ -1268,9 +1412,9 @@
         }
       },
       {
-        "prefix": "93.179.124.0/24",
+        "prefix": "93.179.124.0/22",
         "ip": "93.179.124.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "CL-1210",
         "description": "Cluster Logic Inc",
@@ -1278,70 +1422,6 @@
         "parent": {
           "prefix": "93.179.124.0/22",
           "ip": "93.179.124.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "93.179.125.0/24",
-        "ip": "93.179.125.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "CL-1210",
-        "description": "Cluster Logic Inc",
-        "country_code": "CA",
-        "parent": {
-          "prefix": "95.0.0.0/12",
-          "ip": "95.0.0.0",
-          "cidr": 12,
-          "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "93.179.126.0/24",
-        "ip": "93.179.126.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "CL-1210",
-        "description": "Cluster Logic Inc",
-        "country_code": "CA",
-        "parent": {
-          "prefix": "93.179.124.0/22",
-          "ip": "93.179.124.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "93.179.127.0/24",
-        "ip": "93.179.127.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "CL-1210",
-        "description": "Cluster Logic Inc",
-        "country_code": "CA",
-        "parent": {
-          "prefix": "93.179.124.0/22",
-          "ip": "93.179.124.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "94.103.4.0/24",
-        "ip": "94.103.4.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "CL-1210",
-        "description": "Cluster Logic Inc",
-        "country_code": "CA",
-        "parent": {
-          "prefix": "94.103.4.0/22",
-          "ip": "94.103.4.0",
           "cidr": 22,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
@@ -1351,54 +1431,6 @@
         "prefix": "94.103.4.0/22",
         "ip": "94.103.4.0",
         "cidr": 22,
-        "roa_status": "Valid",
-        "name": "CL-1210",
-        "description": "Cluster Logic Inc",
-        "country_code": "CA",
-        "parent": {
-          "prefix": "94.103.4.0/22",
-          "ip": "94.103.4.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "94.103.5.0/24",
-        "ip": "94.103.5.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "CL-1210",
-        "description": "Cluster Logic Inc",
-        "country_code": "CA",
-        "parent": {
-          "prefix": "94.103.4.0/22",
-          "ip": "94.103.4.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "94.103.6.0/24",
-        "ip": "94.103.6.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "CL-1210",
-        "description": "Cluster Logic Inc",
-        "country_code": "CA",
-        "parent": {
-          "prefix": "94.103.4.0/22",
-          "ip": "94.103.4.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "94.103.7.0/24",
-        "ip": "94.103.7.0",
-        "cidr": 24,
         "roa_status": "Valid",
         "name": "CL-1210",
         "description": "Cluster Logic Inc",
@@ -2132,6 +2164,22 @@
         }
       },
       {
+        "prefix": "104.245.40.0/21",
+        "ip": "104.245.40.0",
+        "cidr": 21,
+        "roa_status": "Valid",
+        "name": "CL-1210",
+        "description": "Cluster Logic Inc",
+        "country_code": "CA",
+        "parent": {
+          "prefix": "104.245.40.0/21",
+          "ip": "104.245.40.0",
+          "cidr": 21,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "104.245.188.0/22",
         "ip": "104.245.188.0",
         "cidr": 22,
@@ -2367,22 +2415,6 @@
           "prefix": "153.103.0.0/16",
           "ip": "153.103.0.0",
           "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "150.242.89.0/24",
-        "ip": "150.242.89.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "CL-1210",
-        "description": "Cluster Logic Inc",
-        "country_code": "CA",
-        "parent": {
-          "prefix": "150.242.88.0/22",
-          "ip": "150.242.88.0",
-          "cidr": 22,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -2964,73 +2996,9 @@
         }
       },
       {
-        "prefix": "185.212.56.0/24",
-        "ip": "185.212.56.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "CL-1210",
-        "description": "Cluster Logic Inc",
-        "country_code": "CA",
-        "parent": {
-          "prefix": "185.212.56.0/22",
-          "ip": "185.212.56.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "185.212.56.0/22",
         "ip": "185.212.56.0",
         "cidr": 22,
-        "roa_status": "Valid",
-        "name": "CL-1210",
-        "description": "Cluster Logic Inc",
-        "country_code": "CA",
-        "parent": {
-          "prefix": "185.212.56.0/22",
-          "ip": "185.212.56.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "185.212.57.0/24",
-        "ip": "185.212.57.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "CL-1210",
-        "description": "Cluster Logic Inc",
-        "country_code": "CA",
-        "parent": {
-          "prefix": "185.212.56.0/22",
-          "ip": "185.212.56.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "185.212.58.0/24",
-        "ip": "185.212.58.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "CL-1210",
-        "description": "Cluster Logic Inc",
-        "country_code": "CA",
-        "parent": {
-          "prefix": "185.212.56.0/22",
-          "ip": "185.212.56.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "185.212.59.0/24",
-        "ip": "185.212.59.0",
-        "cidr": 24,
         "roa_status": "Valid",
         "name": "CL-1210",
         "description": "Cluster Logic Inc",
@@ -3320,9 +3288,9 @@
         "ip": "212.50.228.0",
         "cidr": 22,
         "roa_status": "Valid",
-        "name": null,
-        "description": null,
-        "country_code": "CA",
+        "name": "NET-212-50-228-0-22",
+        "description": "NET 212 50 228 0 22",
+        "country_code": "US",
         "parent": {
           "prefix": "212.50.224.0/19",
           "ip": "212.50.224.0",
@@ -3465,6 +3433,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "179.45 ms"
+    "execution_time": "145.6 ms"
   }
 }
