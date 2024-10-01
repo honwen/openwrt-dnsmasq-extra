@@ -105,7 +105,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -409,7 +409,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -489,7 +489,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -537,7 +537,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -777,7 +777,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -809,7 +809,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -825,7 +825,7 @@
         "cidr": 22,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -905,7 +905,7 @@
         "cidr": 22,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -921,7 +921,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -1032,8 +1032,8 @@
         "ip": "23.94.105.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-16",
-        "description": "ColoCrossing",
+        "name": "CC-23-94-105-0-24",
+        "description": "RackNerd LLC",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -1192,8 +1192,8 @@
         "ip": "23.94.120.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-16",
-        "description": "ColoCrossing",
+        "name": "CC-23-94-120-0-24",
+        "description": "RackNerd LLC",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -1513,7 +1513,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -1529,7 +1529,7 @@
         "cidr": 22,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -1721,7 +1721,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -1753,7 +1753,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -3241,7 +3241,7 @@
         "cidr": 22,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -3257,8 +3257,8 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-23-95-88-0-24",
-        "description": "HLM",
-        "country_code": "US",
+        "description": "Hasan Mutlu",
+        "country_code": "TR",
         "parent": {
           "prefix": "23.94.0.0/15",
           "ip": "23.94.0.0",
@@ -3321,7 +3321,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -3433,7 +3433,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -3913,7 +3913,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -4185,7 +4185,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -4553,7 +4553,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-16",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "23.94.0.0/15",
@@ -4696,9 +4696,9 @@
         "ip": "23.95.250.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-16",
-        "description": "ColoCrossing",
-        "country_code": "US",
+        "name": "CC-23-95-250-0-24",
+        "description": "RapidDedi Investments LTD 516109774",
+        "country_code": "IL",
         "parent": {
           "prefix": "23.94.0.0/15",
           "ip": "23.94.0.0",
@@ -6105,7 +6105,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-02",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "96.8.112.0/20",
@@ -6249,7 +6249,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-02",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "96.8.112.0/20",
@@ -6968,8 +6968,8 @@
         "ip": "104.168.63.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-18",
-        "description": "ColoCrossing",
+        "name": "CC-104-168-63-0-24",
+        "description": "RackNerd LLC",
         "country_code": "US",
         "parent": {
           "prefix": "104.168.0.0/17",
@@ -7129,7 +7129,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-18",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "104.168.0.0/17",
@@ -7353,7 +7353,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-18",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "104.168.0.0/17",
@@ -7465,7 +7465,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-104-168-102-0-24",
-        "description": "Virtual Machine Solutions LLC",
+        "description": "RackNerd LLC",
         "country_code": "US",
         "parent": {
           "prefix": "104.168.0.0/17",
@@ -7865,7 +7865,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -8489,7 +8489,7 @@
         "cidr": 22,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -8633,7 +8633,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -9081,7 +9081,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -9332,13 +9332,13 @@
         }
       },
       {
-        "prefix": "107.172.154.0/24",
+        "prefix": "107.172.154.0/23",
         "ip": "107.172.154.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "None",
-        "name": "CC-107-172-154-0-24",
-        "description": "Hudson Valley Host",
-        "country_code": "US",
+        "name": "CC-17",
+        "description": "HostPapa",
+        "country_code": "CA",
         "parent": {
           "prefix": "107.172.0.0/14",
           "ip": "107.172.0.0",
@@ -9348,13 +9348,13 @@
         }
       },
       {
-        "prefix": "107.172.154.0/23",
+        "prefix": "107.172.154.0/24",
         "ip": "107.172.154.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "None",
-        "name": "CC-17",
-        "description": "HostPapa",
-        "country_code": "CA",
+        "name": "CC-107-172-154-0-24",
+        "description": "Hudson Valley Host",
+        "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
           "ip": "107.172.0.0",
@@ -9592,9 +9592,9 @@
         "ip": "107.172.171.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-17",
-        "description": "ColoCrossing",
-        "country_code": "US",
+        "name": "CC-107-172-171-0-24",
+        "description": "RapidDedi Investments LTD 516109774",
+        "country_code": "IL",
         "parent": {
           "prefix": "107.172.0.0/14",
           "ip": "107.172.0.0",
@@ -9657,7 +9657,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -9752,8 +9752,8 @@
         "ip": "107.172.185.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-107-172-185-0-24",
-        "description": "RackNerd LLC",
+        "name": "CC-17",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -10025,7 +10025,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -10200,9 +10200,9 @@
         "ip": "107.172.215.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-17",
-        "description": "ColoCrossing",
-        "country_code": "US",
+        "name": "CC-107-172-215-0-24",
+        "description": "RapidDedi Investments LTD 516109774",
+        "country_code": "IL",
         "parent": {
           "prefix": "107.172.0.0/14",
           "ip": "107.172.0.0",
@@ -10328,8 +10328,8 @@
         "ip": "107.172.236.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-17",
-        "description": "ColoCrossing",
+        "name": "CC-107-172-236-0-24",
+        "description": "Erin Cross",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -10680,9 +10680,9 @@
         "ip": "107.173.16.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-17",
-        "description": "ColoCrossing",
-        "country_code": "US",
+        "name": "CC-107-173-16-0-24",
+        "description": "RapidDedi Investments LTD 516109774",
+        "country_code": "IL",
         "parent": {
           "prefix": "107.172.0.0/14",
           "ip": "107.172.0.0",
@@ -10905,7 +10905,7 @@
         "cidr": 21,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -10937,7 +10937,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -11417,7 +11417,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -11737,7 +11737,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -11945,8 +11945,8 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-107-173-152-0-24",
-        "description": "RapidDedi Investments LTD 516109774",
-        "country_code": "IL",
+        "description": "RackNerd LLC",
+        "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
           "ip": "107.172.0.0",
@@ -12184,8 +12184,8 @@
         "ip": "107.173.170.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-17",
-        "description": "ColoCrossing",
+        "name": "CC-107-173-170-0-24",
+        "description": "RackNerd LLC",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -12697,7 +12697,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -12777,7 +12777,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -12841,7 +12841,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-107-173-225-0-24",
-        "description": "RapidDedi.com",
+        "description": "RapidDedi Investments LTD 516109774",
         "country_code": "IL",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -13289,7 +13289,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -13353,7 +13353,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -13368,9 +13368,9 @@
         "ip": "107.174.10.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-17",
-        "description": "ColoCrossing",
-        "country_code": "US",
+        "name": "CC-107-174-10-0-24",
+        "description": "RapidDedi Investments LTD 516109774",
+        "country_code": "IL",
         "parent": {
           "prefix": "107.172.0.0/14",
           "ip": "107.172.0.0",
@@ -13433,7 +13433,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -13448,9 +13448,9 @@
         "ip": "107.174.15.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-17",
-        "description": "ColoCrossing",
-        "country_code": "US",
+        "name": "CC-107-174-15-0-24",
+        "description": "RapidDedi Investments LTD 516109774",
+        "country_code": "IL",
         "parent": {
           "prefix": "107.172.0.0/14",
           "ip": "107.172.0.0",
@@ -13481,7 +13481,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -13945,7 +13945,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-107-174-96-0-24",
-        "description": "HLM",
+        "description": "RackNerd LLC",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -14281,7 +14281,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -14744,14 +14744,14 @@
         "ip": "107.174.178.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": null,
-        "description": null,
-        "country_code": null,
+        "name": "CC-17",
+        "description": "HostPapa",
+        "country_code": "US",
         "parent": {
-          "prefix": null,
-          "ip": null,
-          "cidr": null,
-          "rir_name": null,
+          "prefix": "107.172.0.0/14",
+          "ip": "107.172.0.0",
+          "cidr": 14,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -14760,14 +14760,14 @@
         "ip": "107.174.179.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": null,
-        "description": null,
-        "country_code": null,
+        "name": "CC-107-174-179-0-24",
+        "description": "HLM",
+        "country_code": "US",
         "parent": {
-          "prefix": null,
-          "ip": null,
-          "cidr": null,
-          "rir_name": null,
+          "prefix": "107.172.0.0/14",
+          "ip": "107.172.0.0",
+          "cidr": 14,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -14921,7 +14921,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-107-174-192-0-24",
-        "description": "Virtual Machine Solutions LLC",
+        "description": "RackNerd LLC",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -15385,7 +15385,7 @@
         "cidr": 22,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -15848,8 +15848,8 @@
         "ip": "107.175.46.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-107-175-46-0-24",
-        "description": "Virtual Machine Solutions LLC",
+        "name": "CC-17",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -15912,14 +15912,14 @@
         "ip": "107.175.50.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": null,
-        "description": null,
-        "country_code": null,
+        "name": "CC-17",
+        "description": "HostPapa",
+        "country_code": "US",
         "parent": {
-          "prefix": null,
-          "ip": null,
-          "cidr": null,
-          "rir_name": null,
+          "prefix": "107.172.0.0/14",
+          "ip": "107.172.0.0",
+          "cidr": 14,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -15928,14 +15928,14 @@
         "ip": "107.175.51.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": null,
-        "description": null,
-        "country_code": null,
+        "name": "CC-107-175-51-0-24",
+        "description": "Hasan Mutlu",
+        "country_code": "TR",
         "parent": {
-          "prefix": null,
-          "ip": null,
-          "cidr": null,
-          "rir_name": null,
+          "prefix": "107.172.0.0/14",
+          "ip": "107.172.0.0",
+          "cidr": 14,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -16409,7 +16409,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -16841,7 +16841,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -17177,7 +17177,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -17433,7 +17433,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -17545,7 +17545,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-17",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "107.172.0.0/14",
@@ -18004,6 +18004,22 @@
         }
       },
       {
+        "prefix": "172.94.48.0/24",
+        "ip": "172.94.48.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "INTERNET-SECURITY-HOSTROYALE-PT",
+        "description": "Secure Internet LLC PT",
+        "country_code": "PT",
+        "parent": {
+          "prefix": "172.94.0.0/17",
+          "ip": "172.94.0.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "172.245.4.0/23",
         "ip": "172.245.4.0",
         "cidr": 23,
@@ -18105,7 +18121,7 @@
         "cidr": 21,
         "roa_status": "None",
         "name": "CC-14",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "172.245.0.0/16",
@@ -18649,7 +18665,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-14",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "172.245.0.0/16",
@@ -19000,8 +19016,8 @@
         "ip": "172.245.108.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-172-245-108-0-24",
-        "description": "RackNerd LLC",
+        "name": "CC-14",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "172.245.0.0/16",
@@ -19081,7 +19097,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-14",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "172.245.0.0/16",
@@ -19097,7 +19113,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-14",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "172.245.0.0/16",
@@ -19353,7 +19369,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-14",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "172.245.0.0/16",
@@ -19528,14 +19544,14 @@
         "ip": "172.245.168.0",
         "cidr": 23,
         "roa_status": "None",
-        "name": null,
-        "description": null,
-        "country_code": null,
+        "name": "CC-14",
+        "description": "HostPapa",
+        "country_code": "US",
         "parent": {
-          "prefix": null,
-          "ip": null,
-          "cidr": null,
-          "rir_name": null,
+          "prefix": "172.245.0.0/16",
+          "ip": "172.245.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -19544,14 +19560,14 @@
         "ip": "172.245.170.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": null,
-        "description": null,
-        "country_code": null,
+        "name": "CC-14",
+        "description": "HostPapa",
+        "country_code": "US",
         "parent": {
-          "prefix": null,
-          "ip": null,
-          "cidr": null,
-          "rir_name": null,
+          "prefix": "172.245.0.0/16",
+          "ip": "172.245.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -19560,14 +19576,14 @@
         "ip": "172.245.171.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": null,
-        "description": null,
-        "country_code": null,
+        "name": "CC-14",
+        "description": "HostPapa",
+        "country_code": "US",
         "parent": {
-          "prefix": null,
-          "ip": null,
-          "cidr": null,
-          "rir_name": null,
+          "prefix": "172.245.0.0/16",
+          "ip": "172.245.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -19801,7 +19817,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-14",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "172.245.0.0/16",
@@ -19833,7 +19849,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-14",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "172.245.0.0/16",
@@ -20233,7 +20249,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-15",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "192.3.0.0/16",
@@ -20536,8 +20552,8 @@
         "ip": "192.3.67.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-192-3-67-0-24",
-        "description": "Virtual Machine Solutions LLC",
+        "name": "CC-15",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "192.3.0.0/16",
@@ -20617,7 +20633,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-192-3-80-0-24",
-        "description": "Virtual Machine Solutions LLC",
+        "description": "RackNerd LLC",
         "country_code": "US",
         "parent": {
           "prefix": "192.3.0.0/16",
@@ -20985,7 +21001,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-15",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "192.3.0.0/16",
@@ -21544,8 +21560,8 @@
         "ip": "192.3.199.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-192-3-199-0-24",
-        "description": "Virtual Machine Solutions LLC",
+        "name": "CC-15",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "192.3.0.0/16",
@@ -21753,7 +21769,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-15",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "192.3.0.0/16",
@@ -21769,7 +21785,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-15",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "192.3.0.0/16",
@@ -21817,7 +21833,7 @@
         "cidr": 22,
         "roa_status": "None",
         "name": "CC-15",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "192.3.0.0/16",
@@ -21849,7 +21865,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-15",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "192.3.0.0/16",
@@ -22249,7 +22265,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-192-210-163-0-24",
-        "description": "Virtual Machine Solutions LLC",
+        "description": "RackNerd LLC",
         "country_code": "US",
         "parent": {
           "prefix": "192.210.128.0/17",
@@ -22265,7 +22281,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-11",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "192.210.128.0/17",
@@ -22281,7 +22297,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-11",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "192.210.128.0/17",
@@ -22313,7 +22329,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-11",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "192.210.128.0/17",
@@ -22537,7 +22553,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-11",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "192.210.128.0/17",
@@ -22969,7 +22985,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-11",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "192.210.128.0/17",
@@ -23241,7 +23257,7 @@
         "cidr": 22,
         "roa_status": "None",
         "name": "CC-12",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "192.227.128.0/17",
@@ -23444,22 +23460,6 @@
         }
       },
       {
-        "prefix": "192.227.159.0/24",
-        "ip": "192.227.159.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "CC-192-227-159-0-24",
-        "description": "B2NetSolutions",
-        "country_code": "US",
-        "parent": {
-          "prefix": "192.227.128.0/17",
-          "ip": "192.227.128.0",
-          "cidr": 17,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "192.227.160.0/22",
         "ip": "192.227.160.0",
         "cidr": 22,
@@ -23561,7 +23561,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-12",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "192.227.128.0/17",
@@ -23672,9 +23672,9 @@
         "ip": "192.227.185.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-192-227-185-0-24",
-        "description": "Virtual Machine Solutions LLC",
-        "country_code": "NL",
+        "name": "CC-12",
+        "description": "HostPapa",
+        "country_code": "US",
         "parent": {
           "prefix": "192.227.128.0/17",
           "ip": "192.227.128.0",
@@ -23720,8 +23720,8 @@
         "ip": "192.227.189.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-192-227-189-0-24",
-        "description": "Hudson Valley Host",
+        "name": "CC-12",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "192.227.128.0/17",
@@ -24152,9 +24152,9 @@
         "ip": "192.227.254.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-12",
-        "description": "ColoCrossing",
-        "country_code": "US",
+        "name": "CC-192-227-254-0-24",
+        "description": "RapidDedi Investments LTD 516109774",
+        "country_code": "IL",
         "parent": {
           "prefix": "192.227.128.0/17",
           "ip": "192.227.128.0",
@@ -24168,9 +24168,9 @@
         "ip": "192.227.255.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-12",
-        "description": "ColoCrossing",
-        "country_code": "US",
+        "name": "CC-192-227-255-0-24",
+        "description": "RapidDedi Investments LTD 516109774",
+        "country_code": "IL",
         "parent": {
           "prefix": "192.227.128.0/17",
           "ip": "192.227.128.0",
@@ -24297,7 +24297,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-09",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "198.12.64.0/18",
@@ -24409,7 +24409,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-09",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "198.12.64.0/18",
@@ -24617,7 +24617,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-09",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "198.12.64.0/18",
@@ -24665,7 +24665,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-09",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "198.12.64.0/18",
@@ -24825,7 +24825,7 @@
         "cidr": 22,
         "roa_status": "None",
         "name": "CC-10",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "198.23.128.0/17",
@@ -24905,7 +24905,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-10",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "198.23.128.0/17",
@@ -25321,7 +25321,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-10",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "198.23.128.0/17",
@@ -25497,7 +25497,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-198-23-237-0-24",
-        "description": "Virtual Machine Solutions LLC",
+        "description": "Green Value Server",
         "country_code": "US",
         "parent": {
           "prefix": "198.23.128.0/17",
@@ -25625,7 +25625,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-10",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "198.23.128.0/17",
@@ -25865,7 +25865,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-13",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "198.46.128.0/17",
@@ -25945,8 +25945,8 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-198-46-161-0-24",
-        "description": "Virtual Machine Solutions LLC",
-        "country_code": "NL",
+        "description": "Julius Cerniauskas",
+        "country_code": "LT",
         "parent": {
           "prefix": "198.46.128.0/17",
           "ip": "198.46.128.0",
@@ -26089,7 +26089,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-198-46-180-0-24",
-        "description": "RapidDedi.com",
+        "description": "RapidDedi Investments LTD 516109774",
         "country_code": "IL",
         "parent": {
           "prefix": "198.46.128.0/17",
@@ -26201,7 +26201,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-198-46-191-0-24",
-        "description": "RapidDedi.com",
+        "description": "RapidDedi Investments LTD 516109774",
         "country_code": "IL",
         "parent": {
           "prefix": "198.46.128.0/17",
@@ -26409,7 +26409,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-13",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "198.46.128.0/17",
@@ -26457,7 +26457,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-13",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "198.46.128.0/17",
@@ -26616,8 +26616,8 @@
         "ip": "198.46.230.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-198-46-230-0-24",
-        "description": "Hudson Valley Host",
+        "name": "CC-13",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "198.46.128.0/17",
@@ -26633,7 +26633,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-198-46-231-0-24",
-        "description": "RapidDedi.com",
+        "description": "RapidDedi Investments LTD 516109774",
         "country_code": "IL",
         "parent": {
           "prefix": "198.46.128.0/17",
@@ -26649,7 +26649,7 @@
         "cidr": 21,
         "roa_status": "None",
         "name": "CC-13",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "198.46.128.0/17",
@@ -26825,7 +26825,7 @@
         "cidr": 23,
         "roa_status": "None",
         "name": "CC-13",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "198.46.128.0/17",
@@ -27033,7 +27033,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-06",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "199.188.100.0/22",
@@ -27225,7 +27225,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-01",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "206.217.128.0/20",
@@ -27241,7 +27241,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-01",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "206.217.128.0/20",
@@ -27289,7 +27289,7 @@
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-01",
-        "description": "ColoCrossing",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "206.217.128.0/20",
@@ -27529,6 +27529,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "741.25 ms"
+    "execution_time": "813 ms"
   }
 }

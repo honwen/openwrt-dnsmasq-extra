@@ -372,22 +372,6 @@
         }
       },
       {
-        "prefix": "43.129.32.0/19",
-        "ip": "43.129.32.0",
-        "cidr": 19,
-        "roa_status": "None",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "6 COLLYER QUAY",
-        "country_code": "ID",
-        "parent": {
-          "prefix": "43.128.0.0/13",
-          "ip": "43.128.0.0",
-          "cidr": 13,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "43.129.32.0/20",
         "ip": "43.129.32.0",
         "cidr": 20,
@@ -399,6 +383,22 @@
           "prefix": "43.128.0.0/12",
           "ip": "43.128.0.0",
           "cidr": 12,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "43.129.32.0/19",
+        "ip": "43.129.32.0",
+        "cidr": 19,
+        "roa_status": "None",
+        "name": "ACEVILLEPTELTD-SG",
+        "description": "6 COLLYER QUAY",
+        "country_code": "ID",
+        "parent": {
+          "prefix": "43.128.0.0/13",
+          "ip": "43.128.0.0",
+          "cidr": 13,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -967,7 +967,7 @@
         "prefix": "43.132.12.0/22",
         "ip": "43.132.12.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
         "country_code": "SG",
@@ -983,7 +983,7 @@
         "prefix": "43.132.16.0/22",
         "ip": "43.132.16.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
         "country_code": "SG",
@@ -1031,7 +1031,7 @@
         "prefix": "43.132.28.0/22",
         "ip": "43.132.28.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
         "country_code": "SG",
@@ -1047,7 +1047,7 @@
         "prefix": "43.132.32.0/22",
         "ip": "43.132.32.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
         "country_code": "SG",
@@ -1079,7 +1079,7 @@
         "prefix": "43.132.40.0/22",
         "ip": "43.132.40.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
         "country_code": "SG",
@@ -1127,7 +1127,7 @@
         "prefix": "43.132.52.0/22",
         "ip": "43.132.52.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
         "country_code": "SG",
@@ -1295,6 +1295,22 @@
           "prefix": "43.128.0.0/12",
           "ip": "43.128.0.0",
           "cidr": 12,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "43.133.24.0/24",
+        "ip": "43.133.24.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "ACEVILLEPTELTD-SG",
+        "description": "6 COLLYER QUAY",
+        "country_code": "JP",
+        "parent": {
+          "prefix": "43.128.0.0/13",
+          "ip": "43.128.0.0",
+          "cidr": 13,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -1556,22 +1572,6 @@
         }
       },
       {
-        "prefix": "43.134.192.0/19",
-        "ip": "43.134.192.0",
-        "cidr": 19,
-        "roa_status": "None",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "6 COLLYER QUAY",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "43.128.0.0/12",
-          "ip": "43.128.0.0",
-          "cidr": 12,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "43.134.192.0/24",
         "ip": "43.134.192.0",
         "cidr": 24,
@@ -1583,6 +1583,22 @@
           "prefix": "43.128.0.0/13",
           "ip": "43.128.0.0",
           "cidr": 13,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "43.134.192.0/19",
+        "ip": "43.134.192.0",
+        "cidr": 19,
+        "roa_status": "None",
+        "name": "ACEVILLEPTELTD-SG",
+        "description": "6 COLLYER QUAY",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "43.128.0.0/12",
+          "ip": "43.128.0.0",
+          "cidr": 12,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -1879,7 +1895,7 @@
         "prefix": "43.135.221.0/24",
         "ip": "43.135.221.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "6 COLLYER QUAY",
         "country_code": "BR",
@@ -2007,7 +2023,7 @@
         "prefix": "43.152.76.0/22",
         "ip": "43.152.76.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
         "country_code": "SG",
@@ -2023,7 +2039,7 @@
         "prefix": "43.152.80.0/22",
         "ip": "43.152.80.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
         "country_code": "SG",
@@ -2086,6 +2102,22 @@
       {
         "prefix": "43.152.92.0/23",
         "ip": "43.152.92.0",
+        "cidr": 23,
+        "roa_status": "Valid",
+        "name": "ACEVILLEPTELTD-SG",
+        "description": "16 COLLYER QUAY",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "43.152.0.0/13",
+          "ip": "43.152.0.0",
+          "cidr": 13,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "43.152.94.0/23",
+        "ip": "43.152.94.0",
         "cidr": 23,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
@@ -2180,9 +2212,9 @@
         }
       },
       {
-        "prefix": "43.152.100.0/22",
+        "prefix": "43.152.100.0/24",
         "ip": "43.152.100.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -2196,9 +2228,9 @@
         }
       },
       {
-        "prefix": "43.152.100.0/24",
+        "prefix": "43.152.100.0/22",
         "ip": "43.152.100.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -2420,9 +2452,9 @@
         }
       },
       {
-        "prefix": "43.152.112.0/23",
+        "prefix": "43.152.112.0/24",
         "ip": "43.152.112.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -2436,9 +2468,9 @@
         }
       },
       {
-        "prefix": "43.152.112.0/24",
+        "prefix": "43.152.112.0/23",
         "ip": "43.152.112.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -2623,38 +2655,6 @@
           "prefix": "43.144.0.0/12",
           "ip": "43.144.0.0",
           "cidr": 12,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "43.153.238.0/24",
-        "ip": "43.153.238.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "6 COLLYER QUAY",
-        "country_code": "JP",
-        "parent": {
-          "prefix": "43.152.0.0/13",
-          "ip": "43.152.0.0",
-          "cidr": 13,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "43.153.240.0/24",
-        "ip": "43.153.240.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "6 COLLYER QUAY",
-        "country_code": "JP",
-        "parent": {
-          "prefix": "43.152.0.0/13",
-          "ip": "43.152.0.0",
-          "cidr": 13,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -3028,22 +3028,6 @@
         }
       },
       {
-        "prefix": "43.157.192.0/19",
-        "ip": "43.157.192.0",
-        "cidr": 19,
-        "roa_status": "Valid",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "6 COLLYER QUAY",
-        "country_code": "ID",
-        "parent": {
-          "prefix": "43.152.0.0/13",
-          "ip": "43.152.0.0",
-          "cidr": 13,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "43.157.192.0/18",
         "ip": "43.157.192.0",
         "cidr": 18,
@@ -3055,6 +3039,22 @@
           "prefix": "43.144.0.0/12",
           "ip": "43.144.0.0",
           "cidr": 12,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "43.157.192.0/19",
+        "ip": "43.157.192.0",
+        "cidr": 19,
+        "roa_status": "Valid",
+        "name": "ACEVILLEPTELTD-SG",
+        "description": "6 COLLYER QUAY",
+        "country_code": "ID",
+        "parent": {
+          "prefix": "43.152.0.0/13",
+          "ip": "43.152.0.0",
+          "cidr": 13,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -3380,9 +3380,9 @@
         }
       },
       {
-        "prefix": "43.159.26.0/23",
+        "prefix": "43.159.26.0/24",
         "ip": "43.159.26.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -3396,9 +3396,9 @@
         }
       },
       {
-        "prefix": "43.159.26.0/24",
+        "prefix": "43.159.26.0/23",
         "ip": "43.159.26.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -3428,9 +3428,9 @@
         }
       },
       {
-        "prefix": "43.159.28.0/23",
+        "prefix": "43.159.28.0/24",
         "ip": "43.159.28.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -3444,9 +3444,9 @@
         }
       },
       {
-        "prefix": "43.159.28.0/24",
+        "prefix": "43.159.28.0/23",
         "ip": "43.159.28.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -4356,6 +4356,22 @@
         }
       },
       {
+        "prefix": "49.51.32.0/21",
+        "ip": "49.51.32.0",
+        "cidr": 21,
+        "roa_status": "None",
+        "name": "TencentCloud",
+        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
+        "country_code": "US",
+        "parent": {
+          "prefix": "49.51.0.0/16",
+          "ip": "49.51.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "49.51.32.0/23",
         "ip": "49.51.32.0",
         "cidr": 23,
@@ -4375,22 +4391,6 @@
         "prefix": "49.51.32.0/20",
         "ip": "49.51.32.0",
         "cidr": 20,
-        "roa_status": "None",
-        "name": "TencentCloud",
-        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "US",
-        "parent": {
-          "prefix": "49.51.0.0/16",
-          "ip": "49.51.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "49.51.32.0/21",
-        "ip": "49.51.32.0",
-        "cidr": 21,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -4532,9 +4532,9 @@
         }
       },
       {
-        "prefix": "49.51.48.0/22",
+        "prefix": "49.51.48.0/23",
         "ip": "49.51.48.0",
-        "cidr": 22,
+        "cidr": 23,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -4548,9 +4548,9 @@
         }
       },
       {
-        "prefix": "49.51.48.0/23",
+        "prefix": "49.51.48.0/22",
         "ip": "49.51.48.0",
-        "cidr": 23,
+        "cidr": 22,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -4628,22 +4628,6 @@
         }
       },
       {
-        "prefix": "49.51.64.0/21",
-        "ip": "49.51.64.0",
-        "cidr": 21,
-        "roa_status": "None",
-        "name": "TencentCloud",
-        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "US",
-        "parent": {
-          "prefix": "59.103.0.0/16",
-          "ip": "59.103.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "49.51.64.0/23",
         "ip": "49.51.64.0",
         "cidr": 23,
@@ -4654,6 +4638,22 @@
         "parent": {
           "prefix": "49.51.0.0/16",
           "ip": "49.51.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "49.51.64.0/21",
+        "ip": "49.51.64.0",
+        "cidr": 21,
+        "roa_status": "None",
+        "name": "TencentCloud",
+        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
+        "country_code": "US",
+        "parent": {
+          "prefix": "59.103.0.0/16",
+          "ip": "59.103.0.0",
           "cidr": 16,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
@@ -4756,22 +4756,6 @@
         }
       },
       {
-        "prefix": "49.51.76.0/22",
-        "ip": "49.51.76.0",
-        "cidr": 22,
-        "roa_status": "None",
-        "name": "TencentCloud",
-        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "US",
-        "parent": {
-          "prefix": "49.51.0.0/16",
-          "ip": "49.51.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "49.51.76.0/23",
         "ip": "49.51.76.0",
         "cidr": 23,
@@ -4784,6 +4768,22 @@
           "ip": "52.216.0.0",
           "cidr": 14,
           "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "49.51.76.0/22",
+        "ip": "49.51.76.0",
+        "cidr": 22,
+        "roa_status": "None",
+        "name": "TencentCloud",
+        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
+        "country_code": "US",
+        "parent": {
+          "prefix": "49.51.0.0/16",
+          "ip": "49.51.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
       },
@@ -5268,9 +5268,9 @@
         }
       },
       {
-        "prefix": "49.51.160.0/20",
+        "prefix": "49.51.160.0/23",
         "ip": "49.51.160.0",
-        "cidr": 20,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -5284,9 +5284,9 @@
         }
       },
       {
-        "prefix": "49.51.160.0/23",
+        "prefix": "49.51.160.0/20",
         "ip": "49.51.160.0",
-        "cidr": 23,
+        "cidr": 20,
         "roa_status": "Valid",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -5412,9 +5412,9 @@
         }
       },
       {
-        "prefix": "49.51.176.0/22",
+        "prefix": "49.51.176.0/20",
         "ip": "49.51.176.0",
-        "cidr": 22,
+        "cidr": 20,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -5428,9 +5428,9 @@
         }
       },
       {
-        "prefix": "49.51.176.0/20",
+        "prefix": "49.51.176.0/22",
         "ip": "49.51.176.0",
-        "cidr": 20,
+        "cidr": 22,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -5492,9 +5492,9 @@
         }
       },
       {
-        "prefix": "49.51.192.0/20",
+        "prefix": "49.51.192.0/22",
         "ip": "49.51.192.0",
-        "cidr": 20,
+        "cidr": 22,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -5508,9 +5508,9 @@
         }
       },
       {
-        "prefix": "49.51.192.0/22",
+        "prefix": "49.51.192.0/20",
         "ip": "49.51.192.0",
-        "cidr": 22,
+        "cidr": 20,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -5844,22 +5844,6 @@
         }
       },
       {
-        "prefix": "49.51.238.0/23",
-        "ip": "49.51.238.0",
-        "cidr": 23,
-        "roa_status": "None",
-        "name": "TencentCloud",
-        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "US",
-        "parent": {
-          "prefix": "49.51.0.0/16",
-          "ip": "49.51.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "49.51.238.0/24",
         "ip": "49.51.238.0",
         "cidr": 24,
@@ -5876,9 +5860,9 @@
         }
       },
       {
-        "prefix": "49.51.240.0/20",
-        "ip": "49.51.240.0",
-        "cidr": 20,
+        "prefix": "49.51.238.0/23",
+        "ip": "49.51.238.0",
+        "cidr": 23,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -5895,6 +5879,22 @@
         "prefix": "49.51.240.0/23",
         "ip": "49.51.240.0",
         "cidr": 23,
+        "roa_status": "None",
+        "name": "TencentCloud",
+        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
+        "country_code": "US",
+        "parent": {
+          "prefix": "49.51.0.0/16",
+          "ip": "49.51.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "49.51.240.0/20",
+        "ip": "49.51.240.0",
+        "cidr": 20,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -6166,54 +6166,6 @@
       {
         "prefix": "101.32.84.0/24",
         "ip": "101.32.84.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "16 COLLYER QUAY",
-        "country_code": "IN",
-        "parent": {
-          "prefix": "101.32.0.0/16",
-          "ip": "101.32.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "101.32.85.0/24",
-        "ip": "101.32.85.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "16 COLLYER QUAY",
-        "country_code": "IN",
-        "parent": {
-          "prefix": "101.32.0.0/16",
-          "ip": "101.32.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "101.32.88.0/24",
-        "ip": "101.32.88.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "16 COLLYER QUAY",
-        "country_code": "IN",
-        "parent": {
-          "prefix": "101.32.0.0/16",
-          "ip": "101.32.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "101.32.89.0/24",
-        "ip": "101.32.89.0",
         "cidr": 24,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
@@ -6744,9 +6696,9 @@
         "ip": "101.33.17.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "ACEVILLE PTE.LTD.",
-        "country_code": "SG",
+        "name": "ACE-SG",
+        "description": "6 COLLYER QUAY",
+        "country_code": "JP",
         "parent": {
           "prefix": "101.33.0.0/17",
           "ip": "101.33.0.0",
@@ -6916,9 +6868,9 @@
         }
       },
       {
-        "prefix": "101.33.64.0/19",
+        "prefix": "101.33.64.0/23",
         "ip": "101.33.64.0",
-        "cidr": 19,
+        "cidr": 23,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -6932,9 +6884,9 @@
         }
       },
       {
-        "prefix": "101.33.64.0/23",
+        "prefix": "101.33.64.0/19",
         "ip": "101.33.64.0",
-        "cidr": 23,
+        "cidr": 19,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -7000,22 +6952,6 @@
         "ip": "101.33.112.0",
         "cidr": 22,
         "roa_status": "None",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "16 COLLYER QUAY",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "101.33.0.0/17",
-          "ip": "101.33.0.0",
-          "cidr": 17,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "101.33.114.0/24",
-        "ip": "101.33.114.0",
-        "cidr": 24,
-        "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
         "country_code": "SG",
@@ -7444,22 +7380,6 @@
         }
       },
       {
-        "prefix": "119.28.0.0/21",
-        "ip": "119.28.0.0",
-        "cidr": 21,
-        "roa_status": "None",
-        "name": "TencentCloud",
-        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "119.28.0.0/15",
-          "ip": "119.28.0.0",
-          "cidr": 15,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "119.28.0.0/23",
         "ip": "119.28.0.0",
         "cidr": 23,
@@ -7479,6 +7399,22 @@
         "prefix": "119.28.0.0/18",
         "ip": "119.28.0.0",
         "cidr": 18,
+        "roa_status": "None",
+        "name": "TencentCloud",
+        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "119.28.0.0/15",
+          "ip": "119.28.0.0",
+          "cidr": 15,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "119.28.0.0/21",
+        "ip": "119.28.0.0",
+        "cidr": 21,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -7700,13 +7636,13 @@
         }
       },
       {
-        "prefix": "119.28.28.0/24",
+        "prefix": "119.28.28.0/23",
         "ip": "119.28.28.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "None",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "16 COLLYER QUAY, # 18-29, INCOME AT RAFFLES, SINGAPORE",
-        "country_code": "SG",
+        "name": "TencentCloud",
+        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
+        "country_code": "HK",
         "parent": {
           "prefix": "119.28.0.0/15",
           "ip": "119.28.0.0",
@@ -7716,13 +7652,13 @@
         }
       },
       {
-        "prefix": "119.28.28.0/23",
+        "prefix": "119.28.28.0/24",
         "ip": "119.28.28.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "None",
-        "name": "TencentCloud",
-        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "HK",
+        "name": "ACEVILLEPTELTD-SG",
+        "description": "16 COLLYER QUAY, # 18-29, INCOME AT RAFFLES, SINGAPORE",
+        "country_code": "SG",
         "parent": {
           "prefix": "119.28.0.0/15",
           "ip": "119.28.0.0",
@@ -8004,9 +7940,9 @@
         }
       },
       {
-        "prefix": "119.28.64.0/23",
+        "prefix": "119.28.64.0/19",
         "ip": "119.28.64.0",
-        "cidr": 23,
+        "cidr": 19,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -8020,9 +7956,9 @@
         }
       },
       {
-        "prefix": "119.28.64.0/19",
+        "prefix": "119.28.64.0/23",
         "ip": "119.28.64.0",
-        "cidr": 19,
+        "cidr": 23,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -8276,22 +8212,6 @@
         }
       },
       {
-        "prefix": "119.28.96.0/19",
-        "ip": "119.28.96.0",
-        "cidr": 19,
-        "roa_status": "None",
-        "name": "TencentCloud",
-        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "119.28.0.0/15",
-          "ip": "119.28.0.0",
-          "cidr": 15,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "119.28.96.0/23",
         "ip": "119.28.96.0",
         "cidr": 23,
@@ -8319,6 +8239,22 @@
           "prefix": "117.192.0.0/10",
           "ip": "117.192.0.0",
           "cidr": 10,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "119.28.96.0/19",
+        "ip": "119.28.96.0",
+        "cidr": 19,
+        "roa_status": "None",
+        "name": "TencentCloud",
+        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "119.28.0.0/15",
+          "ip": "119.28.0.0",
+          "cidr": 15,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -8436,9 +8372,9 @@
         }
       },
       {
-        "prefix": "119.28.112.0/23",
+        "prefix": "119.28.112.0/21",
         "ip": "119.28.112.0",
-        "cidr": 23,
+        "cidr": 21,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -8452,9 +8388,9 @@
         }
       },
       {
-        "prefix": "119.28.112.0/21",
+        "prefix": "119.28.112.0/23",
         "ip": "119.28.112.0",
-        "cidr": 21,
+        "cidr": 23,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -8612,22 +8548,6 @@
         }
       },
       {
-        "prefix": "119.28.128.0/23",
-        "ip": "119.28.128.0",
-        "cidr": 23,
-        "roa_status": "None",
-        "name": "TencentCloud",
-        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "119.28.0.0/15",
-          "ip": "119.28.0.0",
-          "cidr": 15,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "119.28.128.0/20",
         "ip": "119.28.128.0",
         "cidr": 20,
@@ -8638,6 +8558,22 @@
         "parent": {
           "prefix": "118.96.0.0/15",
           "ip": "118.96.0.0",
+          "cidr": 15,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "119.28.128.0/23",
+        "ip": "119.28.128.0",
+        "cidr": 23,
+        "roa_status": "None",
+        "name": "TencentCloud",
+        "description": "Tencent cloud computing (Beijing) Co., Ltd.",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "119.28.0.0/15",
+          "ip": "119.28.0.0",
           "cidr": 15,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
@@ -8900,9 +8836,9 @@
         }
       },
       {
-        "prefix": "119.28.160.0/23",
+        "prefix": "119.28.160.0/22",
         "ip": "119.28.160.0",
-        "cidr": 23,
+        "cidr": 22,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -8916,9 +8852,9 @@
         }
       },
       {
-        "prefix": "119.28.160.0/22",
+        "prefix": "119.28.160.0/23",
         "ip": "119.28.160.0",
-        "cidr": 22,
+        "cidr": 23,
         "roa_status": "None",
         "name": "TencentCloud",
         "description": "Tencent cloud computing (Beijing) Co., Ltd.",
@@ -9684,13 +9620,13 @@
         }
       },
       {
-        "prefix": "124.156.0.0/19",
+        "prefix": "124.156.0.0/16",
         "ip": "124.156.0.0",
-        "cidr": 19,
+        "cidr": 16,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
-        "country_code": "IN",
+        "country_code": "SG",
         "parent": {
           "prefix": "124.156.0.0/16",
           "ip": "124.156.0.0",
@@ -9700,13 +9636,13 @@
         }
       },
       {
-        "prefix": "124.156.0.0/16",
+        "prefix": "124.156.0.0/19",
         "ip": "124.156.0.0",
-        "cidr": 16,
+        "cidr": 19,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
-        "country_code": "SG",
+        "country_code": "IN",
         "parent": {
           "prefix": "124.156.0.0/16",
           "ip": "124.156.0.0",
@@ -9988,9 +9924,9 @@
         }
       },
       {
-        "prefix": "124.156.156.0/24",
+        "prefix": "124.156.156.0/22",
         "ip": "124.156.156.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -10004,9 +9940,9 @@
         }
       },
       {
-        "prefix": "124.156.156.0/22",
+        "prefix": "124.156.156.0/24",
         "ip": "124.156.156.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -10244,22 +10180,6 @@
         }
       },
       {
-        "prefix": "124.156.240.0/22",
-        "ip": "124.156.240.0",
-        "cidr": 22,
-        "roa_status": "None",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "16 COLLYER QUAY",
-        "country_code": "TH",
-        "parent": {
-          "prefix": "124.156.0.0/16",
-          "ip": "124.156.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "124.156.240.0/20",
         "ip": "124.156.240.0",
         "cidr": 20,
@@ -10271,6 +10191,22 @@
           "prefix": "120.192.0.0/10",
           "ip": "120.192.0.0",
           "cidr": 10,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "124.156.240.0/22",
+        "ip": "124.156.240.0",
+        "cidr": 22,
+        "roa_status": "None",
+        "name": "ACEVILLEPTELTD-SG",
+        "description": "16 COLLYER QUAY",
+        "country_code": "TH",
+        "parent": {
+          "prefix": "124.156.0.0/16",
+          "ip": "124.156.0.0",
+          "cidr": 16,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -10952,8 +10888,8 @@
         "ip": "129.226.144.0",
         "cidr": 20,
         "roa_status": "Valid",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "16 COLLYER QUAY",
+        "name": "ACE-SG",
+        "description": "16 COLLYER QUAY  # 18-29 INCOME AT RAFFLES",
         "country_code": "SG",
         "parent": {
           "prefix": "129.226.0.0/16",
@@ -11412,9 +11348,9 @@
         }
       },
       {
-        "prefix": "150.109.0.0/22",
+        "prefix": "150.109.0.0/16",
         "ip": "150.109.0.0",
-        "cidr": 22,
+        "cidr": 16,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -11428,9 +11364,9 @@
         }
       },
       {
-        "prefix": "150.109.0.0/16",
+        "prefix": "150.109.0.0/22",
         "ip": "150.109.0.0",
-        "cidr": 16,
+        "cidr": 22,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -11716,22 +11652,6 @@
         }
       },
       {
-        "prefix": "150.109.36.0/24",
-        "ip": "150.109.36.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "16 COLLYER QUAY",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "146.22.0.0/15",
-          "ip": "146.22.0.0",
-          "cidr": 15,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "150.109.36.0/22",
         "ip": "150.109.36.0",
         "cidr": 22,
@@ -11744,6 +11664,22 @@
           "ip": "150.109.0.0",
           "cidr": 16,
           "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "150.109.36.0/24",
+        "ip": "150.109.36.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "ACEVILLEPTELTD-SG",
+        "description": "16 COLLYER QUAY",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "146.22.0.0/15",
+          "ip": "146.22.0.0",
+          "cidr": 15,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -11956,12 +11892,12 @@
         }
       },
       {
-        "prefix": "150.109.90.0/24",
+        "prefix": "150.109.90.0/23",
         "ip": "150.109.90.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "ACE-SG",
-        "description": "6 COLLYER QUAY",
+        "cidr": 23,
+        "roa_status": "None",
+        "name": "ACEVILLEPTELTD-SG",
+        "description": "16 COLLYER QUAY",
         "country_code": "SG",
         "parent": {
           "prefix": "150.109.0.0/16",
@@ -11972,12 +11908,12 @@
         }
       },
       {
-        "prefix": "150.109.90.0/23",
+        "prefix": "150.109.90.0/24",
         "ip": "150.109.90.0",
-        "cidr": 23,
-        "roa_status": "None",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "16 COLLYER QUAY",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "ACE-SG",
+        "description": "6 COLLYER QUAY",
         "country_code": "SG",
         "parent": {
           "prefix": "150.109.0.0/16",
@@ -12580,9 +12516,9 @@
         }
       },
       {
-        "prefix": "150.109.160.0/22",
+        "prefix": "150.109.160.0/19",
         "ip": "150.109.160.0",
-        "cidr": 22,
+        "cidr": 19,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -12596,9 +12532,9 @@
         }
       },
       {
-        "prefix": "150.109.160.0/19",
+        "prefix": "150.109.160.0/22",
         "ip": "150.109.160.0",
-        "cidr": 19,
+        "cidr": 22,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -12628,9 +12564,9 @@
         }
       },
       {
-        "prefix": "150.109.168.0/23",
+        "prefix": "150.109.168.0/22",
         "ip": "150.109.168.0",
-        "cidr": 23,
+        "cidr": 22,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -12644,9 +12580,9 @@
         }
       },
       {
-        "prefix": "150.109.168.0/22",
+        "prefix": "150.109.168.0/23",
         "ip": "150.109.168.0",
-        "cidr": 22,
+        "cidr": 23,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -12740,22 +12676,6 @@
         }
       },
       {
-        "prefix": "150.109.190.0/23",
-        "ip": "150.109.190.0",
-        "cidr": 23,
-        "roa_status": "None",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "16 COLLYER QUAY",
-        "country_code": "TH",
-        "parent": {
-          "prefix": "150.109.0.0/16",
-          "ip": "150.109.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "150.109.190.0/24",
         "ip": "150.109.190.0",
         "cidr": 24,
@@ -12768,6 +12688,22 @@
           "ip": "152.108.0.0",
           "cidr": 16,
           "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "150.109.190.0/23",
+        "ip": "150.109.190.0",
+        "cidr": 23,
+        "roa_status": "None",
+        "name": "ACEVILLEPTELTD-SG",
+        "description": "16 COLLYER QUAY",
+        "country_code": "TH",
+        "parent": {
+          "prefix": "150.109.0.0/16",
+          "ip": "150.109.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
       },
@@ -12788,9 +12724,9 @@
         }
       },
       {
-        "prefix": "150.109.192.0/23",
+        "prefix": "150.109.192.0/21",
         "ip": "150.109.192.0",
-        "cidr": 23,
+        "cidr": 21,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -12804,9 +12740,9 @@
         }
       },
       {
-        "prefix": "150.109.192.0/21",
+        "prefix": "150.109.192.0/23",
         "ip": "150.109.192.0",
-        "cidr": 21,
+        "cidr": 23,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -12903,6 +12839,22 @@
         "prefix": "150.109.208.0/20",
         "ip": "150.109.208.0",
         "cidr": 20,
+        "roa_status": "None",
+        "name": "ACEVILLEPTELTD-SG",
+        "description": "16 COLLYER QUAY",
+        "country_code": "KR",
+        "parent": {
+          "prefix": "150.109.0.0/16",
+          "ip": "150.109.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "150.109.222.0/23",
+        "ip": "150.109.222.0",
+        "cidr": 23,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -13332,9 +13284,9 @@
         }
       },
       {
-        "prefix": "162.62.64.0/22",
+        "prefix": "162.62.64.0/24",
         "ip": "162.62.64.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -13348,9 +13300,9 @@
         }
       },
       {
-        "prefix": "162.62.64.0/24",
+        "prefix": "162.62.64.0/22",
         "ip": "162.62.64.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -13527,7 +13479,7 @@
         "prefix": "162.62.80.0/22",
         "ip": "162.62.80.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
         "country_code": "SG",
@@ -13543,7 +13495,7 @@
         "prefix": "162.62.84.0/22",
         "ip": "162.62.84.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
         "country_code": "RU",
@@ -13684,9 +13636,9 @@
         }
       },
       {
-        "prefix": "162.62.112.0/24",
+        "prefix": "162.62.112.0/23",
         "ip": "162.62.112.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "ACEVILLEPTELTD-SG",
@@ -13700,9 +13652,9 @@
         }
       },
       {
-        "prefix": "162.62.112.0/23",
+        "prefix": "162.62.112.0/24",
         "ip": "162.62.112.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "ACEVILLEPTELTD-SG",
@@ -13828,9 +13780,9 @@
         }
       },
       {
-        "prefix": "162.62.128.0/23",
+        "prefix": "162.62.128.0/24",
         "ip": "162.62.128.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -13844,9 +13796,9 @@
         }
       },
       {
-        "prefix": "162.62.128.0/24",
+        "prefix": "162.62.128.0/23",
         "ip": "162.62.128.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -14100,13 +14052,13 @@
         }
       },
       {
-        "prefix": "170.106.0.0/16",
+        "prefix": "170.106.0.0/19",
         "ip": "170.106.0.0",
-        "cidr": 16,
+        "cidr": 19,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
-        "country_code": "SG",
+        "country_code": "US",
         "parent": {
           "prefix": "170.106.0.0/16",
           "ip": "170.106.0.0",
@@ -14132,13 +14084,13 @@
         }
       },
       {
-        "prefix": "170.106.0.0/19",
+        "prefix": "170.106.0.0/16",
         "ip": "170.106.0.0",
-        "cidr": 19,
+        "cidr": 16,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
-        "country_code": "US",
+        "country_code": "SG",
         "parent": {
           "prefix": "170.106.0.0/16",
           "ip": "170.106.0.0",
@@ -14532,22 +14484,6 @@
         }
       },
       {
-        "prefix": "170.106.64.0/19",
-        "ip": "170.106.64.0",
-        "cidr": 19,
-        "roa_status": "None",
-        "name": "ACEVILLEPTELTD-SG",
-        "description": "16 COLLYER QUAY",
-        "country_code": "US",
-        "parent": {
-          "prefix": "170.106.0.0/16",
-          "ip": "170.106.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "170.106.64.0/23",
         "ip": "170.106.64.0",
         "cidr": 23,
@@ -14560,6 +14496,22 @@
           "ip": "171.74.0.0",
           "cidr": 16,
           "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "170.106.64.0/19",
+        "ip": "170.106.64.0",
+        "cidr": 19,
+        "roa_status": "None",
+        "name": "ACEVILLEPTELTD-SG",
+        "description": "16 COLLYER QUAY",
+        "country_code": "US",
+        "parent": {
+          "prefix": "170.106.0.0/16",
+          "ip": "170.106.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
       },
@@ -15028,9 +14980,9 @@
         }
       },
       {
-        "prefix": "170.106.120.0/23",
+        "prefix": "170.106.120.0/24",
         "ip": "170.106.120.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -15044,9 +14996,9 @@
         }
       },
       {
-        "prefix": "170.106.120.0/24",
+        "prefix": "170.106.120.0/23",
         "ip": "170.106.120.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -15236,6 +15188,22 @@
         }
       },
       {
+        "prefix": "170.106.139.0/24",
+        "ip": "170.106.139.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "ACEVILLEPTELTD-SG",
+        "description": "16 COLLYER QUAY",
+        "country_code": "US",
+        "parent": {
+          "prefix": "170.106.0.0/16",
+          "ip": "170.106.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "170.106.140.0/22",
         "ip": "170.106.140.0",
         "cidr": 22,
@@ -15255,6 +15223,22 @@
         "prefix": "170.106.144.0/20",
         "ip": "170.106.144.0",
         "cidr": 20,
+        "roa_status": "None",
+        "name": "ACEVILLEPTELTD-SG",
+        "description": "16 COLLYER QUAY",
+        "country_code": "US",
+        "parent": {
+          "prefix": "170.106.0.0/16",
+          "ip": "170.106.0.0",
+          "cidr": 16,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "170.106.145.0/24",
+        "ip": "170.106.145.0",
+        "cidr": 24,
         "roa_status": "None",
         "name": "ACEVILLEPTELTD-SG",
         "description": "16 COLLYER QUAY",
@@ -16212,9 +16196,9 @@
         }
       },
       {
-        "prefix": "211.152.158.0/23",
+        "prefix": "211.152.158.0/24",
         "ip": "211.152.158.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "None",
         "name": "srit",
         "description": "Development Research of The State",
@@ -16228,9 +16212,9 @@
         }
       },
       {
-        "prefix": "211.152.158.0/24",
+        "prefix": "211.152.158.0/23",
         "ip": "211.152.158.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "None",
         "name": "srit",
         "description": "Development Research of The State",
@@ -16602,6 +16586,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "444.36 ms"
+    "execution_time": "477.92 ms"
   }
 }

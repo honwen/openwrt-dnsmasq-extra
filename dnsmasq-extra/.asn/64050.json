@@ -408,9 +408,9 @@
         "ip": "1.32.220.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "BGP216-KR",
+        "name": "BGP220-TW",
         "description": "BGP Network Limited Co.,Ltd",
-        "country_code": "KR",
+        "country_code": "TW",
         "parent": {
           "prefix": "1.32.192.0/18",
           "ip": "1.32.192.0",
@@ -440,9 +440,9 @@
         "ip": "1.32.223.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "BGP216-KR",
+        "name": "BGP223-JP",
         "description": "BGP Network Limited Co.,Ltd",
-        "country_code": "KR",
+        "country_code": "JP",
         "parent": {
           "prefix": "1.32.192.0/18",
           "ip": "1.32.192.0",
@@ -2250,6 +2250,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "118.3 ms"
+    "execution_time": "144.6 ms"
   }
 }

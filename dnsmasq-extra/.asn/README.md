@@ -1,2 +1,2 @@
 - Data Source: https://api.bgpview.io/asn/<asn-id>/prefixes
-- `Sat Aug  3 00:00:00 UTC 2024`
+- `Sat Sep 14 00:00:00 UTC 2024`

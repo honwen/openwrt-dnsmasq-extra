@@ -295,8 +295,8 @@ restart() {
 update() {
 	baseurl="https://raw.githubusercontent.com/honwen/openwrt-${NAME}/master/${NAME}/files"
 
-	if ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+mirror.ghproxy.com/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
-		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+mirror.ghproxy.com/https://raw.githubusercontent+g')"
+	if ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghp.ci/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghp.ci/https://raw.githubusercontent+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+files.m.daocloud.io/raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+files.m.daocloud.io/raw.githubusercontent+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+hub.gitmirror.com/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then

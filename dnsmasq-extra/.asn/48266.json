@@ -84,6 +84,22 @@
         }
       },
       {
+        "prefix": "92.118.204.0/24",
+        "ip": "92.118.204.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "CATIXS-LTD",
+        "description": "Catixs Ltd",
+        "country_code": "US",
+        "parent": {
+          "prefix": "92.118.204.0/22",
+          "ip": "92.118.204.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "103.190.232.0/24",
         "ip": "103.190.232.0",
         "cidr": 24,
@@ -180,6 +196,54 @@
         }
       },
       {
+        "prefix": "206.245.212.0/24",
+        "ip": "206.245.212.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UK-VORBOSS-LEASE-6202568",
+        "description": "UK VORBOSS LEASE 6202568",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "206.245.192.0/18",
+          "ip": "206.245.192.0",
+          "cidr": 18,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "206.245.238.0/24",
+        "ip": "206.245.238.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UK-VORBOSS-LEASE-4883641",
+        "description": "UK VORBOSS LEASE 4883641",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "206.245.192.0/18",
+          "ip": "206.245.192.0",
+          "cidr": 18,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "206.245.239.0/24",
+        "ip": "206.245.239.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UK-VORBOSS-LEASE-4883641",
+        "description": "UK VORBOSS LEASE 4883641",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "206.245.192.0/18",
+          "ip": "206.245.192.0",
+          "cidr": 18,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "213.218.238.0/24",
         "ip": "213.218.238.0",
         "cidr": 24,
@@ -230,6 +294,22 @@
         }
       },
       {
+        "prefix": "2a06:a005:a0::/44",
+        "ip": "2a06:a005:a0::",
+        "cidr": 44,
+        "roa_status": "Valid",
+        "name": "CATIXS-LTD",
+        "description": "Catixs Ltd",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "2a06:a000::/29",
+          "ip": "2a06:a000::",
+          "cidr": 29,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "2a06:a005:350::/44",
         "ip": "2a06:a005:350::",
         "cidr": 44,
@@ -256,6 +336,22 @@
         "parent": {
           "prefix": "2a06:a000::/29",
           "ip": "2a06:a000::",
+          "cidr": 29,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2a0e:aa07:4000::/40",
+        "ip": "2a0e:aa07:4000::",
+        "cidr": 40,
+        "roa_status": "None",
+        "name": "CATIXS-LTD",
+        "description": "Catixs Ltd",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "2a0e:aa00::/29",
+          "ip": "2a0e:aa00::",
           "cidr": 29,
           "rir_name": "RIPE",
           "allocation_status": "unknown"
@@ -330,6 +426,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "28.22 ms"
+    "execution_time": "34.73 ms"
   }
 }

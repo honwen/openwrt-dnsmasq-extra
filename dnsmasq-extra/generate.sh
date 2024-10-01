@@ -11,7 +11,7 @@ _path=$(dirname $(readlink -f $0))
 
 curl_githubusercontent() {
 	url="$(echo $1 | sed 's+^https*://++g')"
-	curl -skL --speed-limit 100000 --speed-time 10 "https://mirror.ghproxy.com/https://${url}" ||
+	curl -skL --speed-limit 100000 --speed-time 10 "https://ghp.ci/https://${url}" ||
 		curl -skL --speed-limit 100000 --speed-time 10 "https://files.m.daocloud.io/${url}" ||
 		curl -skL --speed-limit 100000 --speed-time 10 "https://hub.gitmirror.com/https://${url}" ||
 		curl -skL --speed-limit 100000 --speed-time 10 "https://ghproxy.net/https://${url}" ||
@@ -65,12 +65,15 @@ time cidr-merger <<-EOF >chnroute.txt.new
 			sed -n 's+IP-CIDR,\(.*\),no-resolve+\1+p'
 	)
 
+	154.21.192.0/24
+
 	$(for it in 3462 9269 9381 25820 31898 35916 36352 45090 45102 48266 64050 132203 132591 135377 136038 136907 138915 141159; do
 		echo >&2 "ASN$it"
 
-		# curl -skL -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64)' --speed-limit 50000 --speed-time 90 https://api.bgpview.io/asn/$it/prefixes | jq . >../../.asn/$it.json
-		# sleep 11
+		curl_githubusercontent https://raw.githubusercontent.com/cbuijs/ipasn/refs/heads/master/asn/as$it.list | grep -vE '^#' | grep -v ':'
 
+		# curl -skL -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64)' --speed-limit 50000 --speed-time 90 https://api.bgpview.io/asn/$it/prefixes | jq . >../../.asn/$it.json
+		# sleep 44
 		jq -r '.data.ipv4_prefixes[]|.prefix' ../../.asn/$it.json
 	done)
 EOF
@@ -251,7 +254,7 @@ sed 's+^+IP-CIDR,+g; s+$+,no-resolve+g' chnroute.txt >$_path/.shadowrocket/cncid
 curl_githubusercontent https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/release/sr_top500_banlist.conf >$_path/.shadowrocket/banlist.conf
 curl_githubusercontent https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/release/sr_top500_whitelist.conf >$_path/.shadowrocket/whitelist.conf
 sed '/ios_rule_script/iDOMAIN-SET,https://raw.githubusercontent.com/honwen/openwrt-dnsmasq-extra/master/dnsmasq-extra/files/data/adblock.ext,REJECT' -i $_path/.shadowrocket/*list.conf
-sed 's+https://raw.githubusercontent.com+https://mirror.ghproxy.com/https://raw.githubusercontent.com+g' -i $_path/.shadowrocket/*list.conf
+sed 's+https://raw.githubusercontent.com+https://ghp.ci/https://raw.githubusercontent.com+g' -i $_path/.shadowrocket/*list.conf
 sed '/^#/d' -i $_path/.shadowrocket/*list.conf
 sed -i '/MITM/,+2d' -i $_path/.shadowrocket/*list.conf
 

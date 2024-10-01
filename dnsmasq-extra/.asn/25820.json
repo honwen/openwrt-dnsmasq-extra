@@ -932,6 +932,38 @@
         }
       },
       {
+        "prefix": "65.49.130.0/24",
+        "ip": "65.49.130.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "CL-1210",
+        "description": "Cluster Logic Inc",
+        "country_code": "CA",
+        "parent": {
+          "prefix": "65.49.130.0/23",
+          "ip": "65.49.130.0",
+          "cidr": 23,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "65.49.130.0/23",
+        "ip": "65.49.130.0",
+        "cidr": 23,
+        "roa_status": "Valid",
+        "name": "CL-1210",
+        "description": "Cluster Logic Inc",
+        "country_code": "CA",
+        "parent": {
+          "prefix": "65.49.130.0/23",
+          "ip": "65.49.130.0",
+          "cidr": 23,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "65.49.132.0/22",
         "ip": "65.49.132.0",
         "cidr": 22,
@@ -2468,9 +2500,9 @@
         }
       },
       {
-        "prefix": "162.211.228.0/23",
+        "prefix": "162.211.228.0/22",
         "ip": "162.211.228.0",
-        "cidr": 23,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "IT7NET",
         "description": "IT7 Networks Inc",
@@ -2479,22 +2511,6 @@
           "prefix": "162.211.224.0/21",
           "ip": "162.211.224.0",
           "cidr": 21,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "162.211.230.0/23",
-        "ip": "162.211.230.0",
-        "cidr": 23,
-        "roa_status": "Valid",
-        "name": "IT7NET",
-        "description": "IT7 Networks Inc",
-        "country_code": "CA",
-        "parent": {
-          "prefix": "166.128.0.0/9",
-          "ip": "166.128.0.0",
-          "cidr": 9,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -3272,9 +3288,9 @@
         "ip": "212.50.224.0",
         "cidr": 22,
         "roa_status": "Valid",
-        "name": null,
-        "description": null,
-        "country_code": "CA",
+        "name": "NET-212-50-224-0-22",
+        "description": "NET 212 50 224 0 22",
+        "country_code": "JP",
         "parent": {
           "prefix": "212.50.224.0/19",
           "ip": "212.50.224.0",
@@ -3433,6 +3449,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "145.6 ms"
+    "execution_time": "152.83 ms"
   }
 }
