@@ -142,6 +142,7 @@ curl -sSL https://anti-ad.net/domains.txt -o adblock
 curl_githubusercontent https://raw.githubusercontent.com/neodevpro/neodevhost/master/domain | sed -n '/^#/d' >>adblock
 curl_githubusercontent https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts | sed -n 's+^127.0.0.1 *++p' | tee -a adblock >/dev/null
 curl_githubusercontent https://raw.githubusercontent.com/neodevpro/neodevhost/master/customblocklist | tee -a adblock >/dev/null
+curl_githubusercontent https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/pcdn.txt | grep -v '^#' | tee -a adblock >/dev/null
 curl_githubusercontent https://raw.githubusercontent.com/code-shiromi/Quantumult-X-Resources/main/remote/filters/ad.list |
 	sed -n 's+^HOST.*,\(.*\),AdBlock$+\1+p' | tee -a adblock >/dev/null
 cat <<-EOF | tee -a adblock >/dev/null
