@@ -295,12 +295,18 @@ restart() {
 update() {
 	baseurl="https://raw.githubusercontent.com/honwen/openwrt-${NAME}/master/${NAME}/files"
 
-	if ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.com/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+	if ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghp.ci/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghp.ci/https://raw.githubusercontent+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.com/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.com/https://raw.githubusercontent+g')"
-	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+gh.con.sh/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
-		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+gh.con.sh/https://raw.githubusercontent+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.net/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.net/https://raw.githubusercontent+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cc/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cc/https://raw.githubusercontent+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cn/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cn/https://raw.githubusercontent+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+gitdl.cn/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+gitdl.cn/https://raw.githubusercontent+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+githubusercontent+githubusercontents+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+githubusercontent+githubusercontents+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent.com+cdn.staticaly.com/gh+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then

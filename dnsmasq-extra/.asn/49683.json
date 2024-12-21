@@ -1,0 +1,591 @@
+{
+  "status": "ok",
+  "status_message": "Query was successful",
+  "data": {
+    "ipv4_prefixes": [
+      {
+        "prefix": "31.25.234.0/24",
+        "ip": "31.25.234.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "GR",
+        "parent": {
+          "prefix": "31.25.234.0/23",
+          "ip": "31.25.234.0",
+          "cidr": 23,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "171.22.172.0/24",
+        "ip": "171.22.172.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "DE",
+        "parent": {
+          "prefix": "171.22.172.0/22",
+          "ip": "171.22.172.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "171.22.173.0/24",
+        "ip": "171.22.173.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "DE",
+        "parent": {
+          "prefix": "171.22.172.0/22",
+          "ip": "171.22.172.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "172.82.64.0/24",
+        "ip": "172.82.64.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "NY-MASSIVEGRIDINC",
+        "description": "MASSIVEGRID, INC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "172.82.64.0/22",
+          "ip": "172.82.64.0",
+          "cidr": 22,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "172.82.65.0/24",
+        "ip": "172.82.65.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "NY-MASSIVEGRIDINC",
+        "description": "MASSIVEGRID, INC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "172.82.64.0/22",
+          "ip": "172.82.64.0",
+          "cidr": 22,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "172.82.66.0/24",
+        "ip": "172.82.66.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "NY-MASSIVEGRIDINC",
+        "description": "MASSIVEGRID, INC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "172.82.64.0/22",
+          "ip": "172.82.64.0",
+          "cidr": 22,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.44.64.0/24",
+        "ip": "185.44.64.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "DE",
+        "parent": {
+          "prefix": "185.44.64.0/22",
+          "ip": "185.44.64.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.44.65.0/24",
+        "ip": "185.44.65.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "US",
+        "parent": {
+          "prefix": "185.44.64.0/22",
+          "ip": "185.44.64.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.44.66.0/24",
+        "ip": "185.44.66.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "US",
+        "parent": {
+          "prefix": "185.44.64.0/22",
+          "ip": "185.44.64.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.44.67.0/24",
+        "ip": "185.44.67.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "185.44.64.0/22",
+          "ip": "185.44.64.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.85.240.0/24",
+        "ip": "185.85.240.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "DE",
+        "parent": {
+          "prefix": "185.85.240.0/22",
+          "ip": "185.85.240.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.85.241.0/24",
+        "ip": "185.85.241.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "DE",
+        "parent": {
+          "prefix": "185.85.240.0/22",
+          "ip": "185.85.240.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.85.242.0/24",
+        "ip": "185.85.242.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "185.85.240.0/22",
+          "ip": "185.85.240.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.85.243.0/24",
+        "ip": "185.85.243.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "US",
+        "parent": {
+          "prefix": "185.85.240.0/22",
+          "ip": "185.85.240.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.116.236.0/24",
+        "ip": "185.116.236.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "US",
+        "parent": {
+          "prefix": "185.116.236.0/22",
+          "ip": "185.116.236.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.116.237.0/24",
+        "ip": "185.116.237.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MASSIVEGRID",
+        "description": "MASSIVEGRID",
+        "country_code": "US",
+        "parent": {
+          "prefix": "185.116.236.0/22",
+          "ip": "185.116.236.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.116.239.0/24",
+        "ip": "185.116.239.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "US",
+        "parent": {
+          "prefix": "185.116.236.0/22",
+          "ip": "185.116.236.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.122.164.0/24",
+        "ip": "185.122.164.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "US",
+        "parent": {
+          "prefix": "185.122.164.0/22",
+          "ip": "185.122.164.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.122.165.0/24",
+        "ip": "185.122.165.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "US",
+        "parent": {
+          "prefix": "185.122.164.0/22",
+          "ip": "185.122.164.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.122.166.0/24",
+        "ip": "185.122.166.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "US",
+        "parent": {
+          "prefix": "185.122.164.0/22",
+          "ip": "185.122.164.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.122.167.0/24",
+        "ip": "185.122.167.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "185.122.164.0/22",
+          "ip": "185.122.164.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.168.192.0/24",
+        "ip": "185.168.192.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "185.168.192.0/22",
+          "ip": "185.168.192.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.168.193.0/24",
+        "ip": "185.168.193.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "DE",
+        "parent": {
+          "prefix": "185.227.228.0/22",
+          "ip": "185.227.228.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.168.194.0/24",
+        "ip": "185.168.194.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "185.168.192.0/22",
+          "ip": "185.168.192.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.168.195.0/24",
+        "ip": "185.168.195.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "185.168.192.0/22",
+          "ip": "185.168.192.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.184.68.0/24",
+        "ip": "185.184.68.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "US",
+        "parent": {
+          "prefix": "185.133.84.0/22",
+          "ip": "185.133.84.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.184.69.0/24",
+        "ip": "185.184.69.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "185.184.68.0/22",
+          "ip": "185.184.68.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.184.70.0/24",
+        "ip": "185.184.70.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "185.184.68.0/22",
+          "ip": "185.184.68.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.184.71.0/24",
+        "ip": "185.184.71.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "DE",
+        "parent": {
+          "prefix": "185.184.68.0/22",
+          "ip": "185.184.68.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.189.56.0/24",
+        "ip": "185.189.56.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "DE",
+        "parent": {
+          "prefix": "185.189.56.0/22",
+          "ip": "185.189.56.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.189.57.0/24",
+        "ip": "185.189.57.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "185.189.56.0/22",
+          "ip": "185.189.56.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.189.58.0/24",
+        "ip": "185.189.58.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "DE",
+        "parent": {
+          "prefix": "185.189.56.0/22",
+          "ip": "185.189.56.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.189.59.0/24",
+        "ip": "185.189.59.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "DE",
+        "parent": {
+          "prefix": "185.189.56.0/22",
+          "ip": "185.189.56.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      }
+    ],
+    "ipv6_prefixes": [
+      {
+        "prefix": "2a0a:2f00:1::/48",
+        "ip": "2a0a:2f00:1::",
+        "cidr": 48,
+        "roa_status": "Valid",
+        "name": null,
+        "description": null,
+        "country_code": "GB",
+        "parent": {
+          "prefix": "2a0a:2f00::/29",
+          "ip": "2a0a:2f00::",
+          "cidr": 29,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2a0a:2f00:2::/48",
+        "ip": "2a0a:2f00:2::",
+        "cidr": 48,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "2a0a:2f00::/29",
+          "ip": "2a0a:2f00::",
+          "cidr": 29,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2a0a:2f00:3::/48",
+        "ip": "2a0a:2f00:3::",
+        "cidr": 48,
+        "roa_status": "Valid",
+        "name": null,
+        "description": null,
+        "country_code": "GB",
+        "parent": {
+          "prefix": "2a0a:2f00::/29",
+          "ip": "2a0a:2f00::",
+          "cidr": 29,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      }
+    ]
+  },
+  "@meta": {
+    "time_zone": "UTC",
+    "api_version": 1,
+    "execution_time": "32.9 ms"
+  }
+}
