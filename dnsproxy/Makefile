@@ -2,8 +2,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dnsproxy
-PKG_VERSION:=2024-11-29
-PKG_RELEASE:=0.73.4
+PKG_VERSION:=2024-12-27
+PKG_RELEASE:=0.74.1
 PKG_MAINTAINER:=honwen <https://github.com/honwen>
 
 # OpenWrt ARCH: arm, aarch64, i386, x86_64, mips, mipsel
