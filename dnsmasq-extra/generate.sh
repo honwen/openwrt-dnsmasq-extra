@@ -15,10 +15,11 @@ curl_githubusercontent() {
 		curl -skSL --speed-limit 100000 --speed-time 10 "https://ghproxy.com/https://${url}" ||
 		curl -skSL --speed-limit 100000 --speed-time 10 "https://ghproxy.net/https://${url}" ||
 		curl -skSL --speed-limit 100000 --speed-time 10 "https://ghproxy.cc/https://${url}" ||
+		curl -skSL --speed-limit 100000 --speed-time 10 "https://cf.ghproxy.cc/https://${url}" ||
 		curl -skSL --speed-limit 100000 --speed-time 10 "https://ghproxy.cn/https://${url}" ||
-		curl -skSL --speed-limit 100000 --speed-time 10 "https://ghp.ci/https://${url}" ||
-		curl -skSL --speed-limit 100000 --speed-time 10 "https://files.m.daocloud.io/${url}" ||
-		curl -skSL --speed-limit 100000 --speed-time 10 "$(echo https://${url} | sed 's+raw.githubusercontent.com+cdn.staticaly.com/gh+g')"
+		curl -skSL --speed-limit 100000 --speed-time 10 "https://ghgo.xyz/https://${url}" ||
+		curl -skSL --speed-limit 100000 --speed-time 10 "$(echo https://${url} | sed 's+raw.githubusercontent.com+cdn.staticaly.com/gh+g')" ||
+		curl -skSL --speed-limit 100000 --speed-time 10 "$(echo https://${url} | sed 's+raw.githubusercontent.com+jsd.proxy.aks.moe/gh+g')"
 }
 
 sed "s+PKG_VERSION:=.*+PKG_VERSION:=${_date}+g" -i $_path/Makefile
@@ -66,6 +67,7 @@ time cidr-merger <<-EOF >chnroute.txt.new
 			sed -n 's+IP-CIDR,\(.*\),no-resolve+\1+p'
 	)
 
+	141.98.197.0/24
 	154.21.192.0/20
 
 	$(for it in 3462 9269 9381 25820 31898 35916 36352 45090 45102 48266 49683 64050 132203 132591 135377 136038 136907 138915 141159; do
@@ -258,7 +260,7 @@ sed 's+^+IP-CIDR,+g; s+$+,no-resolve+g' chnroute.txt >$_path/.shadowrocket/cncid
 curl_githubusercontent https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/release/sr_top500_banlist.conf >$_path/.shadowrocket/banlist.conf
 curl_githubusercontent https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/release/sr_top500_whitelist.conf >$_path/.shadowrocket/whitelist.conf
 sed '/ios_rule_script/iDOMAIN-SET,https://raw.githubusercontent.com/honwen/openwrt-dnsmasq-extra/master/dnsmasq-extra/files/data/adblock.ext,REJECT' -i $_path/.shadowrocket/*list.conf
-sed 's+https://raw.githubusercontent.com+https://ghp.ci/https://raw.githubusercontent.com+g' -i $_path/.shadowrocket/*list.conf
+sed 's+https://raw.githubusercontent.com+https://ghproxy.cc/https://raw.githubusercontent.com+g' -i $_path/.shadowrocket/*list.conf
 sed '/^#/d' -i $_path/.shadowrocket/*list.conf
 sed -i '/MITM/,+2d' -i $_path/.shadowrocket/*list.conf
 

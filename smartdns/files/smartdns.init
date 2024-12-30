@@ -246,6 +246,7 @@ start_service() {
 				domain-rules /ks-cdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /zhimg.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /qpic.cn/ -nameserver cdn -speed-check-mode tcp:443,ping
+				domain-rules /pddpic.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 			EOF
 		}
 

@@ -1188,6 +1188,22 @@
         }
       },
       {
+        "prefix": "80.225.192.0/18",
+        "ip": "80.225.192.0",
+        "cidr": 18,
+        "roa_status": "None",
+        "name": "SE-ORACLE-SE-20011016",
+        "description": "Oracle Svenska AB",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "80.225.0.0/16",
+          "ip": "80.225.0.0",
+          "cidr": 16,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "81.208.160.0/20",
         "ip": "81.208.160.0",
         "cidr": 20,
@@ -1540,22 +1556,6 @@
         }
       },
       {
-        "prefix": "91.223.237.0/24",
-        "ip": "91.223.237.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "LOGIN-HR",
-        "description": "OCITOKEN::91.223.237.0/24:62a07b2b6706878bb764a67554938b31463ca905389f70be8b155608dceb41fd",
-        "country_code": "HR",
-        "parent": {
-          "prefix": "91.223.237.0/24",
-          "ip": "91.223.237.0",
-          "cidr": 24,
-          "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "103.63.102.0/24",
         "ip": "103.63.102.0",
         "cidr": 24,
@@ -1567,22 +1567,6 @@
           "prefix": "103.63.102.0/24",
           "ip": "103.63.102.0",
           "cidr": 24,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "103.75.173.0/24",
-        "ip": "103.75.173.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "QSTPL-IN",
-        "description": "Qualys Security Tech Services Pvt. Ltd.",
-        "country_code": "IN",
-        "parent": {
-          "prefix": "103.91.16.0/22",
-          "ip": "103.91.16.0",
-          "cidr": 22,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -3220,9 +3204,9 @@
         }
       },
       {
-        "prefix": "129.151.0.0/19",
+        "prefix": "129.151.0.0/20",
         "ip": "129.151.0.0",
-        "cidr": 19,
+        "cidr": 20,
         "roa_status": "None",
         "name": "OPC1",
         "description": "Oracle Corporation",
@@ -3236,9 +3220,9 @@
         }
       },
       {
-        "prefix": "129.151.0.0/20",
+        "prefix": "129.151.0.0/19",
         "ip": "129.151.0.0",
-        "cidr": 20,
+        "cidr": 19,
         "roa_status": "None",
         "name": "OPC1",
         "description": "Oracle Corporation",
@@ -8020,6 +8004,22 @@
         }
       },
       {
+        "prefix": "134.185.80.0/20",
+        "ip": "134.185.80.0",
+        "cidr": 20,
+        "roa_status": "None",
+        "name": "ORACLE-4",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "134.185.0.0/16",
+          "ip": "134.185.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "134.185.96.0/19",
         "ip": "134.185.96.0",
         "cidr": 19,
@@ -8142,6 +8142,38 @@
         "parent": {
           "prefix": "136.248.0.0/16",
           "ip": "136.248.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "136.248.253.0/24",
+        "ip": "136.248.253.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "ORACLE-4",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "136.248.0.0/16",
+          "ip": "136.248.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "137.131.0.0/18",
+        "ip": "137.131.0.0",
+        "cidr": 18,
+        "roa_status": "None",
+        "name": "ORACLE-4",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "137.131.0.0/16",
+          "ip": "137.131.0.0",
           "cidr": 16,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
@@ -8896,6 +8928,22 @@
           "ip": "138.3.0.0",
           "cidr": 16,
           "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "139.84.14.0/24",
+        "ip": "139.84.14.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "LASALLE",
+        "description": "LaSalle University",
+        "country_code": "US",
+        "parent": {
+          "prefix": "139.84.0.0/17",
+          "ip": "139.84.0.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -12004,18 +12052,18 @@
         }
       },
       {
-        "prefix": "140.238.0.0/19",
-        "ip": "140.238.0.0",
-        "cidr": 19,
+        "prefix": "140.204.242.0/23",
+        "ip": "140.204.242.0",
+        "cidr": 23,
         "roa_status": "None",
         "name": "OC-195",
         "description": "Oracle Corporation",
         "country_code": "US",
         "parent": {
-          "prefix": "138.219.208.0/22",
-          "ip": "138.219.208.0",
-          "cidr": 22,
-          "rir_name": "Lacnic",
+          "prefix": "140.204.0.0/16",
+          "ip": "140.204.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -12032,6 +12080,22 @@
           "ip": "140.238.0.0",
           "cidr": 16,
           "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "140.238.0.0/19",
+        "ip": "140.238.0.0",
+        "cidr": 19,
+        "roa_status": "None",
+        "name": "OC-195",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "138.219.208.0/22",
+          "ip": "138.219.208.0",
+          "cidr": 22,
+          "rir_name": "Lacnic",
           "allocation_status": "unknown"
         }
       },
@@ -12276,22 +12340,6 @@
         }
       },
       {
-        "prefix": "140.238.208.0/20",
-        "ip": "140.238.208.0",
-        "cidr": 20,
-        "roa_status": "None",
-        "name": "OC-195",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "140.238.0.0/16",
-          "ip": "140.238.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "140.238.208.0/21",
         "ip": "140.238.208.0",
         "cidr": 21,
@@ -12304,6 +12352,22 @@
           "ip": "138.99.248.0",
           "cidr": 22,
           "rir_name": "Lacnic",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "140.238.208.0/20",
+        "ip": "140.238.208.0",
+        "cidr": 20,
+        "roa_status": "None",
+        "name": "OC-195",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "140.238.0.0/16",
+          "ip": "140.238.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -13012,6 +13076,22 @@
         }
       },
       {
+        "prefix": "141.253.96.0/19",
+        "ip": "141.253.96.0",
+        "cidr": 19,
+        "roa_status": "None",
+        "name": "SE-ORACLE",
+        "description": "Oracle Svenska AB",
+        "country_code": "SE",
+        "parent": {
+          "prefix": "141.253.0.0/16",
+          "ip": "141.253.0.0",
+          "cidr": 16,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "142.0.160.0/21",
         "ip": "142.0.160.0",
         "cidr": 21,
@@ -13088,22 +13168,6 @@
           "ip": "142.0.160.0",
           "cidr": 20,
           "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "143.47.28.0/24",
-        "ip": "143.47.28.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "ORACLE-IE",
-        "description": "Oracle Corporation",
-        "country_code": "IE",
-        "parent": {
-          "prefix": "143.47.0.0/16",
-          "ip": "143.47.0.0",
-          "cidr": 16,
-          "rir_name": "RIPE",
           "allocation_status": "unknown"
         }
       },
@@ -13828,22 +13892,6 @@
         }
       },
       {
-        "prefix": "144.25.96.0/20",
-        "ip": "144.25.96.0",
-        "cidr": 20,
-        "roa_status": "None",
-        "name": "ORACLE-TEN",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "143.55.240.0/20",
-          "ip": "143.55.240.0",
-          "cidr": 20,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "144.25.96.0/21",
         "ip": "144.25.96.0",
         "cidr": 21,
@@ -13855,6 +13903,22 @@
           "prefix": "144.25.0.0/16",
           "ip": "144.25.0.0",
           "cidr": 16,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "144.25.96.0/20",
+        "ip": "144.25.96.0",
+        "cidr": 20,
+        "roa_status": "None",
+        "name": "ORACLE-TEN",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "143.55.240.0/20",
+          "ip": "143.55.240.0",
+          "cidr": 20,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -15220,6 +15284,22 @@
         }
       },
       {
+        "prefix": "152.67.32.0/20",
+        "ip": "152.67.32.0",
+        "cidr": 20,
+        "roa_status": "None",
+        "name": "OC-195",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "152.67.0.0/16",
+          "ip": "152.67.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "152.67.32.0/19",
         "ip": "152.67.32.0",
         "cidr": 19,
@@ -15236,8 +15316,8 @@
         }
       },
       {
-        "prefix": "152.67.32.0/20",
-        "ip": "152.67.32.0",
+        "prefix": "152.67.64.0/20",
+        "ip": "152.67.64.0",
         "cidr": 20,
         "roa_status": "None",
         "name": "OC-195",
@@ -15262,22 +15342,6 @@
         "parent": {
           "prefix": "149.7.0.0/16",
           "ip": "149.7.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "152.67.64.0/20",
-        "ip": "152.67.64.0",
-        "cidr": 20,
-        "roa_status": "None",
-        "name": "OC-195",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "152.67.0.0/16",
-          "ip": "152.67.0.0",
           "cidr": 16,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
@@ -16004,22 +16068,6 @@
         }
       },
       {
-        "prefix": "158.101.128.0/19",
-        "ip": "158.101.128.0",
-        "cidr": 19,
-        "roa_status": "None",
-        "name": "OC-195",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "158.101.0.0/16",
-          "ip": "158.101.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "158.101.128.0/20",
         "ip": "158.101.128.0",
         "cidr": 20,
@@ -16036,9 +16084,9 @@
         }
       },
       {
-        "prefix": "158.101.160.0/20",
-        "ip": "158.101.160.0",
-        "cidr": 20,
+        "prefix": "158.101.128.0/19",
+        "ip": "158.101.128.0",
+        "cidr": 19,
         "roa_status": "None",
         "name": "OC-195",
         "description": "Oracle Corporation",
@@ -16055,6 +16103,22 @@
         "prefix": "158.101.160.0/19",
         "ip": "158.101.160.0",
         "cidr": 19,
+        "roa_status": "None",
+        "name": "OC-195",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "158.101.0.0/16",
+          "ip": "158.101.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "158.101.160.0/20",
+        "ip": "158.101.160.0",
+        "cidr": 20,
         "roa_status": "None",
         "name": "OC-195",
         "description": "Oracle Corporation",
@@ -16153,7 +16217,7 @@
         "cidr": 23,
         "roa_status": "Valid",
         "name": "GOTO-BLOCK-8",
-        "description": "LogMeIn, Inc.",
+        "description": "Goto Group, Inc.",
         "country_code": "US",
         "parent": {
           "prefix": "158.120.16.0/20",
@@ -16169,7 +16233,7 @@
         "cidr": 23,
         "roa_status": "Valid",
         "name": "GOTO-BLOCK-8",
-        "description": "LogMeIn, Inc.",
+        "description": "Goto Group, Inc.",
         "country_code": "US",
         "parent": {
           "prefix": "158.120.16.0/20",
@@ -17156,6 +17220,22 @@
         }
       },
       {
+        "prefix": "160.34.208.0/20",
+        "ip": "160.34.208.0",
+        "cidr": 20,
+        "roa_status": "None",
+        "name": "OPC2",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "159.71.0.0/16",
+          "ip": "159.71.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "161.69.32.0/24",
         "ip": "161.69.32.0",
         "cidr": 24,
@@ -18036,22 +18116,6 @@
         }
       },
       {
-        "prefix": "168.138.96.0/21",
-        "ip": "168.138.96.0",
-        "cidr": 21,
-        "roa_status": "None",
-        "name": "OC-195",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "168.138.0.0/16",
-          "ip": "168.138.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "168.138.96.0/20",
         "ip": "168.138.96.0",
         "cidr": 20,
@@ -18064,6 +18128,22 @@
           "ip": "167.203.0.0",
           "cidr": 16,
           "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "168.138.96.0/21",
+        "ip": "168.138.96.0",
+        "cidr": 21,
+        "roa_status": "None",
+        "name": "OC-195",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "168.138.0.0/16",
+          "ip": "168.138.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -18148,9 +18228,9 @@
         }
       },
       {
-        "prefix": "168.138.144.0/21",
+        "prefix": "168.138.144.0/20",
         "ip": "168.138.144.0",
-        "cidr": 21,
+        "cidr": 20,
         "roa_status": "None",
         "name": "OC-195",
         "description": "Oracle Corporation",
@@ -18164,9 +18244,9 @@
         }
       },
       {
-        "prefix": "168.138.144.0/20",
+        "prefix": "168.138.144.0/21",
         "ip": "168.138.144.0",
-        "cidr": 20,
+        "cidr": 21,
         "roa_status": "None",
         "name": "OC-195",
         "description": "Oracle Corporation",
@@ -18655,6 +18735,38 @@
           "prefix": "169.155.128.0/19",
           "ip": "169.155.128.0",
           "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "170.9.192.0/19",
+        "ip": "170.9.192.0",
+        "cidr": 19,
+        "roa_status": "None",
+        "name": "ORACLE-4",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "170.9.0.0/16",
+          "ip": "170.9.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "170.9.224.0/19",
+        "ip": "170.9.224.0",
+        "cidr": 19,
+        "roa_status": "None",
+        "name": "ORACLE-4",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "170.9.0.0/16",
+          "ip": "170.9.0.0",
+          "cidr": 16,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -19652,9 +19764,9 @@
         }
       },
       {
-        "prefix": "192.29.128.0/20",
+        "prefix": "192.29.128.0/21",
         "ip": "192.29.128.0",
-        "cidr": 20,
+        "cidr": 21,
         "roa_status": "None",
         "name": "ORACLE-BRM6",
         "description": "Oracle Corporation",
@@ -19668,9 +19780,9 @@
         }
       },
       {
-        "prefix": "192.29.128.0/21",
+        "prefix": "192.29.128.0/20",
         "ip": "192.29.128.0",
-        "cidr": 21,
+        "cidr": 20,
         "roa_status": "None",
         "name": "ORACLE-BRM6",
         "description": "Oracle Corporation",
@@ -19764,22 +19876,6 @@
         }
       },
       {
-        "prefix": "192.29.192.0/20",
-        "ip": "192.29.192.0",
-        "cidr": 20,
-        "roa_status": "None",
-        "name": "ORACLE-BRM6",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "192.29.0.0/16",
-          "ip": "192.29.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "192.29.192.0/21",
         "ip": "192.29.192.0",
         "cidr": 21,
@@ -19796,8 +19892,8 @@
         }
       },
       {
-        "prefix": "192.29.208.0/20",
-        "ip": "192.29.208.0",
+        "prefix": "192.29.192.0/20",
+        "ip": "192.29.192.0",
         "cidr": 20,
         "roa_status": "None",
         "name": "ORACLE-BRM6",
@@ -19815,6 +19911,22 @@
         "prefix": "192.29.208.0/21",
         "ip": "192.29.208.0",
         "cidr": 21,
+        "roa_status": "None",
+        "name": "ORACLE-BRM6",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "192.29.0.0/16",
+          "ip": "192.29.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "192.29.208.0/20",
+        "ip": "192.29.208.0",
+        "cidr": 20,
         "roa_status": "None",
         "name": "ORACLE-BRM6",
         "description": "Oracle Corporation",
@@ -19860,9 +19972,9 @@
         }
       },
       {
-        "prefix": "192.29.240.0/20",
+        "prefix": "192.29.240.0/21",
         "ip": "192.29.240.0",
-        "cidr": 20,
+        "cidr": 21,
         "roa_status": "None",
         "name": "ORACLE-BRM6",
         "description": "Oracle Corporation",
@@ -19876,9 +19988,9 @@
         }
       },
       {
-        "prefix": "192.29.240.0/21",
+        "prefix": "192.29.240.0/20",
         "ip": "192.29.240.0",
-        "cidr": 21,
+        "cidr": 20,
         "roa_status": "None",
         "name": "ORACLE-BRM6",
         "description": "Oracle Corporation",
@@ -20276,9 +20388,9 @@
         }
       },
       {
-        "prefix": "193.122.96.0/19",
+        "prefix": "193.122.96.0/20",
         "ip": "193.122.96.0",
-        "cidr": 19,
+        "cidr": 20,
         "roa_status": "None",
         "name": "OC-195",
         "description": "Oracle Public Cloud",
@@ -20292,9 +20404,9 @@
         }
       },
       {
-        "prefix": "193.122.96.0/20",
+        "prefix": "193.122.96.0/19",
         "ip": "193.122.96.0",
-        "cidr": 20,
+        "cidr": 19,
         "roa_status": "None",
         "name": "OC-195",
         "description": "Oracle Public Cloud",
@@ -20356,9 +20468,9 @@
         }
       },
       {
-        "prefix": "193.123.32.0/20",
+        "prefix": "193.123.32.0/19",
         "ip": "193.123.32.0",
-        "cidr": 20,
+        "cidr": 19,
         "roa_status": "None",
         "name": "OC-195",
         "description": "Oracle Corporation",
@@ -20372,9 +20484,9 @@
         }
       },
       {
-        "prefix": "193.123.32.0/19",
+        "prefix": "193.123.32.0/20",
         "ip": "193.123.32.0",
-        "cidr": 19,
+        "cidr": 20,
         "roa_status": "None",
         "name": "OC-195",
         "description": "Oracle Corporation",
@@ -20452,9 +20564,9 @@
         }
       },
       {
-        "prefix": "193.123.160.0/20",
+        "prefix": "193.123.160.0/21",
         "ip": "193.123.160.0",
-        "cidr": 20,
+        "cidr": 21,
         "roa_status": "None",
         "name": "OC-195",
         "description": "Oracle Corporation",
@@ -20468,9 +20580,9 @@
         }
       },
       {
-        "prefix": "193.123.160.0/21",
+        "prefix": "193.123.160.0/20",
         "ip": "193.123.160.0",
-        "cidr": 21,
+        "cidr": 20,
         "roa_status": "None",
         "name": "OC-195",
         "description": "Oracle Corporation",
@@ -23286,9 +23398,9 @@
         }
       },
       {
-        "prefix": "2603:c001:200::/39",
+        "prefix": "2603:c001:200::/44",
         "ip": "2603:c001:200::",
-        "cidr": 39,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -23302,9 +23414,9 @@
         }
       },
       {
-        "prefix": "2603:c001:200::/44",
+        "prefix": "2603:c001:200::/39",
         "ip": "2603:c001:200::",
-        "cidr": 44,
+        "cidr": 39,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -23382,9 +23494,9 @@
         }
       },
       {
-        "prefix": "2603:c001:400::/39",
+        "prefix": "2603:c001:400::/44",
         "ip": "2603:c001:400::",
-        "cidr": 39,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -23398,9 +23510,9 @@
         }
       },
       {
-        "prefix": "2603:c001:400::/44",
+        "prefix": "2603:c001:400::/39",
         "ip": "2603:c001:400::",
-        "cidr": 44,
+        "cidr": 39,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -23606,9 +23718,9 @@
         }
       },
       {
-        "prefix": "2603:c001:a00::/39",
+        "prefix": "2603:c001:a00::/44",
         "ip": "2603:c001:a00::",
-        "cidr": 39,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -23622,9 +23734,9 @@
         }
       },
       {
-        "prefix": "2603:c001:a00::/44",
+        "prefix": "2603:c001:a00::/39",
         "ip": "2603:c001:a00::",
-        "cidr": 44,
+        "cidr": 39,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -23654,9 +23766,9 @@
         }
       },
       {
-        "prefix": "2603:c001:c00::/39",
+        "prefix": "2603:c001:c00::/44",
         "ip": "2603:c001:c00::",
-        "cidr": 39,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -23670,9 +23782,9 @@
         }
       },
       {
-        "prefix": "2603:c001:c00::/44",
+        "prefix": "2603:c001:c00::/39",
         "ip": "2603:c001:c00::",
-        "cidr": 44,
+        "cidr": 39,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -23894,9 +24006,9 @@
         }
       },
       {
-        "prefix": "2603:c001:1600::/44",
+        "prefix": "2603:c001:1600::/39",
         "ip": "2603:c001:1600::",
-        "cidr": 44,
+        "cidr": 39,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -23910,9 +24022,9 @@
         }
       },
       {
-        "prefix": "2603:c001:1600::/39",
+        "prefix": "2603:c001:1600::/44",
         "ip": "2603:c001:1600::",
-        "cidr": 39,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -24086,9 +24198,9 @@
         }
       },
       {
-        "prefix": "2603:c001:1e00::/39",
+        "prefix": "2603:c001:1e00::/44",
         "ip": "2603:c001:1e00::",
-        "cidr": 39,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -24102,9 +24214,9 @@
         }
       },
       {
-        "prefix": "2603:c001:1e00::/44",
+        "prefix": "2603:c001:1e00::/39",
         "ip": "2603:c001:1e00::",
-        "cidr": 44,
+        "cidr": 39,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -24166,9 +24278,9 @@
         }
       },
       {
-        "prefix": "2603:c001:2200::/44",
+        "prefix": "2603:c001:2200::/39",
         "ip": "2603:c001:2200::",
-        "cidr": 44,
+        "cidr": 39,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -24182,9 +24294,9 @@
         }
       },
       {
-        "prefix": "2603:c001:2200::/39",
+        "prefix": "2603:c001:2200::/44",
         "ip": "2603:c001:2200::",
-        "cidr": 39,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -24246,9 +24358,9 @@
         }
       },
       {
-        "prefix": "2603:c001:2600::/39",
+        "prefix": "2603:c001:2600::/44",
         "ip": "2603:c001:2600::",
-        "cidr": 39,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -24262,9 +24374,9 @@
         }
       },
       {
-        "prefix": "2603:c001:2600::/44",
+        "prefix": "2603:c001:2600::/39",
         "ip": "2603:c001:2600::",
-        "cidr": 44,
+        "cidr": 39,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -24342,22 +24454,6 @@
         }
       },
       {
-        "prefix": "2603:c001:2c00::/39",
-        "ip": "2603:c001:2c00::",
-        "cidr": 39,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2603:c000::/24",
-          "ip": "2603:c000::",
-          "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2603:c001:2c00::/44",
         "ip": "2603:c001:2c00::",
         "cidr": 44,
@@ -24374,9 +24470,9 @@
         }
       },
       {
-        "prefix": "2603:c001:2e00::/44",
-        "ip": "2603:c001:2e00::",
-        "cidr": 44,
+        "prefix": "2603:c001:2c00::/39",
+        "ip": "2603:c001:2c00::",
+        "cidr": 39,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -24393,6 +24489,22 @@
         "prefix": "2603:c001:2e00::/39",
         "ip": "2603:c001:2e00::",
         "cidr": 39,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2603:c000::/24",
+          "ip": "2603:c000::",
+          "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2603:c001:2e00::/44",
+        "ip": "2603:c001:2e00::",
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -24454,9 +24566,9 @@
         }
       },
       {
-        "prefix": "2603:c001:3200::/44",
+        "prefix": "2603:c001:3200::/39",
         "ip": "2603:c001:3200::",
-        "cidr": 44,
+        "cidr": 39,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -24470,9 +24582,9 @@
         }
       },
       {
-        "prefix": "2603:c001:3200::/39",
+        "prefix": "2603:c001:3200::/44",
         "ip": "2603:c001:3200::",
-        "cidr": 39,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -24582,9 +24694,9 @@
         }
       },
       {
-        "prefix": "2603:c001:3800::/44",
+        "prefix": "2603:c001:3800::/39",
         "ip": "2603:c001:3800::",
-        "cidr": 44,
+        "cidr": 39,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -24598,9 +24710,9 @@
         }
       },
       {
-        "prefix": "2603:c001:3800::/39",
+        "prefix": "2603:c001:3800::/44",
         "ip": "2603:c001:3800::",
-        "cidr": 39,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -24710,9 +24822,9 @@
         }
       },
       {
-        "prefix": "2603:c001:3e00::/39",
+        "prefix": "2603:c001:3e00::/44",
         "ip": "2603:c001:3e00::",
-        "cidr": 39,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -24726,9 +24838,9 @@
         }
       },
       {
-        "prefix": "2603:c001:3e00::/44",
+        "prefix": "2603:c001:3e00::/39",
         "ip": "2603:c001:3e00::",
-        "cidr": 44,
+        "cidr": 39,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -24790,22 +24902,6 @@
         }
       },
       {
-        "prefix": "2603:c001:4200::/39",
-        "ip": "2603:c001:4200::",
-        "cidr": 39,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2602:810:6000::/44",
-          "ip": "2602:810:6000::",
-          "cidr": 44,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2603:c001:4200::/44",
         "ip": "2603:c001:4200::",
         "cidr": 44,
@@ -24817,6 +24913,22 @@
           "prefix": "2606:2800::/32",
           "ip": "2606:2800::",
           "cidr": 32,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2603:c001:4200::/39",
+        "ip": "2603:c001:4200::",
+        "cidr": 39,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2602:810:6000::/44",
+          "ip": "2602:810:6000::",
+          "cidr": 44,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -25046,9 +25158,9 @@
         }
       },
       {
-        "prefix": "2603:c001:5000::/39",
+        "prefix": "2603:c001:5000::/44",
         "ip": "2603:c001:5000::",
-        "cidr": 39,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -25062,9 +25174,9 @@
         }
       },
       {
-        "prefix": "2603:c001:5000::/44",
+        "prefix": "2603:c001:5000::/39",
         "ip": "2603:c001:5000::",
-        "cidr": 44,
+        "cidr": 39,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -25318,9 +25430,9 @@
         }
       },
       {
-        "prefix": "2603:c002:300::/40",
+        "prefix": "2603:c002:300::/44",
         "ip": "2603:c002:300::",
-        "cidr": 40,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -25334,9 +25446,9 @@
         }
       },
       {
-        "prefix": "2603:c002:300::/44",
+        "prefix": "2603:c002:300::/40",
         "ip": "2603:c002:300::",
-        "cidr": 44,
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -25414,9 +25526,9 @@
         }
       },
       {
-        "prefix": "2603:c002:400::/40",
+        "prefix": "2603:c002:400::/44",
         "ip": "2603:c002:400::",
-        "cidr": 40,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -25430,9 +25542,9 @@
         }
       },
       {
-        "prefix": "2603:c002:400::/44",
+        "prefix": "2603:c002:400::/40",
         "ip": "2603:c002:400::",
-        "cidr": 44,
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -25558,22 +25670,6 @@
         }
       },
       {
-        "prefix": "2603:c002:700::/44",
-        "ip": "2603:c002:700::",
-        "cidr": 44,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2603:c000::/24",
-          "ip": "2603:c000::",
-          "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2603:c002:700::/40",
         "ip": "2603:c002:700::",
         "cidr": 40,
@@ -25590,8 +25686,40 @@
         }
       },
       {
+        "prefix": "2603:c002:700::/44",
+        "ip": "2603:c002:700::",
+        "cidr": 44,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2603:c000::/24",
+          "ip": "2603:c000::",
+          "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "2603:c002:710::/44",
         "ip": "2603:c002:710::",
+        "cidr": 44,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2603:c000::/24",
+          "ip": "2603:c000::",
+          "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2603:c002:800::/44",
+        "ip": "2603:c002:800::",
         "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
@@ -25622,40 +25750,8 @@
         }
       },
       {
-        "prefix": "2603:c002:800::/44",
-        "ip": "2603:c002:800::",
-        "cidr": 44,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2603:c000::/24",
-          "ip": "2603:c000::",
-          "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2603:c002:810::/44",
         "ip": "2603:c002:810::",
-        "cidr": 44,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2603:c000::/24",
-          "ip": "2603:c000::",
-          "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2603:c002:900::/44",
-        "ip": "2603:c002:900::",
         "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
@@ -25686,8 +25782,8 @@
         }
       },
       {
-        "prefix": "2603:c002:910::/44",
-        "ip": "2603:c002:910::",
+        "prefix": "2603:c002:900::/44",
+        "ip": "2603:c002:900::",
         "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
@@ -25702,8 +25798,8 @@
         }
       },
       {
-        "prefix": "2603:c002:a00::/44",
-        "ip": "2603:c002:a00::",
+        "prefix": "2603:c002:910::/44",
+        "ip": "2603:c002:910::",
         "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
@@ -25734,8 +25830,40 @@
         }
       },
       {
+        "prefix": "2603:c002:a00::/44",
+        "ip": "2603:c002:a00::",
+        "cidr": 44,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2603:c000::/24",
+          "ip": "2603:c000::",
+          "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "2603:c002:a10::/44",
         "ip": "2603:c002:a10::",
+        "cidr": 44,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2603:c000::/24",
+          "ip": "2603:c000::",
+          "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2603:c002:b00::/44",
+        "ip": "2603:c002:b00::",
         "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
@@ -25753,22 +25881,6 @@
         "prefix": "2603:c002:b00::/40",
         "ip": "2603:c002:b00::",
         "cidr": 40,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2603:c000::/24",
-          "ip": "2603:c000::",
-          "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2603:c002:b00::/44",
-        "ip": "2603:c002:b00::",
-        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -25910,9 +26022,9 @@
         }
       },
       {
-        "prefix": "2603:c002:e00::/44",
+        "prefix": "2603:c002:e00::/40",
         "ip": "2603:c002:e00::",
-        "cidr": 44,
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -25926,9 +26038,9 @@
         }
       },
       {
-        "prefix": "2603:c002:e00::/40",
+        "prefix": "2603:c002:e00::/44",
         "ip": "2603:c002:e00::",
-        "cidr": 40,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -25990,22 +26102,6 @@
         }
       },
       {
-        "prefix": "2603:c002:1000::/40",
-        "ip": "2603:c002:1000::",
-        "cidr": 40,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2603:c000::/24",
-          "ip": "2603:c000::",
-          "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2603:c002:1000::/44",
         "ip": "2603:c002:1000::",
         "cidr": 44,
@@ -26022,8 +26118,8 @@
         }
       },
       {
-        "prefix": "2603:c002:1100::/40",
-        "ip": "2603:c002:1100::",
+        "prefix": "2603:c002:1000::/40",
+        "ip": "2603:c002:1000::",
         "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
@@ -26054,8 +26150,40 @@
         }
       },
       {
+        "prefix": "2603:c002:1100::/40",
+        "ip": "2603:c002:1100::",
+        "cidr": 40,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2603:c000::/24",
+          "ip": "2603:c000::",
+          "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "2603:c002:1110::/44",
         "ip": "2603:c002:1110::",
+        "cidr": 44,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2603:c000::/24",
+          "ip": "2603:c000::",
+          "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2603:c002:1200::/44",
+        "ip": "2603:c002:1200::",
         "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
@@ -26073,22 +26201,6 @@
         "prefix": "2603:c002:1200::/40",
         "ip": "2603:c002:1200::",
         "cidr": 40,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2603:c000::/24",
-          "ip": "2603:c000::",
-          "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2603:c002:1200::/44",
-        "ip": "2603:c002:1200::",
-        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -26166,9 +26278,9 @@
         }
       },
       {
-        "prefix": "2603:c002:1500::/40",
+        "prefix": "2603:c002:1500::/44",
         "ip": "2603:c002:1500::",
-        "cidr": 40,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -26182,9 +26294,9 @@
         }
       },
       {
-        "prefix": "2603:c002:1500::/44",
+        "prefix": "2603:c002:1500::/40",
         "ip": "2603:c002:1500::",
-        "cidr": 44,
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -26230,22 +26342,6 @@
         }
       },
       {
-        "prefix": "2603:c002:1700::/40",
-        "ip": "2603:c002:1700::",
-        "cidr": 40,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2603:c000::/24",
-          "ip": "2603:c000::",
-          "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2603:c002:1700::/44",
         "ip": "2603:c002:1700::",
         "cidr": 44,
@@ -26262,9 +26358,9 @@
         }
       },
       {
-        "prefix": "2603:c002:1800::/44",
-        "ip": "2603:c002:1800::",
-        "cidr": 44,
+        "prefix": "2603:c002:1700::/40",
+        "ip": "2603:c002:1700::",
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -26281,6 +26377,22 @@
         "prefix": "2603:c002:1800::/40",
         "ip": "2603:c002:1800::",
         "cidr": 40,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2603:c000::/24",
+          "ip": "2603:c000::",
+          "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2603:c002:1800::/44",
+        "ip": "2603:c002:1800::",
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -26342,9 +26454,9 @@
         }
       },
       {
-        "prefix": "2603:c002:1a00::/44",
+        "prefix": "2603:c002:1a00::/40",
         "ip": "2603:c002:1a00::",
-        "cidr": 44,
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -26358,9 +26470,9 @@
         }
       },
       {
-        "prefix": "2603:c002:1a00::/40",
+        "prefix": "2603:c002:1a00::/44",
         "ip": "2603:c002:1a00::",
-        "cidr": 40,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -26406,22 +26518,6 @@
         }
       },
       {
-        "prefix": "2603:c002:1b00::/40",
-        "ip": "2603:c002:1b00::",
-        "cidr": 40,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2603:c000::/24",
-          "ip": "2603:c000::",
-          "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2603:c002:1b00::/44",
         "ip": "2603:c002:1b00::",
         "cidr": 44,
@@ -26438,9 +26534,9 @@
         }
       },
       {
-        "prefix": "2603:c002:1c00::/44",
-        "ip": "2603:c002:1c00::",
-        "cidr": 44,
+        "prefix": "2603:c002:1b00::/40",
+        "ip": "2603:c002:1b00::",
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -26457,6 +26553,22 @@
         "prefix": "2603:c002:1c00::/40",
         "ip": "2603:c002:1c00::",
         "cidr": 40,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2603:c000::/24",
+          "ip": "2603:c000::",
+          "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2603:c002:1c00::/44",
+        "ip": "2603:c002:1c00::",
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -26518,22 +26630,6 @@
         }
       },
       {
-        "prefix": "2603:c002:1e00::/40",
-        "ip": "2603:c002:1e00::",
-        "cidr": 40,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2603:c000::/24",
-          "ip": "2603:c000::",
-          "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2603:c002:1e00::/44",
         "ip": "2603:c002:1e00::",
         "cidr": 44,
@@ -26550,9 +26646,9 @@
         }
       },
       {
-        "prefix": "2603:c002:1e10::/44",
-        "ip": "2603:c002:1e10::",
-        "cidr": 44,
+        "prefix": "2603:c002:1e00::/40",
+        "ip": "2603:c002:1e00::",
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -26566,8 +26662,8 @@
         }
       },
       {
-        "prefix": "2603:c002:1f00::/44",
-        "ip": "2603:c002:1f00::",
+        "prefix": "2603:c002:1e10::/44",
+        "ip": "2603:c002:1e10::",
         "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
@@ -26598,8 +26694,40 @@
         }
       },
       {
+        "prefix": "2603:c002:1f00::/44",
+        "ip": "2603:c002:1f00::",
+        "cidr": 44,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2603:c000::/24",
+          "ip": "2603:c000::",
+          "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "2603:c002:1f10::/44",
         "ip": "2603:c002:1f10::",
+        "cidr": 44,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2603:c000::/24",
+          "ip": "2603:c000::",
+          "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2603:c002:2000::/44",
+        "ip": "2603:c002:2000::",
         "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
@@ -26617,22 +26745,6 @@
         "prefix": "2603:c002:2000::/40",
         "ip": "2603:c002:2000::",
         "cidr": 40,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2603:c000::/24",
-          "ip": "2603:c000::",
-          "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2603:c002:2000::/44",
-        "ip": "2603:c002:2000::",
-        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -26934,9 +27046,9 @@
         }
       },
       {
-        "prefix": "2603:c002:8000::/40",
+        "prefix": "2603:c002:8000::/44",
         "ip": "2603:c002:8000::",
-        "cidr": 40,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -26950,9 +27062,9 @@
         }
       },
       {
-        "prefix": "2603:c002:8000::/44",
+        "prefix": "2603:c002:8000::/40",
         "ip": "2603:c002:8000::",
-        "cidr": 44,
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -26998,9 +27110,9 @@
         }
       },
       {
-        "prefix": "2603:c002:8100::/40",
+        "prefix": "2603:c002:8100::/44",
         "ip": "2603:c002:8100::",
-        "cidr": 40,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -27014,9 +27126,9 @@
         }
       },
       {
-        "prefix": "2603:c002:8100::/44",
+        "prefix": "2603:c002:8100::/40",
         "ip": "2603:c002:8100::",
-        "cidr": 44,
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -27318,9 +27430,9 @@
         }
       },
       {
-        "prefix": "2603:c002:8500::/44",
+        "prefix": "2603:c002:8500::/40",
         "ip": "2603:c002:8500::",
-        "cidr": 44,
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -27334,9 +27446,9 @@
         }
       },
       {
-        "prefix": "2603:c002:8500::/40",
+        "prefix": "2603:c002:8500::/44",
         "ip": "2603:c002:8500::",
-        "cidr": 40,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -27462,9 +27574,9 @@
         }
       },
       {
-        "prefix": "2603:c002:8800::/40",
+        "prefix": "2603:c002:8800::/44",
         "ip": "2603:c002:8800::",
-        "cidr": 40,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -27478,9 +27590,9 @@
         }
       },
       {
-        "prefix": "2603:c002:8800::/44",
+        "prefix": "2603:c002:8800::/40",
         "ip": "2603:c002:8800::",
-        "cidr": 44,
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -27510,9 +27622,9 @@
         }
       },
       {
-        "prefix": "2603:c002:8900::/44",
+        "prefix": "2603:c002:8900::/40",
         "ip": "2603:c002:8900::",
-        "cidr": 44,
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -27526,9 +27638,9 @@
         }
       },
       {
-        "prefix": "2603:c002:8900::/40",
+        "prefix": "2603:c002:8900::/44",
         "ip": "2603:c002:8900::",
-        "cidr": 40,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -27670,22 +27782,6 @@
         }
       },
       {
-        "prefix": "2603:c002:8c00::/44",
-        "ip": "2603:c002:8c00::",
-        "cidr": 44,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2603:c000::/24",
-          "ip": "2603:c000::",
-          "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2603:c002:8c00::/40",
         "ip": "2603:c002:8c00::",
         "cidr": 40,
@@ -27702,8 +27798,8 @@
         }
       },
       {
-        "prefix": "2603:c002:8c10::/44",
-        "ip": "2603:c002:8c10::",
+        "prefix": "2603:c002:8c00::/44",
+        "ip": "2603:c002:8c00::",
         "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
@@ -27718,8 +27814,8 @@
         }
       },
       {
-        "prefix": "2603:c002:8d00::/44",
-        "ip": "2603:c002:8d00::",
+        "prefix": "2603:c002:8c10::/44",
+        "ip": "2603:c002:8c10::",
         "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
@@ -27750,8 +27846,40 @@
         }
       },
       {
+        "prefix": "2603:c002:8d00::/44",
+        "ip": "2603:c002:8d00::",
+        "cidr": 44,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2603:c000::/24",
+          "ip": "2603:c000::",
+          "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "2603:c002:8d10::/44",
         "ip": "2603:c002:8d10::",
+        "cidr": 44,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2603:c000::/24",
+          "ip": "2603:c000::",
+          "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2603:c002:8e00::/44",
+        "ip": "2603:c002:8e00::",
         "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
@@ -27769,22 +27897,6 @@
         "prefix": "2603:c002:8e00::/40",
         "ip": "2603:c002:8e00::",
         "cidr": 40,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2603:c000::/24",
-          "ip": "2603:c000::",
-          "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2603:c002:8e00::/44",
-        "ip": "2603:c002:8e00::",
-        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -27846,9 +27958,9 @@
         }
       },
       {
-        "prefix": "2603:c002:9000::/44",
+        "prefix": "2603:c002:9000::/40",
         "ip": "2603:c002:9000::",
-        "cidr": 44,
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -27862,9 +27974,9 @@
         }
       },
       {
-        "prefix": "2603:c002:9000::/40",
+        "prefix": "2603:c002:9000::/44",
         "ip": "2603:c002:9000::",
-        "cidr": 40,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -27958,9 +28070,9 @@
         }
       },
       {
-        "prefix": "2603:c002:9300::/40",
+        "prefix": "2603:c002:9300::/44",
         "ip": "2603:c002:9300::",
-        "cidr": 40,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -27974,9 +28086,9 @@
         }
       },
       {
-        "prefix": "2603:c002:9300::/44",
+        "prefix": "2603:c002:9300::/40",
         "ip": "2603:c002:9300::",
-        "cidr": 44,
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -28054,22 +28166,6 @@
         }
       },
       {
-        "prefix": "2603:c002:9600::/44",
-        "ip": "2603:c002:9600::",
-        "cidr": 44,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2603:c000::/24",
-          "ip": "2603:c000::",
-          "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2603:c002:9600::/40",
         "ip": "2603:c002:9600::",
         "cidr": 40,
@@ -28086,9 +28182,9 @@
         }
       },
       {
-        "prefix": "2603:c002:9700::/40",
-        "ip": "2603:c002:9700::",
-        "cidr": 40,
+        "prefix": "2603:c002:9600::/44",
+        "ip": "2603:c002:9600::",
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -28118,9 +28214,9 @@
         }
       },
       {
-        "prefix": "2603:c002:9800::/44",
-        "ip": "2603:c002:9800::",
-        "cidr": 44,
+        "prefix": "2603:c002:9700::/40",
+        "ip": "2603:c002:9700::",
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -28150,8 +28246,40 @@
         }
       },
       {
+        "prefix": "2603:c002:9800::/44",
+        "ip": "2603:c002:9800::",
+        "cidr": 44,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2603:c000::/24",
+          "ip": "2603:c000::",
+          "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "2603:c002:9810::/44",
         "ip": "2603:c002:9810::",
+        "cidr": 44,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2603:c000::/24",
+          "ip": "2603:c000::",
+          "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2603:c002:9900::/44",
+        "ip": "2603:c002:9900::",
         "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
@@ -28169,22 +28297,6 @@
         "prefix": "2603:c002:9900::/40",
         "ip": "2603:c002:9900::",
         "cidr": 40,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2603:c000::/24",
-          "ip": "2603:c000::",
-          "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2603:c002:9900::/44",
-        "ip": "2603:c002:9900::",
-        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -28662,22 +28774,6 @@
         }
       },
       {
-        "prefix": "2603:c002:a400::/40",
-        "ip": "2603:c002:a400::",
-        "cidr": 40,
-        "roa_status": "None",
-        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
-        "description": "Oracle Corporation",
-        "country_code": "US",
-        "parent": {
-          "prefix": "2606:3a80::/32",
-          "ip": "2606:3a80::",
-          "cidr": 32,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2603:c002:a400::/44",
         "ip": "2603:c002:a400::",
         "cidr": 44,
@@ -28689,6 +28785,22 @@
           "prefix": "2603:c000::/24",
           "ip": "2603:c000::",
           "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2603:c002:a400::/40",
+        "ip": "2603:c002:a400::",
+        "cidr": 40,
+        "roa_status": "None",
+        "name": "ORACLE-CLOUD-INFRASTRUCTURE",
+        "description": "Oracle Corporation",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2606:3a80::/32",
+          "ip": "2606:3a80::",
+          "cidr": 32,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -28758,9 +28870,9 @@
         }
       },
       {
-        "prefix": "2603:c002:a800::/40",
+        "prefix": "2603:c002:a800::/44",
         "ip": "2603:c002:a800::",
-        "cidr": 40,
+        "cidr": 44,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -28774,9 +28886,9 @@
         }
       },
       {
-        "prefix": "2603:c002:a800::/44",
+        "prefix": "2603:c002:a800::/40",
         "ip": "2603:c002:a800::",
-        "cidr": 44,
+        "cidr": 40,
         "roa_status": "None",
         "name": "ORACLE-CLOUD-INFRASTRUCTURE",
         "description": "Oracle Corporation",
@@ -30310,6 +30422,22 @@
         }
       },
       {
+        "prefix": "2a14:6:12::/48",
+        "ip": "2a14:6:12::",
+        "cidr": 48,
+        "roa_status": "Valid",
+        "name": "rafled-par",
+        "description": "OCITOKEN::2a14:6:12::/48:0c050beb31dea3b5294a7aa95edcf720a28e5cb1bef3499838baf137c9ebd3a2",
+        "country_code": "FR",
+        "parent": {
+          "prefix": "2a14::/29",
+          "ip": "2a14::",
+          "cidr": 29,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "2a14:7581:9811::/48",
         "ip": "2a14:7581:9811::",
         "cidr": 48,
@@ -30330,6 +30458,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "830.76 ms"
+    "execution_time": "836.11 ms"
   }
 }

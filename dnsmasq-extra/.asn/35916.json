@@ -116,6 +116,22 @@
         }
       },
       {
+        "prefix": "45.203.0.0/19",
+        "ip": "45.203.0.0",
+        "cidr": 19,
+        "roa_status": "None",
+        "name": "Cloud-Innovation-v4-I",
+        "description": "Cloud Innovation Ltd",
+        "country_code": "MU",
+        "parent": {
+          "prefix": "45.192.0.0/12",
+          "ip": "45.192.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "45.203.48.0/20",
         "ip": "45.203.48.0",
         "cidr": 20,
@@ -296,9 +312,9 @@
         "ip": "74.48.0.0",
         "cidr": 18,
         "roa_status": "Valid",
-        "name": "TELUS-3",
-        "description": "TELUS Communications Inc.",
-        "country_code": "CA",
+        "name": "MULTA-NET",
+        "description": "MULTACOM CORPORATION",
+        "country_code": "US",
         "parent": {
           "prefix": "74.48.0.0/16",
           "ip": "74.48.0.0",
@@ -312,9 +328,9 @@
         "ip": "74.48.34.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "TELUS-3",
-        "description": "TELUS Communications Inc.",
-        "country_code": "CA",
+        "name": "MULTA-NET",
+        "description": "MULTACOM CORPORATION",
+        "country_code": "US",
         "parent": {
           "prefix": "74.48.0.0/16",
           "ip": "74.48.0.0",
@@ -328,9 +344,9 @@
         "ip": "74.48.64.0",
         "cidr": 18,
         "roa_status": "Valid",
-        "name": "TELUS-3",
-        "description": "TELUS Communications Inc.",
-        "country_code": "CA",
+        "name": "MULTA-NET",
+        "description": "MULTACOM CORPORATION",
+        "country_code": "US",
         "parent": {
           "prefix": "74.48.0.0/16",
           "ip": "74.48.0.0",
@@ -344,9 +360,9 @@
         "ip": "74.48.128.0",
         "cidr": 18,
         "roa_status": "Valid",
-        "name": "TELUS-3",
-        "description": "TELUS Communications Inc.",
-        "country_code": "CA",
+        "name": "MULTA-NET",
+        "description": "MULTACOM CORPORATION",
+        "country_code": "US",
         "parent": {
           "prefix": "74.48.0.0/16",
           "ip": "74.48.0.0",
@@ -360,9 +376,9 @@
         "ip": "74.48.192.0",
         "cidr": 19,
         "roa_status": "Valid",
-        "name": "TELUS-3",
-        "description": "TELUS Communications Inc.",
-        "country_code": "CA",
+        "name": "MULTA-NET",
+        "description": "MULTACOM CORPORATION",
+        "country_code": "US",
         "parent": {
           "prefix": "74.48.0.0/16",
           "ip": "74.48.0.0",
@@ -592,6 +608,22 @@
           "ip": "148.135.0.0",
           "cidr": 16,
           "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.81.0.0/16",
+        "ip": "154.81.0.0",
+        "cidr": 16,
+        "roa_status": "None",
+        "name": "Cloud-Innovation-v4-I",
+        "description": "Cloud Innovation Ltd",
+        "country_code": "SC",
+        "parent": {
+          "prefix": "154.80.0.0/12",
+          "ip": "154.80.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
           "allocation_status": "unknown"
         }
       },
@@ -836,6 +868,38 @@
         }
       },
       {
+        "prefix": "154.198.0.0/16",
+        "ip": "154.198.0.0",
+        "cidr": 16,
+        "roa_status": "None",
+        "name": "Cloud-Innovation-v4-II",
+        "description": "Cloud Innovation Ltd",
+        "country_code": "SC",
+        "parent": {
+          "prefix": "154.192.0.0/11",
+          "ip": "154.192.0.0",
+          "cidr": 11,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.201.0.0/16",
+        "ip": "154.201.0.0",
+        "cidr": 16,
+        "roa_status": "None",
+        "name": "Cloud-Innovation-v4-II",
+        "description": "Cloud Innovation Ltd",
+        "country_code": "SC",
+        "parent": {
+          "prefix": "154.192.0.0/11",
+          "ip": "154.192.0.0",
+          "cidr": 11,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "154.202.0.0/16",
         "ip": "154.202.0.0",
         "cidr": 16,
@@ -996,9 +1060,9 @@
         }
       },
       {
-        "prefix": "154.218.0.0/16",
+        "prefix": "154.218.0.0/17",
         "ip": "154.218.0.0",
-        "cidr": 16,
+        "cidr": 17,
         "roa_status": "None",
         "name": "Cloud-Innovation-v4-II",
         "description": "Cloud Innovation Ltd",
@@ -1012,9 +1076,9 @@
         }
       },
       {
-        "prefix": "154.218.0.0/17",
+        "prefix": "154.218.0.0/16",
         "ip": "154.218.0.0",
-        "cidr": 17,
+        "cidr": 16,
         "roa_status": "None",
         "name": "Cloud-Innovation-v4-II",
         "description": "Cloud Innovation Ltd",
@@ -1079,6 +1143,22 @@
         "prefix": "156.225.192.0/18",
         "ip": "156.225.192.0",
         "cidr": 18,
+        "roa_status": "None",
+        "name": "CloudInnovation-infrastructure",
+        "description": "Cloud Innovation Ltd",
+        "country_code": "SC",
+        "parent": {
+          "prefix": "156.224.0.0/11",
+          "ip": "156.224.0.0",
+          "cidr": 11,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "156.229.0.0/16",
+        "ip": "156.229.0.0",
+        "cidr": 16,
         "roa_status": "None",
         "name": "CloudInnovation-infrastructure",
         "description": "Cloud Innovation Ltd",
@@ -1204,6 +1284,22 @@
         }
       },
       {
+        "prefix": "156.247.0.0/16",
+        "ip": "156.247.0.0",
+        "cidr": 16,
+        "roa_status": "None",
+        "name": "CloudInnovation-infrastructure",
+        "description": "Cloud Innovation Ltd",
+        "country_code": "SC",
+        "parent": {
+          "prefix": "156.224.0.0/11",
+          "ip": "156.224.0.0",
+          "cidr": 11,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "156.248.0.0/16",
         "ip": "156.248.0.0",
         "cidr": 16,
@@ -1264,22 +1360,6 @@
           "ip": "156.224.0.0",
           "cidr": 11,
           "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "156.252.20.0/22",
-        "ip": "156.252.20.0",
-        "cidr": 22,
-        "roa_status": "None",
-        "name": "CloudInnovation-infrastructure",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "SC",
-        "parent": {
-          "prefix": "159.63.0.0/16",
-          "ip": "159.63.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -1642,6 +1722,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "99.53 ms"
+    "execution_time": "98.73 ms"
   }
 }

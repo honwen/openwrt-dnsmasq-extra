@@ -4,12 +4,12 @@
   "data": {
     "ipv4_prefixes": [
       {
-        "prefix": "1.34.0.0/15",
+        "prefix": "1.34.0.0/16",
         "ip": "1.34.0.0",
-        "cidr": 15,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Data Communication Business Group,",
+        "description": "Chunghwa Telecom Co.,Ltd.",
         "country_code": "TW",
         "parent": {
           "prefix": "1.34.0.0/15",
@@ -20,12 +20,12 @@
         }
       },
       {
-        "prefix": "1.34.0.0/16",
+        "prefix": "1.34.0.0/15",
         "ip": "1.34.0.0",
-        "cidr": 16,
+        "cidr": 15,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
+        "description": "Data Communication Business Group,",
         "country_code": "TW",
         "parent": {
           "prefix": "1.34.0.0/15",
@@ -1060,16 +1060,16 @@
         }
       },
       {
-        "prefix": "61.223.248.0/24",
-        "ip": "61.223.248.0",
-        "cidr": 24,
+        "prefix": "61.224.0.0/14",
+        "ip": "61.224.0.0",
+        "cidr": 14,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
+        "description": "Data Communication Business Group,",
         "country_code": "TW",
         "parent": {
-          "prefix": "61.220.0.0/14",
-          "ip": "61.220.0.0",
+          "prefix": "61.224.0.0/14",
+          "ip": "61.224.0.0",
           "cidr": 14,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
@@ -1082,22 +1082,6 @@
         "roa_status": "Valid",
         "name": "HINET-NET",
         "description": "Chunghwa Telecom Co.,Ltd.",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "61.224.0.0/14",
-          "ip": "61.224.0.0",
-          "cidr": 14,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "61.224.0.0/14",
-        "ip": "61.224.0.0",
-        "cidr": 14,
-        "roa_status": "Valid",
-        "name": "HINET-NET",
-        "description": "Data Communication Business Group,",
         "country_code": "TW",
         "parent": {
           "prefix": "61.224.0.0/14",
@@ -1220,9 +1204,9 @@
         }
       },
       {
-        "prefix": "103.21.60.0/22",
+        "prefix": "103.21.60.0/23",
         "ip": "103.21.60.0",
-        "cidr": 22,
+        "cidr": 23,
         "roa_status": "None",
         "name": "BOT-NET",
         "description": "Bank Of Taiwan",
@@ -1236,9 +1220,9 @@
         }
       },
       {
-        "prefix": "103.21.60.0/23",
+        "prefix": "103.21.60.0/22",
         "ip": "103.21.60.0",
-        "cidr": 23,
+        "cidr": 22,
         "roa_status": "None",
         "name": "BOT-NET",
         "description": "Bank Of Taiwan",
@@ -1700,12 +1684,12 @@
         }
       },
       {
-        "prefix": "114.32.0.0/12",
+        "prefix": "114.32.0.0/16",
         "ip": "114.32.0.0",
-        "cidr": 12,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Data Communication Business Group,",
+        "description": "Chunghwa Telecom Co.,Ltd.",
         "country_code": "TW",
         "parent": {
           "prefix": "114.32.0.0/12",
@@ -1716,12 +1700,12 @@
         }
       },
       {
-        "prefix": "114.32.0.0/16",
+        "prefix": "114.32.0.0/12",
         "ip": "114.32.0.0",
-        "cidr": 16,
+        "cidr": 12,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
+        "description": "Data Communication Business Group,",
         "country_code": "TW",
         "parent": {
           "prefix": "114.32.0.0/12",
@@ -2996,22 +2980,6 @@
         }
       },
       {
-        "prefix": "218.161.0.0/17",
-        "ip": "218.161.0.0",
-        "cidr": 17,
-        "roa_status": "Valid",
-        "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "218.200.0.0/14",
-          "ip": "218.200.0.0",
-          "cidr": 14,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "218.161.0.0/16",
         "ip": "218.161.0.0",
         "cidr": 16,
@@ -3022,6 +2990,22 @@
         "parent": {
           "prefix": "218.160.0.0/14",
           "ip": "218.160.0.0",
+          "cidr": 14,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "218.161.0.0/17",
+        "ip": "218.161.0.0",
+        "cidr": 17,
+        "roa_status": "Valid",
+        "name": "HINET-NET",
+        "description": "Chunghwa Telecom Co.,Ltd.",
+        "country_code": "TW",
+        "parent": {
+          "prefix": "218.200.0.0/14",
+          "ip": "218.200.0.0",
           "cidr": 14,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
@@ -7786,6 +7770,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "221.5 ms"
+    "execution_time": "248.63 ms"
   }
 }

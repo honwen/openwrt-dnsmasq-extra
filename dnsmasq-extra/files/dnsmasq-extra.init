@@ -295,24 +295,29 @@ restart() {
 update() {
 	baseurl="https://raw.githubusercontent.com/honwen/openwrt-${NAME}/master/${NAME}/files"
 
-	if ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghp.ci/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
-		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghp.ci/https://raw.githubusercontent+g')"
+	# https://github.com/XIU2/UserScript/blob/master/GithubEnhanced-High-Speed-Download.user.js
+	if ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghgo.xyz/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghgo.xyz/https://raw.githubusercontent+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+gitdl.cn/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+gitdl.cn/https://raw.githubusercontent+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.com/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.com/https://raw.githubusercontent+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.net/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.net/https://raw.githubusercontent+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cc/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cc/https://raw.githubusercontent+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+cf.ghproxy.cc/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+cf.ghproxy.cc/https://raw.githubusercontent+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cn/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cn/https://raw.githubusercontent+g')"
-	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+gitdl.cn/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
-		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+gitdl.cn/https://raw.githubusercontent+g')"
-	elif ${_CURL} "$(echo $baseurl | sed 's+githubusercontent+githubusercontents+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
-		baseurl="$(echo $baseurl | sed 's+githubusercontent+githubusercontents+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent.com+cdn.staticaly.com/gh+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent.com+cdn.staticaly.com/gh+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent.com+jsd.proxy.aks.moe/gh+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent.com+jsd.proxy.aks.moe/gh+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+githubusercontent.com+fastgit.org+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+githubusercontent.com+fastgit.org+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+githubusercontent.com+kkgithub.com+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+githubusercontent.com+kkgithub.com+g')"
 	fi
 	echo "# SRC: $baseurl"
 

@@ -52,6 +52,22 @@
         }
       },
       {
+        "prefix": "171.22.174.0/24",
+        "ip": "171.22.174.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "DE",
+        "parent": {
+          "prefix": "171.22.172.0/22",
+          "ip": "171.22.172.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "172.82.64.0/24",
         "ip": "172.82.64.0",
         "cidr": 24,
@@ -532,60 +548,11 @@
         }
       }
     ],
-    "ipv6_prefixes": [
-      {
-        "prefix": "2a0a:2f00:1::/48",
-        "ip": "2a0a:2f00:1::",
-        "cidr": 48,
-        "roa_status": "Valid",
-        "name": null,
-        "description": null,
-        "country_code": "GB",
-        "parent": {
-          "prefix": "2a0a:2f00::/29",
-          "ip": "2a0a:2f00::",
-          "cidr": 29,
-          "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2a0a:2f00:2::/48",
-        "ip": "2a0a:2f00:2::",
-        "cidr": 48,
-        "roa_status": "Valid",
-        "name": "MassiveGRID",
-        "description": "MassiveGRID",
-        "country_code": "GB",
-        "parent": {
-          "prefix": "2a0a:2f00::/29",
-          "ip": "2a0a:2f00::",
-          "cidr": 29,
-          "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2a0a:2f00:3::/48",
-        "ip": "2a0a:2f00:3::",
-        "cidr": 48,
-        "roa_status": "Valid",
-        "name": null,
-        "description": null,
-        "country_code": "GB",
-        "parent": {
-          "prefix": "2a0a:2f00::/29",
-          "ip": "2a0a:2f00::",
-          "cidr": 29,
-          "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      }
-    ]
+    "ipv6_prefixes": []
   },
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "32.9 ms"
+    "execution_time": "34.96 ms"
   }
 }
