@@ -260,7 +260,7 @@ sed 's+^+IP-CIDR,+g; s+$+,no-resolve+g' chnroute.txt >$_path/.shadowrocket/cncid
 curl_githubusercontent https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/release/sr_top500_banlist.conf >$_path/.shadowrocket/banlist.conf
 curl_githubusercontent https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/release/sr_top500_whitelist.conf >$_path/.shadowrocket/whitelist.conf
 sed '/ios_rule_script/iDOMAIN-SET,https://raw.githubusercontent.com/honwen/openwrt-dnsmasq-extra/master/dnsmasq-extra/files/data/adblock.ext,REJECT' -i $_path/.shadowrocket/*list.conf
-sed 's+https://raw.githubusercontent.com+https://ghproxy.cc/https://raw.githubusercontent.com+g' -i $_path/.shadowrocket/*list.conf
+sed 's+https://raw.githubusercontent.com+https://ghproxy.net/https://raw.githubusercontent.com+g' -i $_path/.shadowrocket/*list.conf
 sed '/^#/d' -i $_path/.shadowrocket/*list.conf
 sed -i '/MITM/,+2d' -i $_path/.shadowrocket/*list.conf
 
