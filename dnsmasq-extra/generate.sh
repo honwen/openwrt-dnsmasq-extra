@@ -267,6 +267,10 @@ sed -i '/MITM/,+2d' -i $_path/.shadowrocket/*list.conf
 sed '/^[ \t]*$/d' -i $_path/.shadowrocket/*list.conf
 sed 's+^\[+\n[+g' -i $_path/.shadowrocket/*list.conf
 sed '/./,$!d' -i $_path/.shadowrocket/*list.conf
+
+curl_githubusercontent https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/docs/03.shadowsocks_tiny.conf >$_path/.shadowrocket/tiny.conf
+sed '/always-real-ip/d' -i $_path/.shadowrocket/tiny.conf
+sed '/^dns-server/a always-real-ip = *' -i $_path/.shadowrocket/tiny.conf
 # ----------- ShadowrocketEx.conf ----------
 
 cd -
