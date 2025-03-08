@@ -198,6 +198,9 @@ start_service() {
 			server-https https://1.12.12.12/dns-query -host-name doh.pub -tls-host-verify doh.pub
 			server-https https://223.5.5.5/dns-query -host-name dns.alidns.com -tls-host-verify dns.alidns.com
 			server-https https://223.6.6.6/dns-query -host-name dns.alidns.com -tls-host-verify dns.alidns.com
+			server-https https://9999.alidns.com/dns-query -host-name 9999.alidns.com -tls-host-verify 9999.alidns.com
+			server-https https://123456.alidns.com/dns-query -host-name 123456.alidns.com -tls-host-verify 123456.alidns.com
+			server-https https://150000.alidns.com/dns-query -host-name 150000.alidns.com -tls-host-verify 150000.alidns.com
 			server-https https://doh.360.cn/dns-query -host-name doh.360.cn -tls-host-verify doh.360.cn
 		EOF
 
@@ -316,6 +319,32 @@ healthcheck() {
 			echo "[${LOGTIME}] Problem decteted, restarting ${NAME}..."
 			/etc/init.d/${NAME} restart
 			return 0
+		}
+	}
+
+	# check with wait4x
+	command -v wait4x >/dev/null 2>&1 && {
+		wait4x -i300ms -t1s http http://119.29.29.98/d || wait4x -i300ms -t2s http https://223.5.5.5/dns-query && {
+			port=$(uci_get_by_type $NAME port 7700)
+			wait4x -t2s dns A dns.google.com --expect-ip 8.8.8.8 --expect-ip 8.8.4.4 -n 127.0.0.1:$port &&
+				wait4x -t2s dns A one.one.one.one --expect-ip 1.1.1.1 --expect-ip 1.0.0.1 -n 127.0.0.1:$port &&
+				wait4x -t2s dns A dns9.quad9.net --expect-ip 9.9.9.9 --expect-ip 149.112.112.9 -n 127.0.0.1:$port &&
+				wait4x -t2s dns A dns11.quad9.net --expect-ip 9.9.9.11 --expect-ip 149.112.112.11 -n 127.0.0.1:$port || {
+				echo "[${LOGTIME}] Problem[wait4x] decteted, restarting ${NAME}..."
+				/etc/init.d/${NAME} restart
+				return 0
+			}
+			uci_bool_by_type $NAME enable_cn && {
+				wait4x -i300ms -t1s dns A 99999.alidns.com --expect-ip 223.5.5.5 --expect-ip 223.6.6.6 -n 127.0.0.1:$((port + 1)) &&
+					wait4x -i300ms -t1s dns A public1.114dns.com --expect-ip 114.114.114.114 --expect-ip 114.114.115.115 -n 127.0.0.1:$((port + 1)) &&
+					wait4x -i300ms -t1s dns A public2.114dns.com --expect-ip 114.114.114.114 --expect-ip 114.114.115.115 -n 127.0.0.1:$((port + 1)) &&
+					wait4x -i300ms -t1s dns A public1.sdns.cn --expect-ip 1.2.4.8 --expect-ip 210.2.4.8 -n 127.0.0.1:$((port + 1)) &&
+					wait4x -i300ms -t1s dns A public2.sdns.cn --expect-ip 1.2.4.8 --expect-ip 210.2.4.8 -n 127.0.0.1:$((port + 1)) || {
+					echo "[${LOGTIME}] Problem[wait4x] decteted, restarting ${NAME}..."
+					/etc/init.d/${NAME} restart
+					return 0
+				}
+			}
 		}
 	}
 
