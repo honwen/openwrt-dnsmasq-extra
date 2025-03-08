@@ -376,7 +376,7 @@
         "ip": "1.32.217.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "BGP216-KR",
+        "name": "BGP217-KR",
         "description": "BGP Network Limited Co.,Ltd",
         "country_code": "KR",
         "parent": {
@@ -392,9 +392,9 @@
         "ip": "1.32.219.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "BGP216-KR",
+        "name": "BGP219-HK",
         "description": "BGP Network Limited Co.,Ltd",
-        "country_code": "KR",
+        "country_code": "HK",
         "parent": {
           "prefix": "1.22.0.0/15",
           "ip": "1.22.0.0",
@@ -836,13 +836,13 @@
         }
       },
       {
-        "prefix": "27.124.0.0/24",
+        "prefix": "27.124.0.0/18",
         "ip": "27.124.0.0",
-        "cidr": 24,
+        "cidr": 18,
         "roa_status": "Valid",
-        "name": "BGP124-0-HK",
-        "description": "BGP Network Limited Co.,Ltd",
-        "country_code": "HK",
+        "name": "RCPL-SG",
+        "description": "RACKIP CONSULTANCY PTE. LTD.",
+        "country_code": "SG",
         "parent": {
           "prefix": "27.124.0.0/18",
           "ip": "27.124.0.0",
@@ -852,13 +852,13 @@
         }
       },
       {
-        "prefix": "27.124.0.0/18",
+        "prefix": "27.124.0.0/24",
         "ip": "27.124.0.0",
-        "cidr": 18,
+        "cidr": 24,
         "roa_status": "Valid",
-        "name": "RCPL-SG",
-        "description": "RACKIP CONSULTANCY PTE. LTD.",
-        "country_code": "SG",
+        "name": "BGP124-0-HK",
+        "description": "BGP Network Limited Co.,Ltd",
+        "country_code": "HK",
         "parent": {
           "prefix": "27.124.0.0/18",
           "ip": "27.124.0.0",
@@ -1156,22 +1156,6 @@
         }
       },
       {
-        "prefix": "27.124.61.0/24",
-        "ip": "27.124.61.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "BGP124-60-HK",
-        "description": "BGP Network Limited Co.,Ltd",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "27.124.0.0/18",
-          "ip": "27.124.0.0",
-          "cidr": 18,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "43.226.17.0/24",
         "ip": "43.226.17.0",
         "cidr": 24,
@@ -1432,9 +1416,9 @@
         "ip": "103.135.207.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "FLASHTECHCOLTD-KH",
-        "description": "Flash Tech Co., Ltd",
-        "country_code": "KH",
+        "name": "APNIC-AP",
+        "description": "Asia Pacific Network Information Centre",
+        "country_code": "AU",
         "parent": {
           "prefix": "103.127.8.0/22",
           "ip": "103.127.8.0",
@@ -1464,9 +1448,9 @@
         "ip": "103.198.145.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "BCPL-SG",
-        "description": "No. 3, Pemimpin Drive, # 07-04 Lip Hing, Industrial Building",
-        "country_code": "SG",
+        "name": "BGNL-HK",
+        "description": "BGP Network Limited",
+        "country_code": "HK",
         "parent": {
           "prefix": "103.198.144.0/22",
           "ip": "103.198.144.0",
@@ -1480,9 +1464,9 @@
         "ip": "103.198.146.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "BCPL-SG",
-        "description": "No. 3, Pemimpin Drive, # 07-04 Lip Hing, Industrial Building",
-        "country_code": "SG",
+        "name": "BGNL-HK",
+        "description": "BGP Network Limited",
+        "country_code": "HK",
         "parent": {
           "prefix": "103.198.144.0/22",
           "ip": "103.198.144.0",
@@ -1496,9 +1480,9 @@
         "ip": "103.198.147.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "BCPL-SG",
-        "description": "No. 3, Pemimpin Drive, # 07-04 Lip Hing, Industrial Building",
-        "country_code": "SG",
+        "name": "BGNL-HK",
+        "description": "BGP Network Limited",
+        "country_code": "HK",
         "parent": {
           "prefix": "103.198.144.0/22",
           "ip": "103.198.144.0",
@@ -1816,9 +1800,9 @@
         "ip": "134.122.162.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "BGP160-JP",
+        "name": "BGP162-TW",
         "description": "BGP Network Limited Co.,Ltd",
-        "country_code": "JP",
+        "country_code": "TW",
         "parent": {
           "prefix": "131.79.0.0/16",
           "ip": "131.79.0.0",
@@ -1871,22 +1855,6 @@
           "prefix": "143.92.32.0/19",
           "ip": "143.92.32.0",
           "cidr": 19,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "180.215.0.0/16",
-        "ip": "180.215.0.0",
-        "cidr": 16,
-        "roa_status": "Valid",
-        "name": "RCPL-SG",
-        "description": "RACKIP CONSULTANCY PTE. LTD.",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "180.215.0.0/16",
-          "ip": "180.215.0.0",
-          "cidr": 16,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -2282,6 +2250,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "145.45 ms"
+    "execution_time": "123.77 ms"
   }
 }

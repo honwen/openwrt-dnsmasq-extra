@@ -100,22 +100,6 @@
         }
       },
       {
-        "prefix": "103.254.74.0/24",
-        "ip": "103.254.74.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "ALLCLOUD_JP",
-        "description": "HDTIDC LIMITED",
-        "country_code": "JP",
-        "parent": {
-          "prefix": "103.254.72.0/22",
-          "ip": "103.254.72.0",
-          "cidr": 22,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "103.254.75.0/24",
         "ip": "103.254.75.0",
         "cidr": 24,
@@ -217,6 +201,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "22.74 ms"
+    "execution_time": "21.62 ms"
   }
 }

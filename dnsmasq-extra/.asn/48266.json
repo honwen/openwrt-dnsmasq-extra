@@ -20,6 +20,22 @@
         }
       },
       {
+        "prefix": "43.252.22.0/24",
+        "ip": "43.252.22.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "GPATECH-PL",
+        "description": "Specialist",
+        "country_code": "AU",
+        "parent": {
+          "prefix": "43.252.20.0/22",
+          "ip": "43.252.20.0",
+          "cidr": 22,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "45.67.200.0/24",
         "ip": "45.67.200.0",
         "cidr": 24,
@@ -153,7 +169,7 @@
         "cidr": 24,
         "roa_status": "Valid",
         "name": "Catixs",
-        "description": "Catixs Ltd",
+        "description": "Catixs",
         "country_code": "JP",
         "parent": {
           "prefix": "144.48.80.0/22",
@@ -410,6 +426,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "33.71 ms"
+    "execution_time": "30.2 ms"
   }
 }
