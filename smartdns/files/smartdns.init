@@ -227,6 +227,9 @@ start_service() {
 				domain-rules /alicdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /bootcdn.net/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /douyincdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
+				domain-rules /douyinliving.com/ -nameserver cdn -speed-check-mode tcp:443,ping
+				domain-rules /pstatp.com/ -nameserver cdn -speed-check-mode tcp:443,ping
+				domain-rules /ixigua.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /douyinvod.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /elemecdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
 				domain-rules /momentcdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
@@ -324,12 +327,12 @@ healthcheck() {
 
 	# check with wait4x
 	command -v wait4x >/dev/null 2>&1 && {
-		wait4x -i300ms -t1s http http://119.29.29.98/d || wait4x -i300ms -t2s http https://223.5.5.5/dns-query && {
+		wait4x -i500ms -t2s http http://119.29.29.98/d || wait4x -i500ms -t2s http https://223.5.5.5/dns-query && {
 			port=$(uci_get_by_type $NAME port 7700)
-			wait4x -t2s dns A dns.google.com --expect-ip 8.8.8.8 --expect-ip 8.8.4.4 -n 127.0.0.1:$port &&
-				wait4x -t2s dns A one.one.one.one --expect-ip 1.1.1.1 --expect-ip 1.0.0.1 -n 127.0.0.1:$port &&
-				wait4x -t2s dns A dns9.quad9.net --expect-ip 9.9.9.9 --expect-ip 149.112.112.9 -n 127.0.0.1:$port &&
-				wait4x -t2s dns A dns11.quad9.net --expect-ip 9.9.9.11 --expect-ip 149.112.112.11 -n 127.0.0.1:$port || {
+			wait4x -i500ms -t2s dns A dns.google.com --expect-ip 8.8.8.8 --expect-ip 8.8.4.4 -n 127.0.0.1:$port &&
+				wait4x -i500ms -t2s dns A one.one.one.one --expect-ip 1.1.1.1 --expect-ip 1.0.0.1 -n 127.0.0.1:$port &&
+				wait4x -i500ms -t2s dns A dns9.quad9.net --expect-ip 9.9.9.9 --expect-ip 149.112.112.9 -n 127.0.0.1:$port &&
+				wait4x -i500ms -t2s dns A google.com && wait4x -i500ms -t2s dns A github.com && wait4x -i500ms -t2s dns A github.io || {
 				echo "[${LOGTIME}] Problem[wait4x] decteted, restarting ${NAME}..."
 				/etc/init.d/${NAME} restart
 				return 0
@@ -339,7 +342,8 @@ healthcheck() {
 					wait4x -i300ms -t1s dns A public1.114dns.com --expect-ip 114.114.114.114 --expect-ip 114.114.115.115 -n 127.0.0.1:$((port + 1)) &&
 					wait4x -i300ms -t1s dns A public2.114dns.com --expect-ip 114.114.114.114 --expect-ip 114.114.115.115 -n 127.0.0.1:$((port + 1)) &&
 					wait4x -i300ms -t1s dns A public1.sdns.cn --expect-ip 1.2.4.8 --expect-ip 210.2.4.8 -n 127.0.0.1:$((port + 1)) &&
-					wait4x -i300ms -t1s dns A public2.sdns.cn --expect-ip 1.2.4.8 --expect-ip 210.2.4.8 -n 127.0.0.1:$((port + 1)) || {
+					wait4x -i300ms -t1s dns A public2.sdns.cn --expect-ip 1.2.4.8 --expect-ip 210.2.4.8 -n 127.0.0.1:$((port + 1)) &&
+					wait4x -i300ms -t1s dns A qq.com && wait4x -i300ms -t1s dns A taobao.com && wait4x -i300ms -t1s dns A t.cn || {
 					echo "[${LOGTIME}] Problem[wait4x] decteted, restarting ${NAME}..."
 					/etc/init.d/${NAME} restart
 					return 0
