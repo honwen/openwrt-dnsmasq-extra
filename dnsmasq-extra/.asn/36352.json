@@ -5444,6 +5444,38 @@
         }
       },
       {
+        "prefix": "23.226.136.0/24",
+        "ip": "23.226.136.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "23.226.128.0/20",
+          "ip": "23.226.128.0",
+          "cidr": 20,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "23.226.137.0/24",
+        "ip": "23.226.137.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "23.226.128.0/20",
+          "ip": "23.226.128.0",
+          "cidr": 20,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "23.229.42.0/24",
         "ip": "23.229.42.0",
         "cidr": 24,
@@ -6068,25 +6100,9 @@
         }
       },
       {
-        "prefix": "23.247.144.0/22",
-        "ip": "23.247.144.0",
-        "cidr": 22,
-        "roa_status": "Valid",
-        "name": "VPB-4",
-        "description": "VPB INC.",
-        "country_code": "US",
-        "parent": {
-          "prefix": "23.247.144.0/22",
-          "ip": "23.247.144.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "38.134.252.0/24",
+        "prefix": "38.134.252.0/23",
         "ip": "38.134.252.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "None",
         "name": "COGENT-A",
         "description": "PSINet, Inc.",
@@ -6100,9 +6116,9 @@
         }
       },
       {
-        "prefix": "38.134.252.0/23",
+        "prefix": "38.134.252.0/24",
         "ip": "38.134.252.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "None",
         "name": "COGENT-A",
         "description": "PSINet, Inc.",
@@ -6484,9 +6500,9 @@
         }
       },
       {
-        "prefix": "38.152.150.0/23",
+        "prefix": "38.152.150.0/24",
         "ip": "38.152.150.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "None",
         "name": "BNS-34",
         "description": "B2 Net Solutions Inc.",
@@ -6500,9 +6516,9 @@
         }
       },
       {
-        "prefix": "38.152.150.0/24",
+        "prefix": "38.152.150.0/23",
         "ip": "38.152.150.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "None",
         "name": "BNS-34",
         "description": "B2 Net Solutions Inc.",
@@ -7620,9 +7636,9 @@
         }
       },
       {
-        "prefix": "38.170.212.0/24",
+        "prefix": "38.170.212.0/22",
         "ip": "38.170.212.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "None",
         "name": "24SHELLS-CGNT-NET-2",
         "description": "24 SHELLS",
@@ -7636,9 +7652,9 @@
         }
       },
       {
-        "prefix": "38.170.212.0/22",
+        "prefix": "38.170.212.0/24",
         "ip": "38.170.212.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "None",
         "name": "24SHELLS-CGNT-NET-2",
         "description": "24 SHELLS",
@@ -7748,9 +7764,9 @@
         }
       },
       {
-        "prefix": "38.170.220.0/22",
+        "prefix": "38.170.220.0/24",
         "ip": "38.170.220.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "None",
         "name": "24SHELLS-CGNT-NET-2",
         "description": "24 SHELLS",
@@ -7764,9 +7780,9 @@
         }
       },
       {
-        "prefix": "38.170.220.0/24",
+        "prefix": "38.170.220.0/22",
         "ip": "38.170.220.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "None",
         "name": "24SHELLS-CGNT-NET-2",
         "description": "24 SHELLS",
@@ -7828,9 +7844,9 @@
         }
       },
       {
-        "prefix": "38.170.224.0/22",
+        "prefix": "38.170.224.0/24",
         "ip": "38.170.224.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "None",
         "name": "24SHELLS-CGNT-NET-2",
         "description": "24 SHELLS",
@@ -7844,9 +7860,9 @@
         }
       },
       {
-        "prefix": "38.170.224.0/24",
+        "prefix": "38.170.224.0/22",
         "ip": "38.170.224.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "None",
         "name": "24SHELLS-CGNT-NET-2",
         "description": "24 SHELLS",
@@ -8212,6 +8228,22 @@
         }
       },
       {
+        "prefix": "45.156.116.0/22",
+        "ip": "45.156.116.0",
+        "cidr": 22,
+        "roa_status": "None",
+        "name": "IR-DADEHBR-20190920",
+        "description": "Dadeh Pardazesh Boroumand Kerman co. LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "45.156.116.0/22",
+          "ip": "45.156.116.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "50.20.201.0/24",
         "ip": "50.20.201.0",
         "cidr": 24,
@@ -8356,6 +8388,22 @@
         }
       },
       {
+        "prefix": "64.188.2.0/24",
+        "ip": "64.188.2.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "HOSTP-7",
+        "description": "HostPapa",
+        "country_code": "US",
+        "parent": {
+          "prefix": "64.188.0.0/19",
+          "ip": "64.188.0.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "64.188.4.0/24",
         "ip": "64.188.4.0",
         "cidr": 24,
@@ -8388,12 +8436,12 @@
         }
       },
       {
-        "prefix": "64.188.12.0/24",
-        "ip": "64.188.12.0",
+        "prefix": "64.188.10.0/24",
+        "ip": "64.188.10.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
+        "name": "HOSTP-7",
+        "description": "HostPapa",
         "country_code": "US",
         "parent": {
           "prefix": "64.188.0.0/19",
@@ -8580,6 +8628,38 @@
         }
       },
       {
+        "prefix": "66.63.179.0/24",
+        "ip": "66.63.179.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "66.63.160.0/19",
+          "ip": "66.63.160.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "66.63.182.0/24",
+        "ip": "66.63.182.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "MADGENIUS",
+        "description": "Madgenius.com",
+        "country_code": "US",
+        "parent": {
+          "prefix": "66.63.160.0/19",
+          "ip": "66.63.160.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "66.63.184.0/24",
         "ip": "66.63.184.0",
         "cidr": 24,
@@ -8612,22 +8692,6 @@
         }
       },
       {
-        "prefix": "66.212.16.0/23",
-        "ip": "66.212.16.0",
-        "cidr": 23,
-        "roa_status": "None",
-        "name": "HOSTP-7",
-        "description": "HostPapa",
-        "country_code": "US",
-        "parent": {
-          "prefix": "66.212.16.0/21",
-          "ip": "66.212.16.0",
-          "cidr": 21,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "66.212.16.0/24",
         "ip": "66.212.16.0",
         "cidr": 24,
@@ -8644,17 +8708,33 @@
         }
       },
       {
-        "prefix": "66.212.17.0/24",
-        "ip": "66.212.17.0",
+        "prefix": "66.212.16.0/23",
+        "ip": "66.212.16.0",
+        "cidr": 23,
+        "roa_status": "None",
+        "name": "HOSTP-7",
+        "description": "HostPapa",
+        "country_code": "US",
+        "parent": {
+          "prefix": "66.212.16.0/21",
+          "ip": "66.212.16.0",
+          "cidr": 21,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "66.212.18.0/24",
+        "ip": "66.212.18.0",
         "cidr": 24,
         "roa_status": "None",
         "name": "QUADRANET",
         "description": "QuadraNet Enterprises LLC",
         "country_code": "US",
         "parent": {
-          "prefix": "66.212.16.0/21",
+          "prefix": "66.212.16.0/20",
           "ip": "66.212.16.0",
-          "cidr": 21,
+          "cidr": 20,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -8666,6 +8746,22 @@
         "roa_status": "None",
         "name": "QUADRANET",
         "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "66.212.16.0/20",
+          "ip": "66.212.16.0",
+          "cidr": 20,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "66.212.21.0/24",
+        "ip": "66.212.21.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "MADGENIUS",
+        "description": "Madgenius.com",
         "country_code": "US",
         "parent": {
           "prefix": "66.212.16.0/20",
@@ -9044,9 +9140,9 @@
         }
       },
       {
-        "prefix": "67.215.246.0/24",
+        "prefix": "67.215.246.0/23",
         "ip": "67.215.246.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "None",
         "name": "QUADRANET",
         "description": "QuadraNet Enterprises LLC",
@@ -9060,9 +9156,9 @@
         }
       },
       {
-        "prefix": "67.215.246.0/23",
+        "prefix": "67.215.246.0/24",
         "ip": "67.215.246.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "None",
         "name": "QUADRANET",
         "description": "QuadraNet Enterprises LLC",
@@ -9087,6 +9183,22 @@
           "prefix": "67.215.240.0/21",
           "ip": "67.215.240.0",
           "cidr": 21,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "67.215.249.0/24",
+        "ip": "67.215.249.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "MADGE",
+        "description": "Madgenius.com",
+        "country_code": "US",
+        "parent": {
+          "prefix": "67.215.224.0/19",
+          "ip": "67.215.224.0",
+          "cidr": 19,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -9332,22 +9444,6 @@
         }
       },
       {
-        "prefix": "69.12.85.0/24",
-        "ip": "69.12.85.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "69.12.85.0/24",
-          "ip": "69.12.85.0",
-          "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "69.12.86.0/23",
         "ip": "69.12.86.0",
         "cidr": 23,
@@ -9412,22 +9508,6 @@
         }
       },
       {
-        "prefix": "69.12.92.0/24",
-        "ip": "69.12.92.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "69.12.92.0/22",
-          "ip": "69.12.92.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "69.31.134.0/24",
         "ip": "69.31.134.0",
         "cidr": 24,
@@ -9471,22 +9551,6 @@
           "prefix": "72.11.128.0/22",
           "ip": "72.11.128.0",
           "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "72.11.132.0/24",
-        "ip": "72.11.132.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "72.11.132.0/23",
-          "ip": "72.11.132.0",
-          "cidr": 23,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -9583,6 +9647,22 @@
           "prefix": "72.11.136.0/21",
           "ip": "72.11.136.0",
           "cidr": 21,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "72.11.154.0/24",
+        "ip": "72.11.154.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "72.11.128.0/19",
+          "ip": "72.11.128.0",
+          "cidr": 19,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -10004,16 +10084,16 @@
         }
       },
       {
-        "prefix": "91.216.71.0/24",
-        "ip": "91.216.71.0",
+        "prefix": "91.228.168.0/24",
+        "ip": "91.228.168.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "IR-EGRK-ERTEBAT-14-20241112",
-        "description": "Ertebat Gostaran Rangin Kaman Co. Ltd",
-        "country_code": "IR",
+        "name": "IR-DADEHBR-20220411",
+        "description": "OWS Inc",
+        "country_code": "GB",
         "parent": {
-          "prefix": "91.216.71.0/24",
-          "ip": "91.216.71.0",
+          "prefix": "91.228.168.0/24",
+          "ip": "91.228.168.0",
           "cidr": 24,
           "rir_name": "RIPE",
           "allocation_status": "unknown"
@@ -10436,6 +10516,22 @@
         }
       },
       {
+        "prefix": "96.44.149.0/24",
+        "ip": "96.44.149.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "HOSTP-7",
+        "description": "HostPapa",
+        "country_code": "US",
+        "parent": {
+          "prefix": "96.44.144.0/20",
+          "ip": "96.44.144.0",
+          "cidr": 20,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "96.44.153.0/24",
         "ip": "96.44.153.0",
         "cidr": 24,
@@ -10580,22 +10676,6 @@
         }
       },
       {
-        "prefix": "96.44.164.0/24",
-        "ip": "96.44.164.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "96.44.164.0/22",
-          "ip": "96.44.164.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "96.44.165.0/24",
         "ip": "96.44.165.0",
         "cidr": 24,
@@ -10612,22 +10692,6 @@
         }
       },
       {
-        "prefix": "96.44.172.0/24",
-        "ip": "96.44.172.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "96.44.172.0/23",
-          "ip": "96.44.172.0",
-          "cidr": 23,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "96.44.172.0/23",
         "ip": "96.44.172.0",
         "cidr": 23,
@@ -10639,6 +10703,22 @@
           "prefix": "96.44.128.0/18",
           "ip": "96.44.128.0",
           "cidr": 18,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "96.44.172.0/24",
+        "ip": "96.44.172.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "96.44.172.0/23",
+          "ip": "96.44.172.0",
+          "cidr": 23,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -10692,22 +10772,6 @@
         }
       },
       {
-        "prefix": "96.44.178.0/24",
-        "ip": "96.44.178.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "96.44.176.0/20",
-          "ip": "96.44.176.0",
-          "cidr": 20,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "96.44.178.0/23",
         "ip": "96.44.178.0",
         "cidr": 23,
@@ -10719,6 +10783,22 @@
           "prefix": "96.44.128.0/18",
           "ip": "96.44.128.0",
           "cidr": 18,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "96.44.178.0/24",
+        "ip": "96.44.178.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "96.44.176.0/20",
+          "ip": "96.44.176.0",
+          "cidr": 20,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -10767,22 +10847,6 @@
           "prefix": "96.44.176.0/20",
           "ip": "96.44.176.0",
           "cidr": 20,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "98.143.144.0/24",
-        "ip": "98.143.144.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "98.143.144.0/24",
-          "ip": "98.143.144.0",
-          "cidr": 24,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -11316,6 +11380,22 @@
         }
       },
       {
+        "prefix": "104.129.39.0/24",
+        "ip": "104.129.39.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.129.0.0/18",
+          "ip": "104.129.0.0",
+          "cidr": 18,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "104.129.58.0/23",
         "ip": "104.129.58.0",
         "cidr": 23,
@@ -11380,25 +11460,9 @@
         }
       },
       {
-        "prefix": "104.129.62.0/24",
-        "ip": "104.129.62.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "104.129.32.0/19",
-          "ip": "104.129.32.0",
-          "cidr": 19,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "104.143.128.0/19",
+        "prefix": "104.143.128.0/24",
         "ip": "104.143.128.0",
-        "cidr": 19,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "HT-02",
         "description": "HT",
@@ -11412,17 +11476,369 @@
         }
       },
       {
-        "prefix": "104.145.228.0/24",
-        "ip": "104.145.228.0",
+        "prefix": "104.143.129.0/24",
+        "ip": "104.143.129.0",
         "cidr": 24,
-        "roa_status": "None",
-        "name": "DF-104-145-224-0-20",
-        "description": "DigitalFyre Internet Solutions, LLC.",
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
         "country_code": "US",
         "parent": {
-          "prefix": "104.145.224.0/20",
-          "ip": "104.145.224.0",
-          "cidr": 20,
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.130.0/24",
+        "ip": "104.143.130.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.131.0/24",
+        "ip": "104.143.131.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.132.0/24",
+        "ip": "104.143.132.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.133.0/24",
+        "ip": "104.143.133.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.134.0/24",
+        "ip": "104.143.134.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.135.0/24",
+        "ip": "104.143.135.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.140.0/24",
+        "ip": "104.143.140.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.141.0/24",
+        "ip": "104.143.141.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.142.0/24",
+        "ip": "104.143.142.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.143.0/24",
+        "ip": "104.143.143.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.144.0/24",
+        "ip": "104.143.144.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.145.0/24",
+        "ip": "104.143.145.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.146.0/24",
+        "ip": "104.143.146.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.147.0/24",
+        "ip": "104.143.147.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.148.0/24",
+        "ip": "104.143.148.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.149.0/24",
+        "ip": "104.143.149.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.150.0/24",
+        "ip": "104.143.150.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.151.0/24",
+        "ip": "104.143.151.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.152.0/24",
+        "ip": "104.143.152.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.153.0/24",
+        "ip": "104.143.153.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.154.0/24",
+        "ip": "104.143.154.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.143.155.0/24",
+        "ip": "104.143.155.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HT-02",
+        "description": "HT",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.143.128.0/19",
+          "ip": "104.143.128.0",
+          "cidr": 19,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -12964,9 +13380,89 @@
         }
       },
       {
-        "prefix": "104.223.32.0/23",
+        "prefix": "104.223.4.0/24",
+        "ip": "104.223.4.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.223.0.0/17",
+          "ip": "104.223.0.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.223.6.0/24",
+        "ip": "104.223.6.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "HOSTP-7",
+        "description": "HostPapa",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.223.0.0/19",
+          "ip": "104.223.0.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.223.9.0/24",
+        "ip": "104.223.9.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QN-1019412022",
+        "description": "Web-Host-Pro",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.223.0.0/17",
+          "ip": "104.223.0.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.223.25.0/24",
+        "ip": "104.223.25.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QN-167268557",
+        "description": "Madgenius.com",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.223.0.0/17",
+          "ip": "104.223.0.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.223.27.0/24",
+        "ip": "104.223.27.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.223.0.0/17",
+          "ip": "104.223.0.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.223.32.0/24",
         "ip": "104.223.32.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "None",
         "name": "QUADRANET",
         "description": "QuadraNet Enterprises LLC",
@@ -12980,9 +13476,9 @@
         }
       },
       {
-        "prefix": "104.223.32.0/24",
+        "prefix": "104.223.32.0/23",
         "ip": "104.223.32.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "None",
         "name": "QUADRANET",
         "description": "QuadraNet Enterprises LLC",
@@ -13172,6 +13668,22 @@
         }
       },
       {
+        "prefix": "104.223.49.0/24",
+        "ip": "104.223.49.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QN-1208645825",
+        "description": "Madgenius.com",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.223.0.0/17",
+          "ip": "104.223.0.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "104.223.50.0/23",
         "ip": "104.223.50.0",
         "cidr": 23,
@@ -13183,22 +13695,6 @@
           "prefix": "104.223.48.0/22",
           "ip": "104.223.48.0",
           "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "104.223.50.0/24",
-        "ip": "104.223.50.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "104.223.0.0/17",
-          "ip": "104.223.0.0",
-          "cidr": 17,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -13316,12 +13812,12 @@
         }
       },
       {
-        "prefix": "104.223.66.0/24",
-        "ip": "104.223.66.0",
+        "prefix": "104.223.65.0/24",
+        "ip": "104.223.65.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
+        "name": "MADGE",
+        "description": "Madgenius.com",
         "country_code": "US",
         "parent": {
           "prefix": "104.223.0.0/17",
@@ -13348,6 +13844,22 @@
         }
       },
       {
+        "prefix": "104.223.66.0/24",
+        "ip": "104.223.66.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.223.0.0/17",
+          "ip": "104.223.0.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "104.223.67.0/24",
         "ip": "104.223.67.0",
         "cidr": 24,
@@ -13359,6 +13871,22 @@
           "prefix": "104.223.64.0/18",
           "ip": "104.223.64.0",
           "cidr": 18,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.223.68.0/24",
+        "ip": "104.223.68.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QN-1924158327",
+        "description": "Madgenius.com",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.223.0.0/17",
+          "ip": "104.223.0.0",
+          "cidr": 17,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -13380,9 +13908,9 @@
         }
       },
       {
-        "prefix": "104.223.72.0/23",
+        "prefix": "104.223.72.0/24",
         "ip": "104.223.72.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "None",
         "name": "QUADRANET",
         "description": "QuadraNet Enterprises LLC",
@@ -13396,9 +13924,9 @@
         }
       },
       {
-        "prefix": "104.223.72.0/24",
+        "prefix": "104.223.72.0/23",
         "ip": "104.223.72.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "None",
         "name": "QUADRANET",
         "description": "QuadraNet Enterprises LLC",
@@ -13444,6 +13972,22 @@
         }
       },
       {
+        "prefix": "104.223.78.0/24",
+        "ip": "104.223.78.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QN-1823105747",
+        "description": "Madgenius.com",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.223.0.0/17",
+          "ip": "104.223.0.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "104.223.79.0/24",
         "ip": "104.223.79.0",
         "cidr": 24,
@@ -13482,6 +14026,38 @@
         "roa_status": "None",
         "name": "QUADRANET",
         "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.223.0.0/17",
+          "ip": "104.223.0.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.223.122.0/24",
+        "ip": "104.223.122.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.232.224.0/19",
+          "ip": "104.232.224.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.223.126.0/24",
+        "ip": "104.223.126.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET-MIA",
+        "description": "QuadraNet, Inc",
         "country_code": "US",
         "parent": {
           "prefix": "104.223.0.0/17",
@@ -13550,6 +14126,22 @@
         "parent": {
           "prefix": "104.250.96.0/19",
           "ip": "104.250.96.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "107.150.3.0/24",
+        "ip": "107.150.3.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "MADGENIUS",
+        "description": "Madgenius.com",
+        "country_code": "US",
+        "parent": {
+          "prefix": "107.150.0.0/19",
+          "ip": "107.150.0.0",
           "cidr": 19,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
@@ -15960,9 +16552,9 @@
         "ip": "107.172.183.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-107-172-183-0-24",
-        "description": "RapidDedi Investments LTD 516109774",
-        "country_code": "IL",
+        "name": "CC-17",
+        "description": "HostPapa",
+        "country_code": "US",
         "parent": {
           "prefix": "108.56.0.0/15",
           "ip": "108.56.0.0",
@@ -25828,22 +26420,6 @@
         }
       },
       {
-        "prefix": "134.195.64.0/22",
-        "ip": "134.195.64.0",
-        "cidr": 22,
-        "roa_status": "Valid",
-        "name": "VPB-2",
-        "description": "VPB INC.",
-        "country_code": "US",
-        "parent": {
-          "prefix": "134.195.64.0/22",
-          "ip": "134.195.64.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "141.98.46.0/24",
         "ip": "141.98.46.0",
         "cidr": 24,
@@ -26068,9 +26644,9 @@
         }
       },
       {
-        "prefix": "154.30.234.0/24",
+        "prefix": "154.30.234.0/23",
         "ip": "154.30.234.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "None",
         "name": "SRVR-CGNT-NET-5",
         "description": "B2 Net Solutions Inc.",
@@ -26084,9 +26660,9 @@
         }
       },
       {
-        "prefix": "154.30.234.0/23",
+        "prefix": "154.30.234.0/24",
         "ip": "154.30.234.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "None",
         "name": "SRVR-CGNT-NET-5",
         "description": "B2 Net Solutions Inc.",
@@ -26228,8 +26804,8 @@
         }
       },
       {
-        "prefix": "155.94.150.0/24",
-        "ip": "155.94.150.0",
+        "prefix": "155.94.149.0/24",
+        "ip": "155.94.149.0",
         "cidr": 24,
         "roa_status": "None",
         "name": "QUADRANET",
@@ -26250,6 +26826,22 @@
         "roa_status": "None",
         "name": "QUADRANET",
         "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "155.94.128.0/17",
+          "ip": "155.94.128.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "155.94.162.0/24",
+        "ip": "155.94.162.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QN-1394776107",
+        "description": "Snoork Hosting",
         "country_code": "US",
         "parent": {
           "prefix": "155.94.128.0/17",
@@ -26308,9 +26900,9 @@
         }
       },
       {
-        "prefix": "155.94.192.0/23",
-        "ip": "155.94.192.0",
-        "cidr": 23,
+        "prefix": "155.94.190.0/24",
+        "ip": "155.94.190.0",
+        "cidr": 24,
         "roa_status": "None",
         "name": "QUADRANET",
         "description": "QuadraNet Enterprises LLC",
@@ -26340,8 +26932,56 @@
         }
       },
       {
+        "prefix": "155.94.192.0/23",
+        "ip": "155.94.192.0",
+        "cidr": 23,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "155.94.128.0/17",
+          "ip": "155.94.128.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "155.94.193.0/24",
         "ip": "155.94.193.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "HOSTP-7",
+        "description": "HostPapa",
+        "country_code": "US",
+        "parent": {
+          "prefix": "155.94.128.0/17",
+          "ip": "155.94.128.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "155.94.195.0/24",
+        "ip": "155.94.195.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QN-1803214133",
+        "description": "Madgenius.com",
+        "country_code": "US",
+        "parent": {
+          "prefix": "155.94.128.0/17",
+          "ip": "155.94.128.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "155.94.198.0/24",
+        "ip": "155.94.198.0",
         "cidr": 24,
         "roa_status": "None",
         "name": "HOSTP-7",
@@ -26372,22 +27012,6 @@
         }
       },
       {
-        "prefix": "155.94.198.0/24",
-        "ip": "155.94.198.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "HOSTP-7",
-        "description": "HostPapa",
-        "country_code": "US",
-        "parent": {
-          "prefix": "155.94.128.0/17",
-          "ip": "155.94.128.0",
-          "cidr": 17,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "155.94.199.0/24",
         "ip": "155.94.199.0",
         "cidr": 24,
@@ -26404,8 +27028,8 @@
         }
       },
       {
-        "prefix": "155.94.200.0/24",
-        "ip": "155.94.200.0",
+        "prefix": "155.94.207.0/24",
+        "ip": "155.94.207.0",
         "cidr": 24,
         "roa_status": "None",
         "name": "QUADRANET",
@@ -26420,12 +27044,12 @@
         }
       },
       {
-        "prefix": "155.94.207.0/24",
-        "ip": "155.94.207.0",
+        "prefix": "155.94.225.0/24",
+        "ip": "155.94.225.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
+        "name": "QN-967840189",
+        "description": "Madgenius.com",
         "country_code": "US",
         "parent": {
           "prefix": "155.94.128.0/17",
@@ -26708,8 +27332,40 @@
         }
       },
       {
+        "prefix": "167.160.165.0/24",
+        "ip": "167.160.165.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "MADGENIUS",
+        "description": "Madgenius.com",
+        "country_code": "US",
+        "parent": {
+          "prefix": "167.160.160.0/19",
+          "ip": "167.160.160.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "167.160.181.0/24",
         "ip": "167.160.181.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "167.160.160.0/19",
+          "ip": "167.160.160.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "167.160.182.0/24",
+        "ip": "167.160.182.0",
         "cidr": 24,
         "roa_status": "None",
         "name": "QUADRANET",
@@ -26784,6 +27440,86 @@
           "ip": "169.150.132.0",
           "cidr": 22,
           "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "172.94.48.0/24",
+        "ip": "172.94.48.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "INTERNET-SECURITY-HOSTROYALE-USSF",
+        "description": "Internet Security - US SF",
+        "country_code": "US",
+        "parent": {
+          "prefix": "172.94.0.0/17",
+          "ip": "172.94.0.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "172.94.51.0/24",
+        "ip": "172.94.51.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "INTERNET-SECURITY---NL",
+        "description": "Internet Security - NL",
+        "country_code": "NL",
+        "parent": {
+          "prefix": "172.94.0.0/17",
+          "ip": "172.94.0.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "172.94.60.0/24",
+        "ip": "172.94.60.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "SECURE-INTERNET-LLC-MUMBAI-IN",
+        "description": "Secure Internet LLC IN",
+        "country_code": "IN",
+        "parent": {
+          "prefix": "172.94.0.0/17",
+          "ip": "172.94.0.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "172.94.88.0/24",
+        "ip": "172.94.88.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "INTERNET-SECURITY-DATAPACKET-SG",
+        "description": "Internet Security - SG",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "172.94.0.0/17",
+          "ip": "172.94.0.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "172.94.95.0/24",
+        "ip": "172.94.95.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "INTERNET-SECURITY-LIMESTONE-USWDC",
+        "description": "Internet Security - US VA",
+        "country_code": "US",
+        "parent": {
+          "prefix": "176.124.80.0/20",
+          "ip": "176.124.80.0",
+          "cidr": 20,
+          "rir_name": "RIPE",
           "allocation_status": "unknown"
         }
       },
@@ -28680,8 +29416,8 @@
         "ip": "172.245.190.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "CC-14",
-        "description": "HostPapa",
+        "name": "CC-172-245-190-0-24",
+        "description": "RackNerd LLC",
         "country_code": "US",
         "parent": {
           "prefix": "174.64.0.0/12",
@@ -29172,6 +29908,22 @@
         }
       },
       {
+        "prefix": "173.44.62.0/24",
+        "ip": "173.44.62.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET-MIA",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "173.44.32.0/19",
+          "ip": "173.44.32.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "173.240.144.0/23",
         "ip": "173.240.144.0",
         "cidr": 23,
@@ -29524,6 +30276,22 @@
         }
       },
       {
+        "prefix": "173.254.217.0/24",
+        "ip": "173.254.217.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "173.254.192.0/18",
+          "ip": "173.254.192.0",
+          "cidr": 18,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "173.254.218.0/23",
         "ip": "173.254.218.0",
         "cidr": 23,
@@ -29535,6 +30303,22 @@
           "prefix": "173.254.218.0/23",
           "ip": "173.254.218.0",
           "cidr": 23,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "173.254.220.0/24",
+        "ip": "173.254.220.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "173.254.192.0/18",
+          "ip": "173.254.192.0",
+          "cidr": 18,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -29886,6 +30670,22 @@
         "parent": {
           "prefix": "185.174.100.0/22",
           "ip": "185.174.100.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "185.177.230.0/23",
+        "ip": "185.177.230.0",
+        "cidr": 23,
+        "roa_status": "None",
+        "name": "US-HOST4GEEKS-20161116",
+        "description": "Host4Geeks LLC",
+        "country_code": "AU",
+        "parent": {
+          "prefix": "185.177.228.0/22",
+          "ip": "185.177.228.0",
           "cidr": 22,
           "rir_name": "RIPE",
           "allocation_status": "unknown"
@@ -32340,6 +33140,22 @@
         }
       },
       {
+        "prefix": "192.135.117.0/24",
+        "ip": "192.135.117.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "VNL-68",
+        "description": "BisectHosting",
+        "country_code": "US",
+        "parent": {
+          "prefix": "192.135.112.0/21",
+          "ip": "192.135.112.0",
+          "cidr": 21,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "192.161.48.0/24",
         "ip": "192.161.48.0",
         "cidr": 24,
@@ -32436,22 +33252,6 @@
         }
       },
       {
-        "prefix": "192.161.52.0/24",
-        "ip": "192.161.52.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "192.161.52.0/22",
-          "ip": "192.161.52.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "192.161.53.0/24",
         "ip": "192.161.53.0",
         "cidr": 24,
@@ -32500,6 +33300,22 @@
         }
       },
       {
+        "prefix": "192.161.60.0/24",
+        "ip": "192.161.60.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "192.161.61.0/24",
         "ip": "192.161.61.0",
         "cidr": 24,
@@ -32532,113 +33348,17 @@
         }
       },
       {
-        "prefix": "192.161.160.0/24",
-        "ip": "192.161.160.0",
+        "prefix": "192.161.170.0/24",
+        "ip": "192.161.170.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
+        "name": "QN-807343170",
+        "description": "Madgenius.com",
         "country_code": "US",
         "parent": {
-          "prefix": "192.161.160.0/21",
+          "prefix": "192.161.160.0/19",
           "ip": "192.161.160.0",
-          "cidr": 21,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "192.161.162.0/23",
-        "ip": "192.161.162.0",
-        "cidr": 23,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "192.161.160.0/21",
-          "ip": "192.161.160.0",
-          "cidr": 21,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "192.161.162.0/24",
-        "ip": "192.161.162.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "192.161.160.0/21",
-          "ip": "192.161.160.0",
-          "cidr": 21,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "192.161.163.0/24",
-        "ip": "192.161.163.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "192.161.160.0/21",
-          "ip": "192.161.160.0",
-          "cidr": 21,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "192.161.166.0/23",
-        "ip": "192.161.166.0",
-        "cidr": 23,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "192.161.160.0/21",
-          "ip": "192.161.160.0",
-          "cidr": 21,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "192.161.166.0/24",
-        "ip": "192.161.166.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "192.161.160.0/21",
-          "ip": "192.161.160.0",
-          "cidr": 21,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "192.161.167.0/24",
-        "ip": "192.161.167.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "192.161.160.0/21",
-          "ip": "192.161.160.0",
-          "cidr": 21,
+          "cidr": 19,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -32687,6 +33407,22 @@
           "prefix": "192.161.176.0/20",
           "ip": "192.161.176.0",
           "cidr": 20,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "192.161.191.0/24",
+        "ip": "192.161.191.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET-DFW",
+        "description": "QuadraNet, Inc",
+        "country_code": "US",
+        "parent": {
+          "prefix": "192.161.160.0/19",
+          "ip": "192.161.160.0",
+          "cidr": 19,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -35300,6 +36036,38 @@
         }
       },
       {
+        "prefix": "194.246.34.0/24",
+        "ip": "194.246.34.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "IR-AIDAAHMADI-20240508",
+        "description": "aida ahmadi",
+        "country_code": "US",
+        "parent": {
+          "prefix": "194.246.34.0/24",
+          "ip": "194.246.34.0",
+          "cidr": 24,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "195.234.153.0/24",
+        "ip": "195.234.153.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "IR-BEHDAD1-20221219",
+        "description": "Behdad sazeh Karmania Engineering company PJS",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "195.234.153.0/24",
+          "ip": "195.234.153.0",
+          "cidr": 24,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "198.12.64.0/22",
         "ip": "198.12.64.0",
         "cidr": 22,
@@ -36164,6 +36932,22 @@
         }
       },
       {
+        "prefix": "198.23.161.0/24",
+        "ip": "198.23.161.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "CC-10",
+        "description": "HostPapa",
+        "country_code": "US",
+        "parent": {
+          "prefix": "198.23.128.0/17",
+          "ip": "198.23.128.0",
+          "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "198.23.164.0/23",
         "ip": "198.23.164.0",
         "cidr": 23,
@@ -36980,9 +37764,9 @@
         }
       },
       {
-        "prefix": "198.46.128.0/24",
+        "prefix": "198.46.128.0/22",
         "ip": "198.46.128.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "None",
         "name": "CC-13",
         "description": "HostPapa",
@@ -36996,9 +37780,9 @@
         }
       },
       {
-        "prefix": "198.46.128.0/22",
+        "prefix": "198.46.128.0/24",
         "ip": "198.46.128.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "None",
         "name": "CC-13",
         "description": "HostPapa",
@@ -38324,22 +39108,6 @@
         }
       },
       {
-        "prefix": "198.55.97.0/24",
-        "ip": "198.55.97.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "198.55.96.0/19",
-          "ip": "198.55.96.0",
-          "cidr": 19,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "198.55.99.0/24",
         "ip": "198.55.99.0",
         "cidr": 24,
@@ -38362,22 +39130,6 @@
         "roa_status": "None",
         "name": "WEBMAGIC",
         "description": "WebMagic, Inc.",
-        "country_code": "US",
-        "parent": {
-          "prefix": "198.55.96.0/19",
-          "ip": "198.55.96.0",
-          "cidr": 19,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "198.55.109.0/24",
-        "ip": "198.55.109.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
         "country_code": "US",
         "parent": {
           "prefix": "198.55.96.0/19",
@@ -38676,6 +39428,134 @@
         }
       },
       {
+        "prefix": "203.25.159.0/24",
+        "ip": "203.25.159.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "RBS-AU",
+        "description": "Raymond Spargo",
+        "country_code": "AU",
+        "parent": {
+          "prefix": "203.25.159.0/24",
+          "ip": "203.25.159.0",
+          "cidr": 24,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "204.44.70.0/24",
+        "ip": "204.44.70.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "204.44.64.0/18",
+          "ip": "204.44.64.0",
+          "cidr": 18,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "204.44.76.0/24",
+        "ip": "204.44.76.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "206.189.0.0/16",
+          "ip": "206.189.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "204.44.87.0/24",
+        "ip": "204.44.87.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "HOSTP-7",
+        "description": "HostPapa",
+        "country_code": "US",
+        "parent": {
+          "prefix": "204.44.64.0/18",
+          "ip": "204.44.64.0",
+          "cidr": 18,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "204.44.96.0/24",
+        "ip": "204.44.96.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "204.44.64.0/18",
+          "ip": "204.44.64.0",
+          "cidr": 18,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "204.44.97.0/24",
+        "ip": "204.44.97.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "204.44.101.0/24",
+        "ip": "204.44.101.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QN-103193301",
+        "description": "Madgenius.com",
+        "country_code": "US",
+        "parent": {
+          "prefix": "204.44.64.0/18",
+          "ip": "204.44.64.0",
+          "cidr": 18,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "204.44.104.0/24",
+        "ip": "204.44.104.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "204.44.64.0/18",
+          "ip": "204.44.64.0",
+          "cidr": 18,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "204.44.106.0/24",
         "ip": "204.44.106.0",
         "cidr": 24,
@@ -38692,12 +39572,44 @@
         }
       },
       {
+        "prefix": "204.44.110.0/24",
+        "ip": "204.44.110.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "204.44.64.0/18",
+          "ip": "204.44.64.0",
+          "cidr": 18,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "204.44.111.0/24",
         "ip": "204.44.111.0",
         "cidr": 24,
         "roa_status": "None",
         "name": "QN-933776053",
         "description": "MyServerPlanet Ltd",
+        "country_code": "US",
+        "parent": {
+          "prefix": "204.44.64.0/18",
+          "ip": "204.44.64.0",
+          "cidr": 18,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "204.44.123.0/24",
+        "ip": "204.44.123.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QN-478176063",
+        "description": "Madgenius.com",
         "country_code": "US",
         "parent": {
           "prefix": "204.44.64.0/18",
@@ -38740,22 +39652,6 @@
         }
       },
       {
-        "prefix": "204.152.206.0/23",
-        "ip": "204.152.206.0",
-        "cidr": 23,
-        "roa_status": "Valid",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "204.152.192.0/19",
-          "ip": "204.152.192.0",
-          "cidr": 19,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "204.152.206.0/24",
         "ip": "204.152.206.0",
         "cidr": 24,
@@ -38767,6 +39663,22 @@
           "prefix": "204.152.206.0/23",
           "ip": "204.152.206.0",
           "cidr": 23,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "204.152.206.0/23",
+        "ip": "204.152.206.0",
+        "cidr": 23,
+        "roa_status": "Valid",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "204.152.192.0/19",
+          "ip": "204.152.192.0",
+          "cidr": 19,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -39332,22 +40244,6 @@
         }
       },
       {
-        "prefix": "216.45.58.0/24",
-        "ip": "216.45.58.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "QUADRANET",
-        "description": "QuadraNet Enterprises LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "216.45.48.0/20",
-          "ip": "216.45.48.0",
-          "cidr": 20,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "216.45.58.0/23",
         "ip": "216.45.58.0",
         "cidr": 23,
@@ -39364,8 +40260,8 @@
         }
       },
       {
-        "prefix": "216.45.59.0/24",
-        "ip": "216.45.59.0",
+        "prefix": "216.45.58.0/24",
+        "ip": "216.45.58.0",
         "cidr": 24,
         "roa_status": "None",
         "name": "QUADRANET",
@@ -39391,6 +40287,38 @@
           "prefix": "216.144.224.0/22",
           "ip": "216.144.224.0",
           "cidr": 22,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "216.144.229.0/24",
+        "ip": "216.144.229.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "216.144.224.0/20",
+          "ip": "216.144.224.0",
+          "cidr": 20,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "216.144.233.0/24",
+        "ip": "216.144.233.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "QUADRANET",
+        "description": "QuadraNet Enterprises LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "216.144.224.0/20",
+          "ip": "216.144.224.0",
+          "cidr": 20,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -39542,6 +40470,38 @@
     ],
     "ipv6_prefixes": [
       {
+        "prefix": "2605:6f01::/32",
+        "ip": "2605:6f01::",
+        "cidr": 32,
+        "roa_status": "Valid",
+        "name": "NET6-2600",
+        "description": "American Registry for Internet Numbers",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2605:6f00::/32",
+          "ip": "2605:6f00::",
+          "cidr": 32,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2606:c680::/32",
+        "ip": "2606:c680::",
+        "cidr": 32,
+        "roa_status": "Valid",
+        "name": "NET6-2606-C680-1",
+        "description": "HostPapa",
+        "country_code": "CA",
+        "parent": {
+          "prefix": "2606:c680::/32",
+          "ip": "2606:c680::",
+          "cidr": 32,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "2607:9d00::/32",
         "ip": "2607:9d00::",
         "cidr": 32,
@@ -39684,12 +40644,28 @@
           "rir_name": "RIPE",
           "allocation_status": "unknown"
         }
+      },
+      {
+        "prefix": "2a0a:2d04:f::/48",
+        "ip": "2a0a:2d04:f::",
+        "cidr": 48,
+        "roa_status": "Valid",
+        "name": "US-RAPIDSEEDBOX",
+        "description": "US RAPIDSEEDBOX",
+        "country_code": "US",
+        "parent": {
+          "prefix": "2a0a:2d00::/29",
+          "ip": "2a0a:2d00::",
+          "cidr": 29,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
       }
     ]
   },
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "1025 ms"
+    "execution_time": "1220.72 ms"
   }
 }

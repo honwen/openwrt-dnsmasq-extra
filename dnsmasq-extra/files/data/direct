@@ -518,9 +518,7 @@ xp.apple.com
 download.developer.apple.com
 cds.apple.com
 cn-smp-paymentservices.apple.com
-images.apple.com
 itunes.apple.com
-gspe21.ls.apple.com
 gspe21-ssl.ls.apple.com
 gspe35-ssl.ls.apple.com
 gspe19-2-cn-ssl.ls.apple.com
@@ -542,9 +540,6 @@ itunesconnect.apple.com
 weatherkit.apple.com
 init-kt.apple.com
 smp-device-content.apple.com
-api-p-ap-c.smoot.apple.com
-api-p-ap-d.smoot.apple.com
-api-p-ap-e.smoot.apple.com
 guzzoni.smoot.apple.com
 support.apple.com
 swdist.apple.com
@@ -1171,7 +1166,6 @@ swscan-cdn.apple.com.akadns.net
 mesu-cdn.apple.com.akadns.net
 configuration.apple.com.akadns.net
 cds.apple.com.akadns.net
-images.apple.com.akadns.net
 store.storeimages.apple.com.akadns.net
 swdist.apple.com.akadns.net
 clientflow.apple.com.akadns.net
@@ -1190,8 +1184,6 @@ windows.net
 cdnst.net
 springsunday.net
 store.apple.com.edgekey.net
-gsp4-cn.ls.apple.com.edgekey.net
-www.apple.com.edgekey.net
 pag.art
 t.tt
 ttt.tt

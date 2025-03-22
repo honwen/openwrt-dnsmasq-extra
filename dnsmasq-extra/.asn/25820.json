@@ -564,22 +564,6 @@
         }
       },
       {
-        "prefix": "45.78.16.0/22",
-        "ip": "45.78.16.0",
-        "cidr": 22,
-        "roa_status": "Valid",
-        "name": "IT7-45-78-16-0-22",
-        "description": "IT7 Networks Inc",
-        "country_code": "HK",
-        "parent": {
-          "prefix": null,
-          "ip": null,
-          "cidr": null,
-          "rir_name": null,
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "45.78.16.0/23",
         "ip": "45.78.16.0",
         "cidr": 23,
@@ -592,6 +576,22 @@
           "ip": "45.78.0.0",
           "cidr": 18,
           "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.78.16.0/22",
+        "ip": "45.78.16.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "IT7-45-78-16-0-22",
+        "description": "IT7 Networks Inc",
+        "country_code": "HK",
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
           "allocation_status": "unknown"
         }
       },
@@ -708,22 +708,6 @@
         }
       },
       {
-        "prefix": "45.78.28.0/22",
-        "ip": "45.78.28.0",
-        "cidr": 22,
-        "roa_status": "Valid",
-        "name": "IT7-45-78-28-0-22",
-        "description": "IT7 Networks Inc",
-        "country_code": "HK",
-        "parent": {
-          "prefix": null,
-          "ip": null,
-          "cidr": null,
-          "rir_name": null,
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "45.78.28.0/23",
         "ip": "45.78.28.0",
         "cidr": 23,
@@ -736,6 +720,22 @@
           "ip": "45.78.0.0",
           "cidr": 18,
           "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.78.28.0/22",
+        "ip": "45.78.28.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "IT7-45-78-28-0-22",
+        "description": "IT7 Networks Inc",
+        "country_code": "HK",
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
           "allocation_status": "unknown"
         }
       },
@@ -804,22 +804,6 @@
         }
       },
       {
-        "prefix": "45.78.36.0/22",
-        "ip": "45.78.36.0",
-        "cidr": 22,
-        "roa_status": "Valid",
-        "name": "IT7-45-78-36-0-22",
-        "description": "IT7 Networks Inc",
-        "country_code": "HK",
-        "parent": {
-          "prefix": null,
-          "ip": null,
-          "cidr": null,
-          "rir_name": null,
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "45.78.36.0/23",
         "ip": "45.78.36.0",
         "cidr": 23,
@@ -836,11 +820,43 @@
         }
       },
       {
+        "prefix": "45.78.36.0/22",
+        "ip": "45.78.36.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "IT7-45-78-36-0-22",
+        "description": "IT7 Networks Inc",
+        "country_code": "HK",
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "45.78.38.0/23",
         "ip": "45.78.38.0",
         "cidr": 23,
         "roa_status": "Valid",
         "name": "IT7-45-78-36-0-22",
+        "description": "IT7 Networks Inc",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "45.78.0.0/18",
+          "ip": "45.78.0.0",
+          "cidr": 18,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.78.40.0/23",
+        "ip": "45.78.40.0",
+        "cidr": 23,
+        "roa_status": "Valid",
+        "name": "IT7-45-78-40-0-22",
         "description": "IT7 Networks Inc",
         "country_code": "HK",
         "parent": {
@@ -868,8 +884,8 @@
         }
       },
       {
-        "prefix": "45.78.40.0/23",
-        "ip": "45.78.40.0",
+        "prefix": "45.78.42.0/23",
+        "ip": "45.78.42.0",
         "cidr": 23,
         "roa_status": "Valid",
         "name": "IT7-45-78-40-0-22",
@@ -884,11 +900,11 @@
         }
       },
       {
-        "prefix": "45.78.42.0/23",
-        "ip": "45.78.42.0",
+        "prefix": "45.78.44.0/23",
+        "ip": "45.78.44.0",
         "cidr": 23,
         "roa_status": "Valid",
-        "name": "IT7-45-78-40-0-22",
+        "name": "IT7-45-78-44-0-22",
         "description": "IT7 Networks Inc",
         "country_code": "HK",
         "parent": {
@@ -912,22 +928,6 @@
           "ip": null,
           "cidr": null,
           "rir_name": null,
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "45.78.44.0/23",
-        "ip": "45.78.44.0",
-        "cidr": 23,
-        "roa_status": "Valid",
-        "name": "IT7-45-78-44-0-22",
-        "description": "IT7 Networks Inc",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "45.78.0.0/18",
-          "ip": "45.78.0.0",
-          "cidr": 18,
-          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -1172,9 +1172,9 @@
         }
       },
       {
-        "prefix": "65.49.130.0/23",
+        "prefix": "65.49.130.0/24",
         "ip": "65.49.130.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "CL-1210",
         "description": "Cluster Logic Inc",
@@ -1188,9 +1188,9 @@
         }
       },
       {
-        "prefix": "65.49.130.0/24",
+        "prefix": "65.49.130.0/23",
         "ip": "65.49.130.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "CL-1210",
         "description": "Cluster Logic Inc",
@@ -3572,6 +3572,22 @@
         }
       },
       {
+        "prefix": "192.84.9.0/24",
+        "ip": "192.84.9.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "INAZMA",
+        "description": "TECPRESSO INC.",
+        "country_code": "US",
+        "parent": {
+          "prefix": "192.84.9.0/24",
+          "ip": "192.84.9.0",
+          "cidr": 24,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "192.243.112.0/21",
         "ip": "192.243.112.0",
         "cidr": 21,
@@ -3942,8 +3958,72 @@
     ],
     "ipv6_prefixes": [
       {
+        "prefix": "2607:8700:2200::/48",
+        "ip": "2607:8700:2200::",
+        "cidr": 48,
+        "roa_status": "Valid",
+        "name": "IT7NET",
+        "description": "IT7 Networks Inc",
+        "country_code": "CA",
+        "parent": {
+          "prefix": "2607:8700::/32",
+          "ip": "2607:8700::",
+          "cidr": 32,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2607:8700:3100::/48",
+        "ip": "2607:8700:3100::",
+        "cidr": 48,
+        "roa_status": "Valid",
+        "name": "IT7NET",
+        "description": "IT7 Networks Inc",
+        "country_code": "CA",
+        "parent": {
+          "prefix": "2607:8700::/32",
+          "ip": "2607:8700::",
+          "cidr": 32,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2607:8700:3400::/48",
+        "ip": "2607:8700:3400::",
+        "cidr": 48,
+        "roa_status": "Valid",
+        "name": "IT7NET",
+        "description": "IT7 Networks Inc",
+        "country_code": "CA",
+        "parent": {
+          "prefix": "2607:8700::/32",
+          "ip": "2607:8700::",
+          "cidr": 32,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "2607:8700:5500::/48",
         "ip": "2607:8700:5500::",
+        "cidr": 48,
+        "roa_status": "Valid",
+        "name": "IT7NET",
+        "description": "IT7 Networks Inc",
+        "country_code": "CA",
+        "parent": {
+          "prefix": "2607:8700::/32",
+          "ip": "2607:8700::",
+          "cidr": 32,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2607:8700:9300::/48",
+        "ip": "2607:8700:9300::",
         "cidr": 48,
         "roa_status": "Valid",
         "name": "IT7NET",
@@ -3962,6 +4042,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "156.56 ms"
+    "execution_time": "200.3 ms"
   }
 }
