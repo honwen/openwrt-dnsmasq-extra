@@ -4,12 +4,12 @@
   "data": {
     "ipv4_prefixes": [
       {
-        "prefix": "1.34.0.0/16",
+        "prefix": "1.34.0.0/15",
         "ip": "1.34.0.0",
-        "cidr": 16,
+        "cidr": 15,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
+        "description": "Data Communication Business Group,",
         "country_code": "TW",
         "parent": {
           "prefix": "1.34.0.0/15",
@@ -20,12 +20,12 @@
         }
       },
       {
-        "prefix": "1.34.0.0/15",
+        "prefix": "1.34.0.0/16",
         "ip": "1.34.0.0",
-        "cidr": 15,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Data Communication Business Group,",
+        "description": "Chunghwa Telecom Co.,Ltd.",
         "country_code": "TW",
         "parent": {
           "prefix": "1.34.0.0/15",
@@ -52,12 +52,12 @@
         }
       },
       {
-        "prefix": "1.160.0.0/16",
+        "prefix": "1.160.0.0/12",
         "ip": "1.160.0.0",
-        "cidr": 16,
+        "cidr": 12,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
+        "description": "Data Communication Business Group,",
         "country_code": "TW",
         "parent": {
           "prefix": "1.160.0.0/12",
@@ -68,12 +68,12 @@
         }
       },
       {
-        "prefix": "1.160.0.0/12",
+        "prefix": "1.160.0.0/16",
         "ip": "1.160.0.0",
-        "cidr": 12,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Data Communication Business Group,",
+        "description": "Chunghwa Telecom Co.,Ltd.",
         "country_code": "TW",
         "parent": {
           "prefix": "1.160.0.0/12",
@@ -964,9 +964,9 @@
         }
       },
       {
-        "prefix": "61.220.0.0/16",
+        "prefix": "61.220.0.0/14",
         "ip": "61.220.0.0",
-        "cidr": 16,
+        "cidr": 14,
         "roa_status": "Valid",
         "name": "HINET-NET",
         "description": "Data Communication Business Group,",
@@ -980,9 +980,9 @@
         }
       },
       {
-        "prefix": "61.220.0.0/14",
+        "prefix": "61.220.0.0/16",
         "ip": "61.220.0.0",
-        "cidr": 14,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "HINET-NET",
         "description": "Data Communication Business Group,",
@@ -1191,22 +1191,6 @@
         "prefix": "103.21.60.0/23",
         "ip": "103.21.60.0",
         "cidr": 23,
-        "roa_status": "None",
-        "name": "BOT-NET",
-        "description": "Bank Of Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "103.21.60.0/22",
-          "ip": "103.21.60.0",
-          "cidr": 22,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "103.21.60.0/22",
-        "ip": "103.21.60.0",
-        "cidr": 22,
         "roa_status": "None",
         "name": "BOT-NET",
         "description": "Bank Of Taiwan",
@@ -1572,12 +1556,12 @@
         }
       },
       {
-        "prefix": "114.24.0.0/16",
+        "prefix": "114.24.0.0/14",
         "ip": "114.24.0.0",
-        "cidr": 16,
+        "cidr": 14,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
+        "description": "Data Communication Business Group,",
         "country_code": "TW",
         "parent": {
           "prefix": "114.24.0.0/14",
@@ -1588,12 +1572,12 @@
         }
       },
       {
-        "prefix": "114.24.0.0/14",
+        "prefix": "114.24.0.0/16",
         "ip": "114.24.0.0",
-        "cidr": 14,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Data Communication Business Group,",
+        "description": "Chunghwa Telecom Co.,Ltd.",
         "country_code": "TW",
         "parent": {
           "prefix": "114.24.0.0/14",
@@ -1668,12 +1652,12 @@
         }
       },
       {
-        "prefix": "114.32.0.0/12",
+        "prefix": "114.32.0.0/16",
         "ip": "114.32.0.0",
-        "cidr": 12,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Data Communication Business Group,",
+        "description": "Chunghwa Telecom Co.,Ltd.",
         "country_code": "TW",
         "parent": {
           "prefix": "114.32.0.0/12",
@@ -1684,12 +1668,12 @@
         }
       },
       {
-        "prefix": "114.32.0.0/16",
+        "prefix": "114.32.0.0/12",
         "ip": "114.32.0.0",
-        "cidr": 16,
+        "cidr": 12,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
+        "description": "Data Communication Business Group,",
         "country_code": "TW",
         "parent": {
           "prefix": "114.32.0.0/12",
@@ -1775,22 +1759,6 @@
           "prefix": "113.212.84.0/22",
           "ip": "113.212.84.0",
           "cidr": 22,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "114.37.226.0/24",
-        "ip": "114.37.226.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "114.32.0.0/12",
-          "ip": "114.32.0.0",
-          "cidr": 12,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -2932,22 +2900,6 @@
         }
       },
       {
-        "prefix": "211.75.91.0/24",
-        "ip": "211.75.91.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "211.72.0.0/14",
-          "ip": "211.72.0.0",
-          "cidr": 14,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "218.160.0.0/16",
         "ip": "218.160.0.0",
         "cidr": 16,
@@ -3188,22 +3140,6 @@
         }
       },
       {
-        "prefix": "218.172.255.0/24",
-        "ip": "218.172.255.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "218.168.0.0/13",
-          "ip": "218.168.0.0",
-          "cidr": 13,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "218.173.0.0/16",
         "ip": "218.173.0.0",
         "cidr": 16,
@@ -3252,86 +3188,6 @@
         }
       },
       {
-        "prefix": "220.128.32.0/24",
-        "ip": "220.128.32.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "220.128.0.0/18",
-          "ip": "220.128.0.0",
-          "cidr": 18,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "220.128.34.0/23",
-        "ip": "220.128.34.0",
-        "cidr": 23,
-        "roa_status": "Valid",
-        "name": "HINET-NET",
-        "description": "Data Communication Business Group,",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "220.128.0.0/18",
-          "ip": "220.128.0.0",
-          "cidr": 18,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "220.128.36.0/22",
-        "ip": "220.128.36.0",
-        "cidr": 22,
-        "roa_status": "Valid",
-        "name": "HINET-NET",
-        "description": "Data Communication Business Group,",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "220.128.0.0/18",
-          "ip": "220.128.0.0",
-          "cidr": 18,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "220.128.40.0/21",
-        "ip": "220.128.40.0",
-        "cidr": 21,
-        "roa_status": "Valid",
-        "name": "HINET-NET",
-        "description": "Data Communication Business Group,",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "220.128.0.0/18",
-          "ip": "220.128.0.0",
-          "cidr": 18,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "220.128.61.0/24",
-        "ip": "220.128.61.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "220.128.0.0/18",
-          "ip": "220.128.0.0",
-          "cidr": 18,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "220.128.62.0/24",
         "ip": "220.128.62.0",
         "cidr": 24,
@@ -3350,38 +3206,6 @@
       {
         "prefix": "220.128.65.0/24",
         "ip": "220.128.65.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HINET-NET",
-        "description": "CHTD, Chunghwa Telecom Co.,Ltd.",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "220.128.64.0/18",
-          "ip": "220.128.64.0",
-          "cidr": 18,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "220.128.67.0/24",
-        "ip": "220.128.67.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HINET-NET",
-        "description": "CHTD, Chunghwa Telecom Co.,Ltd.",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "220.128.64.0/18",
-          "ip": "220.128.64.0",
-          "cidr": 18,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "220.128.71.0/24",
-        "ip": "220.128.71.0",
         "cidr": 24,
         "roa_status": "Valid",
         "name": "HINET-NET",
@@ -3447,22 +3271,6 @@
         "prefix": "220.128.80.0/24",
         "ip": "220.128.80.0",
         "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "220.128.64.0/18",
-          "ip": "220.128.64.0",
-          "cidr": 18,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "220.128.82.0/23",
-        "ip": "220.128.82.0",
-        "cidr": 23,
         "roa_status": "Valid",
         "name": "HINET-NET",
         "description": "Chunghwa Telecom Co.,Ltd.",
@@ -3766,22 +3574,6 @@
         }
       },
       {
-        "prefix": "2001:b000:200::/39",
-        "ip": "2001:b000:200::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b000:400::/38",
         "ip": "2001:b000:400::",
         "cidr": 38,
@@ -3798,137 +3590,9 @@
         }
       },
       {
-        "prefix": "2001:b000:800::/37",
-        "ip": "2001:b000:800::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b000:1000::/36",
-        "ip": "2001:b000:1000::",
-        "cidr": 36,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b000:2000::/35",
-        "ip": "2001:b000:2000::",
-        "cidr": 35,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b000:4000::/34",
-        "ip": "2001:b000:4000::",
-        "cidr": 34,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b000:8000::/33",
-        "ip": "2001:b000:8000::",
-        "cidr": 33,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b001::/32",
         "ip": "2001:b001::",
         "cidr": 32,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b002::/31",
-        "ip": "2001:b002::",
-        "cidr": 31,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b004::/30",
-        "ip": "2001:b004::",
-        "cidr": 30,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b008::/29",
-        "ip": "2001:b008::",
-        "cidr": 29,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
         "description": "HiNet Taiwan",
@@ -3974,40 +3638,8 @@
         }
       },
       {
-        "prefix": "2001:b011:800::/37",
-        "ip": "2001:b011:800::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b011:1000::/37",
         "ip": "2001:b011:1000::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:1800::/37",
-        "ip": "2001:b011:1800::",
         "cidr": 37,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
@@ -4086,169 +3718,9 @@
         }
       },
       {
-        "prefix": "2001:b011:4800::/38",
-        "ip": "2001:b011:4800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:4c00::/39",
-        "ip": "2001:b011:4c00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:4e00::/39",
-        "ip": "2001:b011:4e00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:5000::/38",
-        "ip": "2001:b011:5000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:5400::/38",
-        "ip": "2001:b011:5400::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:5800::/39",
-        "ip": "2001:b011:5800::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:5a00::/39",
-        "ip": "2001:b011:5a00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b011:5c00::/38",
         "ip": "2001:b011:5c00::",
         "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:6000::/38",
-        "ip": "2001:b011:6000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:6400::/39",
-        "ip": "2001:b011:6400::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:6600::/39",
-        "ip": "2001:b011:6600::",
-        "cidr": 39,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
         "description": "HiNet Taiwan",
@@ -4342,72 +3814,8 @@
         }
       },
       {
-        "prefix": "2001:b011:9000::/38",
-        "ip": "2001:b011:9000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b011:9800::/38",
         "ip": "2001:b011:9800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:9c00::/39",
-        "ip": "2001:b011:9c00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:9e00::/39",
-        "ip": "2001:b011:9e00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:a000::/38",
-        "ip": "2001:b011:a000::",
         "cidr": 38,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
@@ -4438,73 +3846,9 @@
         }
       },
       {
-        "prefix": "2001:b011:a800::/38",
-        "ip": "2001:b011:a800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:ac00::/39",
-        "ip": "2001:b011:ac00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b011:b000::/38",
         "ip": "2001:b011:b000::",
         "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:b400::/39",
-        "ip": "2001:b011:b400::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:b600::/39",
-        "ip": "2001:b011:b600::",
-        "cidr": 39,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
         "description": "HiNet Taiwan",
@@ -4566,22 +3910,6 @@
         }
       },
       {
-        "prefix": "2001:b011:cc00::/38",
-        "ip": "2001:b011:cc00::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b011:d000::/38",
         "ip": "2001:b011:d000::",
         "cidr": 38,
@@ -4598,56 +3926,8 @@
         }
       },
       {
-        "prefix": "2001:b011:d400::/39",
-        "ip": "2001:b011:d400::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:d600::/39",
-        "ip": "2001:b011:d600::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b011:d800::/38",
         "ip": "2001:b011:d800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:dc00::/38",
-        "ip": "2001:b011:dc00::",
         "cidr": 38,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
@@ -4678,22 +3958,6 @@
         }
       },
       {
-        "prefix": "2001:b011:e400::/39",
-        "ip": "2001:b011:e400::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b011:e600::/39",
         "ip": "2001:b011:e600::",
         "cidr": 39,
@@ -4710,104 +3974,8 @@
         }
       },
       {
-        "prefix": "2001:b011:e800::/38",
-        "ip": "2001:b011:e800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:ec00::/39",
-        "ip": "2001:b011:ec00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:ee00::/39",
-        "ip": "2001:b011:ee00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:f000::/39",
-        "ip": "2001:b011:f000::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b011:f200::/39",
         "ip": "2001:b011:f200::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:f400::/38",
-        "ip": "2001:b011:f400::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b011:f800::/39",
-        "ip": "2001:b011:f800::",
         "cidr": 39,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
@@ -4902,40 +4070,8 @@
         }
       },
       {
-        "prefix": "2001:b030:800::/37",
-        "ip": "2001:b030:800::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b030:1000::/37",
         "ip": "2001:b030:1000::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:1800::/37",
-        "ip": "2001:b030:1800::",
         "cidr": 37,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
@@ -4966,233 +4102,9 @@
         }
       },
       {
-        "prefix": "2001:b030:3000::/37",
-        "ip": "2001:b030:3000::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:3800::/37",
-        "ip": "2001:b030:3800::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:4000::/37",
-        "ip": "2001:b030:4000::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:4800::/38",
-        "ip": "2001:b030:4800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:4c00::/39",
-        "ip": "2001:b030:4c00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:4e00::/39",
-        "ip": "2001:b030:4e00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:5000::/38",
-        "ip": "2001:b030:5000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:5400::/38",
-        "ip": "2001:b030:5400::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:5800::/39",
-        "ip": "2001:b030:5800::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:5a00::/39",
-        "ip": "2001:b030:5a00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b030:5c00::/38",
         "ip": "2001:b030:5c00::",
         "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:6000::/38",
-        "ip": "2001:b030:6000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:6400::/39",
-        "ip": "2001:b030:6400::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:6600::/39",
-        "ip": "2001:b030:6600::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:6800::/37",
-        "ip": "2001:b030:6800::",
-        "cidr": 37,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
         "description": "HiNet Taiwan",
@@ -5270,86 +4182,6 @@
         }
       },
       {
-        "prefix": "2001:b030:9000::/38",
-        "ip": "2001:b030:9000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:9800::/38",
-        "ip": "2001:b030:9800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:9c00::/39",
-        "ip": "2001:b030:9c00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:9e00::/39",
-        "ip": "2001:b030:9e00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:a000::/38",
-        "ip": "2001:b030:a000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b030:a400::/38",
         "ip": "2001:b030:a400::",
         "cidr": 38,
@@ -5382,57 +4214,9 @@
         }
       },
       {
-        "prefix": "2001:b030:ac00::/39",
-        "ip": "2001:b030:ac00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b030:b000::/38",
         "ip": "2001:b030:b000::",
         "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:b400::/39",
-        "ip": "2001:b030:b400::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:b600::/39",
-        "ip": "2001:b030:b600::",
-        "cidr": 39,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
         "description": "HiNet Taiwan",
@@ -5494,57 +4278,9 @@
         }
       },
       {
-        "prefix": "2001:b030:cc00::/38",
-        "ip": "2001:b030:cc00::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b030:d000::/38",
         "ip": "2001:b030:d000::",
         "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:d400::/39",
-        "ip": "2001:b030:d400::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:d600::/39",
-        "ip": "2001:b030:d600::",
-        "cidr": 39,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
         "description": "HiNet Taiwan",
@@ -5574,168 +4310,8 @@
         }
       },
       {
-        "prefix": "2001:b030:dc00::/38",
-        "ip": "2001:b030:dc00::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:e000::/38",
-        "ip": "2001:b030:e000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:e400::/39",
-        "ip": "2001:b030:e400::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:e600::/39",
-        "ip": "2001:b030:e600::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:e800::/38",
-        "ip": "2001:b030:e800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:ec00::/39",
-        "ip": "2001:b030:ec00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:ee00::/39",
-        "ip": "2001:b030:ee00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:f000::/39",
-        "ip": "2001:b030:f000::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b030:f200::/39",
         "ip": "2001:b030:f200::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:f400::/38",
-        "ip": "2001:b030:f400::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b030:f800::/39",
-        "ip": "2001:b030:f800::",
         "cidr": 39,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
@@ -5814,40 +4390,8 @@
         }
       },
       {
-        "prefix": "2001:b031:800::/37",
-        "ip": "2001:b031:800::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b031:1000::/37",
         "ip": "2001:b031:1000::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:1800::/37",
-        "ip": "2001:b031:1800::",
         "cidr": 37,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
@@ -5878,233 +4422,9 @@
         }
       },
       {
-        "prefix": "2001:b031:3000::/37",
-        "ip": "2001:b031:3000::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:3800::/37",
-        "ip": "2001:b031:3800::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:4000::/37",
-        "ip": "2001:b031:4000::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:4800::/38",
-        "ip": "2001:b031:4800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:4c00::/39",
-        "ip": "2001:b031:4c00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:4e00::/39",
-        "ip": "2001:b031:4e00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:5000::/38",
-        "ip": "2001:b031:5000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:5400::/38",
-        "ip": "2001:b031:5400::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:5800::/39",
-        "ip": "2001:b031:5800::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:5a00::/39",
-        "ip": "2001:b031:5a00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b031:5c00::/38",
         "ip": "2001:b031:5c00::",
         "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:6000::/38",
-        "ip": "2001:b031:6000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:6400::/39",
-        "ip": "2001:b031:6400::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:6600::/39",
-        "ip": "2001:b031:6600::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:6800::/37",
-        "ip": "2001:b031:6800::",
-        "cidr": 37,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
         "description": "HiNet Taiwan",
@@ -6182,86 +4502,6 @@
         }
       },
       {
-        "prefix": "2001:b031:9000::/38",
-        "ip": "2001:b031:9000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:9800::/38",
-        "ip": "2001:b031:9800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:9c00::/39",
-        "ip": "2001:b031:9c00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:9e00::/39",
-        "ip": "2001:b031:9e00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:a000::/38",
-        "ip": "2001:b031:a000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b031:a400::/38",
         "ip": "2001:b031:a400::",
         "cidr": 38,
@@ -6294,57 +4534,9 @@
         }
       },
       {
-        "prefix": "2001:b031:ac00::/39",
-        "ip": "2001:b031:ac00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b031:b000::/38",
         "ip": "2001:b031:b000::",
         "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:b400::/39",
-        "ip": "2001:b031:b400::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:b600::/39",
-        "ip": "2001:b031:b600::",
-        "cidr": 39,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
         "description": "HiNet Taiwan",
@@ -6406,57 +4598,9 @@
         }
       },
       {
-        "prefix": "2001:b031:cc00::/38",
-        "ip": "2001:b031:cc00::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b031:d000::/38",
         "ip": "2001:b031:d000::",
         "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:d400::/39",
-        "ip": "2001:b031:d400::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:d600::/39",
-        "ip": "2001:b031:d600::",
-        "cidr": 39,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
         "description": "HiNet Taiwan",
@@ -6486,168 +4630,8 @@
         }
       },
       {
-        "prefix": "2001:b031:dc00::/38",
-        "ip": "2001:b031:dc00::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:e000::/38",
-        "ip": "2001:b031:e000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:e400::/39",
-        "ip": "2001:b031:e400::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:e600::/39",
-        "ip": "2001:b031:e600::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:e800::/38",
-        "ip": "2001:b031:e800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:ec00::/39",
-        "ip": "2001:b031:ec00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:ee00::/39",
-        "ip": "2001:b031:ee00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:f000::/39",
-        "ip": "2001:b031:f000::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b031:f200::/39",
         "ip": "2001:b031:f200::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:f400::/38",
-        "ip": "2001:b031:f400::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b031:f800::/39",
-        "ip": "2001:b031:f800::",
         "cidr": 39,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
@@ -6726,54 +4710,6 @@
         }
       },
       {
-        "prefix": "2001:b032:800::/37",
-        "ip": "2001:b032:800::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:1000::/37",
-        "ip": "2001:b032:1000::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:1800::/37",
-        "ip": "2001:b032:1800::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b032:2000::/36",
         "ip": "2001:b032:2000::",
         "cidr": 36,
@@ -6822,201 +4758,9 @@
         }
       },
       {
-        "prefix": "2001:b032:4000::/37",
-        "ip": "2001:b032:4000::",
-        "cidr": 37,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:4800::/38",
-        "ip": "2001:b032:4800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:4c00::/39",
-        "ip": "2001:b032:4c00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:4e00::/39",
-        "ip": "2001:b032:4e00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:5000::/38",
-        "ip": "2001:b032:5000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:5400::/38",
-        "ip": "2001:b032:5400::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:5800::/39",
-        "ip": "2001:b032:5800::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:5a00::/39",
-        "ip": "2001:b032:5a00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b032:5c00::/38",
         "ip": "2001:b032:5c00::",
         "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:6000::/38",
-        "ip": "2001:b032:6000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:6400::/39",
-        "ip": "2001:b032:6400::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:6600::/39",
-        "ip": "2001:b032:6600::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:6800::/37",
-        "ip": "2001:b032:6800::",
-        "cidr": 37,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
         "description": "HiNet Taiwan",
@@ -7046,38 +4790,6 @@
         }
       },
       {
-        "prefix": "2001:b032:7800::/38",
-        "ip": "2001:b032:7800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:7c00::/38",
-        "ip": "2001:b032:7c00::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b032:8000::/36",
         "ip": "2001:b032:8000::",
         "cidr": 36,
@@ -7094,200 +4806,8 @@
         }
       },
       {
-        "prefix": "2001:b032:9000::/38",
-        "ip": "2001:b032:9000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:9800::/38",
-        "ip": "2001:b032:9800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:9c00::/39",
-        "ip": "2001:b032:9c00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:9e00::/39",
-        "ip": "2001:b032:9e00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:a000::/38",
-        "ip": "2001:b032:a000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b032:a400::/38",
         "ip": "2001:b032:a400::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:a800::/38",
-        "ip": "2001:b032:a800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:ac00::/39",
-        "ip": "2001:b032:ac00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:b000::/38",
-        "ip": "2001:b032:b000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:b400::/39",
-        "ip": "2001:b032:b400::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:b600::/39",
-        "ip": "2001:b032:b600::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:b800::/38",
-        "ip": "2001:b032:b800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:bc00::/38",
-        "ip": "2001:b032:bc00::",
         "cidr": 38,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
@@ -7318,393 +4838,9 @@
         }
       },
       {
-        "prefix": "2001:b032:cc00::/38",
-        "ip": "2001:b032:cc00::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:d000::/38",
-        "ip": "2001:b032:d000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:d400::/39",
-        "ip": "2001:b032:d400::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:d600::/39",
-        "ip": "2001:b032:d600::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:d800::/38",
-        "ip": "2001:b032:d800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:dc00::/38",
-        "ip": "2001:b032:dc00::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:e000::/38",
-        "ip": "2001:b032:e000::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:e400::/39",
-        "ip": "2001:b032:e400::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:e600::/39",
-        "ip": "2001:b032:e600::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:e800::/38",
-        "ip": "2001:b032:e800::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:ec00::/39",
-        "ip": "2001:b032:ec00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:ee00::/39",
-        "ip": "2001:b032:ee00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:f000::/39",
-        "ip": "2001:b032:f000::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:f200::/39",
-        "ip": "2001:b032:f200::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:f400::/38",
-        "ip": "2001:b032:f400::",
-        "cidr": 38,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:f800::/39",
-        "ip": "2001:b032:f800::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:fa00::/39",
-        "ip": "2001:b032:fa00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:fc00::/39",
-        "ip": "2001:b032:fc00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b032:fe00::/39",
-        "ip": "2001:b032:fe00::",
-        "cidr": 39,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2001:b040::/26",
         "ip": "2001:b040::",
         "cidr": 26,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b080::/25",
-        "ip": "2001:b080::",
-        "cidr": 25,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b100::/24",
-        "ip": "2001:b100::",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b200::/23",
-        "ip": "2001:b200::",
-        "cidr": 23,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b400::/23",
-        "ip": "2001:b400::",
-        "cidr": 23,
-        "roa_status": "Valid",
-        "name": "HINET-IPv6-TWNIC-TW-20060315",
-        "description": "HiNet Taiwan",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "2001:b000::/21",
-          "ip": "2001:b000::",
-          "cidr": 21,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "2001:b600::/23",
-        "ip": "2001:b600::",
-        "cidr": 23,
         "roa_status": "Valid",
         "name": "HINET-IPv6-TWNIC-TW-20060315",
         "description": "HiNet Taiwan",
@@ -7770,6 +4906,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "223.55 ms"
+    "execution_time": "232.9 ms"
   }
 }

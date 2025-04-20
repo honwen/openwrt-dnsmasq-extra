@@ -1160,9 +1160,9 @@
         "ip": "80.238.136.0",
         "cidr": 22,
         "roa_status": "Valid",
-        "name": "HIPL-SG",
-        "description": "HUAWEI INTERNATIONAL PTE. LTD.",
-        "country_code": "SG",
+        "name": "Huawei-Cloud-SA",
+        "description": "Huawei-Cloud-SA",
+        "country_code": "SA",
         "parent": {
           "prefix": "80.238.128.0/17",
           "ip": "80.238.128.0",
@@ -1179,6 +1179,38 @@
         "name": "Huawei-Cloud-ZA",
         "description": "Huawei-Cloud-ZA",
         "country_code": "ZA",
+        "parent": {
+          "prefix": "80.238.128.0/17",
+          "ip": "80.238.128.0",
+          "cidr": 17,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "80.238.172.0/22",
+        "ip": "80.238.172.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "Huawei-Cloud-HK",
+        "description": "Huawei-Cloud-HK",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "80.238.128.0/17",
+          "ip": "80.238.128.0",
+          "cidr": 17,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "80.238.176.0/22",
+        "ip": "80.238.176.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "Huawei-Cloud-HK",
+        "description": "Huawei-Cloud-HK",
+        "country_code": "HK",
         "parent": {
           "prefix": "80.238.128.0/17",
           "ip": "80.238.128.0",
@@ -1508,6 +1540,22 @@
         }
       },
       {
+        "prefix": "83.101.64.0/21",
+        "ip": "83.101.64.0",
+        "cidr": 21,
+        "roa_status": "Valid",
+        "name": "Huawei-Cloud-ZA",
+        "description": "Huawei-Cloud-ZA",
+        "country_code": "ZA",
+        "parent": {
+          "prefix": "83.101.0.0/17",
+          "ip": "83.101.0.0",
+          "cidr": 17,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "83.101.72.0/21",
         "ip": "83.101.72.0",
         "cidr": 21,
@@ -1556,6 +1604,22 @@
         }
       },
       {
+        "prefix": "83.101.104.0/21",
+        "ip": "83.101.104.0",
+        "cidr": 21,
+        "roa_status": "Valid",
+        "name": "Huawei-Cloud-ID",
+        "description": "Huawei-Cloud-ID",
+        "country_code": "ID",
+        "parent": {
+          "prefix": "83.101.0.0/17",
+          "ip": "83.101.0.0",
+          "cidr": 17,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "87.119.12.0/24",
         "ip": "87.119.12.0",
         "cidr": 24,
@@ -1568,6 +1632,38 @@
           "ip": "87.119.0.0",
           "cidr": 18,
           "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "89.150.192.0/20",
+        "ip": "89.150.192.0",
+        "cidr": 20,
+        "roa_status": "Valid",
+        "name": "Huawei-Cloud-HK",
+        "description": "Huawei-Cloud-HK",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "89.150.192.0/18",
+          "ip": "89.150.192.0",
+          "cidr": 18,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "89.150.208.0/20",
+        "ip": "89.150.208.0",
+        "cidr": 20,
+        "roa_status": "Valid",
+        "name": "Huawei-Cloud-HK",
+        "description": "Huawei-Cloud-HK",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "89.150.192.0/18",
+          "ip": "89.150.192.0",
+          "cidr": 18,
+          "rir_name": "RIPE",
           "allocation_status": "unknown"
         }
       },
@@ -1696,6 +1792,70 @@
           "ip": "94.74.64.0",
           "cidr": 18,
           "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "94.244.128.0/20",
+        "ip": "94.244.128.0",
+        "cidr": 20,
+        "roa_status": "Valid",
+        "name": "Huawei-Cloud-HK",
+        "description": "Huawei-Cloud-HK",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "94.244.128.0/18",
+          "ip": "94.244.128.0",
+          "cidr": 18,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "94.244.144.0/20",
+        "ip": "94.244.144.0",
+        "cidr": 20,
+        "roa_status": "Valid",
+        "name": "Huawei-Cloud-HK",
+        "description": "Huawei-Cloud-HK",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "94.244.128.0/18",
+          "ip": "94.244.128.0",
+          "cidr": 18,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "94.244.160.0/20",
+        "ip": "94.244.160.0",
+        "cidr": 20,
+        "roa_status": "Valid",
+        "name": "Huawei-Cloud-HK",
+        "description": "Huawei-Cloud-HK",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "94.244.128.0/18",
+          "ip": "94.244.128.0",
+          "cidr": 18,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "94.244.176.0/20",
+        "ip": "94.244.176.0",
+        "cidr": 20,
+        "roa_status": "Valid",
+        "name": "Huawei-Cloud-HK",
+        "description": "Huawei-Cloud-HK",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "94.244.128.0/18",
+          "ip": "94.244.128.0",
+          "cidr": 18,
+          "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
       },
@@ -2676,17 +2836,17 @@
         }
       },
       {
-        "prefix": "103.255.62.0/24",
-        "ip": "103.255.62.0",
+        "prefix": "110.41.90.0/24",
+        "ip": "110.41.90.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "Huawei-Cloud-Brazil",
-        "description": "Huawei Cloud Brazil POP",
-        "country_code": "BR",
+        "name": "HWCSNET",
+        "description": "Huawei Public Cloud Service (Huawei Software Technologies Ltd.Co)",
+        "country_code": "CN",
         "parent": {
-          "prefix": "103.255.60.0/22",
-          "ip": "103.255.60.0",
-          "cidr": 22,
+          "prefix": "110.40.0.0/14",
+          "ip": "110.40.0.0",
+          "cidr": 14,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -3988,22 +4148,6 @@
         }
       },
       {
-        "prefix": "119.8.253.0/24",
-        "ip": "119.8.253.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "Huawei-BR-Cloud",
-        "description": "Owner:  HUAWEI DO BRASIL TELECOMUNICACOES LTDA Address: R. Arquiteto Olavo Redig de Campos, 105 - ChA¡cara Santo AntA´nio, SAo Paulo - SP, 04709-000",
-        "country_code": "BR",
-        "parent": {
-          "prefix": "119.8.0.0/16",
-          "ip": "119.8.0.0",
-          "cidr": 16,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "119.8.254.0/23",
         "ip": "119.8.254.0",
         "cidr": 23,
@@ -4372,22 +4516,6 @@
         }
       },
       {
-        "prefix": "119.13.171.0/24",
-        "ip": "119.13.171.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "Huawei-Cloud-Singapore",
-        "description": "Huawei Cloud Singapore POP",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "119.13.160.0/20",
-          "ip": "119.13.160.0",
-          "cidr": 20,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "119.13.172.0/24",
         "ip": "119.13.172.0",
         "cidr": 24,
@@ -4406,38 +4534,6 @@
       {
         "prefix": "119.13.173.0/24",
         "ip": "119.13.173.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "Huawei-Cloud-Singapore",
-        "description": "Huawei Cloud Singapore POP",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "119.13.160.0/20",
-          "ip": "119.13.160.0",
-          "cidr": 20,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "119.13.174.0/24",
-        "ip": "119.13.174.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "Huawei-Cloud-Singapore",
-        "description": "Huawei Cloud Singapore POP",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "119.13.160.0/20",
-          "ip": "119.13.160.0",
-          "cidr": 20,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "119.13.175.0/24",
-        "ip": "119.13.175.0",
         "cidr": 24,
         "roa_status": "None",
         "name": "Huawei-Cloud-Singapore",
@@ -5060,6 +5156,22 @@
         }
       },
       {
+        "prefix": "148.145.224.0/23",
+        "ip": "148.145.224.0",
+        "cidr": 23,
+        "roa_status": "Valid",
+        "name": "Huawei-Cloud-HK",
+        "description": "Huawei-Cloud-HK",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "148.145.128.0/17",
+          "ip": "148.145.128.0",
+          "cidr": 17,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "149.232.128.0/20",
         "ip": "149.232.128.0",
         "cidr": 20,
@@ -5480,8 +5592,8 @@
         "ip": "157.254.211.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "IPXO-157-254-208-0-21",
-        "description": "IPXO LLC",
+        "name": "NET-157-254-208-0-22",
+        "description": "NET INNOVATION LLC",
         "country_code": "US",
         "parent": {
           "prefix": "157.254.0.0/16",
@@ -5496,8 +5608,8 @@
         "ip": "157.254.212.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "IPXO-157-254-208-0-21",
-        "description": "IPXO LLC",
+        "name": "NET-157-254-212-0-22",
+        "description": "NET INNOVATION LLC",
         "country_code": "US",
         "parent": {
           "prefix": "157.254.0.0/16",
@@ -7218,9 +7330,41 @@
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
+      },
+      {
+        "prefix": "219.83.122.0/24",
+        "ip": "219.83.122.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HIPL-SG",
+        "description": "HUAWEI INTERNATIONAL PTE. LTD.",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "219.83.0.0/17",
+          "ip": "219.83.0.0",
+          "cidr": 17,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
       }
     ],
     "ipv6_prefixes": [
+      {
+        "prefix": "2404:a140:43::/48",
+        "ip": "2404:a140:43::",
+        "cidr": 48,
+        "roa_status": "Valid",
+        "name": "Kaopucloud-HK",
+        "description": "Kaopucloud-datacenter",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "2404:a140::/32",
+          "ip": "2404:a140::",
+          "cidr": 32,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
       {
         "prefix": "2405:f080::/39",
         "ip": "2405:f080::",
@@ -7574,6 +7718,38 @@
         }
       },
       {
+        "prefix": "2405:f080:1402::/48",
+        "ip": "2405:f080:1402::",
+        "cidr": 48,
+        "roa_status": "Valid",
+        "name": "HIPL-SG",
+        "description": "15A Changi Business Park Central 1 Eightrium # 03-03/04",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "2405:f080::/32",
+          "ip": "2405:f080::",
+          "cidr": 32,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2405:f080:1403::/48",
+        "ip": "2405:f080:1403::",
+        "cidr": 48,
+        "roa_status": "Valid",
+        "name": "Huawei-Cloud-ZA",
+        "description": "Huawei-Cloud-ZA",
+        "country_code": "ZA",
+        "parent": {
+          "prefix": "2405:f080::/32",
+          "ip": "2405:f080::",
+          "cidr": 32,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "2405:f080:1500::/40",
         "ip": "2405:f080:1500::",
         "cidr": 40,
@@ -7622,9 +7798,25 @@
         }
       },
       {
-        "prefix": "2405:f080:1800::/39",
+        "prefix": "2405:f080:1603::/48",
+        "ip": "2405:f080:1603::",
+        "cidr": 48,
+        "roa_status": "Valid",
+        "name": "Huawei-Cloud-NG",
+        "description": "Huawei-Cloud-NG",
+        "country_code": "NG",
+        "parent": {
+          "prefix": "2405:f080::/32",
+          "ip": "2405:f080::",
+          "cidr": 32,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "2405:f080:1800::/44",
         "ip": "2405:f080:1800::",
-        "cidr": 39,
+        "cidr": 44,
         "roa_status": "Valid",
         "name": "Huawei-Cloud-Turkey",
         "description": "Huawei Cloud Turkey POP",
@@ -7638,9 +7830,9 @@
         }
       },
       {
-        "prefix": "2405:f080:1800::/44",
+        "prefix": "2405:f080:1800::/39",
         "ip": "2405:f080:1800::",
-        "cidr": 44,
+        "cidr": 39,
         "roa_status": "Valid",
         "name": "Huawei-Cloud-Turkey",
         "description": "Huawei Cloud Turkey POP",
@@ -8426,6 +8618,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "237.64 ms"
+    "execution_time": "257.4 ms"
   }
 }

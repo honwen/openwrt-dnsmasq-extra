@@ -342,22 +342,6 @@
         }
       },
       {
-        "prefix": "2a0e:aa07:4000::/40",
-        "ip": "2a0e:aa07:4000::",
-        "cidr": 40,
-        "roa_status": "None",
-        "name": "CATIXS-LTD",
-        "description": "Catixs Ltd",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "2a0e:aa00::/29",
-          "ip": "2a0e:aa00::",
-          "cidr": 29,
-          "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "2a0e:aa07:4100::/40",
         "ip": "2a0e:aa07:4100::",
         "cidr": 40,
@@ -426,6 +410,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "30.2 ms"
+    "execution_time": "33.71 ms"
   }
 }

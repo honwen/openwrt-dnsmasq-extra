@@ -596,17 +596,17 @@
         }
       },
       {
-        "prefix": "101.78.128.0/22",
+        "prefix": "101.78.128.0/19",
         "ip": "101.78.128.0",
-        "cidr": 22,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
         "country_code": "HK",
         "parent": {
-          "prefix": "101.78.128.0/17",
-          "ip": "101.78.128.0",
-          "cidr": 17,
+          "prefix": "103.48.212.0/23",
+          "ip": "103.48.212.0",
+          "cidr": 23,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -628,17 +628,17 @@
         }
       },
       {
-        "prefix": "101.78.128.0/19",
+        "prefix": "101.78.128.0/22",
         "ip": "101.78.128.0",
-        "cidr": 19,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
         "country_code": "HK",
         "parent": {
-          "prefix": "103.48.212.0/23",
-          "ip": "103.48.212.0",
-          "cidr": 23,
+          "prefix": "101.78.128.0/17",
+          "ip": "101.78.128.0",
+          "cidr": 17,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -1316,6 +1316,22 @@
         }
       },
       {
+        "prefix": "115.160.128.0/19",
+        "ip": "115.160.128.0",
+        "cidr": 19,
+        "roa_status": "Valid",
+        "name": "HKBNES-HK",
+        "description": "HKBN Enterprise Solutions HK Limited",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "111.228.0.0/14",
+          "ip": "111.228.0.0",
+          "cidr": 14,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "115.160.128.0/18",
         "ip": "115.160.128.0",
         "cidr": 18,
@@ -1343,22 +1359,6 @@
           "prefix": "115.160.128.0/18",
           "ip": "115.160.128.0",
           "cidr": 18,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "115.160.128.0/19",
-        "ip": "115.160.128.0",
-        "cidr": 19,
-        "roa_status": "Valid",
-        "name": "HKBNES-HK",
-        "description": "HKBN Enterprise Solutions HK Limited",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "111.228.0.0/14",
-          "ip": "111.228.0.0",
-          "cidr": 14,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -1684,22 +1684,6 @@
         }
       },
       {
-        "prefix": "175.45.0.0/21",
-        "ip": "175.45.0.0",
-        "cidr": 21,
-        "roa_status": "Valid",
-        "name": "HKBNES-HK",
-        "description": "HKBN Enterprise Solutions HK Limited",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "175.45.0.0/18",
-          "ip": "175.45.0.0",
-          "cidr": 18,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "175.45.0.0/19",
         "ip": "175.45.0.0",
         "cidr": 19,
@@ -1719,6 +1703,22 @@
         "prefix": "175.45.0.0/18",
         "ip": "175.45.0.0",
         "cidr": 18,
+        "roa_status": "Valid",
+        "name": "HKBNES-HK",
+        "description": "HKBN Enterprise Solutions HK Limited",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "175.45.0.0/18",
+          "ip": "175.45.0.0",
+          "cidr": 18,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "175.45.0.0/21",
+        "ip": "175.45.0.0",
+        "cidr": 21,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -1860,9 +1860,9 @@
         }
       },
       {
-        "prefix": "202.64.0.0/24",
+        "prefix": "202.64.0.0/20",
         "ip": "202.64.0.0",
-        "cidr": 24,
+        "cidr": 20,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -1876,9 +1876,9 @@
         }
       },
       {
-        "prefix": "202.64.0.0/20",
+        "prefix": "202.64.0.0/24",
         "ip": "202.64.0.0",
-        "cidr": 20,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -2212,9 +2212,9 @@
         }
       },
       {
-        "prefix": "202.64.48.0/21",
+        "prefix": "202.64.48.0/24",
         "ip": "202.64.48.0",
-        "cidr": 21,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -2228,9 +2228,9 @@
         }
       },
       {
-        "prefix": "202.64.48.0/24",
+        "prefix": "202.64.48.0/21",
         "ip": "202.64.48.0",
-        "cidr": 24,
+        "cidr": 21,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -4660,9 +4660,9 @@
         }
       },
       {
-        "prefix": "202.130.96.0/21",
+        "prefix": "202.130.96.0/19",
         "ip": "202.130.96.0",
-        "cidr": 21,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -4676,9 +4676,9 @@
         }
       },
       {
-        "prefix": "202.130.96.0/19",
+        "prefix": "202.130.96.0/21",
         "ip": "202.130.96.0",
-        "cidr": 19,
+        "cidr": 21,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -4868,13 +4868,13 @@
         }
       },
       {
-        "prefix": "202.155.224.0/23",
+        "prefix": "202.155.224.0/19",
         "ip": "202.155.224.0",
-        "cidr": 23,
+        "cidr": 19,
         "roa_status": "Valid",
-        "name": "HKBNES-HK",
-        "description": "HKBN Enterprise Solutions HK Limited",
-        "country_code": "HK",
+        "name": "APNIC-AP",
+        "description": "Asia Pacific Network Information Centre",
+        "country_code": "AU",
         "parent": {
           "prefix": "202.155.224.0/20",
           "ip": "202.155.224.0",
@@ -4884,13 +4884,13 @@
         }
       },
       {
-        "prefix": "202.155.224.0/19",
+        "prefix": "202.155.224.0/23",
         "ip": "202.155.224.0",
-        "cidr": 19,
+        "cidr": 23,
         "roa_status": "Valid",
-        "name": "APNIC-AP",
-        "description": "Asia Pacific Network Information Centre",
-        "country_code": "AU",
+        "name": "HKBNES-HK",
+        "description": "HKBN Enterprise Solutions HK Limited",
+        "country_code": "HK",
         "parent": {
           "prefix": "202.155.224.0/20",
           "ip": "202.155.224.0",
@@ -5012,9 +5012,9 @@
         }
       },
       {
-        "prefix": "203.174.32.0/21",
+        "prefix": "203.174.32.0/19",
         "ip": "203.174.32.0",
-        "cidr": 21,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -5028,9 +5028,9 @@
         }
       },
       {
-        "prefix": "203.174.32.0/19",
+        "prefix": "203.174.32.0/21",
         "ip": "203.174.32.0",
-        "cidr": 19,
+        "cidr": 21,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -5204,9 +5204,9 @@
         }
       },
       {
-        "prefix": "210.17.128.0/24",
+        "prefix": "210.17.128.0/19",
         "ip": "210.17.128.0",
-        "cidr": 24,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -5220,9 +5220,9 @@
         }
       },
       {
-        "prefix": "210.17.128.0/19",
+        "prefix": "210.17.128.0/24",
         "ip": "210.17.128.0",
-        "cidr": 19,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -5892,9 +5892,9 @@
         }
       },
       {
-        "prefix": "210.17.176.0/20",
+        "prefix": "210.17.176.0/24",
         "ip": "210.17.176.0",
-        "cidr": 20,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -5908,9 +5908,9 @@
         }
       },
       {
-        "prefix": "210.17.176.0/24",
+        "prefix": "210.17.176.0/20",
         "ip": "210.17.176.0",
-        "cidr": 24,
+        "cidr": 20,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -6420,9 +6420,9 @@
         }
       },
       {
-        "prefix": "210.17.224.0/24",
+        "prefix": "210.17.224.0/19",
         "ip": "210.17.224.0",
-        "cidr": 24,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -6436,9 +6436,9 @@
         }
       },
       {
-        "prefix": "210.17.224.0/19",
+        "prefix": "210.17.224.0/24",
         "ip": "210.17.224.0",
-        "cidr": 19,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -7012,9 +7012,9 @@
         }
       },
       {
-        "prefix": "218.255.0.0/19",
+        "prefix": "218.255.0.0/17",
         "ip": "218.255.0.0",
-        "cidr": 19,
+        "cidr": 17,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -7028,9 +7028,9 @@
         }
       },
       {
-        "prefix": "218.255.0.0/17",
+        "prefix": "218.255.0.0/19",
         "ip": "218.255.0.0",
-        "cidr": 17,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
         "description": "HKBN Enterprise Solutions HK Limited",
@@ -7092,12 +7092,12 @@
         }
       },
       {
-        "prefix": "218.255.128.0/17",
+        "prefix": "218.255.128.0/19",
         "ip": "218.255.128.0",
-        "cidr": 17,
+        "cidr": 19,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
-        "description": "8/F KITEC",
+        "description": "HKBN Enterprise Solutions HK Limited",
         "country_code": "HK",
         "parent": {
           "prefix": "218.255.0.0/16",
@@ -7108,12 +7108,12 @@
         }
       },
       {
-        "prefix": "218.255.128.0/19",
+        "prefix": "218.255.128.0/17",
         "ip": "218.255.128.0",
-        "cidr": 19,
+        "cidr": 17,
         "roa_status": "Valid",
         "name": "HKBNES-HK",
-        "description": "HKBN Enterprise Solutions HK Limited",
+        "description": "8/F KITEC",
         "country_code": "HK",
         "parent": {
           "prefix": "218.255.0.0/16",
@@ -8426,6 +8426,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "258.62 ms"
+    "execution_time": "255.27 ms"
   }
 }

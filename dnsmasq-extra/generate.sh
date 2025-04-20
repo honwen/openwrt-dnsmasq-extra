@@ -75,8 +75,8 @@ time cidr-merger <<-EOF >chnroute.txt.new
 
 		curl_githubusercontent https://raw.githubusercontent.com/cbuijs/ipasn/refs/heads/master/asn/as$it.list | grep -vE '^#' | grep -v ':'
 
-		curl -skSL -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64)' --speed-limit 50000 --speed-time 90 https://api.bgpview.io/asn/$it/prefixes | jq . >../../.asn/$it.json
-		sleep 44
+		# curl -skSL -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64)' --speed-limit 50000 --speed-time 90 https://api.bgpview.io/asn/$it/prefixes | jq . >../../.asn/$it.json
+		# sleep 44
 
 		jq -r '.data.ipv4_prefixes[]|.prefix' ../../.asn/$it.json
 	done)
@@ -175,6 +175,7 @@ sed '/tencent-cloud/d' -i adblock adblock.lite
 sed '/weixinbridge/d' -i adblock adblock.lite
 sed '/bootcdn.net/d' -i adblock adblock.lite
 sed '/wns.windows.com/d' -i adblock adblock.lite
+sed '/c.m.163.com/d' -i adblock adblock.lite
 sed '/e.189.cn/d' -i adblock adblock.lite
 sed '/ip-api.com/d; /pv.sohu.com/d' -i adblock adblock.lite
 sed '/click.simba.taobao.com/d' -i adblock adblock.lite
