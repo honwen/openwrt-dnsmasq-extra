@@ -164,22 +164,6 @@
         }
       },
       {
-        "prefix": "45.203.0.0/19",
-        "ip": "45.203.0.0",
-        "cidr": 19,
-        "roa_status": "None",
-        "name": "Cloud-Innovation-v4-I",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "MU",
-        "parent": {
-          "prefix": "45.192.0.0/12",
-          "ip": "45.192.0.0",
-          "cidr": 12,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "45.203.48.0/20",
         "ip": "45.203.48.0",
         "cidr": 20,
@@ -1556,12 +1540,12 @@
         }
       },
       {
-        "prefix": "199.255.96.0/22",
+        "prefix": "199.255.96.0/24",
         "ip": "199.255.96.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "None",
-        "name": "NET-199-255-96-0-1",
-        "description": "Spectero",
+        "name": "IPV4",
+        "description": "CloudCone, LLC",
         "country_code": "US",
         "parent": {
           "prefix": "199.255.96.0/22",
@@ -1572,12 +1556,12 @@
         }
       },
       {
-        "prefix": "199.255.96.0/24",
+        "prefix": "199.255.96.0/22",
         "ip": "199.255.96.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "None",
-        "name": "IPV4",
-        "description": "CloudCone, LLC",
+        "name": "NET-199-255-96-0-1",
+        "description": "Spectero",
         "country_code": "US",
         "parent": {
           "prefix": "199.255.96.0/22",
@@ -1834,6 +1818,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "111.33 ms"
+    "execution_time": "100.9 ms"
   }
 }

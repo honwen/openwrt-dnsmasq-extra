@@ -84,38 +84,6 @@
         }
       },
       {
-        "prefix": "45.207.218.0/23",
-        "ip": "45.207.218.0",
-        "cidr": 23,
-        "roa_status": "Valid",
-        "name": "Cloud-Innovation-v4-I",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "MU",
-        "parent": {
-          "prefix": "45.192.0.0/12",
-          "ip": "45.192.0.0",
-          "cidr": 12,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "45.207.220.0/22",
-        "ip": "45.207.220.0",
-        "cidr": 22,
-        "roa_status": "Valid",
-        "name": "Cloud-Innovation-v4-I",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "MU",
-        "parent": {
-          "prefix": "45.192.0.0/12",
-          "ip": "45.192.0.0",
-          "cidr": 12,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "77.111.100.0/24",
         "ip": "77.111.100.0",
         "cidr": 24,
@@ -160,6 +128,22 @@
           "ip": "103.190.232.0",
           "cidr": 23,
           "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "141.11.243.0/24",
+        "ip": "141.11.243.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "IPXO",
+        "description": "LEBEX-TELECOM",
+        "country_code": "LB",
+        "parent": {
+          "prefix": "141.11.0.0/16",
+          "ip": "141.11.0.0",
+          "cidr": 16,
+          "rir_name": "RIPE",
           "allocation_status": "unknown"
         }
       },
@@ -410,6 +394,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "33.71 ms"
+    "execution_time": "37.16 ms"
   }
 }

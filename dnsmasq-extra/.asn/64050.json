@@ -1641,7 +1641,7 @@
         "cidr": 21,
         "roa_status": "Valid",
         "name": "CTG107-7-HK",
-        "description": "BGP Network Limited Co.,Ltd",
+        "description": "CTG Server Ltd.",
         "country_code": "HK",
         "parent": {
           "prefix": "118.107.0.0/18",
@@ -2052,6 +2052,22 @@
         }
       },
       {
+        "prefix": "202.61.160.0/22",
+        "ip": "202.61.160.0",
+        "cidr": 22,
+        "roa_status": "Valid",
+        "name": "CTG160-SG",
+        "description": "CTG Server Ltd.",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "202.61.128.0/18",
+          "ip": "202.61.128.0",
+          "cidr": 18,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "202.79.160.0/24",
         "ip": "202.79.160.0",
         "cidr": 24,
@@ -2266,6 +2282,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "116.11 ms"
+    "execution_time": "158.98 ms"
   }
 }

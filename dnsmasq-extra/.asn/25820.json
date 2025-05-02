@@ -708,22 +708,6 @@
         }
       },
       {
-        "prefix": "45.78.28.0/23",
-        "ip": "45.78.28.0",
-        "cidr": 23,
-        "roa_status": "Valid",
-        "name": "IT7-45-78-28-0-22",
-        "description": "IT7 Networks Inc",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "45.78.0.0/18",
-          "ip": "45.78.0.0",
-          "cidr": 18,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "45.78.28.0/22",
         "ip": "45.78.28.0",
         "cidr": 22,
@@ -736,6 +720,22 @@
           "ip": null,
           "cidr": null,
           "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.78.28.0/23",
+        "ip": "45.78.28.0",
+        "cidr": 23,
+        "roa_status": "Valid",
+        "name": "IT7-45-78-28-0-22",
+        "description": "IT7 Networks Inc",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "45.78.0.0/18",
+          "ip": "45.78.0.0",
+          "cidr": 18,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -2628,9 +2628,9 @@
         }
       },
       {
-        "prefix": "104.245.40.0/21",
+        "prefix": "104.245.40.0/22",
         "ip": "104.245.40.0",
-        "cidr": 21,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "CL-1210",
         "description": "Cluster Logic Inc",
@@ -2644,9 +2644,9 @@
         }
       },
       {
-        "prefix": "104.245.40.0/22",
+        "prefix": "104.245.40.0/21",
         "ip": "104.245.40.0",
-        "cidr": 22,
+        "cidr": 21,
         "roa_status": "Valid",
         "name": "CL-1210",
         "description": "Cluster Logic Inc",
@@ -4042,6 +4042,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "205.54 ms"
+    "execution_time": "214.6 ms"
   }
 }

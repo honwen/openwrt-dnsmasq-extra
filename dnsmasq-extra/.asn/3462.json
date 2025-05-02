@@ -4,12 +4,12 @@
   "data": {
     "ipv4_prefixes": [
       {
-        "prefix": "1.34.0.0/15",
+        "prefix": "1.34.0.0/16",
         "ip": "1.34.0.0",
-        "cidr": 15,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Data Communication Business Group,",
+        "description": "Chunghwa Telecom Co.,Ltd.",
         "country_code": "TW",
         "parent": {
           "prefix": "1.34.0.0/15",
@@ -20,12 +20,12 @@
         }
       },
       {
-        "prefix": "1.34.0.0/16",
+        "prefix": "1.34.0.0/15",
         "ip": "1.34.0.0",
-        "cidr": 16,
+        "cidr": 15,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
+        "description": "Data Communication Business Group,",
         "country_code": "TW",
         "parent": {
           "prefix": "1.34.0.0/15",
@@ -1044,12 +1044,12 @@
         }
       },
       {
-        "prefix": "61.224.0.0/14",
+        "prefix": "61.224.0.0/16",
         "ip": "61.224.0.0",
-        "cidr": 14,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Data Communication Business Group,",
+        "description": "Chunghwa Telecom Co.,Ltd.",
         "country_code": "TW",
         "parent": {
           "prefix": "61.224.0.0/14",
@@ -1060,12 +1060,12 @@
         }
       },
       {
-        "prefix": "61.224.0.0/16",
+        "prefix": "61.224.0.0/14",
         "ip": "61.224.0.0",
-        "cidr": 16,
+        "cidr": 14,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
+        "description": "Data Communication Business Group,",
         "country_code": "TW",
         "parent": {
           "prefix": "61.224.0.0/14",
@@ -1652,12 +1652,12 @@
         }
       },
       {
-        "prefix": "114.32.0.0/16",
+        "prefix": "114.32.0.0/12",
         "ip": "114.32.0.0",
-        "cidr": 16,
+        "cidr": 12,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
+        "description": "Data Communication Business Group,",
         "country_code": "TW",
         "parent": {
           "prefix": "114.32.0.0/12",
@@ -1668,12 +1668,12 @@
         }
       },
       {
-        "prefix": "114.32.0.0/12",
+        "prefix": "114.32.0.0/16",
         "ip": "114.32.0.0",
-        "cidr": 12,
+        "cidr": 16,
         "roa_status": "Valid",
         "name": "HINET-NET",
-        "description": "Data Communication Business Group,",
+        "description": "Chunghwa Telecom Co.,Ltd.",
         "country_code": "TW",
         "parent": {
           "prefix": "114.32.0.0/12",
@@ -2916,22 +2916,6 @@
         }
       },
       {
-        "prefix": "218.161.0.0/17",
-        "ip": "218.161.0.0",
-        "cidr": 17,
-        "roa_status": "Valid",
-        "name": "HINET-NET",
-        "description": "Chunghwa Telecom Co.,Ltd.",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "218.200.0.0/14",
-          "ip": "218.200.0.0",
-          "cidr": 14,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "218.161.0.0/16",
         "ip": "218.161.0.0",
         "cidr": 16,
@@ -2942,6 +2926,22 @@
         "parent": {
           "prefix": "218.160.0.0/14",
           "ip": "218.160.0.0",
+          "cidr": 14,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "218.161.0.0/17",
+        "ip": "218.161.0.0",
+        "cidr": 17,
+        "roa_status": "Valid",
+        "name": "HINET-NET",
+        "description": "Chunghwa Telecom Co.,Ltd.",
+        "country_code": "TW",
+        "parent": {
+          "prefix": "218.200.0.0/14",
+          "ip": "218.200.0.0",
           "cidr": 14,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
@@ -4906,6 +4906,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "232.9 ms"
+    "execution_time": "153.59 ms"
   }
 }
