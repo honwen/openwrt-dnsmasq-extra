@@ -356,6 +356,22 @@
         }
       },
       {
+        "prefix": "66.154.98.0/23",
+        "ip": "66.154.98.0",
+        "cidr": 23,
+        "roa_status": "None",
+        "name": "ASSERTIVENETWORKS",
+        "description": "ASSERTIVENET",
+        "country_code": "CA",
+        "parent": {
+          "prefix": "66.154.96.0/19",
+          "ip": "66.154.96.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "67.227.32.0/24",
         "ip": "67.227.32.0",
         "cidr": 24,
@@ -836,22 +852,6 @@
         }
       },
       {
-        "prefix": "154.90.0.0/16",
-        "ip": "154.90.0.0",
-        "cidr": 16,
-        "roa_status": "None",
-        "name": "Cloud-Innovation-v4-I",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "SC",
-        "parent": {
-          "prefix": "154.80.0.0/12",
-          "ip": "154.80.0.0",
-          "cidr": 12,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "154.92.0.0/14",
         "ip": "154.92.0.0",
         "cidr": 14,
@@ -1316,22 +1316,6 @@
         }
       },
       {
-        "prefix": "156.245.64.0/18",
-        "ip": "156.245.64.0",
-        "cidr": 18,
-        "roa_status": "None",
-        "name": "CloudInnovation-infrastructure",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "SC",
-        "parent": {
-          "prefix": "156.224.0.0/11",
-          "ip": "156.224.0.0",
-          "cidr": 11,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "156.247.0.0/16",
         "ip": "156.247.0.0",
         "cidr": 16,
@@ -1367,22 +1351,6 @@
         "prefix": "156.249.0.0/16",
         "ip": "156.249.0.0",
         "cidr": 16,
-        "roa_status": "None",
-        "name": "CloudInnovation-infrastructure",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "SC",
-        "parent": {
-          "prefix": "156.224.0.0/11",
-          "ip": "156.224.0.0",
-          "cidr": 11,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "156.250.32.0/19",
-        "ip": "156.250.32.0",
-        "cidr": 19,
         "roa_status": "None",
         "name": "CloudInnovation-infrastructure",
         "description": "Cloud Innovation Ltd",
@@ -1753,7 +1721,7 @@
         "prefix": "2607:9a00::/32",
         "ip": "2607:9a00::",
         "cidr": 32,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "MULTA2",
         "description": "CALPOP.COM, INC.",
         "country_code": "US",
@@ -1769,7 +1737,7 @@
         "prefix": "2607:f130::/32",
         "ip": "2607:f130::",
         "cidr": 32,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "MULTA6-BLOCK1",
         "description": "MULTACOM CORPORATION",
         "country_code": "US",
@@ -1818,6 +1786,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "100.9 ms"
+    "execution_time": "100.81 ms"
   }
 }

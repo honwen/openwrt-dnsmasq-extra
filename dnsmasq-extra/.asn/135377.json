@@ -548,6 +548,70 @@
         }
       },
       {
+        "prefix": "45.195.219.0/24",
+        "ip": "45.195.219.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Bunny_Technology_LLC",
+        "description": "Bunny Technology LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "45.192.0.0/12",
+          "ip": "45.192.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.195.220.0/24",
+        "ip": "45.195.220.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Bunny_Technology_LLC",
+        "description": "Bunny Technology LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "45.192.0.0/12",
+          "ip": "45.192.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.195.221.0/24",
+        "ip": "45.195.221.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Bunny_Technology_LLC",
+        "description": "Bunny Technology LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "45.192.0.0/12",
+          "ip": "45.192.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.195.222.0/24",
+        "ip": "45.195.222.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Bunny_Technology_LLC",
+        "description": "Bunny Technology LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "45.192.0.0/12",
+          "ip": "45.192.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "45.249.244.0/24",
         "ip": "45.249.244.0",
         "cidr": 24,
@@ -6420,6 +6484,22 @@
         }
       },
       {
+        "prefix": "154.82.23.0/24",
+        "ip": "154.82.23.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Cloud_Innovation",
+        "description": "Cloud Innovation Ltd",
+        "country_code": "US",
+        "parent": {
+          "prefix": "154.80.0.0/12",
+          "ip": "154.80.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "154.197.56.0/24",
         "ip": "154.197.56.0",
         "cidr": 24,
@@ -6728,9 +6808,9 @@
         "ip": "156.229.226.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "Cloud_Innovation",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "US",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "DE",
         "parent": {
           "prefix": "156.224.0.0/11",
           "ip": "156.224.0.0",
@@ -9444,6 +9524,22 @@
         }
       },
       {
+        "prefix": "165.154.159.0/24",
+        "ip": "165.154.159.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD-HK",
+        "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "165.154.128.0/18",
+          "ip": "165.154.128.0",
+          "cidr": 18,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "165.154.160.0/24",
         "ip": "165.154.160.0",
         "cidr": 24,
@@ -10090,7 +10186,7 @@
         "roa_status": "Valid",
         "name": "IPXO",
         "description": "IPXO",
-        "country_code": "KR",
+        "country_code": "US",
         "parent": {
           "prefix": "181.214.0.0/15",
           "ip": "181.214.0.0",
@@ -10170,6 +10266,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "257.11 ms"
+    "execution_time": "282.42 ms"
   }
 }
