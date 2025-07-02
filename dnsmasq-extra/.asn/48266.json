@@ -68,38 +68,6 @@
         }
       },
       {
-        "prefix": "45.129.228.0/24",
-        "ip": "45.129.228.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "CATIXS-SG",
-        "description": "Catixs Ltd",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "45.129.228.0/22",
-          "ip": "45.129.228.0",
-          "cidr": 22,
-          "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "77.111.100.0/24",
-        "ip": "77.111.100.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "NET-77-111-100-0-24",
-        "description": "Catixs Ltd",
-        "country_code": "GB",
-        "parent": {
-          "prefix": "77.111.96.0/20",
-          "ip": "77.111.96.0",
-          "cidr": 20,
-          "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "81.5.191.0/24",
         "ip": "81.5.191.0",
         "cidr": 24,
@@ -111,6 +79,22 @@
           "prefix": "81.5.128.0/18",
           "ip": "81.5.128.0",
           "cidr": 18,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "91.124.6.0/24",
+        "ip": "91.124.6.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "NET-91-124-6-0-24",
+        "description": "Private Customer",
+        "country_code": "US",
+        "parent": {
+          "prefix": "91.124.0.0/16",
+          "ip": "91.124.0.0",
+          "cidr": 16,
           "rir_name": "RIPE",
           "allocation_status": "unknown"
         }
@@ -128,22 +112,6 @@
           "ip": "103.190.232.0",
           "cidr": 23,
           "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "141.11.243.0/24",
-        "ip": "141.11.243.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "IPXO",
-        "description": "LEBEX-TELECOM",
-        "country_code": "LB",
-        "parent": {
-          "prefix": "141.11.0.0/16",
-          "ip": "141.11.0.0",
-          "cidr": 16,
-          "rir_name": "RIPE",
           "allocation_status": "unknown"
         }
       },
@@ -265,7 +233,7 @@
         "prefix": "2a06:a005:90::/44",
         "ip": "2a06:a005:90::",
         "cidr": 44,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "CATIXS-LTD",
         "description": "Catixs Ltd",
         "country_code": "JP",
@@ -281,7 +249,7 @@
         "prefix": "2a06:a005:a0::/44",
         "ip": "2a06:a005:a0::",
         "cidr": 44,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "CATIXS-LTD",
         "description": "Catixs Ltd",
         "country_code": "GB",
@@ -297,7 +265,7 @@
         "prefix": "2a06:a005:350::/44",
         "ip": "2a06:a005:350::",
         "cidr": 44,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": null,
         "description": null,
         "country_code": "US",
@@ -313,7 +281,7 @@
         "prefix": "2a06:a005:870::/44",
         "ip": "2a06:a005:870::",
         "cidr": 44,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": null,
         "description": null,
         "country_code": "US",
@@ -329,7 +297,7 @@
         "prefix": "2a0e:aa07:4100::/40",
         "ip": "2a0e:aa07:4100::",
         "cidr": 40,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "Catixs-Ltd",
         "description": "Catixs Ltd",
         "country_code": "SG",
@@ -345,7 +313,7 @@
         "prefix": "2a0e:da40:3000::/36",
         "ip": "2a0e:da40:3000::",
         "cidr": 36,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "Catixs-Ltd",
         "description": "Catixs Ltd",
         "country_code": "US",
@@ -361,7 +329,7 @@
         "prefix": "2a12:8c00::/36",
         "ip": "2a12:8c00::",
         "cidr": 36,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "Catixs-Ltd",
         "description": "Catixs Ltd",
         "country_code": "SG",
@@ -377,7 +345,7 @@
         "prefix": "2a12:8c00:1000::/36",
         "ip": "2a12:8c00:1000::",
         "cidr": 36,
-        "roa_status": "Valid",
+        "roa_status": "None",
         "name": "Catixs-Ltd",
         "description": "Catixs Ltd",
         "country_code": "SG",
@@ -394,6 +362,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "37.16 ms"
+    "execution_time": "25.38 ms"
   }
 }
