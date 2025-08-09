@@ -740,22 +740,6 @@
         }
       },
       {
-        "prefix": "14.128.56.0/24",
-        "ip": "14.128.56.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "BGP48-HK",
-        "description": "BGP Network Limited Co.,Ltd",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "14.128.32.0/19",
-          "ip": "14.128.32.0",
-          "cidr": 19,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "14.128.61.0/24",
         "ip": "14.128.61.0",
         "cidr": 24,
@@ -836,13 +820,13 @@
         }
       },
       {
-        "prefix": "27.124.0.0/18",
+        "prefix": "27.124.0.0/24",
         "ip": "27.124.0.0",
-        "cidr": 18,
+        "cidr": 24,
         "roa_status": "Valid",
-        "name": "RCPL-SG",
-        "description": "RACKIP CONSULTANCY PTE. LTD.",
-        "country_code": "SG",
+        "name": "BGP124-0-HK",
+        "description": "BGP Network Limited Co.,Ltd",
+        "country_code": "HK",
         "parent": {
           "prefix": "27.124.0.0/18",
           "ip": "27.124.0.0",
@@ -852,13 +836,13 @@
         }
       },
       {
-        "prefix": "27.124.0.0/24",
+        "prefix": "27.124.0.0/18",
         "ip": "27.124.0.0",
-        "cidr": 24,
+        "cidr": 18,
         "roa_status": "Valid",
-        "name": "BGP124-0-HK",
-        "description": "BGP Network Limited Co.,Ltd",
-        "country_code": "HK",
+        "name": "RCPL-SG",
+        "description": "RACKIP CONSULTANCY PTE. LTD.",
+        "country_code": "SG",
         "parent": {
           "prefix": "27.124.0.0/18",
           "ip": "27.124.0.0",
@@ -1556,22 +1540,6 @@
         }
       },
       {
-        "prefix": "103.246.228.0/24",
-        "ip": "103.246.228.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "STCL-KH",
-        "description": "Starchain Telecom Co., LTD.",
-        "country_code": "KH",
-        "parent": {
-          "prefix": "103.246.228.0/22",
-          "ip": "103.246.228.0",
-          "cidr": 22,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "111.223.244.0/24",
         "ip": "111.223.244.0",
         "cidr": 24,
@@ -1780,22 +1748,6 @@
         }
       },
       {
-        "prefix": "134.122.128.0/17",
-        "ip": "134.122.128.0",
-        "cidr": 17,
-        "roa_status": "Valid",
-        "name": "RCPL-SG",
-        "description": "RACKIP CONSULTANCY PTE. LTD.",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "134.122.128.0/17",
-          "ip": "134.122.128.0",
-          "cidr": 17,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "134.122.162.0/24",
         "ip": "134.122.162.0",
         "cidr": 24,
@@ -1835,22 +1787,6 @@
         "name": "CTG92-41-KH",
         "description": "CTG Server Ltd.",
         "country_code": "KH",
-        "parent": {
-          "prefix": "143.92.32.0/19",
-          "ip": "143.92.32.0",
-          "cidr": 19,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "143.92.54.0/24",
-        "ip": "143.92.54.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "CTG92-48-HK",
-        "description": "CTG Server Ltd.",
-        "country_code": "HK",
         "parent": {
           "prefix": "143.92.32.0/19",
           "ip": "143.92.32.0",
@@ -2116,22 +2052,6 @@
         }
       },
       {
-        "prefix": "202.95.9.0/24",
-        "ip": "202.95.9.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "RCPL-SG",
-        "description": "RACKIP CONSULTANCY PTE. LTD.",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "202.232.0.0/14",
-          "ip": "202.232.0.0",
-          "cidr": 14,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "202.95.16.0/21",
         "ip": "202.95.16.0",
         "cidr": 21,
@@ -2142,22 +2062,6 @@
         "parent": {
           "prefix": "202.95.16.0/20",
           "ip": "202.95.16.0",
-          "cidr": 20,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "202.162.97.0/24",
-        "ip": "202.162.97.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "CTG162-97-TW",
-        "description": "CTG Server Ltd.",
-        "country_code": "TW",
-        "parent": {
-          "prefix": "202.162.96.0/20",
-          "ip": "202.162.96.0",
           "cidr": 20,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
@@ -2282,6 +2186,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "126.27 ms"
+    "execution_time": "122.05 ms"
   }
 }
