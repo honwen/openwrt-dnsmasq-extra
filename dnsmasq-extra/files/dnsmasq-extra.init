@@ -350,6 +350,9 @@ homeproxy() {
 	grep -qE 'dnsmasq-extra *homeproxy' /etc/homeproxy/scripts/update_resources.sh || {
 		echo '/etc/init.d/dnsmasq-extra homeproxy || :' >>/etc/homeproxy/scripts/update_resources.sh
 	}
+	grep -qF "url: 'https://cp.cloudflare.com/'," /etc/homeproxy/scripts/generate_client.uc || {
+		sed "/outbounds: map(main_urltest_nodes/i\\\t\t\turl: 'https://cp.cloudflare.com/'," -i /etc/homeproxy/scripts/generate_client.uc
+	}
 }
 
 rules() {
