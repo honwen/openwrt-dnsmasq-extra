@@ -84,22 +84,6 @@
         }
       },
       {
-        "prefix": "77.111.100.0/24",
-        "ip": "77.111.100.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "NET-77-111-100-0-24",
-        "description": "Catixs Ltd",
-        "country_code": "GB",
-        "parent": {
-          "prefix": "77.111.96.0/20",
-          "ip": "77.111.96.0",
-          "cidr": 20,
-          "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "81.5.191.0/24",
         "ip": "81.5.191.0",
         "cidr": 24,
@@ -111,6 +95,102 @@
           "prefix": "81.5.128.0/18",
           "ip": "81.5.128.0",
           "cidr": 18,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "82.25.33.0/24",
+        "ip": "82.25.33.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "NET-82-25-33-0-24",
+        "description": "Private Customer",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "82.24.0.0/14",
+          "ip": "82.24.0.0",
+          "cidr": 14,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "82.25.40.0/24",
+        "ip": "82.25.40.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "NET-82-25-40-0-24",
+        "description": "Private Customer",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "82.24.0.0/14",
+          "ip": "82.24.0.0",
+          "cidr": 14,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "82.152.177.0/24",
+        "ip": "82.152.177.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "NET-82-152-177-0-24",
+        "description": "Sascha Wohlert",
+        "country_code": "DE",
+        "parent": {
+          "prefix": "82.152.0.0/15",
+          "ip": "82.152.0.0",
+          "cidr": 15,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "91.124.6.0/24",
+        "ip": "91.124.6.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "NET-91-124-6-0-24",
+        "description": "NET 91 124 6 0 24",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "91.124.0.0/16",
+          "ip": "91.124.0.0",
+          "cidr": 16,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "92.118.204.0/24",
+        "ip": "92.118.204.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Catixs",
+        "description": "Catixs Ltd",
+        "country_code": "US",
+        "parent": {
+          "prefix": "92.118.204.0/22",
+          "ip": "92.118.204.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "95.155.145.0/24",
+        "ip": "95.155.145.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "NET-95-155-145-0-24",
+        "description": "Private Customer",
+        "country_code": "DE",
+        "parent": {
+          "prefix": "95.155.128.0/19",
+          "ip": "95.155.128.0",
+          "cidr": 19,
           "rir_name": "RIPE",
           "allocation_status": "unknown"
         }
@@ -132,22 +212,6 @@
         }
       },
       {
-        "prefix": "141.11.243.0/24",
-        "ip": "141.11.243.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "IPXO",
-        "description": "LEBEX-TELECOM",
-        "country_code": "LB",
-        "parent": {
-          "prefix": "141.11.0.0/16",
-          "ip": "141.11.0.0",
-          "cidr": 16,
-          "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "144.48.80.0/24",
         "ip": "144.48.80.0",
         "cidr": 24,
@@ -164,12 +228,44 @@
         }
       },
       {
+        "prefix": "151.242.125.0/24",
+        "ip": "151.242.125.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "NET-151-242-125-0-24",
+        "description": "Private Customer",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "151.242.0.0/17",
+          "ip": "151.242.0.0",
+          "cidr": 17,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "151.242.137.0/24",
+        "ip": "151.242.137.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "NET-151-242-137-0-24",
+        "description": "Private Customer",
+        "country_code": "GB",
+        "parent": {
+          "prefix": "151.240.0.0/13",
+          "ip": "151.240.0.0",
+          "cidr": 13,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "166.1.6.0/24",
         "ip": "166.1.6.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "ACE-NETWORK-10",
-        "description": "Ace Data Centers, Inc.",
+        "name": "INTERLIR",
+        "description": "InterLIR LLC",
         "country_code": "US",
         "parent": {
           "prefix": "166.0.0.0/15",
@@ -326,6 +422,22 @@
         }
       },
       {
+        "prefix": "2a0e:aa07:4000::/40",
+        "ip": "2a0e:aa07:4000::",
+        "cidr": 40,
+        "roa_status": "None",
+        "name": "CATIXS-LTD",
+        "description": "Catixs Ltd",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "2a0e:aa00::/29",
+          "ip": "2a0e:aa00::",
+          "cidr": 29,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "2a0e:aa07:4100::/40",
         "ip": "2a0e:aa07:4100::",
         "cidr": 40,
@@ -394,6 +506,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "37.16 ms"
+    "execution_time": "31.91 ms"
   }
 }

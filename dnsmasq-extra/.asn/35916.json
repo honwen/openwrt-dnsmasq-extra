@@ -4,54 +4,6 @@
   "data": {
     "ipv4_prefixes": [
       {
-        "prefix": "23.92.52.0/24",
-        "ip": "23.92.52.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "NODNET",
-        "description": "Nodisto IT, LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "23.92.48.0/21",
-          "ip": "23.92.48.0",
-          "cidr": 21,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "23.92.53.0/24",
-        "ip": "23.92.53.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "NODNET",
-        "description": "Nodisto IT, LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "23.92.48.0/21",
-          "ip": "23.92.48.0",
-          "cidr": 21,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "23.92.54.0/24",
-        "ip": "23.92.54.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "NODNET",
-        "description": "Nodisto IT, LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "23.92.48.0/21",
-          "ip": "23.92.48.0",
-          "cidr": 21,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "23.236.72.0/24",
         "ip": "23.236.72.0",
         "cidr": 24,
@@ -196,38 +148,6 @@
         }
       },
       {
-        "prefix": "63.142.242.0/24",
-        "ip": "63.142.242.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "VPSDIME-LA",
-        "description": "Nodisto IT, LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "63.142.240.0/20",
-          "ip": "63.142.240.0",
-          "cidr": 20,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "63.142.243.0/24",
-        "ip": "63.142.243.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "VPSDIME-LA",
-        "description": "Nodisto IT, LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "63.142.240.0/20",
-          "ip": "63.142.240.0",
-          "cidr": 20,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "64.69.32.0/20",
         "ip": "64.69.32.0",
         "cidr": 20,
@@ -352,6 +272,38 @@
           "ip": "66.103.192.0",
           "cidr": 19,
           "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "66.154.98.0/23",
+        "ip": "66.154.98.0",
+        "cidr": 23,
+        "roa_status": "None",
+        "name": "ASSERTIVENETWORKS",
+        "description": "ASSERTIVENET",
+        "country_code": "CA",
+        "parent": {
+          "prefix": "66.154.96.0/19",
+          "ip": "66.154.96.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "66.154.124.0/22",
+        "ip": "66.154.124.0",
+        "cidr": 22,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
           "allocation_status": "unknown"
         }
       },
@@ -500,6 +452,22 @@
         }
       },
       {
+        "prefix": "96.47.166.0/24",
+        "ip": "96.47.166.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "103.101.29.0/24",
         "ip": "103.101.29.0",
         "cidr": 24,
@@ -559,22 +527,6 @@
           "prefix": "104.156.140.0/22",
           "ip": "104.156.140.0",
           "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "104.237.11.0/24",
-        "ip": "104.237.11.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "HOSTEROS",
-        "description": "Hosteros LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "104.237.0.0/20",
-          "ip": "104.237.0.0",
-          "cidr": 20,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -692,6 +644,38 @@
         }
       },
       {
+        "prefix": "142.171.0.0/17",
+        "ip": "142.171.0.0",
+        "cidr": 17,
+        "roa_status": "Valid",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "142.171.128.0/17",
+        "ip": "142.171.128.0",
+        "cidr": 17,
+        "roa_status": "Valid",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "142.171.200.0/24",
         "ip": "142.171.200.0",
         "cidr": 24,
@@ -704,22 +688,6 @@
           "ip": "142.171.0.0",
           "cidr": 16,
           "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "147.79.7.0/24",
-        "ip": "147.79.7.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "NET-147-79-7-0-24",
-        "description": "Private Customer",
-        "country_code": "EE",
-        "parent": {
-          "prefix": "147.79.0.0/17",
-          "ip": "147.79.0.0",
-          "cidr": 17,
-          "rir_name": "RIPE",
           "allocation_status": "unknown"
         }
       },
@@ -836,22 +804,6 @@
         }
       },
       {
-        "prefix": "154.90.0.0/16",
-        "ip": "154.90.0.0",
-        "cidr": 16,
-        "roa_status": "None",
-        "name": "Cloud-Innovation-v4-I",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "SC",
-        "parent": {
-          "prefix": "154.80.0.0/12",
-          "ip": "154.80.0.0",
-          "cidr": 12,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "154.92.0.0/14",
         "ip": "154.92.0.0",
         "cidr": 14,
@@ -948,22 +900,6 @@
         }
       },
       {
-        "prefix": "154.195.0.0/16",
-        "ip": "154.195.0.0",
-        "cidr": 16,
-        "roa_status": "None",
-        "name": "Cloud-Innovation-v4-II",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "SC",
-        "parent": {
-          "prefix": "154.192.0.0/11",
-          "ip": "154.192.0.0",
-          "cidr": 11,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "154.196.0.0/17",
         "ip": "154.196.0.0",
         "cidr": 17,
@@ -1012,56 +948,8 @@
         }
       },
       {
-        "prefix": "154.202.0.0/16",
-        "ip": "154.202.0.0",
-        "cidr": 16,
-        "roa_status": "None",
-        "name": "Cloud-Innovation-v4-II",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "SC",
-        "parent": {
-          "prefix": "154.192.0.0/11",
-          "ip": "154.192.0.0",
-          "cidr": 11,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "154.203.0.0/17",
-        "ip": "154.203.0.0",
-        "cidr": 17,
-        "roa_status": "None",
-        "name": "Cloud-Innovation-v4-II",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "SC",
-        "parent": {
-          "prefix": "154.192.0.0/11",
-          "ip": "154.192.0.0",
-          "cidr": 11,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "154.204.0.0/17",
         "ip": "154.204.0.0",
-        "cidr": 17,
-        "roa_status": "None",
-        "name": "Cloud-Innovation-v4-II",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "SC",
-        "parent": {
-          "prefix": "154.192.0.0/11",
-          "ip": "154.192.0.0",
-          "cidr": 11,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "154.210.0.0/17",
-        "ip": "154.210.0.0",
         "cidr": 17,
         "roa_status": "None",
         "name": "Cloud-Innovation-v4-II",
@@ -1316,22 +1204,6 @@
         }
       },
       {
-        "prefix": "156.245.64.0/18",
-        "ip": "156.245.64.0",
-        "cidr": 18,
-        "roa_status": "None",
-        "name": "CloudInnovation-infrastructure",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "SC",
-        "parent": {
-          "prefix": "156.224.0.0/11",
-          "ip": "156.224.0.0",
-          "cidr": 11,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "156.247.0.0/16",
         "ip": "156.247.0.0",
         "cidr": 16,
@@ -1380,22 +1252,6 @@
         }
       },
       {
-        "prefix": "156.250.32.0/19",
-        "ip": "156.250.32.0",
-        "cidr": 19,
-        "roa_status": "None",
-        "name": "CloudInnovation-infrastructure",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "SC",
-        "parent": {
-          "prefix": "156.224.0.0/11",
-          "ip": "156.224.0.0",
-          "cidr": 11,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "156.251.0.0/16",
         "ip": "156.251.0.0",
         "cidr": 16,
@@ -1412,34 +1268,18 @@
         }
       },
       {
-        "prefix": "157.254.218.0/24",
-        "ip": "157.254.218.0",
+        "prefix": "172.93.44.0/24",
+        "ip": "172.93.44.0",
         "cidr": 24,
-        "roa_status": "Valid",
-        "name": "IPXO-157-254-218-0-23",
-        "description": "IPXO LLC",
-        "country_code": "US",
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
         "parent": {
-          "prefix": "157.254.0.0/16",
-          "ip": "157.254.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "163.5.104.0/24",
-        "ip": "163.5.104.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "IONIS-163-5-104",
-        "description": "Private Customer",
-        "country_code": "US",
-        "parent": {
-          "prefix": "163.5.0.0/16",
-          "ip": "163.5.0.0",
-          "cidr": 16,
-          "rir_name": "RIPE",
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
           "allocation_status": "unknown"
         }
       },
@@ -1540,12 +1380,12 @@
         }
       },
       {
-        "prefix": "199.255.96.0/24",
+        "prefix": "199.255.96.0/22",
         "ip": "199.255.96.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "None",
-        "name": "IPV4",
-        "description": "CloudCone, LLC",
+        "name": "NET-199-255-96-0-1",
+        "description": "Spectero",
         "country_code": "US",
         "parent": {
           "prefix": "199.255.96.0/22",
@@ -1556,12 +1396,12 @@
         }
       },
       {
-        "prefix": "199.255.96.0/22",
+        "prefix": "199.255.96.0/24",
         "ip": "199.255.96.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "None",
-        "name": "NET-199-255-96-0-1",
-        "description": "Spectero",
+        "name": "IPV4",
+        "description": "CloudCone, LLC",
         "country_code": "US",
         "parent": {
           "prefix": "199.255.96.0/22",
@@ -1652,22 +1492,6 @@
         }
       },
       {
-        "prefix": "206.168.149.0/24",
-        "ip": "206.168.149.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "RACKNERD-UT",
-        "description": "RackNerd LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "206.168.148.0/22",
-          "ip": "206.168.148.0",
-          "cidr": 22,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "206.168.151.0/24",
         "ip": "206.168.151.0",
         "cidr": 24,
@@ -1695,38 +1519,6 @@
           "prefix": "207.229.95.0/24",
           "ip": "207.229.95.0",
           "cidr": 24,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "208.162.36.0/22",
-        "ip": "208.162.36.0",
-        "cidr": 22,
-        "roa_status": "None",
-        "name": "CENTURYLINK-LEGACY-SAVVIS-BLK75",
-        "description": "CenturyLink Communications, LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "207.210.192.0/18",
-          "ip": "207.210.192.0",
-          "cidr": 18,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "208.162.40.0/24",
-        "ip": "208.162.40.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "CENTURYLINK-LEGACY-SAVVIS-BLK75",
-        "description": "CenturyLink Communications, LLC",
-        "country_code": "US",
-        "parent": {
-          "prefix": "207.224.0.0/15",
-          "ip": "207.224.0.0",
-          "cidr": 15,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -1818,6 +1610,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "100.9 ms"
+    "execution_time": "103.83 ms"
   }
 }

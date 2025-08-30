@@ -56,9 +56,9 @@
         "ip": "31.25.237.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "UK-MASSIVEGRID-20110309",
-        "description": "MASSIVEGRID LTD",
-        "country_code": "EU",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "GB",
         "parent": {
           "prefix": "31.25.236.0/22",
           "ip": "31.25.236.0",
@@ -649,6 +649,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "46.79 ms"
+    "execution_time": "37.34 ms"
   }
 }
