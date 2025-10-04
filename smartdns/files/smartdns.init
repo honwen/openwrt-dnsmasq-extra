@@ -106,9 +106,11 @@ start_service() {
 
 		$(
 			for it in $(uci_get_by_type $NAME bootstrap); do
-				echo "server ${it} -bootstrap-dns -fallback"
+				echo "server ${it} -bootstrap-dns"
+				echo "server ${it} -fallback"
 				echo ${it} | grep -qE '^(223|210)\.' || {
-					echo "server-tcp ${it} -bootstrap-dns -fallback"
+					echo "server-tcp ${it} -bootstrap-dns"
+					echo "server-tcp ${it} -fallback"
 				}
 			done
 		)
@@ -181,9 +183,11 @@ start_service() {
 
 			$(
 				for it in $(uci_get_by_type $NAME bootstrap); do
-					echo "server ${it} -bootstrap-dns -fallback"
+					echo "server ${it} -bootstrap-dns"
+					echo "server ${it} -fallback"
 					echo ${it} | grep -qE '^(223|210)\.' || {
-						echo "server-tcp ${it} -bootstrap-dns -fallback"
+						echo "server-tcp ${it} -bootstrap-dns"
+						echo "server-tcp ${it} -fallback"
 					}
 				done
 			)

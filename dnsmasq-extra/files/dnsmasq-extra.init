@@ -62,6 +62,11 @@ start() {
 		}
 	done
 
+	x_direct=$( (
+		cat /etc/homeproxy/resources/direct_list.txt
+		uci show homeproxy | sed -n 's+.*\.address=++p'
+	) 2>/dev/null | tr -d "'" | sort -u)
+
 	# pluginsOtcp
 	for plugin in $(uci_get_by_type ${NAME} general pluginsOtcp); do
 		[ -x /usr/bin/${plugin} ] && {
@@ -75,7 +80,7 @@ start() {
 			echo -n "plugin-tcp:${plugin}, " | tr [a-z] [A-Z]
 			auto_cat 'gfwlist' 'tldn' /etc/homeproxy/resources/proxy_list.txt |
 				sed "s/^/server=\//;s/$/\/127.0.0.1#${plugin_tcpport}/" >${TARGET}/plugin_${plugin}.conf
-			for it in $x_watchdog; do
+			for it in $x_direct; do
 				echo "server=/${it}/127.0.0.1#${plugin_tcpport}" >>${TARGET}/plugin_${plugin}.conf
 			done
 		}
@@ -95,7 +100,7 @@ start() {
 		auto_cat 'gfwlist' 'tldn' /etc/homeproxy/resources/proxy_list.txt |
 			sed "s/^/server=\//;s/$/\/127.0.0.1#${tcpport}/" >>${TARGET}/clean_${server}.conf
 
-		for it in $x_watchdog; do
+		for it in $x_direct; do
 			echo "server=/${it}/${server}" >>${TARGET}/plugin_${plugin}.conf
 			echo "server=/${it}/127.0.0.1#${tcpport}" >>${TARGET}/plugin_${plugin}.conf
 		done
@@ -125,8 +130,8 @@ start() {
 			uci_bool_by_type ${NAME} general overwrite_aiodns && {
 				[ -x /usr/bin/aiodns ] && {
 					local aiodns_port=$(uci_get_by_type aiodns aiodns port 7100)
-					for it in $x_watchdog; do
-						echo "server=/${it}/127.0.0.1#${aiodns_port}" >>${TARGET}/misc_custom
+					for it in $x_direct; do
+						echo "server=/${it}/127.0.0.1#${aiodns_port}" >>${TARGET}/misc_custom.conf
 					done
 					echo "server=127.0.0.1#$aiodns_port" >>${TARGET}/misc_custom.conf
 					sed "s+$+127.0.0.1#$aiodns_port+g" $_tmp_list >>${TARGET}/misc_direct.conf
@@ -136,8 +141,8 @@ start() {
 			uci_bool_by_type ${NAME} general overwrite_dcompass && {
 				[ -x /usr/bin/dcompass ] && {
 					local dcompass_port=$(uci_get_by_type dcompass dcompass port 7500)
-					for it in $x_watchdog; do
-						echo "server=/${it}/127.0.0.1#${dcompass_port}" >>${TARGET}/misc_custom
+					for it in $x_direct; do
+						echo "server=/${it}/127.0.0.1#${dcompass_port}" >>${TARGET}/misc_custom.conf
 					done
 					echo "server=127.0.0.1#$dcompass_port" >>${TARGET}/misc_custom.conf
 					sed "s+$+127.0.0.1#$dcompass_port+g" $_tmp_list >>${TARGET}/misc_direct.conf
@@ -150,9 +155,12 @@ start() {
 						sed 's+\(enable_cn[ \t]*\)[^ ]*$+\1yes+g' -i /etc/config/smartdns
 						/etc/init.d/smartdns restart >/dev/null 2>&1
 					}
-					local smartdns_port=$(uci_get_by_type smartdns smartdns port 0000)
-					echo "server=127.0.0.1#$((smartdns_port + 1))" >>${TARGET}/misc_custom.conf
-					sed "s+$+127.0.0.1#$((smartdns_port + 1))+g" $_tmp_list >>${TARGET}/misc_direct.conf
+					local smartdns_port=$(($(uci_get_by_type smartdns smartdns port 0000) + 1))
+					for it in $x_direct; do
+						echo "server=/${it}/127.0.0.1#${smartdns_port}" >>${TARGET}/misc_custom.conf
+					done
+					echo "server=127.0.0.1#$smartdns_port" >>${TARGET}/misc_custom.conf
+					sed "s+$+127.0.0.1#$smartdns_port+g" $_tmp_list >>${TARGET}/misc_direct.conf
 				}
 			}
 
@@ -181,6 +189,8 @@ start() {
 			rm -f /tmp/.custom.*.list
 		}
 	}
+
+	echo "$(sort -u ${TARGET}/misc_custom.conf)" >${TARGET}/misc_custom.conf
 
 	sed '/\/\//d; /[0-9]\/[0-9]/d' -i ${TARGET}/*
 
