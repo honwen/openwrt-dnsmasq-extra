@@ -4,26 +4,10 @@
   "data": {
     "ipv4_prefixes": [
       {
-        "prefix": "45.205.16.0/24",
-        "ip": "45.205.16.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "Vapeline_Technology",
-        "description": "Vapeline Technology",
-        "country_code": "US",
-        "parent": {
-          "prefix": "45.192.0.0/12",
-          "ip": "45.192.0.0",
-          "cidr": 12,
-          "rir_name": "AfriNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "45.205.16.0/21",
         "ip": "45.205.16.0",
         "cidr": 21,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "Cloud-Innovation-v4-I",
         "description": "Cloud Innovation Ltd",
         "country_code": "MU",
@@ -36,10 +20,26 @@
         }
       },
       {
+        "prefix": "45.205.16.0/24",
+        "ip": "45.205.16.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Vapeline_Technology",
+        "description": "Vapeline Technology",
+        "country_code": "US",
+        "parent": {
+          "prefix": "45.192.0.0/12",
+          "ip": "45.192.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "45.205.17.0/24",
         "ip": "45.205.17.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "Vapeline_Technology",
         "description": "Vapeline Technology",
         "country_code": "US",
@@ -55,7 +55,7 @@
         "prefix": "45.205.18.0/24",
         "ip": "45.205.18.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "Vapeline_Technology",
         "description": "Vapeline Technology",
         "country_code": "US",
@@ -71,7 +71,7 @@
         "prefix": "45.205.19.0/24",
         "ip": "45.205.19.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "Vapeline_Technology",
         "description": "Vapeline Technology",
         "country_code": "US",
@@ -87,7 +87,7 @@
         "prefix": "45.205.20.0/24",
         "ip": "45.205.20.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "Vapeline_Technology",
         "description": "Vapeline Technology",
         "country_code": "US",
@@ -103,7 +103,7 @@
         "prefix": "45.205.21.0/24",
         "ip": "45.205.21.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "Vapeline_Technology",
         "description": "Vapeline Technology",
         "country_code": "US",
@@ -119,7 +119,7 @@
         "prefix": "45.205.22.0/24",
         "ip": "45.205.22.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "Vapeline_Technology",
         "description": "Vapeline Technology",
         "country_code": "US",
@@ -135,7 +135,7 @@
         "prefix": "45.205.23.0/24",
         "ip": "45.205.23.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "Vapeline_Technology",
         "description": "Vapeline Technology",
         "country_code": "US",
@@ -199,7 +199,7 @@
         "prefix": "103.117.138.0/24",
         "ip": "103.117.138.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "FTL-HK",
         "description": "FOJIP TECHNOLOGY LIMITED",
         "country_code": "HK",
@@ -215,7 +215,7 @@
         "prefix": "103.117.139.0/24",
         "ip": "103.117.139.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "FTL-HK",
         "description": "FOJIP TECHNOLOGY LIMITED",
         "country_code": "HK",
@@ -231,7 +231,7 @@
         "prefix": "103.146.124.0/23",
         "ip": "103.146.124.0",
         "cidr": 23,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "WCNTCL-CN",
         "description": "Wu'an Chihong Network Technology Co., Ltd.",
         "country_code": "CN",
@@ -311,7 +311,7 @@
         "prefix": "103.178.57.0/24",
         "ip": "103.178.57.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "SQNTCL-CN",
         "description": "Shenzhen Qiyi Network Technology Co., Ltd.",
         "country_code": "HK",
@@ -356,26 +356,10 @@
         }
       },
       {
-        "prefix": "154.31.24.0/24",
-        "ip": "154.31.24.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "NET-154-31-0-0",
-        "description": "This block is allocated to an organization in the ARIN",
-        "country_code": "MU",
-        "parent": {
-          "prefix": "154.31.0.0/16",
-          "ip": "154.31.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "154.94.224.0/24",
         "ip": "154.94.224.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "High_Family_Technology_Co_Limited",
         "description": "High Family Technology Co., Limited",
         "country_code": "US",
@@ -391,7 +375,7 @@
         "prefix": "154.94.225.0/24",
         "ip": "154.94.225.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "High_Family_Technology_Co_Limited",
         "description": "High Family Technology Co., Limited",
         "country_code": "US",
@@ -407,7 +391,7 @@
         "prefix": "154.94.228.0/22",
         "ip": "154.94.228.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "Cloud-Innovation-v4-I",
         "description": "Cloud Innovation Ltd",
         "country_code": "SC",
@@ -423,7 +407,7 @@
         "prefix": "156.233.224.0/24",
         "ip": "156.233.224.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "High_Family_Technology_Co_Limited",
         "description": "High Family Technology Co., Limited",
         "country_code": "US",
@@ -439,7 +423,7 @@
         "prefix": "156.233.225.0/24",
         "ip": "156.233.225.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "High_Family_Technology_Co_Limited",
         "description": "High Family Technology Co., Limited",
         "country_code": "US",
@@ -455,7 +439,7 @@
         "prefix": "156.233.230.0/24",
         "ip": "156.233.230.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "High_Family_Technology_Co_Limited",
         "description": "High Family Technology Co., Limited",
         "country_code": "US",
@@ -471,7 +455,7 @@
         "prefix": "156.233.231.0/24",
         "ip": "156.233.231.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "High_Family_Technology_Co_Limited",
         "description": "High Family Technology Co., Limited",
         "country_code": "US",
@@ -487,7 +471,7 @@
         "prefix": "156.233.236.0/22",
         "ip": "156.233.236.0",
         "cidr": 22,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "CloudInnovation-infrastructure",
         "description": "Cloud Innovation Ltd",
         "country_code": "SC",
@@ -498,38 +482,6 @@
           "rir_name": "AfriNIC",
           "allocation_status": "unknown"
         }
-      },
-      {
-        "prefix": "206.2.220.0/24",
-        "ip": "206.2.220.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "COGENT-206-0-1-2-16",
-        "description": "PSINet, Inc.",
-        "country_code": "US",
-        "parent": {
-          "prefix": "206.2.0.0/16",
-          "ip": "206.2.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "206.2.221.0/24",
-        "ip": "206.2.221.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "COGENT-206-0-1-2-16",
-        "description": "PSINet, Inc.",
-        "country_code": "US",
-        "parent": {
-          "prefix": "206.2.0.0/16",
-          "ip": "206.2.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
       }
     ],
     "ipv6_prefixes": []
@@ -537,6 +489,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "31.42 ms"
+    "execution_time": "30.44 ms"
   }
 }
