@@ -1556,22 +1556,6 @@
         }
       },
       {
-        "prefix": "103.246.228.0/24",
-        "ip": "103.246.228.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "STCL-KH",
-        "description": "Starchain Telecom Co., LTD.",
-        "country_code": "KH",
-        "parent": {
-          "prefix": "103.246.228.0/22",
-          "ip": "103.246.228.0",
-          "cidr": 22,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "111.223.244.0/24",
         "ip": "111.223.244.0",
         "cidr": 24,
@@ -1775,22 +1759,6 @@
           "prefix": "121.127.224.0/19",
           "ip": "121.127.224.0",
           "cidr": 19,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "134.122.128.0/17",
-        "ip": "134.122.128.0",
-        "cidr": 17,
-        "roa_status": "Valid",
-        "name": "RCPL-SG",
-        "description": "RACKIP CONSULTANCY PTE. LTD.",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "134.122.128.0/17",
-          "ip": "134.122.128.0",
-          "cidr": 17,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -2116,22 +2084,6 @@
         }
       },
       {
-        "prefix": "202.95.9.0/24",
-        "ip": "202.95.9.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "RCPL-SG",
-        "description": "RACKIP CONSULTANCY PTE. LTD.",
-        "country_code": "SG",
-        "parent": {
-          "prefix": "202.232.0.0/14",
-          "ip": "202.232.0.0",
-          "cidr": 14,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "202.95.16.0/21",
         "ip": "202.95.16.0",
         "cidr": 21,
@@ -2282,6 +2234,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "158.98 ms"
+    "execution_time": "111.12 ms"
   }
 }
