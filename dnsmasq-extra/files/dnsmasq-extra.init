@@ -1,13 +1,20 @@
 #!/bin/sh /etc/rc.common
-# Copyright (C) 2018-2023 honwen <https://github.com/honwen>
+# Copyright (C) 2018-2025 honwen <https://github.com/honwen>
 
 START=69
 NAME=dnsmasq-extra
-EXTRA_COMMANDS="rules update"
+EXTRA_COMMANDS="rules update homeproxy"
 
 DNSMASQ_SOA=""
 DATA=/etc/${NAME}.d
-TARGET=/var/dnsmasq.d
+# we don't know which is the default server, just take the first one
+DNSMASQ_UCI_CONFIG="$(uci -q show "dhcp.@dnsmasq[0]" | awk 'NR==1 {split($0, conf, /[.=]/); print conf[2]}')"
+if [ -f "/tmp/etc/dnsmasq.conf.$DNSMASQ_UCI_CONFIG" ]; then
+	TARGET="$(awk -F '=' '/^conf-dir=/ {print $2}' "/tmp/etc/dnsmasq.conf.$DNSMASQ_UCI_CONFIG")/dnsmasq-extra.d"
+else
+	TARGET="/tmp/dnsmasq.d/dnsmasq-extra.d"
+fi
+
 _CURL='curl -H referer:github.com --retry 3 --connect-timeout 6 --max-time 55 -ksSL'
 
 uci_get_by_type() {
@@ -24,7 +31,11 @@ uci_bool_by_type() {
 
 auto_cat() {
 	for it in "$@"; do
-		file="${DATA}/${it}"
+		if [ -e $it ]; then
+			file="${it}"
+		else
+			file="${DATA}/${it}"
+		fi
 		if [ -f "${file}.gz" ]; then
 			(zcat "${file}.gz" 2>/dev/null) || (gunzip -ck "${file}.gz" 2>/dev/null) || (cat "${file}.gz" | gunzip -c)
 		elif [ -f "${file}" ]; then
@@ -36,51 +47,40 @@ auto_cat() {
 start() {
 	uci_bool_by_type ${NAME} general enable || exit 0
 	echo -en "Geneareting : $NAME\n    "
-	mkdir -p ${TARGET}
-
-	x_watchdog=$(sed -n "s/'//g;s/^WATCHDOG_ENDPOINT=//p" /etc/init.d/shadowsocks* /etc/init.d/xray* /etc/init.d/ssr* 2>/dev/null | sort -u)
+	mkdir -p "$TARGET"
+	echo -e "conf-dir=$TARGET" >"$TARGET/../dnsmasq-extra.conf"
+	cp -f /etc/dnsmasq-extra.d/*.conf ${TARGET}/
 
 	# plugins
 	for plugin in $(uci_get_by_type ${NAME} general plugins); do
-		[ -x /usr/bin/${plugin} ] || [ "V${plugin}" = "Vss-tunnel" -a -x /usr/bin/sslocal ] && {
-			if echo ${plugin} | grep -q 'tunnel'; then
-				plugin_alias=$(echo -n ${plugin} | sed 's/ss/shadowsocks/g; s/-tunnel//g')
-				plugin_srv=$(uci_get_by_type ${plugin_alias} port_forward server nil)
-				[ "V${plugin_srv}" = "Vnil" ] && continue
-				plugin_port=$(uci_get_by_type ${plugin_alias} port_forward local_port 5300)
-			else
-				plugin_port=$(uci_get_by_type ${plugin} ${plugin} port 0000)
-				[ "V${port_forward}" = "V0000" ] && continue
-			fi
+		[ -x /usr/bin/${plugin} ] && {
+			plugin_port=$(uci_get_by_type ${plugin} ${plugin} port 0000)
+			[ "V${port_forward}" = "V0000" ] && continue
 			echo -n "plugin:${plugin}, " | tr [a-z] [A-Z]
-			auto_cat 'gfwlist' 'tldn' | sed "s/^/server=\//;s/$/\/127.0.0.1#${plugin_port}/" >${TARGET}/plugin_${plugin}.conf
-			for it in $x_watchdog; do
-				echo "server=/${it}/127.0.0.1#${plugin_port}" >>${TARGET}/plugin_${plugin}.conf
-			done
+			auto_cat 'gfwlist' 'tldn' /etc/homeproxy/resources/proxy_list.txt |
+				sed "s/^/server=\//;s/$/\/127.0.0.1#${plugin_port}/" >${TARGET}/plugin_${plugin}.conf
 		}
 	done
 
+	x_direct=$( (
+		uci_get_by_type ${NAME} general direct_domains | sed 's+  *+\n+g'
+		uci show homeproxy | sed -n 's+.*\.address=++p'
+	) 2>/dev/null | tr -d "'" | sort -u)
+
 	# pluginsOtcp
 	for plugin in $(uci_get_by_type ${NAME} general pluginsOtcp); do
-		[ -x /usr/bin/${plugin} ] || [ "V${plugin}" = "Vss-tunnel" -a -x /usr/bin/sslocal ] && {
-			if echo ${plugin} | grep -qe 'ray\|tunnel'; then
-				plugin_alias=$(echo -n ${plugin} | sed 's/ss/shadowsocks/g; s/-tunnel//g')
-				plugin_srv=$(uci_get_by_type ${plugin_alias} port_forward server nil)
-				plugin_enable=$(uci_get_by_type ${plugin_alias} port_forward 'enable' 0)
-				[ "V${plugin_srv}" = "Vnil" -a "V${plugin_enable}" = "V0" ] && continue
-				plugin_port=$(uci_get_by_type ${plugin_alias} port_forward local_port 5300)
+		[ -x /usr/bin/${plugin} ] && {
 
-			else
-				plugin_port=$(uci_get_by_type ${plugin} ${plugin} port 0000)
-				[ "V${port_forward}" = "V0000" ] && continue
-			fi
+			plugin_port=$(uci_get_by_type ${plugin} ${plugin} port 0000)
+			[ "V${port_forward}" = "V0000" ] && continue
 
 			plugin_tcpport=$((plugin_port + 1))
 			(/usr/bin/dnsFtcp -p $plugin_tcpport -s 127.0.0.1:$plugin_port >/dev/null 2>&1) &
 
 			echo -n "plugin-tcp:${plugin}, " | tr [a-z] [A-Z]
-			auto_cat 'gfwlist' 'tldn' | sed "s/^/server=\//;s/$/\/127.0.0.1#${plugin_tcpport}/" >${TARGET}/plugin_${plugin}.conf
-			for it in $x_watchdog; do
+			auto_cat 'gfwlist' 'tldn' /etc/homeproxy/resources/proxy_list.txt |
+				sed "s/^/server=\//;s/$/\/127.0.0.1#${plugin_tcpport}/" >${TARGET}/plugin_${plugin}.conf
+			for it in $x_direct; do
 				echo "server=/${it}/127.0.0.1#${plugin_tcpport}" >>${TARGET}/plugin_${plugin}.conf
 			done
 		}
@@ -93,94 +93,30 @@ start() {
 		(/usr/bin/dnsFtcp -p $tcpport -s ${server}:53 >/dev/null 2>&1) &
 
 		echo -n "CLEAN-DNS:${server}, "
-		auto_cat 'gfwlist' 'tldn' | sed "s/^/server=\//;s/$/\/${server}/" >${TARGET}/clean_${server}.conf
+		auto_cat 'gfwlist' 'tldn' /etc/homeproxy/resources/proxy_list.txt |
+			sed "s/^/server=\//;s/$/\/${server}/" >${TARGET}/clean_${server}.conf
 
 		echo -n "CLEAN-DNS-TCP:${server}, "
-		auto_cat 'gfwlist' 'tldn' | sed "s/^/server=\//;s/$/\/127.0.0.1#${tcpport}/" >>${TARGET}/clean_${server}.conf
+		auto_cat 'gfwlist' 'tldn' /etc/homeproxy/resources/proxy_list.txt |
+			sed "s/^/server=\//;s/$/\/127.0.0.1#${tcpport}/" >>${TARGET}/clean_${server}.conf
 
-		for it in $x_watchdog; do
+		for it in $x_direct; do
 			echo "server=/${it}/${server}" >>${TARGET}/plugin_${plugin}.conf
 			echo "server=/${it}/127.0.0.1#${tcpport}" >>${TARGET}/plugin_${plugin}.conf
 		done
 	done
-
-	[ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* /etc/config/xray* /etc/config/ssr* 2>/dev/null | grep -c 'chnroute') ] &&
-		echo -n "IPSET:*_spec_dst_bp for chnroute, " && {
-		auto_cat 'direct' | sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/" >${TARGET}/ipset_direct.conf
-		auto_cat 'direct' | sed "s/^/ipset=\//;s/$/\/ssr_spec_dst_bp/" >>${TARGET}/ipset_direct.conf
-		auto_cat 'direct' | sed "s/^/ipset=\//;s/$/\/xray_spec_dst_bp/" >>${TARGET}/ipset_direct.conf
-		auto_cat 'direct' | sed "s/^/server=\//;s/$/\/#/" >>${TARGET}/ipset_direct.conf
-		echo 'ipset=/cloudflare-dns.com/ss_spec_dst_sp' >>${TARGET}/ipset_direct.conf
-		echo 'ipset=/cloudflare-dns.com/ssr_spec_dst_sp' >>${TARGET}/ipset_direct.conf
-		echo 'ipset=/cloudflare-dns.com/xray_spec_dst_bp' >>${TARGET}/ipset_direct.conf
-		uci_get_by_type ${NAME} general clean_server | sed "s/^/ipset=\//;s/$/\/ss_spec_dst_bp/" >>${TARGET}/ipset_direct.conf
-		uci_get_by_type ${NAME} general clean_server | sed "s/^/ipset=\//;s/$/\/ssr_spec_dst_bp/" >>${TARGET}/ipset_direct.conf
-		uci_get_by_type ${NAME} general clean_server | sed "s/^/ipset=\//;s/$/\/xray_spec_dst_bp/" >>${TARGET}/ipset_direct.conf
-	}
-
-	if [ 0 -lt $(sed -n '/wan_bp_list/p' /etc/config/shadowsocks* /etc/config/xray* /etc/config/ssr* 2>/dev/null | grep -c 'flag_gfwlist') ]; then
-		echo -n "IPSET:gfwlist, "
-		auto_cat 'gfwlist' | sed "s/^/ipset=\//;s/$/\/gfwlist/" >${TARGET}/ipset_gfwlist.conf
-
-		ipset -X gfwlist 2>/dev/null
-		ipset -! -R <<-EOF 2>/dev/null
-			create gfwlist hash:net hashsize 128
-			flush gfwlist
-			add gfwlist 1.0.0.1
-			add gfwlist 8.8.4.4
-			add gfwlist 9.9.9.0/28
-			add gfwlist 208.67.220.220/22
-			add gfwlist 31.13.64.0/18
-			add gfwlist 50.22.192.0/18
-			add gfwlist 50.23.64.0/18
-			add gfwlist 50.97.0.0/18
-			add gfwlist 75.126.0.0/18
-			add gfwlist 91.105.192.0/23
-			add gfwlist 91.108.0.0/18
-			add gfwlist 95.161.64.0/20
-			add gfwlist 108.168.128.0/17
-			add gfwlist 109.239.128.0/18
-			add gfwlist 149.154.128.0/18
-			add gfwlist 149.154.160.0/20
-			add gfwlist 157.240.0.0/18
-			add gfwlist 158.85.0.0/18
-			add gfwlist 158.85.192.0/18
-			add gfwlist 169.44.0.0/17
-			add gfwlist 169.44.128.0/18
-			add gfwlist 169.45.64.0/18
-			add gfwlist 169.45.128.0/17
-			add gfwlist 169.46.0.0/17
-			add gfwlist 169.47.0.0/18
-			add gfwlist 169.47.128.0/17
-			add gfwlist 169.53.0.0/17
-			add gfwlist 169.53.192.0/18
-			add gfwlist 169.54.0.0/18
-			add gfwlist 169.54.192.0/18
-			add gfwlist 169.55.64.0/18
-			add gfwlist 169.55.192.0/18
-			add gfwlist 173.192.128.0/17
-			add gfwlist 173.193.192.0/18
-			add gfwlist 174.36.192.0/18
-			add gfwlist 174.37.192.0/18
-			add gfwlist 179.60.192.0/18
-			add gfwlist 184.173.128.0/18
-			add gfwlist 185.60.192.0/18
-			add gfwlist 185.76.151.0/24
-			add gfwlist 192.155.192.0/18
-			add gfwlist 198.11.192.0/18
-			add gfwlist 198.23.64.0/18
-			$(auto_cat 'gfwlist' | head -n100 | sed -nr 's/([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+).*/\nadd gfwlist \1/;s/^.*\n//p')
-		EOF
-	fi
 
 	uci_bool_by_type ${NAME} general adblock && {
 		echo -n "ADBLOCK, "
 		auto_cat 'adblock' | sed "s/^/address=\//;s/$/\/${DNSMASQ_SOA}/" >${TARGET}/misc_adblock.conf
 	}
 
+	echo -n "DIRECT, " && {
+		auto_cat 'direct' | sed "s/^/server=\//;s/$/\/#/" >${TARGET}/misc_direct.conf
+	}
+
 	echo -n "CUSTOM" && {
 		echo "all-servers" >${TARGET}/misc_custom.conf
-		echo "conf-file=${DATA}/custom.conf" >>${TARGET}/misc_custom.conf
 
 		# https://github.com/coolsnowwolf/lede/tree/master/package/network/services/dnsmasq/patches
 		for filter in $(uci_get_by_type ${NAME} general filters); do
@@ -198,8 +134,8 @@ start() {
 			uci_bool_by_type ${NAME} general overwrite_aiodns && {
 				[ -x /usr/bin/aiodns ] && {
 					local aiodns_port=$(uci_get_by_type aiodns aiodns port 7100)
-					for it in $x_watchdog; do
-						echo "server=/${it}/127.0.0.1#${aiodns_port}" >>${TARGET}/misc_custom
+					for it in $x_direct; do
+						echo "server=/${it}/127.0.0.1#${aiodns_port}" >>${TARGET}/misc_custom.conf
 					done
 					echo "server=127.0.0.1#$aiodns_port" >>${TARGET}/misc_custom.conf
 					sed "s+$+127.0.0.1#$aiodns_port+g" $_tmp_list >>${TARGET}/misc_direct.conf
@@ -209,8 +145,8 @@ start() {
 			uci_bool_by_type ${NAME} general overwrite_dcompass && {
 				[ -x /usr/bin/dcompass ] && {
 					local dcompass_port=$(uci_get_by_type dcompass dcompass port 7500)
-					for it in $x_watchdog; do
-						echo "server=/${it}/127.0.0.1#${dcompass_port}" >>${TARGET}/misc_custom
+					for it in $x_direct; do
+						echo "server=/${it}/127.0.0.1#${dcompass_port}" >>${TARGET}/misc_custom.conf
 					done
 					echo "server=127.0.0.1#$dcompass_port" >>${TARGET}/misc_custom.conf
 					sed "s+$+127.0.0.1#$dcompass_port+g" $_tmp_list >>${TARGET}/misc_direct.conf
@@ -223,9 +159,12 @@ start() {
 						sed 's+\(enable_cn[ \t]*\)[^ ]*$+\1yes+g' -i /etc/config/smartdns
 						/etc/init.d/smartdns restart >/dev/null 2>&1
 					}
-					local smartdns_port=$(uci_get_by_type smartdns smartdns port 0000)
-					echo "server=127.0.0.1#$((smartdns_port + 1))" >>${TARGET}/misc_custom.conf
-					sed "s+$+127.0.0.1#$((smartdns_port + 1))+g" $_tmp_list >>${TARGET}/misc_direct.conf
+					local smartdns_port=$(($(uci_get_by_type smartdns smartdns port 0000) + 1))
+					for it in $x_direct; do
+						echo "server=/${it}/127.0.0.1#${smartdns_port}" >>${TARGET}/misc_custom.conf
+					done
+					echo "server=127.0.0.1#$smartdns_port" >>${TARGET}/misc_custom.conf
+					sed "s+$+127.0.0.1#$smartdns_port+g" $_tmp_list >>${TARGET}/misc_direct.conf
 				}
 			}
 
@@ -255,6 +194,8 @@ start() {
 		}
 	}
 
+	echo "$(sort -u ${TARGET}/misc_custom.conf)" >${TARGET}/misc_custom.conf
+
 	sed '/\/\//d; /[0-9]\/[0-9]/d' -i ${TARGET}/*
 
 	(/etc/init.d/dnsmasq restart >/dev/null 2>&1) && rules
@@ -263,15 +204,8 @@ start() {
 }
 
 cleanup() {
-	ipset -F gfwlist 2>/dev/null
-	ipset -X gfwlist 2>/dev/null
-
 	echo -n "Stopping $NAME"
-	rm -rf ${TARGET}/misc_*.conf 2>/dev/null
-	rm -rf ${TARGET}/ipset_*.conf 2>/dev/null
-	rm -rf ${TARGET}/plugin_*.conf 2>/dev/null
-	rm -rf ${TARGET}/clean*.conf 2>/dev/null
-	rm -rf ${TARGET}/*-tcp_*.conf 2>/dev/null
+	rm -rf "$TARGET/../dnsmasq-extra.conf" "$TARGET" 2>/dev/null
 
 	kill -9 $(pgrep -f /usr/bin/dnsFtcp) >/dev/null 2>&1
 	[ -f /etc/config/smartdns ] && /etc/init.d/smartdns restart >/dev/null 2>&1
@@ -412,16 +346,43 @@ update_chn() {
 	rm -f /tmp/chnroute.txt.bak
 }
 
+homeproxy() {
+	HP_DIR="/etc/homeproxy"
+	[ -x /etc/init.d/homeproxy ] || return 0
+	[ -d "${HP_DIR}/resources" ] || return 0
+
+	ln -sf /etc/dnsmasq-extra.d/chnroute.txt "${HP_DIR}/resources/china_ip4.txt"
+	zcat /etc/dnsmasq-extra.d/gfwlist.gz >"${HP_DIR}/resources/gfw_list.txt"
+	zcat /etc/dnsmasq-extra.d/direct.gz >"${HP_DIR}/resources/direct_list.txt"
+	uci_get_by_type ${NAME} general direct_domains | sed 's+  *+\n+g' >>"${HP_DIR}/resources/direct_list.txt"
+	sed '/^server=127/d' -i $TARGET/../dnsmasq-homeproxy.d/redirect-dns.conf 2>/dev/null || :
+	# rm -f $TARGET/../dnsmasq-homeproxy.d/redirect-dns.conf
+
+	# hiject homeproxy
+	grep -qE 'dnsmasq-extra *homeproxy' /etc/init.d/homeproxy || {
+		# sed '/start_service/a\\t/etc/init.d/dnsmasq-extra homeproxy || :' -i /etc/init.d/homeproxy
+		sed '/dnsmasq *restart/i\\t\t/etc/init.d/dnsmasq-extra homeproxy || :' -i /etc/init.d/homeproxy
+	}
+	grep -qE 'dnsmasq-extra *homeproxy' /etc/homeproxy/scripts/update_resources.sh || {
+		echo '/etc/init.d/dnsmasq-extra homeproxy || :' >>/etc/homeproxy/scripts/update_resources.sh
+	}
+	grep -qF "url: 'https://cp.cloudflare.com/'," /etc/homeproxy/scripts/generate_client.uc || {
+		sed "/outbounds: map(main_urltest_nodes/i\\\t\t\turl: 'https://cp.cloudflare.com/'," -i /etc/homeproxy/scripts/generate_client.uc
+	}
+}
+
 rules() {
-	while iptables -t nat -D PREROUTING -p udp --dport 53 -j REDIRECT --to 53 2>/dev/null; do :; done
-	while iptables -t mangle -D PREROUTING -p udp --dport 53 -j RETURN 2>/dev/null; do :; done
-	while iptables -t nat -D PREROUTING -p tcp --dport 53 -j REDIRECT --to 53 2>/dev/null; do :; done
-	while iptables -t mangle -D PREROUTING -p tcp --dport 53 -j RETURN 2>/dev/null; do :; done
+	homeproxy || :
+
+	if [ -n "$(command -v nft)" ]; then
+		while nft delete table inet dnsmasq_extra 2>/dev/null; do :; done
+	fi
 
 	[ -f ${TARGET}/misc_custom.conf ] || exit 0
 
-	iptables -t nat -I PREROUTING -p udp --dport 53 -j REDIRECT --to 53
-	iptables -t mangle -I PREROUTING -p udp --dport 53 -j RETURN
-	iptables -t nat -I PREROUTING -p tcp --dport 53 -j REDIRECT --to 53
-	iptables -t mangle -I PREROUTING -p tcp --dport 53 -j RETURN
+	if [ -n "$(command -v nft)" ]; then
+		nft add table inet dnsmasq_extra
+		nft add chain inet dnsmasq_extra prerouting "{ type nat hook prerouting priority -110; policy accept; }"
+		nft add rule inet dnsmasq_extra prerouting "meta nfproto { ipv4, ipv6 } udp dport 53 counter redirect to :53 comment \"DNSMASQ HIJACK\""
+	fi
 }

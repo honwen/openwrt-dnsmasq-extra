@@ -1,6 +1,8 @@
 # Usage
 
-- 从 OpenWrt 的 [SDK][s] 编译
+- `OpenWrt(<=21)` use [branch:openwrt_v21](https://github.com/honwen/openwrt-dnsmasq-extra/tree/openwrt_v21)
+
+- 从 `OpenWrt(>=24.10)` 的 [SDK][s] 编译
 
   ```bash
   # 以 ar71xx 平台为例
