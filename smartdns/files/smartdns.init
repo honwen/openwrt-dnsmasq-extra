@@ -107,8 +107,10 @@ start_service() {
 		$(
 			for it in $(uci_get_by_type $NAME bootstrap); do
 				echo "server ${it} -bootstrap-dns"
-				echo ${it} | grep -qE '^223\.' || {
+				echo "server ${it} -fallback"
+				echo ${it} | grep -qE '^(223|210)\.' || {
 					echo "server-tcp ${it} -bootstrap-dns"
+					echo "server-tcp ${it} -fallback"
 				}
 			done
 		)
@@ -117,8 +119,9 @@ start_service() {
 			for type in tls https; do
 				for it in $(uci_get_by_type $NAME server_${type}); do
 					echo -n "server-${type} "
-					if echo ${it} | grep -q '@'; then
+					if echo ${it} | grep -qF '@'; then
 						dname=$(echo ${it} | sed 's+.*@++g')
+						it=$(echo ${it} | sed 's+@.*++g')
 					else
 						dname=$(echo ${it} | sed 's+.*//++g; s+/.*++g' | sed 's+@.*++g; s+:.*++g')
 					fi
@@ -178,11 +181,14 @@ start_service() {
 					echo
 				done
 			)
+
 			$(
 				for it in $(uci_get_by_type $NAME bootstrap); do
 					echo "server ${it} -bootstrap-dns"
-					echo ${it} | grep -qE '^223\.' || {
+					echo "server ${it} -fallback"
+					echo ${it} | grep -qE '^(223|210)\.' || {
 						echo "server-tcp ${it} -bootstrap-dns"
+						echo "server-tcp ${it} -fallback"
 					}
 				done
 			)
@@ -194,14 +200,14 @@ start_service() {
 			server-tls dot-${randstr1}${randstr2}.dot.pub -host-name dot-${randstr1}${randstr2}.dot.pub -tls-host-verify dot-${randstr1}${randstr2}.dot.pub
 			server-https https://doh-${randstr2}${randstr1}.doh.pub/dns-query -host-name doh-${randstr2}${randstr1}.doh.pub -tls-host-verify doh-${randstr2}${randstr1}.doh.pub
 			server-tls 120.53.53.53:853 -host-name dot.pub -tls-host-verify dot.pub
-			server-tls dot.360.cn:853 -host-name dot.360.cn -tls-host-verify dot.360.cn
+			# server-tls dot.360.cn:853 -host-name dot.360.cn -tls-host-verify dot.360.cn
 			server-https https://1.12.12.12/dns-query -host-name doh.pub -tls-host-verify doh.pub
 			server-https https://223.5.5.5/dns-query -host-name dns.alidns.com -tls-host-verify dns.alidns.com
 			server-https https://223.6.6.6/dns-query -host-name dns.alidns.com -tls-host-verify dns.alidns.com
 			server-https https://9999.alidns.com/dns-query -host-name 9999.alidns.com -tls-host-verify 9999.alidns.com
-			server-https https://123456.alidns.com/dns-query -host-name 123456.alidns.com -tls-host-verify 123456.alidns.com
-			server-https https://150000.alidns.com/dns-query -host-name 150000.alidns.com -tls-host-verify 150000.alidns.com
-			server-https https://doh.360.cn/dns-query -host-name doh.360.cn -tls-host-verify doh.360.cn
+			server-https https://10000.alidns.com/dns-query -host-name 10000.alidns.com -tls-host-verify 10000.alidns.com
+			server-https https://10123.alidns.com/dns-query -host-name 10123.alidns.com -tls-host-verify 10123.alidns.com
+			# server-https https://doh.360.cn/dns-query -host-name doh.360.cn -tls-host-verify doh.360.cn
 		EOF
 
 		uci_bool_by_type $NAME enable_cdn_cn && {
