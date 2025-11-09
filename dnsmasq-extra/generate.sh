@@ -12,8 +12,10 @@ _path=$(dirname $(readlink -f $0))
 curl_githubusercontent() {
 	url="$(echo $1 | sed 's+^https*://++g')"
 	curl -skSL --speed-limit 100000 --speed-time 10 "https://${url}" ||
+		curl -skSL --speed-limit 100000 --speed-time 10 "https://ghproxy.cfd/https://${url}" ||
 		curl -skSL --speed-limit 100000 --speed-time 10 "https://ghproxy.com/https://${url}" ||
 		curl -skSL --speed-limit 100000 --speed-time 10 "https://ghproxy.net/https://${url}" ||
+		curl -skSL --speed-limit 100000 --speed-time 10 "https://gh-proxy.net/https://${url}" ||
 		curl -skSL --speed-limit 100000 --speed-time 10 "https://ghproxy.cc/https://${url}" ||
 		curl -skSL --speed-limit 100000 --speed-time 10 "https://cf.ghproxy.cc/https://${url}" ||
 		curl -skSL --speed-limit 100000 --speed-time 10 "https://ghproxy.cn/https://${url}" ||
@@ -39,6 +41,16 @@ time cidr-merger <<-EOF >chnroute.txt.new
 	$(curl -skSL --speed-limit 100000 --speed-time 10 https://ispip.clang.cn/all_cn_cidr.txt)
 
 	$(curl_githubusercontent https://raw.githubusercontent.com/metowolf/iplist/master/data/country/CN.txt)
+
+	$(curl_githubusercontent https://raw.githubusercontent.com/metowolf/iplist/master/data/isp/aliyun.txt)
+
+	$(curl_githubusercontent https://raw.githubusercontent.com/metowolf/iplist/master/data/isp/tencent.txt)
+
+	$(curl_githubusercontent https://raw.githubusercontent.com/metowolf/iplist/master/data/isp/bytedance.txt)
+
+	$(curl_githubusercontent https://raw.githubusercontent.com/metowolf/iplist/master/data/isp/volcengine.txt)
+
+	$(curl_githubusercontent https://raw.githubusercontent.com/metowolf/iplist/master/data/isp/huawei.txt)
 
 	$(curl_githubusercontent https://raw.githubusercontent.com/pexcn/daily/gh-pages/chnroute/chnroute.txt)
 
@@ -75,8 +87,8 @@ time cidr-merger <<-EOF >chnroute.txt.new
 
 		curl_githubusercontent https://raw.githubusercontent.com/cbuijs/ipasn/refs/heads/master/asn/as$it.list | grep -vE '^#' | grep -v ':'
 
-		curl -skSL -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64)' --speed-limit 50000 --speed-time 90 https://api.bgpview.io/asn/$it/prefixes | jq . >../../.asn/$it.json
-		sleep 44
+		# curl -skSL -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64)' --speed-limit 50000 --speed-time 90 https://api.bgpview.io/asn/$it/prefixes | jq . >../../.asn/$it.json
+		# sleep 44
 
 		jq -r '.data.ipv4_prefixes[]|.prefix' ../../.asn/$it.json
 	done)
@@ -84,6 +96,8 @@ EOF
 
 # add checkip.synology.com
 time cidr-merger <<-EOF >>chnroute.txt.new
+	84.200.39.196
+	64.124.13.145
 	104.248.79.120
 	138.68.28.244
 	142.93.81.166

@@ -2,27 +2,19 @@
 
 # crontabs
 sed -i '/dnsmasq-extra/d' /etc/crontabs/root
-echo '0 0 5 * * /etc/init.d/dnsmasq-extra update' >> /etc/crontabs/root
-echo '3 7 * * * /etc/init.d/dnsmasq-extra restart' >> /etc/crontabs/root
+echo '0 0 5 * * /etc/init.d/dnsmasq-extra update' >>/etc/crontabs/root
+echo '3 7 * * * /etc/init.d/dnsmasq-extra restart' >>/etc/crontabs/root
 crontab /etc/crontabs/root
 
-echo "/etc/init.d/dnsmasq-extra rules" > /etc/dnsmasq-extra.d/firewall.include
-
 # firewall.extra.include
+echo "/etc/init.d/dnsmasq-extra rules" >/etc/dnsmasq-extra.d/firewall.include
 uci -q batch <<-EOF >/dev/null
-	delete firewall.dnsmasqextra
-	delete firewall.extra
-	set firewall.extra=include
-	set firewall.extra.type=script
-	set firewall.extra.path=/etc/dnsmasq-extra.d/firewall.include
-	set firewall.extra.reload=1
+	delete firewall.dnsmasq_extra
+	set firewall.dnsmasq_extra=include
+	set firewall.dnsmasq_extra.type=script
+	set firewall.dnsmasq_extra.path=/etc/dnsmasq-extra.d/firewall.include
 	commit firewall
 EOF
-
-# /etc/dnsmasq.d
-[ -d /etc/dnsmasq.d ] || mkdir -p /etc/dnsmasq.d
-grep -q '/etc/dnsmasq.d' /etc/dnsmasq.conf || echo 'conf-dir=/etc/dnsmasq.d' > /etc/dnsmasq.conf
-ln -sf /etc/dnsmasq-extra.d/custom.conf /etc/dnsmasq.d/dnsmasq-extra-custom.conf
 
 # chinadns_chnroute.txt
 [ -f /etc/chinadns_chnroute.txt ] ||

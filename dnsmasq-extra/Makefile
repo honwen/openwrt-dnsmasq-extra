@@ -1,12 +1,12 @@
 #
-# Copyright (C) 2018-2024 honwen <https://github.com/honwen>
+# Copyright (C) 2018-2025 honwen <https://github.com/honwen>
 #
 
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dnsmasq-extra
-PKG_VERSION:=2025-05-02
-PKG_RELEASE:=1.11.5
+PKG_VERSION:=2025-11-07
+PKG_RELEASE:=2.0.2
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
@@ -18,7 +18,7 @@ define Package/dnsmasq-extra
 	SECTION:=net
 	CATEGORY:=Network
 	TITLE:=Dnsmasq-Extra
-	DEPENDS:=+dnsmasq-full +ipset +curl +dnsFtcp
+	DEPENDS:=+curl +dnsFtcp
 	PKGARCH:=all
 endef
 

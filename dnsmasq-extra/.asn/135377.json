@@ -52,6 +52,22 @@
         }
       },
       {
+        "prefix": "23.91.99.0/24",
+        "ip": "23.91.99.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "ZL-HKG-UCLOUD-0020",
+        "description": "UCLOUD",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "23.91.96.0/20",
+          "ip": "23.91.96.0",
+          "cidr": 20,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "23.91.100.0/24",
         "ip": "23.91.100.0",
         "cidr": 24,
@@ -183,7 +199,7 @@
         "prefix": "36.255.220.0/24",
         "ip": "36.255.220.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ZL-HKG-UCLOUD-0001",
         "description": "Abuse please contact:unoc@ucloud.cn i¼unom@ucloud.cni¼hegui@ucloud.cn",
         "country_code": "CN",
@@ -199,7 +215,7 @@
         "prefix": "36.255.221.0/24",
         "ip": "36.255.221.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ZL-HKG-UCLOUD-0001",
         "description": "Abuse please contact:unoc@ucloud.cn i¼unom@ucloud.cni¼hegui@ucloud.cn",
         "country_code": "CN",
@@ -215,7 +231,7 @@
         "prefix": "36.255.222.0/24",
         "ip": "36.255.222.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ZL-HKG-UCLOUD-0001",
         "description": "Abuse please contact:unoc@ucloud.cn i¼unom@ucloud.cni¼hegui@ucloud.cn",
         "country_code": "CN",
@@ -231,7 +247,7 @@
         "prefix": "36.255.223.0/24",
         "ip": "36.255.223.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ZL-HKG-UCLOUD-0001",
         "description": "Abuse please contact:unoc@ucloud.cn i¼unom@ucloud.cni¼hegui@ucloud.cn",
         "country_code": "CN",
@@ -239,6 +255,54 @@
           "prefix": "36.255.220.0/22",
           "ip": "36.255.220.0",
           "cidr": 22,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "42.240.253.0/24",
+        "ip": "42.240.253.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD-NET",
+        "description": "Shanghai UCloud Information Technology Company Limited",
+        "country_code": "CN",
+        "parent": {
+          "prefix": "42.240.128.0/17",
+          "ip": "42.240.128.0",
+          "cidr": 17,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "42.240.254.0/24",
+        "ip": "42.240.254.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD-NET",
+        "description": "Shanghai UCloud Information Technology Company Limited",
+        "country_code": "CN",
+        "parent": {
+          "prefix": "42.240.128.0/17",
+          "ip": "42.240.128.0",
+          "cidr": 17,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "42.240.255.0/24",
+        "ip": "42.240.255.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD-NET",
+        "description": "Shanghai UCloud Information Technology Company Limited",
+        "country_code": "CN",
+        "parent": {
+          "prefix": "42.240.128.0/17",
+          "ip": "42.240.128.0",
+          "cidr": 17,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -420,6 +484,22 @@
         }
       },
       {
+        "prefix": "45.43.59.0/24",
+        "ip": "45.43.59.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "ZL-LAX-MANAGED-HOSTING-0644",
+        "description": "ZENLA-1",
+        "country_code": "US",
+        "parent": {
+          "prefix": "45.43.32.0/19",
+          "ip": "45.43.32.0",
+          "cidr": 19,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "45.43.60.0/24",
         "ip": "45.43.60.0",
         "cidr": 24,
@@ -484,13 +564,61 @@
         }
       },
       {
-        "prefix": "45.195.199.0/24",
-        "ip": "45.195.199.0",
+        "prefix": "45.192.10.0/24",
+        "ip": "45.192.10.0",
         "cidr": 24,
-        "roa_status": "None",
-        "name": "Zillion_Network_Inc",
-        "description": "Zillion Network Inc",
-        "country_code": "JP",
+        "roa_status": "Valid",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "TW",
+        "parent": {
+          "prefix": "45.192.0.0/12",
+          "ip": "45.192.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.192.11.0/24",
+        "ip": "45.192.11.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "ABA_THERAPY_SSS_LLC",
+        "description": "ABA THERAPY SSS LLC",
+        "country_code": "BD",
+        "parent": {
+          "prefix": "45.192.0.0/12",
+          "ip": "45.192.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.194.68.0/24",
+        "ip": "45.194.68.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Bunny_Technology_LLC",
+        "description": "Bunny Technology LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "45.192.0.0/12",
+          "ip": "45.192.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.194.70.0/24",
+        "ip": "45.194.70.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Bunny_Technology_LLC",
+        "description": "Bunny Technology LLC",
+        "country_code": "US",
         "parent": {
           "prefix": "45.192.0.0/12",
           "ip": "45.192.0.0",
@@ -504,8 +632,8 @@
         "ip": "45.195.216.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "AD_MEK_COMMUNICATIONS",
-        "description": "AD MEK COMMUNICATIONS",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
         "country_code": "US",
         "parent": {
           "prefix": "45.192.0.0/12",
@@ -520,9 +648,9 @@
         "ip": "45.195.217.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "Bunny_Technology_LLC",
-        "description": "Bunny Technology LLC",
-        "country_code": "US",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "SG",
         "parent": {
           "prefix": "45.192.0.0/12",
           "ip": "45.192.0.0",
@@ -536,9 +664,89 @@
         "ip": "45.195.218.0",
         "cidr": 24,
         "roa_status": "Valid",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "DE",
+        "parent": {
+          "prefix": "45.192.0.0/12",
+          "ip": "45.192.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.195.219.0/24",
+        "ip": "45.195.219.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "US",
+        "parent": {
+          "prefix": "45.192.0.0/12",
+          "ip": "45.192.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.195.220.0/24",
+        "ip": "45.195.220.0",
+        "cidr": 24,
+        "roa_status": "Valid",
         "name": "Bunny_Technology_LLC",
         "description": "Bunny Technology LLC",
         "country_code": "US",
+        "parent": {
+          "prefix": "45.192.0.0/12",
+          "ip": "45.192.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.195.221.0/24",
+        "ip": "45.195.221.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Bunny_Technology_LLC",
+        "description": "Bunny Technology LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "45.192.0.0/12",
+          "ip": "45.192.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.195.222.0/24",
+        "ip": "45.195.222.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "RU",
+        "parent": {
+          "prefix": "45.192.0.0/12",
+          "ip": "45.192.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "45.195.223.0/24",
+        "ip": "45.195.223.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "SG",
         "parent": {
           "prefix": "45.192.0.0/12",
           "ip": "45.192.0.0",
@@ -1143,7 +1351,7 @@
         "prefix": "103.14.33.0/24",
         "ip": "103.14.33.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "UCloud-HK-002",
         "description": "UCloud Hong Kong",
         "country_code": "CN",
@@ -1159,7 +1367,7 @@
         "prefix": "103.14.34.0/24",
         "ip": "103.14.34.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "UCloud-HK-002",
         "description": "UCloud Hong Kong",
         "country_code": "CN",
@@ -1175,7 +1383,7 @@
         "prefix": "103.14.35.0/24",
         "ip": "103.14.35.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "UCloud-HK-002",
         "description": "UCloud Hong Kong",
         "country_code": "CN",
@@ -1191,7 +1399,7 @@
         "prefix": "103.72.144.0/24",
         "ip": "103.72.144.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "UCLOUD-HK",
         "description": "Ucloud Hong Kong",
         "country_code": "CN",
@@ -1207,7 +1415,7 @@
         "prefix": "103.72.145.0/24",
         "ip": "103.72.145.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "UCLOUD-HK",
         "description": "Ucloud Hong Kong",
         "country_code": "CN",
@@ -1223,7 +1431,7 @@
         "prefix": "103.72.146.0/24",
         "ip": "103.72.146.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "UCLOUD-HK",
         "description": "Ucloud Hong Kong",
         "country_code": "CN",
@@ -1239,7 +1447,7 @@
         "prefix": "103.72.147.0/24",
         "ip": "103.72.147.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "UCLOUD-HK",
         "description": "Ucloud Hong Kong",
         "country_code": "CN",
@@ -1319,7 +1527,7 @@
         "prefix": "103.210.20.0/24",
         "ip": "103.210.20.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "UCLOUD-HK",
         "description": "Ucloud Hong Kong",
         "country_code": "CN",
@@ -1335,7 +1543,7 @@
         "prefix": "103.210.21.0/24",
         "ip": "103.210.21.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "UCLOUD-HK",
         "description": "Ucloud Hong Kong",
         "country_code": "CN",
@@ -1351,7 +1559,7 @@
         "prefix": "103.210.22.0/24",
         "ip": "103.210.22.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "UCLOUD-HK",
         "description": "Ucloud Hong Kong",
         "country_code": "CN",
@@ -1367,7 +1575,7 @@
         "prefix": "103.210.23.0/24",
         "ip": "103.210.23.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "UCLOUD-HK",
         "description": "Ucloud Hong Kong",
         "country_code": "CN",
@@ -1446,6 +1654,22 @@
       {
         "prefix": "103.234.60.0/24",
         "ip": "103.234.60.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD-HK",
+        "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "103.234.60.0/22",
+          "ip": "103.234.60.0",
+          "cidr": 22,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "103.234.61.0/24",
+        "ip": "103.234.61.0",
         "cidr": 24,
         "roa_status": "Valid",
         "name": "UCLOUD-HK",
@@ -3239,7 +3463,7 @@
         "prefix": "122.10.161.0/24",
         "ip": "122.10.161.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ZEN-HK",
         "description": "Zenlayer IP Block@ HKG",
         "country_code": "HK",
@@ -3716,6 +3940,22 @@
         }
       },
       {
+        "prefix": "123.58.222.0/24",
+        "ip": "123.58.222.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD-HK",
+        "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "123.58.192.0/19",
+          "ip": "123.58.192.0",
+          "cidr": 19,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "123.58.223.0/24",
         "ip": "123.58.223.0",
         "cidr": 24,
@@ -3808,22 +4048,6 @@
           "ip": "128.1.0.0",
           "cidr": 16,
           "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "128.1.42.0/24",
-        "ip": "128.1.42.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "ZL-HKG-UCLOUD-0091",
-        "description": "UCLOUD",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "123.51.128.0/17",
-          "ip": "123.51.128.0",
-          "cidr": 17,
-          "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
       },
@@ -4311,7 +4535,7 @@
         "prefix": "129.227.143.0/24",
         "ip": "129.227.143.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "ZEN-HK",
         "description": "Zenlayer IP Block @HKG",
         "country_code": "HK",
@@ -4328,9 +4552,9 @@
         "ip": "150.107.36.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "UCLOUD-HK",
+        "name": "UCLOUD-US",
         "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
-        "country_code": "HK",
+        "country_code": "US",
         "parent": {
           "prefix": "150.107.36.0/22",
           "ip": "150.107.36.0",
@@ -5428,70 +5652,6 @@
         }
       },
       {
-        "prefix": "152.32.193.0/24",
-        "ip": "152.32.193.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "UCLOUD-HK",
-        "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "145.88.0.0/11",
-          "ip": "145.88.0.0",
-          "cidr": 11,
-          "rir_name": "RIPE",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "152.32.194.0/24",
-        "ip": "152.32.194.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "UCLOUD-HK",
-        "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "152.32.192.0/19",
-          "ip": "152.32.192.0",
-          "cidr": 19,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "152.32.195.0/24",
-        "ip": "152.32.195.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "UCLOUD-HK",
-        "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "152.32.192.0/19",
-          "ip": "152.32.192.0",
-          "cidr": 19,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "152.32.196.0/24",
-        "ip": "152.32.196.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "UCLOUD-HK",
-        "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
-        "country_code": "HK",
-        "parent": {
-          "prefix": "152.32.192.0/19",
-          "ip": "152.32.192.0",
-          "cidr": 19,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "152.32.197.0/24",
         "ip": "152.32.197.0",
         "cidr": 24,
@@ -6020,6 +6180,22 @@
         }
       },
       {
+        "prefix": "152.32.230.0/24",
+        "ip": "152.32.230.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UHGL-HK",
+        "description": "UCloud (HK) Holdings Group Limited",
+        "country_code": "TW",
+        "parent": {
+          "prefix": "148.236.0.0/16",
+          "ip": "148.236.0.0",
+          "cidr": 16,
+          "rir_name": "Lacnic",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "152.32.231.0/24",
         "ip": "152.32.231.0",
         "cidr": 24,
@@ -6031,6 +6207,22 @@
           "prefix": "152.32.230.0/23",
           "ip": "152.32.230.0",
           "cidr": 23,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "152.32.232.0/24",
+        "ip": "152.32.232.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD-TW",
+        "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+        "country_code": "TW",
+        "parent": {
+          "prefix": "152.32.232.0/21",
+          "ip": "152.32.232.0",
+          "cidr": 21,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
@@ -6404,12 +6596,508 @@
         }
       },
       {
-        "prefix": "154.82.22.0/24",
-        "ip": "154.82.22.0",
+        "prefix": "154.51.48.0/24",
+        "ip": "154.51.48.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.49.0/24",
+        "ip": "154.51.49.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.50.0/24",
+        "ip": "154.51.50.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.51.0/24",
+        "ip": "154.51.51.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.52.0/24",
+        "ip": "154.51.52.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.53.0/24",
+        "ip": "154.51.53.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.54.0/24",
+        "ip": "154.51.54.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.55.0/24",
+        "ip": "154.51.55.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.56.0/24",
+        "ip": "154.51.56.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.57.0/24",
+        "ip": "154.51.57.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.58.0/24",
+        "ip": "154.51.58.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.59.0/24",
+        "ip": "154.51.59.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.60.0/24",
+        "ip": "154.51.60.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.61.0/24",
+        "ip": "154.51.61.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.62.0/24",
+        "ip": "154.51.62.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.63.0/24",
+        "ip": "154.51.63.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.240.0/24",
+        "ip": "154.51.240.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.241.0/24",
+        "ip": "154.51.241.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.242.0/24",
+        "ip": "154.51.242.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.51.243.0/24",
+        "ip": "154.51.243.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.81.12.0/24",
+        "ip": "154.81.12.0",
         "cidr": 24,
         "roa_status": "Valid",
         "name": "Cloud_Innovation",
         "description": "Cloud Innovation Ltd",
+        "country_code": "US",
+        "parent": {
+          "prefix": "154.80.0.0/12",
+          "ip": "154.80.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.81.13.0/24",
+        "ip": "154.81.13.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Cloud_Innovation",
+        "description": "Cloud Innovation Ltd",
+        "country_code": "US",
+        "parent": {
+          "prefix": "154.80.0.0/12",
+          "ip": "154.80.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.81.14.0/24",
+        "ip": "154.81.14.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Cloud_Innovation",
+        "description": "Cloud Innovation Ltd",
+        "country_code": "US",
+        "parent": {
+          "prefix": "154.80.0.0/12",
+          "ip": "154.80.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.81.15.0/24",
+        "ip": "154.81.15.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Cloud_Innovation",
+        "description": "Cloud Innovation Ltd",
+        "country_code": "US",
+        "parent": {
+          "prefix": "154.80.0.0/12",
+          "ip": "154.80.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.82.21.0/24",
+        "ip": "154.82.21.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Cloud_Innovation",
+        "description": "Cloud Innovation Ltd",
+        "country_code": "US",
+        "parent": {
+          "prefix": "154.80.0.0/12",
+          "ip": "154.80.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.82.22.0/24",
+        "ip": "154.82.22.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "TH",
+        "parent": {
+          "prefix": "154.80.0.0/12",
+          "ip": "154.80.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.82.23.0/24",
+        "ip": "154.82.23.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "VN",
+        "parent": {
+          "prefix": "154.80.0.0/12",
+          "ip": "154.80.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.83.196.0/24",
+        "ip": "154.83.196.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Cloud_Innovation",
+        "description": "Cloud Innovation Ltd",
+        "country_code": "US",
+        "parent": {
+          "prefix": "154.80.0.0/12",
+          "ip": "154.80.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.83.197.0/24",
+        "ip": "154.83.197.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Bunny_Technology_LLC",
+        "description": "Bunny Technology LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "154.80.0.0/12",
+          "ip": "154.80.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.83.198.0/24",
+        "ip": "154.83.198.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Bunny_Technology_LLC",
+        "description": "Bunny Technology LLC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "154.80.0.0/12",
+          "ip": "154.80.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.83.199.0/24",
+        "ip": "154.83.199.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "US",
+        "parent": {
+          "prefix": "154.80.0.0/12",
+          "ip": "154.80.0.0",
+          "cidr": 12,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "154.85.27.0/24",
+        "ip": "154.85.27.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
         "country_code": "US",
         "parent": {
           "prefix": "154.80.0.0/12",
@@ -6456,9 +7144,9 @@
         "ip": "154.202.65.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "Cloud_Innovation",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "JP",
+        "name": "OCTOPUS_WEB_SOLUTION_INC",
+        "description": "OCTOPUS WEB SOLUTION INC",
+        "country_code": "US",
         "parent": {
           "prefix": "154.192.0.0/11",
           "ip": "154.192.0.0",
@@ -6472,9 +7160,9 @@
         "ip": "154.202.66.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "OCTOPUS_WEB_SOLUTION_INC",
-        "description": "OCTOPUS WEB SOLUTION INC",
-        "country_code": "US",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITEDIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITEDIMITED",
+        "country_code": "SG",
         "parent": {
           "prefix": "154.192.0.0/11",
           "ip": "154.192.0.0",
@@ -6488,9 +7176,9 @@
         "ip": "154.202.67.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
-        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
-        "country_code": "SG",
+        "name": "OCTOPUS_WEB_SOLUTION_INC",
+        "description": "OCTOPUS WEB SOLUTION INC",
+        "country_code": "US",
         "parent": {
           "prefix": "154.192.0.0/11",
           "ip": "154.192.0.0",
@@ -6504,9 +7192,9 @@
         "ip": "154.202.68.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "Cloud_Innovation",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "JP",
+        "name": "OCTOPUS_WEB_SOLUTION_INC",
+        "description": "OCTOPUS WEB SOLUTION INC",
+        "country_code": "US",
         "parent": {
           "prefix": "159.206.0.0/16",
           "ip": "159.206.0.0",
@@ -6520,9 +7208,9 @@
         "ip": "156.229.16.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "Cloud_Innovation",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "US",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "RU",
         "parent": {
           "prefix": "156.224.0.0/11",
           "ip": "156.224.0.0",
@@ -6536,9 +7224,9 @@
         "ip": "156.229.17.0",
         "cidr": 24,
         "roa_status": "None",
-        "name": "OCTOPUS_WEB_SOLUTION_INC",
-        "description": "OCTOPUS WEB SOLUTION INC",
-        "country_code": "US",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "RU",
         "parent": {
           "prefix": "156.224.0.0/11",
           "ip": "156.224.0.0",
@@ -6552,9 +7240,9 @@
         "ip": "156.229.18.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "Cloud_Innovation",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "US",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "AE",
         "parent": {
           "prefix": "156.224.0.0/11",
           "ip": "156.224.0.0",
@@ -6568,9 +7256,9 @@
         "ip": "156.229.19.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "Cloud_Innovation",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "US",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "PH",
         "parent": {
           "prefix": "156.224.0.0/11",
           "ip": "156.224.0.0",
@@ -6584,9 +7272,9 @@
         "ip": "156.229.20.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "Cloud_Innovation",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "US",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "TH",
         "parent": {
           "prefix": "156.224.0.0/11",
           "ip": "156.224.0.0",
@@ -6616,9 +7304,25 @@
         "ip": "156.229.22.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
-        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
-        "country_code": "VN",
+        "name": "OCTOPUS_WEB_SOLUTION_INC",
+        "description": "OCTOPUS WEB SOLUTION INC",
+        "country_code": "US",
+        "parent": {
+          "prefix": "156.224.0.0/11",
+          "ip": "156.224.0.0",
+          "cidr": 11,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "156.229.23.0/24",
+        "ip": "156.229.23.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Cloud_Innovation",
+        "description": "Cloud Innovation Ltd",
+        "country_code": "US",
         "parent": {
           "prefix": "156.224.0.0/11",
           "ip": "156.224.0.0",
@@ -6632,8 +7336,8 @@
         "ip": "156.229.24.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "Cloud_Innovation",
-        "description": "Cloud Innovation Ltd",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
         "country_code": "SG",
         "parent": {
           "prefix": "156.224.0.0/11",
@@ -6648,9 +7352,57 @@
         "ip": "156.229.25.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "Cloud_Innovation",
-        "description": "Cloud Innovation Ltd",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
         "country_code": "SG",
+        "parent": {
+          "prefix": "156.224.0.0/11",
+          "ip": "156.224.0.0",
+          "cidr": 11,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "156.229.28.0/24",
+        "ip": "156.229.28.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "TW",
+        "parent": {
+          "prefix": "156.224.0.0/11",
+          "ip": "156.224.0.0",
+          "cidr": 11,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "156.229.50.0/24",
+        "ip": "156.229.50.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "SKTTECH_PTE_LTD",
+        "description": "SKTTECH PTE. LTD.",
+        "country_code": "SG",
+        "parent": {
+          "prefix": "156.224.0.0/11",
+          "ip": "156.224.0.0",
+          "cidr": 11,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "156.229.54.0/24",
+        "ip": "156.229.54.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "PROXY_SOLUTIONS_LTD",
+        "description": "PROXY SOLUTIONS LTD",
+        "country_code": "NL",
         "parent": {
           "prefix": "156.224.0.0/11",
           "ip": "156.224.0.0",
@@ -6696,8 +7448,8 @@
         "ip": "156.229.224.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "Cloud_Innovation",
-        "description": "Cloud Innovation Ltd",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
         "country_code": "US",
         "parent": {
           "prefix": "156.224.0.0/11",
@@ -6712,8 +7464,8 @@
         "ip": "156.229.225.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "Cloud_Innovation",
-        "description": "Cloud Innovation Ltd",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
         "country_code": "US",
         "parent": {
           "prefix": "156.224.0.0/11",
@@ -6728,9 +7480,9 @@
         "ip": "156.229.226.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "Cloud_Innovation",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "US",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "DE",
         "parent": {
           "prefix": "156.224.0.0/11",
           "ip": "156.224.0.0",
@@ -6744,9 +7496,41 @@
         "ip": "156.229.227.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "Cloud_Innovation",
-        "description": "Cloud Innovation Ltd",
+        "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITED",
+        "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        "country_code": "VN",
+        "parent": {
+          "prefix": "156.224.0.0/11",
+          "ip": "156.224.0.0",
+          "cidr": 11,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "156.229.236.0/24",
+        "ip": "156.229.236.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Netiface_Limited",
+        "description": "Netiface Limited",
         "country_code": "US",
+        "parent": {
+          "prefix": "156.224.0.0/11",
+          "ip": "156.224.0.0",
+          "cidr": 11,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "156.229.247.0/24",
+        "ip": "156.229.247.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Netiface_Limited",
+        "description": "Netiface Limited",
+        "country_code": "NL",
         "parent": {
           "prefix": "156.224.0.0/11",
           "ip": "156.224.0.0",
@@ -6906,6 +7690,22 @@
         "roa_status": "Valid",
         "name": "UCLOUD_INFORMATION_TECHNOLOGY_HK_LIMITEDIMITED",
         "description": "UCLOUD INFORMATION TECHNOLOGY HK LIMITEDIMITED",
+        "country_code": "US",
+        "parent": {
+          "prefix": "156.224.0.0/11",
+          "ip": "156.224.0.0",
+          "cidr": 11,
+          "rir_name": "AfriNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "156.242.127.0/24",
+        "ip": "156.242.127.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "OCTOPUS_WEB_SOLUTION_INC",
+        "description": "OCTOPUS WEB SOLUTION INC",
         "country_code": "US",
         "parent": {
           "prefix": "156.224.0.0/11",
@@ -7526,6 +8326,22 @@
       {
         "prefix": "165.154.38.0/24",
         "ip": "165.154.38.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD-JP",
+        "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+        "country_code": "JP",
+        "parent": {
+          "prefix": "165.154.0.0/17",
+          "ip": "165.154.0.0",
+          "cidr": 17,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "165.154.39.0/24",
+        "ip": "165.154.39.0",
         "cidr": 24,
         "roa_status": "Valid",
         "name": "UCLOUD-JP",
@@ -8980,22 +9796,6 @@
         }
       },
       {
-        "prefix": "165.154.130.0/24",
-        "ip": "165.154.130.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "UCLOUD-JP",
-        "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
-        "country_code": "JP",
-        "parent": {
-          "prefix": "165.154.128.0/18",
-          "ip": "165.154.128.0",
-          "cidr": 18,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "165.154.131.0/24",
         "ip": "165.154.131.0",
         "cidr": 24,
@@ -9430,6 +10230,22 @@
       {
         "prefix": "165.154.158.0/24",
         "ip": "165.154.158.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD-HK",
+        "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "165.154.128.0/18",
+          "ip": "165.154.128.0",
+          "cidr": 18,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "165.154.159.0/24",
+        "ip": "165.154.159.0",
         "cidr": 24,
         "roa_status": "Valid",
         "name": "UCLOUD-HK",
@@ -10090,7 +10906,7 @@
         "roa_status": "Valid",
         "name": "IPXO",
         "description": "IPXO",
-        "country_code": "KR",
+        "country_code": "US",
         "parent": {
           "prefix": "181.214.0.0/15",
           "ip": "181.214.0.0",
@@ -10164,12 +10980,28 @@
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
+      },
+      {
+        "prefix": "2404:82c0:41::/48",
+        "ip": "2404:82c0:41::",
+        "cidr": 48,
+        "roa_status": "Valid",
+        "name": "UCLOUD-HK",
+        "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+        "country_code": "HK",
+        "parent": {
+          "prefix": "2404:82c0::/32",
+          "ip": "2404:82c0::",
+          "cidr": 32,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
       }
     ]
   },
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "257.11 ms"
+    "execution_time": "287.29 ms"
   }
 }

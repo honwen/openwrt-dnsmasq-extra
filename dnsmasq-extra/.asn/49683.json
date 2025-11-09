@@ -56,9 +56,9 @@
         "ip": "31.25.237.0",
         "cidr": 24,
         "roa_status": "Valid",
-        "name": "UK-MASSIVEGRID-20110309",
-        "description": "MASSIVEGRID LTD",
-        "country_code": "EU",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "GB",
         "parent": {
           "prefix": "31.25.236.0/22",
           "ip": "31.25.236.0",
@@ -644,11 +644,28 @@
         }
       }
     ],
-    "ipv6_prefixes": []
+    "ipv6_prefixes": [
+      {
+        "prefix": "2a0a:2f00:1::/48",
+        "ip": "2a0a:2f00:1::",
+        "cidr": 48,
+        "roa_status": "Valid",
+        "name": null,
+        "description": null,
+        "country_code": "GB",
+        "parent": {
+          "prefix": "2a0a:2f00::/29",
+          "ip": "2a0a:2f00::",
+          "cidr": 29,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      }
+    ]
   },
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "46.79 ms"
+    "execution_time": "31.97 ms"
   }
 }

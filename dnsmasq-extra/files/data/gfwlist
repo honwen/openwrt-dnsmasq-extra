@@ -140,6 +140,7 @@ cookiechoices.org
 coova.com
 coova.net
 coova.org
+crashlytics.com
 crossmediapanel.com
 crr.com
 cs4hs.com
@@ -160,7 +161,6 @@ fastly-edge.com
 feedburner.com
 fflick.com
 financeleadsonline.com
-firebase-settings.crashlytics.com
 fitbit.com
 foofle.com
 froogle.com
@@ -598,7 +598,6 @@ tiltbrush.com
 txcloud.net
 txvia.com
 unfiltered.news
-update.crashlytics.com
 urchin.com
 useplannr.com
 usvimosquito.com
@@ -809,7 +808,6 @@ ytimg.com
 zukunftswerkstatt.de
 mastercard.ba
 youtube.ba
-igoogle.ba
 intel.ba
 canon.ba
 yahoo.ba
@@ -862,12 +860,13 @@ starbucksforlife.ca
 visasavingsedge.ca
 appbridge.ca
 starbucksavie.ca
-igoogle.ca
+luckymobile.ca
 apple.ca
 bmwlifestyle.ca
 starbuckssummergame.ca
 bestbuyrewardzone.ca
 mini-coupe.ca
+alienware.ca
 bridgestonetire.ca
 firestonetire.ca
 minimontrealcentre.ca
@@ -910,6 +909,7 @@ minilaval.ca
 minimontroyal.ca
 intel.ca
 enfamil.ca
+dell.ca
 aol.ca
 naol.ca
 cepacol.ca
@@ -959,6 +959,7 @@ minicooper.ca
 bmw-vancouver.ca
 minivancouver.ca
 cafr.ca
+ibkr.ca
 trustcor.ca
 mini-windsor.ca
 yorkbbs.ca
@@ -990,6 +991,7 @@ ebaymotors.ca
 kijijiforbusiness.ca
 bestbuyforbusiness.ca
 nydus.ca
+cacnews.ca
 newnews.ca
 tibet.ca
 veet.ca
@@ -1033,6 +1035,7 @@ zooporn.shiksha
 hayabusa.media
 discord.media
 gsearch.media
+kuai.media
 zi.media
 truesocial.media
 anal.media
@@ -1087,13 +1090,14 @@ bmw-motorrad.ma
 youtube.ma
 mini.ma
 intel.ma
+dell.ma
 youtube.co.ma
-igoogle.co.ma
 miniso.ma
 volvobuses.ma
 volvotrucks.ma
 bmw.ma
 shadow.ma
+dell.com.na
 yahoo.com.na
 volvotrucks.co.na
 practivate.adobe.newoa
@@ -1104,6 +1108,7 @@ visa.com.pa
 youtube.com.pa
 apple.com.pa
 mini.com.pa
+dell.com.pa
 yahoo.com.pa
 bmw.com.pa
 sony.com.pa
@@ -1125,6 +1130,7 @@ ikea.com.sa
 stc.com.sa
 mastercard.com.sa
 youtube.com.sa
+dell.com.sa
 yahoo.com.sa
 adidas.com.sa
 vecchiescopate.casa
@@ -1138,11 +1144,13 @@ youtube.ua
 gfw.org.ua
 mini.ua
 intel.ua
+dell.ua
 ikea.com.ua
 nvidia.com.ua
 visa.com.ua
 youtube.com.ua
 mageconf.com.ua
+dell.com.ua
 yahoo.com.ua
 epochtimes.com.ua
 volvotrucks.com.ua
@@ -1173,6 +1181,7 @@ mini.co.za
 airwick.co.za
 bidvestbank.co.za
 intel.co.za
+dell.co.za
 nurofen.co.za
 mortein.co.za
 canon.co.za
@@ -1194,8 +1203,10 @@ bmw.co.za
 durex.co.za
 ebay.co.za
 disney.co.za
+swiffy.co.za
 apple.xn--czr694b
 xn--hxtr4rozx.xn--czr694b
+dell.com.bb
 bmw.bb
 mastercard.com.lb
 youtube.com.lb
@@ -1220,6 +1231,7 @@ vepornhd.club
 avgod.club
 momtube.club
 pt.soulvoice.club
+ptcafe.club
 sfmcompile.club
 appleone.club
 sexmature.club
@@ -1256,6 +1268,7 @@ bestfreecams.club
 hdatmos.club
 91vps.club
 ourbits.club
+ubits.club
 scorediscounts.club
 liuhefabu.club
 mohu.club
@@ -1275,6 +1288,7 @@ qmap.pub
 xt.pub
 xn--p8j9a0d9c9a.xn--q9jyb4c
 intel.ac
+dell.ac
 vpn.ac
 easy.ac
 lu2300.cc
@@ -1367,6 +1381,7 @@ postimg.cc
 qysg.cc
 gaysitessearch.cc
 wretch.cc
+saasexch.cc
 21heise360dh.cc
 thdh.cc
 qattdh.cc
@@ -1419,6 +1434,7 @@ xxxhdporn.cc
 maturewifeporn.cc
 theporn.cc
 streamporn.cc
+whvn.cc
 clco.cc
 primevideo.cc
 amazonvideo.cc
@@ -1453,6 +1469,7 @@ boyloves.cc
 jbtalks.cc
 sexyasiangirls.cc
 sexindians.cc
+firstns.cc
 tamilsexvideos.cc
 maturexxxvideos.cc
 asianxxxvideos.cc
@@ -1471,6 +1488,7 @@ pixnet.cc
 pornbit.cc
 chobit.cc
 inshot.cc
+zmpt.cc
 ptt.cc
 fasttext.cc
 vuku.cc
@@ -1513,33 +1531,40 @@ enfabebe.com.ec
 youtube.com.ec
 mini.com.ec
 intel.com.ec
+dell.com.ec
 yahoo.com.ec
 foxsports.com.ec
 pinterest.com.ec
 bmw.com.ec
 ebay.com.ec
 sony.com.ec
+dln1.ncdn.ec
 gen.lib.rus.ec
 pinterest.ec
+z-library.ec
 intel.lc
 visa.com.lc
+dell.com.lc
 bmw.lc
 madvrlabs.llc
 mini.nc
 bmw.nc
 mastercard.inc
 idservice.inc
-igoogle.sc
 rsg.sc
 huobi.sc
 fuck.sc
 intel.sc
+dell.sc
 visa.tc
+dell.tc
+dell.com.tc
 wo.tc
 m12.vc
 gogoanime.vc
 huobi.vc
 visa.com.vc
+dell.com.vc
 yahoo.com.vc
 kakao.vc
 pics.vc
@@ -1553,7 +1578,7 @@ yahoo.com.bd
 veet.com.bd
 bmw.com.bd
 durex.com.bd
-igoogle.cd
+dell.cd
 open.cd
 yahoo.cd
 tuo8.red
@@ -1588,6 +1613,8 @@ passage.id
 9anime.id
 voi.id
 sandisk.id
+intel.id
+dell.id
 womenwill.id
 ikea.co.id
 enfa.co.id
@@ -1598,12 +1625,12 @@ bmw-motorrad.co.id
 mastercard.co.id
 youtube.co.id
 shopee.co.id
-igoogle.co.id
 bridgestone.co.id
 appstore.co.id
 vanish.co.id
 mini.co.id
 intel.co.id
+dell.co.id
 dettol.co.id
 qualcomm.co.id
 youtubego.co.id
@@ -1658,6 +1685,7 @@ anaconda.cloud
 gateway.pinata.cloud
 1lib.cloud
 zind.cloud
+soundcloud.cloud
 binance.cloud
 longbridge.cloud
 renzhe.cloud
@@ -1681,6 +1709,7 @@ chatgpt.livekit.cloud
 host.livekit.cloud
 mdn.mozit.cloud
 paofu.cloud
+yandex.cloud
 ipfs-gateway.cloud
 misskey.cloud
 xn--gtvq61aiijy0b.xn--hxt814e
@@ -1694,8 +1723,8 @@ ikea.ae
 hsbc.ae
 mastercard.ae
 youtube.ae
-igoogle.ae
 apple.ae
+alienware.ae
 bmw-connecteddrive.ae
 sandisk.ae
 intel.ae
@@ -1718,8 +1747,8 @@ bmw-motorrad.be
 mini-connected.be
 mastercard.be
 youtube.be
-igoogle.be
 apple.be
+alienware.be
 bmw-connecteddrive.be
 vanish.be
 binancezh.be
@@ -1727,6 +1756,7 @@ mini.be
 airwick.be
 pearsonclinical.be
 volvotruckrental.be
+dell.be
 dettol.be
 globalsign.be
 finishwin.be
@@ -1774,6 +1804,7 @@ hentais.tube
 jav.place
 ams02.space
 tuo8.space
+popyard.space
 jtube.space
 pstorage.space
 appleone.space
@@ -1787,12 +1818,15 @@ skyperfectjsat.space
 metalpha.finance
 maple.finance
 clearpool.finance
+pancakeswap.finance
 solv.finance
 antisocial.science
 dnsserver1.de
 i2p2.de
 dnsserver2.de
 fdc64.de
+tech26.de
+number26.de
 testipv6.de
 ikea.de
 nvidia.de
@@ -1827,7 +1861,6 @@ twibble.de
 kindle.de
 goagle.de
 gogle.de
-igoogle.de
 mobile.de
 deutsche-welle.de
 apple.de
@@ -1836,6 +1869,7 @@ bmwmagazine.de
 vodafone.de
 sgspe.de
 your-storageshare.de
+alienware.de
 shellfire.de
 applestore.de
 google-base.de
@@ -1861,6 +1895,7 @@ trimondi.de
 netcup-wiki.de
 managed-pki.de
 mini.de
+oojj.de
 webpack.de
 beck-online.beck.de
 airwick.de
@@ -1869,6 +1904,7 @@ facebook.de
 sandisk.de
 pearsonclinical.de
 enfal.de
+ui-portal.de
 embl.de
 spiegel.de
 googel.de
@@ -1876,6 +1912,7 @@ angela-merkel.de
 customercontrolpanel.de
 servercontrolpanel.de
 intel.de
+dell.de
 asianwomensfilm.de
 qualcomm.de
 ikea.com.de
@@ -1935,6 +1972,7 @@ starbucks.de
 volvotrucks.de
 second-ns.de
 first-ns.de
+thirdns.de
 icloudos.de
 cfos.de
 webobjects.de
@@ -1973,6 +2011,7 @@ hotsrv.de
 bestsrv.de
 luckysrv.de
 happysrv.de
+n-tv.de
 dw.de
 bmw.de
 webex.de
@@ -1986,6 +2025,7 @@ disney.de
 tibetgermany.de
 sony.de
 mdyy.de
+sz.de
 h4.trakx.nibba.trade
 opensource.guide
 appleone.guide
@@ -2004,6 +2044,7 @@ mcaf.ee
 buymeacoff.ee
 eesti.ee
 intel.ee
+dell.ee
 youtube.com.ee
 applestore.com.ee
 lin.ee
@@ -2023,6 +2064,7 @@ durex.ee
 thepiratebay.ee
 sony.ee
 444.coffee
+rsshub.woodland.cafe
 netcup.cafe
 rhyw31.life
 tkbqf2.life
@@ -2047,6 +2089,7 @@ guochanw.life
 kxsw.life
 18ww.life
 lovex.life
+rss.littlebaby.life
 radiotavisupleba.ge
 youtube.ge
 intel.ge
@@ -2074,13 +2117,14 @@ mini-connected.ie
 mastercard.ie
 icloud.ie
 youtube.ie
-igoogle.ie
 apple.ie
+alienware.ie
 bmw-connecteddrive.ie
 vanish.ie
 mini.ie
 airwick.ie
 intel.ie
+dell.ie
 dettol.ie
 nurofen.ie
 calgon.ie
@@ -2090,6 +2134,7 @@ vfsco.ie
 yahoo.ie
 miniso.ie
 ipadair.ie
+ibkr.ie
 adidas.ie
 gettyimages.ie
 thetimes.ie
@@ -2119,30 +2164,40 @@ bmw.co.ke
 duckduckgo.ke
 moresci.sale
 wd.bible
+c.gle
 goo.gle
-8888.google
-nic.google
+deepmind.google
 opensource.google
-pride.google
+skintone.google
+share.google
+sre.google
 chromeenterprise.google
-crisisresponse.google
 blog.google
 research.google
+health.google
 ai.google
+quantumai.google
+gemini.google
+enterprisemarketingportal.google
+notebooklm.google
 com.google
 design.google
-passwords.google
+io.google
+labs.google
+businessmessages.google
+families.google
 stories.google
 dns.google
+zdns.google
 domains.google
-lers.google
-environment.google
+chromeos.google
 about.google
 tv.google
 grow.google
+play.google
 registry.google
 safety.google
-sustainability.google
+diversity.google
 douyintt10.me
 sg120.me
 avstar01.me
@@ -2155,6 +2210,7 @@ avstar02.me
 pornmovies2.me
 avstar03.me
 avstar04.me
+i234.me
 porn34.me
 wvm0agb4.me
 seed4.me
@@ -2179,7 +2235,6 @@ retracker.lanta.me
 fansta.me
 wa.me
 msk.kitazawa.me
-manwa.me
 fb.me
 javhub.me
 javpub.me
@@ -2201,6 +2256,7 @@ springwood.me
 calvappd.me
 monocloud.me
 dlercloud.me
+dscloud.me
 zzcloud.me
 freetribe.me
 erotictube.me
@@ -2226,6 +2282,7 @@ hanime.me
 line.me
 my-magazine.me
 dayone.me
+hdzone.me
 applestore.me
 kingextre.me
 vpnsecure.me
@@ -2278,6 +2335,8 @@ telegram.me
 xvideoscom.me
 pm.me
 uraban.me
+h-chan.me
+hentaichan.me
 biedian.me
 sulian.me
 xiaolan.me
@@ -2292,6 +2351,7 @@ cloudn.me
 libgen.me
 hentaihaven.me
 singlelogin.me
+diskstation.me
 pornoslon.me
 canon.me
 proton.me
@@ -2327,6 +2387,7 @@ zspeeder.me
 epider.me
 porndigger.me
 rutracker.me
+hub.slarker.me
 naver.me
 conair.me
 multipornfor.me
@@ -2334,6 +2395,7 @@ javfor.me
 xfxssr.me
 pornvr.me
 porncomics.me
+myds.me
 audiences.me
 adultgames.me
 exrates.me
@@ -2389,6 +2451,7 @@ javxxx.me
 anyxxx.me
 91gay.me
 sogrady.me
+synology.me
 hdsky.me
 ghanely.me
 avjoy.me
@@ -2416,6 +2479,7 @@ changeip.name
 myftp.name
 ddns.name
 hidemy.name
+copy2000.online
 porn300.online
 567321.online
 moapi1.online
@@ -2496,6 +2560,7 @@ t1.aag.moe
 bangumi.moe
 poi.moe
 skk.moe
+vol.moe
 sstm.moe
 8chan.moe
 allthefallen.moe
@@ -2509,7 +2574,9 @@ limelight.moe
 sstmlt.moe
 niu.moe
 congyu.moe
+wxw.moe
 catbox.moe
+mox.moe
 youtube.pe
 ping.pe
 intel.pe
@@ -2523,6 +2590,7 @@ apple.com.pe
 vanish.com.pe
 mini.com.pe
 intel.com.pe
+dell.com.pe
 yahoo.com.pe
 starbucks.com.pe
 thomsonreuters.com.pe
@@ -2572,6 +2640,8 @@ youtube.se
 dice.se
 ipfs.best-practice.se
 apple.se
+idope.se
+alienware.se
 annas-archive.se
 bmw-connecteddrive.se
 tuidang.se
@@ -2584,6 +2654,7 @@ pearsonclinical.se
 nobel.se
 intel.se
 quixel.se
+dell.se
 avxhm.se
 verisign.se
 singlelogin.se
@@ -2658,6 +2729,7 @@ tiaz.site
 porno365.website
 appleone.website
 nmsl.website
+framer.website
 tuo8.blue
 pornohd.blue
 nvidia.com.ve
@@ -2666,6 +2738,7 @@ mastercard.com.ve
 enfabebe.com.ve
 youtube.com.ve
 intel.com.ve
+dell.com.ve
 pornovenezolano.com.ve
 12diasderegalosdeitunes.com.ve
 foxsports.com.ve
@@ -2682,12 +2755,15 @@ kkff2484.live
 garena.live
 celebmasta.live
 cdnlab.live
+zb.live
 milflove.live
 boylove.live
 swag.live
 binancezh.live
 4ertik.live
 vercel.live
+hentai-chan.live
+hentaichan.live
 gateio.live
 n3ro.live
 hkmap.live
@@ -2714,6 +2790,7 @@ intel.wf
 nyaa.tracker.wf
 intel.ag
 visa.com.ag
+dell.com.ag
 yahoo.com.ag
 yts.ag
 5w.ag
@@ -2723,14 +2800,16 @@ bmw-motorrad.bg
 mastercard.bg
 youtube.bg
 free.bg
-igoogle.bg
 apple.bg
 applestore.bg
 bmw-connecteddrive.bg
 finish.bg
 mini.bg
+fibank.bg
 intel.bg
+dell.bg
 nurofen.bg
+myfin.bg
 canon.bg
 vfsco.bg
 yahoo.bg
@@ -2741,6 +2820,7 @@ bmw.bg
 disney.bg
 sony.bg
 intel.cg
+dell.cg
 yahoo.cg
 ikea.eg
 intel.eg
@@ -2755,15 +2835,17 @@ ra.gg
 fb.gg
 jb.gg
 discord.gg
-igoogle.gg
 ddg.gg
 dgg.gg
 ddh.gg
+intel.gg
 yahoo.gg
 op.gg
 tracker.gg
+tanks.gg
 misskey.gg
 lih.kg
+dell.kg
 volvotrucks.kg
 bmw.kg
 yandex.kg
@@ -2774,9 +2856,11 @@ apple.com.mg
 storm.mg
 youtube.ng
 intel.ng
+dell.ng
 visa.com.ng
 mastercard.com.ng
 youtube.com.ng
+dell.com.ng
 dettol.com.ng
 mortein.com.ng
 durex.com.ng
@@ -2803,6 +2887,7 @@ iphoto.wang
 iphoneplus.wang
 appletv.wang
 apple-pay.wang
+rsshub.henry.wang
 creativecommons.engineering
 pinterest.engineering
 vps.hosting
@@ -2830,10 +2915,18 @@ xvideos.blog
 xvidios.blog
 stackoverflow.blog
 fury.blog
+bg-call-donation-alpha.goog
 translate.goog
+syndicatedsearch.goog
 cloud.cupronickel.goog
+bg-call-donation.goog
+simtransfer.goog
+cloudpartnerservices.goog
+agnss.goog
 usercontent.goog
+bg-call-donation-dev.goog
 telephony.goog
+bg-call-donation-canary.goog
 faith100.org
 ieeer10.org
 facebook30.org
@@ -2880,6 +2973,7 @@ art4tibet1998.org
 tuo8.org
 ieeer8.org
 et8.org
+circle19.org
 cdp1989.org
 apat1989.org
 in99.org
@@ -2995,6 +3089,7 @@ douya.org
 khatrimaza.org
 sonidodelaesperanza.org
 minghui-b.org
+interseclab.org
 factchecklab.org
 doublethinklab.org
 citizenlab.org
@@ -3187,6 +3282,7 @@ futuremessage.org
 heritage.org
 tibetanlanguage.org
 wikivoyage.org
+smart-edge.org
 tbcollege.org
 change.org
 chinachange.org
@@ -3195,6 +3291,7 @@ juyuange.org
 difangwenge.org
 toolforge.org
 macosforge.org
+yandexwebcache.org
 apache.org
 jinbushe.org
 explodie.org
@@ -3208,6 +3305,7 @@ facebookpoke.org
 labiennale.org
 jable.org
 iamremarkable.org
+enterprisedemogoogle.org
 rfamobile.org
 hotpornfile.org
 ofile.org
@@ -3253,6 +3351,7 @@ flowtype.org
 researchandcare.org
 onionshare.org
 fillthesquare.org
+universalscalablefirmware.org
 handcraftedsoftware.org
 pcre.org
 paypalhere.org
@@ -3334,11 +3433,13 @@ ietf.org
 gstf.org
 tcewf.org
 gdzf.org
+bt4g.org
 sciencemag.org
 naturemag.org
 proxyrarbg.org
 sci.hubg.org
 wnacg.org
+edrdg.org
 ffmpeg.org
 fofg.org
 cipfg.org
@@ -3353,6 +3454,7 @@ shangfang.org
 huanghuagang.org
 scala-lang.org
 red-lang.org
+dml-lang.org
 go-lang.org
 elixir-lang.org
 rust-lang.org
@@ -3417,6 +3519,7 @@ darktech.org
 teachparentstech.org
 edu-research.org
 laogairesearch.org
+pewresearch.org
 botorch.org
 pytorch.org
 hkchurch.org
@@ -3469,6 +3572,7 @@ nalandabodhi.org
 mahabodhi.org
 omorashi.org
 yiqiedoushiganggangkaishi.org
+yangzhi.org
 baizhi.org
 yyii.org
 zhuichaguoji.org
@@ -3502,6 +3606,7 @@ zhenghui.org
 minghui.org
 fawanghuihui.org
 tcsovi.org
+rostaxi.org
 uyghur-j.org
 twitter4j.org
 icij.org
@@ -3632,6 +3737,7 @@ turansam.org
 agedm.org
 tacem.org
 electrochem.org
+pmem.org
 izlesem.org
 tafm.org
 ccim.org
@@ -3639,6 +3745,7 @@ accim.org
 jingsim.org
 vim.org
 nejm.org
+sigcomm.org
 christianfreedom.org
 internetfreedom.org
 all4mom.org
@@ -3691,11 +3798,13 @@ cpan.org
 metacpan.org
 c-span.org
 ctan.org
+minjian-danganguan.org
 phapluan.org
 zhongguorenquan.org
 renyurenquan.org
 nvquan.org
 pttvan.org
+roc-taiwan.org
 908taiwan.org
 iphonetaiwan.org
 zengjinyan.org
@@ -3932,6 +4041,7 @@ wokar.org
 semanticscholar.org
 instituteofwar.org
 lencr.org
+websdr.org
 1949er.org
 mynumber.org
 prcleader.org
@@ -3989,6 +4099,8 @@ hizbuttahrir.org
 tracker.opentrackr.org
 jmlr.org
 rukor.org
+rsshub2.asailor.org
+rsshub.asailor.org
 statearmor.org
 rarbgmirror.org
 vimperator.org
@@ -4006,6 +4118,7 @@ iownyour.org
 test-ipv6.sin.vr.org
 ieee-cas.org
 alasbarricadas.org
+dsmynas.org
 ieee-ras.org
 wmflabs.org
 1984bbs.org
@@ -4041,12 +4154,14 @@ diaoyuislands.org
 leagueoflegends.org
 cocoapods.org
 humanrightspressawards.org
+familyds.org
 cookiechoices.org
 globalvoices.org
 geeksquadservices.org
 paypalinsuranceservices.org
 elifesciences.org
 aimsciences.org
+privacyguides.org
 onlynudes.org
 golden-ages.org
 postimages.org
@@ -4101,6 +4216,7 @@ wikileaks.org
 openleaks.org
 holyspiritspeaks.org
 wetchicks.org
+threadingbuildingblocks.org
 turkeyblocks.org
 shadowsocks.org
 teenfucks.org
@@ -4135,13 +4251,16 @@ azure-dns.org
 ubddns.org
 freeddns.org
 authorizeddns.org
+puredns.org
 blogdns.org
 duckdns.org
 dyndns.org
 amzndns.org
 gwins.org
+xicons.org
 chinaelections.org
 mergersandinquisitions.org
+gotquestions.org
 creativecommons.org
 etowns.org
 camgirlvideos.org
@@ -4163,6 +4282,7 @@ openmaps.org
 openstreetmaps.org
 godfootsteps.org
 siterips.org
+sigops.org
 tibetcorps.org
 cups.org
 chinese-leaders.org
@@ -4218,6 +4338,7 @@ tibetansports.org
 marxists.org
 ieee-into-focus.org
 eventsinfocus.org
+movidius.org
 south-plus.org
 notepad-plus-plus.org
 nikeplus.org
@@ -4270,6 +4391,7 @@ digitalnomadsproject.org
 freenetproject.org
 gwtproject.org
 theopportunityproject.org
+hdcmct.org
 omct.org
 tibet.org
 friends-of-tibet.org
@@ -4319,6 +4441,7 @@ webkit.org
 wpewebkit.org
 carekit.org
 researchkit.org
+renderingtoolkit.org
 openvinotoolkit.org
 componentkit.org
 monlamit.org
@@ -4415,6 +4538,7 @@ i91av.org
 pornjav.org
 thisav.org
 mynetav.org
+alphaxiv.org
 pixiv.org
 arxiv.org
 medrxiv.org
@@ -4459,6 +4583,7 @@ herodex.org
 christusrex.org
 18sex.org
 miktex.org
+usenix.org
 whonix.org
 matrix.org
 tracker.tryhackx.org
@@ -4475,6 +4600,7 @@ kba-tx.org
 avidemux.org
 termux.org
 linux.org
+garudalinux.org
 scientificlinux.org
 alpinelinux.org
 archlinux.org
@@ -4492,6 +4618,7 @@ watch-ebay.org
 thepiratebay.org
 apibay.org
 adultbay.org
+passwordday.org
 ieeeday.org
 chinesegay.org
 liberapay.org
@@ -4531,11 +4658,13 @@ data-vocabulary.org
 wiktionary.org
 openlibrary.org
 namgyalmonastery.org
+storageclassmemory.org
 hentaidirectory.org
 thechinastory.org
 recordhistory.org
 tibetoralhistory.org
 twicountry.org
+taiwanembassy.org
 xdty.org
 technologyandsociety.org
 ciscolearningsociety.org
@@ -4579,6 +4708,7 @@ smyxy.org
 qvodzy.org
 planetsuzy.org
 avaaz.org
+qycz.org
 esperanzagomez.org
 gmhz.org
 uyghurbiz.org
@@ -4613,6 +4743,7 @@ bmw-connecteddrive.sg
 cams.org.sg
 sandisk.sg
 intel.sg
+dell.sg
 ikea.com.sg
 bmw-pma.com.sg
 visa.com.sg
@@ -4624,18 +4755,22 @@ hewlett-packard.com.sg
 youtube.com.sg
 apple.com.sg
 bridgestone.com.sg
+alienware.com.sg
 tvbanywhere.com.sg
 vanish.com.sg
 mini.com.sg
 paypal.com.sg
+dell.com.sg
 dettol.com.sg
 nurofen.com.sg
 verisign.com.sg
 globalsign.com.sg
 zaobao.com.sg
 yahoo.com.sg
+ibkr.com.sg
 faronics.com.sg
 epochtimes.com.sg
+straitstimes.com.sg
 starbucks.com.sg
 singaporepools.com.sg
 interactivebrokers.com.sg
@@ -4663,9 +4798,11 @@ disney.sg
 omy.sg
 yahoo.tg
 youtube.ug
+dell.ug
 youtube.co.ug
 applestore.co.ug
 intel.vg
+dell.vg
 yahoo.vg
 ritter.vg
 ikea.bh
@@ -4700,6 +4837,7 @@ nomadlandmovie.ch
 apple.ch
 pearson-schule.ch
 visaeurope.ch
+alienware.ch
 applestore.ch
 ssl-certificate.ch
 pki-poste.ch
@@ -4716,6 +4854,7 @@ wenhui.ch
 airwick.ch
 intel.ch
 protonmail.ch
+dell.ch
 dettol.ch
 fgirl.ch
 pearson-studium.ch
@@ -4779,6 +4918,8 @@ v2mm.tech
 javporn.tech
 faronics.tech
 ipfs.tech
+insight.tech
+freegpt.tech
 igfw.tech
 dropbox.tech
 fb.watch
@@ -4796,10 +4937,12 @@ telegra.ph
 starbuckscard.ph
 youtube.ph
 shopee.ph
+alienware.ph
 applestore.ph
 appstore.ph
 archive.ph
 intel.ph
+dell.ph
 enfamama.com.ph
 visa.com.ph
 hsbc.com.ph
@@ -4809,6 +4952,7 @@ youtube.com.ph
 applestore.com.ph
 mini.com.ph
 intel.com.ph
+dell.com.ph
 yahoo.com.ph
 mcdonalds.com.ph
 sexysites.com.ph
@@ -4833,7 +4977,6 @@ eepay.ph
 disney.ph
 ind.sh
 javfree.sh
-igoogle.sh
 title.sh
 binancezh.sh
 codei.sh
@@ -4861,6 +5004,7 @@ shopee.co.th
 apple.co.th
 bridgestone.co.th
 mini.co.th
+dell.co.th
 hbogo.co.th
 yahoo.co.th
 itunes.co.th
@@ -4872,10 +5016,13 @@ sony.co.th
 pinterest.th
 xnxx.health
 democracy.earth
+lmarena.ai
 meta.ai
 clova.ai
 theb.ai
+github.ai
 mlc.ai
+trae.ai
 claude.ai
 grazie.ai
 jiuse.ai
@@ -4884,11 +5031,14 @@ tsi.ai
 mistral.ai
 intel.ai
 visa.com.ai
+dell.com.ai
 yahoo.com.ai
 dailym.ai
 jan.ai
 pornpen.ai
+devin.ai
 wombo.ai
+openvino.ai
 suno.ai
 censorship.ai
 javfinder.ai
@@ -4896,10 +5046,12 @@ jasper.ai
 character.ai
 openrouter.ai
 videoindexer.ai
+cerebras.ai
 wyndlabs.ai
 chutes.ai
 jetbrains.ai
 karechat.ai
+coderabbit.ai
 openart.ai
 missav.ai
 devv.ai
@@ -4910,6 +5062,7 @@ perplexity.ai
 bitz.ai
 xn--d1acpjx3f.xn--p1ai
 intel.bi
+dell.bi
 yahoo.bi
 jmcomic1.mobi
 sex3.mobi
@@ -4919,6 +5072,7 @@ tubetria.mobi
 voa.mobi
 jmcomic.mobi
 hewlett-packard.mobi
+dscloud.mobi
 xbabe.mobi
 javmobile.mobi
 moxing.mobi
@@ -4947,11 +5101,13 @@ sexvideosxxx.mobi
 arabysexy.mobi
 hentaiz.mobi
 nike.ci
-igoogle.ci
 fastlane.ci
 ns.ci
 social.edu.ci
 arena.taipei
+data.taipei
+id.taipei
+service.taipei
 li.taipei
 metro.taipei
 gov.taipei
@@ -4964,7 +5120,6 @@ mini-connected.fi
 mastercard.fi
 icloud.fi
 youtube.fi
-igoogle.fi
 apple.fi
 bmw-connecteddrive.fi
 curve.fi
@@ -4973,6 +5128,7 @@ mini.fi
 spoti.fi
 airwick.fi
 intel.fi
+dell.fi
 canon.fi
 vfsco.fi
 nintendo.fi
@@ -5000,6 +5156,7 @@ thefappening.wiki
 kodi.wiki
 bell.wiki
 minecraft.wiki
+namu.wiki
 airav.wiki
 w.wiki
 sushi.ski
@@ -5018,12 +5175,14 @@ htznr.li
 kissjav.li
 youtube.ni
 youtube.com.ni
+dell.com.ni
 12diasderegalosdeitunes.com.ni
 bmw.com.ni
 sony.com.ni
 visa.co.ni
 12diasderegalosdeitunes.co.ni
 misskey.04.si
+holoxx.f5.si
 test-ipv6.go6.si
 nyaa.si
 ikea.si
@@ -5041,6 +5200,7 @@ open.stealth.si
 mini.si
 airwick.si
 intel.si
+dell.si
 canon.si
 yahoo.si
 volvotrucks.si
@@ -5054,11 +5214,13 @@ sextube.desi
 hentai.desi
 xhamster.desi
 visa.com.vi
+dell.com.vi
+dell.co.vi
 yahoo.co.vi
-igoogle.dj
 yahoo.dj
 yahoo.com.fj
 intel.tj
+dell.tj
 yahoo.com.tj
 canon.tj
 yandex.tj
@@ -5078,9 +5240,9 @@ bmw-motorrad.dk
 mini-connected.dk
 mastercard.dk
 youtube.dk
-igoogle.dk
 apple.dk
 mobileme.dk
+alienware.dk
 tibetkomite.dk
 bmw-connecteddrive.dk
 vanish.dk
@@ -5090,6 +5252,7 @@ dstk.dk
 pearsonclinical.dk
 intel.dk
 dailymail.dk
+dell.dk
 verisign.dk
 canon.dk
 vfsco.dk
@@ -5138,12 +5301,14 @@ nike.hk
 mponline.hk
 guruonline.hk
 etvonline.hk
+alienware.hk
 unwire.hk
 applestore.hk
 appstore.hk
 popvote.hk
 nowe.hk
 hpshopping.hk
+hkong.hk
 media.org.hk
 hkja.org.hk
 clb.org.hk
@@ -5210,6 +5375,7 @@ appleclub.com.hk
 hsbc.com.hk
 etbc.com.hk
 eprc.com.hk
+gospelherald.com.hk
 gfgold.com.hk
 ipod.com.hk
 mastercard.com.hk
@@ -5242,6 +5408,7 @@ paypal.com.hk
 nextdigital.com.hk
 bigbigchannel.com.hk
 intel.com.hk
+dell.com.hk
 carousell.com.hk
 dettol.com.hk
 canon-ebm.com.hk
@@ -5266,6 +5433,7 @@ cup.com.hk
 weather.com.hk
 applecomputer.com.hk
 tvbeventpower.com.hk
+ibkr.com.hk
 mcdonalds.com.hk
 alpherafs.com.hk
 shadowsocks.com.hk
@@ -5302,9 +5470,11 @@ appledaily.com.hk
 sharpdaily.com.hk
 sony.com.hk
 sacom.hk
+socialism.hk
 exchristian.hk
 lausan.hk
 verisign.hk
+udomain.hk
 citizenscommission.hk
 youngspiration.hk
 myradio.hk
@@ -5362,6 +5532,7 @@ youtube.mk
 intel.mk
 youtube.com.mk
 mini.com.mk
+dell.com.mk
 canon.com.mk
 bmw.com.mk
 sony.com.mk
@@ -5387,6 +5558,7 @@ roucdn.link
 justporn.link
 javpop.link
 reddit.app.link
+w3s.link
 alhs.link
 vnet.link
 tryst.link
@@ -5401,6 +5573,7 @@ youtube.pk
 apple.pk
 dettol.pk
 youtube.com.pk
+dell.com.pk
 mortein.com.pk
 yahoo.com.pk
 veet.com.pk
@@ -5432,6 +5605,7 @@ tron.network
 bisq.network
 tracker.network
 bsky.network
+e5.sk
 ikea.sk
 velkaepocha.sk
 starbucksslovakia.sk
@@ -5449,20 +5623,19 @@ yadi.sk
 mini.sk
 airwick.sk
 intel.sk
+dell.sk
 nurofen.sk
 canon.sk
 vfsco.sk
 yahoo.sk
 volvotrucks.sk
-italian-books.sk
 tibet.sk
+eset.sk
 bmw.sk
 sony.sk
-go-to-library.sk
 z-library.sk
 ezpc.tk
 tamiaode.tk
-igoogle.tk
 bakgeekhome.tk
 fanqiang.tk
 xkiwi.tk
@@ -5502,6 +5675,7 @@ englishfromengland.co.uk
 tibetrelieffund.co.uk
 ipod.co.uk
 mastercard.co.uk
+standard.co.uk
 hewlett-packard.co.uk
 youtube.co.uk
 geforce.co.uk
@@ -5509,11 +5683,11 @@ guimcode.co.uk
 uyghurensemble.co.uk
 investorschronicle.co.uk
 kindle.co.uk
-igoogle.co.uk
 apple.co.uk
 mailonline.co.uk
 vodafone.co.uk
 googlecompare.co.uk
+alienware.co.uk
 applestore.co.uk
 faronicswise.co.uk
 bmw-connecteddrive.co.uk
@@ -5539,6 +5713,7 @@ newscommercial.co.uk
 amdigital.co.uk
 intel.co.uk
 dailymail.co.uk
+dell.co.uk
 sweetandmaxwell.co.uk
 aol.co.uk
 dettol.co.uk
@@ -5575,6 +5750,7 @@ sportswomenoftheyear.co.uk
 dabr.co.uk
 openweather.co.uk
 macbookair.co.uk
+ibkr.co.uk
 uyghur.co.uk
 adidas.co.uk
 appdynamics.co.uk
@@ -5686,6 +5862,7 @@ airwick.cl
 bridgestonecomercial.cl
 firestonecomercial.cl
 intel.cl
+dell.cl
 lysol.cl
 dettol.cl
 pearson.cl
@@ -5706,19 +5883,22 @@ durex.cl
 sony.cl
 sexvideos.tel
 kinmen.travel
-igoogle.gl
+z-lib.gl
 intel.gl
 goo.gl
 yahoo.gl
 epoch.org.il
+dell.org.il
 ikea.co.il
 visa.co.il
 mastercard.co.il
 hewlett-packard.co.il
 youtube.co.il
+alienware.co.il
 vanish.co.il
 mini.co.il
 intel.co.il
+dell.co.il
 nurofen.co.il
 canon.co.il
 yahoo.co.il
@@ -5760,9 +5940,9 @@ mini-connected.nl
 dagelijksestandaard.nl
 mastercard.nl
 youtube.nl
-igoogle.nl
 apple.nl
 hideme.nl
+alienware.nl
 ipodcentre.nl
 mature.nl
 sekswebsite.nl
@@ -5777,6 +5957,7 @@ sandisk.nl
 pearsonclinical.nl
 googlelocal.nl
 intel.nl
+dell.nl
 dettol.nl
 twurl.nl
 globalsign.nl
@@ -5860,6 +6041,7 @@ mini-connected.pl
 mastercard.pl
 youtube.pl
 apple.pl
+alienware.pl
 woolite.pl
 bmw-connecteddrive.pl
 vanish.pl
@@ -5867,6 +6049,7 @@ finish.pl
 airwick.pl
 intel.pl
 enfamil.pl
+dell.pl
 dettol.pl
 modperl.pl
 ikea.com.pl
@@ -5874,6 +6057,7 @@ nvidia.com.pl
 apple.com.pl
 applestore.com.pl
 mini.com.pl
+dell.com.pl
 miniso.com.pl
 businessinsider.com.pl
 alphabet.com.pl
@@ -5915,8 +6099,8 @@ mtw.tl
 bx.tl
 hsbc.am
 youtube.am
-igoogle.am
 mini.am
+dell.am
 yandex.com.am
 canon.am
 azatutyun.am
@@ -5955,13 +6139,15 @@ yahoo.cm
 ipadair.cm
 1xbet.cm
 fw.cm
+dell.dm
 visa.com.dm
+dell.com.dm
 momo.dm
 yahoo.dm
+z-lib.fm
 sextube.fm
 fireside.fm
 turntable.fm
-igoogle.fm
 megaphone.fm
 ping.fm
 bloomberg.fm
@@ -5981,6 +6167,7 @@ tweetmylast.fm
 castbox.fm
 omny.fm
 intel.gm
+dell.gm
 yahoo.gm
 monica.im
 lala.im
@@ -6012,6 +6199,7 @@ visa.com.jm
 youtube.com.jm
 apple.com.jm
 intel.com.jm
+dell.com.jm
 appleone.film
 uab.com.mm
 mcb.com.mm
@@ -6073,6 +6261,7 @@ hipaa6020.com
 area120.com
 want520.com
 jiyou520.com
+copy20.com
 c0930.com
 h0930.com
 facebook30.com
@@ -6214,6 +6403,7 @@ w0512.com
 youshun12.com
 yeyuehuachao12.com
 bestgames-2022.com
+icc2022.com
 picacg2022.com
 tyms2022.com
 rs2022.com
@@ -6327,6 +6517,7 @@ tw.hao123.com
 mx.hao123.com
 beats123.com
 jav123.com
+missav123.com
 jav223.com
 jiuse823.com
 nike23.com
@@ -6386,6 +6577,8 @@ beatscollection2014.com
 oculus2014.com
 jigong1024.com
 rs1024.com
+sb24.com
+hibank24.com
 jerk24.com
 sexmovies24.com
 jav24.com
@@ -6415,6 +6608,8 @@ cam4.com
 illusionn4.com
 4porn4.com
 iphone-vip4.com
+gmp4.com
+qmp4.com
 avstar4.com
 35s4.com
 thesims4.com
@@ -6430,6 +6625,7 @@ bidong25.com
 uug25.com
 chapm25.com
 ebay25.com
+goody25.com
 game735.com
 t35.com
 iu45.com
@@ -6476,11 +6672,11 @@ sundanceignite2016.com
 8008206616.com
 clip16.com
 uug26.com
+n26.com
 fox26.com
 nikkei4946.com
 fox46.com
 app756.com
-esp8266.com
 jiuse6666.com
 onion666.com
 fap666.com
@@ -6705,6 +6901,8 @@ wikaba.com
 zhuatieba.com
 kenengba.com
 new-akiba.com
+1ptba.com
+69shuba.com
 eroyakuba.com
 pricelessaruba.com
 visaca.com
@@ -6803,6 +7001,7 @@ analsaga.com
 directvatlantaga.com
 imgmega.com
 dialga.com
+copy-manga.com
 hentai4manga.com
 nukemanga.com
 18hmanga.com
@@ -6821,6 +7020,7 @@ onlinecha.com
 waisongcha.com
 msguancha.com
 hcaptcha.com
+octocaptcha.com
 dropboxcaptcha.com
 rexcha.com
 gostosanovinha.com
@@ -6885,6 +7085,7 @@ mcdindia.com
 babesofindia.com
 paypalindia.com
 minisoindia.com
+thehansindia.com
 smutindia.com
 durexindia.com
 bidorbuyindia.com
@@ -6978,6 +7179,7 @@ wistia.com
 miniofmonrovia.com
 ysvia.com
 txvia.com
+anexia.com
 eroxia.com
 twiyia.com
 morazzia.com
@@ -6989,6 +7191,7 @@ fotolja.com
 matainja.com
 powerpointninja.com
 mitnaka.com
+berrraka.com
 ingka.com
 manhuabika.com
 dengeamerika.com
@@ -7157,10 +7360,12 @@ orbitera.com
 altera.com
 buyaltera.com
 e-tugra.com
+avira.com
 collabora.com
 pandora.com
 tsundora.com
 lefora.com
+wbagora.com
 dechamora.com
 osfoora.com
 sora.com
@@ -7280,6 +7485,7 @@ starbuckscardb2b.com
 foxnewsb2b.com
 po2b.com
 xn--9trs65b.com
+xn--u2u927b.com
 vocab.com
 imageab.com
 fab.com
@@ -7365,6 +7571,7 @@ yusjb.com
 avjb.com
 666kb.com
 slackb.com
+byteglb.com
 gog.qtlglb.com
 kgslb.com
 1dumb.com
@@ -7573,13 +7780,13 @@ porn-comic.com
 picacomic.com
 18porncomic.com
 allporncomic.com
-favcomic.com
 trulyergonomic.com
 seesmic.com
 yourcolonic.com
 brandelectronic.com
 panasonic.com
 writesonic.com
+softonic.com
 girlsnudepic.com
 justnudepic.com
 adultepic.com
@@ -7622,16 +7829,20 @@ zohowebstatic.com
 bnbstatic.com
 adobeccstatic.com
 sfdcstatic.com
+ldstatic.com
 oaistatic.com
 cbsistatic.com
 lolstatic.com
 steamstatic.com
 zohostatic.com
 ippstatic.com
+dockerstatic.com
+framerstatic.com
 cbsstatic.com
 spiceworksstatic.com
 pplusstatic.com
 awsstatic.com
+nftstatic.com
 edditstatic.com
 redditstatic.com
 itvstatic.com
@@ -7661,11 +7872,14 @@ faebookc.com
 iyalc.com
 franklc.com
 horizontal-llc.com
+ibllc.com
 rbplc.com
 amc.com
 emc.com
+dellemc.com
 shinhangmc.com
 91.51rmc.com
+amuletmc.com
 vmwarevmc.com
 newcenturymc.com
 facebook-inc.com
@@ -7680,6 +7894,7 @@ facebookinc.com
 paypalinc.com
 microsoftlinc.com
 verisigninc.com
+yahooinc.com
 leavinghpinc.com
 twitterinc.com
 imgurinc.com
@@ -7815,6 +8030,7 @@ geeksquad.com
 onlinegeeksquad.com
 bestbuysgeeksquad.com
 simsquad.com
+joinsquad.com
 simulationsquad.com
 scribd.com
 beatbd.com
@@ -8033,6 +8249,7 @@ nikebetterworld.com
 sarennasworld.com
 hotladsworld.com
 desiraesworld.com
+delltechnologiesworld.com
 chloesworld.com
 nfsworld.com
 crystalgunnsworld.com
@@ -8075,7 +8292,6 @@ hotcandyland.com
 vimeoondemand.com
 plansondemand.com
 bridgestone-brand.com
-dell-brand.com
 instagram-brand.com
 facebookbrand.com
 whatsappbrand.com
@@ -8124,6 +8340,7 @@ facebood.com
 boysfood.com
 dafagood.com
 cobinhood.com
+deepflood.com
 makemymood.com
 greginhollywood.com
 universalstudioshollywood.com
@@ -8207,14 +8424,38 @@ icloud.com
 ios-icloud.com
 applemx-icloud.com
 hentaicloud.com
+as-south-0.myhuaweicloud.com
+na-east-0.myhuaweicloud.com
 ae-ad-1.myhuaweicloud.com
 af-north-1.myhuaweicloud.com
 my-kualalumpur-1.myhuaweicloud.com
 me-east-1.myhuaweicloud.com
+us-east-1.myhuaweicloud.com
 tr-west-1.myhuaweicloud.com
+eu-west-1.myhuaweicloud.com
 ru-moscow-1.myhuaweicloud.com
 eu-west-101.myhuaweicloud.com
+eu-north-201.myhuaweicloud.com
+as-south-201.myhuaweicloud.com
+eu-central-201.myhuaweicloud.com
+ca-east-201.myhuaweicloud.com
+af-east-201.myhuaweicloud.com
+ap-northeast-201.myhuaweicloud.com
+ap-southeast-201.myhuaweicloud.com
+eu-west-201.myhuaweicloud.com
+ru-northwest-201.myhuaweicloud.com
+eu-central-202.myhuaweicloud.com
+ap-southeast-202.myhuaweicloud.com
+af-west-202.myhuaweicloud.com
+ap-southeast-203.myhuaweicloud.com
 ap-southeast-4.myhuaweicloud.com
+ap-southeast-5.myhuaweicloud.com
+la-north-205.myhuaweicloud.com
+as-south-205.myhuaweicloud.com
+me-east-205.myhuaweicloud.com
+as-south-207.myhuaweicloud.com
+me-east-208.myhuaweicloud.com
+me-east-209.myhuaweicloud.com
 wwwicloud.com
 adskcloud.com
 smartmailcloud.com
@@ -8256,6 +8497,7 @@ ciscoconnectcloud.com
 microsoftcloud.com
 vagrantcloud.com
 ifontcloud.com
+samsungiotcloud.com
 rixcloud.com
 bbycloud.com
 shopifycloud.com
@@ -8538,6 +8780,7 @@ usatodaynetworkservice.com
 paypalservice.com
 edmontonservice.com
 bestvpnservice.com
+dellcustomerservice.com
 disqusservice.com
 attinternetservice.com
 liketwice.com
@@ -8576,6 +8819,7 @@ oneteamconference.com
 whyiwantciscotelepresence.com
 nikeconfluence.com
 sequence.com
+rsshub.email-once.com
 volvoce.com
 connectedcommerce.com
 imagineecommerce.com
@@ -8601,11 +8845,13 @@ darwinsource.com
 oxfordfirstsource.com
 bootysource.com
 xbtce.com
+vce.com
 dtvce.com
 over18arcade.com
 myfavoritearcade.com
 bloombergarcade.com
 autodeskarcade.com
+dellcomunidade.com
 autumn-jade.com
 koskade.com
 socialblade.com
@@ -8667,6 +8913,7 @@ reflectivecode.com
 adventofcode.com
 madewithcode.com
 makebettercode.com
+marscode.com
 leetcode.com
 mymmode.com
 mindnode.com
@@ -8675,6 +8922,7 @@ gcpnode.com
 nesnode.com
 delcam-electrode.com
 beatsbydrevipde.com
+claude.com
 hentaidude.com
 sexidude.com
 jerkdude.com
@@ -8700,6 +8948,7 @@ babylonbee.com
 canon-cee.com
 spendee.com
 doujin-freee.com
+mcafee.com
 buymeacoffee.com
 apigee.com
 ebookee.com
@@ -8818,9 +9067,11 @@ japanknowledge.com
 vcanedge.com
 cpedge.com
 intelserveredge.com
+dellpoweredge.com
 mirrorsedge.com
 eamirrorsedge.com
 microsoftedge.com
+longbridge.com
 lightbridge.com
 edubridge.com
 hpcatridge.com
@@ -8884,6 +9135,7 @@ evaelfie.com
 naughtysophie.com
 mayijiejie.com
 sejie.com
+huarenjie.com
 youtube-nocookie.com
 qianglie.com
 69luolie.com
@@ -9049,6 +9301,7 @@ foofle.com
 kaggle.com
 crowdtangle.com
 gogle.com
+enterprisedemo-google.com
 9to5google.com
 ggoogle.com
 withgoogle.com
@@ -9146,6 +9399,7 @@ mail.me.com
 files2me.com
 amebame.com
 3d-game.com
+api.palworldgame.com
 deadspacegame.com
 fullservicegame.com
 convrgencegame.com
@@ -9262,6 +9516,7 @@ oxfordmedicine.com
 zipcine.com
 wholesalefine.com
 hp-imagine.com
+anexia-engine.com
 pricelessmarketingengine.com
 pornsearchengine.com
 unrealengine.com
@@ -9330,6 +9585,7 @@ meteorshowersonline.com
 attwirelessonline.com
 audiomonsterbeatsonline.com
 skysportsonline.com
+atvnewsonline.com
 tibetonline.com
 dynafleetonline.com
 beats-bydreoutletonline.com
@@ -9383,6 +9639,7 @@ iamtopone.com
 forthethrone.com
 bbsone.com
 getwsone.com
+talkatone.com
 deaftone.com
 dmtone.com
 smartone.com
@@ -9480,6 +9737,8 @@ tomshardware.com
 topshareware.com
 vmware.com
 experience-vmware.com
+alienware.com
+shopalienware.com
 bioware.com
 monitorware.com
 constructware.com
@@ -9496,6 +9755,7 @@ tweaksoftware.com
 shotgunsoftware.com
 ciscosoftware.com
 hpsoftware.com
+esetsoftware.com
 thinkboxsoftware.com
 beatsbysdrbre.com
 monster-beats-by-dr-dre.com
@@ -9691,6 +9951,7 @@ disneystore.com
 bbtoystore.com
 nikefactorystore.com
 shoppercentre.com
+f-secure.com
 enemaprocedure.com
 apkpure.com
 cdnpure.com
@@ -9797,6 +10058,7 @@ yslose.com
 cloudchoose.com
 hpeclipse.com
 parse.com
+comm-verse.com
 9ineverse.com
 sl-reverse.com
 miiverse.com
@@ -9831,11 +10093,13 @@ synergyse.com
 directvrebate.com
 chaturbate.com
 awseducate.com
+symantecliveupdate.com
 hpsmartupdate.com
 synologyupdate.com
 chinagate.com
 goporngate.com
 dawngate.com
+immersivetranslate.com
 chinalawtranslate.com
 y2mate.com
 streamate.com
@@ -9885,6 +10149,7 @@ gsuite.com
 azureiotsuite.com
 hootsuite.com
 hplargeformatremote.com
+note.com
 qanote.com
 xxxtubenote.com
 simplenote.com
@@ -9936,6 +10201,7 @@ luckyissue.com
 badvirtue.com
 alivevue.com
 pearsonvue.com
+rss.wudifeixue.com
 juziyue.com
 kyoyue.com
 aave.com
@@ -9976,6 +10242,7 @@ bimbolive.com
 ciscolive.com
 sexopornolive.com
 marketolive.com
+abplive.com
 xhamsterlive.com
 c4slive.com
 transcamslive.com
@@ -10090,7 +10357,6 @@ fuckmypakistanigf.com
 seemygf.com
 1watchmygf.com
 tukif.com
-espressif.com
 half.com
 ysmelf.com
 joyourself.com
@@ -10513,6 +10779,7 @@ markzuckerberg.com
 nike-org.com
 urlborg.com
 awsloft-johannesburg.com
+rumt-sg.com
 lpsg.com
 edgedatg.com
 hottg.com
@@ -10711,6 +10978,7 @@ artcamjewelsmith.com
 afewmomentswith.com
 yo1health.com
 pastahealth.com
+samsunghealth.com
 mailhealth.com
 yahoohealth.com
 realclearhealth.com
@@ -10763,8 +11031,10 @@ taknai.com
 cherrypai.com
 magicalmirai.com
 dutrai.com
+91dasai.com
 huhaitai.com
 civitai.com
+bktai.com
 eromanga-hentai.com
 erotic-hentai.com
 animal-hentai.com
@@ -10793,6 +11063,7 @@ heavenlyhentai.com
 anyhentai.com
 joyhentai.com
 ka-wai.com
+haiwaiwai.com
 clipsaoyai.com
 bmw-motorrad-abudhabi.com
 mini-abudhabi.com
@@ -10806,6 +11077,7 @@ whynotbi.com
 ubi.com
 mubi.com
 gucci.com
+cici.com
 softbankci.com
 akamci.com
 instagramci.com
@@ -10860,6 +11132,7 @@ mantochichi.com
 eromanga-mainichi.com
 javhihi.com
 soolakhi.com
+yodobashi.com
 sankei-kurashi.com
 mingjinglishi.com
 lilaoshibushinilaoshi.com
@@ -10928,7 +11201,6 @@ catmiimi.com
 amanmi.com
 global.market.xiaomi.com
 bigtithitomi.com
-fani.com
 aziani.com
 disneyaulani.com
 pornirani.com
@@ -10964,6 +11236,7 @@ friendfeed-api.com
 dazn-api.com
 disco-api.com
 ip-api.com
+imds-api.com
 ccav691api.com
 playfabapi.com
 clubhouse.pubnubapi.com
@@ -11124,7 +11397,6 @@ javjack.com
 myfreeblack.com
 bustysammieblack.com
 slack.com
-audiomack.com
 digitalpack.com
 cuntcrack.com
 nordstromrack.com
@@ -11149,6 +11421,7 @@ pricelesspick.com
 steelbrick.com
 swissstick.com
 bytick.com
+findresultsquick.com
 ixquick.com
 airwick.com
 facebookck.com
@@ -11219,7 +11492,6 @@ duoweiweek.com
 businessweek.com
 newsweek.com
 1thek.com
-striek.com
 arabnek.com
 lockestek.com
 141-hk.com
@@ -11277,6 +11549,8 @@ tagwalk.com
 cilk.com
 annamilk.com
 facebolk.com
+agri-bank.com
+parsian-bank.com
 yomabank.com
 ayabank.com
 mabbank.com
@@ -11292,6 +11566,8 @@ mmtourismbank.com
 nptsibinbank.com
 pokemonbank.com
 kakaobank.com
+ansarbank.com
+blubank.com
 ebaybank.com
 kbzbank.com
 retweetrank.com
@@ -11320,6 +11596,7 @@ koornk.com
 nikehyperdunk.com
 uselessjunk.com
 stripskunk.com
+splunk.com
 uplynk.com
 facebo-ok.com
 fecbbok.com
@@ -11476,6 +11753,7 @@ facebzook.com
 grok.com
 monsterbeatsok.com
 tiktok.com
+lifeattiktok.com
 thottok.com
 facebuok.com
 myavok.com
@@ -11705,6 +11983,7 @@ googlecapital.com
 squarecapital.com
 intelcapital.com
 braeburncapital.com
+delltechnologiescapital.com
 swiftcapital.com
 meoriental.com
 adultrental.com
@@ -11743,6 +12022,7 @@ apk-dl.com
 dojin-dl.com
 shemalebestlabel.com
 vercel.com
+del.com
 beascoremodel.com
 javmodel.com
 nylon-angel.com
@@ -11868,7 +12148,6 @@ beatsbydrdremall.com
 cheapbeatsbydremall.com
 epochmall.com
 initiummall.com
-huaibinmall.com
 repsneakermall.com
 exxxtrasmall.com
 monsterbeatsmall.com
@@ -11888,6 +12167,8 @@ morbell.com
 cell.com
 appleiphonecell.com
 dell.com
+earthdell.com
+studiodell.com
 fbrell.com
 beatsbydre-sell.com
 telesell.com
@@ -12208,6 +12489,7 @@ kyurem.com
 compass-system.com
 amazon-adsystem.com
 ciscolearningsystem.com
+delldesignsystem.com
 paypal-hrsystem.com
 windowsuem.com
 nuuvem.com
@@ -12239,6 +12521,7 @@ nikeswim.com
 jeanyim.com
 dadazim.com
 adbkm.com
+datarouter.apps.netherrealm.com
 boobsrealm.com
 dalailamafilm.com
 danskpornofilm.com
@@ -12265,6 +12548,7 @@ knoxemm.com
 fuckimm.com
 iloveprettylolimm.com
 ablmm.com
+i-cablecomm.com
 adobetechcomm.com
 qualcomm.com
 66wwmm.com
@@ -12359,6 +12643,7 @@ bestbuygsm.com
 sinocism.com
 crittercism.com
 purenudism.com
+studybuddhism.com
 youjism.com
 adultism.com
 aliveitsm.com
@@ -12470,6 +12755,7 @@ freecamsfan.com
 advertfan.com
 brazzfan.com
 bustylornamorgan.com
+hentai-chan.com
 4chan.com
 konachan.com
 shinychan.com
@@ -12485,6 +12771,7 @@ briian.com
 shireyishunjian.com
 fabuyemian.com
 xiongpian.com
+guardarian.com
 launchpadlibrarian.com
 extraasian.com
 peeasian.com
@@ -12542,7 +12829,6 @@ bmw-pakistan.com
 justtristan.com
 tttan.com
 tianhuayuan.com
-h-ciyuan.com
 dajiyuan.com
 tmei-taoyuan.com
 bridgestonevan.com
@@ -12644,8 +12930,10 @@ blogcdn.com
 ahcdn.com
 mdhcdn.com
 xhcdn.com
+ciciaicdn.com
 bcicdn.com
 licdn.com
+uicdn.com
 ckcdn.com
 adblockcdn.com
 hautelookcdn.com
@@ -12664,6 +12952,13 @@ vimeocdn.com
 echocdn.com
 zohocdn.com
 bootstrapcdn.com
+aw-d.tripcdn.com
+ak-p.tripcdn.com
+aw-p.tripcdn.com
+ak-s.tripcdn.com
+aw-s.tripcdn.com
+akatest.tripcdn.com
+ak-s-cw.tripcdn.com
 jwpcdn.com
 doclercdn.com
 phprcdn.com
@@ -12694,6 +12989,7 @@ fsdn.com
 msdn.com
 mysdn.com
 udn.com
+nikke-en.com
 tangben.com
 51luoben.com
 itshidden.com
@@ -12770,6 +13066,7 @@ successfn.com
 adobesign.com
 aerospace-design.com
 bmw-arts-design.com
+blackmagicdesign.com
 123ddesign.com
 europeansustainabledesign.com
 autodesklivedesign.com
@@ -12861,6 +13158,7 @@ xxxpenguin.com
 bloglovin.com
 bwin.com
 cygwin.com
+clamwin.com
 apple-darwin.com
 appledarwin.com
 azuredigitaltwin.com
@@ -12918,6 +13216,7 @@ foxnewsopinion.com
 famunion.com
 videochampion.com
 enpirion.com
+dellprecision.com
 avoision.com
 newhighlandvision.com
 sonypicturestelevision.com
@@ -12968,6 +13267,7 @@ foxcorporation.com
 theconversation.com
 uploadstation.com
 livestation.com
+solutionstation.com
 woflthenewsstation.com
 artstation.com
 playstation.com
@@ -13064,6 +13364,7 @@ minimoncton.com
 foxlexington.com
 benliton.com
 getiton.com
+norton.com
 calebelston.com
 directvboston.com
 myfoxboston.com
@@ -13095,6 +13396,7 @@ watchespn.com
 banana-vpn.com
 adguard-vpn.com
 le-vpn.com
+radmin-vpn.com
 gts-vpn.com
 happy-vpn.com
 top10vpn.com
@@ -13671,6 +13973,7 @@ xxxmofo.com
 go.com
 disneyworld-go.com
 meraki-go.com
+img2go.com
 dns2go.com
 foxsports-chicago.com
 fox32chicago.com
@@ -13766,6 +14069,7 @@ xlstudio.com
 aliasvisualizationstudio.com
 airgunstudio.com
 shotgunstudio.com
+asobostudio.com
 gyatsostudio.com
 beatsbydresstudio.com
 drebeatstudio.com
@@ -14003,6 +14307,7 @@ mobilemarketo.com
 angel-gto.com
 ygto.com
 ptthito.com
+amazoncognito.com
 erito.com
 transarmuito.com
 usvimosquito.com
@@ -14115,6 +14420,7 @@ newsexwap.com
 hentaizap.com
 novinhasdozapzap.com
 twitzap.com
+fuckccp.com
 hpccp.com
 naverncp.com
 freetcp.com
@@ -14165,6 +14471,7 @@ homemadepornclip.com
 realpornclip.com
 bestpornclip.com
 deviantclip.com
+flexclip.com
 avelip.com
 pornflip.com
 thenipslip.com
@@ -14190,6 +14497,7 @@ slyip.com
 myip.com
 headphonezip.com
 vanilla-jp.com
+nikke-jp.com
 softbank-jp.com
 pandavpn-jp.com
 xvideo-jp.com
@@ -14324,6 +14632,7 @@ kingkongapp.com
 cashbycashapp.com
 pyhapp.com
 bitnamiapp.com
+pickpackapp.com
 jetfuelapp.com
 onapp.com
 threadreaderapp.com
@@ -14356,6 +14665,7 @@ dgaqp.com
 bmw-rp.com
 coincarp.com
 cloudflarewarp.com
+hotcrp.com
 facebook-corp.com
 paypal-corp.com
 navercloudcorp.com
@@ -14416,6 +14726,7 @@ seagroup.com
 epochmediagroup.com
 stormmediagroup.com
 appmediagroup.com
+mirrormediagroup.com
 galegroup.com
 cmegroup.com
 scoregroup.com
@@ -14491,6 +14802,7 @@ azathabar.com
 hentaibar.com
 signalbar.com
 ipobar.com
+furrybar.com
 iosinthecar.com
 epochcar.com
 ebaycar.com
@@ -14512,6 +14824,7 @@ mobmyanmar.com
 bmwmyanmar.com
 igsonar.com
 lionsroar.com
+cloudflareregistrar.com
 mini-qatar.com
 bmw-qatar.com
 gravatar.com
@@ -14555,8 +14868,9 @@ boardreader.com
 zhreader.com
 inoreader.com
 sosreader.com
-yomiuri-shimbun.pressreader.com
+pressreader.com
 getuploader.com
+btloader.com
 pocketbiketrader.com
 instaadder.com
 thespeeder.com
@@ -14576,6 +14890,7 @@ coolder.com
 hairyolder.com
 pornpander.com
 alvinalexander.com
+bitdefender.com
 bmw-adventskalender.com
 thepornblender.com
 adobe-audience-finder.com
@@ -14619,6 +14934,7 @@ blogger.com
 wantblogger.com
 twblogger.com
 bullogger.com
+itiger.com
 cointiger.com
 proptiger.com
 messenger.com
@@ -14652,6 +14968,7 @@ elsevier.com
 ryjer.com
 hpspeaker.com
 mousebreaker.com
+projectcircuitbreaker.com
 spreaker.com
 applefilmaker.com
 applefilmmaker.com
@@ -14706,6 +15023,7 @@ lineshoppingseller.com
 ebayseller.com
 timelinestoryteller.com
 scrolller.com
+meccontroller.com
 travelcontroller.com
 tracker.grepler.com
 parler.com
@@ -14716,6 +15034,7 @@ pahabicilemezsurprizler.com
 hentai-gamer.com
 steamygamer.com
 hornygamer.com
+framer.com
 schemer.com
 retimer.com
 yammer.com
@@ -14736,6 +15055,7 @@ sweetsinner.com
 civiliangunner.com
 i2runner.com
 nikerunner.com
+awsapprunner.com
 beatsstudiohodetelefoner.com
 whereiswerner.com
 bookclubcorner.com
@@ -14783,6 +15103,7 @@ mayauser.com
 serveuser.com
 dmuser.com
 superuser.com
+diabrowser.com
 epicbrowser.com
 kiwibrowser.com
 puffinbrowser.com
@@ -14794,6 +15115,7 @@ bangyoulater.com
 conquerwithcharacter.com
 qtweeter.com
 casquebeatsfracheter.com
+bookmeter.com
 electionsmeter.com
 ronjoneswriter.com
 ipalter.com
@@ -14807,6 +15129,7 @@ bmwperformancecenter.com
 hplatexknowledgecenter.com
 hptrainingcenter.com
 vmware-techcenter.com
+delltechcenter.com
 nextgenerationcenter.com
 hpapplicationscenter.com
 foxsmallbusinesscenter.com
@@ -14819,6 +15142,7 @@ attcenter.com
 ebayprivacycenter.com
 hp3dprinter.com
 hpallinoneprinter.com
+dellprinter.com
 emberprinter.com
 hpofficejetprinter.com
 is-a-hunter.com
@@ -14866,7 +15190,7 @@ togetter.com
 cispaletter.com
 storagenewsletter.com
 twaitter.com
-cnitter.com
+wiki.cnitter.com
 twitter.com
 ads-twitter.com
 financetwitter.com
@@ -14885,6 +15209,7 @@ naver.com
 ricefever.com
 bmw-motorrad-now-or-never.com
 ultimaforever.com
+rsshub.rssforever.com
 amateurarchiver.com
 minigrandriver.com
 hpdriver.com
@@ -14933,6 +15258,7 @@ figprayer.com
 fileflyer.com
 appsflyer.com
 bitflyer.com
+ebuyer.com
 razer.com
 respawnbyrazer.com
 deezer.com
@@ -14964,6 +15290,7 @@ hrcir.com
 timdir.com
 alkasir.com
 yssir.com
+nikke-kr.com
 ibkr.com
 flickr.com
 staticflickr.com
@@ -15024,6 +15351,7 @@ microsofttranslator.com
 charticulator.com
 globalriskregulator.com
 sexemulator.com
+flightsimulator.com
 sexsimulator.com
 familysexsimulator.com
 familysimulator.com
@@ -15146,6 +15474,7 @@ toosexyvaginas.com
 exposedlatinas.com
 8thstreetlatinas.com
 illusionas.com
+dsmynas.com
 hpgpas.com
 sanvaras.com
 xoxoteiras.com
@@ -15158,6 +15487,7 @@ imperiodefamosas.com
 default.exp-tas.com
 hairydivas.com
 famosascalvas.com
+framercanvas.com
 marranazas.com
 paypal-labs.com
 ero-labs.com
@@ -15166,9 +15496,11 @@ nianticlabs.com
 plasticlabs.com
 ccievoicelabs.com
 googlelabs.com
+github-api.arkoselabs.com
 bloomberglabs.com
 hentailabs.com
 satoshilabs.com
+sidewalklabs.com
 paypallabs.com
 qualcommlabs.com
 cnnlabs.com
@@ -15233,6 +15565,7 @@ spiritclubs.com
 headphonepubs.com
 verybs.com
 lingvodics.com
+asianfanfics.com
 mayaformotiongraphics.com
 autodeskmayaformotiongraphics.com
 bizographics.com
@@ -15299,8 +15632,6 @@ cortanaanalytics.com
 trustedanalytics.com
 achievementanalytics.com
 pixanalytics.com
-update.crashlytics.com
-firebase-settings.crashlytics.com
 geolytics.com
 oss-ap-south-1.aliyuncs.com
 oss-eu-central-1.aliyuncs.com
@@ -15409,6 +15740,7 @@ offrezdesipods.com
 ggpds.com
 pppds.com
 visacards.com
+kards.com
 adobeawards.com
 adobeexperienceawards.com
 worldemojiawards.com
@@ -15436,6 +15768,7 @@ allpasswords.com
 baywords.com
 thywords.com
 straightpornstuds.com
+familyds.com
 babes.com
 bustynudebabes.com
 elitebabes.com
@@ -15495,6 +15828,7 @@ codeforces.com
 imacsources.com
 sketchappsources.com
 slides.com
+ibkrguides.com
 drebeatsoldes.com
 blacksonblondes.com
 konachan.wjcodes.com
@@ -15571,6 +15905,7 @@ lushstories.com
 facebookstories.com
 realamericanstories.com
 oneworldmanystories.com
+offworldindustries.com
 cruel-furies.com
 amateur-pussies.com
 myfoxtwincities.com
@@ -15701,6 +16036,7 @@ best-sex-games.com
 take2games.com
 hentai2games.com
 mayagames.com
+wbgames.com
 mythicgames.com
 epicgames.com
 riotforgegames.com
@@ -15730,6 +16066,7 @@ autodeskforgames.com
 armorgames.com
 sexyhumorgames.com
 lewdvrgames.com
+warnerbrosgames.com
 lostbetsgames.com
 clitgames.com
 myclitgames.com
@@ -15757,6 +16094,7 @@ topsexygames.com
 karlajames.com
 wp-themes.com
 nsfwmemes.com
+merit-times.com
 indiatimes.com
 asiatimes.com
 chinatimes.com
@@ -15771,6 +16109,7 @@ persianepochtimes.com
 taipeitimes.com
 duoweitimes.com
 newyorktimes.com
+chinachristiantimes.com
 tehrantimes.com
 turkistantimes.com
 hindustantimes.com
@@ -16092,6 +16431,7 @@ rbmavericks.com
 gtricks.com
 html5rocks.com
 shadowsocks.com
+aastocks.com
 moodstocks.com
 swagbucks.com
 starbucks.com
@@ -16153,6 +16493,7 @@ pbworks.com
 delcamforsolidworks.com
 spiceworks.com
 imageworks.com
+dataframeworks.com
 neiworks.com
 dreamworks.com
 hsmworks.com
@@ -16409,6 +16750,7 @@ talentlens.com
 autodesklistens.com
 inkedravens.com
 mini-stjohns.com
+fifthns.com
 microsoft-sbs-domains.com
 googledomains.com
 jetbrains.com
@@ -16465,6 +16807,7 @@ neisolutions.com
 whisolutions.com
 koolsolutions.com
 microsoftpartnersolutions.com
+dellpowersolutions.com
 serialssolutions.com
 attwirelesssolutions.com
 midentsolutions.com
@@ -16585,6 +16928,7 @@ sophos.com
 abc-studios.com
 malvastudios.com
 bethesdagamestudios.com
+msgamestudios.com
 xboxgamestudios.com
 cheapbeatsdrestudios.com
 mplstudios.com
@@ -16680,6 +17024,7 @@ jetfuelapps.com
 fusionproductionapps.com
 harperapps.com
 mcdonaldsapps.com
+awsapps.com
 milsurps.com
 googlemashups.com
 groups.com
@@ -16761,6 +17106,7 @@ googlers.com
 javtrailers.com
 niketrainers.com
 dolphiners.com
+herominers.com
 hpphotoscanners.com
 hotstunners.com
 nationalgeographicpartners.com
@@ -16788,6 +17134,7 @@ hpcomputers.com
 applescreensavers.com
 experts-univers.com
 comicunivers.com
+delldrivers.com
 hpdrivers.com
 hpprinterdrivers.com
 iphone5casescovers.com
@@ -16797,6 +17144,7 @@ firstfivefollowers.com
 tiffany-towers.com
 wixanswers.com
 brazzers.com
+samsungrs.com
 realclearpublicaffairs.com
 theaffairs.com
 foreignaffairs.com
@@ -16892,6 +17240,7 @@ ea-anz-press.com
 apress.com
 strongwindpress.com
 wordpress.com
+ludepress.com
 intelfreepress.com
 cafepress.com
 nikepress.com
@@ -16905,9 +17254,11 @@ chineseupress.com
 hsm-xpress.com
 autodesk360express.com
 airwatchexpress.com
+financialexpress.com
 artcamexpress.com
 hsmexpress.com
 indianexpress.com
+newindianexpress.com
 adwordsexpress.com
 cbspressexpress.com
 viacomcbspressexpress.com
@@ -16932,6 +17283,7 @@ yingsuoss.com
 acgvipss.com
 page2rss.com
 kindle4rss.com
+rsshub.isrss.com
 ohmyrss.com
 monstercheapbeatss.com
 gs-discuss.com
@@ -16996,6 +17348,7 @@ beatsfactoroutlets.com
 dremonsterbeatsoutlets.com
 beatfactoryoutlets.com
 sciencenets.com
+ctinets.com
 desiresecrets.com
 facebookadvertisingsecrets.com
 cheapmonsterbeatsheadsets.com
@@ -17012,9 +17365,11 @@ sciencedirectassets.com
 skyassets.com
 paypal-gifts.com
 incentivetravelgifts.com
+weights.com
 erofights.com
 bmw-product-highlights.com
 bluehatnights.com
+wbinsights.com
 cloudinsights.com
 cloudflareinsights.com
 amazonauthorinsights.com
@@ -17059,6 +17414,7 @@ nowtorrents.com
 farfetch-contents.com
 autodesk-events.com
 microsoft-sap-events.com
+dellemcevents.com
 disneymeetingsandevents.com
 autodeskevents.com
 beaconevents.com
@@ -17093,6 +17449,8 @@ morphcharts.com
 spotifycharts.com
 hpsmarts.com
 ebayparts.com
+memealerts.com
+donationalerts.com
 mastercardidtheftalerts.com
 attexperts.com
 kampalaexclusiveescorts.com
@@ -17129,6 +17487,7 @@ biologists.com
 amateuroldsluts.com
 bustyoldsluts.com
 silversluts.com
+freenuts.com
 tnatryouts.com
 nike-us.com
 beats-dre-us.com
@@ -17136,6 +17495,7 @@ beatsbydre-us.com
 discountbeatsbydre-us.com
 unblock-us.com
 tiktokcdn-us.com
+rumt-us.com
 ebay-us.com
 huaren4us.com
 caus.com
@@ -17216,6 +17576,7 @@ bwhstatus.com
 protonstatus.com
 vimeostatus.com
 qstatus.com
+dockerstatus.com
 redditstatus.com
 netlifystatus.com
 shopifystatus.com
@@ -17257,6 +17618,7 @@ fox10news.com
 fox2news.com
 fox13news.com
 fox4news.com
+fx168news.com
 ucanews.com
 giganews.com
 manoramanews.com
@@ -17287,6 +17649,7 @@ dlsitenews.com
 huashangnews.com
 mingjingnews.com
 mpinews.com
+ctinews.com
 facebooknews.com
 sketchbooknews.com
 6parknews.com
@@ -17313,6 +17676,7 @@ twgreatnews.com
 bmwproductnews.com
 microsoftnews.com
 detroitnews.com
+ajunews.com
 hkatvnews.com
 dwnews.com
 nownews.com
@@ -17321,6 +17685,7 @@ foxnews.com
 chinesedailynews.com
 nydailynews.com
 newcenturynews.com
+time.windows.com
 justswallows.com
 nikeairmaxs.com
 ultraxs.com
@@ -17386,6 +17751,7 @@ chat.com
 safechat.com
 freewechat.com
 yiyechat.com
+straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 snapchat.com
 stripchat.com
 vrchat.com
@@ -17485,7 +17851,6 @@ wikifeet.com
 teamskeet.com
 bridgestonenationalfleet.com
 canadameet.com
-ysmeet.com
 discreet.com
 zfreet.com
 fifastreet.com
@@ -17531,6 +17896,7 @@ ebayvalet.com
 wallet.com
 applewallet.com
 steemitwallet.com
+trustwallet.com
 pushbullet.com
 xxxbullet.com
 beatsbydre-outlet.com
@@ -17540,6 +17906,7 @@ topbeatsbydrdreoutlet.com
 drebeatsbydreoutlet.com
 cheapbeatsbydreoutlet.com
 cheapbeatsbydrestudioutlet.com
+delloutlet.com
 beatsbydretoutlet.com
 beatsbydreforyououtlet.com
 proxlet.com
@@ -17577,6 +17944,7 @@ woolitecarpet.com
 hpbluecarpet.com
 girl-secret.com
 isasecret.com
+eset.com
 sextubeset.com
 xxxtubeset.com
 nubileset.com
@@ -17637,6 +18005,7 @@ fortuneinsight.com
 intelinsight.com
 stepsiblingscaught.com
 ggpht.com
+anexia-it.com
 beatsdrdre-it.com
 dmwait.com
 itcanwait.com
@@ -17650,6 +18019,7 @@ pornrabbit.com
 deribit.com
 blowjobit.com
 codethemicrobit.com
+upbit.com
 fitbit.com
 xxxbit.com
 bybit.com
@@ -17747,6 +18117,7 @@ askstudent.com
 marvelsdoubleagent.com
 salesforceliveagent.com
 cloudflareclient.com
+claudemcpclient.com
 attnetclient.com
 soylent.com
 splatoon2tournament.com
@@ -17755,6 +18126,7 @@ revenue-performance-management.com
 vmware-cloudmanagement.com
 appleipodsettlement.com
 app-measurement.com
+intelreimbursement.com
 lelavement.com
 cartoonmovement.com
 designsformovement.com
@@ -17769,6 +18141,7 @@ foxentertainment.com
 bloombergenvironment.com
 bloomberggovernment.com
 eu-consumer-empowerment.com
+hackharassment.com
 kakaoinvestment.com
 kakaoent.com
 msoopent.com
@@ -17776,6 +18149,7 @@ router.bittorrent.com
 tracker.openbittorrent.com
 router.utorrent.com
 ijavtorrent.com
+samsungconsent.com
 icloud-content.com
 hh-content.com
 pobl-content.com
@@ -17786,6 +18160,7 @@ kakaobankcontent.com
 microsoftpersonalcontent.com
 lfpcontent.com
 githubusercontent.com
+mcusercontent.com
 1passwordusercontent.com
 zdusercontent.com
 claudeusercontent.com
@@ -17795,6 +18170,7 @@ lolusercontent.com
 patreonusercontent.com
 notionusercontent.com
 ozonusercontent.com
+framerusercontent.com
 dropboxusercontent.com
 firefoxusercontent.com
 yusercontent.com
@@ -17881,6 +18257,9 @@ nanyangpt.com
 chatgpt.com
 lzjscript.com
 123dsculpt.com
+sigopt.com
+hitpt.com
+pt.hdupt.com
 npupt.com
 eurekavpt.com
 mini-egypt.com
@@ -17907,6 +18286,7 @@ walmart.com
 fundsupermart.com
 enfasmart.com
 hpsmart.com
+tellapart.com
 nexpart.com
 metart.com
 deviantart.com
@@ -17951,6 +18331,7 @@ hpcustomersupport.com
 razersupport.com
 fasttrackreadysupport.com
 airport.com
+miami-airport.com
 bmw-golfsport.com
 applewatchsport.com
 talksport.com
@@ -17982,6 +18363,7 @@ visamiddleeast.com
 fast.com
 indianpornfast.com
 wtfast.com
+avast.com
 dmvast.com
 nvdst.com
 gaythebest.com
@@ -18078,6 +18460,7 @@ huffpost.com
 nanyangpost.com
 bangkokpost.com
 nottinghampost.com
+christianpost.com
 huffingtonpost.com
 washingtonpost.com
 atlaspost.com
@@ -18107,6 +18490,7 @@ businesscatalyst.com
 att.com
 cobatt.com
 budatt.com
+handelsblatt.com
 pittpatt.com
 captainfawcett.com
 gannett.com
@@ -18236,6 +18620,7 @@ pornlulu.com
 pricelesshonolulu.com
 jiayoulu.com
 xinmeitulu.com
+temu.com
 yaoyaomumu.com
 gaypornmenu.com
 javmenu.com
@@ -18305,6 +18690,7 @@ huangyiyu.com
 d-fukyu.com
 liuhanyu.com
 punyu.com
+rsshub.pseudoyu.com
 guaneryu.com
 erodaizensyu.com
 wiipartyu.com
@@ -18382,6 +18768,7 @@ btbtav.com
 meetav.com
 youav.com
 dgwav.com
+newswav.com
 shyav.com
 monthlyav.com
 buzzav.com
@@ -18393,6 +18780,7 @@ battlefieldv.com
 dodv.com
 o365weve-dev.com
 pugpig-dev.com
+soup-dev.com
 swbusdev.com
 vinniev.com
 imkev.com
@@ -18489,6 +18877,7 @@ ifasttv.com
 wallsttv.com
 hulutv.com
 520avtv.com
+njavtv.com
 playshowtv.com
 newsmaxtv.com
 iransextv.com
@@ -18658,6 +19047,7 @@ bbs-tw.com
 cosfans-tw.com
 office365tw.com
 subhdtw.com
+votetw.com
 mesotw.com
 hp-ww.com
 vmwxw.com
@@ -18970,10 +19360,12 @@ cyberx.com
 fontexplorerx.com
 solveforx.com
 editorx.com
+bt4gprx.com
 fotoscaserasx.com
 videosdemadurasx.com
 mayaonosx.com
 ccpsx.com
+straitsx.com
 javsx.com
 ratx.com
 runbtx.com
@@ -19077,6 +19469,7 @@ tampabay.com
 bmwtampabay.com
 myfoxtampabay.com
 yayabay.com
+bcbay.com
 bidbay.com
 thecandidbay.com
 ebay.com
@@ -19234,6 +19627,7 @@ hentaikey.com
 nikey.com
 clinicalkey.com
 ultradonkey.com
+cpu-monkey.com
 voyeurmonkey.com
 oekakiskey.com
 robustnessiskey.com
@@ -19274,6 +19668,7 @@ storify.com
 vaultify.com
 paypal-notify.com
 spotify.com
+tospotify.com
 byspotify.com
 dreprofy.com
 thelegendarystarfy.com
@@ -19311,6 +19706,7 @@ iuksky.com
 parkansky.com
 vansky.com
 gaypornsky.com
+kaspersky.com
 sex-ly.com
 grammaly.com
 paypaly.com
@@ -19453,6 +19849,8 @@ acmetoy.com
 uusextoy.com
 voy.com
 faapy.com
+2025copy.com
+mangacopy.com
 yoursigmoidoscopy.com
 yourcolonoscopy.com
 getfappy.com
@@ -19518,6 +19916,7 @@ enemahistory.com
 realclearhistory.com
 tistory.com
 fullstory.com
+rawstory.com
 blubrry.com
 x-berry.com
 erosberry.com
@@ -19593,6 +19992,8 @@ pornfidelity.com
 autodesk-usability.com
 cloudcredibility.com
 nikeresponsibility.com
+silicon-mobility.com
+siliconmobility.com
 kakaomobility.com
 simility.com
 inhumanity.com
@@ -19601,6 +20002,7 @@ unity.com
 paypal-community.com
 adwords-community.com
 paypalcommunity.com
+dellcommunity.com
 steamcommunity.com
 pdncommunity.com
 patreoncommunity.com
@@ -19614,6 +20016,7 @@ dipity.com
 recelebrity.com
 androidauthority.com
 gmauthority.com
+pandasecurity.com
 intelsecurity.com
 cloudappsecurity.com
 intelvmwarecybersecurity.com
@@ -19630,6 +20033,7 @@ foxsportsuniversity.com
 vmwareidentity.com
 msidentity.com
 applefruity.com
+perplexity.com
 thanksloyalty.com
 paypal-merchantloyalty.com
 premiumbooty.com
@@ -19678,6 +20082,7 @@ faproxy.com
 megaproxy.com
 pdproxy.com
 gaeproxy.com
+ghproxy.com
 publishproxy.com
 wallproxy.com
 premproxy.com
@@ -19792,6 +20197,7 @@ perfectjizz.com
 youjizz.com
 pornbozz.com
 javzz.com
+rsshub.umzzz.com
 videozzz.com
 qbmengmei6.mom
 inherd.mom
@@ -19807,11 +20213,10 @@ ifuckedmy.mom
 booth.pm
 hexdocs.pm
 hex.pm
-igoogle.sm
 yahoo.sm
-igoogle.tm
 mini.tm
 intel.tm
+dell.tm
 yahoo.tm
 volvotrucks.tm
 bmw.tm
@@ -19825,7 +20230,6 @@ starbucks.com.bn
 volvotrucks.com.bn
 bmw.com.bn
 enfagrow.com.bn
-blog.syx86.cn
 edmontonchina.cn
 daxa.cn
 softonic.cn
@@ -19886,6 +20290,7 @@ apple.hn
 intel.hn
 visa.com.hn
 youtube.com.hn
+dell.com.hn
 12diasderegalosdeitunes.com.hn
 sony.com.hn
 12diasderegalosdeitunes.hn
@@ -19952,9 +20357,11 @@ mastercard.co.in
 youtube.co.in
 alphera-finance.co.in
 bridgestone.co.in
+alienware.co.in
 vanish.co.in
 airwick.co.in
 ifastfinancial.co.in
+dell.co.in
 dettol.co.in
 lizol.co.in
 qualcomm.co.in
@@ -19964,6 +20371,7 @@ pearson.co.in
 youtubego.co.in
 yahoo.co.in
 applecomputer.co.in
+ibkr.co.in
 adidas.co.in
 harpercollins.co.in
 interactivebrokers.co.in
@@ -20026,11 +20434,12 @@ pornxvideos.win
 xnxx-xxx.win
 freexxx.win
 xvideoz.win
+dell.kn
 visa.com.kn
+dell.com.kn
 dalailama.mn
 visa.mn
 youtube.mn
-igoogle.mn
 intel.mn
 impp.mn
 volvotrucks.mn
@@ -20046,8 +20455,8 @@ intel.pn
 yahoo.pn
 pornohd.porn
 youtube.sn
-igoogle.sn
 intel.sn
+dell.sn
 applestore.com.sn
 yahoo.sn
 bmw.sn
@@ -20065,6 +20474,7 @@ toutoupa1024.fun
 soirt4.fun
 xchina.fun
 nudevista.fun
+mangafunb.fun
 static.fun
 sosad.fun
 sexhd.fun
@@ -20074,7 +20484,6 @@ misskey.gamelore.fun
 pornking.fun
 ckck.fun
 letmejerk.fun
-ssm.fun
 libgen.fun
 similar-porn.fun
 shemaleporn.fun
@@ -20108,6 +20517,7 @@ youtube.vn
 shopee.vn
 archive.vn
 intel.vn
+dell.vn
 minisovietam.vn
 zim.vn
 enfa.com.vn
@@ -20140,6 +20550,7 @@ visa.com.bo
 youtube.com.bo
 apple.com.bo
 intel.com.bo
+dell.com.bo
 yahoo.com.bo
 foxsports.com.bo
 pinterest.com.bo
@@ -20196,8 +20607,10 @@ twimg.co
 maying.co
 tenglong.co
 ipodtouch.co
+saasexch.co
 codeish.co
 binancezh.co
+maxai.co
 huobi.co
 dtci.co
 bitquick.co
@@ -20209,6 +20622,7 @@ macbook.co
 facewbook.co
 ssglobal.co
 wal.co
+intel.co
 hotmail.co
 75m.co
 estudio360.com.co
@@ -20226,6 +20640,7 @@ mini.com.co
 bridgestonecomercial.com.co
 firestonecomercial.com.co
 intel.com.co
+dell.com.co
 dhlestudio.com.co
 yahoo.com.co
 12diasderegalosdeitunes.com.co
@@ -20322,16 +20737,19 @@ enfabebe.com.do
 youtube.com.do
 apple.com.do
 mini.com.do
+dell.com.do
 yahoo.com.do
 bmw.com.do
 sony.com.do
 bit.do
+linux.do
 siska.video
 tictoc.video
 banned.video
 quicktake.video
 bcove.video
 xh.video
+tubi.video
 cbsi.video
 haidan.video
 zooporn.video
@@ -20343,6 +20761,7 @@ rou.video
 whichav.video
 youngsex.video
 sexxxx.rodeo
+z-lib.fo
 archive.fo
 xing840.info
 lester850.info
@@ -20397,6 +20816,8 @@ binance.info
 connectcommerce.info
 ayshdade.info
 hgamefree.info
+smart-edge.info
+smartedge.info
 nijie.info
 azureplanetscale.info
 enemanozzle.info
@@ -20443,7 +20864,7 @@ luoli.info
 doi.info
 api.waqi.info
 sorairi.info
-tuitui.info
+bbs.tuitui.info
 terapeak.info
 lbank.info
 swiftbank.info
@@ -20501,6 +20922,7 @@ xnxxfap.info
 hoge.7jp.info
 whatsapp.info
 leaguesharp.info
+snk-corp.info
 jdavsp.info
 myftp.info
 39group.info
@@ -20529,6 +20951,7 @@ wikilivres.info
 kindleoasis.info
 porn-gratis.info
 wikileaks.info
+findbooks.info
 foxnetworks.info
 itools.info
 azure-dns.info
@@ -20620,6 +21043,7 @@ rgpub.io
 zb.io
 compose-spec.io
 deribit.cdn.prismic.io
+images.prismic.io
 fabric.io
 attic.io
 papermc.io
@@ -20647,6 +21071,7 @@ tardigrade.io
 shopee.io
 cloudimage.io
 statuspage.io
+smart-edge.io
 appbridge.io
 tailscale.io
 mathable.io
@@ -20665,6 +21090,7 @@ weverse.io
 jiuse.io
 chatterbate.io
 gate.io
+granulate.io
 live-patreon-marketing.pantheonsite.io
 openweave.io
 bcovlive.io
@@ -20678,20 +21104,24 @@ logitech.io
 itch.io
 ubuntu-touch.io
 saasexch.io
+gh.io
 geph.io
 codeish.io
 hentai.io
 nhentai.io
 tubi.io
 truefi.io
+oneapi.io
 pypi.io
 tianti.io
 bymj.io
 storj.io
+pikpak.io
 jitpack.io
 servicetalk.io
 kakaobank.io
 gitbook.io
+metamask.io
 material.io
 spatial.io
 getmdl.io
@@ -20706,6 +21136,7 @@ atom.io
 wapm.io
 terraform.io
 ipfs.eternum.io
+solscan.io
 etherscan.io
 hyperscan.io
 tracker.ipfsscan.io
@@ -20727,6 +21158,7 @@ io.io
 ouo.io
 nexo.io
 tap.io
+taptap.io
 simpleswap.io
 hp.io
 raindrop.io
@@ -20750,6 +21182,7 @@ familysimulator.io
 trezor.io
 imgur.io
 k8s.io
+opencas.io
 arukas.io
 ero-labs.io
 readthedocs.io
@@ -20802,6 +21235,7 @@ playshow.io
 bwbx.io
 cex.io
 ddex.io
+stealthex.io
 dragonex.io
 cloudlatex.io
 vday.io
@@ -20811,6 +21245,7 @@ disney.io
 statically.io
 fastly.io
 apiary.io
+storageclassmemory.io
 snap-telemetry.io
 disney.my.sentry.io
 fury.io
@@ -20824,7 +21259,6 @@ itunes.rio
 ikea.jo
 mastercard.jo
 youtube.jo
-igoogle.jo
 apple.jo
 intel.jo
 youtube.com.jo
@@ -20846,7 +21280,6 @@ minid.no
 ipod.no
 mastercard.no
 youtube.no
-igoogle.no
 apple.no
 bmw-connecteddrive.no
 vanish.no
@@ -20854,6 +21287,7 @@ mini.no
 airwick.no
 nrk.no
 pearsonclinical.no
+dell.no
 secretgarden.no
 nurofen.no
 canon.no
@@ -20895,14 +21329,16 @@ mastercard.ro
 icloud.ro
 youtube.ro
 sexguide.ro
-igoogle.ro
 apple.ro
+alienware.ro
 bmw-connecteddrive.ro
 vanish.ro
 finish.ro
 mini.ro
+rri.ro
 airwick.ro
 intel.ro
+dell.ro
 ikea.com.ro
 youtube.com.ro
 applestore.com.ro
@@ -20912,6 +21348,7 @@ certsign.ro
 canon.ro
 vfsco.ro
 yahoo.ro
+tvr.ro
 volvotrucks.ro
 strepsils.ro
 veet.ro
@@ -20978,6 +21415,7 @@ yahoo.so
 onekey.so
 area51.to
 nsfw247.to
+coffeemanga.to
 tora.to
 imdb.to
 1lib.to
@@ -20990,7 +21428,6 @@ privatehd.to
 pornwild.to
 pornworld.to
 freeomovie.to
-igoogle.to
 9anime.to
 f95zone.to
 xzone.to
@@ -21039,6 +21476,7 @@ tracker.zer0day.to
 nurgay.to
 moby.to
 gimy.to
+boosty.to
 torrentgalaxy.to
 exoticaz.to
 cinemaz.to
@@ -21055,6 +21493,7 @@ yunomi.tokyo
 seasidestory.tokyo
 visa.gp
 mini.gp
+dell.gp
 yahoo.gp
 bmw.gp
 acg.rip
@@ -21127,7 +21566,14 @@ screens-lab.jp
 giga-web.jp
 tvnaviweb.jp
 angelweb.jp
-ac.jp
+smtb.jp
+nii.ac.jp
+s2csntp.miz.nao.ac.jp
+ntp.nc.u-tokyo.ac.jp
+ntp.tut.ac.jp
+ntp1.tohoku.ac.jp
+ntp2.tohoku.ac.jp
+ntp.tohoku.ac.jp
 nicodic.jp
 adultclinic.jp
 panasonic.jp
@@ -21179,6 +21625,7 @@ bisyoujyogyaruge.topaz.ne.jp
 tegrazone.jp
 razerzone.jp
 realtype.jp
+alienware.jp
 beatsbydre.jp
 lapriere.jp
 softbankhawksstore.jp
@@ -21189,9 +21636,11 @@ dlsite.jp
 priconne-redive.jp
 bluearchive.jp
 booklive.jp
+ylive.jp
 bmw-connecteddrive.jp
 gputechconf.jp
 asdfg.jp
+bk.mufg.jp
 blogimg.jp
 nimg.jp
 simg.jp
@@ -21224,7 +21673,9 @@ bmwi.jp
 mixi.jp
 airwick.jp
 kakaotalk.jp
+a-bank.jp
 softbank.jp
+sonybank.jp
 ciscospark.jp
 ginzasonypark.jp
 paypal.jp
@@ -21233,6 +21684,7 @@ sonypcl.jp
 intel.jp
 fril.jp
 sankei-call.jp
+dell.jp
 asahicom.jp
 supadou.blogism.jp
 tasteofpremium.jp
@@ -21263,10 +21715,14 @@ sankei-eiga.co.jp
 sonystoragemedia.co.jp
 nvidia.co.jp
 tma.co.jp
+saitama-resona.co.jp
+altera.co.jp
 visa.co.jp
 kadokawa.co.jp
 morisawa.co.jp
 drweb.co.jp
+smbctb.co.jp
+smbc.co.jp
 nikkei-cnbc.co.jp
 hsbc.co.jp
 yomiuri-systec.co.jp
@@ -21277,8 +21733,8 @@ sod.co.jp
 mastercard.co.jp
 youtube.co.jp
 centervillage.co.jp
+mie.co.jp
 kindle.co.jp
-igoogle.co.jp
 apple.co.jp
 bridgestone.co.jp
 realtype.co.jp
@@ -21287,23 +21743,92 @@ excite.co.jp
 exblog.co.jp
 bloomberg.co.jp
 yomiuri-johkai.co.jp
+shonai.co.jp
 nikkei.co.jp
 sankei.co.jp
 sponichi.co.jp
+kinki.co.jp
 yomiuri.co.jp
 ryokoyomiuri.co.jp
 zakzak.co.jp
+akita-bank.co.jp
+rakuten-bank.co.jp
+chibakogyo-bank.co.jp
+tohoku-bank.co.jp
+paypay-bank.co.jp
+82bank.co.jp
+114bank.co.jp
+77bank.co.jp
+chibabank.co.jp
+tsukubabank.co.jp
+ashikagabank.co.jp
+sagabank.co.jp
+surugabank.co.jp
+fukuokabank.co.jp
+shizuokabank.co.jp
+yokohamabank.co.jp
+hiroshimabank.co.jp
+tajimabank.co.jp
+gunmabank.co.jp
+resonabank.co.jp
+aozorabank.co.jp
+yamagatabank.co.jp
+oitabank.co.jp
+awabank.co.jp
+okinawabank.co.jp
+shinwabank.co.jp
+iwatebank.co.jp
+sbishinseibank.co.jp
+tochigibank.co.jp
+juhachibank.co.jp
+daiichibank.co.jp
+yamaguchibank.co.jp
+yamanashibank.co.jp
+miyazakibank.co.jp
+tomibank.co.jp
+tottoribank.co.jp
+citibank.co.jp
+fukuibank.co.jp
+sevenbank.co.jp
+saninbank.co.jp
+nishinipponbank.co.jp
+jibunbank.co.jp
+kagobank.co.jp
+higobank.co.jp
+tohobank.co.jp
+mizuhobank.co.jp
+musashinobank.co.jp
+nantobank.co.jp
+kyotobank.co.jp
+hokutobank.co.jp
+iyobank.co.jp
+kiyobank.co.jp
+joyobank.co.jp
+toyobank.co.jp
+hokuyobank.co.jp
+kitakyushubank.co.jp
+chikubank.co.jp
+chugokubank.co.jp
+shikokubank.co.jp
+michinokubank.co.jp
+hokuetsubank.co.jp
+ryukyubank.co.jp
+shimizubank.co.jp
 sonynetwork.co.jp
 sandisk.co.jp
 sankei-digital.co.jp
 intel.co.jp
+dell.co.jp
 logicool.co.jp
 dmm.co.jp
 qualcomm.co.jp
 secom.co.jp
 alicejapan.co.jp
+ikedashinsen.co.jp
 rakuten.co.jp
 elib.maruzen.co.jp
+shigagin.co.jp
+shokochukin.co.jp
 sony-semicon.co.jp
 oricon.co.jp
 illusion.co.jp
@@ -21314,17 +21839,21 @@ amazon.co.jp
 jiyu-kobo.co.jp
 sonybo.co.jp
 nintendo.co.jp
+hyakugo.co.jp
 knowswho.co.jp
 yahoo.co.jp
 nikkeibp.co.jp
+kobe-np.co.jp
 snk-corp.co.jp
 softether.co.jp
 tver.co.jp
+tbs.co.jp
 mcdonalds.co.jp
 gettyimages.co.jp
 sony-hes.co.jp
 geocities.co.jp
 cygames.co.jp
+okinawatimes.co.jp
 japantimes.co.jp
 mcd-holdings.co.jp
 starbucks.co.jp
@@ -21340,8 +21869,11 @@ asakonet.co.jp
 digicert.co.jp
 sonyprotechnosupport.co.jp
 cybertrust.co.jp
+hokkoku.co.jp
+juroku.co.jp
 yomiuri-ryokou.co.jp
 sankei-kaihatsu.co.jp
+ogakikyoritsu.co.jp
 indies-av.co.jp
 pixiv.co.jp
 hmv.co.jp
@@ -21379,6 +21911,7 @@ xn--urs05q.jp
 uploader.jp
 businessinsider.jp
 bucketeer.jp
+bookwalker.jp
 worldflipper.jp
 tabtter.jp
 twitter.jp
@@ -21399,7 +21932,9 @@ ntp1.plala.or.jp
 ntp2.plala.or.jp
 raizoji.or.jp
 yasukuni.or.jp
+boj.or.jp
 nhk.or.jp
+nochubank.or.jp
 yomikyo.or.jp
 livedoor.jp
 wiz-s.jp
@@ -21436,6 +21971,7 @@ misskeyusercontent.jp
 tryheart.jp
 newsmart.jp
 pinterest.jp
+jp-bank.japanpost.jp
 huffingtonpost.jp
 hnext.jp
 koubaibu.jp
@@ -21593,6 +22129,7 @@ vklive.app
 50dh.app
 51mh.app
 cash.app
+yangzhi.app
 bbc-reporting-api.app
 vercel.app
 singlelogin.app
@@ -21608,8 +22145,11 @@ organicmaps.app
 omaps.app
 comments.app
 get.app
+meawallet.app
 6.pocketnet.app
 podcast.app
+jav.app
+missav.app
 coreldraw.app
 sing-box.app
 91cy.app
@@ -21627,6 +22167,7 @@ get.rsvp
 youtube.iq
 visa.mq
 mini.mq
+dell.mq
 bmw.mq
 intel.ar
 enfabebe3.com.ar
@@ -21644,6 +22185,7 @@ mini.com.ar
 bridgestonecomercial.com.ar
 firestonecomercial.com.ar
 intel.com.ar
+dell.com.ar
 espadoldettol.com.ar
 pearson.com.ar
 finishinfo.com.ar
@@ -21705,8 +22247,10 @@ pearsonclinical.com.br
 bridgestonecomercial.com.br
 firestonecomercial.com.br
 machosaonatural.com.br
+del.com.br
 intel.com.br
 finishbrasil.com.br
+dell.com.br
 womenwill.com.br
 dettol.com.br
 qualcomm.com.br
@@ -21763,6 +22307,7 @@ youtube.co.cr
 apple.co.cr
 bridgestone.co.cr
 firestone.co.cr
+alienware.co.cr
 mini.co.cr
 bridgestonecomercial.co.cr
 firestonecomercial.co.cr
@@ -21772,6 +22317,7 @@ yahoo.co.cr
 12diasderegalosdeitunes.co.cr
 bmw.co.cr
 sony.co.cr
+kemono.cr
 rutracker.cr
 12diasderegalosdeitunes.cr
 kat.cr
@@ -21802,10 +22348,10 @@ shopee.fr
 free.fr
 flecheinthepeche.fr
 kindle.fr
-igoogle.fr
 automobile.fr
 apple.fr
 radio-en-ligne.fr
+alienware.fr
 thawte.fr
 bmw-connecteddrive.fr
 info-graf.fr
@@ -21822,6 +22368,7 @@ sandisk.fr
 pearsonclinical.fr
 embl.fr
 intel.fr
+dell.fr
 dettol.fr
 qualcomm.fr
 ipod.com.fr
@@ -21887,16 +22434,18 @@ ipod.gr
 mastercard.gr
 youtube.gr
 ilife.gr
-igoogle.gr
+alienware.gr
 bmw-connecteddrive.gr
 finish.gr
 intel.gr
+dell.gr
 ikea.com.gr
 youtube.com.gr
 apple.com.gr
 iphone.com.gr
 applestore.com.gr
 mini.com.gr
+dell.com.gr
 miniso.com.gr
 starbucks.com.gr
 canon.gr
@@ -21916,6 +22465,7 @@ mastercard.hr
 youtube.hr
 apple.hr
 airwick.hr
+dell.hr
 visa.com.hr
 bmw-motorrad.com.hr
 youtube.com.hr
@@ -21924,6 +22474,7 @@ bmw-connecteddrive.com.hr
 vanish.com.hr
 finish.com.hr
 mini.com.hr
+dell.com.hr
 durex.com.hr
 nurofen.hr
 canon.hr
@@ -21933,12 +22484,43 @@ strepsils.hr
 test-ipv6.carnet.hr
 bmw.hr
 sony.hr
+rb24.ir
+day24.ir
+irna.ir
 irib.ir
+qmb.ir
 ac.ir
+arvanstorage.ir
 sharif.ir
+banksepah.ir
+cbi.ir
+edbi.ir
+ghbi.ir
+bmi.ir
+bpi.ir
+bsi.ir
+shaparak.ir
+refah-bank.ir
+shahr-bank.ir
+sinabank.ir
+mebank.ir
+enbank.ir
+karafarinbank.ir
+rqbank.ir
+sbank.ir
+tejaratbank.ir
+postbank.ir
+izbank.ir
+bim.ir
+bank-maskan.ir
 iranlms.ir
+mresalat.ir
+bankmellat.ir
+president.ir
 jtt.ir
 edu.ir
+gov.ir
+irangov.ir
 news1.kr
 ikea.kr
 flic.kr
@@ -21947,6 +22529,7 @@ youtube.kr
 apple.kr
 tegrazone.kr
 soundofhope.kr
+alienware.kr
 applestore.kr
 bmw-connecteddrive.kr
 thereallove.kr
@@ -21966,7 +22549,6 @@ youtube.co.kr
 geforce.co.kr
 jwide.co.kr
 lge.co.kr
-igoogle.co.kr
 apple.co.kr
 coinone.co.kr
 tegrazone.co.kr
@@ -21981,6 +22563,7 @@ mini.co.kr
 sandisk.co.kr
 intel.co.kr
 coinrail.co.kr
+dell.co.kr
 logosfilm.co.kr
 qualcomm.co.kr
 nexoncdn.co.kr
@@ -21994,6 +22577,7 @@ yahoo.co.kr
 lolshop.co.kr
 bmw-driving-center.co.kr
 macbookair.co.kr
+kbs.co.kr
 mcdonalds.co.kr
 leagueoflegends.co.kr
 riotgames.co.kr
@@ -22004,7 +22588,7 @@ lionhearts.co.kr
 ebaycbt.co.kr
 veet.co.kr
 korbit.co.kr
-news.mt.co.kr
+mt.co.kr
 awesomeent.co.kr
 bhent.co.kr
 lizzard.nefficient.co.kr
@@ -22031,6 +22615,7 @@ pinterest.kr
 huffingtonpost.kr
 ntdtv.kr
 posty.kr
+as.mr
 ikea.pr
 d.pr
 youtube.pr
@@ -22038,6 +22623,7 @@ ikea.com.pr
 visa.com.pr
 apple.com.pr
 intel.com.pr
+dell.com.pr
 yahoo.com.pr
 intel.sr
 yahoo.sr
@@ -22058,6 +22644,7 @@ mini.com.tr
 airwick.com.tr
 sandisk.com.tr
 intel.com.tr
+dell.com.tr
 calgon.com.tr
 canon.com.tr
 amazon.com.tr
@@ -22079,11 +22666,12 @@ sony.com.tr
 disneymagicmoments.gen.tr
 trt.net.tr
 apple.xn--fiqs8s
-igoogle.as
 yahoo.as
 apple.bs
 intel.bs
+dell.bs
 visa.com.bs
+dell.com.bs
 yahoo.bs
 bmw.bs
 wsj.jobs
@@ -22113,9 +22701,9 @@ mastercard.es
 youtube.es
 shopee.es
 kindle.es
-igoogle.es
 apple.es
 iphone.es
+alienware.es
 bmw-connecteddrive.es
 vanish.es
 finish.es
@@ -22126,10 +22714,12 @@ sandisk.es
 pearsonclinical.es
 intel.es
 enfamil.es
+dell.es
 lastfm.es
 twittertim.es
 alphera.com.es
 youtube.com.es
+alienware.com.es
 verisign.com.es
 yahoo.com.es
 miniso.com.es
@@ -22170,6 +22760,7 @@ veet.es
 microsoft.es
 unblocksit.es
 fnmt.es
+freegpt.es
 spreadshirt.es
 pinterest.es
 huffingtonpost.es
@@ -22203,7 +22794,6 @@ pzforever01.homes
 vpnrouter.homes
 maniakey.homes
 hewlettpackard.enterprises
-z-lib.gs
 intel.gs
 ip.gs
 test-ipv6.is
@@ -22214,12 +22804,12 @@ demonoid.is
 ipod.is
 icloud.is
 youtube.is
-igoogle.is
 apple.is
 pse.is
 archive.is
 rarbg.is
 mini.is
+dell.is
 avxhm.is
 unseen.is
 libgen.is
@@ -22240,6 +22830,7 @@ pincong.rocks
 opentracker.i2p.rocks
 mohu.rocks
 improd.works
+ai.ls
 airport.brussels
 discord.tools
 fastlane.tools
@@ -22252,7 +22843,6 @@ techhub.ms
 svc.ms
 wbd.ms
 hummingbird.ms
-igoogle.ms
 onestore.ms
 dictate.ms
 nyti.ms
@@ -22265,7 +22855,10 @@ jwt.ms
 1drv.ms
 gfx.ms
 sfx.ms
+smart-edge.systems
 medium.systems
+fourthns.systems
+eset.systems
 imtoken.fans
 1lib.domains
 libsolutions.domains
@@ -22275,10 +22868,12 @@ bigbeans.solutions
 generated.photos
 amateurporn.photos
 myporno.photos
-z-lib.ps
+alienware.ps
+dell.ps
 yahoo.ps
 volvotrucks.ps
 bmw.ps
+rsshub.rss.tips
 ikea.rs
 mac.rs
 imac.rs
@@ -22354,6 +22949,7 @@ livingonline.us
 visadpsonline.us
 hmovie-moe.us
 ssrshare.us
+alienware.us
 beatsbydrdre-store.us
 paypal-database.us
 anonymise.us
@@ -22383,6 +22979,7 @@ iepl.us
 bbyurl.us
 ocul.us
 ibm.us
+pmem.us
 xoom.us
 zoom.us
 p-cdn.us
@@ -22418,7 +23015,6 @@ volvobuses.us
 kindleoasis.us
 strepsils.us
 ddns.us
-authorizeddns.us
 cheapbeats.us
 twitterstat.us
 alphabet.us
@@ -22432,6 +23028,7 @@ weitt.us
 hulu.us
 jpav.us
 tiktokv.us
+skylinktv.us
 thedw.us
 tiktokw.us
 durex.us
@@ -22439,7 +23036,6 @@ appleid-applemx.us
 ebay.us
 asiatoday.us
 928.plus
-maa.plus
 pornohd.plus
 kucoin.plus
 91porn.plus
@@ -22447,7 +23043,6 @@ warp.plus
 prts.plus
 top81.ws
 shiksha.ws
-igoogle.ws
 9anime.ws
 zzdh.ws
 hunk.ws
@@ -22488,13 +23083,14 @@ vct.news
 hentai.toys
 ikea.at
 nvidia.at
+anexia.at
 bmw-motorrad.at
 mini-connected.at
 mastercard.at
 youtube.at
-igoogle.at
 apple.at
 visaeurope.at
+alienware.at
 bmw-connecteddrive.at
 fffff.at
 firech.at
@@ -22503,6 +23099,7 @@ finish.at
 mini.at
 airwick.at
 intel.at
+dell.at
 dettol.at
 shorturl.at
 spem.at
@@ -22525,6 +23122,7 @@ volvobuses.at
 starbucks.at
 volvotrucks.at
 strepsils.at
+secondns.at
 alphabet.at
 tibet.at
 veet.at
@@ -22539,10 +23137,12 @@ youtube.cat
 yahoo.cat
 microsoft.cat
 catcert.cat
+wxw.cat
 appleone.chat
 crisp.chat
 webcamgirls.chat
 rocket.chat
+simplex.chat
 hkf2023.lat
 sing4.lat
 mdr100ya.lat
@@ -22626,6 +23226,7 @@ nyaa.net
 ladybaba.net
 keiba.net
 xianba.net
+arstechnica.net
 nextechafrica.net
 lesboerotica.net
 monsterdrebeats-canada.net
@@ -22634,6 +23235,7 @@ ikea.net
 korea.net
 mujikorea.net
 sexkorea.net
+byteoversea.net
 dojinmanga.net
 poringa.net
 twidouga.net
@@ -22685,6 +23287,7 @@ aljazeera.net
 alphera.net
 1infra.net
 exxxtra.net
+wintersakura.net
 changsa.net
 apple-usa.net
 monsterdrebeats-usa.net
@@ -22702,6 +23305,7 @@ teslazta.net
 minzhuhua.net
 java.net
 coova.net
+forza.net
 pornolab.net
 gitlab.net
 theuab.net
@@ -22731,6 +23335,7 @@ javhub.net
 hentaiclub.net
 yysub.net
 hdtvb.net
+vpsxb.net
 torrentmac.net
 hkbc.net
 hsbc.net
@@ -22793,12 +23398,14 @@ igcd.net
 uploaded.net
 ungrounded.net
 dealerspeed.net
+neoforged.net
 bloodshed.net
 hpconnected.net
 tracker.ddunlimited.net
 tracker.farted.net
 akamaized.net
 azurefd.net
+ultrahd.net
 savitahd.net
 beatsbydrehd.net
 akamaihd.net
@@ -22896,7 +23503,9 @@ pornovideosfree.net
 wow-life.net
 boslife.net
 sneakerpage.net
+yandex-images.clstorage.net
 nurumassage.net
+smart-edge.net
 azureedge.net
 akamaiedge.net
 msedge.net
@@ -22909,9 +23518,11 @@ spo-msedge.net
 s-msedge.net
 t-msedge.net
 mirrorsedge.net
+yandexadexchange.net
 facebookexchange.net
 sourceforge.net
 he.net
+xsijishe.net
 streamingthe.net
 broadcasthe.net
 beatsdrdrecuffie.net
@@ -23013,6 +23624,7 @@ fzdshare.net
 slideshare.net
 cloudflare.net
 misskey-square.net
+alienware.net
 vnware.net
 civilsoftware.net
 shotgunsoftware.net
@@ -23051,6 +23663,7 @@ penchinese.net
 calgarychinese.net
 zhongguotese.net
 ebayenterprise.net
+intelrealsense.net
 wanderinghorse.net
 sexwithhorse.net
 girlfuckshorse.net
@@ -23136,6 +23749,7 @@ akamai-staging.net
 facebooklivestaging.net
 yuanming.net
 gaoming.net
+bbs.boingboing.net
 cuiweiping.net
 paypalshopping.net
 igoshopping.net
@@ -23154,6 +23768,7 @@ newlysprung.net
 fc2blog.net
 classicalguitarblog.net
 zuckerberg.net
+cyanbug.net
 escort24h.net
 al-qimmah.net
 elog-ch.net
@@ -23182,6 +23797,7 @@ buhidoh.net
 aiph.net
 milph.net
 applepaycash.net
+betterhash.net
 mudfish.net
 webrush.net
 av-th.net
@@ -23242,6 +23858,7 @@ wukangrui.net
 3tui.net
 llnwi.net
 fanqiangyakexi.net
+naixi.net
 gongyichuangyi.net
 hutianyi.net
 chuizi.net
@@ -23256,6 +23873,7 @@ wsj.net
 ied2k.net
 pornhd8k.net
 hotbak.net
+mypikpak.net
 applebk.net
 3devilattack.net
 shellcheck.net
@@ -23275,6 +23893,7 @@ kyohk.net
 naitik.net
 tex-talk.net
 cilk.net
+yandex-bank.net
 fetishbank.net
 rethink.net
 fflnk.net
@@ -23336,6 +23955,7 @@ europeansustainabledesigncouncil.net
 crossthewall.net
 breakwall.net
 supercell.net
+dell.net
 jshell.net
 bowlroll.net
 rapbull.net
@@ -23373,6 +23993,7 @@ azurecomm.net
 sb-telecom.net
 softbank-telecom.net
 test-ipv6.ke.liquidtelecom.net
+yandexcom.net
 your-freedom.net
 clearwisdom.net
 hipzoom.net
@@ -23445,6 +24066,8 @@ fbcdn.net
 forgecdn.net
 poecdn.net
 twitchcdn.net
+whcdn.net
+mubicdn.net
 dmcdn.net
 azurecomcdn.net
 daumcdn.net
@@ -23510,6 +24133,7 @@ livecoin.net
 neowin.net
 apple-darwin.net
 appledarwin.net
+pt.upxin.net
 fuyin.net
 hzmn.net
 hiveon.net
@@ -23518,6 +24142,7 @@ ironpython.net
 pearsoneducacion.net
 ebayfashion.net
 pixivision.net
+sinovision.net
 skymansion.net
 akamai-regression.net
 unification.net
@@ -23624,6 +24249,7 @@ doujin-info.net
 tibet-info.net
 faluninfo.net
 daiphapinfo.net
+picgo.net
 intelgo.net
 foxnewsgo.net
 putinho.net
@@ -23686,6 +24312,7 @@ quitccp.net
 mozgcp.net
 adultkeep.net
 bokep.net
+persgroep.net
 beatsep.net
 goldstep.net
 php.net
@@ -23788,6 +24415,7 @@ teen-lover.net
 ooklaserver.net
 yourvserver.net
 instaplayer.net
+ldplayer.net
 softlayer.net
 kompozer.net
 beatspascher-fr.net
@@ -23816,6 +24444,7 @@ jsdelivr.net
 metal.prod.atl-paas.net
 mallandrinhas.net
 falunpilipinas.net
+dsmynas.net
 tipas.net
 vewas.net
 ero-labs.net
@@ -23852,11 +24481,14 @@ javlands.net
 leagueoflegends.net
 amateurgirlfriends.net
 betaclouds.net
+familyds.net
 livejasminbabes.net
 privatemarketplaces.net
 azuresmartspaces.net
 azure-devices.net
 management-azure-devices.net
+minecraft-services.net
+msftauthimages.net
 babesandbitches.net
 akamaitechnologies.net
 applepaysupplies.net
@@ -23865,6 +24497,7 @@ girlfriendgalleries.net
 urlgalleries.net
 realamericanstories.net
 indiansexstories.net
+offworldindustries.net
 eroticbeauties.net
 japanesebeauties.net
 wifemovies.net
@@ -23932,6 +24565,7 @@ tracker.theoks.net
 wheelworks.net
 theinventionworks.net
 navisworks.net
+gmnetworks.net
 online-deals.net
 beatsblackfridaydeals.net
 sexy-models.net
@@ -24144,6 +24778,7 @@ pixnet.net
 hpbluecarpet.net
 minecraft.net
 microsoft.net
+nirsoft.net
 msft.net
 radiohilight.net
 microsoftsilverlight.net
@@ -24196,6 +24831,7 @@ horsecumshot.net
 dogcumshot.net
 riot.net
 greasespot.net
+pandapt.net
 nicept.net
 sharkpt.net
 carpt.net
@@ -24292,6 +24928,7 @@ alforattv.net
 directtv.net
 yhcw.net
 tibetanreview.net
+openreview.net
 freepornpreview.net
 javnew.net
 igfw.net
@@ -24318,11 +24955,13 @@ disneyplus.bn5x.net
 moemax.net
 hdpornmax.net
 fbsbx.net
+mradx.net
 feedx.net
 gobuildx.net
 demdex.net
 yandex.net
 torrindex.net
+naydex.net
 mucinex.net
 trydurex.net
 milfmaturesex.net
@@ -24474,6 +25113,7 @@ visa.com.gt
 mastercard.com.gt
 youtube.com.gt
 mini.com.gt
+dell.com.gt
 yahoo.com.gt
 foxsports.com.gt
 bmw.com.gt
@@ -24481,6 +25121,7 @@ sony.com.gt
 12diasderegalosdeitunes.gt
 foxsports.gt
 intel.ht
+dell.com.ht
 sr.ht
 bmw.ht
 xnxx2.it
@@ -24497,12 +25138,12 @@ mastercard.it
 youtube.it
 appbridge.it
 kindle.it
-igoogle.it
 tracker.istole.it
 apple.it
 erome.it
 flagsonline.it
 vodafone.it
+alienware.it
 justpaste.it
 skyoceanrescue.it
 bmw-connecteddrive.it
@@ -24512,6 +25153,7 @@ airwick.it
 sandisk.it
 embl.it
 intel.it
+dell.it
 nurofen.it
 pin.it
 cnn.it
@@ -24566,6 +25208,7 @@ youtube.lt
 apple.lt
 bmw-connecteddrive.lt
 intel.lt
+dell.lt
 canon.lt
 vfsco.lt
 yahoo.lt
@@ -24583,6 +25226,7 @@ hsbc.com.mt
 youtube.com.mt
 bmw-connecteddrive.com.mt
 mini.com.mt
+dell.com.mt
 canon.com.mt
 yahoo.com.mt
 bmw.com.mt
@@ -24602,9 +25246,11 @@ iphone.pt
 bmw-connecteddrive.pt
 vanish.pt
 finish.pt
+beitai.pt
 mini.pt
 airwick.pt
 enfamil.pt
+dell.pt
 dettol.pt
 ikea.com.pt
 youtube.com.pt
@@ -24650,8 +25296,10 @@ intel.st
 libgen.st
 yahoo.st
 br.st
+coomer.st
 1337x.st
 yandex.st
+111666.best
 nudevista.best
 91porn.best
 tssp.best
@@ -24671,10 +25319,12 @@ mastodon.host
 sexvideos.host
 10.tt
 db.tt
-igoogle.tt
 apple.tt
 intel.tt
+dell.tt
 visa.com.tt
+dell.com.tt
+dell.co.tt
 starbucks.tt
 ift.tt
 bmw.tt
@@ -24728,6 +25378,7 @@ vodafone.com.au
 myvodafone.com.au
 iphone.com.au
 escape.com.au
+alienware.com.au
 nikestore.com.au
 applestore.com.au
 applecentre.com.au
@@ -24755,6 +25406,7 @@ intel.com.au
 foxtel.com.au
 couriermail.com.au
 dailymail.com.au
+dell.com.au
 dettol.com.au
 bodyandsoul.com.au
 ninemediaroom.com.au
@@ -24790,6 +25442,7 @@ applepremiumreseller.com.au
 thesaturdaypaper.com.au
 geelongadvertiser.com.au
 macbookair.com.au
+ibkr.com.au
 nativeincolour.com.au
 sbs.com.au
 faronics.com.au
@@ -24863,6 +25516,7 @@ intel.cu
 fmav51.icu
 cylink0122.icu
 tracker-zhuqiy.dgj055.icu
+996.icu
 javhd.icu
 huacloud.icu
 unstable.icu
@@ -24936,6 +25590,7 @@ quicktime.eu
 xboxone.eu
 soundofhope.eu
 applecare.eu
+alienware.eu
 firewire.eu
 live.eu
 onedrive.eu
@@ -24951,6 +25606,7 @@ powerbook.eu
 pearsonclinical.eu
 intel.eu
 hotmail.eu
+dell.eu
 mature-nl.eu
 ibm.eu
 dajiyuan.eu
@@ -24972,6 +25628,7 @@ usaip.eu
 netcup.eu
 dabr.eu
 youporner.eu
+ibkr.eu
 faronics.eu
 epochtimes.eu
 bestpornsites.eu
@@ -24984,6 +25641,7 @@ cenews.eu
 nnews.eu
 martin-gebhardt.eu
 alphabet.eu
+eset.eu
 microsoft.eu
 gayforit.eu
 1passwordusercontent.eu
@@ -25022,6 +25680,7 @@ airwick.hu
 netlock.hu
 facebook.hu
 intel.hu
+dell.hu
 dettol.hu
 nurofen.hu
 pornoingyen.hu
@@ -25056,6 +25715,7 @@ visaeurope.lu
 bmw-connecteddrive.lu
 mini.lu
 intel.lu
+dell.lu
 qiwen.lu
 canon.lu
 yahoo.lu
@@ -25067,9 +25727,10 @@ sony.lu
 ipv4.tracker.harry.lu
 mini.mu
 intel.mu
+dell.mu
 hsbc.co.mu
+dell.co.mu
 bmw.mu
-igoogle.nu
 intel.nu
 yahoo.nu
 shadowsocks.nu
@@ -25105,6 +25766,7 @@ drweb.ru
 thothub.ru
 hentaicomic.ru
 fastpic.ru
+vkcloud-static.ru
 bmw-motorrad.ru
 pornocd.ru
 ipod.ru
@@ -25114,7 +25776,6 @@ ntp.fiord.ru
 crazycloud.ru
 youtube.ru
 rutube.ru
-igoogle.ru
 apple.ru
 biqle.ru
 onlyprime.ru
@@ -25139,22 +25800,27 @@ manicur4ik.ru
 kama-nk.ru
 fank.ru
 ok.ru
+kinopoisk.ru
 apples-msk.ru
 test-ipv6.ttk.ru
 vk.ru
+cdn-vk.ru
 sexfilm.al.ru
 ebaysocial.ru
 1c.premierzal.ru
 intel.ru
 mail.ru
 imgsmail.ru
+dell.ru
 dettol.ru
 com.ru
+okcdn.ru
 vkusercdn.ru
 nurofen.ru
 dzen.ru
 calgon.ru
 canon.ru
+thepoizon.ru
 ozon.ru
 vfsco.ru
 nintendo.ru
@@ -25177,6 +25843,7 @@ samair.ru
 erovizor.ru
 thecandidforum-voyeur.ru
 adidas.ru
+vk-analytics.ru
 e-goods.ru
 pornofiles.ru
 epochtimes.ru
@@ -25215,10 +25882,10 @@ momsporn.su
 bestporn.su
 xxxporn.su
 kemono.su
+coomer.su
 cooer.su
 evilx.su
 simpcity.su
-igoogle.vu
 intel.vu
 2022.dev
 go5.dev
@@ -25235,16 +25902,21 @@ pub.dev
 unlock-music.dev
 dartpad.dev
 discord.dev
+appdefensealliance.dev
 vscode.dev
 g.dev
 tg.dev
 stackpath.dev
 autodesk.dev
+vercel.dev
+intel.dev
 da3dsoul.dev
+rss.datuan.dev
 mdn.dev
 zeplin.dev
 amazon.dev
 go.dev
+deno.dev
 mdnyalp.dev
 amp.dev
 flutter.dev
@@ -25273,8 +25945,10 @@ mini-connected.lv
 icloud.lv
 youtube.lv
 apple.lv
+alienware.lv
 bmw-connecteddrive.lv
 finish.lv
+dell.lv
 ikea.com.lv
 youtube.com.lv
 alphabet.com.lv
@@ -25305,6 +25979,7 @@ house.gov
 state.gov
 bbg.gov
 nih.gov
+usagm.gov
 uspto.gov
 archives.gov
 usgs.gov
@@ -25364,6 +26039,7 @@ xhub.tv
 ccavb.tv
 geeksquad.tv
 chinauncensored.tv
+subhd.tv
 xnxxhd.tv
 touchid.tv
 kidgrid.tv
@@ -25440,6 +26116,7 @@ hentai.tv
 a-hentai.tv
 3dhentai.tv
 verhentai.tv
+tubi.tv
 kodi.tv
 nivodi.tv
 kimchi.tv
@@ -25461,6 +26138,7 @@ intel.tv
 wofl.tv
 facebookmail.tv
 liverail.tv
+dell.tv
 hongkongdoll.tv
 pypl.tv
 directvdsl.tv
@@ -25524,6 +26202,7 @@ blip.tv
 top.tv
 hopstop.tv
 whatsapp.tv
+yfsp.tv
 xgsp.tv
 showup.tv
 pvp.tv
@@ -25637,7 +26316,6 @@ hdxx.tv
 xnxx.tv
 ixnxx.tv
 sourcingforebay.tv
-thotsbay.tv
 avday.tv
 javday.tv
 goldgay.tv
@@ -25654,6 +26332,7 @@ anatomy.tv
 anybunny.tv
 hoy.tv
 javlibrary.tv
+storry.tv
 pinkpussy.tv
 avcity.tv
 torrentkitty.tv
@@ -25692,6 +26371,7 @@ yahoo.com.kw
 volvobuses.com.kw
 volvotrucks.com.kw
 intel.mw
+dell.mw
 yahoo.mw
 get.how
 devsitetest.how
@@ -25722,8 +26402,8 @@ helloss.pw
 zavat.pw
 st.luluku.pw
 six9dy.pw
-igoogle.rw
 intel.rw
+dell.rw
 yahoo.rw
 jc11.tw
 fans66.tw
@@ -25777,9 +26457,11 @@ cathvoice.org.tw
 organcare.org.tw
 hwayue.org.tw
 taiwanncf.org.tw
+sef.org.tw
 jrf.org.tw
 chtf.org.tw
 nccwatch.org.tw
+covenantswatch.org.tw
 twnorth.org.tw
 kmuh.org.tw
 wufi.org.tw
@@ -25798,6 +26480,7 @@ e-info.org.tw
 taedp.org.tw
 dpp.org.tw
 taup.org.tw
+tier.org.tw
 cahr.org.tw
 tahr.org.tw
 indsr.org.tw
@@ -25830,11 +26513,13 @@ findbook.tw
 apk.tw
 nextwork.tw
 intel.tw
+hotcool.tw
 aapl.tw
 url.tw
 shop2000.com.tw
 news100.com.tw
 yes123.com.tw
+5657.com.tw
 i69.com.tw
 twca.com.tw
 ikea.com.tw
@@ -25851,11 +26536,14 @@ lawdata.com.tw
 cnbeta.com.tw
 sunta.com.tw
 rakuya.com.tw
+sclub.com.tw
 hsbc.com.tw
 bcc.com.tw
 ddc.com.tw
 arphic.com.tw
 khmusic.com.tw
+ycrc.com.tw
+krtc.com.tw
 trtc.com.tw
 hyread.com.tw
 ipod.com.tw
@@ -25902,13 +26590,16 @@ sandisk.com.tw
 e-classical.com.tw
 nextdigital.com.tw
 intel.com.tw
+cambridge-hotel.com.tw
 igotmail.com.tw
 raidcall.com.tw
 treemall.com.tw
 momomall.com.tw
+dell.com.tw
 axbdoll.com.tw
 qgirl.com.tw
 url.com.tw
+tcmm.com.tw
 qualcomm.com.tw
 eracom.com.tw
 gvm.com.tw
@@ -25931,6 +26622,7 @@ ltn.com.tw
 famifun.com.tw
 mitao.com.tw
 krtco.com.tw
+neo.com.tw
 biggo.com.tw
 duckduckgo.com.tw
 uforadio.com.tw
@@ -25956,7 +26648,9 @@ libertytimes.com.tw
 volvobuses.com.tw
 volvotrucks.com.tw
 books.com.tw
+govbooks.com.tw
 strepsils.com.tw
+cdns.com.tw
 oikos.com.tw
 backpackers.com.tw
 cts.com.tw
@@ -25964,6 +26658,7 @@ macts.com.tw
 ltsports.com.tw
 8news.com.tw
 cdnews.com.tw
+tssdnews.com.tw
 southnews.com.tw
 taiwannews.com.tw
 ksnews.com.tw
@@ -25984,6 +26679,7 @@ bahamut.com.tw
 bnext.com.tw
 pubu.com.tw
 myav.com.tw
+cwgv.com.tw
 ctv.com.tw
 goodtv.com.tw
 ntdtv.com.tw
@@ -26013,6 +26709,7 @@ gohappy.com.tw
 mcdelivery.com.tw
 setty.com.tw
 gamez.com.tw
+osm.tw
 xianjian.tw
 focustaiwan.tw
 hwadzan.tw
@@ -26028,12 +26725,15 @@ qianmo.tw
 redino.tw
 popo.tw
 sitebro.tw
+teldap.tw
 taptap.tw
 limer.tw
+ldplayer.tw
 ipadair.tw
 murmur.tw
 twbbs.tw
 memes.tw
+digitalarchives.tw
 myjs.tw
 takens.tw
 cofacts.tw
@@ -26042,20 +26742,29 @@ technews.tw
 228.net.tw
 ebc.net.tw
 mymusic.net.tw
+taiwan.net.tw
 twbbs.net.tw
 so-net.net.tw
 hst.net.tw
+taiwanstay.net.tw
 pixnet.tw
 fpmt.tw
 student.tw
+xmart.tw
 pinterest.tw
 moptt.tw
 watchout.tw
 pubu.tw
+chardb.iis.sinica.edu.tw
+xiaoxue.iis.sinica.edu.tw
+char.iis.sinica.edu.tw
+mbct.mlc.edu.tw
 ncl.edu.tw
 npm.edu.tw
+class.tn.edu.tw
 heeact.edu.tw
 eq.ccu.edu.tw
+nqu.edu.tw
 ntu.edu.tw
 idv.tw
 gov.tw
@@ -26064,6 +26773,7 @@ dailyview.tw
 1337x.tw
 taiwansex.tw
 friday.tw
+taiwantoday.tw
 sharpdaily.tw
 amnesty.tw
 0rz.tw
@@ -26111,6 +26821,7 @@ airwick.com.mx
 bridgestonecomercial.com.mx
 firestonecomercial.com.mx
 intel.com.mx
+dell.com.mx
 lysol.com.mx
 graneodin.com.mx
 visaluxuryhotelcollection.com.mx
@@ -26269,6 +26980,7 @@ mastercard.by
 youtube.by
 mini.by
 intel.by
+dell.by
 youtube.com.by
 canon.com.by
 yahoo.by
@@ -26283,6 +26995,7 @@ visa.com.cy
 mastercard.com.cy
 bmw-connecteddrive.com.cy
 mini.com.cy
+dell.com.cy
 canon.com.cy
 starbucks.com.cy
 bmw.com.cy
@@ -26293,10 +27006,12 @@ nike.gy
 intel.gy
 visa.com.gy
 apple.com.gy
+dell.com.gy
 yahoo.gy
 dmed.technology
 dtci.technology
 visa.ky
+dell.com.ky
 bmw.com.ky
 embed.ly
 adobe.ly
@@ -26307,8 +27022,10 @@ musical.ly
 cl.ly
 intel.ly
 oreil.ly
+dell.ly
 orl.ly
 youtube.com.ly
+dell.com.ly
 yahoo.com.ly
 onion.ly
 simp.ly
@@ -26342,6 +27059,7 @@ youtube.com.my
 shopee.com.my
 apple.com.my
 fsmone.com.my
+alienware.com.my
 applestore.com.my
 bridgestonetyre.com.my
 guangming.com.my
@@ -26351,6 +27069,7 @@ vanish.com.my
 cari.com.my
 ifastcapital.com.my
 intel.com.my
+dell.com.my
 dettol.com.my
 canon.com.my
 yahoo.com.my
@@ -26394,6 +27113,7 @@ youtube.com.py
 apple.com.py
 mini.com.py
 intel.com.py
+dell.com.py
 yahoo.com.py
 miniso.com.py
 foxsports.com.py
@@ -26416,6 +27136,7 @@ appleone.community
 npm.community
 binance.charity
 chronicle.security
+rsshub.ktachibana.party
 ntc.party
 spankbang.party
 soyjak.party
@@ -26432,6 +27153,7 @@ youtube.com.uy
 apple.com.uy
 mini.com.uy
 intel.com.uy
+dell.com.uy
 pearson.com.uy
 yahoo.com.uy
 divas.com.uy
@@ -26450,8 +27172,8 @@ youngsex.sexy
 asiansex.sexy
 mastercard.az
 youtube.az
-igoogle.az
 intel.az
+dell.az
 visa.com.az
 youtube.com.az
 canon.az
@@ -26464,6 +27186,7 @@ tube.bz
 iask.bz
 visa.com.bz
 mastercard.com.bz
+dell.com.bz
 yahoo.com.bz
 test-ipv6.cz
 ikea.cz
@@ -26481,11 +27204,13 @@ starbuckscoffee.cz
 ntp.ufe.cz
 apple.cz
 9anime.cz
+alienware.cz
 bmw-connecteddrive.cz
 mini.cz
 pornuj.cz
 airwick.cz
 intel.cz
+dell.cz
 dettol.cz
 nurofen.cz
 canon.cz
@@ -26525,6 +27250,7 @@ cuebic.biz
 onmypc.biz
 world3d.biz
 xnxxhd.biz
+dscloud.biz
 boslife.biz
 adultsexgame.biz
 gr8name.biz
@@ -26533,6 +27259,7 @@ moneyhome.biz
 line.biz
 secretsline.biz
 pornshare.biz
+alienware.biz
 cleansite.biz
 xn--x-qeu1ji09tzlg.biz
 zhenxiang.biz
@@ -26598,9 +27325,9 @@ sexxxy.biz
 drweb.kz
 mastercard.kz
 youtube.kz
-igoogle.kz
 mini.kz
 kiwi.kz
+dell.kz
 visa.com.kz
 starbucks.com.kz
 canon.kz
@@ -26627,6 +27354,7 @@ ipod.co.nz
 mastercard.co.nz
 youtube.co.nz
 apple.co.nz
+alienware.co.nz
 ilecture.co.nz
 bmw-connecteddrive.co.nz
 vanish.co.nz
@@ -26634,6 +27362,7 @@ finish.co.nz
 airwick.co.nz
 ibook.co.nz
 happymeal.co.nz
+dell.co.nz
 dettol.co.nz
 berm.co.nz
 nurofen.co.nz
@@ -26662,6 +27391,7 @@ mucinex.co.nz
 durex.co.nz
 ebay.co.nz
 sony.co.nz
+rss.owo.nz
 nzchinese.net.nz
 therock.net.nz
 pinterest.nz
@@ -26670,6 +27400,7 @@ yahoo.co.tz
 miniso.co.tz
 drweb.uz
 intel.uz
+dell.uz
 canon.uz
 yahoo.co.uz
 miniso.uz
@@ -26679,6 +27410,7 @@ yandex.uz
 movie1000.xyz
 128100.xyz
 hongjie10.xyz
+rss.4040940.xyz
 lsj40.xyz
 69xx560.xyz
 exs8fkw0.xyz
@@ -26793,6 +27525,7 @@ juzige.xyz
 xiaoyaoge.xyz
 hexieshe.xyz
 apple.xyz
+zodgame.xyz
 caime.xyz
 hanime.xyz
 erolabsshare.xyz
@@ -26828,6 +27561,7 @@ ikanhm.xyz
 xxxyaom.xyz
 xnxxcom.xyz
 bondagesm.xyz
+imgschan.xyz
 ssshuqian.xyz
 mhhanman.xyz
 eroan.xyz
@@ -26858,6 +27592,7 @@ pornobrasileiro.xyz
 limbopro.xyz
 gaito.xyz
 insuyo.xyz
+fuckccp.xyz
 cnzjp.xyz
 xomfsp.xyz
 smmsp.xyz
@@ -26929,6 +27664,7 @@ shadowsky.xyz
 16fhgdty.xyz
 amigacity.xyz
 xaxy.xyz
+github.moeyy.xyz
 asiacrazy.xyz
 demfhz.xyz
 tachusz.xyz

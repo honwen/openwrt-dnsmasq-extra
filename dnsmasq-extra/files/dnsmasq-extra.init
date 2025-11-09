@@ -230,7 +230,11 @@ update() {
 	baseurl="https://raw.githubusercontent.com/honwen/openwrt-${NAME}/master/${NAME}/files"
 
 	# https://github.com/XIU2/UserScript/blob/master/GithubEnhanced-High-Speed-Download.user.js
-	if ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cn/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+	if ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cfd/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cn/https://raw.githubusercontent+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cn/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+gh-proxy.net/https://raw.githubusercontent+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cn/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cn/https://raw.githubusercontent+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+cdn.wget.la/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+cdn.wget.la/https://raw.githubusercontent+g')"
