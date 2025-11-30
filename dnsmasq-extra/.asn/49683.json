@@ -68,6 +68,22 @@
         }
       },
       {
+        "prefix": "31.25.239.0/24",
+        "ip": "31.25.239.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "MassiveGRID",
+        "description": "MassiveGRID",
+        "country_code": "DE",
+        "parent": {
+          "prefix": "31.25.236.0/22",
+          "ip": "31.25.236.0",
+          "cidr": 22,
+          "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "171.22.172.0/24",
         "ip": "171.22.172.0",
         "cidr": 24,
@@ -666,6 +682,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "31.97 ms"
+    "execution_time": "32 ms"
   }
 }

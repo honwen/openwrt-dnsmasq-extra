@@ -292,22 +292,6 @@
         }
       },
       {
-        "prefix": "42.240.255.0/24",
-        "ip": "42.240.255.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "UCLOUD-NET",
-        "description": "Shanghai UCloud Information Technology Company Limited",
-        "country_code": "CN",
-        "parent": {
-          "prefix": "42.240.128.0/17",
-          "ip": "42.240.128.0",
-          "cidr": 17,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "45.40.56.0/24",
         "ip": "45.40.56.0",
         "cidr": 24,
@@ -1332,6 +1316,38 @@
         }
       },
       {
+        "prefix": "101.237.254.0/24",
+        "ip": "101.237.254.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD-NET",
+        "description": "Shanghai UCloud Information Technology Company Limited",
+        "country_code": "CN",
+        "parent": {
+          "prefix": "101.236.0.0/14",
+          "ip": "101.236.0.0",
+          "cidr": 14,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "101.237.255.0/24",
+        "ip": "101.237.255.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "UCLOUD-NET",
+        "description": "Shanghai UCloud Information Technology Company Limited",
+        "country_code": "CN",
+        "parent": {
+          "prefix": "101.236.0.0/14",
+          "ip": "101.236.0.0",
+          "cidr": 14,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "103.14.32.0/24",
         "ip": "103.14.32.0",
         "cidr": 24,
@@ -1582,6 +1598,22 @@
         "parent": {
           "prefix": "103.210.20.0/22",
           "ip": "103.210.20.0",
+          "cidr": 22,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "103.216.100.0/24",
+        "ip": "103.216.100.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "Abhinawa-ID",
+        "description": "PT Abhinawa Sumberdaya Asia",
+        "country_code": "ID",
+        "parent": {
+          "prefix": "103.216.100.0/22",
+          "ip": "103.216.100.0",
           "cidr": 22,
           "rir_name": "APNIC",
           "allocation_status": "unknown"
@@ -10996,12 +11028,28 @@
           "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
+      },
+      {
+        "prefix": "2404:82c0:43::/48",
+        "ip": "2404:82c0:43::",
+        "cidr": 48,
+        "roa_status": "Valid",
+        "name": "UCLOUD-ID",
+        "description": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+        "country_code": "ID",
+        "parent": {
+          "prefix": "2404:82c0::/32",
+          "ip": "2404:82c0::",
+          "cidr": 32,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
       }
     ]
   },
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "287.29 ms"
+    "execution_time": "298.05 ms"
   }
 }

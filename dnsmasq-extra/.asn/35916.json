@@ -596,22 +596,6 @@
         }
       },
       {
-        "prefix": "142.171.0.0/16",
-        "ip": "142.171.0.0",
-        "cidr": 16,
-        "roa_status": "Valid",
-        "name": "TACE",
-        "description": "TELUS Communications Inc.",
-        "country_code": "CA",
-        "parent": {
-          "prefix": "142.171.0.0/16",
-          "ip": "142.171.0.0",
-          "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "142.171.0.0/17",
         "ip": "142.171.0.0",
         "cidr": 17,
@@ -624,6 +608,22 @@
           "ip": null,
           "cidr": null,
           "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "142.171.0.0/16",
+        "ip": "142.171.0.0",
+        "cidr": 16,
+        "roa_status": "Valid",
+        "name": "TACE",
+        "description": "TELUS Communications Inc.",
+        "country_code": "CA",
+        "parent": {
+          "prefix": "142.171.0.0/16",
+          "ip": "142.171.0.0",
+          "cidr": 16,
+          "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
       },
@@ -996,9 +996,9 @@
         }
       },
       {
-        "prefix": "154.218.0.0/17",
+        "prefix": "154.218.0.0/16",
         "ip": "154.218.0.0",
-        "cidr": 17,
+        "cidr": 16,
         "roa_status": "None",
         "name": "Cloud-Innovation-v4-II",
         "description": "Cloud Innovation Ltd",
@@ -1012,9 +1012,9 @@
         }
       },
       {
-        "prefix": "154.218.0.0/16",
+        "prefix": "154.218.0.0/17",
         "ip": "154.218.0.0",
-        "cidr": 16,
+        "cidr": 17,
         "roa_status": "None",
         "name": "Cloud-Innovation-v4-II",
         "description": "Cloud Innovation Ltd",
@@ -1268,22 +1268,6 @@
         }
       },
       {
-        "prefix": "178.236.228.0/24",
-        "ip": "178.236.228.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "multacom",
-        "description": "multacom",
-        "country_code": "US",
-        "parent": {
-          "prefix": "180.212.0.0/15",
-          "ip": "180.212.0.0",
-          "cidr": 15,
-          "rir_name": "APNIC",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "178.236.228.0/22",
         "ip": "178.236.228.0",
         "cidr": 22,
@@ -1296,6 +1280,22 @@
           "ip": "178.236.224.0",
           "cidr": 20,
           "rir_name": "RIPE",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "178.236.228.0/24",
+        "ip": "178.236.228.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "multacom",
+        "description": "multacom",
+        "country_code": "US",
+        "parent": {
+          "prefix": "180.212.0.0/15",
+          "ip": "180.212.0.0",
+          "cidr": 15,
+          "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
       },
@@ -1594,6 +1594,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "98.67 ms"
+    "execution_time": "63.25 ms"
   }
 }

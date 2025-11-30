@@ -836,13 +836,13 @@
         }
       },
       {
-        "prefix": "27.124.0.0/18",
+        "prefix": "27.124.0.0/24",
         "ip": "27.124.0.0",
-        "cidr": 18,
+        "cidr": 24,
         "roa_status": "Valid",
-        "name": "RCPL-SG",
-        "description": "RACKIP CONSULTANCY PTE. LTD.",
-        "country_code": "SG",
+        "name": "BGP124-0-HK",
+        "description": "BGP Network Limited Co.,Ltd",
+        "country_code": "HK",
         "parent": {
           "prefix": "27.124.0.0/18",
           "ip": "27.124.0.0",
@@ -852,13 +852,13 @@
         }
       },
       {
-        "prefix": "27.124.0.0/24",
+        "prefix": "27.124.0.0/18",
         "ip": "27.124.0.0",
-        "cidr": 24,
+        "cidr": 18,
         "roa_status": "Valid",
-        "name": "BGP124-0-HK",
-        "description": "BGP Network Limited Co.,Ltd",
-        "country_code": "HK",
+        "name": "RCPL-SG",
+        "description": "RACKIP CONSULTANCY PTE. LTD.",
+        "country_code": "SG",
         "parent": {
           "prefix": "27.124.0.0/18",
           "ip": "27.124.0.0",
@@ -2250,6 +2250,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "124.44 ms"
+    "execution_time": "110.83 ms"
   }
 }

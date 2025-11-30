@@ -372,6 +372,22 @@
         }
       },
       {
+        "prefix": "103.131.191.0/24",
+        "ip": "103.131.191.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "TTSB-MY",
+        "description": "Terabix Technologies Sdn. Bhd.",
+        "country_code": "MY",
+        "parent": {
+          "prefix": "103.131.188.0/22",
+          "ip": "103.131.188.0",
+          "cidr": 22,
+          "rir_name": "APNIC",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "103.190.232.0/24",
         "ip": "103.190.232.0",
         "cidr": 24,
@@ -1386,6 +1402,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "90.82 ms"
+    "execution_time": "50.08 ms"
   }
 }

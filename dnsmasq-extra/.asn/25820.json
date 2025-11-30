@@ -900,9 +900,9 @@
         }
       },
       {
-        "prefix": "65.49.130.0/24",
+        "prefix": "65.49.130.0/23",
         "ip": "65.49.130.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "CL-1210",
         "description": "Cluster Logic Inc",
@@ -916,9 +916,9 @@
         }
       },
       {
-        "prefix": "65.49.130.0/23",
+        "prefix": "65.49.130.0/24",
         "ip": "65.49.130.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "CL-1210",
         "description": "Cluster Logic Inc",
@@ -3786,6 +3786,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "148.74 ms"
+    "execution_time": "170.33 ms"
   }
 }

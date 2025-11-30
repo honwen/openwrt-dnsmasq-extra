@@ -3156,22 +3156,6 @@
         }
       },
       {
-        "prefix": "23.95.30.0/24",
-        "ip": "23.95.30.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "CC-23-95-30-0-24",
-        "description": "Global Cloud Line",
-        "country_code": "US",
-        "parent": {
-          "prefix": "23.94.0.0/15",
-          "ip": "23.94.0.0",
-          "cidr": 15,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "23.95.31.0/24",
         "ip": "23.95.31.0",
         "cidr": 24,
@@ -5796,22 +5780,6 @@
         }
       },
       {
-        "prefix": "23.229.112.0/22",
-        "ip": "23.229.112.0",
-        "cidr": 22,
-        "roa_status": "None",
-        "name": "SERVERMANIA-LA",
-        "description": "B2 Net Solutions Inc.",
-        "country_code": "US",
-        "parent": {
-          "prefix": "23.192.0.0/11",
-          "ip": "23.192.0.0",
-          "cidr": 11,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "23.229.112.0/24",
         "ip": "23.229.112.0",
         "cidr": 24,
@@ -5823,6 +5791,22 @@
           "prefix": "23.229.0.0/17",
           "ip": "23.229.0.0",
           "cidr": 17,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "23.229.112.0/22",
+        "ip": "23.229.112.0",
+        "cidr": 22,
+        "roa_status": "None",
+        "name": "SERVERMANIA-LA",
+        "description": "B2 Net Solutions Inc.",
+        "country_code": "US",
+        "parent": {
+          "prefix": "23.192.0.0/11",
+          "ip": "23.192.0.0",
+          "cidr": 11,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -6036,9 +6020,9 @@
         }
       },
       {
-        "prefix": "23.236.240.0/22",
+        "prefix": "23.236.240.0/24",
         "ip": "23.236.240.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "None",
         "name": "B2NETSOLUTIONS",
         "description": "B2 Net Solutions Inc.",
@@ -6052,9 +6036,9 @@
         }
       },
       {
-        "prefix": "23.236.240.0/24",
+        "prefix": "23.236.240.0/22",
         "ip": "23.236.240.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "None",
         "name": "B2NETSOLUTIONS",
         "description": "B2 Net Solutions Inc.",
@@ -7716,9 +7700,9 @@
         }
       },
       {
-        "prefix": "38.170.212.0/24",
+        "prefix": "38.170.212.0/22",
         "ip": "38.170.212.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "None",
         "name": "24SHELLS-CGNT-NET-2",
         "description": "24 SHELLS",
@@ -7732,9 +7716,9 @@
         }
       },
       {
-        "prefix": "38.170.212.0/22",
+        "prefix": "38.170.212.0/24",
         "ip": "38.170.212.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "None",
         "name": "24SHELLS-CGNT-NET-2",
         "description": "24 SHELLS",
@@ -7860,9 +7844,9 @@
         }
       },
       {
-        "prefix": "38.170.220.0/22",
+        "prefix": "38.170.220.0/24",
         "ip": "38.170.220.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "None",
         "name": "24SHELLS-CGNT-NET-2",
         "description": "24 SHELLS",
@@ -7876,9 +7860,9 @@
         }
       },
       {
-        "prefix": "38.170.220.0/24",
+        "prefix": "38.170.220.0/22",
         "ip": "38.170.220.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "None",
         "name": "24SHELLS-CGNT-NET-2",
         "description": "24 SHELLS",
@@ -8228,9 +8212,9 @@
         }
       },
       {
-        "prefix": "45.120.4.0/24",
+        "prefix": "45.120.4.0/22",
         "ip": "45.120.4.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "KETCL-HK",
         "description": "UNIT 047/F BRIGHT WAY TOWER",
@@ -8244,9 +8228,9 @@
         }
       },
       {
-        "prefix": "45.120.4.0/22",
+        "prefix": "45.120.4.0/24",
         "ip": "45.120.4.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "KETCL-HK",
         "description": "UNIT 047/F BRIGHT WAY TOWER",
@@ -8420,9 +8404,9 @@
         }
       },
       {
-        "prefix": "59.153.160.0/24",
+        "prefix": "59.153.160.0/22",
         "ip": "59.153.160.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "PIGL-HK",
         "description": "7/F, SPA CTR, NO.53-55 LOCKHART ROAD, WAN CHAI, HK",
@@ -8436,9 +8420,9 @@
         }
       },
       {
-        "prefix": "59.153.160.0/22",
+        "prefix": "59.153.160.0/24",
         "ip": "59.153.160.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "PIGL-HK",
         "description": "7/F, SPA CTR, NO.53-55 LOCKHART ROAD, WAN CHAI, HK",
@@ -8559,22 +8543,6 @@
           "prefix": "63.142.240.0/20",
           "ip": "63.142.240.0",
           "cidr": 20,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "64.20.209.0/24",
-        "ip": "64.20.209.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "WINDSTREAM-65-SOLA",
-        "description": "SolaDrive",
-        "country_code": "US",
-        "parent": {
-          "prefix": "64.20.208.0/22",
-          "ip": "64.20.208.0",
-          "cidr": 22,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -9908,6 +9876,22 @@
         }
       },
       {
+        "prefix": "67.215.240.0/24",
+        "ip": "67.215.240.0",
+        "cidr": 24,
+        "roa_status": "None",
+        "name": "HOSTP-7",
+        "description": "HostPapa",
+        "country_code": "US",
+        "parent": {
+          "prefix": "67.215.240.0/21",
+          "ip": "67.215.240.0",
+          "cidr": 21,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "67.215.241.0/24",
         "ip": "67.215.241.0",
         "cidr": 24,
@@ -10119,7 +10103,7 @@
         "prefix": "67.215.254.0/24",
         "ip": "67.215.254.0",
         "cidr": 24,
-        "roa_status": "None",
+        "roa_status": "Valid",
         "name": "HOSTP-7",
         "description": "HostPapa",
         "country_code": "US",
@@ -10676,9 +10660,9 @@
         }
       },
       {
-        "prefix": "72.57.64.0/24",
+        "prefix": "72.57.64.0/19",
         "ip": "72.57.64.0",
-        "cidr": 24,
+        "cidr": 19,
         "roa_status": "None",
         "name": null,
         "description": null,
@@ -10692,9 +10676,9 @@
         }
       },
       {
-        "prefix": "72.57.64.0/19",
+        "prefix": "72.57.64.0/24",
         "ip": "72.57.64.0",
-        "cidr": 19,
+        "cidr": 24,
         "roa_status": "None",
         "name": null,
         "description": null,
@@ -11348,9 +11332,9 @@
         }
       },
       {
-        "prefix": "72.57.104.0/23",
+        "prefix": "72.57.104.0/24",
         "ip": "72.57.104.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "None",
         "name": null,
         "description": null,
@@ -11364,9 +11348,9 @@
         }
       },
       {
-        "prefix": "72.57.104.0/24",
+        "prefix": "72.57.104.0/23",
         "ip": "72.57.104.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "None",
         "name": null,
         "description": null,
@@ -13108,22 +13092,6 @@
         }
       },
       {
-        "prefix": "104.129.6.0/23",
-        "ip": "104.129.6.0",
-        "cidr": 23,
-        "roa_status": "Valid",
-        "name": "HOSTP-7",
-        "description": "HostPapa",
-        "country_code": "US",
-        "parent": {
-          "prefix": "104.129.0.0/18",
-          "ip": "104.129.0.0",
-          "cidr": 18,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "104.129.6.0/24",
         "ip": "104.129.6.0",
         "cidr": 24,
@@ -13135,6 +13103,22 @@
           "prefix": "104.129.6.0/23",
           "ip": "104.129.6.0",
           "cidr": 23,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.129.6.0/23",
+        "ip": "104.129.6.0",
+        "cidr": 23,
+        "roa_status": "Valid",
+        "name": "HOSTP-7",
+        "description": "HostPapa",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.129.0.0/18",
+          "ip": "104.129.0.0",
+          "cidr": 18,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -13396,9 +13380,9 @@
         }
       },
       {
-        "prefix": "104.129.58.0/24",
+        "prefix": "104.129.58.0/23",
         "ip": "104.129.58.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "None",
         "name": "HOSTP-7",
         "description": "HostPapa",
@@ -13412,9 +13396,9 @@
         }
       },
       {
-        "prefix": "104.129.58.0/23",
+        "prefix": "104.129.58.0/24",
         "ip": "104.129.58.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "None",
         "name": "HOSTP-7",
         "description": "HostPapa",
@@ -15540,9 +15524,9 @@
         }
       },
       {
-        "prefix": "104.223.32.0/24",
+        "prefix": "104.223.32.0/23",
         "ip": "104.223.32.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "HOSTP-7",
         "description": "HostPapa",
@@ -15556,9 +15540,9 @@
         }
       },
       {
-        "prefix": "104.223.32.0/23",
+        "prefix": "104.223.32.0/24",
         "ip": "104.223.32.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "HOSTP-7",
         "description": "HostPapa",
@@ -15972,22 +15956,6 @@
         }
       },
       {
-        "prefix": "104.223.66.0/24",
-        "ip": "104.223.66.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HOSTP-7",
-        "description": "HostPapa",
-        "country_code": "US",
-        "parent": {
-          "prefix": "104.223.0.0/17",
-          "ip": "104.223.0.0",
-          "cidr": 17,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "104.223.66.0/23",
         "ip": "104.223.66.0",
         "cidr": 23,
@@ -15999,6 +15967,22 @@
           "prefix": "104.223.64.0/18",
           "ip": "104.223.64.0",
           "cidr": 18,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "104.223.66.0/24",
+        "ip": "104.223.66.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HOSTP-7",
+        "description": "HostPapa",
+        "country_code": "US",
+        "parent": {
+          "prefix": "104.223.0.0/17",
+          "ip": "104.223.0.0",
+          "cidr": 17,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -16052,9 +16036,9 @@
         }
       },
       {
-        "prefix": "104.223.72.0/23",
+        "prefix": "104.223.72.0/24",
         "ip": "104.223.72.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "HOSTP-7",
         "description": "HostPapa",
@@ -16068,9 +16052,9 @@
         }
       },
       {
-        "prefix": "104.223.72.0/24",
+        "prefix": "104.223.72.0/23",
         "ip": "104.223.72.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "HOSTP-7",
         "description": "HostPapa",
@@ -17382,22 +17366,6 @@
       {
         "prefix": "107.172.22.0/24",
         "ip": "107.172.22.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "CC-17",
-        "description": "HostPapa",
-        "country_code": "US",
-        "parent": {
-          "prefix": "107.172.0.0/14",
-          "ip": "107.172.0.0",
-          "cidr": 14,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "107.172.23.0/24",
-        "ip": "107.172.23.0",
         "cidr": 24,
         "roa_status": "None",
         "name": "CC-17",
@@ -19392,22 +19360,6 @@
           "ip": "107.172.0.0",
           "cidr": 14,
           "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "107.172.186.0/24",
-        "ip": "107.172.186.0",
-        "cidr": 24,
-        "roa_status": "None",
-        "name": "CC-107-172-186-0-24",
-        "description": "Global Cloud Line",
-        "country_code": "US",
-        "parent": {
-          "prefix": "111.0.0.0/10",
-          "ip": "111.0.0.0",
-          "cidr": 10,
-          "rir_name": "APNIC",
           "allocation_status": "unknown"
         }
       },
@@ -29140,9 +29092,9 @@
         }
       },
       {
-        "prefix": "121.46.80.0/22",
+        "prefix": "121.46.80.0/24",
         "ip": "121.46.80.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "HVTCL-HK",
         "description": "Tern Centre, No.237, Queen's Rd Center, Central District",
@@ -29156,9 +29108,9 @@
         }
       },
       {
-        "prefix": "121.46.80.0/24",
+        "prefix": "121.46.80.0/22",
         "ip": "121.46.80.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "Valid",
         "name": "HVTCL-HK",
         "description": "Tern Centre, No.237, Queen's Rd Center, Central District",
@@ -29232,6 +29184,22 @@
           "ip": "128.254.228.0",
           "cidr": 22,
           "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "141.11.231.0/24",
+        "ip": "141.11.231.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "NET-141-11-230-0-23",
+        "description": "NET 141 11 230 0 23",
+        "country_code": "EU",
+        "parent": {
+          "prefix": "141.11.0.0/16",
+          "ip": "141.11.0.0",
+          "cidr": 16,
+          "rir_name": "RIPE",
           "allocation_status": "unknown"
         }
       },
@@ -29440,6 +29408,22 @@
           "ip": "146.148.128.0",
           "cidr": 17,
           "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "151.245.179.0/24",
+        "ip": "151.245.179.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "NET-151-245-179-0-24",
+        "description": "Private Customer",
+        "country_code": "LT",
+        "parent": {
+          "prefix": "151.245.128.0/17",
+          "ip": "151.245.128.0",
+          "cidr": 17,
+          "rir_name": "RIPE",
           "allocation_status": "unknown"
         }
       },
@@ -29924,9 +29908,9 @@
         }
       },
       {
-        "prefix": "154.30.238.0/24",
+        "prefix": "154.30.238.0/23",
         "ip": "154.30.238.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "None",
         "name": "NET-154-30-0-0",
         "description": "This block is allocated to an organization in the ARIN",
@@ -29940,9 +29924,9 @@
         }
       },
       {
-        "prefix": "154.30.238.0/23",
+        "prefix": "154.30.238.0/24",
         "ip": "154.30.238.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "None",
         "name": "NET-154-30-0-0",
         "description": "This block is allocated to an organization in the ARIN",
@@ -29983,86 +29967,6 @@
           "prefix": "154.30.0.0/16",
           "ip": "154.30.0.0",
           "cidr": 16,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "155.94.128.0/24",
-        "ip": "155.94.128.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HOSTP-7",
-        "description": "HostPapa",
-        "country_code": "US",
-        "parent": {
-          "prefix": "155.94.128.0/17",
-          "ip": "155.94.128.0",
-          "cidr": 17,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "155.94.129.0/24",
-        "ip": "155.94.129.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HOSTP-7",
-        "description": "HostPapa",
-        "country_code": "US",
-        "parent": {
-          "prefix": "155.94.128.0/17",
-          "ip": "155.94.128.0",
-          "cidr": 17,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "155.94.130.0/24",
-        "ip": "155.94.130.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": null,
-        "description": null,
-        "country_code": null,
-        "parent": {
-          "prefix": null,
-          "ip": null,
-          "cidr": null,
-          "rir_name": null,
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "155.94.132.0/24",
-        "ip": "155.94.132.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HOSTP-7",
-        "description": "HostPapa",
-        "country_code": "US",
-        "parent": {
-          "prefix": "155.94.128.0/17",
-          "ip": "155.94.128.0",
-          "cidr": 17,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
-        "prefix": "155.94.133.0/24",
-        "ip": "155.94.133.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HOSTP-7",
-        "description": "HostPapa",
-        "country_code": "US",
-        "parent": {
-          "prefix": "155.94.128.0/17",
-          "ip": "155.94.128.0",
-          "cidr": 17,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -30239,6 +30143,22 @@
           "prefix": "157.240.0.0/16",
           "ip": "157.240.0.0",
           "cidr": 16,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "155.94.155.0/24",
+        "ip": "155.94.155.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HOSTP-7",
+        "description": "HostPapa",
+        "country_code": "US",
+        "parent": {
+          "prefix": "155.94.128.0/17",
+          "ip": "155.94.128.0",
+          "cidr": 17,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -30612,9 +30532,9 @@
         }
       },
       {
-        "prefix": "155.94.232.0/24",
+        "prefix": "155.94.232.0/23",
         "ip": "155.94.232.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "HOSTP-7",
         "description": "HostPapa",
@@ -30628,9 +30548,9 @@
         }
       },
       {
-        "prefix": "155.94.232.0/23",
+        "prefix": "155.94.232.0/24",
         "ip": "155.94.232.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "HOSTP-7",
         "description": "HostPapa",
@@ -34020,22 +33940,6 @@
         }
       },
       {
-        "prefix": "173.254.196.0/24",
-        "ip": "173.254.196.0",
-        "cidr": 24,
-        "roa_status": "Valid",
-        "name": "HOSTP-7",
-        "description": "HostPapa",
-        "country_code": "US",
-        "parent": {
-          "prefix": "173.254.192.0/18",
-          "ip": "173.254.192.0",
-          "cidr": 18,
-          "rir_name": "ARIN",
-          "allocation_status": "unknown"
-        }
-      },
-      {
         "prefix": "173.254.196.0/23",
         "ip": "173.254.196.0",
         "cidr": 23,
@@ -34047,6 +33951,22 @@
           "prefix": "173.254.196.0/22",
           "ip": "173.254.196.0",
           "cidr": 22,
+          "rir_name": "ARIN",
+          "allocation_status": "unknown"
+        }
+      },
+      {
+        "prefix": "173.254.196.0/24",
+        "ip": "173.254.196.0",
+        "cidr": 24,
+        "roa_status": "Valid",
+        "name": "HOSTP-7",
+        "description": "HostPapa",
+        "country_code": "US",
+        "parent": {
+          "prefix": "173.254.192.0/18",
+          "ip": "173.254.192.0",
+          "cidr": 18,
           "rir_name": "ARIN",
           "allocation_status": "unknown"
         }
@@ -34372,9 +34292,9 @@
         }
       },
       {
-        "prefix": "173.254.226.0/24",
+        "prefix": "173.254.226.0/23",
         "ip": "173.254.226.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "HOSTP-7",
         "description": "HostPapa",
@@ -34388,9 +34308,9 @@
         }
       },
       {
-        "prefix": "173.254.226.0/23",
+        "prefix": "173.254.226.0/24",
         "ip": "173.254.226.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "HOSTP-7",
         "description": "HostPapa",
@@ -37348,9 +37268,9 @@
         }
       },
       {
-        "prefix": "192.161.162.0/24",
+        "prefix": "192.161.162.0/23",
         "ip": "192.161.162.0",
-        "cidr": 24,
+        "cidr": 23,
         "roa_status": "Valid",
         "name": "HOSTP-7",
         "description": "HostPapa",
@@ -37364,9 +37284,9 @@
         }
       },
       {
-        "prefix": "192.161.162.0/23",
+        "prefix": "192.161.162.0/24",
         "ip": "192.161.162.0",
-        "cidr": 23,
+        "cidr": 24,
         "roa_status": "Valid",
         "name": "HOSTP-7",
         "description": "HostPapa",
@@ -41844,9 +41764,9 @@
         }
       },
       {
-        "prefix": "198.46.128.0/22",
+        "prefix": "198.46.128.0/24",
         "ip": "198.46.128.0",
-        "cidr": 22,
+        "cidr": 24,
         "roa_status": "None",
         "name": "CC-13",
         "description": "HostPapa",
@@ -41860,9 +41780,9 @@
         }
       },
       {
-        "prefix": "198.46.128.0/24",
+        "prefix": "198.46.128.0/22",
         "ip": "198.46.128.0",
-        "cidr": 24,
+        "cidr": 22,
         "roa_status": "None",
         "name": "CC-13",
         "description": "HostPapa",
@@ -45878,6 +45798,22 @@
         }
       },
       {
+        "prefix": "2605:6f0b::/32",
+        "ip": "2605:6f0b::",
+        "cidr": 32,
+        "roa_status": "Valid",
+        "name": null,
+        "description": null,
+        "country_code": null,
+        "parent": {
+          "prefix": null,
+          "ip": null,
+          "cidr": null,
+          "rir_name": null,
+          "allocation_status": "unknown"
+        }
+      },
+      {
         "prefix": "2606:6680:9::/48",
         "ip": "2606:6680:9::",
         "cidr": 48,
@@ -46138,6 +46074,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "1169.21 ms"
+    "execution_time": "1110.91 ms"
   }
 }

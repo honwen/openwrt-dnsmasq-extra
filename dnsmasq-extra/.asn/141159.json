@@ -4,13 +4,13 @@
   "data": {
     "ipv4_prefixes": [
       {
-        "prefix": "45.205.16.0/21",
+        "prefix": "45.205.16.0/24",
         "ip": "45.205.16.0",
-        "cidr": 21,
+        "cidr": 24,
         "roa_status": "Valid",
-        "name": "Cloud-Innovation-v4-I",
-        "description": "Cloud Innovation Ltd",
-        "country_code": "MU",
+        "name": "Vapeline_Technology",
+        "description": "Vapeline Technology",
+        "country_code": "US",
         "parent": {
           "prefix": "45.192.0.0/12",
           "ip": "45.192.0.0",
@@ -20,13 +20,13 @@
         }
       },
       {
-        "prefix": "45.205.16.0/24",
+        "prefix": "45.205.16.0/21",
         "ip": "45.205.16.0",
-        "cidr": 24,
+        "cidr": 21,
         "roa_status": "Valid",
-        "name": "Vapeline_Technology",
-        "description": "Vapeline Technology",
-        "country_code": "US",
+        "name": "Cloud-Innovation-v4-I",
+        "description": "Cloud Innovation Ltd",
+        "country_code": "MU",
         "parent": {
           "prefix": "45.192.0.0/12",
           "ip": "45.192.0.0",
@@ -489,6 +489,6 @@
   "@meta": {
     "time_zone": "UTC",
     "api_version": 1,
-    "execution_time": "33.95 ms"
+    "execution_time": "29.56 ms"
   }
 }
