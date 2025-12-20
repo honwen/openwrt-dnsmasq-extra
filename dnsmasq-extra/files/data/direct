@@ -48,6 +48,7 @@ xbiquge.la
 zhubajie.la
 zine.la
 wukong.la
+xuexi.la
 icbc.com.la
 zhentan.la
 yiruan.la
@@ -115,7 +116,6 @@ xs7.cc
 wr88.cc
 ziliao8.cc
 zhibo8.cc
-zqvip8.cc
 yh99.cc
 mp4ba.cc
 xyda.cc
@@ -147,7 +147,6 @@ xedge.cc
 yinge.cc
 yqxsge.cc
 xcape.cc
-winpe.cc
 mshare.cc
 ziyuanshare.cc
 ncore.cc
@@ -224,7 +223,9 @@ wmnetwork.cc
 yswebportal.cc
 xtal.cc
 xwgl.cc
+ydhl.cc
 xn--sgt856gbjl.cc
+wpurl.cc
 wsurl.cc
 halyul.cc
 ylwl.cc
@@ -251,6 +252,7 @@ zhihuicn.cc
 yunlucn.cc
 zbgarden.cc
 wallhaven.cc
+windesign.cc
 wjin.cc
 yoolin.cc
 wjnin.cc
@@ -297,6 +299,7 @@ ddos.cc
 xpgps.cc
 1years.cc
 wss.cc
+ysts.cc
 youplus.cc
 yqxs.cc
 ys.cc
@@ -331,6 +334,7 @@ zgysw.cc
 ynwww.cc
 yqzww.cc
 yqwxw.cc
+yzw.cc
 zkx.cc
 yybox.cc
 zntx.cc
@@ -354,6 +358,7 @@ ztxz.cc
 open.cd
 yancloud.red
 zhangkai.red
+winds.red
 anw.red
 zun.gd
 zikao.gd
@@ -434,7 +439,6 @@ xinya.me
 xslb.me
 xnb.me
 wmpic.me
-yooc.me
 wsxc.me
 500d.me
 simplecd.me
@@ -533,6 +537,7 @@ xingtan.one
 zichen.zone
 wss.zone
 tuna.moe
+wind.moe
 xn--y8jhmm6gn.moe
 ops.moe
 uuu.moe
@@ -546,7 +551,9 @@ xsser.date
 xcpapa.site
 xn--dll-8n0e103bz5hg93c.site
 zhangrc.site
+xmgod.site
 zhuoyigame.site
+xunxiang.site
 yuteng.site
 xiangming.site
 ziying.site
@@ -554,6 +561,7 @@ zhouweitong.site
 xmzsyg.site
 xiaohuochai.site
 wtkj.site
+yykj.site
 zhuoyitm.site
 xuejian.site
 xiaojian.site
@@ -562,6 +570,7 @@ xcgogo.site
 cf-ns.site
 yituliu.site
 cloud-industry-delivery.site
+xn--wxtr44c.live
 xiaomai.live
 xiazai.live
 yaya.love
@@ -569,6 +578,7 @@ xitang.love
 zhubai.love
 youliao.love
 xn--ehq647i.xn--j6w193g
+yl.ag
 www.cg
 xiaoma.wang
 txidc.wang
@@ -622,7 +632,6 @@ xiaomisa.org
 zgc-bigdata.org
 zanata.org
 zjsta.org
-xinhua.org
 zhejianglab.org
 wta-web.org
 xmulib.org
@@ -635,6 +644,7 @@ zgdlzb.org
 wswebpic.org
 wuzhenwic.org
 xdjc.org
+zxinc.org
 btsync.org
 chinesemooc.org
 cnmooc.org
@@ -685,6 +695,7 @@ mengniang.org
 zhiqiang.org
 cnlang.org
 kechuang.org
+zaoyang.org
 xiaofeng.org
 xuancheng.org
 yingjiesheng.org
@@ -694,6 +705,7 @@ osapublishing.org
 yasking.org
 wping.org
 yangwenlong.org
+xiaoxiaotong.org
 b3log.org
 ustclug.org
 zhyg.org
@@ -703,6 +715,7 @@ atatech.org
 leturich.org
 ybzzgh.org
 sqqnh.org
+xzqh.org
 zjfish.org
 wwenglish.org
 cerambath.org
@@ -725,7 +738,6 @@ yunqi.org
 xilinsi.org
 yucui.org
 mdui.org
-zhaoxi.org
 yiyuanyi.org
 yishuzi.org
 zhjj.org
@@ -764,7 +776,6 @@ yuchuan.org
 yihuan.org
 zhengquan.org
 anquan.org
-zquan.org
 yunsuan.org
 zyxuan.org
 zhuiwan.org
@@ -773,6 +784,7 @@ nim-lang-cn.org
 xbrl-cn.org
 znlcn.org
 archlinuxcn.org
+wswebcdn.org
 wscloudcdn.org
 zhangmen.org
 wuhanopen.org
@@ -810,7 +822,6 @@ shssp.org
 ntp.org
 zldq.org
 ylrq.org
-x33yq.org
 nowcoder.org
 zjwater.org
 yellowriver.org
@@ -874,7 +885,6 @@ zyedu.org
 zzyedu.org
 woaidu.org
 zaidu.org
-yodu.org
 guigu.org
 yungu.org
 luogu.org
@@ -894,6 +904,7 @@ xchjw.org
 zgkjw.org
 zjckw.org
 zhsw.org
+zjsw.org
 zgyxsw.org
 zjgwyw.org
 xqhzw.org
@@ -1051,6 +1062,7 @@ xn--3bs35yfl6bn8a.ink
 yijia.ink
 ycc.ink
 ylc.ink
+wind.ink
 zootope.ink
 wuse.ink
 wittf.ink
@@ -1262,6 +1274,7 @@ cnbeta.com
 zhengjifb.com
 xn--55qw7biqf7g3d004h8yuw1ctrt04sep1cjfb.com
 zyfb.com
+ydadmob.com
 yhadmob.com
 xjrb.com
 ylrb.com
@@ -1272,6 +1285,7 @@ zyrb.com
 yzrb.com
 pterclub.com
 yltvb.com
+yfbzb.com
 yongjiezb.com
 xbfzb.com
 xjfzb.com
@@ -1284,6 +1298,7 @@ zmzb.com
 xyrbszb.com
 yxttzb.com
 xztzb.com
+win7xzb.com
 jtamac.com
 yfmac.com
 guoxinmac.com
@@ -1345,7 +1360,6 @@ zjipc.com
 xnnpc.com
 zhiduopc.com
 ydyspc.com
-zmtpc.com
 lotpc.com
 xn--rhq112dhez17bejdyhl55dypc.com
 8btc.com
@@ -1355,7 +1369,6 @@ iknowwhatyoudownload.com
 cm.steampowered.com
 larsonlimited.com
 zs-united.com
-x86android.com
 eoeandroid.com
 yueyueworld.com
 16rd.com
@@ -1539,6 +1552,7 @@ swallow.apple.com
 www.apple.com
 xydcname.com
 yunduncname.com
+yuncname.com
 wj-time.com
 btime.com
 zftime.com
@@ -1610,6 +1624,7 @@ xdrig.com
 wxwtblg.com
 ykplg.com
 zlg.com
+youpinimg.com
 orayimg.com
 bcyimg.com
 yeyimg.com
@@ -1671,6 +1686,7 @@ chaoxing.com
 aichaoxing.com
 yunmoxing.com
 xueerxing.com
+xiaolachuxing.com
 xiaomachuxing.com
 didichuxing.com
 xiaopinchuxing.com
@@ -1688,12 +1704,12 @@ xpsheying.com
 xdxialingying.com
 clouddongying.com
 xiongying.com
-yihubaiying.com
 xinrongshiying.com
 youzhiying.com
 zjdianying.com
 yandianying.com
 wnlproyunying.com
+xiaoying.com
 woying.com
 zwying.com
 xzcblog.com
@@ -1734,16 +1750,18 @@ zjyingcai.com
 zhongcai.com
 wxzhongcai.com
 xitongzongcai.com
-xinbaicai.com
+winbaicai.com
 yunshanmeicai.com
 youzhicai.com
 yingyinglicai.com
 wukonglicai.com
 ssjlicai.com
+yiqicai.com
 yicai.com
 yuyicai.com
 xlcai.com
 zhongpujiancai.com
+xiaotiancai.com
 xiherencai.com
 xintairencai.com
 yunzhirencai.com
@@ -1795,6 +1813,7 @@ yuchai.com
 cloudshanghai.com
 zhaihai.com
 yuzhenhai.com
+xueshuwenhai.com
 yuanhuixinhai.com
 ytxinhai.com
 yinhai.com
@@ -1809,8 +1828,10 @@ wufangzhai.com
 wolizhai.com
 xingyizhai.com
 xuezizhai.com
+yzjiaozhai.com
 zhuzhai.com
 youzhai.com
+yicaiai.com
 xiangqiai.com
 xtiai.com
 xiangyiai.com
@@ -1835,6 +1856,7 @@ yioulai.com
 xadamai.com
 zhidemai.com
 youdemai.com
+jinritemai.com
 yuntemai.com
 worldbangmai.com
 yunkuaimai.com
@@ -1863,7 +1885,6 @@ wudangpai.com
 ketangpai.com
 yinchengpai.com
 xingpai.com
-yunyingpai.com
 aipai.com
 paipai.com
 meipai.com
@@ -1935,6 +1956,7 @@ xingyuhuwai.com
 muwai.com
 zkyai.com
 bazai.com
+win8xiazai.com
 youxiaxiazai.com
 greenxiazai.com
 zizizaizai.com
@@ -1984,7 +2006,6 @@ xxchenghui.com
 xinminghui.com
 zhiyinghui.com
 wuzhoudonghui.com
-yingyonghui.com
 yaokaihui.com
 youweihui.com
 yishihui.com
@@ -2019,6 +2040,7 @@ youquhui.com
 jiasuhui.com
 hnyuyuhui.com
 miui.com
+xiangrikui.com
 lanzoui.com
 xuenarui.com
 berui.com
@@ -2032,6 +2054,7 @@ winsui.com
 xsui.com
 getui.com
 yuyuetui.com
+yiwangtui.com
 zangtui.com
 zhitui.com
 yixintui.com
@@ -2052,6 +2075,7 @@ hr-welink.com
 womailink.com
 ycigilink.com
 wisiyilink.com
+asklink.com
 eolink.com
 pkoplink.com
 zystarlink.com
@@ -2093,6 +2117,7 @@ aliwork.com
 zbjwork.com
 yopwork.com
 jamanetwork.com
+youjingnetwork.com
 playstationnetwork.com
 sonyentertainmentnetwork.com
 zxtnetwork.com
@@ -2103,7 +2128,6 @@ yuntask.com
 todesk.com
 enterdesk.com
 wxdesk.com
-winvk.com
 bytedsocial.com
 world3dmodel.com
 yjsmodel.com
@@ -2152,6 +2176,7 @@ rlcdn.com
 intercomcdn.com
 qiniudn.com
 zhongtefamen.com
+yuexiamen.com
 yeemen.com
 zhangmen.com
 wsimen.com
@@ -2161,6 +2186,21 @@ yihaomen.com
 yhwomen.com
 yidumen.com
 yuanhaomumen.com
+ymailcampaign.com
+zikui-design.com
+ysaedesign.com
+qqgamedesign.com
+yijuedesign.com
+wuhancityofdesign.com
+lkkdesign.com
+xicaodesign.com
+zcodesign.com
+xwhodesign.com
+zhimodesign.com
+xztdesign.com
+xblsign.com
+youxinsign.com
+zqsign.com
 360in.com
 z2chain.com
 yuhucoldchain.com
@@ -2177,6 +2217,7 @@ yourbin.com
 yeecin.com
 docin.com
 xdocin.com
+windin.com
 zaodin.com
 yuhein.com
 xinyuanfin.com
@@ -2199,7 +2240,6 @@ yiwangdujin.com
 yonglin.com
 zhongzhilin.com
 airguilin.com
-yuanlin.com
 wzlijingyuanlin.com
 wsyuanlin.com
 yuanqisenlin.com
@@ -2237,7 +2277,6 @@ zhikongyangpin.com
 xingpin.com
 yikuaipin.com
 xunjieshipin.com
-xiuxianshipin.com
 ytshipin.com
 zhipin.com
 bosszhipin.com
@@ -2254,6 +2293,7 @@ zhaopin.com
 yinhangzhaopin.com
 alizhaopin.com
 yizhaopin.com
+ylzhaopin.com
 yiyuanzhaopin.com
 xuexiaozhaopin.com
 zhengerpin.com
@@ -2272,13 +2312,16 @@ yinyangresin.com
 zlsin.com
 zzsin.com
 ztestin.com
+win-haoxiang-win.com
 310win.com
+win10win.com
 zcwin.com
 yiqiwin.com
 ykwin.com
 xxlwin.com
 ynwin.com
 youyouwin.com
+winbywin.com
 xin.com
 xiejiaxin.com
 ycnaxin.com
@@ -2352,6 +2395,7 @@ yxdown.com
 0daydown.com
 mydown.com
 zydown.com
+yorentown.com
 yoyotown.com
 zhuzhutown.com
 wtown.com
@@ -2392,11 +2436,13 @@ yzygo.com
 aardio.com
 wooomooo.com
 zwcuo.com
+yaduo.com
 yangkeduo.com
 xiaokeduo.com
 youxiduo.com
 xinmanduo.com
 xinduo.com
+xiaoyiduoduo.com
 yulinduoduo.com
 pinduoduo.com
 yiqibuduoduo.com
@@ -2473,10 +2519,8 @@ zhichiwangluo.com
 zhongbenwangluo.com
 zezhenwangluo.com
 wnluo.com
-youxituoluo.com
 xiaohuabuluo.com
 wuyabuluo.com
-xitongbuluo.com
 yunshibuluo.com
 xjbuluo.com
 zybuluo.com
@@ -2553,6 +2597,7 @@ zggroups.com
 winhealthgroups.com
 thomsonreuters.com
 yihedoors.com
+windfonts.com
 drivergenius.com
 ourdvs.com
 wssvs.com
@@ -2605,6 +2650,7 @@ xuebangsoft.com
 zhishangsoft.com
 zhuozhengsoft.com
 kingsoft.com
+zookingsoft.com
 yingsoft.com
 xunlongsoft.com
 ygsoft.com
@@ -2615,6 +2661,7 @@ zhiweisoft.com
 zhishisoft.com
 alisoft.com
 yimisoft.com
+yuntisoft.com
 yiyisoft.com
 zlsoft.com
 zg-imsoft.com
@@ -2649,6 +2696,7 @@ zsxsoft.com
 iplaysoft.com
 yyzsoft.com
 yzzsoft.com
+ztqft.com
 jfrft.com
 zft.com
 zhbit.com
@@ -2821,11 +2869,11 @@ zhuayou.com
 zhuceyou.com
 qeeyou.com
 tieyou.com
-yeyou.com
 yifengliangyou.com
 wuxishuangyou.com
 zxyingyangyou.com
 xianchengyou.com
+yqmengyou.com
 pengyou.com
 zzlongyou.com
 xmmeiyou.com
@@ -2937,6 +2985,7 @@ douyutv.com
 isxtv.com
 ydylmtytv.com
 cztv.com
+znztv.com
 zhengfalaw.com
 xblaw.com
 xhclaw.com
@@ -3088,7 +3137,6 @@ zhgjx.com
 xuhongjx.com
 yongjx.com
 zgxzhjx.com
-xinweijx.com
 zjzjjx.com
 dcdkjx.com
 wydljx.com
@@ -3157,6 +3205,7 @@ xkpx.com
 yykpx.com
 yxmspx.com
 yzftpx.com
+xwpx.com
 zjswxpx.com
 ymhzpx.com
 yjhbqx.com
@@ -3215,11 +3264,13 @@ xinli001wx.com
 xmnjdwx.com
 zckdwx.com
 aldwx.com
+zdwx.com
 muyewx.com
 zfwx.com
 yizhengwx.com
 xiazaiwx.com
 zaiweiwx.com
+wifiwx.com
 xgkwx.com
 xadlwx.com
 wlwx.com
@@ -3545,6 +3596,7 @@ zzwl.info
 yetianlian.info
 yunchuan.info
 yiruan.info
+wswebcdn.info
 zhouxiaoben.info
 wuxin.info
 zjun.info
@@ -3608,6 +3660,8 @@ ziyou.studio
 icbc.com.mo
 0o0.ooo
 lifan.ooo
+windows10.pro
+windows11.pro
 youda.pro
 chua.pro
 yanglong.pro
@@ -3641,6 +3695,7 @@ yunmc.vip
 zhunc.vip
 xcdngyc.vip
 druid.vip
+wineworld.vip
 zfile.vip
 yudiangame.vip
 cloudsite.vip
@@ -3666,6 +3721,7 @@ yunbook.vip
 uucl.vip
 zhouql.vip
 zlwl.vip
+yl.vip
 xkyl.vip
 zkyl.vip
 wm-dream.vip
@@ -3682,6 +3738,7 @@ zhaibao.vip
 youfubao.vip
 yckceo.vip
 yto.vip
+zicp.vip
 xcdntp.vip
 yyddss.vip
 ykkpict.vip
@@ -3698,6 +3755,7 @@ zhutix.vip
 zdwx.vip
 zhylwx.vip
 yyzy-play.vip
+yutongplay.vip
 xxpay.vip
 youzuanmy.vip
 yiz.vip
@@ -3736,6 +3794,7 @@ houxu.app
 cupfox.app
 zkhb.group
 zakc.group
+wincome.group
 icbcbr.com.br
 yaoji.center
 yooojie.monster
@@ -3771,7 +3830,6 @@ worldhub.market
 blogjava.net
 xjrb.net
 wnrb.net
-yxrb.net
 msecnd.net
 office.net
 wooffice.net
@@ -3793,6 +3851,7 @@ luckysf.net
 iluckysf.net
 msauth.net
 playstation.net
+wifivpn.net
 cdn.hockeyapp.net
 newasp.net
 init-p01md-lb.push-apple.com.akadns.net
@@ -3889,6 +3948,7 @@ epicgames.dev
 zhihu.dev
 b23.tv
 hy233.tv
+wo186.tv
 panda.tv
 ytmedia.tv
 xiaoka.tv
@@ -3926,7 +3986,9 @@ zhaobenshan.tv
 morethan.tv
 ziyuan.tv
 163cn.tv
+xiawen.tv
 quanmin.tv
+yuyin.tv
 fun.tv
 acfun.tv
 maoyun.tv
@@ -3998,6 +4060,7 @@ zdnscloud.biz
 cmf.biz
 zhaoming.biz
 yuzhong.biz
+xxghh.biz
 yuanbei.biz
 yuansouti.biz
 xinrui.biz
@@ -4090,6 +4153,7 @@ yjswsht.xyz
 ywit.xyz
 xyzttt.xyz
 zhemu.xyz
+wlnnosu.xyz
 zhaqtuu.xyz
 yongyu.xyz
 xzdabyw.xyz
