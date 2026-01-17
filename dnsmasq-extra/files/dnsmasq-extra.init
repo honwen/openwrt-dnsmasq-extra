@@ -364,6 +364,7 @@ homeproxy() {
 
 	# hiject homeproxy
 	grep -qE 'dnsmasq-extra *homeproxy' /etc/init.d/homeproxy || {
+		sed '/no-resolv/d' -i /etc/init.d/homeproxy
 		# sed '/start_service/a\\t/etc/init.d/dnsmasq-extra homeproxy || :' -i /etc/init.d/homeproxy
 		sed '/dnsmasq *restart/i\\t\t/etc/init.d/dnsmasq-extra homeproxy || :' -i /etc/init.d/homeproxy
 	}
