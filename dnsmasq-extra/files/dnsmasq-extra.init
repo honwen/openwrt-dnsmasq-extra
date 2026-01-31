@@ -116,7 +116,8 @@ start() {
 	}
 
 	echo -n "CUSTOM" && {
-		echo "all-servers" >${TARGET}/misc_custom.conf
+		echo "no-poll" >${TARGET}/misc_custom.conf
+		echo "all-servers" >>${TARGET}/misc_custom.conf
 
 		# https://github.com/coolsnowwolf/lede/tree/master/package/network/services/dnsmasq/patches
 		for filter in $(uci_get_by_type ${NAME} general filters); do
@@ -357,13 +358,14 @@ homeproxy() {
 
 	ln -sf /etc/dnsmasq-extra.d/chnroute.txt "${HP_DIR}/resources/china_ip4.txt"
 	zcat /etc/dnsmasq-extra.d/gfwlist.gz >"${HP_DIR}/resources/gfw_list.txt"
-	zcat /etc/dnsmasq-extra.d/direct.gz >"${HP_DIR}/resources/direct_list.txt"
+	zcat /etc/dnsmasq-extra.d/direct.gz | grep -vE '^\.' >"${HP_DIR}/resources/direct_list.txt"
 	uci_get_by_type ${NAME} general direct_domains | sed 's+  *+\n+g' >>"${HP_DIR}/resources/direct_list.txt"
 	sed '/^server=127/d' -i $TARGET/../dnsmasq-homeproxy.d/redirect-dns.conf 2>/dev/null || :
 	# rm -f $TARGET/../dnsmasq-homeproxy.d/redirect-dns.conf
 
 	# hiject homeproxy
 	grep -qE 'dnsmasq-extra *homeproxy' /etc/init.d/homeproxy || {
+		sed '/no-resolv/d' -i /etc/init.d/homeproxy
 		# sed '/start_service/a\\t/etc/init.d/dnsmasq-extra homeproxy || :' -i /etc/init.d/homeproxy
 		sed '/dnsmasq *restart/i\\t\t/etc/init.d/dnsmasq-extra homeproxy || :' -i /etc/init.d/homeproxy
 	}

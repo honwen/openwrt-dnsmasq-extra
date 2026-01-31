@@ -213,6 +213,8 @@ EOF
 
 curl_githubusercontent https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf | awk -F'/' '{print $2}' >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/apple.txt >>direct.new
+# curl_githubusercontent https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/refs/heads/release/direct-list.txt | grep -vE '^regexp:' | sed 's+.*:++g' >>direct.new
+curl_githubusercontent https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/refs/heads/release/direct-tld-list.txt >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/tencent >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/alibaba >>direct.new
 curl_githubusercontent https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/bytedance >>direct.new
@@ -241,6 +243,7 @@ sed '/google/d; /gstatic/d; /youtube/d; /^android/d;' -i direct.new
 sed '/ocsp/d; /akamai/d; /aws/d' -i direct.new
 sed '/sci-hub/d; /scihub/d; /gitbook/d' -i direct.new
 sed '/ebay/d; /lazada/d; /yandex/d' -i direct.new
+sed '/ip-api.com/d' -i direct.new
 cat adblock gfwlist >direct.blacklist
 sed "$start,99999d" direct >>direct.blacklist
 sed 's+\.+\\.+g' -i direct.blacklist
