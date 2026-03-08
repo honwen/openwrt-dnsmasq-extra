@@ -235,10 +235,14 @@ update() {
 		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.it/https://raw.githubusercontent+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cfd/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cfd/https://raw.githubusercontent+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+gh.catmak.name/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+gh.catmak.name/https://raw.githubusercontent+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+gh.ddlc.top/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+gh.ddlc.top/https://raw.githubusercontent+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cn/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghproxy.cn/https://raw.githubusercontent+g')"
-	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+cdn.wget.la/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
-		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+cdn.wget.la/https://raw.githubusercontent+g')"
+	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+ghfast.top/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
+		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+ghfast.top/https://raw.githubusercontent+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+wget.la/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
 		baseurl="$(echo $baseurl | sed 's+raw.githubusercontent+wget.la/https://raw.githubusercontent+g')"
 	elif ${_CURL} "$(echo $baseurl | sed 's+raw.githubusercontent+github.geekery.cn/https://raw.githubusercontent+g')/dnsmasq-extra.conf" | grep -q 'plugins'; then
@@ -269,6 +273,39 @@ update() {
 	fi
 	update_sub 'direct.gz' "$baseurl"
 	update_others "$baseurl"
+	update_init "$baseurl"
+}
+
+update_init() {
+	file="/etc/init.d/dnsmasq-extra"
+	ts=$(date '+%s')
+	src="${1:-"https://raw.githubusercontent.com/honwen/openwrt-${NAME}/master/${NAME}/files"}/dnsmasq-extra.init"
+
+	newHash=$(${_CURL} "${src}.md5sum?${ts}" | sed 's/ .*//g')
+	[ -e $file ] && {
+		oldHash=$(md5sum ${file} 2>/dev/null | sed 's/ .*//g')
+		# echo $oldHash $newHash
+
+		echo "$newHash" | grep -qF '404:' && echo "# $file NOT Needed Updated" && return 0
+		[ "Z$oldHash" = "Z" -o "Z$newHash" = "Z" ] && return 1
+		[ "$oldHash" = "$newHash" ] && echo "# $file NOT Needed Updated" && return 0
+
+		bak="/tmp/${sub}.backup"
+		cp -f "${file}" "${bak}"
+	}
+
+	$(echo "${_CURL}" | sed 's|max-time[ 0-9]*|max-time 150 |g') "${src}?${ts}" -o ${file}
+	oldHash=$(md5sum "${file}" 2>/dev/null | sed 's/ .*//g')
+	[ "Z$oldHash" = "Z$newHash" ] && {
+		echo "# ${file} Updated"
+		rm -f "${bak}"
+		return 0
+	}
+
+	echo "# $file is broken, failsafe Now!"
+	rm -f "${file}"
+	cp -f "${bak}" "${file}" || cp -f "/rom${file}" "${file}"
+	rm -f "${bak}"
 }
 
 update_others() {
@@ -298,6 +335,7 @@ update_sub() {
 		oldHash=$(md5sum ${file} 2>/dev/null | sed 's/ .*//g')
 		# echo $oldHash $newHash
 
+		echo "$newHash" | grep -qF '404:' && echo "# $file NOT Needed Updated" && return 0
 		[ "Z$oldHash" = "Z" -o "Z$newHash" = "Z" ] && return 1
 		[ "$oldHash" = "$newHash" ] && echo "# $file NOT Needed Updated" && return 0
 
