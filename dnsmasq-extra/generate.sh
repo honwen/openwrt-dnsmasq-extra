@@ -275,6 +275,10 @@ for it in $srcs; do
 	md5sum $it | tee $it.md5sum
 	md5sum $it.gz | tee $it.gz.md5sum
 done
+(
+	cd $_path/files
+	md5sum dnsmasq-extra.init | tee dnsmasq-extra.init.md5sum
+)
 # ------------------ gzip ------------------
 
 # ----------- ShadowrocketEx.conf ----------
@@ -293,6 +297,7 @@ sed '/./,$!d' -i $_path/.shadowrocket/*list.conf
 curl_githubusercontent https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/docs/03.shadowsocks_tiny.conf >$_path/.shadowrocket/tiny.conf
 sed '/always-real-ip/d' -i $_path/.shadowrocket/tiny.conf
 sed '/^dns-server/a always-real-ip = *' -i $_path/.shadowrocket/tiny.conf
+sed 's/^ipv6 =.*/ipv6 = true/g' -i $_path/.shadowrocket/tiny.conf
 # ----------- ShadowrocketEx.conf ----------
 
 cd -
