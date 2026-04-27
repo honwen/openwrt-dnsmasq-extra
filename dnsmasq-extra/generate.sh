@@ -84,17 +84,11 @@ time cidr-merger <<-EOF >chnroute.txt.new
 	70.39.176.0/21
 	38.244.0.0/18
 
-	$(for it in 3462 9269 9381 25820 31898 35916 36352 45090 45102 48266 49683 64050 132203 132591 135377 136038 136907 138915 141159; do
+	$(for it in 3462 9269 9381 25820 31898 35916 36352 45090 45102 48266 49683 51847 64050 132203 132591 135377 136038 136907 138915 141159; do
 		echo >&2 "ASN$it"
 
 		curl_githubusercontent https://raw.githubusercontent.com/ipverse/as-ip-blocks/refs/heads/master/as/$it/ipv4-aggregated.txt | grep -vE '^#' | grep -v ':'
 
-		# curl_githubusercontent https://raw.githubusercontent.com/cbuijs/ipasn/refs/heads/master/asn/as$it.list | grep -vE '^#' | grep -v ':'
-
-		# curl -skSL -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64)' --speed-limit 50000 --speed-time 90 https://api.bgpview.io/asn/$it/prefixes | jq . >../../.asn/$it.json
-		# sleep 44
-
-		jq -r '.data.ipv4_prefixes[]|.prefix' ../../.asn/$it.json
 	done)
 EOF
 

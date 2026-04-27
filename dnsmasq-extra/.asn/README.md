@@ -1,2 +1,0 @@
-- Data Source: https://api.bgpview.io/asn/<asn-id>/prefixes
-- `Fri Nov  7 00:00:00 UTC 2025`
