@@ -228,37 +228,37 @@ start_service() {
 				server 118.118.118.118 -group cdn -exclude-default-group
 				server-tcp 118.118.118.118 -group cdn -exclude-default-group
 
-				domain-rules /360buyimg.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /aicdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /alicdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /bootcdn.net/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /douyincdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /douyinliving.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /pstatp.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /ixigua.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /douyinvod.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /elemecdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /momentcdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /qcloudcdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /qihucdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /qiniucdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /sogoucdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /taobaocdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /tmall.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /tbcdn.cn/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /tbcdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /vpgcdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /weibocdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /xmcdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /xycdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /yecdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /qtlcdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /mwcname.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /alikunlun.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /ks-cdn.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /zhimg.com/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /qpic.cn/ -nameserver cdn -speed-check-mode tcp:443,ping
-				domain-rules /pddpic.com/ -nameserver cdn -speed-check-mode tcp:443,ping
+				domain-rules /360buyimg.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /aicdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /alicdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /bootcdn.net/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /douyincdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /douyinliving.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /pstatp.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /ixigua.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /douyinvod.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /elemecdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /momentcdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /qcloudcdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /qihucdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /qiniucdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /sogoucdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /taobaocdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /tmall.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /tbcdn.cn/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /tbcdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /vpgcdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /weibocdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /xmcdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /xycdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /yecdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /qtlcdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /mwcname.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /alikunlun.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /ks-cdn.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /zhimg.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /qpic.cn/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
+				domain-rules /pddpic.com/ -nameserver cdn -speed-check-mode tcp-syn:443,ping
 			EOF
 		}
 
