@@ -8,7 +8,7 @@ crontab /etc/crontabs/root
 
 # firewall.extra.include
 echo "/etc/init.d/dnsmasq-extra rules" >/etc/dnsmasq-extra.d/firewall.include
-uci -q batch <<-EOF >/dev/null
+which uci >/dev/null 2>&1 && uci -q batch <<-EOF >/dev/null
 	delete firewall.dnsmasq_extra
 	set firewall.dnsmasq_extra=include
 	set firewall.dnsmasq_extra.type=script
@@ -18,6 +18,6 @@ EOF
 
 # chinadns_chnroute.txt
 [ -f /etc/chinadns_chnroute.txt ] ||
-	ln -sf /etc/dnsmasq-extra.d/chnroute.txt /etc/chinadns_chnroute.txt
+  ln -sf /etc/dnsmasq-extra.d/chnroute.txt /etc/chinadns_chnroute.txt
 
 exit 0
