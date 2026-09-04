@@ -84,7 +84,7 @@ time cidr-merger <<-EOF >chnroute.txt.new
 	70.39.176.0/21
 	38.244.0.0/18
 
-	$(for it in 3462 9269 9381 25820 31898 35916 36352 45090 45102 48266 49683 51847 64050 132203 132591 135377 136038 136907 138915 141159; do
+	$(for it in 3462 9269 9381 25820 31898 35916 36352 45090 45102 48266 49683 51847 64050 132203 132591 135377 136038 136907 137718 138915 141159; do
 		echo >&2 "ASN$it"
 
 		curl_githubusercontent https://raw.githubusercontent.com/ipverse/as-ip-blocks/refs/heads/master/as/$it/ipv4-aggregated.txt | grep -vE '^#' | grep -v ':'
@@ -142,6 +142,7 @@ echo 'ess.apple.com' >>gfwlist
 echo 'push.apple.com' >>gfwlist
 curl_githubusercontent https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/OpenAI.list |
 	grep -v 'KEYWORD' | grep '^DOMAIN' | awk -F',' '{print $2}' >>gfwlist
+awk '!seen[$0]++' gfwlist >gfwlist.dedup && mv -f gfwlist.dedup gfwlist
 # ------------------ gfwlist ------------------
 
 # ------------------ gfwlist.lite ------------------
@@ -240,7 +241,6 @@ sed '/ebay/d; /lazada/d; /yandex/d' -i direct.new
 sed '/ip-api.com/d' -i direct.new
 cat adblock gfwlist >direct.blacklist
 sed "$start,99999d" direct >>direct.blacklist
-sed 's+\.+\\.+g' -i direct.blacklist
 grep -Fv -f direct.blacklist direct.new >direct.sum
 
 echo >&2 "# direct.sum"

@@ -283,7 +283,7 @@ is_date_stamp() {
 # Uses git ls-remote (no rate limit) with GitHub API fallback.
 # Returns the tag name as-is (caller handles prefix stripping).
 github_latest_tag() {
-    local owner_repo="$1" hint_prefix="${2:-}"
+    local owner_repo="$1" hint_prefix="${2:-}" hint_shape="${3:-}"
     local tag="" all_tags=""
 
     # ── method 1: git ls-remote ──────────────────────────────────────────
@@ -294,11 +294,22 @@ github_latest_tag() {
         | grep -vE '(rc|alpha|beta|dev|pre|canary|nightly|not-quite|test|experimental|unstable|draft)' || true)
 
     if [[ -n "$all_tags" ]]; then
-        # First, try to match version-like tags (digits or v+digit)
-        tag=$(echo "$all_tags" \
-            | grep -E '^(v?[0-9]|[0-9])' \
-            | sort -V | tail -1 2>/dev/null || true)
-        tag="${tag:-}"
+        # First, prefer tags matching the current version's shape (e.g. vYYYY.MMDD),
+        # so legacy tags in a different format (v20220524) don't win sort -V
+        if [[ -n "$hint_shape" ]]; then
+            tag=$(echo "$all_tags" \
+                | grep -E "^${hint_shape}$" \
+                | sort -V | tail -1 2>/dev/null || true)
+            tag="${tag:-}"
+        fi
+
+        # Next, try to match version-like tags (digits or v+digit)
+        if [[ -z "$tag" ]]; then
+            tag=$(echo "$all_tags" \
+                | grep -E '^(v?[0-9]|[0-9])' \
+                | sort -V | tail -1 2>/dev/null || true)
+            tag="${tag:-}"
+        fi
 
         # If no numeric tags, try the hint prefix (e.g., "Release", "build-")
         if [[ -z "$tag" ]] && [[ -n "$hint_prefix" ]]; then
@@ -352,12 +363,53 @@ github_head_commit() {
         | head -1
 }
 
+# Get the UTC committer date (YYYY-MM-DD) of a commit via the GitHub API.
+# Prints "" on failure (caller falls back to TODAY_DASH).
+github_commit_date() {
+    local owner_repo="$1" commit="$2"
+    local curl_opts=(-s -f -L --connect-timeout 10 --max-time 15)
+    local header=()
+    [[ -n "${GITHUB_TOKEN:-}" ]] && header=(-H "Authorization: Bearer ${GITHUB_TOKEN}")
+    local resp
+    resp=$(curl "${curl_opts[@]}" "${header[@]}" \
+        "${GITHUB_API}/repos/${owner_repo}/commits/${commit}" 2>/dev/null) || true
+    [[ -z "$resp" ]] && { echo ""; return 0; }
+    local date
+    date=$(echo "$resp" | grep -m1 -A3 '"committer"' | grep -m1 '"date"' | sed 's/.*"date": *"\([^"]*\)".*/\1/')
+    [[ -z "$date" ]] && date=$(echo "$resp" | grep -m1 '"date"' | sed 's/.*"date": *"\([^"]*\)".*/\1/')
+    echo "${date%%T*}"
+}
+
 # Get the commit hash for a specific tag from git ls-remote.
+# Annotated tags are dereferenced (refs/tags/X^{}) to the commit they point to.
 github_tag_commit() {
     local owner_repo="$1" tag="$2"
-    git ls-remote --tags "https://github.com/${owner_repo}.git" "refs/tags/${tag}" 2>/dev/null \
-        | awk '{print $1}' \
-        | head -1
+    local out commit
+    # Query the tag and its ^{} peel explicitly: an exact tag pattern alone
+    # does not return the deref line of annotated tags
+    out=$(git ls-remote --tags "https://github.com/${owner_repo}.git" "refs/tags/${tag}^{}" "refs/tags/${tag}" 2>/dev/null)
+    commit=$(echo "$out" | grep -F '^{}' | awk '{print $1}' | head -1)
+    [[ -z "$commit" ]] && commit=$(echo "$out" | awk '{print $1}' | head -1)
+    echo "$commit"
+}
+
+# Find the highest (sort -V) tag pointing at the given commit.
+# Optional hint_prefix restricts matches (e.g. "Release"); pre-release-style
+# tags (nightly, rc, ...) are excluded. Prints "" if no tag matches.
+github_tag_at_commit() {
+    local owner_repo="$1" commit="$2" hint_prefix="${3:-}"
+    local tags
+    tags=$(git ls-remote --tags "https://github.com/${owner_repo}.git" 2>/dev/null \
+        | awk -v c="$commit" '$1 == c {print $2}' \
+        | sed -n 's|refs/tags/||p' \
+        | sed 's|\^{}||' \
+        | grep -vE '(rc|alpha|beta|dev|pre|canary|nightly|not-quite|test|experimental|unstable|draft)' || true)
+    [[ -z "$tags" ]] && { echo ""; return 0; }
+    if [[ -n "$hint_prefix" ]]; then
+        tags=$(echo "$tags" | grep "^${hint_prefix}" || true)
+    fi
+    [[ -z "$tags" ]] && { echo ""; return 0; }
+    echo "$tags" | sort -V | tail -1
 }
 
 # Strip leading 'v'/'V' from a version string (for releases-based packages).
@@ -370,6 +422,16 @@ strip_version_prefix() {
         tag="${tag#V}"
     fi
     echo "$tag"
+}
+
+# Build a regex matching tags of the same "shape" as the given version:
+# digit runs become [0-9]+, dots escaped, leading v/V made optional.
+# E.g. "v2025.1121" -> "[vV]?[0-9]+\.[0-9]+"  (excludes old "v20220524"-style tags)
+version_shape_re() {
+    local ver="${1#[vV]}"
+    ver="${ver//./\\.}"
+    ver=$(echo "$ver" | sed 's/[0-9]\+/[0-9]+/g')
+    echo "[vV]?${ver}"
 }
 
 # Compare two version strings using sort -V.
@@ -571,30 +633,66 @@ process_makefile() {
 
         latest_ver="$latest_commit"
 
+        # If PKG_RELEASE holds an upstream tag (not a commit hash), resolve the
+        # tag pointing at the tracked commit so PKG_RELEASE can be synced too
+        # (e.g. smartdns: Release48.3 -> Release48.4 on the same commit).
+        local pkg_rel latest_rel_tag=""
+        pkg_rel=$(make_get_var "$mf" "PKG_RELEASE")
+        if [[ -n "$pkg_rel" ]] && [[ ! "$pkg_rel" =~ ^[0-9a-f]{7,40}$ ]]; then
+            latest_rel_tag=$(github_tag_at_commit "$github_repo" "$latest_commit" "${pkg_rel%%[0-9]*}")
+        fi
+
+        # The PKG_VERSION date stamp tracks the upstream commit date
+        local cur_pkg_ver latest_commit_date=""
+        cur_pkg_ver=$(make_get_var "$mf" "PKG_VERSION")
+        if is_date_stamp "$cur_pkg_ver"; then
+            latest_commit_date=$(github_commit_date "$github_repo" "$latest_commit")
+        fi
+
         # Compare commit hashes directly (string comparison)
         if [[ "$current_ver" != "$latest_ver" ]]; then
             local display_cur="${current_ver:0:10}"
             local display_new="${latest_ver:0:10}"
-            local pkg_rel
-            pkg_rel=$(make_get_var "$mf" "PKG_RELEASE")
-            echo -e "  ${GREEN}UPDATE${NC} ${pkg_dir} (${pkg_name}): ${display_cur}... -> ${BOLD}${display_new}...${NC}  [${github_repo}#${pkg_rel}]"
+            local rel_disp=""
+            [[ -n "$latest_rel_tag" && "$latest_rel_tag" != "$pkg_rel" ]] && rel_disp=" -> ${latest_rel_tag}"
+            echo -e "  ${GREEN}UPDATE${NC} ${pkg_dir} (${pkg_name}): ${display_cur}... -> ${BOLD}${display_new}...${NC}  [${github_repo}#${pkg_rel}${rel_disp}]"
 
             if $DO_UPDATE; then
                 apply_update "$dir" "$mf" "$source_type" "PKG_SOURCE_VERSION" \
-                    "$current_ver" "$latest_ver" "$latest_tag" "$pkg_name" "$github_repo" "false"
+                    "$current_ver" "$latest_ver" "$latest_tag" "$pkg_name" "$github_repo" "false" "$latest_rel_tag" "$latest_commit_date"
             fi
             return 2
         else
-            echo -e "  ok     ${pkg_dir} (${pkg_name}): ${current_ver:0:10}...  [${github_repo}]"
-            return 0
+            # Commit unchanged: sync tag (PKG_RELEASE) / date (PKG_VERSION) if stale
+            local reason=""
+            if [[ -n "$latest_rel_tag" && "$latest_rel_tag" != "$pkg_rel" ]]; then
+                reason="tag ${pkg_rel} -> ${latest_rel_tag}"
+            fi
+            if [[ -n "$latest_commit_date" && "$latest_commit_date" != "$cur_pkg_ver" ]]; then
+                reason="${reason:+$reason, }date ${cur_pkg_ver} -> ${latest_commit_date}"
+            fi
+            if [[ -z "$reason" ]]; then
+                echo -e "  ok     ${pkg_dir} (${pkg_name}): ${current_ver:0:10}...  [${github_repo}#${pkg_rel}]"
+                return 0
+            fi
+            echo -e "  ${GREEN}UPDATE${NC} ${pkg_dir} (${pkg_name}): ${reason}  [${github_repo} @ ${current_ver:0:10}]"
+
+            if $DO_UPDATE; then
+                apply_update "$dir" "$mf" "$source_type" "PKG_SOURCE_VERSION" \
+                    "$current_ver" "$latest_ver" "$latest_tag" "$pkg_name" "$github_repo" "false" "$latest_rel_tag" "$latest_commit_date"
+            fi
+            return 2
         fi
     else
         # Releases-based / composite: fetch latest tag
-        local cache_key="${github_repo}|${hint_prefix}"
+        # Restrict candidates to the current version's tag shape (e.g. vYYYY.MMDD)
+        local hint_shape
+        hint_shape=$(version_shape_re "$current_ver")
+        local cache_key="${github_repo}|${hint_prefix}|${hint_shape}"
         if [[ -n "${TAG_CACHE[$cache_key]:-}" ]]; then
             latest_tag="${TAG_CACHE[$cache_key]}"
         else
-            latest_tag=$(github_latest_tag "$github_repo" "$hint_prefix")
+            latest_tag=$(github_latest_tag "$github_repo" "$hint_prefix" "$hint_shape")
             TAG_CACHE[$cache_key]="$latest_tag"
         fi
 
@@ -609,21 +707,54 @@ process_makefile() {
             latest_ver=$(strip_version_prefix "$latest_tag")
         fi
 
-        if version_lt "$current_ver" "$latest_ver"; then
+        # Resolve the tag's commit date — it drives the date-stamp variable
+        # (non-composite only; composite versions come from the tag itself)
+        local rel_date_var="" rel_date_cur="" latest_tag_date=""
+        if ! $is_composite; then
+            if [[ "$upstream_var" == "PKG_VERSION" ]]; then rel_date_var="PKG_RELEASE"; else rel_date_var="PKG_VERSION"; fi
+            rel_date_cur=$(make_get_var "$mf" "$rel_date_var")
+            if is_date_stamp "$rel_date_cur"; then
+                local tag_commit
+                tag_commit=$(github_tag_commit "$github_repo" "$latest_tag")
+                [[ -n "$tag_commit" ]] && latest_tag_date=$(github_commit_date "$github_repo" "$tag_commit")
+            fi
+        fi
+
+        # Compare prefix-normalized versions: the current value may carry a
+        # 'v' prefix while latest_ver is stripped (e.g. aiodns v2025.1121)
+        local cmp_cur
+        cmp_cur=$(strip_version_prefix "$current_ver")
+
+        if version_lt "$cmp_cur" "$latest_ver"; then
             local display_cur="$current_ver"
             $is_composite && display_cur="$(make_get_var "$mf" PKG_VERSION)/$(make_get_var "$mf" PKG_RELEASE)"
             local display_new="$latest_ver"
+            [[ "$current_ver" =~ ^[vV][0-9] ]] && display_new="$latest_tag"
             echo -e "  ${GREEN}UPDATE${NC} ${pkg_dir} (${pkg_name}): ${display_cur} -> ${BOLD}${display_new}${NC}  [${github_repo}]"
 
             if $DO_UPDATE; then
                 apply_update "$dir" "$mf" "$source_type" "$upstream_var" \
-                    "$current_ver" "$latest_ver" "$latest_tag" "$pkg_name" "$github_repo" "$is_composite"
+                    "$current_ver" "$latest_ver" "$latest_tag" "$pkg_name" "$github_repo" "$is_composite" "" "$latest_tag_date"
             fi
             return 2
-        else
-            echo -e "  ok     ${pkg_dir} (${pkg_name}): ${current_ver}  [${github_repo}]"
-            return 0
         fi
+
+        # Version current: sync the date-stamp var with the tag's commit date
+        if [[ -n "$latest_tag_date" && -n "$rel_date_cur" ]]; then
+            local want_date="$latest_tag_date"
+            [[ "$rel_date_cur" =~ ^[0-9]{8}$ ]] && want_date="${latest_tag_date//-/}"
+            if [[ "$rel_date_cur" != "$want_date" ]]; then
+                echo -e "  ${GREEN}UPDATE${NC} ${pkg_dir} (${pkg_name}): date ${rel_date_cur} -> ${BOLD}${want_date}${NC}  [${github_repo} @ ${latest_ver}]"
+                if $DO_UPDATE; then
+                    apply_update "$dir" "$mf" "$source_type" "$upstream_var" \
+                        "$current_ver" "$current_ver" "$latest_tag" "$pkg_name" "$github_repo" "$is_composite" "" "$latest_tag_date"
+                fi
+                return 2
+            fi
+        fi
+
+        echo -e "  ok     ${pkg_dir} (${pkg_name}): ${current_ver}  [${github_repo}]"
+        return 0
     fi
 }
 
@@ -632,6 +763,7 @@ apply_update() {
     local dir="$1" mf="$2" source_type="$3" upstream_var="$4"
     local old_ver="$5" new_ver="$6" new_tag="$7"
     local pkg_name="$8" github_repo="$9" is_composite="${10:-false}"
+    local rel_tag="${11:-}" new_date="${12:-}"
 
     local extra_info=""
 
@@ -652,22 +784,39 @@ apply_update() {
 
     elif [[ "$source_type" == "releases" ]]; then
         # ── standard releases-based packages ──────────────────────────────
-        sed -i "s/^\(${upstream_var}:=\).*/\1${new_ver}/" "$mf"
+        # Preserve a 'v' prefix if the current value carries one (e.g. aiodns)
+        local write_ver="$new_ver"
+        [[ "$old_ver" =~ ^[vV][0-9] ]] && write_ver="$new_tag"
+        sed -i "s/^\(${upstream_var}:=\).*/\1${write_ver}/" "$mf"
+        new_ver="$write_ver"
 
-        # Also update the "other" variable as a date stamp (if it looks like one)
-        if [[ "$upstream_var" == "PKG_RELEASE" ]]; then
-            local cur_date_var
-            cur_date_var=$(make_get_var "$mf" "PKG_VERSION")
-            if is_date_stamp "$cur_date_var"; then
-                sed -i "s/^\(PKG_VERSION:=\).*/\1${TODAY_DASH}/" "$mf"
-                extra_info=", PKG_VERSION -> ${TODAY_DASH}"
+        # Sync the "other" variable:
+        #  - date stamp  -> the tag's commit date (fallback: today)
+        #  - commit hash -> the tag's commit hash, same length (e.g. aiodns asset suffix)
+        local other_var other_old
+        if [[ "$upstream_var" == "PKG_VERSION" ]]; then other_var="PKG_RELEASE"; else other_var="PKG_VERSION"; fi
+        other_old=$(make_get_var "$mf" "$other_var")
+        if is_date_stamp "$other_old"; then
+            local stamp="$new_date"
+            if [[ "$other_old" =~ ^[0-9]{8}$ ]]; then
+                stamp="${stamp//-/}"
+                stamp="${stamp:-$TODAY}"
+            else
+                stamp="${stamp:-$TODAY_DASH}"
             fi
-        else
-            local cur_date_var
-            cur_date_var=$(make_get_var "$mf" "PKG_RELEASE")
-            if is_date_stamp "$cur_date_var"; then
-                sed -i "s/^\(PKG_RELEASE:=\).*/\1${TODAY}/" "$mf"
-                extra_info=", PKG_RELEASE -> ${TODAY}"
+            if [[ "$stamp" != "$other_old" ]]; then
+                sed -i "s/^\(${other_var}:=\).*/\1${stamp}/" "$mf"
+                extra_info="${extra_info}, ${other_var} -> ${stamp}"
+            fi
+        elif [[ "$other_old" =~ ^[0-9a-f]{7,12}$ ]]; then
+            local new_commit new_hash
+            new_commit=$(github_tag_commit "$github_repo" "$new_tag")
+            if [[ -n "$new_commit" ]]; then
+                new_hash="${new_commit:0:${#other_old}}"
+                if [[ "$new_hash" != "$other_old" ]]; then
+                    sed -i "s/^\(${other_var}:=\).*/\1${new_hash}/" "$mf"
+                    extra_info="${extra_info}, ${other_var} -> ${new_hash}"
+                fi
             fi
         fi
 
@@ -681,28 +830,50 @@ apply_update() {
             sed -i "s/^\(PKG_RELEASE:=\).*/\1${new_ver}/" "$mf"
             extra_info="PKG_RELEASE -> ${new_ver:0:10}..."
         elif grep -qm1 '^PKG_SOURCE_VERSION:=' "$mf" 2>/dev/null; then
-            # Direct PKG_SOURCE_VERSION; update it
-            sed -i "s/^\(PKG_SOURCE_VERSION:=\).*/\1${new_ver}/" "$mf"
-            extra_info="PKG_SOURCE_VERSION -> ${new_ver:0:10}..."
+            # Direct PKG_SOURCE_VERSION; update it (skip if unchanged — tag-only sync)
+            if [[ "$sv_val" != "$new_ver" ]]; then
+                sed -i "s/^\(PKG_SOURCE_VERSION:=\).*/\1${new_ver}/" "$mf"
+                extra_info="PKG_SOURCE_VERSION -> ${new_ver:0:10}..."
+            fi
         fi
 
-        # Update date stamp in PKG_VERSION
+        # Sync tag-like PKG_RELEASE with the tag pointing at the tracked commit
+        if [[ -n "$rel_tag" ]]; then
+            local cur_rel
+            cur_rel=$(make_get_var "$mf" "PKG_RELEASE")
+            if [[ -n "$cur_rel" ]] && [[ "$rel_tag" != "$cur_rel" ]]; then
+                sed -i "s/^\(PKG_RELEASE:=\).*/\1${rel_tag}/" "$mf"
+                extra_info="${extra_info}, PKG_RELEASE -> ${rel_tag}"
+            fi
+        fi
+
+        # Update date stamp in PKG_VERSION (tracks the upstream commit date)
         if grep -qm1 '^PKG_VERSION:=' "$mf" 2>/dev/null; then
             local cur_date_var
             cur_date_var=$(make_get_var "$mf" "PKG_VERSION")
             if is_date_stamp "$cur_date_var"; then
-                sed -i "s/^\(PKG_VERSION:=\).*/\1${TODAY_DASH}/" "$mf"
-                extra_info="${extra_info}, PKG_VERSION -> ${TODAY_DASH}"
+                local stamp="${new_date:-$TODAY_DASH}"
+                if [[ "$stamp" != "$cur_date_var" ]]; then
+                    sed -i "s/^\(PKG_VERSION:=\).*/\1${stamp}/" "$mf"
+                    extra_info="${extra_info}, PKG_VERSION -> ${stamp}"
+                fi
             fi
         fi
 
         # Keep PKG_RELEASE unchanged for non-reference case (release tag)
     fi
 
-    echo -e "         -> updated ${upstream_var} to ${new_ver}${extra_info}"
+    if [[ "$old_ver" == "$new_ver" ]]; then
+        echo -e "         -> synced${extra_info#,}"
+    else
+        echo -e "         -> updated ${upstream_var} to ${new_ver}${extra_info}"
+    fi
 
     if $DO_COMMIT; then
         local msg="bump ${pkg_name} ${old_ver:0:10} -> ${new_ver:0:10}"
+        if [[ "$old_ver" == "$new_ver" ]]; then
+            msg="bump ${pkg_name}${extra_info:+:${extra_info#,}} (sync)"
+        fi
         git -C "$BASE_DIR" add "${dir}/Makefile"
         if git -C "$BASE_DIR" diff --cached --quiet; then
             echo -e "         -> ${YELLOW}no changes to commit${NC}"
