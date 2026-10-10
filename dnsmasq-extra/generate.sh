@@ -199,39 +199,51 @@ sed '/dlswbr.baidu.com/d' -i adblock adblock.lite
 # ------------------ adblock ------------------
 
 # ------------------ direct ------------------
-curl_githubusercontent https://raw.githubusercontent.com/pexcn/daily/gh-pages/chinalist/chinalist.txt >direct.pexcn
+# 各来源先落成独立文件，统一补足行尾换行后再合并。
+# 上游文件末行常不带换行（如 chenlangping/no_proxy_needed.list），
+# 直接 >> 追加会让该行与下一来源的首行粘连成一个假域名。
+_direct_tmp=direct.tmp.$$
+mkdir -p $_direct_tmp
+trap 'rm -rf $_direct_tmp' EXIT
+
+curl_githubusercontent https://raw.githubusercontent.com/pexcn/daily/gh-pages/chinalist/chinalist.txt >$_direct_tmp/direct.pexcn
 
 start=$(($(sed -n -e '/^whatismyip.akamai.com$/=' direct) + 1))
-cat <<-EOF | sort -u >direct.new
-	$(sed '/^www.apple.com$/,+99999d' direct.pexcn)
-EOF
+sed '/^www.apple.com$/,+99999d' $_direct_tmp/direct.pexcn | sort -u >$_direct_tmp/00.pexcn
 
-curl_githubusercontent https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf | awk -F'/' '{print $2}' >>direct.new
-curl_githubusercontent https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/apple.txt >>direct.new
-# curl_githubusercontent https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/refs/heads/release/direct-list.txt | grep -vE '^regexp:' | sed 's+.*:++g' >>direct.new
-curl_githubusercontent https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/refs/heads/release/direct-tld-list.txt >>direct.new
-curl_githubusercontent https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/tencent >>direct.new
-curl_githubusercontent https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/alibaba >>direct.new
-curl_githubusercontent https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/bytedance >>direct.new
-curl_githubusercontent https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Domain.txt | sed '/^#/d' | sed '/akadns.net/d; /microsoft/d' >>direct.new
+curl_githubusercontent https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf | awk -F'/' '{print $2}' >$_direct_tmp/01.apple.china
+curl_githubusercontent https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/apple.txt >$_direct_tmp/02.apple.surge
+# curl_githubusercontent https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/refs/heads/release/direct-list.txt | grep -vE '^regexp:' | sed 's+.*:++g' >$_direct_tmp/03.direct-list
+curl_githubusercontent https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/refs/heads/release/direct-tld-list.txt >$_direct_tmp/04.direct-tld
+curl_githubusercontent https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/tencent >$_direct_tmp/05.tencent
+curl_githubusercontent https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/alibaba >$_direct_tmp/06.alibaba
+curl_githubusercontent https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/bytedance >$_direct_tmp/07.bytedance
+curl_githubusercontent https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Domain.txt | sed '/^#/d' | sed '/akadns.net/d; /microsoft/d' >$_direct_tmp/08.china_domain
 curl_githubusercontent https://raw.githubusercontent.com/pluwen/china-domain-allowlist/main/allow-list.sorl |
-	sed -n 's+^*\.++p' | sed '/apple/d; /akadns/d; /doubleclick/d' >>direct.new
+	sed -n 's+^*\.++p' | sed '/apple/d; /akadns/d; /doubleclick/d' >$_direct_tmp/09.allow-list
+curl_githubusercontent https://raw.githubusercontent.com/chenlangping/script/master/common/clash/no_proxy_needed.list |
+	sed -n 's+^DOMAIN[^,]*,++p' >$_direct_tmp/10.no_proxy_needed
 curl_githubusercontent https://raw.githubusercontent.com/eliozy/Qumtumult-X/master/Filter/WeChat.list |
-	sed -n 's+^DOMAIN-SUFFIX,++p' | sed 's+,.*++g' >>direct.new
+	sed -n 's+^DOMAIN-SUFFIX,++p' | sed 's+,.*++g' >$_direct_tmp/11.wechat.eliozy
 curl_githubusercontent https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Wechat.list |
-	sed -n 's+^DOMAIN[^,]*,++p' >>direct.new
+	sed -n 's+^DOMAIN[^,]*,++p' >$_direct_tmp/12.wechat.acl
 curl_githubusercontent https://raw.githubusercontent.com/marsgogo/Surge/main/Weixin.list |
-	sed -n 's+^DOMAIN[^,]*,++p' >>direct.new
+	sed -n 's+^DOMAIN[^,]*,++p' >$_direct_tmp/13.weixin.marsgogo
 curl_githubusercontent https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list |
-	sed -n 's+^DOMAIN[^,]*,++p' >>direct.new
+	sed -n 's+^DOMAIN[^,]*,++p' >$_direct_tmp/14.chinamedia
 curl_githubusercontent https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list |
-	sed -n 's+^DOMAIN[^,]*,++p' >>direct.new
+	sed -n 's+^DOMAIN[^,]*,++p' >$_direct_tmp/15.chinadomain
 curl_githubusercontent https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/WeChat/WeChat.list |
-	grep -v 'KEYWORD' | grep '^HOST' | awk -F',' '{print $2}' >>direct.new
+	grep -v 'KEYWORD' | grep '^HOST' | awk -F',' '{print $2}' >$_direct_tmp/16.wechat.qx
 curl_githubusercontent https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/XianYu/XianYu.list |
-	grep -v 'KEYWORD' | grep '^DOMAIN' | awk -F',' '{print $2}' >>direct.new
+	grep -v 'KEYWORD' | grep '^DOMAIN' | awk -F',' '{print $2}' >$_direct_tmp/17.xianyu
 curl_githubusercontent https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/DouYin/DouYin.list |
-	grep -v 'KEYWORD' | grep '^DOMAIN' | awk -F',' '{print $2}' >>direct.new
+	grep -v 'KEYWORD' | grep '^DOMAIN' | awk -F',' '{print $2}' >$_direct_tmp/18.douyin
+
+for it in $_direct_tmp/[0-9][0-9].*; do
+	sed -i -e '$a\' $it
+done
+cat $_direct_tmp/[0-9][0-9].* >direct.new
 
 # blacklist
 sed '/google/d; /gstatic/d; /youtube/d; /^android/d;' -i direct.new
@@ -241,20 +253,35 @@ sed '/ebay/d; /lazada/d; /yandex/d' -i direct.new
 sed '/ip-api.com/d' -i direct.new
 cat adblock gfwlist >direct.blacklist
 sed "$start,99999d" direct >>direct.blacklist
-grep -Fv -f direct.blacklist direct.new >direct.sum
+# 比对前先归一化，否则带瑕疵的条目会绕过 blacklist 的整行比较，
+# 再被 tide 修整后落进 direct —— 等于把 gfwlist 域名写成直连：
+#   1. 尾部回车：上游源是 CRLF（实测 1220 行），"bilibili.tv\r" != "bilibili.tv"
+#   2. 前导点：上游源有 ".browserleaks.com" 这类写法（实测 3830 行），
+#      tide 会去掉点，但那是黑名单比对之后的事
+sed 's+\r++g; s+^\.++' -i direct.new
+# -x：整行匹配。blacklist 里存在 t.co 这类短条目，
+# 子串匹配会把 2345.com 等正常域名一并误删。
+grep -Fvx -f direct.blacklist direct.new >direct.sum
 
 echo >&2 "# direct.sum"
 time shadowsocks-helper tide -i direct.sum -o direct.sum
 sed "$start,99999d" -i direct
-sed 's+$+\$+g; s+\.+\\.+g' tldn gfwlist >direct.suffix
-echo "\.*apple\." >>direct.suffix
-echo "\.*windows\." >>direct.suffix
-echo "\.*microsoft\." >>direct.suffix
-echo "\.*windowsupdate\." >>direct.suffix
+# (^|\.)domain$ 形式：tldn 是 dnsmasq 风格的 .tld，gfwlist 是裸域名。
+# 必须走 -E 正则：此前把 dnsmasq 风格模式喂给 grep -F 做字面匹配，
+# 两边格式对不上，闸门几乎不放行任何域名。
+# 注意替换部分的反斜杠要写两个：sed 会把一个 \ 后的字符转义折叠，
+# 只写一个的话 (^|\.) 会退化成 (^|.)，未转义的点匹配任意字符。
+sed 's+^\.+(^|\\.)+; s+$+$+g' tldn >direct.suffix
+sed 's+^+(^|\\.)+; s+$+$+g' gfwlist >>direct.suffix
 echo >&2 "# direct"
-time grep -eF -f direct.suffix direct.sum >>direct
-sed '/gvt2.com/d; /www.microsoft.com/d' -i direct
-rm -f direct.*
+# 先落临时文件：追加部分既要去重，又不能连前缀一起 sort（前 39 行的顺序
+# 决定下一轮的 start，重排会导致截断位置错乱）。
+time grep -E -f direct.suffix direct.sum | sort -u >direct.appended
+sed '/gvt2.com/d; /www.microsoft.com/d' -i direct.appended
+# 再对前缀整体去重（前缀 line 39 的 whatismyip 决定下一轮 start，不能重排）
+grep -Fvx -f direct direct.appended >direct.appended.uniq
+cat direct.appended.uniq >>direct
+rm -f direct.new direct.sum direct.blacklist direct.suffix direct.appended direct.appended.uniq direct.*.md5sum
 # ------------------ direct ------------------
 
 # ------------------ gzip ------------------
