@@ -88,6 +88,7 @@ time cidr-merger <<-EOF >chnroute.txt.new
 		echo >&2 "ASN$it"
 
 		curl_githubusercontent https://raw.githubusercontent.com/ipverse/as-ip-blocks/refs/heads/master/as/$it/ipv4-aggregated.txt | grep -vE '^#' | grep -v ':'
+    # api https://stat.ripe.net/data/announced-prefixes/data.json?resource=AS132203
 
 	done)
 EOF
@@ -282,6 +283,7 @@ sed '/gvt2.com/d; /www.microsoft.com/d' -i direct.appended
 grep -Fvx -f direct direct.appended >direct.appended.uniq
 cat direct.appended.uniq >>direct
 rm -f direct.new direct.sum direct.blacklist direct.suffix direct.appended direct.appended.uniq direct.*.md5sum
+rm -rf direct.tmp.*
 # ------------------ direct ------------------
 
 # ------------------ gzip ------------------
